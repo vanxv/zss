@@ -43,19 +43,22 @@
                 </div>
             </div>
             <div class="col-sm-5">
-                <form method="post" action="index.html">
+                <form method="post" action="/login/">
                     <h4 class="no-margins">登录：</h4>
                     <p class="m-t-md">登录到H+后台主题UI框架</p>
-                    <input type="text" class="form-control uname" placeholder="用户名" />
-                    <input type="password" class="form-control pword m-b" placeholder="密码" />
+                    <input name="username" type="text" class="form-control uname" placeholder="用户名/Email/手机号" />
+                    <input name="password"  type="password" class="form-control pword m-b" placeholder="密码" />
+                    <div class="error btns login-form-tips" id="jsLoginTips">{{ msg }}</div>
                     <a href="">忘记密码了？</a>
                     <button class="btn btn-success btn-block">登录</button>
+                    {% csrf_token %}
                 </form>
+
             </div>
         </div>
         <div class="signup-footer">
             <div class="pull-left">
-                &copy; 2015 All Rights Reserved. H+
+                &copy; 2017 All Rights Reserved. H+
             </div>
         </div>
     </div>
