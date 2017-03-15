@@ -4,10 +4,11 @@ from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from .models import UserProfile
 from django.views.generic.base import View
+from .froms import LoginForm
 # Create your views here.
 
 
-
+#下面是一个验证流程，用了Q，
 class CustomBackend(ModelBackend):
     def authenticate(self, username=None, password=None, **kwargs):
         try:
@@ -21,12 +22,14 @@ class LoginView(View):
     def get(self, request):
         return render(request, "login_v2.html", {})
     def post(self, request):
-        user_name = request.POST.get("username", "")
-        pass_word = request.POST.get("password", "")
-        user = authenticate(username=user_name, password=pass_word)
-        if user is not None:
-            login(request, user)
-            return render(request, "index.html")
+        login_form = LoginForm(request.POST)
+        if login_form.is_valid():
+            user_name = request.POST.get("username", "")
+            pass_word = request.POST.get("password", "")
+            user = authenticate(username=user_name, password=pass_word)
+            if user is not None:
+                login(request, user)
+                return render(request, "index.html")
         else:
             return render(request, "login_v2.html", {"msg":"账号密码错误"})
 #
