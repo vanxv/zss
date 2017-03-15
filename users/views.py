@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
 from .models import UserProfile
+from django.views.generic.base import View
 # Create your views here.
 
 
@@ -16,16 +17,29 @@ class CustomBackend(ModelBackend):
         except Exception as e:
             return None
 
-def user_login(request):
-    if request.method == 'POST':
+class LoginView(View):
+    def get(self, request):
+        return render(request, "login_v2.html", {})
+    def post(self, request):
         user_name = request.POST.get("username", "")
         pass_word = request.POST.get("password", "")
         user = authenticate(username=user_name, password=pass_word)
         if user is not None:
             login(request, user)
-            return render(request, 'index.html')
+            return render(request, "index.html")
         else:
-            return render(request, 'login_v2.html', {"msg":"用户名和密码错误！"})
-            pass
-    elif request.method == 'GET':
-        return render(request, 'login_v2.html', {})
+            return render(request, "login_v2.html", {"msg":"账号密码错误"})
+#
+# def user_login(request):
+#     if request.method == 'POST':
+#         user_name = request.POST.get("username", "")
+#         pass_word = request.POST.get("password", "")
+#         user = authenticate(username=user_name, password=pass_word)
+#         if user is not None:
+#             login(request, user)
+#             return render(request, 'index.html')
+#         else:
+#             return render(request, 'login_v2.html', {"msg":"用户名和密码错误！"})
+#             pass
+#     elif request.method == 'GET':
+#         return render(request, 'login_v2.html', {})
