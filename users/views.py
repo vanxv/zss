@@ -17,10 +17,15 @@ class CustomBackend(ModelBackend):
                 return user
         except Exception as e:
             return None
+
+class RegisterView(View):
+    def get(self, request):
+        return render(request, 'register.html')
+
 #下面是用View实现的get和post，效率很高。不用写if post和if get，用类解决这个问题。
 class LoginView(View):
     def get(self, request):
-        return render(request, "login_v2.html", {})
+        return render(request, "login.html", {})
     def post(self, request):
         login_form = LoginForm(request.POST)#利用form来验证是否正确，这样验证效率更高。不需要进数据库验证。
         if login_form.is_valid():
@@ -31,9 +36,9 @@ class LoginView(View):
                 login(request, user)
                 return render(request, "index.html")
             else:
-                return render(request, "login_v2.html", {"msg":"账号密码错误"})
+                return render(request, "login.html", {"msg":"账号密码错误"})
         else:
-            return render(request, "login_v2.html", {"login_form": login_form})
+            return render(request, "login.html", {"login_form": login_form})
 #
 # def user_login(request):
 #     if request.method == 'POST':
