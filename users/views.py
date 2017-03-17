@@ -6,8 +6,9 @@ from django.db.models import Q
 from .models import UserProfile
 from django.views.generic.base import View #View是一个get和post的一个系统，可以直接def post和get，
 from .froms import LoginForm, RegisterForm #载入form表单
-from django.core.mail import
-
+from itsdangerous import URLSafeTimedSerializer as utsr
+import base64
+import re
 
 # Create your views here.
 
@@ -38,7 +39,10 @@ class RegisterView(View):
                 user_profile.username = user_name
                 user_profile.email = user_name
                 user_profile.password = make_password(pass_word)
+                user_profile.is_active = False
                 user_profile.save()
+                token = token_confirm.generate_validate_token(username)
+
         pass
 
 

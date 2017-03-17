@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^register/', RegisterView.as_view(), name='register'),
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name="index.html")),
+    url(r'^shop/', TemplateView.as_view(template_name="shop.html")),
 ]

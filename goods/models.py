@@ -1,4 +1,3 @@
-#-*- coding: UTF-8 -*-
 from datetime import datetime
 from django.db import models
 from users.models import UserProfile
@@ -6,7 +5,7 @@ from users.models import UserProfile
 class taobaoshop(models.Model):
     user = models.ForeignKey(UserProfile, verbose_name=u'用户')
     tbShopName = models.CharField(max_length=50, verbose_name=u'淘宝店铺名')
-    Remark = models.CharField(max_length=20, verbose_name=u'备注')
+    tbShopUsername = models.CharField(max_length=50, verbose_name=u'淘宝店用户名')
     add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
@@ -18,7 +17,6 @@ class taobaoshop(models.Model):
 class jdshop(models.Model):
     user = models.ForeignKey(UserProfile, verbose_name=u'用户')
     jdshopname = models.CharField(max_length=50, verbose_name=u'京东店铺名')
-    Remark = models.CharField(max_length=20, verbose_name=u'备注')
     add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:

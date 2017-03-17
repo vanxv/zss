@@ -1,0 +1,21 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   .idea/workspace.xml
+#	modified:   crm/models.py
+#	modified:   goods/models.py
+#	modified:   goods/views.py
+#	modified:   templates/index.html
+#	new file:   templates/shop.html
+#	new file:   users/__pycache__/froms.cpython-36.pyc
+#	modified:   users/__pycache__/models.cpython-36.pyc
+#	modified:   users/__pycache__/views.cpython-36.pyc
+#	modified:   users/views.py
+#	modified:   zhess103/__pycache__/settings.cpython-36.pyc
+#	modified:   zhess103/__pycache__/urls.cpython-36.pyc
+#	modified:   zhess103/urls.py
+#
