@@ -1,0 +1,73 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="nav-close">
+        <i class="fa fa-times-circle"></i>
+    </div>
+
+    <div class="slimScrollDiv" style="position: relative; width: auto; height: 100%;">
+        <div class="sidebar-collapse" style="width: auto; height: 100%;">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <h1 style="font-size: 2em; color: white; text-align: center">ZSS</h1>
+                    </div>
+                    <div class="logo-element">
+                        Ju3
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <span class="nav-label">系统设置</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a class="J_menuItem" href="/Menu/Index" data-index="0">菜单管理</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="/Department/Index" data-index="0">部门管理</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="/Role/Index" data-index="0">角色管理</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="/User/Index" data-index="0">用户管理</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="/Role/Authen" data-index="0">角色授权</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="/System/Index" data-index="0">系统配置</a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <span class="nav-label">会员管理</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a class="J_menuItem" href="{% url 'user' %}" data-index="0">我的会员</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="slimScrollBar"
+             style="background: rgb(0, 0, 0); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 615px;"></div>
+        <div class="slimScrollRail"
+             style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.9; z-index: 90; right: 1px;"></div>
+    </div>
+
+    <div class="sidebar-footer">
+        <a id="btnChangeMenu"><span class="fa fa-reorder"></span></a>
+        <a class="hidden-small"><span class="fa fa-desktop"></span></a>
+        <a class="hidden-small"><span class="fa fa-lock"></span></a>
+        <a class="hidden-small" href="/Home/Logout"><span class="fa fa-power-off"></span></a>
+    </div>
+</nav>
