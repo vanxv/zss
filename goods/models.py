@@ -1,84 +1,55 @@
 from datetime import datetime
 from django.db import models
-from users.models import UserProfile
+from users.models import AuthUser
 
-class taobaoshop(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
-    tbShopName = models.CharField(max_length=50, verbose_name=u'淘宝店铺名')
-    tbShopUsername = models.CharField(max_length=50, verbose_name=u'淘宝店用户名')
+PLATFORM = (
+    ('taobao', '淘宝'),
+    ('jd', '京东')
+)
+
+
+class Shop(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name='用户')
+    shopname = models.CharField('店铺名称',max_length=50 )
+    sellername = models.CharField('掌柜名称',max_length=50)
+    platform = models.CharField('店铺平台', choices=PLATFORM, max_length=20)
     add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
-        verbose_name = u'淘宝店铺名'
-        verbose_name_plural = verbose_name
-    def  __unicode__(self):
-        return self.tbShopName
-
-class jdshop(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
-    jdshopname = models.CharField(max_length=50, verbose_name=u'京东店铺名')
-    add_time = models.DateTimeField(default=datetime.now)
-
-    class Meta:
-        verbose_name = u'京东店铺名'
-        verbose_name_plural = verbose_name
-    def  __unicode__(self):
-        return '{0}({1})'.format(self.user, self.jdshopname)
-
-class TaobaoGoods(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
-    taobaoshop = models.ForeignKey(taobaoshop, verbose_name=u'所属店铺')
-    tbID = models.CharField(max_length=50, verbose_name=u'淘宝商品ID')
-    SendAddress = models.CharField(max_length=50, verbose_name=u'发货地')
-    tbimage = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
-    tbimage2 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
-    tbimage3 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
-    tbKeyword1 =  models.CharField(max_length=50, verbose_name=u'1关键词', null=True)
-    tbPrice1 =  models.FloatField(max_length=50, verbose_name=u'1价格', null=True)
-    tbRemark1 =  models.CharField(max_length=50, verbose_name=u'1备注', null=True)
-    tbKeyword2 =  models.CharField(max_length=50, verbose_name=u'1关键词', null=True)
-    tbPrice2 =  models.FloatField(max_length=50, verbose_name=u'2价格', null=True)
-    tbRemark2 =  models.CharField(max_length=50, verbose_name=u'2备注', null=True)
-    tbKeyword3 =  models.CharField(max_length=50, verbose_name=u'3关键词', null=True)
-    tbPrice3 =  models.FloatField(max_length=50, verbose_name=u'3价格', null=True)
-    tbRemark3 =  models.CharField(max_length=50, verbose_name=u'3备注', null=True)
-    tbKeyword4 =  models.CharField(max_length=50, verbose_name=u'4关键词', null=True)
-    tbPrice4 =  models.FloatField(max_length=50, verbose_name=u'4价格', null=True)
-    tbRemark4 =  models.CharField(max_length=50, verbose_name=u'4备注', null=True)
-    tbKeyword5 =  models.CharField(max_length=50, verbose_name=u'5关键词', null=True)
-    tbPrice5 =  models.FloatField(max_length=50, verbose_name=u'5价格', null=True)
-    tbRemark5 =  models.CharField(max_length=50, verbose_name=u'5备注', null=True)
-    add_time = models.DateTimeField(default=datetime.now)
-
-    class Meta:
-        verbose_name = u'淘宝商品ID'
+        db_table='shops'
+        verbose_name = '店铺名'
         verbose_name_plural = verbose_name
 
-class JDGoods(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
-    jdshopid = models.ForeignKey(jdshop, verbose_name=u'所属机构')
-    jdid = models.CharField(max_length=50, verbose_name=u'京东商品ID')
-    SendAddress = models.CharField(max_length=50, verbose_name=u'发货地')
-    jdimage = models.ImageField(upload_to="image/jdgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
-    jdimage2 = models.ImageField(upload_to="image/jdgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
-    jdimage3 = models.ImageField(upload_to="image/jdgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
-    jdKeyword1 =  models.CharField(max_length=50, verbose_name=u'1关键词')
-    jdPrice1 =  models.FloatField(max_length=50, verbose_name=u'1价格')
-    jdRemark1 =  models.CharField(max_length=50, verbose_name=u'1备注')
-    jdKeyword2 =  models.CharField(max_length=50, verbose_name=u'1关键词')
-    jdPrice2 =  models.FloatField(max_length=50, verbose_name=u'2价格')
-    jdRemark2 =  models.CharField(max_length=50, verbose_name=u'2备注')
-    jdKeyword3 =  models.CharField(max_length=50, verbose_name=u'3关键词')
-    jdPrice3 =  models.FloatField(max_length=50, verbose_name=u'3价格')
-    jdRemark3 =  models.CharField(max_length=50, verbose_name=u'3备注')
-    jdKeyword4 =  models.CharField(max_length=50, verbose_name=u'4关键词')
-    jdPrice4 =  models.FloatField(max_length=50, verbose_name=u'4价格')
-    jdRemark4 =  models.CharField(max_length=50, verbose_name=u'4备注')
-    jdKeyword5 =  models.CharField(max_length=50, verbose_name=u'5关键词')
-    jdPrice5 =  models.FloatField(max_length=50, verbose_name=u'5价格')
-    jdRemark5 =  models.CharField(max_length=50, verbose_name=u'5备注')
+    def __str__(self):
+        return self.shopname
+
+
+class Good(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name='用户')
+    shop = models.ForeignKey(Shop, verbose_name='所属店铺')
+    pgood_id = models.CharField('平台商品id', max_length=50)
+    sendaddress = models.CharField('发货地', max_length=50)
+    image1 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
+    image2 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
+    image3 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
+    keyword1 = models.CharField('1关键词', max_length=50, null=True)
+    price1 = models.FloatField('1价格', max_length=50, null=True)
+    remark1 = models.CharField('1备注', max_length=50, null=True)
+    keyword2 = models.CharField('1关键词', max_length=50, null=True)
+    price2 = models.FloatField('2价格', max_length=50, null=True)
+    remark2 = models.CharField('2备注', max_length=50, null=True)
+    keyword3 = models.CharField('3关键词', max_length=50, null=True)
+    price3 = models.FloatField('3价格', max_length=50, null=True)
+    remark3 = models.CharField('3备注', max_length=50, null=True)
+    keyword4 = models.CharField('4关键词', max_length=50, null=True)
+    price4 = models.FloatField('4价格', max_length=50, null=True)
+    remark4 = models.CharField('4备注', max_length=50, null=True)
+    keywor5 = models.CharField('5关键词', max_length=50, null=True)
+    price5 = models.FloatField('5价格', max_length=50, null=True)
+    remark5 = models.CharField('5备注', max_length=50, null=True)
     add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
-        verbose_name = u'京东商品ID'
+        db_table='goods'
+        verbose_name = '商品'
         verbose_name_plural = verbose_name

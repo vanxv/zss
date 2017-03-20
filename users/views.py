@@ -1,9 +1,10 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.hashers import make_password
 from django.contrib.auth.backends import ModelBackend
 from django.db.models import Q
-from .models import UserProfile
+from .models import AuthUser
 from django.views.generic.base import View #View是一个get和post的一个系统，可以直接def post和get，
 from .froms import LoginForm, RegisterForm #载入form表单
 from itsdangerous import URLSafeTimedSerializer as utsr
@@ -17,7 +18,7 @@ import re
 class CustomBackend(ModelBackend):
     def authenticate(self, username=None, password=None, **kwargs):
         try:
-            user = UserProfile.objects.get(Q(username=username)|Q(email=username))
+            user = AuthUser.objects.get(Q(username=username)|Q(email=username))
             if user.check_password(password):
                 return user
         except Exception as e:
@@ -35,7 +36,7 @@ class RegisterView(View):
             if pass_word != pass_word2:
                 return render(request, 'register.html', {"msg":"密码两次输入不一致"})
             else:
-                user_profile = UserProfile()
+                user_profile = AuthUser()
                 user_profile.username = user_name
                 user_profile.email = user_name
                 user_profile.password = make_password(pass_word)
@@ -78,3 +79,13 @@ class LoginView(View):
 #             pass
 #     elif request.method == 'GET':
 #         return render(request, 'login_v2.html', {})
+
+
+class MemberView(View):
+    def get(self,request,*args,**kwargs):
+        return render(request,template_name='user/index.html')
+
+    def post(self,request,*args,**kwargs):
+        file=request.FILES.get('member')
+        return HttpResponse('success')
+

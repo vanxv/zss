@@ -3,7 +3,7 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser #AbstractBaseUser继承自己的字段，还可以增加自己的字段
 
-class UserProfile(AbstractUser):
+class AuthUser(AbstractUser):
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
     mobile = models.CharField(max_length=11, verbose_name=u"手机号")
     wechatName = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"微信名")
@@ -18,6 +18,7 @@ class UserProfile(AbstractUser):
     remark = models.CharField(max_length=255, null=True, blank=True, verbose_name=u"备注")
 
     class Meta:
+        db_table='auth_user'
         verbose_name = "用户信息"
         verbose_name_plural = verbose_name
 
@@ -26,7 +27,7 @@ class UserProfile(AbstractUser):
         return self.username
 
 class buyscore(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     scoregood = models.IntegerField(default='0', verbose_name=u'好评数')
     scoremiddle = models.IntegerField( default='0', verbose_name=u'中评数')
     scorepoor = models.IntegerField(default='0', verbose_name=u'差评数')
@@ -36,7 +37,7 @@ class buyscore(models.Model):
         verbose_name_plural = verbose_name
 
 class sellscore(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     scoregood = models.IntegerField(default='0', verbose_name=u'好评数')
     scoremiddle = models.IntegerField(default='0', verbose_name=u'中评数')
     scorepoor = models.IntegerField(default='0', verbose_name=u'差评数')
@@ -46,7 +47,7 @@ class sellscore(models.Model):
         verbose_name_plural = verbose_name
 
 class tbUsername(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     tbUsername = models.CharField(max_length=30, verbose_name=u'淘宝账号')
 
     class Meta:
@@ -57,7 +58,7 @@ class tbUsername(models.Model):
         return '{0}({1})'.format(self.user, self.tbUsername)
 
 class jdUsername(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     jdUsername = models.CharField(max_length=30, verbose_name=u'京东账号')
 
     class Meta:
@@ -67,7 +68,7 @@ class jdUsername(models.Model):
         return '{0}({1})'.format(self.user, self.jdUsername)
 
 class idGuid(models.Model):
-    user = models.ForeignKey(UserProfile, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid')
     userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid')
 

@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'orders',
     'financial',
 ]
-AUTH_USER_MODEL = 'users.UserProfile'
+AUTH_USER_MODEL = 'users.AuthUser'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'zhess103',
         'USER': 'root',
-        'PASSWORD': '1q2w3e4r',
+        'PASSWORD': 'liubiao123456',
         'HOST': '127.0.0.1',
     }
 }
