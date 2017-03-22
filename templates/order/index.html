@@ -1,0 +1,198 @@
+{% extends 'shared/_layout_content.html' %}
+{% load staticfiles %}
+
+{% block style %}
+    <link href="{% static 'css/plugins/jqgrid/ui.jqgrid.css' %}" rel="stylesheet"/>
+
+    <style>
+        /*a  upload */
+        {#        .a-upload {#}
+        {#            padding: 4px 10px;#}
+        {#            height: 20px;#}
+        {#            line-height: 20px;#}
+        {#            position: relative;#}
+        {#            cursor: pointer;#}
+        {#            color: #888;#}
+        {#            background: #fafafa;#}
+        {#            border: 1px solid #ddd;#}
+        {#            border-radius: 4px;#}
+        {#            overflow: hidden;#}
+        {#            display: inline-block;#}
+        {#            *display: inline;#}
+        {#            *zoom: 1#}
+        {#        }#}
+
+        .a-upload input {
+            position: absolute;
+            font-size: 100px;
+        {#            right: 0;#} top: 0;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            cursor: pointer
+        }
+
+        {#        .a-upload:hover {#}
+        {#            color: #444;#}
+        {#            background: #eee;#}
+        {#            border-color: #ccc;#}
+        {#            text-decoration: none#}
+        {#        }#}
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper wrapper-content">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>订单管理</h5>
+                <div class="ibox-tools">
+                    <a class="collapse-link">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="ibox-content">
+                <div class="form-group">
+                    <button id="btnAdd" type="button" class="btn btn-primary " onclick="addModel()"><i
+                            class="fa fa-check"></i>&nbsp;添加
+                    </button>
+                    <button id="btnEdit" type="button" class="btn btn-info " onclick="editModel()"><i
+                            class="fa fa-paste"></i> 编辑
+                    </button>
+                    <button id="btnDel" type="button" class="btn btn-danger " onclick="delData()">
+                        <i class="fa fa-dedent"></i>&nbsp;&nbsp;<span class="bold">删除</span>
+                    </button>
+
+                    <form style="display: inline" id="form_upload" method="post" action="{% url 'order:index' %}"
+                          enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <a href="javascript:;" class="a-upload btn btn-w-m btn-success">
+                            <i class="fa fa-dedent"></i>
+                            <input type="file" name="tb_order" onchange="fileChange(this)"/>批量导入淘宝订单
+                        </a>
+                        <a href="javascript:;" class="a-upload btn btn-w-m btn-success">
+                            <i class="fa fa-dedent"></i>
+                            <input type="file" name="jd_order" onchange="fileChange(this)"/>批量导入京东订单
+                        </a>
+                    </form>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <input id="txtSearchKey" type="text" class="input form-control" placeholder="输入订单号查询"/>
+                        <span class="input-group-btn">
+                        <button id="btnSearch" class="btn btn btn-primary" type="button"> <i class="fa fa-search"></i> 搜索</button>
+                    </span>
+                    </div>
+                </div>
+
+                <div class="jqGrid_wrapper">
+                    <table id="table_list"></table>
+                    <div id="pager_list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block script %}
+    {% include 'include/jslist.html' %}
+    <script type="text/javascript" src="{% static 'js/jquery.form.js' %}"></script>
+
+    <script>
+        function addModel() {
+            $("#btnAdd").button("loading");
+            window.location.href = "/order/add/";
+        }
+
+        function editModel() { //编辑
+            var row = JucheapGrid.GetData();
+            if (row != null) {
+                $("#btnEdit").button("loading");
+                window.location.href = "/order/edit/?id=" + row.id;
+            } else {
+                parent.layer.alert("请选择要编辑的数据");
+            }
+        }
+
+        function delData() { //删除
+            XPage.DelData("{% url 'order:delete'%}");
+        }
+
+        function searchData() { //搜索
+            var json = {
+                keywords: $("#txtSearchKey").val()
+            };
+            XPage.Search(json);
+        }
+
+        $(document).ready(function () {
+            var config = {
+                title: '订单列表',
+                url: '{% url "order:getorders" %}',
+                colNames: ['订单号', '数量', '金额(元)', '订单状态', '下单平台', '下单时间'],
+                colModel: [
+                    {name: 'id', index: 'id', width: 60, key: true},
+                    {name: 'count', index: 'count', width: 60},
+                    {name: 'amount', index: 'amount', width: 60},
+                    {
+                        name: 'status', index: 'status', width: 60, dataType: 'text',
+                        formatter: function (cellValue, options, rowObject) {
+                            switch (rowObject.status) {
+                                case 1:
+                                    return '买家已付款';
+                                case 2:
+                                    return '卖家已发货';
+                                case 3:
+                                    return '交易成功';
+                                case 4:
+                                    return '交易关闭';
+                            }
+                        }
+                    },
+                    {
+                        name: 'platform', index: 'platform', width: 60,
+                        formatter: function (cellValue, options, rowObject) {
+                            switch (rowObject.platform) {
+                                case 'taobao':
+                                    return '淘宝';
+                                case 'jd':
+                                    return '京东';
+                            }
+                        }
+                    },
+                    {name: 'add_time', index: 'add_time', width: 60},
+                ]
+            };
+            JucheapGrid.Load(config);
+            $("#btnSearch").bind("click", searchData);
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        function fileChange(node) {
+            var fileName = '文件路径出错';
+            if (node.value && node.value.lastIndexOf('.') > 0 &&
+                node.value.lastIndexOf("\\") > 0) {
+                fileName = node.value.substring(node.value.lastIndexOf("\\") + 1);
+            } else {
+                parent.layer.alert('上传的文件不是标准的csv文件');
+                return false;
+            }
+            $('#form_upload').ajaxSubmit({
+                success: function (data) {
+                    if (data.retcode == '10000') {
+                        parent.layer.alert('导入成功！');
+                        JucheapGrid.Reload();
+                    }
+                    else {
+                        parent.layer.alert(data.msg);
+                    }
+                }
+            });
+        }
+
+    </script>
+
+{% endblock %}

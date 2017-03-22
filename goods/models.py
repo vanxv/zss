@@ -9,10 +9,10 @@ PLATFORM = (
 
 
 class Shop(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name='用户')
-    shopname = models.CharField('店铺名称',max_length=50 )
-    sellername = models.CharField('掌柜名称',max_length=50)
-    platform = models.CharField('店铺平台', choices=PLATFORM, max_length=20)
+    user = models.ForeignKey(AuthUser, verbose_name='用户',null=True)
+    shopname = models.CharField('店铺名称',max_length=50 ,null=True)
+    sellername = models.CharField('掌柜名称',max_length=50,null=True)
+    platform = models.CharField('店铺平台', choices=PLATFORM, max_length=20,null=True)
     add_time = models.DateTimeField(default=datetime.now)
 
     class Meta:
@@ -25,10 +25,10 @@ class Shop(models.Model):
 
 
 class Good(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name='用户')
-    shop = models.ForeignKey(Shop, verbose_name='所属店铺')
-    pgood_id = models.CharField('平台商品id', max_length=50)
-    sendaddress = models.CharField('发货地', max_length=50)
+    user = models.ForeignKey(AuthUser, verbose_name='用户',null=True)
+    shop = models.ForeignKey(Shop, verbose_name='所属店铺',null=True)
+    pgood_id = models.CharField('平台商品id', max_length=50,null=True)
+    sendaddress = models.CharField('发货地', max_length=50,null=True)
     image1 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
     image2 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
     image3 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)

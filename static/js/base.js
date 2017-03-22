@@ -41,20 +41,20 @@ var XPage = {
                     url: url,
                     type: "POST",
                     dataType: "json",
-                    data: JSON.stringify({ ids: delDatas.Data }),
+                    data: JSON.stringify({ids: delDatas.Data}),
                     contentType: "application/json, charset=utf-8",
                     success: function (res) {
                         btn.button('reset');
-                        if (res.flag) {
+                        if (res.retcode == '10000') {
                             parent.layer.alert("删除成功");
                             $("#table_list").trigger("reloadGrid");
                         } else {
-                            parent.layer.alert("删除失败：" + res.msg);
+                            parent.layer.alert(res.msg);
                         }
                     }
                 });
             }, function () {
-                
+
             });
         } else {
             parent.layer.alert("请选择要删除的数据！");
@@ -70,7 +70,7 @@ var XPage = {
     Search: function (json) {
         var postData = $("#table_list").jqGrid("getGridParam", "postData");
         $.extend(postData, json);
-        $("#table_list").setGridParam({ search: true }).trigger("reloadGrid", [{ page: 1 }]);
+        $("#table_list").setGridParam({search: true}).trigger("reloadGrid", [{page: 1}]);
     },
 
     DoPost: function (btn, url, data, suc_callback, fail_callback) {
@@ -152,12 +152,19 @@ var XPage = {
         if ($(e).find("option:selected").data("type") === "date") {
             domTarget.prev().removeClass("hidden");
             domTarget.parent().addClass("date");
-            thisRow.find(".input-group.date").datepicker({ format:'yyyy-mm-dd',todayBtn: "linked", keyboardNavigation: !1, forceParse: !1, calendarWeeks: !0, autoclose: !0 });
+            thisRow.find(".input-group.date").datepicker({
+                format: 'yyyy-mm-dd',
+                todayBtn: "linked",
+                keyboardNavigation: !1,
+                forceParse: !1,
+                calendarWeeks: !0,
+                autoclose: !0
+            });
         } else {
             domTarget.prev().addClass("hidden");
             thisRow.find(".input-group.date").datepicker('remove');
             domTarget.parent().removeClass("date");
-            
+
         }
     },
 
@@ -177,10 +184,10 @@ var XPage = {
         var filters = {
             filters: JSON.stringify(searchDatas)
         }
-        
+
         var grid = $("#" + e.data);
         var postData = grid.jqGrid("getGridParam", "postData");
         $.extend(postData, filters);
-        grid.setGridParam({ search: true }).trigger("reloadGrid", [{ page: 1 }]);
+        grid.setGridParam({search: true}).trigger("reloadGrid", [{page: 1}]);
     }
 }

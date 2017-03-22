@@ -50,7 +50,10 @@
                     </a>
                     <ul class="nav nav-second-level collapse">
                         <li>
-                            <a class="J_menuItem" href="{% url 'user' %}" data-index="0">我的会员</a>
+                            <a class="J_menuItem" href="{% url 'user:index' %}" data-index="0">我的资料</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="{% url 'order:index' %}" data-index="0">我的会员订单</a>
                         </li>
 
                     </ul>

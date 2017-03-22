@@ -13,6 +13,7 @@ class AuthUser(AbstractUser):
     bankName = models.CharField(choices=(('zsbank', '招商银行'),('zgbank', '中国银行'),('jsbank', '建设银行'),('gsbank', '工商银行'),('nybank', '农业银行'),('jtbank', '交通银行')), null=True, verbose_name=u"银行", max_length=9)
     bankID = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"银行")
     realname = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"真名")
+    tags = models.CharField(max_length=200, null=True, blank=True, verbose_name=u"标签")
     image = models.ImageField(upload_to="image/Userimage/%Y/%m", default=u'image/default.png', max_length=100, null=True)
     referrercode = models.CharField(max_length=40, null=True, blank=True, verbose_name=u"推荐号")
     remark = models.CharField(max_length=255, null=True, blank=True, verbose_name=u"备注")

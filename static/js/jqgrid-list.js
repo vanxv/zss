@@ -17,12 +17,12 @@
             rowNum: 15,
             rownumWidth: 35,
             emptyrecords: "没有相关数据",
-            loadComplete: function(xhr) {
+            loadComplete: function (xhr) {
                 if (xhr && xhr.code === 401) {
                     alert(xhr.msg);
                 }
             },
-            loadError: function(xhr, status, error) {
+            loadError: function (xhr, status, error) {
                 console.log(xhr);
                 console.log(status);
                 console.log(error);
@@ -30,7 +30,8 @@
             pager: !config.pagerId ? "#pager_list" : "#" + config.pagerId,
             subGrid: config.subGrid ? true : false,
             subGridRowExpanded: config.subGridRowExpanded ? config.subGridRowExpanded : null,
-            gridComplete: config.gridComplete ? config.gridComplete : function() {}
+            gridComplete: config.gridComplete ? config.gridComplete : function () {
+                }
         };
         $.extend(defaultConfig, config);
         jqGrid.jqGrid(defaultConfig);
@@ -70,6 +71,9 @@
         }
         res.Len = res.Data.length;
         return res;
+    },
+    Reload: function () {
+        $('#table_list').trigger('reloadGrid');
     }
 };
 
