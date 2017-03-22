@@ -25,8 +25,9 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
     url(r'^shop/', TemplateView.as_view(template_name="shop.html")),
-    url(r'^user/', include('users.urls',namespace='user')),
+    url(r'^user/', include('users.urls', namespace='user')),
     url(r'^order/', include('orders.urls', namespace='order')),
+    url(r'^crm/', include('crm.urls', namespace='crm')),
 
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
     url(r'^$', TemplateView.as_view(template_name="index.html"), name='home'),

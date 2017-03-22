@@ -8,7 +8,7 @@ from django.db.models import Q
 from libs.common.form import invalid_msg
 from .models import AuthUser
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
-from .forms import LoginForm, RegisterForm, UserForm  # 载入form表单
+from .forms import LoginForm, RegisterForm  # 载入form表单
 
 
 # Create your views here.
@@ -69,22 +69,4 @@ class LoginView(View):
             return render(request, "login.html", {"login_form": login_form})
 
 
-class UserManagerView(LoginRequiredMixin, View):
-    template_name = 'user/edit.html'
 
-    def get(self, request, *args, **kwargs):
-        user = get_object_or_404(AuthUser, id=request.user.id)
-        form = UserForm(initial={'tags': user.tags})
-        return render(request, self.template_name, {'form': form})
-
-    def post(self, request, *args, **kwargs):
-        form = UserForm(request.POST)
-        if not form.is_valid():
-            errors = {key: invalid_msg.format(value[0]) for key, value in form.errors.items()}
-            return render(request, self.template_name, {'error': errors, 'form': form})
-        # 保存
-        user = get_object_or_404(AuthUser, id=request.user.id)
-        user.tags = form.cleaned_data.get('tags')
-        user.save()
-
-        return redirect('user:index')

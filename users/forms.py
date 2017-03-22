@@ -12,9 +12,3 @@ class RegisterForm(forms.Form):
     password2 = forms.CharField(required=True, min_length=5)
 
 
-class UserForm(forms.Form):
-    attrs = {
-        'class': 'form-control',
-    }
-
-    tags = forms.CharField(widget=forms.TextInput(attrs=attrs), max_length=200, required=False)

@@ -1,5 +1,8 @@
 # coding: utf-8
 import uuid
+import time
+
 
 def get_uuid():
-    return str(uuid.uuid1()).replace('-', '')
+    # return str(time.time()).replace('.', '')
+    return str(uuid.uuid3()).replace('-', '')

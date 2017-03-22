@@ -3,6 +3,7 @@ import csv
 from datetime import datetime
 import os
 from orders.models import Order
+from crm.models import Customer
 
 ORDER_STATUS = {
     '买家已付款，等待卖家发货': 1,
@@ -26,6 +27,7 @@ class OrderService:
             reader = csv.reader(file)
 
             orders = []
+            users = []
             for line in reader:
                 if '订单编号' in line:
                     continue
@@ -42,8 +44,18 @@ class OrderService:
                 order.shop_id = int(line[25])
                 orders.append(order)
 
+                user = Customer()
+                user.username = line[1]
+                user.bid = user_id  # 商家id
+                user.alipay = line[2]
+                user.realname = line[12]
+                user.address = line[13]
+                user.mobile = line[16].strip("'")
+                users.append(user)
+
             file.close()
-            Order.objects.bulk_create(orders)  # 批量插入
+            Order.objects.bulk_create(orders)  # 批量导入订单信息
+            Customer.objects.bulk_create(users)  # 批量导入买家信息
             os.remove(filename)
 
         except Exception as e:

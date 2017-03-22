@@ -94,7 +94,7 @@ def delete_order(request):
         order_ids = data.get('ids')
         # 删除订单
         Order.objects.filter(id__in=order_ids).delete()
-    except(Exception) as e:
+    except Exception as e:
         return JSONResponse(msg='删除失败！')
     return JSONResponse()
 
