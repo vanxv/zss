@@ -57,6 +57,21 @@
                         </li>
                     </ul>
                 </li>
+                 <li>
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <span class="nav-label">账户管理</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                         <li>
+                            <a class="J_menuItem" href="{% url 'finance:account_index' %}" data-index="0">充值&提现</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="{% url 'finance:wallet_index' %}" data-index="0">我的钱包</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="slimScrollBar"

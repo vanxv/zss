@@ -2,4 +2,5 @@ from django.apps import AppConfig
 
 
 class FinancialConfig(AppConfig):
-    name = 'financial'
+    name = 'finance'
+    verbose_name='商家账户管理'

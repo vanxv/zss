@@ -13,6 +13,6 @@
     $("#btnSave")
         .bind("click",
             function () {
-                $(this).button("loading");
+                //$(this).button("loading");
             });
 })();

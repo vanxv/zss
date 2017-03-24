@@ -28,6 +28,7 @@ urlpatterns = [
     url(r'^user/', include('users.urls', namespace='user')),
     url(r'^order/', include('orders.urls', namespace='order')),
     url(r'^crm/', include('crm.urls', namespace='crm')),
+    url(r'^finance/', include('finance.urls', namespace='finance')),
 
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
     url(r'^$', TemplateView.as_view(template_name="index.html"), name='home'),
