@@ -23,8 +23,9 @@ class AccountInpourView(LoginRequiredMixin, View):
     template_name = 'finance/account/inpour.html'
 
     def get(self, request, *args, **kwargs):
+        alipay_account = settings.ALIPAY_ACCOUNT
         form = InpourForm()
-        return render(request, self.template_name, {'form': form})
+        return render(request, self.template_name, {'form': form, 'alipay_account': alipay_account})
 
     def post(self, request, *args, **kwargs):
         file = request.FILES.get('certificate')
