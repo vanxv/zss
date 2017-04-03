@@ -1,16 +1,11 @@
-import os
-import time
-from django.conf import settings
-from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.views import View
 from cashback.models import CashbackTask, Cashback, CashbackStatus
-from libs.common.form import invalid_msg
 from libs.common.helper import save_file
 from libs.utils.decorators import request_validate
 from libs.utils.http import JSONError, JSONResponse
 from wechat.forms import ActivityForm
-
+import os
 
 class ActivityView(View):
     template_name = 'wechat/activity.html'

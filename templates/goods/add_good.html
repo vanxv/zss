@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - Bootstrap Table</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/bootstrap-table/bootstrap-table.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+<!--     <base target="_blank"> -->
+
+</head>
+
+<body class="gray-bg">
+<!-- 
+ <div class="wrapper wrapper-content">
+ -->
+  <!--       <div class="row"> -->
+    <!--         <div class="col-sm-5"> -->
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>元素</h5>
+                      
+                    </div>
+                    <div class="ibox-content">
+                        <div class="alert alert-info">
+                            拖拽左侧的表单元素到右侧区域，即可生成相应的HTML代码，表单代码，轻松搞定！
+                        </div>
+                        <form role="form" class="form-horizontal m-t" action="{% url 'good:add_good' shop_id=shop_id %}" method="POST" enctype="multipart/form-data">
+{% csrf_token %}
+                        <div class="col-md-6">
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">产品ID：</label>
+                                <div class="col-sm-9">
+                                    {{ form.pgood_id }}
+                                    <span class="help-block m-b-none">产品在各平台的链接地址</span>
+                                </div>
+                            </div>
+                        
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">产品图片1：</label>
+                                <div class="col-sm-9">
+                                     {{ form.image1 }}
+                                </div>
+                            </div>
+
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">产品图片2：</label>
+                                <div class="col-sm-9">
+                                    {{ form.image2 }}
+                                </div>
+                            </div>
+
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">产品图片3：</label>
+                                <div class="col-sm-9">
+                                    {{ form.image3 }}
+                                </div>
+                            </div>
+
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">发货地点：</label>
+                                <div class="col-sm-9">
+                              {{ form.sendaddress }}                  
+
+              </div>
+                            </div>
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">关键词：</label>
+                                <div class="col-sm-9">
+                 
+
+                                     {{ form.keyword1 }}       
+              </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">价格：</label>
+                                <div class="col-sm-9">
+                                    {{ form.price1 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">备注：</label>
+                                <div class="col-sm-9">
+                                   {{ form.remark1 }}
+                                </div>
+                            </div>
+
+                            <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">关键词2：</label>
+                                <div class="col-sm-9">
+                                        {{ form.keyword2 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">价格2：</label>
+                                <div class="col-sm-9">
+                             {{ form.price2 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">备注2：</label>
+                                <div class="col-sm-9">
+                                       {{ form.remark2 }}
+                                </div>
+                            </div>
+                         </div>    
+           <div class="col-md-6">                                                <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">关键词3：</label>
+                                <div class="col-sm-9">
+                                     {{ form.keyword3 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">价格3：</label>
+                                <div class="col-sm-9">
+                                   {{ form.price3 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">备注3：</label>
+                                <div class="col-sm-9">
+                                        {{ form.remark3 }}
+                                </div>
+                            </div>
+                                                                        <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">关键词4：</label>
+                                <div class="col-sm-9">
+                                       {{ form.keyword4}}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">价格4：</label>
+                                <div class="col-sm-9">
+                {{ form.price4 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">备注4：</label>
+                                <div class="col-sm-9">
+                                 {{ form.remark4 }}
+                                </div>
+                            </div>
+                                                                        <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">关键词5：</label>
+                                <div class="col-sm-9">
+                     {{ form.keywor5 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">价格5：</label>
+                                <div class="col-sm-9">
+                  {{ form.price5 }}
+                                </div>
+                            </div>
+                                                    <div class="form-group draggable">
+                                <label class="col-sm-3 control-label">备注5：</label>
+                                <div class="col-sm-9">
+                                       {{ form.remark5 }}
+                                </div>
+                            </div>
+                                                        
+                                            
+</div>
+                          
+                            <div class="form-group draggable">
+                                <div class="col-sm-12 col-sm-offset-5">
+                                    <button class="btn btn-primary" type="submit">保存内容</button>
+                                    <button class="btn btn-white" type="button" id="btnBack" data-type="url">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="clearfix"></div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/content.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap-table/bootstrap-table.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap-table/bootstrap-table-mobile.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js' %}"></script>
+    <script src="{% static 'js/demo/bootstrap-table-demo.min.js' %}"></script>
+
+</body>
+
+</html>

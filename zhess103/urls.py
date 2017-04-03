@@ -27,7 +27,8 @@ urlpatterns = [
     url(r'^register/', RegisterView.as_view(), name='register'),
     url(r'^admin/', admin.site.urls),
 
-    url(r'^shop/', TemplateView.as_view(template_name="shop.html")),
+    # url(r'^shop/', TemplateView.as_view(template_name="shop.html")),
+    url(r'^good/', include('goods.urls', namespace='good')),
     url(r'^user/', include('users.urls', namespace='user')),
     url(r'^order/', include('orders.urls', namespace='order')),
     url(r'^crm/', include('crm.urls', namespace='crm')),
@@ -45,4 +46,3 @@ urlpatterns = [
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用
-

@@ -29,14 +29,14 @@
                         </li>
                     </ul>
                 </li>
-                 <li>
+                <li>
                     <a href="#">
                         <i class="fa fa-tv"></i>
                         <span class="nav-label">账户管理</span>
                         <span class="fa arrow"></span>
                     </a>
                     <ul class="nav nav-second-level collapse">
-                         <li>
+                        <li>
                             <a class="J_menuItem" href="{% url 'finance:account_index' %}" data-index="0">充值&提现</a>
                         </li>
                         <li>
@@ -44,20 +44,35 @@
                         </li>
                     </ul>
                 </li>
-                 <li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <span class="nav-label">产品管理</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a class="J_menuItem" href="{% url 'good:shop' %}" data-index="0">商品管理</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="{% url 'good:all_good' %}" data-index="0">店铺管理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#">
                         <i class="fa fa-tv"></i>
                         <span class="nav-label">任务管理</span>
                         <span class="fa arrow"></span>
                     </a>
                     <ul class="nav nav-second-level collapse">
-                         <li>
+                        <li>
                             <a class="J_menuItem" href="{% url 'cashback:task_index' %}" data-index="0">我的任务</a>
                         </li>
                         <li>
                             <a class="J_menuItem" href="{% url 'cashback:index' %}" data-index="0">返现管理</a>
                         </li>
-                         <li>
+                        <li>
                             <a class="J_menuItem" href="{% url 'cashback:sms_index' %}" data-index="0">推送消息</a>
                         </li>
                     </ul>

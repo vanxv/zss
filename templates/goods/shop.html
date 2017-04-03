@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - Bootstrap Table</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/bootstrap-table/bootstrap-table.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
+ <!--    <base target="_blank"> -->
+
+</head>
+
+<body class="gray-bg">
+
+
+
+                    <div class="col-sm-12">
+                        <!-- Example Events -->
+                        <div class="example-wrap">
+                            <h4 class="example-title">我的店铺</h4>
+                            <div class="example">
+                                <div class="alert alert-success" id="examplebtTableEventsResult" role="alert">
+                                    事件结果
+                                </div>
+                                <div class="btn-group hidden-xs" id="exampleTableEventsToolbar" role="group">
+                                    <button type="button" class="btn btn-outline btn-default" data-toggle="modal" href="shop.html#modal-form">
+                                        <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+{#                            <a data-toggle="modal" class="btn btn-primary" href="shop.html#modal-form">增加店</a>#}
+                                    </button>
+                                    <button type="button" class="btn btn-outline btn-default">
+                                        <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <table id="exampleTableEvents" data-height="600" data-mobile-responsive="true">
+                                    <thead>
+                                        <tr>
+                                            <th data-field="state" data-checkbox="true"></th>
+                                            <th data-field="id">店铺名</th>
+                                            <th data-field="name">用户名</th>
+                                            <th data-field="price">类型</th>
+                                        </tr>
+                                    </thead>
+
+                                    {% for a in userid %}
+                                        <tr>
+                                            <td></td>
+
+                                            <td><a href="{% url 'good:shop_good' shop_id=a.id %}">{{ a.shopname }}</a></td>
+                                            <td>{{ a.sellername }}</td>
+                                         
+                                            <td>{{ a.platform }}</td>
+                                        </tr>
+                                    {% endfor %}  
+
+                                </table>
+                            </div>
+                        </div>
+                        <!-- End Example Events -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Panel Other -->
+    </div>
+                            <div id="modal-form" class="modal fade" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 b-r">
+                            <h3 class="m-t-none m-b">淘宝\天猫\1688店绑定</h3>
+
+                            <form role="form" action="." method="POST" id='tbform'>
+                                {% csrf_token %}
+                                
+                                <div class="form-group">
+                                    {{ tbform.your_name }}
+                                    <!-- <input type="text" placeholder="淘宝\天猫\1688账号" class="form-control"> -->
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-group">
+                                    {{ tbform.shop_name }}
+<!--                                     <input type="text" placeholder="淘宝店铺名(仅限淘宝店填写)" class="form-control">
+ -->                                </div>
+                                    <button class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit"><strong>完成添加</strong>
+                                    </button>
+                                    <label>
+                               
+                            </form>
+                                                   <form role="form" action="." method="POST" id='jdform'>
+                                                   {% csrf_token %}
+                                <div class="form-group">
+                                    <label>京东店绑定：</label>
+                                    {{ jdform.jdyour_name }}
+
+                                </div>
+                                                                <div class="form-group">
+
+                                    {{ jdform.jdshop_name }}
+                                   <!--  <input type="text" placeholder="请输入京东的店铺名" class="form-control"> -->
+                                </div>
+                                <div>
+                                    <button class="btn btn-sm btn-primary pull-left m-t-n-xs" type="submit" id="yz"><strong>完成添加</strong>
+                                    </button>
+                                    <label>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/content.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap-table/bootstrap-table.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap-table/bootstrap-table-mobile.min.js' %}"></script>
+    <script src="{% static 'js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js' %}"></script>
+    <script src="{% static 'js/demo/bootstrap-table-demo.min.js' %}"></script>
+
+
+    <script type="text/JavaScript" >
+
+
+$(document).ready(function() {
+        $.ajaxSetup({
+        data: {csrfmiddlewaretoken: '{{ csrf_token }}' },
+    });
+
+        $('#tbform').submit(function(){
+            $.ajax({
+                url:"/good/shop/",
+                type:'POST',
+                data:$('#tbform').serialize(),
+                dataType:"json",
+
+                success:function(msg){  
+
+                if (msg.msg=='b')   
+{  
+window.location.href="" 
+}                 
+                else {      
+                    alert(msg.msg)}
+                }
+            });
+             return false ;
+        }); 
+
+        $('#jdform').submit(function(){
+            $.ajax({
+                url:"/good/shop/",
+                type:'POST',
+                data:$('#jdform').serialize(),
+                dataType:"json",
+  
+                success:function(msg){   
+
+                if (msg.msg=='b')   
+{  
+window.location.href="" 
+}                 
+                else {      
+                    alert(msg.msg)}
+                }
+
+
+
+                
+            });
+             return false ;
+        }); 
+  
+  
+    }) 
+
+</script>
+
+</body>
+
+</html>
