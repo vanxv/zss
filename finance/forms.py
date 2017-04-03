@@ -46,3 +46,5 @@ class WithdrawForm(forms.ModelForm):
         if self.user:
             if self.user.balance < amount:
                 raise ValidationError('账户余额不足')
+
+        return amount

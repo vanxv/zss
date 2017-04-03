@@ -1,0 +1,40 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="{% static 'wechat/css/weui.css' %}" rel="stylesheet"/>
+    {#    <link href="{% static 'wechat/css/weui.css' %}" rel="stylesheet"/>#}
+</head>
+<body>
+
+<form id="mainForm" method="post" enctype="multipart/form-data">
+    {#    {% csrf_token %}#}
+    <input type="hidden" name="id" value="{{ id }}"/>
+    订单号：<input type="text" name="orderno"/>
+    微信账号：<input type="text" name="wechat"/>
+    支付宝账号：<input type="text" name="alipay"/>
+    截图：<input type="file" name="certificate"/>
+    提交：<input type="submit" id="submitBtn" value="提交"/>
+</form>
+
+<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.cookie.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/page/nature.ajax.js' %}"></script>
+
+<script type="text/javascript">
+    var formSubmit = Nature.FormSubmit;
+    ajaxInfo = {
+        url: "{% url 'wechat:activity' %}", //ajax请求url
+        isFormData: true,
+        processData: false,
+        contentType: false
+    }
+    formSubmit(ajaxInfo);
+</script>
+
+</body>
+</html>

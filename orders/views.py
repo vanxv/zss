@@ -40,7 +40,7 @@ class OrderManagerView(LoginRequiredMixin, View):
                 f.write(chunk)
 
         result = OrderService().import_orders(filename, request.user.id, platform)
-        return JSONResponse('导入成功' if result else '导入失败', success=result)
+        return JSONResponse(msg=result[1], success=result[0])
 
 
 class CreateOrderView(LoginRequiredMixin, View):
@@ -113,7 +113,7 @@ def get_orders(request):
     pagesize = int(request.GET.get('rows', 15))
     keyword = request.GET.get('keywords')
 
-    orders = Order.objects.filter(user=request.user)
+    orders = Order.objects.filter(seller_id=request.user.id)
     if keyword:
         orders = orders.filter(id__contains=keyword)  # 按订单号查询
     count = orders.count()  #

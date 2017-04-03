@@ -1,14 +1,10 @@
 import json
-
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
-
-# Create your views here.
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
-
 from crm.forms import CustomerForm
 from crm.models import Customer
 from libs.common.form import invalid_msg
@@ -75,7 +71,7 @@ def delete_customer(request):
         data = json.loads(request.body.decode())
         customer_ids = data.get('ids')
         # 删除买家
-        Customer.objects.filter(id__in=customer_ids, bid=request.user.id).delete()
+        Customer.objects.filter(id__in=customer_ids, seller_id=request.user.id).delete()
     except Exception as e:
         return JSONResponse(msg='删除失败！')
     return JSONResponse()
@@ -88,7 +84,7 @@ def get_customers(request):
     pagesize = int(request.GET.get('rows', 15))
     keyword = request.GET.get('keywords')
 
-    customers = Customer.objects.filter(bid=request.user.id)
+    customers = Customer.objects.filter(seller_id=request.user.id)
     if keyword:
         customers = customers.filter(tags__contains=keyword)  # 按标签查询
     count = customers.count()  # 总数

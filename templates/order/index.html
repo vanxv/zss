@@ -183,7 +183,7 @@
             $('#form_upload').ajaxSubmit({
                 success: function (data) {
                     if (data.retcode == '10000') {
-                        parent.layer.alert('导入成功！');
+                        parent.layer.alert(data.msg);
                         JucheapGrid.Reload();
                     }
                     else {

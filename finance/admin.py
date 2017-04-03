@@ -1,17 +1,16 @@
 from django.contrib import admin
 from django.contrib import messages
 from django.db.models import F
-
-from finance.models import FAccountTransferAudits, FOrder, OrderStatus, AuditStatus, FWalletBill
+from finance.models import FAccountTransferAudits, FOrder, OrderStatus, AuditStatus, FWalletBill, BillType_Display
 from datetime import datetime
-
-from users.models import AuthUser
 
 
 @admin.register(FAccountTransferAudits)
 class FAccountTransterAdmin(admin.ModelAdmin):
     list_per_page = 15
     list_display = ['id', 'transfertype', 'amount', 'seller', 'status', 'remark', 'add_time']
+    readonly_fields = ['certificate_img']
+    exclude = ['certificate']
 
     # list_display_links = ['id', 'city', 'type']
 
@@ -22,10 +21,11 @@ class FAccountTransterAdmin(admin.ModelAdmin):
 
         transfer_id = obj.id
         status = form.cleaned_data.get('status')
-        order = FOrder.objects.get(transfer_id=transfer_id)
+        order = FOrder.objects.get(relate_obj__in=['inpour', 'withdraw'], relate_id=transfer_id)
 
         if status == AuditStatus.Fail.value:  # 审核不通过
             order.orderstatus = OrderStatus.UnPaid.value
+
         if status == AuditStatus.Success.value:  # 审核通过
             order.orderstatus = OrderStatus.Paid.value
             order.paytime = datetime.now()
@@ -43,7 +43,7 @@ class FAccountTransterAdmin(admin.ModelAdmin):
             bill = FWalletBill()
             bill.user_id = obj.seller_id
             bill.order_id = order.id
-            bill.title = '账单'
+            bill.title = BillType_Display[obj.transfertype] + '账单'
             bill.billtype = obj.transfertype
             bill.amount = order.total_amount
             bill.balance = order.user.balance

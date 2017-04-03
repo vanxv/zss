@@ -5,7 +5,7 @@ from libs.utils.string_extension import get_uuid
 # Create your models here.
 
 class Customer(models.Model):
-    bid=models.IntegerField('商家id',null=True)  #与AuthUser表关联
+    seller_id=models.IntegerField('商家id', null=True)  #与AuthUser表关联
     username = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"用户名")
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
     mobile = models.CharField(max_length=11, verbose_name=u"手机号")

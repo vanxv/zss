@@ -1,0 +1,117 @@
+{% extends 'shared/_layout_content.html' %}
+{% load staticfiles %}
+
+{% block style %}
+    <link href="{% static 'css/plugins/iCheck/custom.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/plugins/steps/jquery.steps.css' %}">
+    <link href="{% static 'css/plugins/ztree/metroStyle.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/jqgrid/ui.jqgrid.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper wrapper-content">
+        <form id="form" method="post" action="{% url 'cashback:sms_add' %}">
+            {% csrf_token %}
+            <h1>填写内容</h1>
+            <fieldset>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <label class="control-label">短息内容</label>
+                            {{ form.content }}
+                            {% autoescape off %}
+                                {{ error.content }}
+                            {% endautoescape %}
+                            {% autoescape off %}
+                                {{ error.customers }}
+                            {% endautoescape %}
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="text-center">
+                            <div style="margin-top: 20px">
+                                <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <h1>选择会员</h1>
+            <fieldset>
+                <div class="jqGrid_wrapper">
+                    <table id="table_list"></table>
+                    <div id="pager_list"></div>
+                </div>
+                <input type="hidden" name="customers"/>
+            </fieldset>
+        </form>
+    </div>
+{% endblock %}
+
+{% block script %}
+    {% include 'include/jslist.html' %}
+
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/page/jucheap.action.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/staps/jquery.steps.min.js' %}"></script>
+
+
+    <script type=" text/javascript">
+        var form = $("#form").show();
+        $("#form").steps({
+            bodyTag: "fieldset",
+            onStepChanging: function (event, currentIndex, newIndex) {
+                if (currentIndex > newIndex) {
+                    return true
+                }
+                return true
+            }, onStepChanged: function (event, currentIndex, priorIndex) {
+                if (currentIndex === 2 && Number($("#age").val()) >= 18) {
+                    $(this).steps("next")
+                }
+                if (currentIndex === 2 && priorIndex === 3) {
+                    $(this).steps("previous")
+                }
+            },
+            onFinished: function (event, currentIndex) {
+                var form = $(this);
+                var res = JucheapGrid.GetAllSelected("table_list");
+                if (res.Len > 0) {
+                    userids = res.Data;
+                    $("input[name=customers]").val(userids);
+                }
+                else {
+                    parent.layer.alert("请选择会员！");
+                    return;
+                }
+                form.submit()
+            }
+        });
+    </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var config = {
+                title: '会员列表',
+                url: '{% url "crm:getcustomers" %}',
+                colNames: ['id', '用户名', '手机', '真实姓名', '标签', '地址'],
+                colModel: [
+                    {name: 'id', index: 'id', width: 60, key: true, hidden: true},
+                    {name: 'username', index: 'username', width: 60},
+                    {name: 'mobile', index: 'mobile', width: 60},
+                    {name: 'realname', index: 'realname', width: 60},
+                    {name: 'tags', index: 'tags', width: 60},
+                    {
+                        name: 'adderss', index: 'adderss', width: 60,
+                        formatter: function (cellValue, options, rowObject) {
+                            data = rowObject.address.split(' ')
+                            return data[0] + data[1]
+                        }
+                    },
+                ]
+            };
+            JucheapGrid.Load(config);
+        });
+    </script>
+{% endblock %}

@@ -43,6 +43,12 @@ class FAccountTransferAudits(models.Model):
         verbose_name = '充值&提现'
         verbose_name_plural = '充值&提现列表'
 
+    def certificate_img(self):
+        return '<img src="%s" />' % self.certificate
+
+    certificate_img.short_description = '截图'
+    certificate_img.allow_tags = True
+
     def to_dict(self):
         return {
             'id': self.id,
@@ -77,8 +83,8 @@ class OrderStatus(Enum):
 class FOrder(models.Model):
     id = models.CharField('订单号', primary_key=True, max_length=40)
     user = models.ForeignKey(AuthUser, verbose_name='用户')
-    relateobj = models.CharField('关联对象', max_length=20, blank=True, null=True)
-    transfer = models.ForeignKey(FAccountTransferAudits, verbose_name='关联交易', null=True)
+    relate_obj = models.CharField('关联对象', max_length=20, blank=True, null=True)
+    relate_id = models.IntegerField('关联交易', null=True)
     total_amount = models.DecimalField('总金额(元)', max_digits=18, decimal_places=2, blank=True, null=True)
     paytype = models.CharField('支付方式', max_length=20, blank=True, null=True)
     transaction_id = models.CharField('第三方交易号', max_length=40, blank=True, null=True)
@@ -99,6 +105,13 @@ class BillType(Enum):
 
 # billtype=namedtuple('BillType',['income','expand','inpour','withdraw'])
 # billtype({'income':'income'})
+
+BillType_Display = {
+    'inpour': '充值',
+    'withdraw': '提现',
+    'cashback': '返现'
+}
+
 
 class FWalletBill(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name='用户')

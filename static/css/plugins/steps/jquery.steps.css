@@ -137,9 +137,10 @@
     background: #eee;
     display: block;
     margin: 5px 5px 10px 5px;
-    min-height: 120px;
+    /*min-height: 120px;*/
+    /*min-height: 45em;*/
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
     width: auto;
 
     -webkit-border-radius: 5px;
@@ -148,7 +149,7 @@
 }
 
 .wizard-big.wizard > .content {
-    min-height: 320px;
+    min-height: 700px;
 }
 .wizard.vertical > .content
 {

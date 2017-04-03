@@ -17,34 +17,6 @@
                 <li>
                     <a href="#">
                         <i class="fa fa-tv"></i>
-                        <span class="nav-label">系统设置</span>
-                        <span class="fa arrow"></span>
-                    </a>
-                    <ul class="nav nav-second-level collapse">
-                        <li>
-                            <a class="J_menuItem" href="/Menu/Index" data-index="0">菜单管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/Department/Index" data-index="0">部门管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/Role/Index" data-index="0">角色管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/User/Index" data-index="0">用户管理</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/Role/Authen" data-index="0">角色授权</a>
-                        </li>
-                        <li>
-                            <a class="J_menuItem" href="/System/Index" data-index="0">系统配置</a>
-                        </li>
-                    </ul>
-
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-tv"></i>
                         <span class="nav-label">会员管理</span>
                         <span class="fa arrow"></span>
                     </a>
@@ -69,6 +41,24 @@
                         </li>
                         <li>
                             <a class="J_menuItem" href="{% url 'finance:wallet_index' %}" data-index="0">我的钱包</a>
+                        </li>
+                    </ul>
+                </li>
+                 <li>
+                    <a href="#">
+                        <i class="fa fa-tv"></i>
+                        <span class="nav-label">任务管理</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                         <li>
+                            <a class="J_menuItem" href="{% url 'cashback:task_index' %}" data-index="0">我的任务</a>
+                        </li>
+                        <li>
+                            <a class="J_menuItem" href="{% url 'cashback:index' %}" data-index="0">返现管理</a>
+                        </li>
+                         <li>
+                            <a class="J_menuItem" href="{% url 'cashback:sms_index' %}" data-index="0">推送消息</a>
                         </li>
                     </ul>
                 </li>

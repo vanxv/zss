@@ -1,0 +1,162 @@
+{% extends 'shared/_layout_content.html' %}
+{% load staticfiles %}
+
+{% block style %}
+    <link href="{% static 'css/plugins/iCheck/custom.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/plugins/steps/jquery.steps.css' %}">
+    <link href="{% static 'css/plugins/ztree/metroStyle.css' %}" rel="stylesheet">
+    <link href="{% static 'css/plugins/jqgrid/ui.jqgrid.css' %}" rel="stylesheet"/>
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper wrapper-content">
+    <form id="form" method="post" action="{% url 'cashback:task_edit' %}">
+        {% csrf_token %}
+        <h1>基本信息</h1>
+        <fieldset>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="form-group">
+                        <label class="control-label">任务名称</label>
+                        {{ form.name }}
+                        {% autoescape off %}
+                            {{ error.name }}
+                        {% endautoescape %}
+                    </div>
+                    <div class="form-group">
+                        <label>返现金额</label>
+                        {{ form.amount }}
+                        {% autoescape off %}
+                            {{ error.amount }}
+                        {% endautoescape %}
+                    </div>
+                    <div class="form-group">
+                        <label>活动人数 </label>
+                        {{ form.max_count }}
+                        {% autoescape off %}
+                            {{ error.max_count }}
+                        {% endautoescape %}
+                    </div>
+                    <div class="form-group">
+                        <label>截止时间 </label>
+                        {{ form.expiretime }}
+                        {% autoescape off %}
+                            {{ error.expiretime }}
+                        {% endautoescape %}
+                    </div>
+                    <div class="form-group">
+                        <label>备注 </label>
+                        {{ form.remark }}
+                        {% autoescape off %}
+                            {{ error.remark }}
+                        {% endautoescape %}
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" name="id" value="{{ id }}"/>
+                        <input type="hidden" name="products"/>
+                        {# <input type="hidden" name="customers"/>#}
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <div style="margin-top: 20px">
+                            <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+        <h1>选择商品</h1>
+        <fieldset>
+            <div class="row">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        商品列表
+                    </div>
+                    <div class="panel-body">
+                        <ul id="productTree" class="ztree"></ul>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <h1>选择会员</h1>
+        <fieldset>
+            {#                            <div class="text-center" style="margin-top: 120px">#}
+            {#                        <div class="jqGrid_wrapper">#}
+            {#                            <table id="table_list"></table>#}
+            {#                            <div id="pager_list"></div>#}
+            {#                        </div>#}
+            {#                            </div>#}
+        </fieldset>
+    </form>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    {% include 'include/jslist.html' %}
+
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/page/jucheap.action.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/layer/laydate/laydate.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/staps/jquery.steps.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/plugins/ztree/jquery.ztree.all.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/page/product.js' %}"></script>
+
+    <script type=" text/javascript">
+        var form = $("#form").show();
+
+        $("#form").steps({
+            bodyTag: "fieldset",
+            onStepChanging: function (event, currentIndex, newIndex) {
+                if (currentIndex > newIndex) {
+                    return true
+                }
+                return true
+            }, onStepChanged: function (event, currentIndex, priorIndex) {
+                if (currentIndex === 2 && Number($("#age").val()) >= 18) {
+                    $(this).steps("next")
+                }
+                if (currentIndex === 2 && priorIndex === 3) {
+                    $(this).steps("previous")
+                }
+            }, onFinishing: function (event, currentIndex) {
+                var form = $(this);
+                {#                form.validate().settings.ignore = ":disabled";#}
+                return true
+            }, onFinished: function (event, currentIndex) {
+                var form = $(this);
+
+                var products = getCheckProduct();
+                if (products) {
+                    $("input[name=products]").val(products);
+                }
+                else {
+                    return;
+                }
+                {##}
+                {#                res = JucheapGrid.GetAllSelected("table_list");#}
+                {#                if (res.Len > 0) {#}
+                {#                    userids = res.Data;#}
+                {#                    $("input[name=customers]").val(userids);#}
+                {#                }#}
+                {#                else {#}
+                {#                    parent.layer.alert("请选择会员！");#}
+                {#                    return;#}
+                {#                }#}
+
+                form.submit()
+            }
+        });
+    </script>
+
+    <script type=" text/javascript">
+        laydate({
+            elem: '#id_expiretime', //目标元素。
+            format: 'YYYY-MM-DD hh:mm:ss', //日期格式
+            istime: true, //是否开启时间选择
+        });
+
+    </script>
+{% endblock %}

@@ -33,6 +33,23 @@ class AuthUser(AbstractUser):
         return self.username
 
 
+class AuthPlatformUser(models.Model):
+    user_id = models.IntegerField(blank=True, null=True)
+    nickname = models.CharField(max_length=40, blank=True, null=True)
+    avatar = models.CharField(max_length=200, blank=True, null=True)
+    platform = models.CharField(max_length=20, blank=True, null=True)
+    openid = models.CharField(max_length=200, blank=True, null=True)
+    unionid = models.CharField(max_length=200, blank=True, null=True)
+    access_token = models.CharField(max_length=200, blank=True, null=True)
+    refresh_token = models.CharField(max_length=200, blank=True, null=True)
+    expiretime = models.DateTimeField(blank=True, null=True)
+    profileurl = models.CharField(max_length=200, blank=True, null=True)
+    ts = models.DateTimeField(blank=True, null=True, auto_now=True)
+
+    class Meta:
+        db_table = 'auth_platform_user'
+
+
 class buyscore(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     scoregood = models.IntegerField(default='0', verbose_name=u'好评数')

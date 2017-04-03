@@ -5,13 +5,12 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render, redirect
 from django.views import View
 from finance.forms import WithdrawForm, InpourForm
-from finance.models import FWalletBill, FAccountTransferAudits, FOrder, AuditStatus, OrderStatus
+from finance.models import FWalletBill, FAccountTransferAudits
+from finance.services.finance import FinanceService
 from libs.common.form import invalid_msg
+from libs.common.helper import save_file
 from libs.utils.response import paged_result
-from datetime import datetime
 import os
-import time
-
 
 class AccountManagerView(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
@@ -47,41 +46,12 @@ class AccountInpourView(LoginRequiredMixin, View):
         if len(errors.keys()) > 0:
             return render(request, self.template_name, {'error': errors, 'form': form})
 
-        now = datetime.now()
-        relate_path = os.path.join(str(now.year), str(now.month), str(now.day))
-        filename = str(int(time.time())) + extensions
+        filename = save_file(file)  # 保存文件
 
-        filedir = os.path.join(settings.MEDIA_ROOT, relate_path)
-        if not os.path.exists(filedir):
-            os.makedirs(filedir)
-
-        with open(os.path.join(filedir, filename), 'wb+') as f:
-            for chunk in file.chunks():
-                f.write(chunk)
-
-        filename = (settings.MEDIA_URL + relate_path + filename).replace('\\', '/')
-
-        try:
-            with transaction.atomic():  # 启用事务提交
-                transfer = form.save(commit=False)
-                transfer.transfertype = 'inpour'
-                transfer.certificate = filename
-                transfer.seller_id = request.user.id
-                transfer.status = AuditStatus.Processing.value
-                transfer.save()
-
-                order = FOrder()
-                order.id = datetime.now().strftime('%Y%m%d') + str(int(datetime.utcnow().timestamp()))
-                order.user_id = request.user.id
-                order.relateobj = transfer.transfertype
-                order.transfer_id = transfer.id
-                order.total_amount = transfer.amount
-                order.orderstatus = OrderStatus.UnPaid.value
-                order.save()
-        except Exception as ex:
-            errors['amount'] = invalid_msg.format('保存失败！')
-            return render(request, self.template_name, {'error': errors, 'form': form})
-
+        service = FinanceService(form.save(commit=False))
+        result = service.inpour(request.user.id, filename)
+        if not result:
+            return render(request, self.template_name, {'error': {'amount': invalid_msg.format('保存失败！')}, 'form': form})
         return redirect('finance:account_index')
 
 
@@ -94,32 +64,15 @@ class AccountWithDrawView(LoginRequiredMixin, View):
         return render(request, self.template_name, {'form': form})
 
     def post(self, request, *args, **kwargs):
-        errors = {}
         form = WithdrawForm(data=request.POST, user=request.user)
         if not form.is_valid():
             errors = {key: invalid_msg.format(value[0]) for key, value in form.errors.items()}
             return render(request, self.template_name, {'error': errors, 'form': form})
 
-        try:
-            with transaction.atomic():  # 启用事务提交
-                transfer = form.save(commit=False)
-                transfer.transfertype = 'withdraw'
-                transfer.seller_id = request.user.id
-                transfer.status = AuditStatus.Processing.value
-                transfer.save()
-
-                order = FOrder()
-                order.id = datetime.now().strftime('%Y%m%d') + str(int(datetime.utcnow().timestamp()))
-                order.user_id = request.user.id
-                order.relateobj = transfer.transfertype
-                order.transfer_id = transfer.id
-                order.total_amount = transfer.amount
-                order.orderstatus = OrderStatus.UnPaid.value
-                order.save()
-        except Exception as ex:
-            errors['amount'] = invalid_msg.format('保存失败！')
-            return render(request, self.template_name, {'error': errors, 'form': form})
-
+        service = FinanceService(form.save(commit=False))
+        result = service.withdraw(request.user.id)
+        if not result:
+            return render(request, self.template_name, {'error': {'amount': invalid_msg.format('保存失败！')}, 'form': form})
         return redirect('finance:account_index')
 
 

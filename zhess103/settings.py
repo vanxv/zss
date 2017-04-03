@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'goods',
     'orders',
     'finance',
+    'cashback',
+    'wechat',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 
@@ -51,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -137,3 +139,12 @@ MEDIA_ROOT = TO_ABS_PATH('media')
 
 # 支付宝收款账号
 ALIPAY_ACCOUNT = '13812345678'
+
+
+# 微信公众平台配置
+WECHAT_APP_ID = '***************'
+WECHAT_APP_SECRET = '********************'
+WECHAT_MCH_ID = '**************'
+WECHAT_KEY = '****************'
+WECHAT_APP_TOKEN = 'weixin'
+WECHAT_ENCODINGAESKEY = '*****************'
