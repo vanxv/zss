@@ -1,0 +1,351 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>好评返现</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        *:focus {
+            outline: none;
+        }
+
+        .cl {
+            zoom: 1;
+        }
+
+        .cl:before,
+        .cl:after {
+            content: "";
+            display: table;
+        }
+
+        .cl:after {
+            clear: both;
+        }
+
+        .reward-header img {
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        .order-number-wrap {
+            text-align: center;
+        }
+
+        .order-number-wrap label {
+            color: #d75a47;
+        }
+
+        .order-number-wrap input {
+            margin-top: 10px;
+            border: 2px solid #d75a47;
+            border-radius: 4px;
+            line-height: 26px;
+            padding: 5px;
+            font-size: 15px;
+            width: 240px;
+            text-align: center;
+        }
+
+        .img-field {
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+        }
+
+        .showimg-list {
+            margin-top: 30px;
+        }
+
+        .showimg-item {
+            list-style: none;
+            float: left;
+            width: 33.3%;
+            box-sizing: border-box;
+            padding: 0 10px;
+            position: relative;
+            text-align: center;
+        }
+
+        .showimg-item label {
+            display: block;
+        }
+
+        .showimg-item .flag {
+            position: absolute;
+            left: 50%;
+            margin-left: -16px;
+            width: 40px;
+            height: 40px;
+            top: -20px;
+        }
+
+        .img-container {
+            width: 100%;
+            height: 140px;
+            overflow: hidden;
+        }
+
+        .img-container img {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        .imgupload-btn {
+            border: 1px solid #d75a47;
+            border-radius: 4px;
+            color: #d75a47;
+            padding: 4px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .action-bar {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .submit-btn {
+            background: #d75a47;
+            display: inline-block;
+            color: #fff;
+            border: none;
+            width: 240px;
+            height: 48px;
+            line-height: 48px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            letter-spacing: .8px;
+            font-size: 18px;
+            transition: all .3s;
+            /*  -webkit-box-shadow: 0px 0px 0px 1px #8d1b27 inset, 0px 0px 0px 2px #dd4356 inset, 0px 4px 0px 0px #8d1b27, 0px 5px 0px 0px #65141c, 0px 8px 0px 0px rgba(0,0,0,.15);
+              box-shadow: 0px 0px 0px 1px #8d1b27 inset, 0px 0px 0px 2px #dd4356 inset, 0px 4px 0px 0px #8d1b27, 0px 5px 0px 0px #65141c, 0px 8px 0px 0px rgba(0,0,0,.15);*/
+        }
+
+        .submit-btn:active {
+            /*background-color: #d54e3b;
+            -webkit-box-shadow: 0px 0px 0px 1px #b24132 inset, 0px 0px 0px 2px #ea624a inset, 0px 1px 0px 0px #a53c2e, 0px 3px 0px 0px rgba(0,0,0,.15);
+            box-shadow: 0px 0px 0px 1px #b24132 inset, 0px 0px 0px 2px #ea624a inset, 0px 1px 0px 0px #a53c2e, 0px 3px 0px 0px rgba(0,0,0,.15);*/
+        }
+
+        .msg-box {
+            position: fixed;
+            display: none;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+
+        .msg-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            width: 200px;
+            padding: 4px;
+            text-align: center;
+            min-height: 40px;
+            line-height: 40px;
+            height: auto;
+            background: #fff;
+            border-radius: 6px;
+        }
+
+    </style>
+</head>
+<body>
+<header class="reward-header">
+    <img src="{% static 'wechat/img/title-bg.png' %}" alt="">
+</header>
+<main>
+    <form name="commentForm">
+        <div class="order-number-wrap">
+            <!-- <label for="order-number">购物订单号</label> -->
+            <input type="text" id="order-number" name="orderNum" placeholder="请输入订单号">
+            <input type="text" id="wechat" name="wechat" placeholder="请输入微信">
+            <input type="text" id="alipay" name="alipay" placeholder="请输入支付宝账号">
+        </div>
+        <ul class="showimg-list cl">
+            <li class="showimg-item">
+                <input type="file" name="commentPic" class="img-field" id="comment-field"
+                       onchange="readPic('comment')" accept="image/*">
+                <label for="comment-field" class="img-container">
+                    <img src="{% static 'wechat/img/pingjia.png' %}" alt="" id="comment-img">
+                </label>
+                <label for="comment-field" class="imgupload-btn" id="comment-tip">
+                    +评价截图
+                </label>
+                <img src="{% static 'wechat/img/exa-flag.png' %}" alt="" class="flag" id="comment-flag">
+            </li>
+            <li class="showimg-item">
+                <input type="file" name="showPic1" class="img-field" id="showpic1-field"
+                       onchange="readPic('showpic1')" accept="image/*">
+                <label for="showpic1-field" class="img-container">
+                    <img src="{% static 'wechat/img/xiu1.jpg' %}" alt="" id="showpic1-img">
+                </label>
+                <label for="showpic1-field" class="imgupload-btn" id="showpic1-tip">
+                    +买家秀1
+                </label>
+                <img src="{% static 'wechat/img/exa-flag.png' %}" alt="" class="flag" id="showpic1-flag">
+            </li>
+            <li class="showimg-item">
+                <input type="file" name="showPic2" class="img-field" id="showpic2-field"
+                       onchange="readPic('showpic2')" accept="image/*">
+                <label for="showpic2-field" class="img-container">
+                    <img src="{% static 'wechat/img/xiu2.jpg' %}" alt="" id="showpic2-img">
+                </label>
+                <label for="showpic2-field" class="imgupload-btn" id="showpic2-tip">
+                    +买家秀2
+                </label>
+                <img src="{% static 'wechat/img/exa-flag.png' %}" alt="" class="flag" id="showpic2-flag">
+            </li>
+        </ul>
+        <div class="action-bar">
+            <a href="javascript:;" class="submit-btn" id="submit-btn">立即提交</a>
+        </div>
+    </form>
+</main>
+<div id="msg-box" class="msg-box">
+    <div class="msg-content" id="msg-content">
+
+    </div>
+</div>
+
+<script>
+    // 正在提交
+    submitNow = false;
+
+    function So(selector) {
+        return document.getElementById(selector);
+    }
+
+    var orderNum = So('order-number');
+    var wechat_account = So('wechat');
+    var alipay_account = So('alipay');
+    // 数据提交
+    So('submit-btn').onclick = function () {
+        var checkResult = dataCheck();
+        var _form = document.commentForm;
+        if (checkResult === true) {
+            submitNow = true;
+
+            formDataAjax('/m/', {
+                id:{{ id }},
+                wechat: wechat_account.value,
+                alipay: alipay_account.value,
+                orderno: orderNum.value,
+                commentpic: So('comment-field').files[0],
+                showpic1: So('showpic1-field').files[0],
+                showpic2: So('showpic2-field').files[0],
+            }, function (data) {
+                if (data.retcode == "10001") {
+                    showMsg(data.msg);
+                }
+                else {
+                    showMsg('提交成功');
+                }
+                submitNow = false;
+                {#                _form.reset();#}
+            }, function () {
+                showMsg('提交失败');
+                submitNow = false;
+            })
+        }
+        else {
+            showMsg(checkResult);
+        }
+    }
+
+    // 点击遮罩隐藏提示信息(正在提交数据除外)
+    So('msg-box').onclick = function () {
+        if (!submitNow) {
+            hideMsg();
+        }
+    }
+
+    // formdata方式提交数据
+    function formDataAjax(url, data, successFn, errorFn) {
+        var formData = new FormData();
+        var xhr = new XMLHttpRequest();
+        for (var item in data) {
+            formData.append(item, data[item]);
+        }
+        xhr.open('POST', url, true);
+        xhr.send(formData);
+        showMsg('数据提交中,请稍候...');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                if (xhr.status == 200) {
+                    var res = JSON.parse(xhr.responseText);
+                    successFn && successFn(res);
+                } else {
+                    errorFn && errorFn();
+                }
+            }
+        }
+    }
+
+    // 数据校验
+    function dataCheck() {
+        var _form = document.commentForm;
+        if (orderNum.value === '' || orderNum.value.trim() === '') {
+            return '请输入订单号';
+        }
+        if (wechat_account.value === '' && alipay_account.value === '') {
+            return '请输入微信或支付宝账号';
+        }
+        else if (!So('comment-field').files[0]) {
+            return '评价截图不能为空';
+        }
+{#        else if (!(So('showpic1-field').files[0] && So('showpic2-field').files[0])) {#}
+{#            return '至少需要两张买家秀';#}
+{#        }#}
+        return true;
+    }
+
+    // data方式读取选择的图片实现预览
+    function readPic(preId) {
+        var _picid = preId + '-img';
+        var _inputId = preId + '-field';
+        var _tipId = preId + '-tip';
+        var _flagId = preId + '-flag';
+        var file = So(_inputId).files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            So(_tipId).innerHTML = '加载中...';
+            reader.onload = function (e) {
+                So(_picid).src = this.result;
+                So(_tipId).innerHTML = '√ OK';
+                So(_flagId).style.display = 'none';
+            }
+        }
+    }
+
+    // 显示提示信息
+    function showMsg(msg) {
+        So('msg-box').style.display = 'block';
+        So('msg-content').innerHTML = msg;
+    }
+
+    // 隐藏遮罩
+    function hideMsg() {
+        So('msg-box').style.display = 'none';
+    }
+</script>
+</body>
+</html>

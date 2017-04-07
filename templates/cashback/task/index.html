@@ -1,4 +1,4 @@
-{% extends 'shared/_layout_content.html' %}
+{% extends 'base/_layout_content.html' %}
 {% load staticfiles %}
 
 {% block style %}
@@ -80,11 +80,17 @@
             var config = {
                 title: '返现任务列表',
                 url: '{% url "cashback:getcashbacktasks" %}',
-                colNames: ['id', '任务名称', '返现金额', '截止时间', '创建时间'],
+                colNames: ['id', '任务名称', '返现金额', '微信url', '截止时间', '创建时间'],
                 colModel: [
-                    {name: 'id', index: 'id', width: 60, key: true, hidden: true},
+                    {name: 'id', index: 'id', width: 30, key: true, hidden: true},
                     {name: 'name', index: 'name', width: 60},
-                    {name: 'amount', index: 'amount', width: 60},
+                    {name: 'amount', index: 'amount', width: 30},
+                    {
+                        name: 'url', index: 'url', width: 60,
+                        formatter: function (cellValue, options, rowObject) {
+                            return 'http://test.com/m/?activityid=' + rowObject.id;
+                        }
+                    },
                     {name: 'expiretime', index: 'expiretime', width: 60},
                     {name: 'add_time', index: 'add_time', width: 60}
                 ]

@@ -1,4 +1,4 @@
-{% extends 'shared/_layout_content.html' %}
+{% extends 'base/_layout_content.html' %}
 {% load staticfiles %}
 
 {% block content %}
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">凭证：</label>
+                        <label class="col-sm-3 control-label">好评截图：</label>
                         <div class="col-sm-8">
                             <div class="photos">
                                 <a target="_blank"
@@ -67,6 +67,34 @@
                             {#                            <input type="text" class="form-control" disabled value="{{ model.certificate }}"/>#}
                         </div>
                     </div>
+                    {% if model.showpic1 %}
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">买家秀：</label>
+                            <div class="col-sm-8">
+                                <div class="photos">
+                                    <a target="_blank"
+                                       href="{{ MEDIA_URL }}{{ model.showpic1 }}">
+                                        <img alt="image" class="feed-photo"
+                                             src="{{ MEDIA_URL }}{{ model.showpic1 }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                    {% if model.showpic2 %}
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">买家秀：</label>
+                            <div class="col-sm-8">
+                                <div class="photos">
+                                    <a target="_blank"
+                                       href="{{ MEDIA_URL }}{{ model.showpic2 }}">
+                                        <img alt="image" class="feed-photo"
+                                             src="{{ MEDIA_URL }}{{ model.showpic2 }}">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                     <div class="form-group">
                         <label class="col-sm-3 control-label">状态：</label>
                         <div class="col-sm-8">

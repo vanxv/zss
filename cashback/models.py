@@ -72,6 +72,8 @@ class Cashback(models.Model):
     orderno = models.CharField('订单号', max_length=100, null=True, blank=True)
     amount = models.DecimalField('返现金额', null=True, blank=True, max_digits=18, decimal_places=2)
     certificate = models.CharField('好评凭证', max_length=200, null=True, blank=True)
+    showpic1 = models.CharField('买家秀', max_length=200, null=True, blank=True)
+    showpic2 = models.CharField('买家秀', max_length=200, null=True, blank=True)
     status = models.IntegerField('状态', choices=CASHBACK_CHOICES, null=True)
     add_time = models.DateTimeField('创建时间', default=datetime.now)
 

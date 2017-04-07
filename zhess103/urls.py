@@ -23,13 +23,10 @@ from django.views.static import serve
 
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
-    url(r'^login/', LoginView.as_view(), name='login'),
-    url(r'^register/', RegisterView.as_view(), name='register'),
     url(r'^admin/', admin.site.urls),
 
-    # url(r'^shop/', TemplateView.as_view(template_name="shop.html")),
     url(r'^good/', include('goods.urls', namespace='good')),
-    url(r'^user/', include('users.urls', namespace='user')),
+    # url(r'^user/', include('users.urls', namespace='user')),
     url(r'^order/', include('orders.urls', namespace='order')),
     url(r'^crm/', include('crm.urls', namespace='crm')),
     url(r'^finance/', include('finance.urls', namespace='finance')),
@@ -37,12 +34,15 @@ urlpatterns = [
 
     url(r'm/', include('wechat.urls', namespace='wechat')),
 
+    url(r'^login/', LoginView.as_view(), name='login'),
+    url(r'^register/', RegisterView.as_view(), name='register'),
+    url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
 
     # url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
     # url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
 
-    url(r'^$', TemplateView.as_view(template_name="index.html"), name='home'),
+    url(r'^$', index, name='home'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用

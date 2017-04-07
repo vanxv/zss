@@ -12,7 +12,7 @@ def request_validate(serializer_form):
     def decorator(func):
         @wraps(func)
         def wrapper(self, request, *args, **kwargs):
-            form = serializer_form(request.POST)
+            form = serializer_form(request.POST,request.FILES)
             if not form.is_valid():
                 error_string = [value[0] for key, value in form.errors.items()][0]
                 return JSONError(error_string)

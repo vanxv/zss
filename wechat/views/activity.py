@@ -7,6 +7,7 @@ from libs.utils.http import JSONError, JSONResponse
 from wechat.forms import ActivityForm
 import os
 
+
 class ActivityView(View):
     template_name = 'wechat/activity.html'
 
@@ -18,20 +19,16 @@ class ActivityView(View):
 
     @request_validate(ActivityForm)
     def post(self, request, *args, **kwargs):
-        file = request.FILES.get('certificate')
         form = kwargs.pop('form')
+        commentpic = form.cleaned_data.get('commentpic')
+        showpic1 = form.cleaned_data.get('showpic1')
+        showpic2 = form.cleaned_data.get('showpic2')
 
-        error_msg = None
-        if not file:
-            error_msg = '请上传截图'
-        else:
-            extensions = os.path.splitext(file.name)[1].lower()
-            if extensions not in ['.png', '.jpg', '.bmp']:
-                error_msg = '图片格式错误'
-        if error_msg:
-            return JSONError(error_msg)
-
-        filename = save_file(file)  # 保存文件
+        commentpic = save_file(commentpic)  # 保存文件
+        if showpic1:
+            showpic1 = save_file(showpic1)
+        if showpic2:
+            showpic2 = save_file(showpic2)
 
         cashback = Cashback()
         cashback.task_id = form.cleaned_data.get('id')
@@ -41,7 +38,9 @@ class ActivityView(View):
         cashback.alipay = form.cleaned_data.get('alipay')
         cashback.orderno = form.cleaned_data.get('orderno')
         cashback.amount = form.task.amount
-        cashback.certificate = filename
+        cashback.certificate = commentpic
+        cashback.showpic1 = showpic1
+        cashback.showpic2 = showpic2
         cashback.status = CashbackStatus.Processing.value
         cashback.save()
 

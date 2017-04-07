@@ -2,68 +2,67 @@
 <html>
 {% load staticfiles %}
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
     <title>H+ 后台主题UI框架 - 注册</title>
     <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
     <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
-    <link rel="shortcut icon" href="favicon.ico"> <link href="/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
-    <link href="{% static 'css/font-awesome.min.css?v=4.4.0'%}" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="/static/css/bootstrap.min.css?v=3.3.5" rel="stylesheet">
+    <link href="{% static 'css/font-awesome.min.css?v=4.4.0' %}" rel="stylesheet">
 
-
-    <link href="{% static 'css/plugins/iCheck/custom.css'%}" rel="stylesheet">
-    <link href="{% static 'css/animate.min.css'%}" rel="stylesheet">
-    <link href="{% static 'css/style.min.css'%}" rel="stylesheet"><base target="_blank">
-    <script>if(window.top !== window.self){ window.top.location = window.location;}</script>
+    <link href="{% static 'css/plugins/iCheck/custom.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.min.css' %}" rel="stylesheet">
 
 </head>
 
 <body class="gray-bg">
-
-    <div class="middle-box text-center loginscreen   animated fadeInDown">
+<div class="middle-box text-center loginscreen   animated fadeInDown">
+    <div>
         <div>
-            <div>
-
-                <h1 class="logo-name">H+</h1>
-
-            </div>
-            <h3>欢迎注册 H+</h3>
-            <p>创建一个H+新账户</p>
-                <form method="post" action="/register/">
-                    <div class="form-group">
-                    <input name="username" type="text" class="form-control" placeholder="请输入用户名" required="">
-                </div>
-                <div class="form-group">
-                    <input name="password" type="password" class="form-control" placeholder="请输入密码" required="">
-                </div>
-                <div class="form-group">
-                    <input name="password2" type="password" class="form-control" placeholder="请再次输入密码" required="">
-                </div>
-                <div class="form-group text-left">
-                    <div class="checkbox i-checks">
-                        <label class="no-padding">
-                            <input type="checkbox"><i></i> 我同意注册协议</label>
-                    </div>
-                </div>
-                <div class="error btns login-form-tips" id="jsLoginTips">{{ msg }}</div>
-
-                <button type="submit" class="btn btn-primary block full-width m-b">注 册</button>
-
-                <p class="text-muted text-center"><small>已经有账户了？</small><a href="/login/">点此登录</a>
-                </p>
-            {% csrf_token %}
-            </form>
+            <h1 class="logo-name">H+</h1>
         </div>
+        <h3>欢迎注册 H+</h3>
+        <p></p>
+        <form method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            <div class="form-group">
+                <input name="username" type="text" class="form-control" placeholder="请输入用户名" required="">
+            </div>
+            <div class="form-group">
+                <input name="password" type="password" class="form-control" placeholder="请输入密码" required="">
+            </div>
+            <div class="form-group">
+                <input name="password2" type="password" class="form-control" placeholder="请再次输入密码" required="">
+            </div>
+            {#            <div class="form-group text-left">#}
+            {#                <div class="checkbox i-checks">#}
+            {#                    <label class="no-padding">#}
+            {#                        <input type="checkbox"><i></i> 我同意注册协议#}
+            {#                    </label>#}
+            {#                </div>#}
+            {#            </div>#}
+            <div class="error btns login-form-tips" id="jsLoginTips">
+                {{ msg }}
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b">注 册</button>
+            <p class="text-muted text-center">
+                <small>已经有账户了？</small>
+                <a href={% url 'login' %}>点此登录</a>
+            </p>
+        </form>
     </div>
-    <script src="{% static 'js/jquery.min.js?v=2.1.4' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js?v=3.3.5' %}"></script>
-    <script src="{% static 'js/plugins/iCheck/icheck.min.js' %}"></script>
-    <script>
-        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
-    </script>
+</div>
+<script src="{% static 'js/jquery.min.js?v=2.1.4' %}"></script>
+<script src="{% static 'js/bootstrap.min.js?v=3.3.5' %}"></script>
+<script src="{% static 'js/plugins/iCheck/icheck.min.js' %}"></script>
+<script>
+    $(document).ready(function () {
+        $(".i-checks").iCheck({checkboxClass: "icheckbox_square-green", radioClass: "iradio_square-green",})
+    });
+</script>
 {#    <script type="{% static 'text/javascript' %}" src="http://tajs.qq.com/stats?sId=9051096" charset="UTF-8"></script>#}
 </body>
 

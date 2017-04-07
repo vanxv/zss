@@ -1,4 +1,4 @@
-{% extends 'shared/_layout.html' %}
+{% extends 'base/_layout.html' %}
 {% load staticfiles %}
 
 {% block content %}
@@ -14,7 +14,7 @@
                     {{ request.user.username }}
                 </li>
                 <li class="hidden-xs">
-                    <a href=""><i class="fa fa fa-sign-out"></i> 退出</a>
+                    <a href="{% url 'logout' %}"><i class="fa fa fa-sign-out"></i> 退出</a>
                 </li>
             </ul>
         </nav>

@@ -28,7 +28,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 AUTHENTICATION_BACKENDS = (
-    'users.views.CustomBackend',
+    'users.backends.CustomBackend',
 )
 
 INSTALLED_APPS = [
@@ -132,6 +132,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+# STATIC_ROOT = TO_ABS_PATH('static')
+
 # ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
 
 MEDIA_URL = '/media/'
