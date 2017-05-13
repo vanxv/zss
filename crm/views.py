@@ -22,16 +22,7 @@ class CustomerManagerView(LoginRequiredMixin, View):
 
     def post(self, request, *args, **kwargs):
         pass
-        # form = CustomerForm(request.POST)
-        # if not form.is_valid():
-        #     errors = {key: invalid_msg.format(value[0]) for key, value in form.errors.items()}
-        #     return render(request, self.template_name, {'error': errors, 'form': form})
-        # # 保存
-        # user = get_object_or_404(Customer, bid=request.user.id)
-        # user.tags = form.cleaned_data.get('tags')
-        # user.save()
-        #
-        # return redirect('user:index')
+
 
 
 class UpdateCustomerView(LoginRequiredMixin, View):

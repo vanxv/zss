@@ -22,7 +22,13 @@
 
 <body class="gray-bg">
 
-
+    <form method="post" action="/good/GoodIndexAdd/">
+    {% csrf_token %}
+    <div class="input-group">
+        <input id="txtIndexAddUrl" type="text" class="form-control">
+        <input type="submit" value="Submit" />
+    </div>
+    </form>
 
                     <div class="col-sm-12">
                         <!-- Example Events -->

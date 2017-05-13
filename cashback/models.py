@@ -1,8 +1,6 @@
 from enum import Enum
-
 from django.db import models
 from datetime import datetime
-
 # Create your models here.
 from libs.utils.string_extension import get_formattime
 from users.models import AuthUser

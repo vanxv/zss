@@ -1,0 +1,28 @@
+<style type="text/css">
+{#.kuan input{ width:330px; height:60px; background:background:url(../img/kuan_01.jpg) no-repeat; border:none; float:left}#}
+{#.an input{ width:120px; height:60px;  background:background:url(/img/an_02.png) no-repeat;border:none;  float:left}#}
+</style>
+
+<body>
+
+<form action="./" id="form" name="form" method="POST">
+<div class="kuan">
+    卖家账户<input type="text" class="s_ipt" name="shellername" maxlength="100" value="1">
+    <br>
+    卖家手机号<input type="tel" class="s_ipt" name="shellermobile" maxlength="100">
+    <br>
+    买家名<input type="text" class="s_ipt" name="buyer" maxlength="100">
+    <br>
+    买家手机号<input type="tel" class="s_ipt" name="buyermobile" maxlength="100">
+    <br>
+    买家地址<input type="text" class="s_ipt" name="buyeraddress" maxlength="100">
+    <br>
+    买家支付宝<input type="text" class="s_ipt" name="buyeralipay" maxlength="100">
+    <br>
+{#    <input type="image" class="s_ipt" name="proveimages" maxlength="100">#}
+    备注<input type="text" class="s_ipt" name="note" maxlength="100">
+    <br>
+    <div class="an"><button id="linkto" type="submit" name="Submit">立即增加</button></div><!--搜索按钮-->
+{% csrf_token %}
+</form>
+</body>

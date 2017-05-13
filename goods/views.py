@@ -9,7 +9,6 @@ from django.http import JsonResponse, HttpResponse
 from django.utils import timezone
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-
 class shopsViews(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         authuser = AuthUser.objects.get(username=request.user.username)
@@ -97,6 +96,7 @@ class add_goodViews(LoginRequiredMixin, View):
             return HttpResponse('baocunshibai')
 
 
+
 ###########################################################     xiugai  shang pin
 class change_goodViews(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
@@ -126,3 +126,27 @@ class change_goodViews(LoginRequiredMixin, View):
 
 
 
+
+##Home_page_add_product
+class Good_Index_Add(LoginRequiredMixin, View):
+    def post(self, request, *args, **kwargs):
+        test = request.POST['txtIndexAddUrl']
+        print(test)
+        babyid = Goods.objects.filter(pgoods_id=test)
+        print(babyid)
+        if len(babyid) > 0:
+            return render(request, 'welcome.html', {'test': '产品已存在'})
+        else:
+            babyidsave = Goods.objects.create(name=str(test), pgoods_id=test, keyword1=test, user_id=1, shop_id=1)
+            babyidsave.save()
+            try:
+                #selectmodels
+                #if conntaions
+                #return：existing problems
+                #if no conntaions
+                #Go online to read
+                pass
+            except:
+                #有错，请联系管理员
+                pass
+            return render(request, 'welcome.html',{'test':test})

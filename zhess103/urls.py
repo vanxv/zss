@@ -19,14 +19,14 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from users.views import *
+
 from django.views.static import serve
 
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
-
+    url(r'^blacklist/', include('blacklist.urls', namespace='blacklist')),
     url(r'^good/', include('goods.urls', namespace='good')),
-    # url(r'^user/', include('users.urls', namespace='user')),
     url(r'^order/', include('orders.urls', namespace='order')),
     url(r'^crm/', include('crm.urls', namespace='crm')),
     url(r'^finance/', include('finance.urls', namespace='finance')),
@@ -38,10 +38,6 @@ urlpatterns = [
     url(r'^register/', RegisterView.as_view(), name='register'),
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
-
-    # url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
-    # url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
-
     url(r'^$', index, name='home'),
 ]
 

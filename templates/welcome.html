@@ -1,5 +1,12 @@
 {% extends 'base/_layout_content.html' %}
 
 {% block content %}
-    <p> Test</p>
+    <form method="post" action="/good/GoodIndexAdd/">
+    {% csrf_token %}
+    <div class="input-group">
+        <input id="txtIndexAddUrl" type="text" class="form-control" name="txtIndexAddUrl">
+        <input type="submit" value="Submit" />
+    </div>
+    </form>
+    {{ test }}
 {% endblock %}

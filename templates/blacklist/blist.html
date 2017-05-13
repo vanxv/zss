@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style type="text/css">
+.search_form{position:relative; height:31px; margin:60px;display:inline-block;}
+.search_form:hover{-webkit-box-shadow:0 0 3px #999;-moz-box-shadow:0 0 3px #999}
+.sinput{float:left; width:200px; height:21px; line-height:21px; padding:4px 7px; color:b3b3b3;
+border:1px solid #999; border-radius:2px 0 0 2px; background-color:#fbfbfb;}
+.sbtn{float:left; width:50px; height:31px; padding:0 12px; margin-left:-1px;
+border-radius:0 2px 2px 0; border:1px solid #4d90fe; background-color:#4d90fe; cursor:pointer;
+display:inline-block; font-size:12px; vertical-align:middle; color:#f3f7fc;position:absolute;}
+.sbtn:hover{background:#4084f2}
+</style>
+</head>
+
+<body class="gray-bg">
+
+<form action="" method="POST" class="search_form">
+    <input type="text" name="serachtext" class="sinput" placeholder="输入 回车搜索" autofocus x-webkit-speech>
+    <input type="submit" value="搜索" class="sbtn">
+    {% csrf_token %}
+</form>
+
+{% for value in returnBlacklist %}
+    买家淘宝账户：{{ value.buyer }},
+    买家手机：{{ value.buyerMobile }},
+    买家地址：{{ value.buyeraddress }},
+    买家支付宝：{{ value.buyeralipay }},
+    投诉人留言：
+    {% autoescape off %}{{ value.note }}{% endautoescape %},
+    投诉人名称：{{ value.seller }},
+{% endfor %}
+
+</body>
+
+</html>
