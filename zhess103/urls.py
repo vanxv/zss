@@ -31,6 +31,7 @@ urlpatterns = [
     url(r'^crm/', include('crm.urls', namespace='crm')),
     url(r'^finance/', include('finance.urls', namespace='finance')),
     url(r'^cashback/', include('cashback.urls', namespace='cashback')),
+    url(r'^cryapp/', include('cryapp.urls', namespace='cryapp')),
 
     url(r'm/', include('wechat.urls', namespace='wechat')),
 

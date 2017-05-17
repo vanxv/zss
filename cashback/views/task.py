@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin #用户验证系统，只允许登录过的用户使用
 from django.db import transaction
 from django.db.models import F
 from django.http import JsonResponse
@@ -6,7 +6,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_http_methods
-
 from cashback.forms import TaskForm, CashbackForm
 from cashback.models import CashbackTask, CashbackTaskGoods, Cashback, CashbackStatus
 from cashback.services.task import TaskService, CashbackService

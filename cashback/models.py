@@ -1,13 +1,13 @@
-from enum import Enum
-from django.db import models
+from enum import Enum #序列化
+from django.db import models #数据库
 from datetime import datetime
 # Create your models here.
 from libs.utils.string_extension import get_formattime
-from users.models import AuthUser
+from users.models import AuthUser #用户名登录权
 
 
 class CashbackTask(models.Model):
-    seller_id = models.IntegerField('商家id', null=True)  # 与AuthUser表关联
+    seller_id = models.IntegerField('商家id', null=True)
     name = models.CharField('名称', max_length=50, null=True, blank=True)
     amount = models.DecimalField('返现金额', null=True, blank=True, max_digits=18, decimal_places=2)
     max_count = models.IntegerField('最大参与人数', null=True)
@@ -17,6 +17,8 @@ class CashbackTask(models.Model):
 
     class Meta:
         db_table = 'cashback_tasks'
+        verbose_name = '返现任务CashbackTask'
+        verbose_name_plural = verbose_name
 
     def to_dict(self):
         return {
@@ -37,6 +39,8 @@ class CashbackTaskGoods(models.Model):
 
     class Meta:
         db_table = 'cashback_task_goods'
+        verbose_name = '任务产品cashback_task_goods'
+        verbose_name_plural = verbose_name
 
 
 CASHBACK_CHOICES = (
@@ -77,8 +81,8 @@ class Cashback(models.Model):
 
     class Meta:
         db_table = 'cashbacks'
-        verbose_name = '返现'
-        verbose_name_plural = '返现列表'
+        verbose_name = '返现列表cashbacks'
+        verbose_name_plural = verbose_name
 
     def certificate_img(self):
         return '<img src="%s" />' % self.certificate

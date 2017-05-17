@@ -802,3 +802,770 @@ Traceback (most recent call last):
   File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 555, in __init__
     raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
 TypeError: 'seller' is an invalid keyword argument for this function
+2017-05-13 15:50:42,455 [Thread-21:123145432092672] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /blacklist/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/blacklist/views.py", line 7, in index
+    returnvalue = int(request.POST['serachtext'])
+ValueError: invalid literal for int() with base 10: '678092@qq.com'
+2017-05-13 15:51:44,851 [Thread-8:123145559429120] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /blacklist/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/blacklist/views.py", line 8, in index
+    returnBlacklist = blacklist.objects.filter(Q(buyerMobile=returnvalue) | Q(buyeralipay=returnvalue))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1247, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1832, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '678092@qq.com'
+2017-05-13 15:52:31,017 [Thread-12:123145554173952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /blacklist/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/blacklist/views.py", line 8, in index
+    returnBlacklist = blacklist.objects.filter(Q(buyerMobile=returnvalue) | Q(buyeralipay=returnvalue))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1247, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1832, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '678092@qq.com'
+2017-05-13 15:53:26,063 [Thread-8:123145388261376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /blacklist/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/blacklist/views.py", line 9, in index
+    returnBlacklist = blacklist.objects.filter(Q(buyerMobile=returnvalue) | Q(buyeralipay=returnvalue))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1247, in _add_q
+    current_negated, allow_joins, split_subq)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1832, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: '678092@qq.com'
+2017-05-13 15:54:12,461 [Thread-8:123145399222272] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /blacklist/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/blacklist/views.py", line 9, in index
+    returnBlacklist = blacklist.objects.filter(Q(buyerMobile=int(returnvalue)) | Q(buyeralipay=returnvalue))
+ValueError: invalid literal for int() with base 10: '678092@qq.com'
+2017-05-13 22:21:14,993 [Thread-24:123145390223360] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-13 22:54:22,763 [Thread-82:123145575870464] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /order/index/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/orders/views.py", line 38, in post
+    with open(filename, 'wb+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/VANXV/PycharmProjects/zss/media/1494687262.csv'
+2017-05-14 17:31:40,936 [Thread-23:123145399746560] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-14 17:31:58,057 [Thread-49:123145399746560] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/add/None/change/
+2017-05-15 07:12:52,188 [Thread-21:123145411858432] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/add/None/change/
+2017-05-15 07:13:21,484 [Thread-25:123145411858432] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/None/change/
+2017-05-15 07:13:55,297 [Thread-40:123145411858432] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/add/None/change/
+2017-05-15 07:25:44,903 [Thread-16:123145504391168] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/add/None/change/
+2017-05-15 07:25:54,871 [Thread-18:123145504391168] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/None/change/
+2017-05-15 07:55:55,522 [Thread-28:123145503125504] [django.request:152] [base:get_response] [WARNING]- Not Found: /admin/cashback/cashback/add/None/change/
+2017-05-17 12:38:42,978 [Thread-18:123145461391360] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-17 14:27:51,829 [Thread-6:123145519558656] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-17 14:32:46,007 [Thread-2:123145500299264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/cryapp/cryorderlist/add/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 392, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/html.py", line 391, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/admin/widgets.py", line 307, in render
+    'widget': self.widget.render(name, value, *args, **kwargs),
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 550, in render
+    options = self.render_options([value])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 573, in render_options
+    for option_value, option_label in self.choices:
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1119, in __iter__
+    yield self.choice(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1125, in choice
+    return (self.field.prepare_value(obj), self.field.label_from_instance(obj))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1188, in label_from_instance
+    return smart_text(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 41, in smart_text
+    return force_text(s, encoding, strings_only, errors)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/models.py", line 37, in __str__
+    return self.CryOrder
+AttributeError: 'CryOrder' object has no attribute 'CryOrder'
+2017-05-17 14:33:24,889 [Thread-2:123145378193408] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/cryapp/cryorderlist/add/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 392, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/html.py", line 391, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/admin/widgets.py", line 307, in render
+    'widget': self.widget.render(name, value, *args, **kwargs),
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 550, in render
+    options = self.render_options([value])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 573, in render_options
+    for option_value, option_label in self.choices:
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1119, in __iter__
+    yield self.choice(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1125, in choice
+    return (self.field.prepare_value(obj), self.field.label_from_instance(obj))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1188, in label_from_instance
+    return smart_text(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 41, in smart_text
+    return force_text(s, encoding, strings_only, errors)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type int)
+2017-05-17 14:33:40,765 [Thread-10:123145378193408] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/cryapp/cryorderlist/add/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 392, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/html.py", line 391, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/admin/widgets.py", line 307, in render
+    'widget': self.widget.render(name, value, *args, **kwargs),
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 550, in render
+    options = self.render_options([value])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 573, in render_options
+    for option_value, option_label in self.choices:
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1119, in __iter__
+    yield self.choice(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1125, in choice
+    return (self.field.prepare_value(obj), self.field.label_from_instance(obj))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1188, in label_from_instance
+    return smart_text(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 41, in smart_text
+    return force_text(s, encoding, strings_only, errors)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type int)
+2017-05-17 14:35:34,432 [Thread-2:123145475018752] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/cryapp/cryorderlist/add/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 392, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/html.py", line 391, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/admin/widgets.py", line 307, in render
+    'widget': self.widget.render(name, value, *args, **kwargs),
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 550, in render
+    options = self.render_options([value])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/widgets.py", line 573, in render_options
+    for option_value, option_label in self.choices:
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1119, in __iter__
+    yield self.choice(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1125, in choice
+    return (self.field.prepare_value(obj), self.field.label_from_instance(obj))
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/forms/models.py", line 1188, in label_from_instance
+    return smart_text(obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 41, in smart_text
+    return force_text(s, encoding, strings_only, errors)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+TypeError: __str__ returned non-string (type Goods)
+2017-05-17 15:13:30,195 [Thread-19:123145582739456] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'name' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 21, in post
+    babyidsave = Goods.objects.create(name=str(test), pgoods_id=test, keyword1=test, user_id=1, shop_id=1)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.DataError: (1406, "Data too long for column 'name' at row 1")
+2017-05-17 22:05:02,526 [Thread-9:123145500180480] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-17 22:07:46,258 [Thread-13:123145506660352] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 55, in post
+    babyidsave = Goods.objects.create(name=str(txtIndexAddUrl), pgoods_id=test, keyword1=test, user_id=1, shop_id=1)
+NameError: name 'test' is not defined
+2017-05-17 22:09:38,377 [Thread-13:123145385209856] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 55, in post
+    babyidsave = Goods.objects.create(name=str(txtIndexAddUrl), pgoods_id=test, keyword1=test, user_id=1, shop_id=1)
+NameError: name 'test' is not defined
+2017-05-17 22:11:30,202 [Thread-13:123145361190912] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 55, in post
+    babyidsave = Goods.objects.create(name=str(txtIndexAddUrl), pgoods_id=test, keyword1=test, user_id=1, shop_id=1)
+NameError: name 'test' is not defined

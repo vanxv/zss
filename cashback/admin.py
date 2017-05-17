@@ -2,8 +2,7 @@ from django.contrib import admin
 from django.contrib import messages
 
 from cashback.forms import CashbackAdminForm
-from cashback.models import Cashback
-
+from cashback.models import Cashback, CashbackTask, CashbackTaskGoods
 
 @admin.register(Cashback)
 class CashbackAdmin(admin.ModelAdmin):
@@ -20,3 +19,6 @@ class CashbackAdmin(admin.ModelAdmin):
             return
 
         obj.save()
+
+admin.site.register(CashbackTask)
+admin.site.register(CashbackTaskGoods)

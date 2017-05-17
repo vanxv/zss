@@ -5,7 +5,7 @@ from django.contrib.auth.models import AbstractUser  # AbstractBaseUser继承自
 
 
 class AuthUser(AbstractUser):
-    is_seller = models.IntegerField(max_length=2, default="0", null=True, blank=True, verbose_name=u"是否是卖家")
+    is_seller = models.IntegerField(default="0", null=True, blank=True, verbose_name=u"是否是卖家")
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
     mobile = models.IntegerField(verbose_name=u"手机号")
     balance = models.DecimalField('账户余额', default=0, max_digits=18, decimal_places=2, blank=True, null=True)

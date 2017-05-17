@@ -13,6 +13,7 @@ class blacklist(models.Model):
 
     class Meta:
         verbose_name = '黑名单'
+        verbose_name_plural = verbose_name
 
     def __unicode__(self):
         return self.buyer

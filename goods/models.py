@@ -1,13 +1,14 @@
 import uuid
 from datetime import datetime
 from django.db import models
-
 from libs.utils.string_extension import get_uuid
 from users.models import AuthUser
 
 PLATFORM = (
-    ('taobao', '淘宝'),
-    ('jd', '京东')
+    ('taobao', 'taobao'),
+    ('jd', 'jd'),
+    ('tmall', 'tmall'),
+    ('1688', '1688'),
 )
 
 
@@ -59,3 +60,5 @@ class Goods(models.Model):
         db_table = 'goods'
         verbose_name = '商品'
         verbose_name_plural = verbose_name
+    def __str__(self):
+        return self.pgoods_id

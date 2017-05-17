@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'cashback',
     'wechat',
     'blacklist',
+    'cryapp',
     # 'rest_framework',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'

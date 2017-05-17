@@ -1,12 +1,26 @@
 {% extends 'base/_layout_content.html' %}
 
 {% block content %}
-    <form method="post" action="/good/GoodIndexAdd/">
+    <form method="post" action="/cryapp/GoodIndexAdd/">
     {% csrf_token %}
     <div class="input-group">
-        <input id="txtIndexAddUrl" type="text" class="form-control" name="txtIndexAddUrl">
-        <input type="submit" value="Submit" />
+        产品链接URL：<input id="txtIndexAddUrl" type="text" name="txtIndexAddUrl"><br>
+        关键词：<input id="keywords" type="text" name="keywords"><br>
+        数量：<input id="number" type="number" name="number"><br>
+        备注支持html：<input id="note" type="text" name="note"><br>
+        启动日期：<input id="startdatetime" type="date" value="" name="startDate"><br>
+        结束日期：<input id="endDateTime" type="date" name="endDate"><br>
+        <input type="submit" value="Submit" /><br>
     </div>
     </form>
     {{ test }}
+    <script>
+    document.getElementById("message").innerHTML="Hello world of Javascript";
+        document.getElementById("message").innerHTML="Hello world of Javascript";
+    {
+        document.getElementById("message").innerHTML=
+            "hello world of Javascrapt";
+    }
+
+    </script>
 {% endblock %}

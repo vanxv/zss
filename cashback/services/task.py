@@ -1,11 +1,9 @@
 # coding:utf-8
 from django.db import transaction
-
 from cashback.models import CashbackTaskGoods, CashbackTask, CashbackStatus
 from crm.models import Customer
 from finance.models import FOrder, OrderStatus, FWalletBill
 from libs.utils.string_extension import safe_dict_value, generate_orderno
-
 
 class TaskService:
     def save_task_goods(self, task_id, user_id, products):
