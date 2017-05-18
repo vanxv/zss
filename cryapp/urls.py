@@ -1,6 +1,6 @@
 #coding:utf-8
 from django.conf.urls import url
-from . import views
+from cryapp import views
 
 urlpatterns=[
     url(r'^$', views.index.as_view(), name='customer_index'),

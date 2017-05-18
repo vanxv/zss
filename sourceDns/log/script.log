@@ -1569,3 +1569,4 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 55, in post
     babyidsave = Goods.objects.create(name=str(txtIndexAddUrl), pgoods_id=test, keyword1=test, user_id=1, shop_id=1)
 NameError: name 'test' is not defined
+2017-05-18 09:06:26,710 [Thread-9:123145480294400] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

@@ -1,8 +1,12 @@
+#coding=utf-8
 from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
 from goods.models import Shop, Goods
 import re
+import sys
+import requests
+print(sys.path)
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
 
 #下面是url切出数字和切出店铺分类
@@ -10,9 +14,15 @@ def platformUrl(self):
     if 'tmall' in self:
         platform = 'tmall'
         id = re.findall(r'id=(\d+)',self)
+        res = requests.get(self)
+        tempname = re.findall(r'<strong>(.*?)</strong>', res.text) #正则获取用户名
+        shopname = tempname[0]
+        shopusername = ''
     elif 'taobao' in self:
         platform = 'taobao'
-        id = re.findall(r'id=(\d+)',self)
+        id = re.findall(r'id=(\d+)',self)[0]
+        shopname = ''
+        shopusername = ''
     elif 'jd' in self:
         platform = 'jd'
         jd = re.findall(r'(\d+)',self)
@@ -21,7 +31,7 @@ def platformUrl(self):
         platform = '1688'
     else:
         pass
-    return id, platform
+    return id, platform, shopname ,shopusername
 
 
 
@@ -40,8 +50,7 @@ class Good_Index_Add(LoginRequiredMixin, View):
         note = request.POST['note'] #获取备注
         startdatetime = request.POST['startDate'] #获取启动时间
         endDateTime = request.POST['endDate'] #获取结束时间
-        print(txtIndexAddUrl)
-        id,platform =platformUrl(txtIndexAddUrl)
+        id,platform,shopname,shopusername =platformUrl(txtIndexAddUrl)
         print(id)
         print(platform)
         babyid = Goods.objects.filter(pgoods_id=id)
