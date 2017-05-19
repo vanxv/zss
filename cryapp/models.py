@@ -22,7 +22,7 @@ StatusChoices =(
 class CryOrder(models.Model):
     GoodId = models.ForeignKey(Goods, verbose_name=u'GoodsId')
     ShopId = models.ForeignKey(Shop, verbose_name=u'Shopid')
-    ShopName = models.ForeignKey(AuthUser, verbose_name=u'UserId卖家')
+    Userid = models.ForeignKey(AuthUser, verbose_name=u'UserId卖家')
     Money = models.FloatField(verbose_name=u'交易金额')
     Keywords = models.CharField(verbose_name=u'关键词', max_length=20)
     platform = models.CharField('店铺平台', max_length=20, null=True, choices=PLATFORM)

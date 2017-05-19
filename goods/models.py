@@ -1,6 +1,8 @@
 import uuid
 from datetime import datetime
 from django.db import models
+from django.utils import timezone
+
 from libs.utils.string_extension import get_uuid
 from users.models import AuthUser
 
@@ -36,6 +38,7 @@ class Goods(models.Model):
     name = models.CharField('商品名称', max_length=100, null=True)
     pgoods_id = models.CharField('平台商品id', max_length=50, null=True)
     sendaddress = models.CharField('发货地', max_length=50, null=True)
+    platform = models.CharField('店铺平台', choices=PLATFORM, max_length=20)
     image1 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
     image2 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
     image3 = models.ImageField(upload_to="image/tbgoods/%Y/%m", default=u'image/default.png', max_length=100, null=True)
@@ -54,7 +57,7 @@ class Goods(models.Model):
     keywor5 = models.CharField('关键词5', max_length=50, null=True)
     price5 = models.FloatField('价格5', max_length=50, null=True)
     remark5 = models.CharField('备注5', max_length=50, null=True)
-    add_time = models.DateTimeField(default=datetime.now)
+    add_time = models.DateTimeField(default=timezone.now)
 
     class Meta:
         db_table = 'goods'

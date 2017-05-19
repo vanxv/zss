@@ -164,6 +164,8 @@ WECHAT_KEY = '****************'
 WECHAT_APP_TOKEN = 'weixin'
 WECHAT_ENCODINGAESKEY = '*****************'
 
+#七牛
+DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuStorage'
 
 LOGGING = {
     'version': 1,
