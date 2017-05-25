@@ -7,7 +7,6 @@ from .models import AuthUser
 from django.views.generic.base import View
 from .forms import LoginForm, RegisterForm
 
-
 # Create your views here.
 
 @login_required

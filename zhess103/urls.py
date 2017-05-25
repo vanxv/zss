@@ -19,8 +19,32 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from users.views import *
-
 from django.views.static import serve
+
+# ##rest freamwork##
+from django.conf.urls import url, include
+from django.contrib.auth.models import User
+from users.models import AuthUser
+from rest_framework import routers, serializers, viewsets
+
+# Serializers define the API representation.
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = User
+        fields = ('url', 'username', 'email', 'is_staff')
+
+# ViewSets define the view behavior.
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = AuthUser.objects.all()
+    serializer_class = UserSerializer
+
+# Routers provide an easy way of automatically determining the URL conf.
+router = routers.DefaultRouter()
+router.register(r'users', UserViewSet)
+
+# Wire up our API using automatic URL routing.
+# Additionally, we include login URLs for the browsable API.
+# ##rest freawork##
 
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
@@ -40,6 +64,8 @@ urlpatterns = [
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
     url(r'^$', index, name='home'),
+
+    url(r'^router/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
 
