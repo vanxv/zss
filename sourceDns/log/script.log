@@ -615,3 +615,540 @@ Traceback (most recent call last):
   File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1832, in get_prep_value
     return int(value)
 ValueError: invalid literal for int() with base 10: ''
+2017-05-19 18:10:55,461 [Thread-20:123145357377536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 96, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort='', Status= '', StartTime='', EndTime='', ShopId=saveshop, GoodId=saveGoods, Money=request.POST['money'], platform=platform, Keywords=keywords,Note=note)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 747, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1832, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+2017-05-19 19:50:26,698 [Thread-13:123145595351040] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'OrderSort' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 96, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, GoodId=saveGoods, Money=request.POST['money'], platform=platform, Keywords=keywords,Note=note)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'OrderSort' cannot be null")
+2017-05-19 19:58:22,589 [Thread-9:123145532182528] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'Status' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 96, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, GoodId=saveGoods, Money=request.POST['money'], platform=platform, Keywords=keywords,Note=note)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'Status' cannot be null")
+2017-05-19 19:59:32,863 [Thread-13:123145535344640] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1048, "Column 'StartTime' cannot be null")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 96, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, Money=request.POST['money'], platform=platform, Keywords=keywords,Note=note)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1048, "Column 'StartTime' cannot be null")
+2017-05-19 20:23:34,373 [Thread-14:123145590484992] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet []>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-19 20:32:42,610 [Thread-9:123145550409728] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet []>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-19 20:33:34,179 [Thread-16:123145550409728] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet []>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-19 20:35:15,206 [Thread-13:123145559347200] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet [<Goods: 14374902753>]>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-19 20:36:43,589 [Thread-9:123145582211072] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet [<Goods: 14374902753>]>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-20 11:14:31,169 [Thread-31:123145583820800] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-25 13:12:41,349 [Thread-18:123145567031296] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-25 13:24:24,269 [Thread-61:123145567031296] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet [<Goods: 14374902753>]>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-25 13:24:43,753 [Thread-68:123145567031296] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet [<Goods: 14374902753>]>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-25 13:34:08,304 [Thread-8:123145417691136] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 86, in post
+    savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/base.py", line 537, in __init__
+    setattr(self, field.name, rel_obj)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
+    self.field.remote_field.model._meta.object_name,
+ValueError: Cannot assign "<QuerySet [<Goods: 14374902753>]>": "CryOrder.GoodId" must be a "Goods" instance.
+2017-05-25 19:17:59,227 [Thread-13:123145463152640] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-05-25 19:18:44,323 [Thread-14:123145463152640] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.

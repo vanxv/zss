@@ -3,7 +3,6 @@ from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser  # AbstractBaseUser继承自己的字段，还可以增加自己的字段
 
-
 class AuthUser(AbstractUser):
     is_seller = models.IntegerField(default="0", null=True, blank=True, verbose_name=u"是否是卖家")
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
@@ -101,7 +100,24 @@ class idGuid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户')
     userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid')
     userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid')
-
     class Meta:
         verbose_name = u'guid'
+        verbose_name_plural = verbose_name
+
+class MobileGuid(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
+    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid')
+    userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid')
+    class Meta:
+        verbose_name = u'MobileGuid'
+        verbose_name_plural = verbose_name
+
+class guidlog(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
+    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid', null=True)
+    userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid', null=True)
+    userWechatGuid = models.CharField(max_length=30, verbose_name=u'微信登录Guid', null=True)
+    addtime = models.DateField(verbose_name=u'登录验证时间', default=datetime.now())
+    class Meta:
+        verbose_name = u'guidlog'
         verbose_name_plural = verbose_name

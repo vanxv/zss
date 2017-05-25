@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'wechat',
     'blacklist',
     'cryapp',
-    # 'rest_framework',
+    'rest_framework',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 
@@ -101,11 +101,10 @@ DATABASES = {
         'HOST': 'localhost',
     }
 }
+
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAdminUser',
-    ],
-    'PAGE_SIZE': 10
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGINATE_BY': 10
 }
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators

@@ -81,10 +81,20 @@ class Good_Index_Add(LoginRequiredMixin, View):
         #这里到时候还得改，写可用再说
         if len(tempGoodsUserTrue) >0: #判断产品是否存在
             print('发布任务')
+            saveshop = Shop.objects.filter(user=request.user, shopname=shopname) #增加店铺
+            saveGoods = Goods.objects.filter(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
+            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+            savecryorder.save()
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
             return render(request, 'welcome.html', {'test': '产品已存在'})
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
             print('发布任务，发布产品')
+            saveshop = Shop.objects.filter(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
+            saveshop.save()
+            saveGoods = Goods.objects.create(user=request.user, shop=saveshop, name=Goodsname, pgoods_id=id, sendaddress='', platform=platform,image1=GoodsImage,keyword1=keywords,price1=request.POST['money'],remark1=note)
+            saveGoods.save()
+            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+            savecryorder.save()
         elif len(tempShopTrue) >0: #判断产品是否在其他账户上
             return render(request, 'welcome.html', {'test': '店铺已存在其他人账户上'})
         else:
@@ -93,6 +103,6 @@ class Good_Index_Add(LoginRequiredMixin, View):
             saveshop.save()
             saveGoods = Goods.objects.create(user=request.user, shop=saveshop, name=Goodsname, pgoods_id=id, sendaddress='', platform=platform,image1=GoodsImage,keyword1=keywords,price1=request.POST['money'],remark1=note)
             saveGoods.save()
-            savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort='', Status= '', StartTime='', EndTime='', ShopId=saveshop, GoodId=saveGoods, Money=request.POST['money'], platform=platform, Keywords=keywords,Note=note)
+            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         return render(request, 'welcome.html',{'test':'已经发布任务'})

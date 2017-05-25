@@ -40,6 +40,7 @@ urlpatterns = [
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
     url(r'^$', index, name='home'),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用

@@ -2,6 +2,7 @@ from django.db import models
 from goods.models import Goods, Shop
 from users.models import AuthUser
 from datetime import datetime
+from libs.utils.string_extension import get_uuid
 
 PLATFORM = (
     ('taobao', 'taobao'),
@@ -16,17 +17,24 @@ orderSortChoices =(
 )
 StatusChoices =(
     (0, '关闭'),
-    (1, '启动')
+    (1, '启动'),
+    (2, '接任务'),
+    (3, '提交等待审核'),
+    (4, '审核通过'),
+    (5, '完成'),
+
 )
 # Create your models here.
 class CryOrder(models.Model):
+    id = models.CharField('id', max_length=32, default=get_uuid, primary_key=True)
     GoodId = models.ForeignKey(Goods, verbose_name=u'GoodsId')
     ShopId = models.ForeignKey(Shop, verbose_name=u'Shopid')
     Userid = models.ForeignKey(AuthUser, verbose_name=u'UserId卖家')
+    buyerid = models.ForeignKey(AuthUser, verbose_name=u'buyerId买家', related_name='buyer', null=True)
     Money = models.FloatField(verbose_name=u'交易金额')
     Keywords = models.CharField(verbose_name=u'关键词', max_length=20)
     platform = models.CharField('店铺平台', max_length=20, null=True, choices=PLATFORM)
-    OrderSort = models.IntegerField(verbose_name=u'订单分类', choices=orderSortChoices)
+    OrderSort = models.IntegerField(verbose_name=u'订单分类', choices=orderSortChoices, null=True)
     Status = models.IntegerField(verbose_name=u'状态启动与关闭', choices=StatusChoices)
     StartTime = models.DateField(verbose_name=u'startTime开始时间')
     EndTime = models.DateField(verbose_name=u'EndTime结束时间')
