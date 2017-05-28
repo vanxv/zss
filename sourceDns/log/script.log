@@ -1202,3 +1202,352 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/rest_framework/utils/model_meta.py", line 98, in _get_forward_relationships
     not get_remote_field(field).through._meta.auto_created
 AttributeError: 'NoneType' object has no attribute '_meta'
+2017-05-26 21:30:11,085 [Thread-12:123145370320896] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-27 11:19:58,584 [Thread-22:123145443450880] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-27 11:20:24,720 [Thread-39:123145443450880] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth
+2017-05-27 11:20:28,838 [Thread-40:123145448706048] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth/
+2017-05-27 11:21:12,751 [Thread-47:123145443450880] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /router/users/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/viewsets.py", line 86, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/views.py", line 489, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/views.py", line 449, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/views.py", line 486, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/mixins.py", line 48, in list
+    return Response(serializer.data)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 739, in data
+    ret = super(ListSerializer, self).data
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 263, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 657, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 657, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 484, in to_representation
+    fields = self._readable_fields
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 378, in _readable_fields
+    field for field in self.fields.values()
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 364, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/serializers.py", line 993, in get_fields
+    info = model_meta.get_field_info(model)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/utils/model_meta.py", line 41, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "/Users/VANXV/PycharmProjects/zss/rest_framework/utils/model_meta.py", line 98, in _get_forward_relationships
+    not get_remote_field(field).through._meta.auto_created
+AttributeError: 'NoneType' object has no attribute '_meta'
+2017-05-27 11:21:46,534 [Thread-66:123145443450880] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-27 11:35:37,957 [Thread-7:123145570746368] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth/
+2017-05-27 11:35:47,487 [Thread-8:123145576001536] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth/
+2017-05-27 11:38:08,588 [Thread-4:123145527263232] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth/
+2017-05-27 11:38:18,793 [Thread-10:123145527263232] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /api-auth/login/
+2017-05-27 11:38:55,614 [Thread-25:123145526726656] [django.request:152] [base:get_response] [WARNING]- Not Found: /accounts/profile/
+2017-05-27 11:39:08,626 [Thread-29:123145516216320] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth/
+2017-05-27 11:39:20,260 [Thread-36:123145516216320] [django.request:152] [base:get_response] [WARNING]- Not Found: /accounts/profile/
+2017-05-27 13:00:33,322 [Thread-37:123145516216320] [django.request:152] [base:get_response] [WARNING]- Not Found: /api-auth/
+2017-05-27 13:00:48,133 [Thread-43:123145516216320] [django.request:152] [base:get_response] [WARNING]- Not Found: /accounts/profile/
+2017-05-27 17:23:20,575 [Thread-13:123145499189248] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-05-27 17:24:30,036 [Thread-9:123145383616512] [django.request:152] [base:get_response] [WARNING]- Not Found: /snippets
+2017-05-27 17:26:28,539 [Thread-35:123145377288192] [django.request:152] [base:get_response] [WARNING]- Not Found: /snippets/1212/
+2017-05-27 17:26:31,789 [Thread-36:123145382543360] [django.request:152] [base:get_response] [WARNING]- Not Found: /snippets/vanxv/
+2017-05-27 17:57:28,072 [Thread-36:123145581445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-05-27 17:57:37,561 [Thread-37:123145581445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-05-27 17:57:37,948 [Thread-38:123145581445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-05-27 17:57:38,438 [Thread-39:123145581445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-05-27 17:57:38,790 [Thread-40:123145581445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-05-27 17:59:17,791 [Thread-9:123145340317696] [django.request:152] [base:get_response] [WARNING]- Not Found: /user
+2017-05-27 18:00:40,001 [Thread-7:123145335136256] [django.request:152] [base:get_response] [WARNING]- Not Found: /user/PcHardwareInsert
+2017-05-27 18:01:17,148 [Thread-7:123145542709248] [django.request:152] [base:get_response] [WARNING]- Not Found: /user/PcHardwareInsert
+2017-05-27 18:01:27,195 [Thread-13:123145542709248] [django.request:152] [base:get_response] [WARNING]- Not Found: /user/PcHardwareInsert
+2017-05-27 18:02:06,964 [Thread-7:123145492205568] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 73, in PcHardwareInsert
+    return render('aaaa');
+NameError: name 'aaaa' is not defined
+2017-05-27 18:02:26,817 [Thread-7:123145482027008] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 73, in PcHardwareInsert
+    return render(request, 'aaaa');
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: aaaa
+2017-05-27 18:04:22,758 [Thread-7:123145520254976] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 73, in PcHardwareInsert
+    return render(request, {'aaaa':'aaaa'});
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'aaaa': 'aaaa'}
+2017-05-27 18:08:03,559 [Thread-8:123145519718400] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.PcHardwareInsert didn't return an HttpResponse object. It returned None instead.
+2017-05-27 18:08:31,405 [Thread-9:123145519718400] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.PcHardwareInsert didn't return an HttpResponse object. It returned None instead.
+2017-05-27 18:11:53,802 [Thread-7:123145488748544] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 73, in PcHardwareInsert
+    return render(request, '0');
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: 0
+2017-05-27 18:12:24,688 [Thread-7:123145364107264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/middleware/clickjacking.py", line 32, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+2017-05-27 18:12:51,033 [Thread-7:123145589784576] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/utils/deprecation.py", line 138, in __call__
+    response = self.process_response(request, response)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/middleware/clickjacking.py", line 32, in process_response
+    if response.get('X-Frame-Options') is not None:
+AttributeError: 'str' object has no attribute 'get'
+2017-05-27 18:13:49,852 [Thread-7:123145432354816] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 73, in PcHardwareInsert
+    request('1');
+TypeError: 'WSGIRequest' object is not callable
+2017-05-27 18:22:08,985 [Thread-2:123145372844032] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    request(json);
+TypeError: 'WSGIRequest' object is not callable
+2017-05-27 18:22:43,168 [Thread-2:123145485918208] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    request('json');
+TypeError: 'WSGIRequest' object is not callable
+2017-05-27 18:23:30,661 [Thread-2:123145538813952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 73, in PcHardwareInsert
+    return render(request, '0');
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: 0
+2017-05-27 18:23:51,150 [Thread-2:123145473638400] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    request('json');
+TypeError: 'WSGIRequest' object is not callable
+2017-05-27 18:23:52,116 [Thread-3:123145473638400] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    request('json');
+TypeError: 'WSGIRequest' object is not callable
+2017-05-27 18:49:40,084 [Thread-2:123145374355456] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.PcHardwareInsert didn't return an HttpResponse object. It returned None instead.
+2017-05-27 18:50:03,880 [Thread-3:123145374355456] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.PcHardwareInsert didn't return an HttpResponse object. It returned None instead.
+2017-05-27 18:51:43,006 [Thread-5:123145374355456] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.PcHardwareInsert didn't return an HttpResponse object. It returned None instead.
+2017-05-27 18:53:54,552 [Thread-8:123145522319360] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.PcHardwareInsert didn't return an HttpResponse object. It returned None instead.
+2017-05-27 19:01:17,377 [Thread-11:123145522319360] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-05-27 19:01:19,064 [Thread-12:123145522319360] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-05-27 19:01:58,418 [Thread-7:123145421209600] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-05-27 19:02:24,853 [Thread-8:123145421209600] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-05-27 19:02:40,363 [Thread-9:123145421209600] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 77, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/.virtualenvs/zss322/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}

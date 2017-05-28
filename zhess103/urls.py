@@ -21,7 +21,7 @@ from django.views.generic import TemplateView
 from users.views import *
 from django.views.static import serve
 
-# ##rest freamwork##
+#!-------- rest freawork --------------##
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from users.models import AuthUser
@@ -30,8 +30,8 @@ from rest_framework import routers, serializers, viewsets
 # Serializers define the API representation.
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User
-        fields = ('url', 'username', 'email', 'is_staff')
+        model = AuthUser
+        fields = ('url', 'username', 'email')
 
 # ViewSets define the view behavior.
 class UserViewSet(viewsets.ModelViewSet):
@@ -40,11 +40,11 @@ class UserViewSet(viewsets.ModelViewSet):
 
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
-router.register(r'users', UserViewSet)
+router.register(r'AuthUser', UserViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
-# ##rest freawork##
+#!-------- rest freawork --------------##
 
 urlpatterns = [
     url(r'^grappelli/', include('grappelli.urls')),
@@ -64,9 +64,14 @@ urlpatterns = [
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
     url(r'^$', index, name='home'),
+    url(r'^users/', include('users.urls')),
 
+    #!-------- rest freawork --------------##
     url(r'^router/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^snippets/', include('snippets.urls')),
+#!-------- rest freawork --------------##
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用

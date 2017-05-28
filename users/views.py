@@ -6,7 +6,6 @@ from django.contrib.auth.hashers import make_password
 from .models import AuthUser
 from django.views.generic.base import View
 from .forms import LoginForm, RegisterForm
-
 # Create your views here.
 
 @login_required
@@ -65,3 +64,22 @@ class LoginView(View):
             return redirect('home')
         else:
             return render(request, 'login.html', {'msg': '账号密码错误'})
+
+
+##pc hardware insert
+def PcHardwareInsert(request):
+    if request.method == 'GET':
+        return render(request, 'users/0.html')
+        pass
+    elif request.method == 'POST':
+        form = LoginForm(request.POST)
+        if not form.is_valid():
+            return render(request,{'form': form})
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            auth.login(request, user)
+            pass
+        else:
+            return render(request, 'users/1.html');

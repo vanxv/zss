@@ -29,7 +29,7 @@ SECRET_KEY = '&9#oe63kes&fs58#!fkq=nq(s8&+ah2l075nbnn0_3xoxkpfcj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 AUTHENTICATION_BACKENDS = (
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'blacklist',
     'cryapp',
     'rest_framework',
+    'snippets.apps.SnippetsConfig',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 

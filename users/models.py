@@ -98,18 +98,11 @@ class jdUsername(models.Model):
 
 class idGuid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid')
+    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid', )
     userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid')
+
     class Meta:
         verbose_name = u'guid'
-        verbose_name_plural = verbose_name
-
-class MobileGuid(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid')
-    userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid')
-    class Meta:
-        verbose_name = u'MobileGuid'
         verbose_name_plural = verbose_name
 
 class guidlog(models.Model):

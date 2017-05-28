@@ -2,8 +2,6 @@
 from selenium import webdriver
 import time
 import re
-import pymysql
-
 
 def scroll(n,i):
     return "window.scrollTo(0,(document.body.scrollHeight/{0})*{1});".format(n,i)
@@ -21,8 +19,11 @@ def crawler(self):
             s = scroll(n,i)
             print(s)
             #firefox.execute_script(s)
-            #firefox.execute_script('window.scrollTo(0, document.body.scrollHeight)')
-            firefox.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+            time.sleep(2)
+            #firefox.execute_script("document.documentElement.scrollTop=10000");
+            js = "var q=document.body.scrollTop=100000"
+            time.sleep(2)
+            firefox.execute_script(js)
             #firefox.execute_script('document.title')
             time.sleep(2)
         print(len(firefox.page_source))
