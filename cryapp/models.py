@@ -30,7 +30,7 @@ class CryOrder(models.Model):
     GoodId = models.ForeignKey(Goods, verbose_name=u'GoodsId')
     ShopId = models.ForeignKey(Shop, verbose_name=u'Shopid')
     Userid = models.ForeignKey(AuthUser, verbose_name=u'UserId卖家')
-    buyerid = models.ForeignKey(AuthUser, verbose_name=u'buyerId买家', related_name='buyer', null=True)
+    buyerid = models.ForeignKey(AuthUser, verbose_name=u'buyerId买家', related_name='index', null=True)
     Money = models.FloatField(verbose_name=u'交易金额')
     Keywords = models.CharField(verbose_name=u'关键词', max_length=20)
     platform = models.CharField('店铺平台', max_length=20, null=True, choices=PLATFORM)

@@ -2,11 +2,11 @@ from __future__ import unicode_literals
 from datetime import datetime
 from django.db import models
 from django.contrib.auth.models import AbstractUser  # AbstractBaseUser继承自己的字段，还可以增加自己的字段
-
+from django.utils import timezone
 class AuthUser(AbstractUser):
     is_seller = models.IntegerField(default="0", null=True, blank=True, verbose_name=u"是否是卖家")
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
-    mobile = models.IntegerField(verbose_name=u"手机号")
+    mobile = models.IntegerField(verbose_name=u"手机号", null=True)
     balance = models.DecimalField('账户余额', default=0, max_digits=18, decimal_places=2, blank=True, null=True)
     wechatName = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"微信名")
     wechat = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"微信号")
@@ -96,21 +96,24 @@ class jdUsername(models.Model):
         return '{0}({1})'.format(self.user, self.jdUsername)
 
 
-class idGuid(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid', )
-    userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid')
-
+class pcGuid(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    PcGuid = models.IntegerField(max_length=60, verbose_name=u'pcGuid', blank=True, null=True)
+    cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
+    diskid = models.CharField(max_length=120, verbose_name=u'diskid', blank=True, null=True)
+    boardid = models.CharField(max_length=120, verbose_name=u'boardid', blank=True, null=True)
+    biosid = models.CharField(max_length=120, verbose_name=u'biosid', blank=True, null=True)
+    resip = models.GenericIPAddressField(verbose_name=u'RegisterIP', blank=True, null=True)
+    addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now(), blank=True, null=True)
     class Meta:
-        verbose_name = u'guid'
+        verbose_name = u'pcguid'
         verbose_name_plural = verbose_name
 
-class guidlog(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    userPcGuid = models.CharField(max_length=30, verbose_name=u'账号pcGuid', null=True)
-    userMobileGuid = models.CharField(max_length=30, verbose_name=u'账号手机Guid', null=True)
-    userWechatGuid = models.CharField(max_length=30, verbose_name=u'微信登录Guid', null=True)
-    addtime = models.DateField(verbose_name=u'登录验证时间', default=datetime.now())
+class pcGuidLog(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'user')
+    PcGuid = models.ForeignKey(pcGuid, verbose_name=u'pcGuid')
+    resip = models.GenericIPAddressField(verbose_name=u'IP')
+    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now())
     class Meta:
         verbose_name = u'guidlog'
         verbose_name_plural = verbose_name

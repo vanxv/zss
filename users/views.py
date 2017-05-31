@@ -3,14 +3,16 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.hashers import make_password
-from .models import AuthUser
+from .models import AuthUser, pcGuid, pcGuidLog
 from django.views.generic.base import View
 from .forms import LoginForm, RegisterForm
+from cryapp.models import CryOrder
+from goods.models import Goods
 # Create your views here.
 
 @login_required
-def index(request):
-    '''后台首页'''
+def seller(request):
+    '''sellerindex'''
     return render(request, 'index.html')
 
 
@@ -23,7 +25,6 @@ def logout(request):
 
 class RegisterView(View):
     template_name = 'register.html'
-
     def get(self, request):
         return render(request, self.template_name)
 
@@ -46,6 +47,11 @@ class RegisterView(View):
 
         return redirect('login')
 
+class GetGoods(View):
+    def get(request):
+        return render(request, 'register.html')
+    def post(self, request):
+        pass
 
 class LoginView(View):
     def get(self, request):
@@ -58,10 +64,12 @@ class LoginView(View):
 
         username = request.POST.get('username')
         password = request.POST.get('password')
+        print(request.POST.get('cpuid'))
+        print(request.POST.get('visual'))
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('home')
+            return redirect('sellerindex')
         else:
             return render(request, 'login.html', {'msg': '账号密码错误'})
 
@@ -75,11 +83,54 @@ def PcHardwareInsert(request):
         form = LoginForm(request.POST)
         if not form.is_valid():
             return render(request,{'form': form})
+        #get hardVisual
         username = request.POST.get('username')
         password = request.POST.get('password')
-        user = auth.authenticate(username=username, password=password)
-        if user is not None:
-            auth.login(request, user)
-            pass
+        cpuid = request.POST.get('cpuid')
+        visual = int(request.POST.get('visual'))
+        diskid = request.POST.get('diskid')
+        biosid = request.POST.get('biosid')
+        boardid = request.POST.get('boardid')
+        hardkey = int(request.POST.get('hardkey'))
+        print(hardkey)
+        #get hardVisual
+        ### down get ip###
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip = x_forwarded_for.split(',')[0]
         else:
-            return render(request, 'users/1.html');
+            ip = request.META.get('REMOTE_ADDR')
+        ###above get ip###
+        #-------return add rules ------------#
+
+        #next authuser
+        user = auth.authenticate(username=username, password=password)
+        usersRequest = ''
+        if user is not None:
+            usersRequest = 'usernamehave'
+            auth.login(request, user)
+            #visual rules
+            if visual == 1:
+                pass
+            else:
+                user = AuthUser.objects.get(username=username)
+                try:
+                    pcguidTurn = pcGuid.objects.get(PcGuid=hardkey, user=user)
+                    pcGuidLog.objects.create(user=user, PcGuid=pcguidTurn, resip=ip)
+                except:
+                    pcGuid.objects.create(user=user, PcGuid=hardkey, cpuid=cpuid, diskid=diskid, boardid=boardid, biosid=biosid, resip=ip)
+                    pcguidTurn = pcGuid.objects.get(PcGuid=hardkey)
+                    pcGuidLog.objects.create(user=AuthUser, PcGuid=pcguidTurn, resip=ip)
+            return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
+
+        else:
+            usersRequest = 'usernameNone'
+            return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip

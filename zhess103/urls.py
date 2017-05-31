@@ -20,6 +20,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from users.views import *
 from django.views.static import serve
+from cryapp.views import sellerIndex, buyerIndex
 
 #!-------- rest freawork --------------##
 from django.conf.urls import url, include
@@ -63,9 +64,10 @@ urlpatterns = [
     url(r'^register/', RegisterView.as_view(), name='register'),
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
-    url(r'^$', index, name='home'),
+    url(r'^seller/$', sellerIndex.as_view(), name='sellerindex'),
+    url(r'^$', buyerIndex.as_view(), name='buyerindex'),
     url(r'^users/', include('users.urls')),
-
+    url(r'^goods/id=(\d+)', GetGoods, name = 'GetGoods'),
     #!-------- rest freawork --------------##
     url(r'^router/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),

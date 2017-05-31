@@ -96,7 +96,7 @@ WSGI_APPLICATION = 'zhess103.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'zhess103',
+        'NAME': 'zss',
         'USER': 'root',
         'PASSWORD': '1q2w3e4r',
         'HOST': 'localhost',

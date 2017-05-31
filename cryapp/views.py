@@ -60,9 +60,21 @@ class savegroup():
 
 #Create your views here.
 ##Home_page_add_product
-class index(LoginRequiredMixin, View):
-    def post(self, request, *args, **kwargs):
-        pass
+class sellerIndex(LoginRequiredMixin, View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'index.html')
+
+class buyerIndex(View):
+    def get(self, request, *args, **kwargs):
+        orderdict = {}
+        order = CryOrder.objects.filter()
+        for corder in order:
+            if corder.GoodId.id in orderdict:
+                orderdict[corder.GoodId.id][0] += 1
+            else:
+                orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform]
+        return render(request, 'index/index.html', {'orderdict':orderdict})
+
 
 class Good_Index_Add(LoginRequiredMixin, View):
     ##############首页增加产品#######################
@@ -83,7 +95,10 @@ class Good_Index_Add(LoginRequiredMixin, View):
             print('发布任务')
             saveshop = Shop.objects.filter(user=request.user, shopname=shopname) #增加店铺
             saveGoods = Goods.objects.filter(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
-            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+            saveshop = Shop.objects.filter(user=request.user, shopname=shopname) #增加店铺
+
+            getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
+            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
             return render(request, 'welcome.html', {'test': '产品已存在'})
@@ -93,7 +108,8 @@ class Good_Index_Add(LoginRequiredMixin, View):
             saveshop.save()
             saveGoods = Goods.objects.create(user=request.user, shop=saveshop, name=Goodsname, pgoods_id=id, sendaddress='', platform=platform,image1=GoodsImage,keyword1=keywords,price1=request.POST['money'],remark1=note)
             saveGoods.save()
-            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
+            getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
+            savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         elif len(tempShopTrue) >0: #判断产品是否在其他账户上
             return render(request, 'welcome.html', {'test': '店铺已存在其他人账户上'})
@@ -106,3 +122,4 @@ class Good_Index_Add(LoginRequiredMixin, View):
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         return render(request, 'welcome.html',{'test':'已经发布任务'})
+
