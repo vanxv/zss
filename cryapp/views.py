@@ -1,11 +1,13 @@
 #coding=utf-8
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
 from goods.models import Shop, Goods
+from users.models import AuthUser
 import re
 import requests
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
+from django.contrib.auth import authenticate, login
 
 #url切出数字和切出店铺分类
 def platformUrl(self):
@@ -62,18 +64,43 @@ class savegroup():
 ##Home_page_add_product
 class sellerIndex(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
+
         return render(request, 'index.html')
 
 class buyerIndex(View):
     def get(self, request, *args, **kwargs):
-        orderdict = {}
-        order = CryOrder.objects.filter()
-        for corder in order:
-            if corder.GoodId.id in orderdict:
-                orderdict[corder.GoodId.id][0] += 1
-            else:
-                orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform]
-        return render(request, 'index/index.html', {'orderdict':orderdict})
+        if request.user.is_authenticated:
+            orderdict = {}
+            order = CryOrder.objects.filter()
+            for corder in order:
+                if corder.GoodId.id in orderdict:
+                    orderdict[corder.GoodId.id][0] += 1
+                else:
+                    orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
+            return render(request, 'index/index.html', {'orderdict':orderdict})
+        else:
+            orderdict = {}
+            order = CryOrder.objects.filter()
+            for corder in order:
+                if corder.GoodId.id in orderdict:
+                    orderdict[corder.GoodId.id][0] += 1
+                else:
+                    orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
+            return render(request, 'index/index.html', {'orderdict':orderdict})
+def GetGoods(request, goodid):
+    if request.user.is_authenticated:
+        if request.method=="GET":
+            goodsview = Goods.objects.get(id=goodid)
+            money = CryOrder.objects.filter(GoodId=goodid)
+            return render(request, 'index/goods.html', {'goodsview':goodsview,'money':money})
+        elif request.method == "POST":
+            print(request.POST['cryorderid'])
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id)
+            print('-----')
+            return render(request, 'index/goods.html')
+
+    else:
+        return render(request, 'login.html')
 
 
 class Good_Index_Add(LoginRequiredMixin, View):
@@ -96,7 +123,6 @@ class Good_Index_Add(LoginRequiredMixin, View):
             saveshop = Shop.objects.filter(user=request.user, shopname=shopname) #增加店铺
             saveGoods = Goods.objects.filter(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
             saveshop = Shop.objects.filter(user=request.user, shopname=shopname) #增加店铺
-
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
@@ -122,4 +148,3 @@ class Good_Index_Add(LoginRequiredMixin, View):
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         return render(request, 'welcome.html',{'test':'已经发布任务'})
-

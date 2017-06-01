@@ -8,10 +8,12 @@
 hello wolrd
 {% for key, value in orderdict.items %}
 <li>{{ key }}</li>
-<a href="id={{ key }}" target="_blank"><img src={{ value.1 }} style="width:304px;height:228px"></a>
+<a href="goods/{{ key }}" target="_blank"><img src={{ value.1 }} style="width:304px;height:228px"></a>
 number：{{ value.0 }}
 name：{{ value.2 }}
 paltform: {{ value.3 }}
+<input type="submit", value="我要试用">
 {% endfor %}
+</from>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ goodsview.name }}</title>
+</head>
+<body>
+{{ goodsview.name }}<p>
+<img src="{{ goodsview.image1 }}" style="width:auto;height:300px;"><p>
+keywords：{{ goodsview.keyword1 }}<p>
+    {% for loop in money %}
+        <form name="vanxv", action="./{{ goodsview.id }}", method="POST">
+        <input type='hidden' name='cryorderid' value="{{ loop.id }}">
+        {{ loop.Money }}
+        <input type="submit" name="button1" value="submit">
+        </form><p>
+    {% endfor %}
+</body>
+</html>

@@ -20,7 +20,7 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from users.views import *
 from django.views.static import serve
-from cryapp.views import sellerIndex, buyerIndex
+from cryapp.views import *
 
 #!-------- rest freawork --------------##
 from django.conf.urls import url, include
@@ -57,7 +57,6 @@ urlpatterns = [
     url(r'^finance/', include('finance.urls', namespace='finance')),
     url(r'^cashback/', include('cashback.urls', namespace='cashback')),
     url(r'^cryapp/', include('cryapp.urls', namespace='cryapp')),
-
     url(r'm/', include('wechat.urls', namespace='wechat')),
 
     url(r'^login/', LoginView.as_view(), name='login'),
@@ -67,7 +66,7 @@ urlpatterns = [
     url(r'^seller/$', sellerIndex.as_view(), name='sellerindex'),
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
     url(r'^users/', include('users.urls')),
-    url(r'^goods/id=(\d+)', GetGoods, name = 'GetGoods'),
+    url(r'^goods/(?P<goodid>(\d+))', GetGoods, name = 'GetGoods'),
     #!-------- rest freawork --------------##
     url(r'^router/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),

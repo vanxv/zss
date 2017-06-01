@@ -13,7 +13,7 @@ from goods.models import Goods
 @login_required
 def seller(request):
     '''sellerindex'''
-    return render(request, 'index.html')
+    return render(request, 'index/index.html')
 
 
 @login_required
@@ -47,11 +47,10 @@ class RegisterView(View):
 
         return redirect('login')
 
-class GetGoods(View):
-    def get(request):
-        return render(request, 'register.html')
-    def post(self, request):
-        pass
+
+
+
+
 
 class LoginView(View):
     def get(self, request):
@@ -69,7 +68,7 @@ class LoginView(View):
         user = auth.authenticate(username=username, password=password)
         if user is not None:
             auth.login(request, user)
-            return redirect('sellerindex')
+            return redirect('buyerindex')
         else:
             return render(request, 'login.html', {'msg': '账号密码错误'})
 
