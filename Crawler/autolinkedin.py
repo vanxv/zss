@@ -41,30 +41,6 @@ def crawler(username, password, addnumber):
                 time.sleep(1)
         except:
             continue
-
-
-    # try:
-    #     #classselect = firefox.find_elements_by_class_name("mn-person-card__person-btn-ext button-secondary-medium")
-    #     #print(classselect)
-    #     #print('click')
-    #     buttion = firefox.find_element_by_xpath("//ul/li/div/button")
-    #     buttion = firefox.find_element_by_xpath("//ul/li/div/button").click()
-    #     for a in buttion:
-    #         a.click()
-    #     print('click')
-    #
-    # except:
-    #     buttion =firefox.find_element_by_partial_link_text("nnect")
-    #     buttion =firefox.find_element_by_partial_link_text("nnect").click()
-    #     print(buttion)
-    #     n += 1
-    #     print('click')
-    #
-    # else:
-    #     print('noclick')
-    #     pass
-    #     #firefox.find_element_by_partial_link_text('connect').click()
-    #     #firefox.find_elements_by_partial_link_text('connect').click()
     firefox.quit()
 
 def main():

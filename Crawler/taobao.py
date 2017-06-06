@@ -38,7 +38,7 @@ def crawler(self):
         psagestotal = firefox.find_element_by_class_name("current").text
         print(psagestotal)
         firefox.quit()
-
+#/Users/VANXV/Downloads
 def main():
     crawler('手表女')
 if __name__=="__main__":
