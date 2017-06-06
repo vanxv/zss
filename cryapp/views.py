@@ -90,6 +90,7 @@ class buyerIndex(View):
 def GetGoods(request, goodid):
     if request.user.is_authenticated:
         if request.method=="GET":
+            ##get status goods insert orderNumber
             goodsview = Goods.objects.get(id=goodid)
             money = CryOrder.objects.filter(GoodId=goodid)
             return render(request, 'index/goods.html', {'goodsview':goodsview,'money':money})
@@ -101,6 +102,7 @@ def GetGoods(request, goodid):
 
     else:
         return render(request, 'login.html')
+
 
 
 class Good_Index_Add(LoginRequiredMixin, View):

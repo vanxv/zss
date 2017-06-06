@@ -1,1403 +1,1915 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="assets/img/favicon.png">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
 
-	<title>Material Kit by Creative Tim</title>
+  <meta charset="utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2315e0b361","applicationID":"9961421","transactionName":"dVwNRxYMCFtVS01CRVRfClA7EwVQVRYOU15SWg1UOxMFUFU=","queueTime":0,"applicationTime":194,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="p:domain_verify" content="96e683d0045e44dfac2deaec70e57185"/>
 
-	<!--     Fonts and icons     -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-07e579901353a57d289b9b754f0e2912.ico" />
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.creative-tim.com/assets/apple-touch-icon-precomposed-60956e08c7bbd5166b96ef4f0340152b.png">
+  <link rel="canonical" href="index.html" itemprop="url"  data-turbolinks-track="false"/>
 
-	<!-- CSS Files -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/material-kit.css" rel="stylesheet"/>
+  <title itemprop="name">
+      折试试平台zhess.com
+  </title>
 
-	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link href="assets/css/demo.css" rel="stylesheet" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CreativeTim" />
+    <meta name="twitter:creator" content="@CreativeTim" />
+    <meta name="twitter:title" content="Premium Bootstrap Themes and Templates" />
+    <meta name="twitter:description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/metatag-tim-cover-amazon.jpg" />
+    <meta name="twitter:url" content="https://www.creative-tim.com/" />
+
+
+  <meta name="description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
+<meta name="keywords" content="creativetim, creative tim, bootstrap, theme, freebies, bootstrap kit, bootstrap template, free items, beautiful ui, awesome freebies, css cards, bootstrap wizard, bootstrap plugin" />
+<meta property="og:title" content="Premium Bootstrap Themes and Templates" />
+<meta property="og:url" content="https://www.creative-tim.com/" />
+<meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/metatag-tim-cover-amazon.jpg" />
+<meta property="og:description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
+<meta name="data-turbolinks-track" content="false" />
+  <link rel="stylesheet" media="all" href="assets/application-5983038036a092579f0a61ac4dcfa044.css" data-turbolinks-track="true" />
+
+  <!-- font -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="VrrsXkP7tZvDWi5VEMbaWwcyvqJoNU0JHFZFsFjNAmwGguDthXfN5WJsMi9XM/qQPdwdNVeYIDx3okSAat0mwQ==" />
+
+  <script src="assets/application-30cc964f1fc5ab4d76056b7977071525.js" data-turbolinks-track="true"></script>
 
 </head>
 
-<body class="index-page">
-<!-- Navbar -->
-<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-	<div class="container">
-        <div class="navbar-header">
-	    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
-	        	<span class="sr-only">Toggle navigation</span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	        	<span class="icon-bar"></span>
-	    	</button>
-	    	<a href="http://www.creative-tim.com">
-	        	<div class="logo-container">
-	                <div class="logo">
-	                    <img src="assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>Material Kit</b> was Designed & Coded with care by the staff from <b>Creative Tim</b>" data-placement="bottom" data-html="true">
-	                </div>
-	                <div class="brand">
-	                    Creative Tim
-	                </div>
+<body>
 
 
-				</div>
-	      	</a>
-	    </div>
+<nav class="navbar filter-bar navbar-fixed-top navbar-transparent">
+    <div class="container">
+    <div class="notification">
+        <div id="notif-message" class="notif-message" style="display: none;" notice-type=success>
+        </div>
+    </div>
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div data-no-turbolink>
+            <a href="index.html" class="navbar-brand">
+                <div class="logo">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height ="60"/>
+                </div>
+                <p>van <br>xv</p>
+            </a>
+        </div>
 
-	    <div class="collapse navbar-collapse" id="navigation-index">
-	    	<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="components-documentation.html" target="_blank">
-						<i class="material-icons">dashboard</i> Components
-					</a>
-				</li>
-				<li>
-					<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">
-						<i class="material-icons">unarchive</i> Upgrade to PRO
-					</a>
-				</li>
-				<li>
-					<a rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
-						<i class="fa fa-twitter"></i>
-					</a>
-				</li>
-				<li>
-					<a rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-white btn-simple btn-just-icon">
-						<i class="fa fa-facebook-square"></i>
-					</a>
-				</li>
-				<li>
-					<a rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-white btn-simple btn-just-icon">
-						<i class="fa fa-instagram"></i>
-					</a>
-				</li>
+    </div>
 
-	    	</ul>
-	    </div>
-	</div>
+
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+        <ul class="nav navbar-nav navbar-right" data-no-turbolink>
+            <li class="dropdown dropdown-categories" data-no-turbolink>
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-th-large icon-2x"></i>
+                    <p>
+                        产品分类
+                        <span class="caret"></span>
+                    </p>
+
+                </a>
+
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="https://www.zhess.com/">
+                        全部分类
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="https://www.creative-tim.com/bootstrap-themes/free">
+                        优惠产品
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.creative-tim.com/bootstrap-themes/premium">
+                        买家秀
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+            <li>
+                <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">
+                    <i class="icon-male-sign-alt icon-2x"></i>
+                    <p>Login/Register</p>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
 </nav>
-<!-- End Navbar -->
 
-<div class="wrapper">
-	<div class="header header-filter" style="background-image: url('assets/img/bg2.jpeg');">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="brand">
-						<h1>Material Kit.</h1>
-						<h3>A Badass Bootstrap UI Kit based on Material Design.</h3>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="main main-raised">
-		<div class="section section-basic">
-	    	<div class="container">
-	            <div class="title">
-	                <h2>Basic Elements</h2>
-	            </div>
-
-		        <div id="buttons">
-					<div class="title">
-						<h3>Buttons <br />
-							<small>Pick your style</small>
-						</h3>
-					</div>
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<button class="btn btn-primary">Default</button>
-							<button class="btn btn-primary btn-round">Round</button>
-							<button class="btn btn-primary btn-round">
-								<i class="material-icons">favorite</i> With Icon
-							</button>
-							<button class="btn btn-primary btn-fab btn-fab-mini btn-round">
-								<i class="material-icons">favorite</i>
-							</button>
-							<button class="btn btn-primary btn-simple">Simple</button>
-						</div>
-					</div>
-					<div class="title">
-	                    <h3><small>Pick your size</small></h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn btn-primary btn-xs">x-Small</button>
-	                        <button class="btn btn-primary btn-sm">Small</button>
-	                        <button class="btn btn-primary">Regular</button>
-	                        <button class="btn btn-primary btn-lg">Large</button>
-	                    </div>
-	                </div>
-
-					<div class="title">
-	                    <h3><small> Pick your color </small></h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn">Default</button>
-	                        <button class="btn btn-primary">Primary</button>
-	                        <button class="btn btn-info">Info</button>
-	                        <button class="btn btn-success">Success</button>
-	                        <button class="btn btn-warning">Warning</button>
-	                        <button class="btn btn-danger">Danger</button>
-	                    </div>
-	                </div>
-	                <div class="title">
-	                    <h3>Links</h3>
-	                </div>
-	                <div class="row">
-	                    <div class="col-md-8 col-md-offset-2">
-	                        <button class="btn btn-simple">Default</button>
-	                        <button class="btn btn-simple btn-primary ">Primary</button>
-	                        <button class="btn btn-simple btn-info">Info</button>
-	                        <button class="btn btn-simple btn-success">Success</button>
-	                        <button class="btn btn-simple btn-warning">Warning</button>
-	                        <button class="btn btn-simple btn-danger">Danger</button>
-	                    </div>
-	                </div>
-		        </div>
-
-		        <div id="inputs">
-		            <div class="title">
-		                <h3>Inputs</h3>
-		            </div>
-
-		            <div class="row">
-						<div class="col-sm-3">
-		                	<div class="form-group">
-		        	        	<input type="text" value="" placeholder="Regular" class="form-control" />
-		                	</div>
-		                </div>
-
-						<div class="col-sm-3">
-							<div class="form-group label-floating">
-								<label class="control-label">With Floating Label</label>
-								<input type="email" class="form-control">
-							</div>
-						</div>
-
-		                <div class="col-sm-3">
-		                	<div class="form-group label-floating has-success">
-								<label class="control-label">Success input</label>
-		                    	<input type="text" value="Success" class="form-control" />
-								<span class="form-control-feedback">
-									<i class="material-icons">done</i>
-								</span>
-		                	</div>
-		                </div>
-
-		                <div class="col-sm-3">
-		                	<div class="form-group label-floating has-error">
-								<label class="control-label">Error input</label>
-		                    	<input type="email" value="Error Input" class="form-control" />
-		                    	<span class="material-icons form-control-feedback">clear</span>
-		                	</div>
-		                </div>
-
-						<div class="col-sm-3">
-							<div class="input-group">
-								<span class="input-group-addon">
-									<i class="material-icons">group</i>
-								</span>
-								<input type="text" class="form-control" placeholder="With Material Icons">
-							</div>
-						</div>
-
-						<div class="col-sm-3">
-							<div class="input-group">
-								<span class="input-group-addon">
-									<i class="fa fa-group"></i>
-								</span>
-								<input type="text" class="form-control" placeholder="With Font Awesome Icons">
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="space-70"></div>
-
-				<div id="checkRadios">
-				    <div class="row">
-		                <div class="col-sm-3">
-		                    <div class="title">
-		                        <h3>Checkboxes</h3>
-		                    </div>
-
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" name="optionsCheckboxes">
-									Unchecked
-								</label>
-							</div>
-
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" name="optionsCheckboxes" checked>
-									Checked
-								</label>
-							</div>
-
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" name="optionsCheckboxes" disabled>
-									Disabled Unchecked
-								</label>
-							</div>
-
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" name="optionsCheckboxes" disabled checked>
-									Disabled Checked
-								</label>
-							</div>
-
-		                </div>
-
-		                <div class="col-sm-3">
-		                    <div class="title">
-		                        <h3>Radio Buttons</h3>
-		                    </div>
-
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadios">
-									Radio is off
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadios" checked="true">
-									Radio is on
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadiosDisabled" disabled>
-									Disabled Radio is off
-								</label>
-							</div>
-							<div class="radio">
-								<label>
-									<input type="radio" name="optionsRadiosDisabled" checked="true" disabled>
-									Disabled Radio is on
-								</label>
-							</div>
-		                </div>
-
-						<div class="col-sm-3">
-		                    <div class="title">
-		                        <h3>Toggle Buttons</h3>
-							</div>
-
-							<div class="togglebutton">
-				            	<label>
-				                	<input type="checkbox" checked="">
-									Toggle is on
-				            	</label>
-				            </div>
-
-							<div class="togglebutton">
-				            	<label>
-				                	<input type="checkbox">
-									Toggle is off
-				            	</label>
-				            </div>
-		                </div>
-
-						<div class="col-sm-3">
-							<div class="title">
-		                        <h3>Sliders</h3>
-		                    </div>
-
-							<div id="sliderRegular" class="slider"></div>
-							<div id="sliderDouble" class="slider slider-info"></div>
-						</div>
-
-		            </div>
-		        </div>
-	    	</div>
-	    </div>
-
-	    <div class="section section-navbars">
-	        <div class="container" id="menu-dropdown">
-
-				<div class="row">
-	                <div class="col-md-6">
-	                    <div class="title">
-	                        <h3>Menu</h3>
-	                    </div>
-
-                        <nav class="navbar navbar-default">
-                        	<div class="container-fluid">
-	                            <div class="navbar-header">
-	                            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar">
-	                            		<span class="sr-only">Toggle navigation</span>
-		                                <span class="icon-bar"></span>
-		                                <span class="icon-bar"></span>
-		                                <span class="icon-bar"></span>
-		                            </button>
-	                            	<a class="navbar-brand" href="#">Menu</a>
-	                            </div>
-
-	                            <div class="collapse navbar-collapse" id="example-navbar">
-	                            	<ul class="nav navbar-nav">
-	                        			<li class="active"><a href="#">Link</a></li>
-	                            		<li><a href="#">Link</a></li>
-	                                	<li class="dropdown">
-	                                		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-												<b class="caret"></b>
-											</a>
-	                                    	<ul class="dropdown-menu dropdown-menu-right">
-	                                        	<li class="dropdown-header">Dropdown header</li>
-	                                        	<li><a href="#">Action</a></li>
-		                                        <li><a href="#">Another action</a></li>
-		                                        <li><a href="#">Something else here</a></li>
-		                                        <li class="divider"></li>
-		                                        <li><a href="#">Separated link</a></li>
-		                                        <li class="divider"></li>
-		                                        <li><a href="#">One more separated link</a></li>
-		                                    </ul>
-	                                	</li>
-	                            	</ul>
-	                            </div>
-							</div>
-                        </nav>
-	                </div>
-	                <div class="col-md-6">
-						<div class="title">
-	                        <h3>Menu with Icons</h3>
-	                    </div>
-
-	                    <nav class="navbar navbar-info">
-	                    	<div class="container-fluid">
-								<div class="navbar-header">
-	                            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-icons">
-		                                <span class="sr-only">Toggle navigation</span>
-		                                <span class="icon-bar"></span>
-		                                <span class="icon-bar"></span>
-		                                <span class="icon-bar"></span>
-	                            	</button>
-	                            	<a class="navbar-brand" href="#">Icons</a>
-	                            </div>
-
-	                            <div class="collapse navbar-collapse" id="example-navbar-icons">
-	                            	<ul class="nav navbar-nav navbar-right">
-	                        			<li>
-											<a href="#pablo"><i class="material-icons">email</i></a>
-										</li>
-	                            		<li>
-											<a href="#pablo"><i class="material-icons">face</i></a>
-										</li>
-	                                	<li class="dropdown">
-	                                		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-												<i class="material-icons">settings</i>
-												<b class="caret"></b>
-											</a>
-	                                    	<ul class="dropdown-menu dropdown-menu-right">
-	                                        	<li class="dropdown-header">Dropdown header</li>
-	                                        	<li><a href="#">Action</a></li>
-		                                        <li><a href="#">Another action</a></li>
-		                                        <li><a href="#">Something else here</a></li>
-		                                        <li class="divider"></li>
-		                                        <li><a href="#">Separated link</a></li>
-		                                        <li class="divider"></li>
-		                                        <li><a href="#">One more separated link</a></li>
-		                                    </ul>
-	                                	</li>
-	                            	</ul>
-	                            </div>
-							</div>
-	                    </nav>
-
-	                </div>
-	            </div>
-	            <div class="title">
-	                <h3>Navigation</h3>
-	            </div>
-	        </div>
-
-	        <div id="navbar">
-	            <div class="navigation-example">
-
-					<!-- Navbar Primary  -->
-					<nav class="navbar navbar-primary">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-primary">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#pablo">Primary Color</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="example-navbar-primary">
-								<ul class="nav navbar-nav navbar-right">
-									<li class="active">
-		                                <a href="#pablo">
-											<i class="material-icons">explore</i>
-											Discover
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="material-icons">account_circle</i>
-		                                    Profile
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="material-icons">settings</i>
-											Settings
-		                                </a>
-		                            </li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- End Navbar Primary -->
-
-					<!-- Navbar Info -->
-					<nav class="navbar navbar-info">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-info">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#pablo">Info Color</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="example-navbar-info">
-								<ul class="nav navbar-nav navbar-right">
-									<li class="active">
-		                                <a href="#pablo" >
-		                                    Discover
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-		                                    Profile
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-		                                    Settings
-		                                </a>
-		                            </li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- End Navbar Info -->
-
-					<!-- Navbar Success -->
-					<nav class="navbar navbar-success">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-success">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#">Success Color</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="example-navbar-success">
-								<ul class="nav navbar-nav navbar-right">
-									<li class="active">
-		                                <a href="#pablo">
-											<i class="material-icons">explore</i>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="material-icons">account_circle</i>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="material-icons">settings</i>
-		                                </a>
-		                            </li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- End Navbar Success -->
-
-					<!-- Navbar Warning -->
-					<nav class="navbar navbar-warning">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-warning">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#pablo">Warning Color</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="example-navbar-warning">
-								<ul class="nav navbar-nav navbar-right">
-									<li>
-		                                <a href="#pablo">
-											<i class="fa fa-facebook-square"></i>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="fa fa-twitter"></i>
-		                                </a>
-		                            </li>
-									<li>
-		                                <a href="#pablo">
-											<i class="fa fa-google-plus"></i>
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="fa fa-instagram"></i>
-		                                </a>
-		                            </li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- End Navbar Warning -->
-
-					<!-- Navbar Danger -->
-					<nav class="navbar navbar-danger">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-danger">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#pablo">Danger Color</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="example-navbar-danger">
-								<ul class="nav navbar-nav navbar-right">
-									<li>
-		                                <a href="#pablo">
-											<i class="fa fa-facebook-square"></i> Share
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-											<i class="fa fa-twitter"></i> Tweet
-		                                </a>
-		                            </li>
-									<li>
-		                                <a href="#pablo">
-											<i class="fa fa-pinterest"></i> Pin
-		                                </a>
-		                            </li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- End Navbar Danger -->
-
-					<!-- Navbar Transparent -->
-					<nav class="navbar navbar-transparent">
-						<div class="container">
-							<div class="navbar-header">
-								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-transparent">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-								<a class="navbar-brand" href="#pablo">Transparent</a>
-							</div>
-
-							<div class="collapse navbar-collapse" id="example-navbar-transparent">
-								<ul class="nav navbar-nav navbar-right">
-									<li>
-		                                <a href="#pablo">
-		                                    <i class="fa fa-facebook-square"></i>
-		                                    Facebook
-		                                </a>
-		                            </li>
-		                            <li>
-		                                <a href="#pablo">
-		                                    <i class="fa fa-twitter"></i>
-		                                    Twitter
-		                                </a>
-		                            </li>
-									<li>
-		                                <a href="#pablo">
-											<i class="fa fa-instagram"></i> Instagram
-		                                </a>
-		                            </li>
-								</ul>
-							</div>
-						</div>
-					</nav>
-					<!-- End Navbar Transparent-->
-	            </div>
-	        </div>
-		</div>
-		<!-- End .section-navbars  -->
-
-		<div class="section section-tabs">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="title">
-							<h3>Tabs with Icons on Card</h3>
-						</div>
-
-						<!-- Tabs with icons on Card -->
-						<div class="card card-nav-tabs">
-							<div class="header header-success">
-								<!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-								<div class="nav-tabs-navigation">
-									<div class="nav-tabs-wrapper">
-										<ul class="nav nav-tabs" data-tabs="tabs">
-											<li class="active">
-												<a href="#profile" data-toggle="tab">
-													<i class="material-icons">face</i>
-													Profile
-												</a>
-											</li>
-											<li>
-												<a href="#messages" data-toggle="tab">
-													<i class="material-icons">chat</i>
-													Messages
-												</a>
-											</li>
-											<li>
-												<a href="#settings" data-toggle="tab">
-													<i class="material-icons">build</i>
-													Settings
-												</a>
-
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="content">
-								<div class="tab-content text-center">
-									<div class="tab-pane active" id="profile">
-										<p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
-									</div>
-									<div class="tab-pane" id="messages">
-										<p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
-									</div>
-									<div class="tab-pane" id="settings">
-										<p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- End Tabs with icons on Card -->
-
-					</div>
-
-					<div class="col-md-6">
-						<div class="title">
-							<h3>Tabs on Plain Card</h3>
-						</div>
-
-						<!-- Tabs on Plain Card -->
-						<div class="card card-nav-tabs card-plain">
-							<div class="header header-danger">
-								<!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-								<div class="nav-tabs-navigation">
-									<div class="nav-tabs-wrapper">
-										<ul class="nav nav-tabs" data-tabs="tabs">
-											<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-											<li><a href="#updates" data-toggle="tab">Updates</a></li>
-											<li><a href="#history" data-toggle="tab">History</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="content">
-								<div class="tab-content text-center">
-									<div class="tab-pane active" id="home">
-										<p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
-									</div>
-									<div class="tab-pane" id="updates">
-										<p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. </p>
-									</div>
-									<div class="tab-pane" id="history">
-										<p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- End Tabs on plain Card -->
-					</div>
-
-				</div>
-			</div>
-		</div>
-		<!-- End Section Tabs -->
-
-	    <div class="section section-pagination">
-	        <div class="container">
-	            <div class="row">
-	                <div class="col-md-6">
-	                    <div class="title">
-	                        <h3>Progress Bars</h3>
-	                    </div>
-
-	                    <div class="progress progress-line-primary">
-	                    	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-	                        <span class="sr-only">60% Complete</span>
-	                      </div>
-	                    </div>
-
-	                    <div class="progress progress-line-info">
-	                    	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-	                    		<span class="sr-only">60% Complete</span>
-	                    	</div>
-	                    </div>
-
-	                    <div class="progress progress-line-danger">
-	                    	<div class="progress-bar progress-bar-success" style="width: 35%">
-	                            <span class="sr-only">35% Complete (success)</span>
-	                        </div>
-	                        <div class="progress-bar progress-bar-warning" style="width: 20%">
-	                            <span class="sr-only">20% Complete (warning)</span>
-	                        </div>
-	                        <div class="progress-bar progress-bar-danger" style="width: 10%">
-	                            <span class="sr-only">10% Complete (danger)</span>
-	                        </div>
-	                    </div>
-
-						<br />
-						<div class="title">
-	                        <h3>Navigation Pills</h3>
-	                    </div>
-
-						<ul class="nav nav-pills" role="tablist">
-							<!--
-								color-classes: "nav-pills-primary", "nav-pills-info", "nav-pills-success", "nav-pills-warning","nav-pills-danger"
-	                        -->
-							<li>
-								<a href="#dashboard" role="tab" data-toggle="tab">
-									<i class="material-icons">dashboard</i>
-									Dashboard
-								</a>
-							</li>
-							<li class="active">
-	                            <a href="#schedule" role="tab" data-toggle="tab">
-									<i class="material-icons">schedule</i>
-									Schedule
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#tasks" role="tab" data-toggle="tab">
-									<i class="material-icons">list</i>
-	                                Tasks
-	                            </a>
-	                        </li>
-							<li>
-	                            <a href="#payments" role="tab" data-toggle="tab">
-									<i class="material-icons">attach_money</i>
-	                                Payments
-	                            </a>
-	                        </li>
-	                    </ul>
-
-	                </div>
-
-	                <div class="col-md-6">
-	                    <div class="title">
-	                        <h3>Pagination</h3>
-	                    </div>
-
-	                    <ul class="pagination pagination-primary">
-	                    <!--
-							color-classes: "pagination-primary", "pagination-info", "pagination-success", "pagination-warning", "pagination-danger"
-	                    -->
-							<li><a href="javascript:void(0);">1</a></li>
-							<li><a href="javascript:void(0);">...</a></li>
-							<li><a href="javascript:void(0);">5</a></li>
-							<li><a href="javascript:void(0);">6</a></li>
-							<li class="active"><a href="javascript:void(0);">7</a></li>
-							<li><a href="javascript:void(0);">8</a></li>
-							<li><a href="javascript:void(0);">9</a></li>
-							<li><a href="javascript:void(0);">...</a></li>
-							<li><a href="javascript:void(0);">12</a></li>
-	                    </ul>
-
-						<ul class="pagination pagination-info">
-							<li><a href="javascript:void(0);">< prev</a></li>
-							<li><a href="javascript:void(0);">1</a></li>
-							<li><a href="javascript:void(0);">2</a></li>
-							<li class="active"><a href="javascript:void(0);">3</a></li>
-							<li><a href="javascript:void(0);">4</a></li>
-							<li><a href="javascript:void(0);">5</a></li>
-							<li><a href="javascript:void(0);">next ></a></li>
-	                    </ul>
-
-						<div class="title">
-	                        <h3>Labels </h3>
-	                    </div>
-	                    <span class="label label-default">Default</span>
-	                    <span class="label label-primary">Primary</span>
-	                    <span class="label label-info">Info</span>
-	                    <span class="label label-success">Success</span>
-	                    <span class="label label-warning">Warning</span>
-	                    <span class="label label-danger">Danger</span>
-	                </div>
-	            </div>
-
-				<div class="space"></div>
-
-	            <div class="title">
-	                <h3>Notifications</h3>
-	            </div>
-	        </div>
-	    </div>
-
-	    <div class="section section-notifications" id="notifications">
-	        <div class="alert alert-info">
-	            <div class="container-fluid">
-					<div class="alert-icon">
-						<i class="material-icons">info_outline</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-
-	            	<b>Info alert:</b> You've got some friends nearby, stop looking at your phone and find them...
-	            </div>
-	        </div>
-	        <div class="alert alert-success">
-	            <div class="container-fluid">
-					<div class="alert-icon">
-						<i class="material-icons">check</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-	            	<b>Success Alert:</b> Yuhuuu! You've got your $11.99 album from The Weeknd
-	            </div>
-	        </div>
-	        <div class="alert alert-warning">
-	             <div class="container-fluid">
-					 <div class="alert-icon">
-						<i class="material-icons">warning</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-	                 <b>Warning Alert:</b> Hey, it looks like you still have the "copyright &copy;  2015" in your footer. Please update it!
-	            </div>
-	        </div>
-	        <div class="alert alert-danger">
-	             <div class="container-fluid">
-					 <div class="alert-icon">
-						<i class="material-icons">error_outline</i>
-					</div>
-					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-						<span aria-hidden="true"><i class="material-icons">clear</i></span>
-					</button>
-	                 <b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...
-	            </div>
-	        </div>
-	        <div class="clearfix"></div>
-	    </div><!--  end notifications -->
-
-	    <div class="section">
-	        <div class="container tim-container">
-	            <div class="title">
-	                <h2>Typography</h2>
-	            </div>
-	            <div id="typography">
-	                <div class="row">
-	                    <div class="tim-typo">
-	                        <h1><span class="tim-note">Header 1</span>The Life of Material Kit </h1>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <h2><span class="tim-note">Header 2</span>The Life of Material Kit</h2>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <h3><span class="tim-note">Header 3</span>The Life of Material Kit</h3>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <h4><span class="tim-note">Header 4</span>The Life of Material Kit</h4>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <h5><span class="tim-note">Header 5</span>The Life of Material Kit</h5>
-	                    </div>
-	                     <div class="tim-typo">
-	                        <h6><span class="tim-note">Header 6</span>The Life of Material Kit</h6>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <p><span class="tim-note">Paragraph</span>
-	                            I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Quote</span>
-	                        <blockquote>
-	                         <p>
-	                         I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
-	                         </p>
-	                         <small>
-	                         Kanye West, Musician
-	                         </small>
-	                        </blockquote>
-	                    </div>
-
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Muted Text</span>
-	                        <p class="text-muted">
-	                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
-						    </p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Primary Text</span>
-	                        <p class="text-primary">
-	                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Info Text</span>
-	                        <p class="text-info">
-	                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Success Text</span>
-	                        <p class="text-success">
-	                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Warning Text</span>
-	                        <p class="text-warning">
-	                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
-	                        </p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <span class="tim-note">Danger Text</span>
-	                        <p class="text-danger">
-	                        I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-	                    </div>
-	                    <div class="tim-typo">
-	                        <h2><span class="tim-note">Small Tag</span>
-								Header with small subtitle <br>
-								<small>Use "small" tag for the headers</small>
-							</h2>
-	                    </div>
-	                </div>
-	            </div>
-
-				<div class="space-50"></div>
-
-	            <div id="images">
-	                 <div class="title">
-	                    <h2>Images</h2>
-	                </div>
-	                <br>
-	                <div class="row">
-						<div class="col-sm-2">
-	                        <h4>Rounded Image</h4>
-	                        <img src="assets/img/avatar.jpg" alt="Rounded Image" class="img-rounded img-responsive">
-	                    </div>
-						<div class="col-sm-2 col-sm-offset-1">
-	                        <h4>Circle Image</h4>
-	                        <img src="assets/img/avatar.jpg" alt="Circle Image" class="img-circle img-responsive">
-	                    </div>
-						<div class="col-sm-2 col-sm-offset-1">
-	                        <h4>Rounded Raised</h4>
-	                        <img src="assets/img/avatar.jpg" alt="Raised Image" class="img-rounded img-responsive img-raised">
-	                    </div>
-
-	                    <div class="col-sm-2 col-sm-offset-1">
-	                        <h4>Circle Raised</h4>
-	                        <img src="assets/img/avatar.jpg" alt="Thumbnail Image" class="img-circle img-raised img-responsive">
-	                    </div>
-	                </div>
-	                <div class="row">
-
-	                </div>
-	            </div>
-
-	        </div>
-	    </div>
-
-	    <div class="section" id="javascriptComponents">
-	        <div class="container">
-	            <div class="title">
-	                <h2>Javascript components</h2>
-	            </div>
-
-	            <div class="row" id="modals">
-	                <div class="col-md-6">
-	                    <div class="title">
-	                        <h3>Modal</h3>
-	                    </div>
-
-	                    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-	                      Launch demo modal
-	                    </button>
-	                </div>
-	                <div class="col-md-6">
-						<div class="title">
-	                        <h3>Popovers</h3>
-	                    </div>
-
-	                    <button type="button" class="btn btn-default" data-toggle="popover" data-placement="left" title="Popover on left" data-content="Here will be some very useful information about his popover.<br> Here will be some very useful information about his popover." data-container="body">On left</button>
-
-						<button type="button" class="btn btn-default" data-toggle="popover" data-placement="top" title="Popover on top" data-content="Here will be some very useful information about his popover." data-container="body">On top</button>
-
-						<button type="button" class="btn btn-default" data-toggle="popover" data-placement="bottom" title="Popover on bottom" data-content="Here will be some very useful information about his popover." data-container="body">On bottom</button>
-
-	                    <button type="button" class="btn btn-default" data-toggle="popover" data-placement="right" title="Popover on right" data-content="Here will be some very useful information about his popover." data-container="body">On right</button>
-
-	                </div>
-	                <br /><br />
-
-		            <div class="col-md-6">
-		                <div class="title">
-		                    <h3>Datepicker</h3>
-		                </div>
-		                <div class="row">
-		                    <div class="col-md-6">
-								<div class="form-group label-static">
-									<label class="control-label">Datepicker</label>
-									<input type="text" class="datepicker form-control" value="03/12/2016" />
-								</div>
-
-		                    </div>
-		                </div>
-		            </div>
-
-		            <div class="col-md-6">
-						<div class="title">
-							<h3>Tooltips</h3>
-						</div>
-
-						<button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="left" title="Tooltip on left" data-container="body">On left</button>
-
-						<button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top" data-container="body">On top</button>
-
-						<button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" data-container="body">On bottom</button>
-
-						<button type="button" class="btn btn-default btn-tooltip" data-toggle="tooltip" data-placement="right" title="Tooltip on right" data-container="body">On right</button>
-
-		                <div class="clearfix"></div><br><br>
-		            </div>
-
-					<div class="title">
-		                <h3>Carousel</h3>
-		            </div>
-				</div>
-			</div>
-		</div>
-
-	    <div class="section" id="carousel">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-
-						<!-- Carousel Card -->
-						<div class="card card-raised card-carousel">
-							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-								<div class="carousel slide" data-ride="carousel">
-
-									<!-- Indicators -->
-									<ol class="carousel-indicators">
-										<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-										<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-										<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-									</ol>
-
-									<!-- Wrapper for slides -->
-									<div class="carousel-inner">
-										<div class="item active">
-											<img src="assets/img/bg2.jpeg" alt="Awesome Image">
-											<div class="carousel-caption">
-												<h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4>
-											</div>
-										</div>
-										<div class="item">
-											<img src="assets/img/bg3.jpeg" alt="Awesome Image">
-											<div class="carousel-caption">
-												<h4><i class="material-icons">location_on</i> Somewhere Beyond, United States</h4>
-											</div>
-										</div>
-										<div class="item">
-											<img src="assets/img/bg4.jpeg" alt="Awesome Image">
-											<div class="carousel-caption">
-												<h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4>
-											</div>
-										</div>
-									</div>
-
-									<!-- Controls -->
-									<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-										<i class="material-icons">keyboard_arrow_left</i>
-									</a>
-									<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-										<i class="material-icons">keyboard_arrow_right</i>
-									</a>
-								</div>
-							</div>
-						</div>
-						<!-- End Carousel Card -->
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section">
-	        <div class="container text-center">
-	            <div class="row">
-	                <div class="col-md-8 col-md-offset-2 text-center">
-	                    <h2>Completed with examples</h2>
-	                    <h4>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</h4>
-	                </div>
-	            </div>
-			</div>
-		</div>
-
-		<div class="section section-full-screen section-signup" style="background-image: url('assets/img/city.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-md-offset-4">
-						<div class="card card-signup">
-							<form class="form" method="" action="">
-								<div class="header header-primary text-center">
-									<h4>Sign Up</h4>
-									<div class="social-line">
-										<a href="#pablo" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-facebook-square"></i>
-										</a>
-										<a href="#pablo" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-twitter"></i>
-										</a>
-										<a href="#pablo" class="btn btn-simple btn-just-icon">
-											<i class="fa fa-google-plus"></i>
-										</a>
-									</div>
-								</div>
-								<p class="text-divider">Or Be Classical</p>
-								<div class="content">
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">face</i>
-										</span>
-										<input type="text" class="form-control" placeholder="First Name...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">email</i>
-										</span>
-										<input type="text" class="form-control" placeholder="Email...">
-									</div>
-
-									<div class="input-group">
-										<span class="input-group-addon">
-											<i class="material-icons">lock_outline</i>
-										</span>
-										<input type="password" placeholder="Password..." class="form-control" />
-									</div>
-
-									<!-- If you want to add a checkbox to this form, uncomment this code
-
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="optionsCheckboxes" checked>
-											Subscribe to newsletter
-										</label>
-									</div> -->
-								</div>
-								<div class="footer text-center">
-									<a href="#pablo" class="btn btn-simple btn-primary btn-lg">Get Started</a>
-								</div>
-							</form>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-md-12 text-center">
-			<a href="examples/signup-page.html" class="btn btn-simple btn-primary btn-lg" target="_blank">View Signup Page</a>
-		</div>
-
-		<div class="space-50"></div>
-		<div class="section section-examples">
-	        <div class="container-fluid text-center">
-	            <div class="row">
-	                <div class="col-md-6">
-	                    <a href="examples/landing-page.html" target="_blank">
-	                        <img src="assets/img/landing.jpg" alt="Rounded Image" class="img-rounded img-raised img-responsive">
-	                        <button class="btn  btn-simple btn-primary btn-lg">View Landing Page</button>
-	                    </a>
-	                </div>
-	                <div class="col-md-6">
-	                    <a href="examples/profile-page.html" target="_blank">
-	                        <img src="assets/img/profile.jpg" alt="Rounded Image" class="img-rounded img-raised img-responsive">
-	                        <button class="btn btn-simple btn-primary btn-lg">View Profile Page</button>
-	                    </a>
-	                </div>
-	            </div>
-	        </div>
-		</div>
-
-	    <div class="section section-download">
-	        <div class="container">
-	            <div class="row text-center">
-	                <div class="col-md-8 col-md-offset-2">
-	                    <h2>Do you love this UI Kit?</h2>
-	                    <h4>Cause if you do, it can be yours for FREE. Hit the button below to navigate to Creative Tim where you can find the kit. Start a new project or give an old Bootstrap project a new look!</h4>
-	                </div>
-	                <div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
-	                    <a href="http://www.creative-tim.com/product/material-kit" class="btn btn-primary btn-lg">
-							<i class="material-icons">cloud_download</i> Free Download
-						</a>
-	                </div>
-				</div>
-
-				<br><br>
-
-				<div class="row text-center">
-					<div class="col-md-8 col-md-offset-2">
-	                    <h2>Want more?</h2>
-	                    <h4>We've just launched <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" target="_blank">Material Kit PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap UI Kit inspired by Material Design.</h4>
-	                </div>
-					<div class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4">
-						<a href="http://demos.creative-tim.com/material-kit-pro/presentation.html?ref=utp-freebie" class="btn btn-upgrade btn-lg" target="_blank">
-							<i class="material-icons">unarchive</i> Upgrade to PRO
-						</a>
-					</div>
-	            </div>
-
-	            <div class="row sharing-area text-center">
-	                    <h3>Thank you for supporting us!</h3>
-	                    <a href="#" class="btn btn-twitter">
-	                        <i class="fa fa-twitter"></i>
-	                        Tweet
-	                    </a>
-	                    <a href="#" class="btn btn-facebook">
-	                        <i class="fa fa-facebook-square"></i>
-	                        Share
-	                    </a>
-						<a href="#" class="btn btn-google-plus">
-	                        <i class="fa fa-google-plus"></i>
-	                        Share
-	                    </a>
-						<a href="#" class="btn btn-github">
-	                        <i class="fa fa-github"></i>
-	                    	Star
-	                    </a>
-	            </div>
-	        </div>
-	    </div>
-
-	</div>
-    <footer class="footer">
-	    <div class="container">
-	        <nav class="pull-left">
-	            <ul>
-					<li>
-						<a href="http://www.creative-tim.com">
-							Creative Tim
-						</a>
-					</li>
-					<li>
-						<a href="http://presentation.creative-tim.com">
-						   About Us
-						</a>
-					</li>
-					<li>
-						<a href="http://blog.creative-tim.com">
-						   Blog
-						</a>
-					</li>
-					<li>
-						<a href="http://www.creative-tim.com/license">
-							Licenses
-						</a>
-					</li>
-	            </ul>
-	        </nav>
-	        <div class="copyright pull-right">
-	            &copy; 2016, made with <i class="material-icons">favorite</i> by Creative Tim for a better web.
-	        </div>
-	    </div>
-	</footer>
+<div class="modal fade login" id="loginModal">
+    <div class="modal-dialog login animated">
+      <div class="modal-content">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Login with</h4>
+    </div>
+    <div class="modal-body">
+        <div class="box">
+            <div class="content">
+                <div class="social" data-no-turbolink>
+                    <a id="github_login" class="circle github" href="https://www.creative-tim.com/social/github?destination=dashboard&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252F">
+
+                            <i class="icon-github"></i>
+</a>                    <a id="google_login" class="circle google" href="https://www.creative-tim.com/social/google_oauth2?destination=dashboard&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252F">
+
+                            <i class="icon-google-plus-alt"></i>
+</a>                    <a id="facebook_login" class="circle facebook" href="https://www.creative-tim.com/social/facebook?destination=dashboard&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252F">
+
+                            <i class="icon-facebook-alt"></i>
+</a>                </div>
+                <div class="division">
+                      <div class="line l"></div>
+                      <span>or</span>
+                      <div class="line r"></div>
+                </div>
+
+                <div class="error inside-alert"></div>
+                <div class="form loginBox">
+
+                        <form html="{:multipart=&gt;true}" action="https://www.creative-tim.com/login" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
+                            <input type="hidden" name="destination" id="destination" value="dashboard" />
+                            <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2F" />
+                            <input type="submit" name="commit" value="Login" class="btn btn-default btn-login" />
+</form>                </div>
+             </div>
+        </div>
+        <div class="box">
+            <div class="content registerBox" style="display:none;">
+             <div class="form">
+                <form html="{:multipart=&gt;true}" action="https://www.creative-tim.com/register" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
+                  	<input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Repeat Password" />
+                    <input type="hidden" name="destination" id="destination" value="dashboard" />
+                    <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2F" />
+                    <input type="submit" name="commit" value="Create account" class="btn btn-default btn-register" />
+                        <label class="checkbox">
+                            <input type="checkbox" value="1" data-toggle="checkbox" name="subscribed" class="ct-info checkbox-subscribe" checked>
+                            Subscribe me to the Newsletter
+                        </label>
+
+</form>             </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="forgot login-footer">
+
+            <span>Looking to
+                 <a href="javascript: showRegisterForm();">create an account</a>
+            ?</span>
+            <br />
+            <span><a href="https://www.creative-tim.com/forgot-password">Forgot password</a> ?</span>
+        </div>
+        <div class="forgot register-footer" style="display:none">
+             <span>Already have an account?</span>
+             <a href="javascript: showLoginForm();">Login</a>
+        </div>
+    </div>
+
+    </div>
+    </div>
 </div>
 
-<!-- Sart Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade cart-modal cart-modal-checkout" id="cart-modal" role="dialog">
+	<div class="text-center">
+		<ul class="cart-steps">
+			<li class="active">
+				<a href="index.html#cart-review">
+					<div class="number">1</div>
+					<div class="step">Review</div>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#cart-payment-details" onClick="$('#my-cart').submit();">
+					<div class="number">2</div>
+					<div class="step">Payment Details</div>
+				</a>
+			</li>
+			<li>
+				<a href="index.html#cart-order-receipt">
+					<div class="number">3</div>
+					<div class="step">Order Receipt</div>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+
 	<div class="modal-dialog">
+
 		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-					<i class="material-icons">clear</i>
-				</button>
-				<h4 class="modal-title">Modal title</h4>
+			<div class="modal-header text-center">
+				<h3 class="modal-title">Shopping Cart</h3>
+				<i class="icon-remove-circle close" data-dismiss="modal" aria-label="Close"></i>
 			</div>
-			<div class="modal-body">
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-				</p>
+			<div id="content-for-cart" class="content-container">
+				<div class="empty-cart-message">
+    <i class="icon-shopping-cart icon-2x"></i>
+    <h4>Your cart is currently empty.</h4>
+</div>
+<div class="text-center">
+    <a href="https://www.creative-tim.com/bootstrap-themes/premium#from-empty-shopping-cart" class="btn btn-info btn-new btn-fill btn-wd">
+        Start Shopping
+    </a>
+</div>
+
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default btn-simple">Nice Button</button>
-				<button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
-			</div>
+			<i class="fa fa-refresh fa-spin fa-fw loading-icon"></i>
+		</div>
+
+		<div class="secured-message">
+			<i class="fa fa-lock"></i> Secured Payment by <b> Avangate </b> with: <br><i class="fa fa-cc-paypal fa-2x"></i> <i class="fa fa-cc-visa fa-2x"></i> <i class="fa fa-cc-mastercard fa-2x"></i> <i class="fa fa-cc-amex fa-2x"></i></p>
 		</div>
 	</div>
 </div>
-<!--  End Modal -->
+
+<div class="modal fade cart-modal cart-modal-one-product" id="product-cart-modal" role="dialog">
+
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title">You added this item to your cart!</h4>
+            </div>
+            <div class="modal-body">
+                <div class="cart">
+                    product
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://www.creative-tim.com/bootstrap-themes" type="button" class="btn btn-default btn-fill btn-new" data-dismiss="modal">
+                    Continue Shopping
+                </a>
+                <a type="button" class="btn btn-success btn-fill btn-new" href="https://www.creative-tim.com/checkout", data-cart="0">
+                    Checkout & Download
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="fb-root">
+</div>
+<script src="https://connect.facebook.net/en_US/sdk.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.fbAsyncInit = function()
+    {
+    //facebook share
+        FB.init({
+            appId: '655968634437471',
+            status: true,
+            cookie: true,
+            xfbml: true,
+            version: 'v2.0'
+        });
+    };
+
+
+    function shareFacebookWithCallBack(){
+        FB.ui({
+          method: 'feed',
+          link: 'https://www.creative-tim.com/'
+        }, function(response){
+            if (response && response.post_id) {
+               $.post('/share',{social_network : 1, product_id : parseInt('0'), provider: 'facebook' },function(data){
+                    if(data['status'] == 'ok'){
+                        console.log('ShareUp');
+                    }
+               });
+             } else {
+               console.log('Post was not published.');
+             }
+        });
+    }
+    //twitter share
+        window.twttr = (function (d,s,id) {
+          var t, js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+          js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+          return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+        }(document, "script", "twitter-wjs"));
+
+        // On ready, register the callback...
+        twttr.ready(function (twttr) {
+            twttr.events.bind('tweet', function (event) {
+                $.post('/share',{social_network : 2, product_id : parseInt('0'), provider: 'twitter' },function(data){
+                    if(data['status'] == 'ok'){
+                        console.log('ShareUp');
+                    }
+               });
+            });
+        });
+
+    function googleShare(event){
+        var width  = 575,
+        height = 400,
+        left   = ($(window).width()  - width)  / 2,
+        top    = ($(window).height() - height) / 2,
+        url    = 'https://plus.google.com/share?url=https://www.creative-tim.com/',
+        opts   = 'status=1' +
+                 ',width='  + width  +
+                 ',height=' + height +
+                 ',top='    + top    +
+                 ',left='   + left;
+        window.open(url, 'Google+', opts);
+        $.post('/share',{social_network : 3, product_id : parseInt('0'), provider: 'google' },function(data){
+                    if(data['status'] == 'ok'){
+                        console.log('ShareUp');
+                    }
+               });
+        return false;
+    }
+</script>
+
+<div class="modal fade" id="giftOfferModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-offer">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">&nbsp;</h4>
+        </div>
+        <img src="assets/valentines-day-54de97c0244637dcac32e0da8c952975.jpg" alt="Valentines day" />
+        <div class="modal-body">
+<!--             <p><b class="merry">Happy Valentine's Day!</b><br /> -->
+            <p><b>
+            Get a special gift from us! <br />
+            Follow the steps below to receive it. <br />
+            </b></p>
+            <ol>
+              <li>Buy a premium product.</li>
+              <li>Download the product from your dashboard.</li>
+              <li>Press the <b>'Send gift'</b> button in your dashboard and offer a premium product (with the price lower or equal) as a gift.</li>  
+            </ol>
+            </p>
+            <div class="text-center" data-no-turbolink>
+                <a href="https://www.creative-tim.com/bootstrap-themes?utm_campaign=christmas-gift-offer&amp;utm_source=tim&amp;utm_medium=modal" class="btn btn-danger btn-round btn-fill btn-new">Start shopping</a>
+            </div>
+            
+            <div class="design-courtesy">Photo Courtesy of <a href="https://dribbble.com/shots/2525661-Heart">Henrique Athayde</a></div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- product show -->
+<div class="main">
+
+
+        <div class="row">
+            <div class="clearfix"></div>
+                <div class="col-md-12">
+                    <div class="landing-title">
+                        <span class="title">Latest products</span>
+                    </div>
+                </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2017-05-16 14:57:50 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/56/thumb/opt_nuk_thumbnail.jpg?1494946669" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg?1494946669" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/now-ui-kit" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 4,326</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 68</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/now-ui-kit" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/now-ui-kit/index.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/now-ui-kit">
+                        <h3>Now UI Kit
+
+
+
+                            <div class="time pull-right ">
+
+                                    Free
+                            </div>
+                        </h3>
+
+                    <p>Free Bootstrap 4 UI Kit  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2017-03-24 16:13:59 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/55/thumb/opt_mdp_angular_thumbnail.jpg?1490372038" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/55/original/opt_mdp_angular_thumbnail.jpg?1490372038" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/material-dashboard-pro-angular2" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='chelaru_ciprian'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/112208/thumb.jpg?1484320178" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 253</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 89</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/material-dashboard-pro-angular2" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://md-pro-angular2.creative-tim.com/" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/material-dashboard-pro-angular2">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/material-dashboard-pro-angular2">
+                        <h3>Material Dashboard Pro Angular 2
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $59
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap Angular Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2017-02-22 16:53:58 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/54/thumb/opt_lbdp_angular_thumbnail.jpg?1488196041" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/54/original/opt_lbdp_angular_thumbnail.jpg?1488196041" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='chelaru_ciprian'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/112208/thumb.jpg?1484320178" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 87</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 23</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://lbd-pro-angular2.creative-tim.com/" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/light-bootstrap-dashboard-pro-angular2">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2">
+                        <h3>Light Bootstrap Dashboard Pro Angular2
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $49
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap Angular Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-11-03 16:20:03 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/51/thumb/opt_mdp_thumbnail.jpg?1478190003" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_thumbnail.jpg?1478190003" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/material-dashboard-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 661</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 87</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/material-dashboard-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/material-dashboard-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/material-dashboard-pro">
+                        <h3>Material Dashboard Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $49
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap Admin Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-06-15 14:52:53 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/46/thumb/opt_mkp_thumbnail.jpg?1466002372" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/46/original/opt_mkp_thumbnail.jpg?1466002372" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/material-kit-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="3">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='cristina'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='steefan'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/28/thumb.jpg?1446210509" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 1,046</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 126</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/material-kit-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/material-kit-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/material-kit-pro">
+                        <h3>Material Kit Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $79
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap UI Kit  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-09-21 16:10:05 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg?1474474204" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1474474204" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/material-dashboard" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 25,887</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 81</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/material-dashboard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/material-dashboard/examples/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/material-dashboard">
+                        <h3>Material Dashboard
+
+
+
+                            <div class="time pull-right ">
+
+                                    Free
+                            </div>
+                        </h3>
+
+                    <p>Free Bootstrap Material Admin  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-07-05 16:42:09 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/47/thumb/opt_pdp_thumbnail.jpg?1490974984" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/47/original/opt_pdp_thumbnail.jpg?1490974984" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/paper-dashboard-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="3">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='cristina'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 470</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 36</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/paper-dashboard-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/paper-dashboard-pro/examples/dashboard/overview.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/paper-dashboard-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/paper-dashboard-pro">
+                        <h3>Paper Dashboard Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $39
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap Admin Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-05-11 16:38:25 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/44/thumb/opt_gbtp_thumbnail.jpg?1462984704" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/44/original/opt_gbtp_thumbnail.jpg?1462984704" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 143</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 7</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/gaia-bootstrap-template-pro/index.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/gaia-bootstrap-template-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro">
+                        <h3>Gaia Bootstrap Template Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $29
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2015-12-09 15:40:12 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/36/thumb/opt_pk_thumbnail3.jpg?1453979856" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/36/original/opt_pk_thumbnail3.jpg?1453979856" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/paper-kit-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="3">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='cristina'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='steefan'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/28/thumb.jpg?1446210509" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 294</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 26</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/paper-kit-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/paper-kit-pro/presentation.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/paper-kit-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/paper-kit-pro">
+                        <h3>Paper Kit Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $49
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap UI Kit  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2015-10-17 16:29:46 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/34/thumb/opt_lbd_pro_new_thumbnail.jpg?1449352503" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_new_thumbnail.jpg?1449352503" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="3">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='beniamin'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/32681/thumb.png?1449487244" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='steefan'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/28/thumb.jpg?1446210509" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 1,109</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 113</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/light-bootstrap-dashboard-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro">
+                        <h3>Light Bootstrap Dashboard Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $39
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap Admin Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-03-15 14:31:47 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/38/thumb/opt_mk_thumbnail.jpg?1458052306" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg?1458052306" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/material-kit" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="3">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='beniamin'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/32681/thumb.png?1449487244" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='cristina'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 37,020</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 113</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/material-kit" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/material-kit/index.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/material-kit">
+                        <h3>Material Kit
+
+
+
+                            <div class="time pull-right ">
+
+                                    Free
+                            </div>
+                        </h3>
+
+                    <p>Free Bootstrap UI Kit  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-08-28 17:24:38 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/48/thumb/opt_mbw_thumbnail.jpg?1472405077" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/48/original/opt_mbw_thumbnail.jpg?1472405077" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/material-bootstrap-wizard" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 5,203</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 27</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/material-bootstrap-wizard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/material-bootstrap-wizard">
+                        <h3>Material Bootstrap Wizard
+
+
+
+                            <div class="time pull-right ">
+
+                                    Free
+                            </div>
+                        </h3>
+
+                    <p>Wizard Plugin  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-03-29 14:23:24 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/43/thumb/opt_pd_thumbnail.jpg?1459261403" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/43/original/opt_pd_thumbnail.jpg?1459261403" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/paper-dashboard" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='cristina'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 22,157</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 35</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/paper-dashboard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/paper-dashboard/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/paper-dashboard">
+                        <h3>Paper Dashboard
+
+
+
+                            <div class="time pull-right ">
+
+                                    Free
+                            </div>
+                        </h3>
+
+                    <p>Free Bootstrap Admin Template  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2014-10-24 13:21:51 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/26/thumb/opt_gsdk_new_thumbnail.jpg?1449347930" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/26/original/opt_gsdk_new_thumbnail.jpg?1449347930" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/get-shit-done-pro" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="3">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='tintescu.radu'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/481/thumb.jpeg?1446051900" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='cristina'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 1,140</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 63</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/get-shit-done-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://gsdk.creative-tim.com" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/get-shit-done-pro">
+                                <i class="fa fa-shopping-cart"></i>
+</a>                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/get-shit-done-pro">
+                        <h3>Get Shit Done Pro
+
+
+
+                            <div class="time pull-right  premium-product ">
+
+                                    $39
+                            </div>
+                        </h3>
+
+                    <p>Premium Bootstrap UI Kit  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-09-15 12:37:27 UTC ">
+            <div class="card" data-no-turbolink>
+                <div class="thumbnail">
+                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/49/thumb/opt_pbw_thumbnail.jpg?1473943046" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/49/original/opt_pbw_thumbnail.jpg?1473943046" alt="No Image"/>
+
+                        <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard" class="thumb-cover"></a>
+
+                    <div class="details">
+                        <div class="authors-container" data-collaborators="2">
+                            <div class="author">
+    <a class='card-user account-photo  account-product-owner '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='dragosct10'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+
+                                <div class="author">
+    <a class='card-user account-photo '
+       rel='popover'
+       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
+       data-initialized='0'
+       data-html='true'
+       data-placement='top'
+       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
+       data-username='axelut'
+    >
+
+        <div class="mask">
+            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
+        </div>
+
+    </a>
+</div>
+
+                        </div>
+
+                        <div class="numbers">
+                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 4,743</b>
+                            <b class="comments-icon"><i class="fa fa-comment"></i> 14</b>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <b class="actions">
+                            <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                                <i class="fa fa-align-left"></i>
+                            </a>
+
+                        <a href="http://demos.creative-tim.com/paper-bootstrap-wizard/wizard-list-place.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </b>
+
+                </div>
+                <div class="card-info">
+
+                        <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard">
+                        <h3>Paper Bootstrap Wizard
+
+
+
+                            <div class="time pull-right ">
+
+                                    Free
+                            </div>
+                        </h3>
+
+                    <p>Wizard Plugin  </p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+                <div class="clearfix"></div>
+
+        </div>
+    </div>
+<!-- product show -->
+
+<div class="footer">
+    <div class="overlayer">
+    <div class="container">
+        <div class="row support">
+
+            <div class="col-sm-3 col-xs-4">
+                <h4>Creative Tim</h4>
+                <ul class="list-unstyled">
+                    <li> <a href="http://blog.creative-tim.com/">Blog</a></li>
+                    <li> <a href="https://www.creative-tim.com/affiliates/new">Affiliate Program</a></li>
+                    <li> <a href="https://www.creative-tim.com/terms">Terms &amp; Conditions</a></li>
+                    <li> <a href="https://www.creative-tim.com/privacy">Privacy Policy</a></li>
+                    <li> <a href="https://www.creative-tim.com/faq">FAQ</a></li>
+                    <li><a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="https://cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 col-xs-4">
+                <h4>Happy people</h4>
+                <ul class="list-unstyled social-list">
+                    <li><h3 class="numbers-dont-lie"><b>205,400</b> accounts</h3></li>
+                    <li><h3 class="numbers-dont-lie"><b>354,282</b> downloads</h3></li>
+
+                </ul>
+            </div>
+
+            <div class="col-sm-3 col-xs-4">
+                <h4>Help and Support</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.creative-tim.com/about-us">About Us</a></li>
+                    <li><a href="https://www.creative-tim.com/contact-us">Contact Us</a></li>
+                    <li><a href="https://www.creative-tim.com/sponsorships">Sponsorships</a></li>
+                    <li><a href="https://www.creative-tim.com/bootstrap">Bootstrap</a></li>
+                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
+                    <li><a href="https://www.creative-tim.com/gallery/get-shit-done-pro">Products Gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="col-sm-3 col-xs-12 text-center">
+                    <h4>Latest News</h4>
+                     <a
+                     class="twitter-timeline"
+                     href="https://twitter.com/CreativeTim"
+                     data-widget-id="586445781978124289"
+                     data-chrome="noheader nofooter noborders noscrollbar transparent"
+                     height="200">
+                     Tweets by @CreativeTim</a>
+            </div>
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="social-area text-center" itemscope itemtype="http://schema.org/LocalBusiness">
+                <a itemprop="url" href="index.html" class="footer-brand">
+                    <div class="logo">
+                        <img itemprop="logo" src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" />
+                    </div>
+                    <span itemprop="name">Creative Tim</span>
+                </a>
+
+               <br/>
+                <a itemprop="sameAs" href="https://dribbble.com/creativetim" class="btn btn-default btn-social btn-round" rel="publisher" target="_blank"><i class="fa fa-dribbble"></i></a>
+                <a itemprop="sameAs" href="https://www.facebook.com/CreativeTim" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a itemprop="sameAs" href="https://twitter.com/CreativeTim" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a itemprop="sameAs" href="https://plus.google.com/+CreativetimPage" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+
+                <a itemprop="sameAs" href="https://www.instagram.com/creativetimofficial/" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a itemprop="sameAs" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-youtube"></i></a>
+                <a itemprop="sameAs" href="https://ro.pinterest.com/thecreativetim/" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="credits">
+                 &copy; 2017 Creative Tim, all rights reserved. Made with <i class="icon-heart heart" alt="love"></i> for a better web.
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+<script>
+ !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+
+ </script>
 
 
 </body>
-	<!--   Core JS Files   -->
-	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/material.min.js"></script>
 
-	<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-	<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
 
-	<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
-	<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
-
-	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
-	<script src="assets/js/material-kit.js" type="text/javascript"></script>
-
-	<script type="text/javascript">
-
-		$().ready(function(){
-			// the body of this function is in assets/material-kit.js
-			materialKit.initSliders();
-            window_width = $(window).width();
-
-            if (window_width >= 992){
-                big_image = $('.wrapper > .header');
-
-				$(window).on('scroll', materialKitDemo.checkScrollForParallax);
-			}
-
-		});
-	</script>
 </html>

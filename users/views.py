@@ -15,13 +15,11 @@ def seller(request):
     '''sellerindex'''
     return render(request, 'index/index.html')
 
-
 @login_required
 def logout(request):
     '''注销登录'''
     auth.logout(request)
     return redirect('login')
-
 
 class RegisterView(View):
     template_name = 'register.html'
@@ -46,11 +44,6 @@ class RegisterView(View):
         user_profile.save()
 
         return redirect('login')
-
-
-
-
-
 
 class LoginView(View):
     def get(self, request):

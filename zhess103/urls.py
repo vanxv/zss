@@ -73,6 +73,9 @@ urlpatterns = [
     url(r'^snippets/', include('snippets.urls')),
 #!-------- rest freawork --------------##
 
+#!------- new index -----#
+    url(r'^$', buyerIndex.as_view(), name='buyerindex'),
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用
