@@ -63,7 +63,10 @@ urlpatterns = [
     url(r'^register/', RegisterView.as_view(), name='register'),
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
+    #---seller admin-----#
     url(r'^seller/$', sellerIndex.as_view(), name='sellerindex'),
+    url(r'^seller/orders/$', seller_orders.as_view(), name='sellerindex'),
+    #---seller admin-----#
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
     url(r'^users/', include('users.urls')),
     url(r'^goods/(?P<goodid>(\d+))', GetGoods, name = 'GetGoods'),

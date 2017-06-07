@@ -64,8 +64,11 @@ class savegroup():
 ##Home_page_add_product
 class sellerIndex(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
+        return render(request, 'material/seller/dashboard.html')
 
-        return render(request, 'index.html')
+class seller_orders(LoginRequiredMixin, View):
+    def get(self, request, *args, **kwargs):
+        return render(request, 'material/seller/table.html')
 
 class buyerIndex(View):
     def get(self, request, *args, **kwargs):
@@ -77,7 +80,10 @@ class buyerIndex(View):
                     orderdict[corder.GoodId.id][0] += 1
                 else:
                     orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
-            return render(request, 'index/index.html', {'orderdict':orderdict})
+            # ------ old index
+            # return render(request, 'index/index.html', {'orderdict':orderdict})
+            # ------ old index
+            return render(request, 'material/index.html', {'orderdict':orderdict})
         else:
             orderdict = {}
             order = CryOrder.objects.filter()
@@ -93,12 +99,15 @@ def GetGoods(request, goodid):
             ##get status goods insert orderNumber
             goodsview = Goods.objects.get(id=goodid)
             money = CryOrder.objects.filter(GoodId=goodid)
-            return render(request, 'index/goods.html', {'goodsview':goodsview,'money':money})
+            # --- old product list
+            #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
+            # --- old product list
+            return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
         elif request.method == "POST":
             print(request.POST['cryorderid'])
-            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id)
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
             print('-----')
-            return render(request, 'index/goods.html')
+            return render(request, 'material/product.html')
 
     else:
         return render(request, 'login.html')
@@ -129,7 +138,7 @@ class Good_Index_Add(LoginRequiredMixin, View):
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
-            return render(request, 'welcome.html', {'test': '产品已存在'})
+            return render(request, 'material/seller/dashboard.html', {'test': '产品已存在'})
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
             print('发布任务，发布产品')
             saveshop = Shop.objects.filter(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
@@ -140,7 +149,7 @@ class Good_Index_Add(LoginRequiredMixin, View):
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         elif len(tempShopTrue) >0: #判断产品是否在其他账户上
-            return render(request, 'welcome.html', {'test': '店铺已存在其他人账户上'})
+            return render(request, 'material/seller/dashboard.html', {'test': '店铺已存在其他人账户上'})
         else:
             print('发布店铺、发布产品、发布任务')
             saveshop = Shop.objects.create(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
@@ -149,4 +158,4 @@ class Good_Index_Add(LoginRequiredMixin, View):
             saveGoods.save()
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
-        return render(request, 'welcome.html',{'test':'已经发布任务'})
+        return render(request, 'material/seller/dashboard.html',{'test':'已经发布任务'})

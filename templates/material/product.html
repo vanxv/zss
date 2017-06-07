@@ -1,57 +1,62 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 <head>
-  
 
   <meta charset="utf-8">
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2315e0b361","applicationID":"9961421","transactionName":"dVwNRxYMCFtVS01CRVRfClA7EwVQVRYOU15SWg1UOxMFUFU=","queueTime":0,"applicationTime":194,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"2315e0b361","applicationID":"9961421","transactionName":"dVwNRxYMCFtVS01CQllXFlAQTBdfX04=","queueTime":3,"applicationTime":1013,"agent":""}</script>
 <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <meta name="viewport" content="width=device-width" />
-
   <meta name="p:domain_verify" content="96e683d0045e44dfac2deaec70e57185"/>
 
-  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon-07e579901353a57d289b9b754f0e2912.ico" />
-  <link rel="apple-touch-icon" sizes="76x76" href="https://www.creative-tim.com/assets/apple-touch-icon-precomposed-60956e08c7bbd5166b96ef4f0340152b.png">
-  <link rel="canonical" href="index.html" itemprop="url"  data-turbolinks-track="false"/>
+  <link rel="shortcut icon" type="image/x-icon" href={% static "assets/favicon-07e579901353a57d289b9b754f0e2912.ico" %} />
 
-  <title itemprop="name">
-      折试试平台zhess.com
-  </title>
+  <link rel="apple-touch-icon" sizes="76x76" href={% static "assets/apple-touch-icon-precomposed-60956e08c7bbd5166b96ef4f0340152b.png" %}>
+  <link rel="canonical" href="https://www.creative-tim.com/product/material-kit-pro" data-turbolinks-track="false" itemprop="url"/>
 
-    <meta name="twitter:card" content="summary" />
+    <title>{{ goodsview.name }}</title>
+
+      <meta name="twitter:card" content="summary" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@CreativeTim" />
     <meta name="twitter:creator" content="@CreativeTim" />
-    <meta name="twitter:title" content="Premium Bootstrap Themes and Templates" />
-    <meta name="twitter:description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/metatag-tim-cover-amazon.jpg" />
-    <meta name="twitter:url" content="https://www.creative-tim.com/" />
+    <meta name="twitter:title" content="Material Kit Pro by Creative Tim" />
+    <meta name="twitter:description" content="Premium Bootstrap UI Kit" />
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/46/original/opt_mkp_thumbnail.jpg?1466002372" />
+    <meta name="twitter:url" content="https://www.creative-tim.com/product/material-kit-pro" />
 
 
-  <meta name="description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
-<meta name="keywords" content="creativetim, creative tim, bootstrap, theme, freebies, bootstrap kit, bootstrap template, free items, beautiful ui, awesome freebies, css cards, bootstrap wizard, bootstrap plugin" />
-<meta property="og:title" content="Premium Bootstrap Themes and Templates" />
-<meta property="og:url" content="https://www.creative-tim.com/" />
-<meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/metatag-tim-cover-amazon.jpg" />
-<meta property="og:description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
+  <meta name="description" content="Download Material Kit PRO a premium Bootstrap UI Kit developed by Creative Tim. See the live demo on our site and join over 100.000 creatives!" />
+<meta name="keywords" content="creativetim, creative tim, bootstrap, theme, freebies, bootstrap kit, bootstrap template, free items, beautiful ui" />
+<meta property="og:app_id" content="655968634437471" />
+<meta property="og:type" content="product" />
+<meta property="og:title" content="Material Kit Pro by Creative Tim" />
+<meta property="og:url" content="https://www.creative-tim.com/product/material-kit-pro" />
+<meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/46/original/opt_mkp_thumbnail.jpg?1466002372" />
+<meta name="product:price:amount" content="79.0" />
+<meta name="product:price:currency" content="USD" />
+<meta name="product:availability" content="in Stock" />
+<meta name="product:brand" content="Creative Tim" />
+<meta name="product:category" content="UI Kits" />
 <meta name="data-turbolinks-track" content="false" />
-  <link rel="stylesheet" media="all" href="assets/application-5983038036a092579f0a61ac4dcfa044.css" data-turbolinks-track="true" />
+  <link rel="stylesheet" media="all" href={% static "assets/application-5983038036a092579f0a61ac4dcfa044.css" %} data-turbolinks-track="true" />
 
   <!-- font -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="VrrsXkP7tZvDWi5VEMbaWwcyvqJoNU0JHFZFsFjNAmwGguDthXfN5WJsMi9XM/qQPdwdNVeYIDx3okSAat0mwQ==" />
+<meta name="csrf-token" content="BID6C7bIAWrtFppzJ/uHmbCRooYzvAIdHAIu5yNQkz3l8GgDZM5wUgvUSyg48SIyHcAmPfjJSLCqqyEyIVU6Zw==" />
 
-  <script src="assets/application-30cc964f1fc5ab4d76056b7977071525.js" data-turbolinks-track="true"></script>
+  <!--  js   -->
+  <script src={% static "assets/application-30cc964f1fc5ab4d76056b7977071525.js" %} data-turbolinks-track="true"></script>
+  <script src={% static "assets/mentions-and-photoswipe-89945a5879d61cf1172922903608f6b8.js" %} data-turbolinks-track="true"></script>
 
 </head>
 
-<body>
+<body class="product-page">
 
-
-<nav class="navbar filter-bar navbar-fixed-top navbar-transparent">
+<nav class="navbar filter-bar fixed-absolute">
     <div class="container">
     <div class="notification">
         <div id="notif-message" class="notif-message" style="display: none;" notice-type=success>
@@ -64,25 +69,26 @@
             <span class="icon-bar"></span>
         </button>
         <div data-no-turbolink>
-            <a href="index.html" class="navbar-brand">
+            <a href="/" class="navbar-brand">
                 <div class="logo">
                     <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height ="60"/>
                 </div>
-                <p>van <br>xv</p>
+                <p>Creative <br> Tim</p>
             </a>
         </div>
 
     </div>
 
 
-<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
 
         <ul class="nav navbar-nav navbar-right" data-no-turbolink>
+
             <li class="dropdown dropdown-categories" data-no-turbolink>
-                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
                     <i class="icon-th-large icon-2x"></i>
                     <p>
-                        产品分类
+                        Categories
                         <span class="caret"></span>
                     </p>
 
@@ -90,30 +96,164 @@
 
             <ul class="dropdown-menu">
                 <li>
-                    <a href="https://www.zhess.com/">
-                        全部分类
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="https://www.creative-tim.com/bootstrap-themes/free">
-                        优惠产品
+                    <a href="/bootstrap-themes">
+                        All Categories
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.creative-tim.com/bootstrap-themes/premium">
-                        买家秀
+                    <a href="/bootstrap-themes/admin-dashboard">
+                        Admin &amp; Dashboards
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/ui-kit">
+                        UI Kits
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/free">
+                        Free Themes
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/premium">
+                        Premium Themes
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/angular-dashboard">
+                        Angular Dashboards
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/landing-page">
+                        Landing Pages
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/e-commerce">
+                        E-commerce
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/one-page-template">
+                        One Page Templates
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/wizard">
+                        Wizards
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/calendar">
+                        Calendar
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/login-form">
+                        Login Forms
+                    </a>
+                </li>
+                <li>
+                    <a href="/bootstrap-themes/components">
+                        Components
                     </a>
                 </li>
             </ul>
         </li>
 
-            <li>
-                <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">
-                    <i class="icon-male-sign-alt icon-2x"></i>
-                    <p>Login/Register</p>
+        <li class="big-bundle" data-no-turbolink>
+                <a href="/product/buy/bundle/?utm_campaign=big-bundle&utm_medium=navbar&utm_source=tim">
+                <i class="icon-gift icon-2x"></i>
+                <p>Big Bundle</p>
+                <span class="notification-bubble notification-inverted">New</span>
+            </a>
+        </li>
+
+
+
+            <li class="dropdown dropdown-notifications">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-bell icon-2x"></i>
+                    <span class="notification-bubble" id="notification-unread">
+                        1
+                    </span>
+                    <p> Notifications <span class="caret"></span></p>
                 </a>
+
+
+                <div class="dropdown-menu ">
+
+                    <a href="javascript:void(0)" class="btn-read-all keep-dropdown-open" onclick="readAllNotifications()">
+                        Mark All as Read
+                    </a>
+
+                    <ul class="scroll-area">
+
+
+        <li data-no-turbolink>
+
+                <a href="/update_read_notifications/456044" class="unread-notification">
+                    Hey! Thank you for registering 😊 Have you had a chance to browse our newest products?
+                    <br><small >1 day ago</small>
+                </a>
+
+                <button title="Mark as Read"
+                rel="tooltip"
+                class="btn btn-neutral btn-notification btn-round btn-fill keep-dropdown-open"
+                data-placement="left"
+                onclick="dismissNotification(456044, this)"
+                >
+                    <i class="fa fa-check"></i>
+                </button>
+
+
+        </li>
+
+
+                    </ul>
+
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </li>
+
+
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    <div class="user-photo">
+                        <img class="photo" src="https://s3.amazonaws.com/creativetim_bucket/photos/205758/thumb.?1496645353" alt="Thumb" />
+                    </div>
+                    <p>Xv <span class="caret"></span></p>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-navbar">
+                    <li data-no-turbolink>
+                        <a href="/downloads">
+                        <i class="icon-shopping-cart"></i>
+                        <p>My Purchases</p>
+</a>                    </li>
+
+                    <li>
+                        <a href="/user/credit-history">
+                            <i class="fa fa-diamond"></i>
+                            <p>Credits &middot; 0 </p>
+</a>                    </li>
+
+                    <li>
+                        <a href="/account">
+                        <i class="icon-user"></i>
+                        <p>Account Settings</p>
+</a>                    </li>
+
+                    <li>
+                        <a href="/logout">
+                            <i class="icon-remove-circle"></i>
+                            <p>Log Out</p>
+</a>                    </li>
+                </ul>
             </li>
 
         </ul>
@@ -121,6 +261,7 @@
 </div>
 
 </nav>
+
 
 <div class="modal fade login" id="loginModal">
     <div class="modal-dialog login animated">
@@ -134,13 +275,13 @@
         <div class="box">
             <div class="content">
                 <div class="social" data-no-turbolink>
-                    <a id="github_login" class="circle github" href="https://www.creative-tim.com/social/github?destination=dashboard&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252F">
+                    <a id="github_login" class="circle github" href="/social/github?destination=product_page&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252Fproduct%252Fmaterial-kit-pro">
 
                             <i class="icon-github"></i>
-</a>                    <a id="google_login" class="circle google" href="https://www.creative-tim.com/social/google_oauth2?destination=dashboard&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252F">
+</a>                    <a id="google_login" class="circle google" href="/social/google_oauth2?destination=product_page&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252Fproduct%252Fmaterial-kit-pro">
 
                             <i class="icon-google-plus-alt"></i>
-</a>                    <a id="facebook_login" class="circle facebook" href="https://www.creative-tim.com/social/facebook?destination=dashboard&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252F">
+</a>                    <a id="facebook_login" class="circle facebook" href="/social/facebook?destination=product_page&amp;subscribed=1&amp;url=https%253A%252F%252Fwww.creative-tim.com%252Fproduct%252Fmaterial-kit-pro">
 
                             <i class="icon-facebook-alt"></i>
 </a>                </div>
@@ -153,11 +294,11 @@
                 <div class="error inside-alert"></div>
                 <div class="form loginBox">
 
-                        <form html="{:multipart=&gt;true}" action="https://www.creative-tim.com/login" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                        <form html="{:multipart=&gt;true}" action="/login" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
                             <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
                             <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
-                            <input type="hidden" name="destination" id="destination" value="dashboard" />
-                            <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2F" />
+                            <input type="hidden" name="destination" id="destination" value="product_page" />
+                            <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-pro" />
                             <input type="submit" name="commit" value="Login" class="btn btn-default btn-login" />
 </form>                </div>
              </div>
@@ -165,12 +306,12 @@
         <div class="box">
             <div class="content registerBox" style="display:none;">
              <div class="form">
-                <form html="{:multipart=&gt;true}" action="https://www.creative-tim.com/register" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                <form html="{:multipart=&gt;true}" action="/register" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
                     <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
                   	<input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Repeat Password" />
-                    <input type="hidden" name="destination" id="destination" value="dashboard" />
-                    <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2F" />
+                    <input type="hidden" name="destination" id="destination" value="product_page" />
+                    <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2Fproduct%2Fmaterial-kit-pro" />
                     <input type="submit" name="commit" value="Create account" class="btn btn-default btn-register" />
                         <label class="checkbox">
                             <input type="checkbox" value="1" data-toggle="checkbox" name="subscribed" class="ct-info checkbox-subscribe" checked>
@@ -188,7 +329,7 @@
                  <a href="javascript: showRegisterForm();">create an account</a>
             ?</span>
             <br />
-            <span><a href="https://www.creative-tim.com/forgot-password">Forgot password</a> ?</span>
+            <span><a href="/forgot-password">Forgot password</a> ?</span>
         </div>
         <div class="forgot register-footer" style="display:none">
              <span>Already have an account?</span>
@@ -204,19 +345,19 @@
 	<div class="text-center">
 		<ul class="cart-steps">
 			<li class="active">
-				<a href="index.html#cart-review">
+				<a href="#cart-review">
 					<div class="number">1</div>
 					<div class="step">Review</div>
 				</a>
 			</li>
 			<li>
-				<a href="index.html#cart-payment-details" onClick="$('#my-cart').submit();">
+				<a href="#cart-payment-details" onClick="$('#my-cart').submit();">
 					<div class="number">2</div>
 					<div class="step">Payment Details</div>
 				</a>
 			</li>
 			<li>
-				<a href="index.html#cart-order-receipt">
+				<a href="#cart-order-receipt">
 					<div class="number">3</div>
 					<div class="step">Order Receipt</div>
 				</a>
@@ -238,7 +379,7 @@
     <h4>Your cart is currently empty.</h4>
 </div>
 <div class="text-center">
-    <a href="https://www.creative-tim.com/bootstrap-themes/premium#from-empty-shopping-cart" class="btn btn-info btn-new btn-fill btn-wd">
+    <a href="/bootstrap-themes/premium#from-empty-shopping-cart" class="btn btn-info btn-new btn-fill btn-wd">
         Start Shopping
     </a>
 </div>
@@ -268,10 +409,10 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="https://www.creative-tim.com/bootstrap-themes" type="button" class="btn btn-default btn-fill btn-new" data-dismiss="modal">
+                <a href="/bootstrap-themes" type="button" class="btn btn-default btn-fill btn-new" data-dismiss="modal">
                     Continue Shopping
                 </a>
-                <a type="button" class="btn btn-success btn-fill btn-new" href="https://www.creative-tim.com/checkout", data-cart="0">
+                <a type="button" class="btn btn-success btn-fill btn-new" href="/checkout", data-cart="0">
                     Checkout & Download
                 </a>
             </div>
@@ -283,76 +424,7 @@
 
 <div id="fb-root">
 </div>
-<script src="https://connect.facebook.net/en_US/sdk.js" type="text/javascript"></script>
-<script type="text/javascript">
-    window.fbAsyncInit = function()
-    {
-    //facebook share
-        FB.init({
-            appId: '655968634437471',
-            status: true,
-            cookie: true,
-            xfbml: true,
-            version: 'v2.0'
-        });
-    };
 
-
-    function shareFacebookWithCallBack(){
-        FB.ui({
-          method: 'feed',
-          link: 'https://www.creative-tim.com/'
-        }, function(response){
-            if (response && response.post_id) {
-               $.post('/share',{social_network : 1, product_id : parseInt('0'), provider: 'facebook' },function(data){
-                    if(data['status'] == 'ok'){
-                        console.log('ShareUp');
-                    }
-               });
-             } else {
-               console.log('Post was not published.');
-             }
-        });
-    }
-    //twitter share
-        window.twttr = (function (d,s,id) {
-          var t, js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
-          js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
-          return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
-        }(document, "script", "twitter-wjs"));
-
-        // On ready, register the callback...
-        twttr.ready(function (twttr) {
-            twttr.events.bind('tweet', function (event) {
-                $.post('/share',{social_network : 2, product_id : parseInt('0'), provider: 'twitter' },function(data){
-                    if(data['status'] == 'ok'){
-                        console.log('ShareUp');
-                    }
-               });
-            });
-        });
-
-    function googleShare(event){
-        var width  = 575,
-        height = 400,
-        left   = ($(window).width()  - width)  / 2,
-        top    = ($(window).height() - height) / 2,
-        url    = 'https://plus.google.com/share?url=https://www.creative-tim.com/',
-        opts   = 'status=1' +
-                 ',width='  + width  +
-                 ',height=' + height +
-                 ',top='    + top    +
-                 ',left='   + left;
-        window.open(url, 'Google+', opts);
-        $.post('/share',{social_network : 3, product_id : parseInt('0'), provider: 'google' },function(data){
-                    if(data['status'] == 'ok'){
-                        console.log('ShareUp');
-                    }
-               });
-        return false;
-    }
-</script>
 
 <div class="modal fade" id="giftOfferModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-offer">
@@ -361,7 +433,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">&nbsp;</h4>
         </div>
-        <img src="assets/valentines-day-54de97c0244637dcac32e0da8c952975.jpg" alt="Valentines day" />
+        <img src={% static "assets/valentines-day-54de97c0244637dcac32e0da8c952975.jpg" %} alt="Valentines day" />
         <div class="modal-body">
 <!--             <p><b class="merry">Happy Valentine's Day!</b><br /> -->
             <p><b>
@@ -371,13 +443,13 @@
             <ol>
               <li>Buy a premium product.</li>
               <li>Download the product from your dashboard.</li>
-              <li>Press the <b>'Send gift'</b> button in your dashboard and offer a premium product (with the price lower or equal) as a gift.</li>  
+              <li>Press the <b>'Send gift'</b> button in your dashboard and offer a premium product (with the price lower or equal) as a gift.</li>
             </ol>
             </p>
             <div class="text-center" data-no-turbolink>
-                <a href="https://www.creative-tim.com/bootstrap-themes?utm_campaign=christmas-gift-offer&amp;utm_source=tim&amp;utm_medium=modal" class="btn btn-danger btn-round btn-fill btn-new">Start shopping</a>
+                <a href="/bootstrap-themes?utm_campaign=christmas-gift-offer&utm_source=tim&utm_medium=modal" class="btn btn-danger btn-round btn-fill btn-new">Start shopping</a>
             </div>
-            
+
             <div class="design-courtesy">Photo Courtesy of <a href="https://dribbble.com/shots/2525661-Heart">Henrique Athayde</a></div>
 
         </div>
@@ -385,42 +457,57 @@
   </div>
 </div>
 
-<div id="productPage" class="parallax parallax-product parallax-" data-no-turbolink="" style="background: url('https://s3.amazonaws.com/creativetim_bucket/products/55/mdp_angular_cover.jpg?1490372038')no-repeat;background-size: cover; ">
+<input type="hidden" id="product_id" value="46">
+
+<div class="top-moving-bar" data-no-turbolink>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-5 col-xs-5 text-right">
+
+                        <a class="btn btn-default btn-simple" target="_blank" href="http://demos.creative-tim.com/material-kit-pro/presentation.html">Live Preview</a>
+
+                        <a class="btn btn-default btn-simple" href="/product/material-kit">Get Free Demo</a>
+
+
+
+                        <a href="/buy/material-kit-pro?license=1&affiliate_id=87385" class="btn btn-info btn-fill btn-wd btn-round">
+                            Buy now &middot;<b>
+                                $79
+                            </b>
+                        </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div itemscope itemtype="http://schema.org/Product">
+    <div id="productPage" class="parallax parallax-product parallax-" data-no-turbolink style="background: url('https://s3.amazonaws.com/creativetim_bucket/products/46/mk_pro_cover.jpg?1466002372')no-repeat;background-size: cover; ">
 
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-6">
                     <div class="product-image">
-                        <a href="http://md-pro-angular2.creative-tim.com/" target="_blank">
-                            <img src="https://s3.amazonaws.com/creativetim_bucket/products/55/original/opt_mdp_angular_thumbnail.jpg?1490372038" alt="Material Dashboard Pro Angular 2 Image">
-                        </a>
+                        <!-- images -->
+                            <img src="{{ goodsview.image1 }}" alt="babyid"/>
+                        <!-- images -->
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-5 col-md-offset-1">
                     <div class="pay-area">
 
     <div class="text-center">
-        <h1 itemprop="name" class="product-name">Material Dashboard Pro Angular 2</h1>
-        <h6 class="tagline">Premium Bootstrap Angular Template</h6>
-
-            <div class="rating-stars">
-                <div class="rating-input"><span class="fa fa-star fa-full" data-value="1"></span><span class="fa fa-star fa-full" data-value="2"></span><span class="fa fa-star fa-full" data-value="3"></span><span class="fa fa-star fa-full" data-value="4"></span><span class="fa fa-star fa-full" data-value="5"></span><input type="hidden" name="" value="5" id=""></div>
-                <div class="aggregate-rating" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating" data-no-turbolink="">
-                    ·
-                    <span itemprop="ratingValue">4.60</span>/5
-
-                    <a href="/product/material-dashboard-pro-angular2/reviews">(<span itemprop="reviewCount">18</span> Reviews)</a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-
+        <!-- product name -->
+        <h1 itemprop="name" class="product-name">{{ goodsview.name }}</h1>
+        <h6 class="tagline">{{ goodsview.keyword1 }}</h6>
+        <!-- product name -->
 
 	    <div class="choose-license">
-                    <p class="pull-left">License
-                        <a class="btn btn-round btn-xs btn-neutral pull-right" href="/license" rel="tooltip" title="" target="_blank" data-original-title="Something unclear regarding the licenses? Click on the '?' and see more details.">
-                            <i class=" fa fa-question"></i>
-                        </a>
-                    </p>
+                    <p class="pull-left">{{ goodsview.keyword1 }}</p>
 
                         <ul class="nav nav-pills pull-right">
                             <li class="active">
@@ -435,41 +522,42 @@
         </div>
 
 
-        <div class="tab-content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+        <div class="tab-content" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 
-                <meta content="59.00" itemprop="price">
+                <meta content="888.00" itemprop="price">
                 <meta content="USD" itemprop="priceCurrency">
                 <meta content="instock" itemprop="availability">
 
 
     	    <div class="tab-pane active" id="personal">
 
-                        <a href="/buy/material-dashboard-pro-angular2?license=1&amp;affiliate_id=87385" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
-                            Buy now ·<b>
-                                $59
+                        <a href="/buy/material-kit-pro?license=1&affiliate_id=87385" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
+                            Buy<b>
+                                $79
                             </b>
                         </a>
 
 
-                    <a href="http://md-pro-angular2.creative-tim.com/" class="hidden-xs btn btn-new btn-wd btn-neutral btn-round" target="_blank">
-                        Live Preview
+                    <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html" class="hidden-xs btn btn-new btn-wd btn-neutral btn-round" target="_blank">
+                        Live Preview name1
                     </a>
 
-                    <a href="http://md-pro-angular2.creative-tim.com/" class="hidden-sm hidden-md hidden-lg btn btn-new btn-wd btn-neutral btn-round" target="_blank">
-                        Live Preview
-                    </a>
     	    </div>
 
     	    <div class="tab-pane" id="developer">
-
-                        <a href="/buy/material-dashboard-pro-angular2?license=2&amp;affiliate_id=87385" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
-                            Buy now · <b>
-                                $239
+    {% for loop in money %}
+        <form name="vanxv", action="./{{ goodsview.id }}", method="POST">
+        <input type='hidden' name='cryorderid' value="{{ loop.id }}">
+        {{ loop.Money }}
+        <input type="submit" name="button1" value="submit" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
+                            Buy now &middot; <b>
+                                {{ loop.Money }}
                             </b>
                         </a>
+        </form>
+    {% endfor %}
 
-
-                    <a href="http://md-pro-angular2.creative-tim.com/" class="btn btn-new btn-wd btn-neutral btn-round" target="_blank">
+                    <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html" class="btn btn-new btn-wd btn-neutral btn-round" target="_blank">
                         Live Preview
                     </a>
 
@@ -485,7 +573,7 @@
         </div>
     </div>
 
-<div class="section-product-description section-white-gradient section-scaled" data-no-turbolink="">
+    <div class="section-product-description section-white-gradient section-scaled" data-no-turbolink>
         <div class="container product">
 
             <div class="row header-summary">
@@ -495,14 +583,14 @@
 
                         <div class="small-info">
                             <i class="icon-cloud-download"></i>
-                            <h6 class="numbers">256 Downloads</h6>
+                            <h6 class="numbers">1,050 Downloads</h6>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="small-info">
                             <i class="icon-comment"></i>
-                            <h6 class="numbers">93 Comments</h6>
+                            <h6 class="numbers">127 Comments</h6>
                         </div>
                     </div>
 
@@ -526,7 +614,7 @@
                         <div class="small-info">
                             <i class="icon-suitcase"></i>
                             <h6 class="numbers">
-                                Release: 2 months ago
+                                Release: 11 months ago
                             </h6>
                         </div>
                     </div>
@@ -535,29 +623,13 @@
                         <div class="small-info">
                             <i class="icon-refresh"></i>
                             <h6 class="numbers">
-                                Update: 2 days ago
+                                Update: 14 days ago
                             </h6>
                         </div>
                     </div>
 
                 </div>
 
-                <div class="col-md-3">
-                            <div class="technologies pull-right">
-                                    <div class="mask">
-                                        <img rel="tooltip" title="" src="/assets/icon-html-e05de3f70999d3ce94b9804b7e298026.jpg" alt="Icon html" data-original-title="Fully Coded and Responsive HTML5">
-                                    </div>
-                                    <div class="mask">
-                                        <img rel="tooltip" title="" src="/assets/icon-sass-31b996b6252dbd1dd9c349bee39a5b8b.jpg" alt="Icon sass" data-original-title="Sass Files for Professional Front End Developers">
-                                    </div>
-                                    <div class="mask">
-                                        <img rel="tooltip" title="" src="/assets/icon-bootstrap-7cec419b71f47386f443bd3fbfef2f7c.jpg" alt="Icon bootstrap" data-original-title="Crafted with Bootstrap - the most popular Front End Framework">
-                                    </div>
-                                    <div class="mask">
-                                        <img rel="tooltip" title="" src="/assets/icon-angular-ada038f93d6763f80ca9d1776d103783.jpg" alt="Icon angular" data-original-title="Angular 2+ Structure with TypeScript">
-                                    </div>
-                            </div>
-                </div>
 
             </div>
 
@@ -567,75 +639,10 @@
                 </div>
 
                 <div class="col-md-10 col-md-offset-1">
-                    <div class="description collapse" id="productDescription" aria-expanded="false">
-                        <h1 class="sub-title">Premium Bootstrap Admin Angular Template</h1>
-                        <h4 class="legend text-center">Product description</h4>
-
-                        <span itemprop="description">
-                            <b>Material Dashboard PRO Angular 2</b> is a Premium Material Bootstrap Admin with a fresh, new design inspired by Google's Material Design. It is based on the popular Bootstrap framework and comes packed with multiple third-party plugins. All components are built to fit perfectly with each other while aligning to the material concepts.<br><br> This dashboard is the premium version for the <a target="_blank" rel="nofollow" href="https://www.creative-tim.com/product/material-dashboard-angular2">Material Dashboard Angular 2</a>, which is available for free download. <b>Material Dashboard PRO Angular 2</b> was built based on the feedback that we received from the users of the free version. We tried to keep it as user-friendly as possible, but to provide all the useful tools for developing a complex product. This dashboard can help you build admin panels, CRMs or content management systems.<br><br> Material Dashboard PRO Angular 2 has the same line of design as the <a target="_blank" rel="nofollow" href="https://www.creative-tim.com/product/material-kit-pro">Material Kit PRO</a>, so they will help you have the presentation pages of your site and the Admin/CMS having the same design trend. If you think you will need more landing and example pages, be sure to check it out. If you love the material design, you'll probably enjoy using these products! We recommend you to use them separate and not to try to combine their CSS and JS files. <br><br>Material Dashboard PRO Angular 2 uses a framework built by our friend <a target="_blank" rel="nofollow" href="http://fezvrasta.github.io/bootstrap-material-design/">Federico - Bootstrap Material Design</a>, who did an amazing job creating the backbone for the material effects, animations, ripples and transitions. Big thanks to his team for the effort and forward thinking they put into it.<br><br>
-<h3>Special thanks</h3>
- During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:<br><br>
-<ul><li><a target="_blank" rel="nofollow" href="https://github.com/mouse0270">Robert McIntosh</a> for the notification system</li><li><a target="_blank" rel="nofollow" href="https://gionkunz.github.io/chartist-js/">Chartist</a> for the wonderful charts</li><li><a target="_blank" rel="nofollow" href="https://twitter.com/t4t5">Tristan Edwards</a> for the <a target="_blank" rel="nofollow" href="http://limonte.github.io/sweetalert2/">Sweet Alert</a></li><li><a target="_blank" rel="nofollow" href="https://github.com/Eonasdan">Eonasdan</a> for the <a target="_blank" rel="nofollow" href="https://eonasdan.github.io/bootstrap-datetimepicker/">DateTimPicker</a></li><li>Kirill Lebedev for <a target="_blank" rel="nofollow" href="http://jvectormap.com/">jVector Maps</a></li><li><a target="_blank" rel="nofollow" href="https://twitter.com/gabrielva">Vincent Gabriel</a> for the <a target="_blank" rel="nofollow" href="https://github.com/VinceG/twitter-bootstrap-wizard">Bootstrap Wizard</a></li><li><a target="_blank" rel="nofollow" href="https://fullcalendar.io/">FullCalendar.io</a> for the awesome Calendar</li></ul>
- Let us know your thoughts below. And good luck with development!<br><br>
-                        <span>
-                        <br>
-                            Current version <b>1.2.0</b>
-                            <a class="btn btn-sm btn-simple btn-info " href="#product-version-logs-modal-55" role="button" data-toggle="modal">
-                                See updates and changelog
-                            </a>
-                    </span></span></div>
                     <div class="view-more text-center">
                         <button class="btn btn-simple btn-default viewMoreButton" data-target="#productDescription">View More</button>
                     </div>
 
-                        <div class="summary">
-                            <div class="row">
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="category">
-                                        <i class="icon-th-large"></i>
-                                        <p>200 Handcrafted Components</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="category">
-                                        <i class="icon-gears"></i>
-
-                                        <p>15 Customized Plugins</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="category">
-                                        <i class="icon-picture"></i>
-
-                                        <p>27 Example Pages</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="category">
-                                        <i class="icon-bold"></i>
-                                        <p>Bootstrap Based</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="category">
-                                        <i class="icon-file-text-alt"></i>
-                                        <p>Documentation</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-4 col-xs-6">
-                                    <div class="category">
-                                        <i class="icon-mobile-phone"></i>
-                                        <p>Fully Responsive</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
 
                     <h6 class="text-center">Product certified by: <span itemprop="brand">Creative Tim</span></h6>
                 </div>
@@ -643,1443 +650,7 @@
             </div>
         </div>
     </div>
-<!--
-<!-- product show -->
-<!--
-<div class="main">
 
-
-        <div class="row">
-            <div class="clearfix"></div>
-                <div class="col-md-12">
-                    <div class="landing-title">
-                        <span class="title">Latest products</span>
-                    </div>
-                </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2017-05-16 14:57:50 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/56/thumb/opt_nuk_thumbnail.jpg?1494946669" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/56/original/opt_nuk_thumbnail.jpg?1494946669" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/now-ui-kit" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 4,326</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 68</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/now-ui-kit" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/now-ui-kit/index.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/now-ui-kit">
-                        <h3>Now UI Kit
-
-
-
-                            <div class="time pull-right ">
-
-                                    Free
-                            </div>
-                        </h3>
-
-                    <p>Free Bootstrap 4 UI Kit  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2017-03-24 16:13:59 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/55/thumb/opt_mdp_angular_thumbnail.jpg?1490372038" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/55/original/opt_mdp_angular_thumbnail.jpg?1490372038" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/material-dashboard-pro-angular2" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='chelaru_ciprian'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/112208/thumb.jpg?1484320178" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 253</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 89</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/material-dashboard-pro-angular2" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://md-pro-angular2.creative-tim.com/" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/material-dashboard-pro-angular2">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/material-dashboard-pro-angular2">
-                        <h3>Material Dashboard Pro Angular 2
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $59
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap Angular Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2017-02-22 16:53:58 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/54/thumb/opt_lbdp_angular_thumbnail.jpg?1488196041" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/54/original/opt_lbdp_angular_thumbnail.jpg?1488196041" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='chelaru_ciprian'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/112208/thumb.jpg?1484320178" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 87</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 23</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://lbd-pro-angular2.creative-tim.com/" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/light-bootstrap-dashboard-pro-angular2">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-angular2">
-                        <h3>Light Bootstrap Dashboard Pro Angular2
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $49
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap Angular Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-11-03 16:20:03 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/51/thumb/opt_mdp_thumbnail.jpg?1478190003" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_thumbnail.jpg?1478190003" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/material-dashboard-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 661</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 87</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/material-dashboard-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/material-dashboard-pro/examples/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/material-dashboard-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/material-dashboard-pro">
-                        <h3>Material Dashboard Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $49
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap Admin Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-06-15 14:52:53 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/46/thumb/opt_mkp_thumbnail.jpg?1466002372" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/46/original/opt_mkp_thumbnail.jpg?1466002372" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/material-kit-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="3">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='cristina'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='steefan'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/28/thumb.jpg?1446210509" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 1,046</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 126</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/material-kit-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/material-kit-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/material-kit-pro">
-                        <h3>Material Kit Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $79
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap UI Kit  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-09-21 16:10:05 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg?1474474204" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1474474204" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/material-dashboard" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 25,887</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 81</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/material-dashboard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/material-dashboard/examples/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/material-dashboard">
-                        <h3>Material Dashboard
-
-
-
-                            <div class="time pull-right ">
-
-                                    Free
-                            </div>
-                        </h3>
-
-                    <p>Free Bootstrap Material Admin  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-07-05 16:42:09 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/47/thumb/opt_pdp_thumbnail.jpg?1490974984" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/47/original/opt_pdp_thumbnail.jpg?1490974984" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/paper-dashboard-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="3">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='cristina'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 470</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 36</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/paper-dashboard-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/paper-dashboard-pro/examples/dashboard/overview.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/paper-dashboard-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/paper-dashboard-pro">
-                        <h3>Paper Dashboard Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $39
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap Admin Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-05-11 16:38:25 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/44/thumb/opt_gbtp_thumbnail.jpg?1462984704" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/44/original/opt_gbtp_thumbnail.jpg?1462984704" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 143</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 7</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/gaia-bootstrap-template-pro/index.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/gaia-bootstrap-template-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/gaia-bootstrap-template-pro">
-                        <h3>Gaia Bootstrap Template Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $29
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2015-12-09 15:40:12 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/36/thumb/opt_pk_thumbnail3.jpg?1453979856" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/36/original/opt_pk_thumbnail3.jpg?1453979856" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/paper-kit-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="3">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='cristina'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='steefan'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/28/thumb.jpg?1446210509" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 294</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 26</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/paper-kit-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/paper-kit-pro/presentation.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/paper-kit-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/paper-kit-pro">
-                        <h3>Paper Kit Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $49
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap UI Kit  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2015-10-17 16:29:46 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/34/thumb/opt_lbd_pro_new_thumbnail.jpg?1449352503" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/34/original/opt_lbd_pro_new_thumbnail.jpg?1449352503" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="3">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='beniamin'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/32681/thumb.png?1449487244" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='steefan'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/28/thumb.jpg?1446210509" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 1,109</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 113</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/light-bootstrap-dashboard-pro/examples/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/light-bootstrap-dashboard-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro">
-                        <h3>Light Bootstrap Dashboard Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $39
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap Admin Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-03-15 14:31:47 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/38/thumb/opt_mk_thumbnail.jpg?1458052306" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/38/original/opt_mk_thumbnail.jpg?1458052306" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/material-kit" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="3">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='beniamin'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/32681/thumb.png?1449487244" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='cristina'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 37,020</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 113</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/material-kit" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/material-kit/index.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/material-kit">
-                        <h3>Material Kit
-
-
-
-                            <div class="time pull-right ">
-
-                                    Free
-                            </div>
-                        </h3>
-
-                    <p>Free Bootstrap UI Kit  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-08-28 17:24:38 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/48/thumb/opt_mbw_thumbnail.jpg?1472405077" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/48/original/opt_mbw_thumbnail.jpg?1472405077" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/material-bootstrap-wizard" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 5,203</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 27</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/material-bootstrap-wizard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/material-bootstrap-wizard/wizard-book-room.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/material-bootstrap-wizard">
-                        <h3>Material Bootstrap Wizard
-
-
-
-                            <div class="time pull-right ">
-
-                                    Free
-                            </div>
-                        </h3>
-
-                    <p>Wizard Plugin  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-03-29 14:23:24 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/43/thumb/opt_pd_thumbnail.jpg?1459261403" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/43/original/opt_pd_thumbnail.jpg?1459261403" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/paper-dashboard" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='cristina'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 22,157</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 35</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/paper-dashboard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/paper-dashboard/dashboard.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/paper-dashboard">
-                        <h3>Paper Dashboard
-
-
-
-                            <div class="time pull-right ">
-
-                                    Free
-                            </div>
-                        </h3>
-
-                    <p>Free Bootstrap Admin Template  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2014-10-24 13:21:51 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/26/thumb/opt_gsdk_new_thumbnail.jpg?1449347930" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/26/original/opt_gsdk_new_thumbnail.jpg?1449347930" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/get-shit-done-pro" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="3">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='tintescu.radu'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/481/thumb.jpeg?1446051900" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='cristina'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/7/thumb.png?1447682169" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 1,140</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 63</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/get-shit-done-pro" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://gsdk.creative-tim.com" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                            <a class="btn btn-info btn-round btn-fill" rel="tooltip" title="Add to Cart" data-remote="true" href="https://www.creative-tim.com/add-product-in-cart/get-shit-done-pro">
-                                <i class="fa fa-shopping-cart"></i>
-</a>                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/get-shit-done-pro">
-                        <h3>Get Shit Done Pro
-
-
-
-                            <div class="time pull-right  premium-product ">
-
-                                    $39
-                            </div>
-                        </h3>
-
-                    <p>Premium Bootstrap UI Kit  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-6  col-md-4 col-lg-4 " data-my-order="2016-09-15 12:37:27 UTC ">
-            <div class="card" data-no-turbolink>
-                <div class="thumbnail">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/products/49/thumb/opt_pbw_thumbnail.jpg?1473943046" data-retina="https://s3.amazonaws.com/creativetim_bucket/products/49/original/opt_pbw_thumbnail.jpg?1473943046" alt="No Image"/>
-
-                        <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard" class="thumb-cover"></a>
-
-                    <div class="details">
-                        <div class="authors-container" data-collaborators="2">
-                            <div class="author">
-    <a class='card-user account-photo  account-product-owner '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='dragosct10'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/72415/thumb.jpg?1471333071" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-
-                                <div class="author">
-    <a class='card-user account-photo '
-       rel='popover'
-       data-content='<div class="uil-ring-css" style="-webkit-transform:scale(0.3)"><div></div></div>'
-       data-initialized='0'
-       data-html='true'
-       data-placement='top'
-       data-template='<div class="popover" onmouseover="clearTimeout(timeoutObj);$(this).mouseleave(function() {$(this).hide();});"><div class="arrow"></div><div class="popover-inner"><div class="popover-content"><p></p></div></div></div>'
-       data-username='axelut'
-    >
-
-        <div class="mask">
-            <img src="https://s3.amazonaws.com/creativetim_bucket/photos/1/thumb.jpg?1484594398" class="photo"/>
-        </div>
-
-    </a>
-</div>
-
-                        </div>
-
-                        <div class="numbers">
-                            <b class="downloads"><i class="fa fa-arrow-circle-o-down"></i> 4,743</b>
-                            <b class="comments-icon"><i class="fa fa-comment"></i> 14</b>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <b class="actions">
-                            <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
-                                <i class="fa fa-align-left"></i>
-                            </a>
-
-                        <a href="http://demos.creative-tim.com/paper-bootstrap-wizard/wizard-list-place.html" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
-                            <i class="fa fa-laptop"></i>
-                        </a>
-                    </b>
-
-                </div>
-                <div class="card-info">
-
-                        <a href="https://www.creative-tim.com/product/paper-bootstrap-wizard">
-                        <h3>Paper Bootstrap Wizard
-
-
-
-                            <div class="time pull-right ">
-
-                                    Free
-                            </div>
-                        </h3>
-
-                    <p>Wizard Plugin  </p>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-
-                <div class="clearfix"></div>
-
-        </div>
-    </div>
--->
-<!-- product show -->
 
 <div class="footer">
     <div class="overlayer">
@@ -2090,18 +661,18 @@
                 <h4>Creative Tim</h4>
                 <ul class="list-unstyled">
                     <li> <a href="http://blog.creative-tim.com/">Blog</a></li>
-                    <li> <a href="https://www.creative-tim.com/affiliates/new">Affiliate Program</a></li>
-                    <li> <a href="https://www.creative-tim.com/terms">Terms &amp; Conditions</a></li>
-                    <li> <a href="https://www.creative-tim.com/privacy">Privacy Policy</a></li>
-                    <li> <a href="https://www.creative-tim.com/faq">FAQ</a></li>
-                    <li><a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="https://cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a></li>
+                    <li> <a href="/affiliates/new">Affiliate Program</a></li>
+                    <li> <a href="/terms">Terms &amp; Conditions</a></li>
+                    <li> <a href="/privacy">Privacy Policy</a></li>
+                    <li> <a href="/faq">FAQ</a></li>
+                    <li><a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a></li>
                 </ul>
             </div>
             <div class="col-sm-3 col-xs-4">
                 <h4>Happy people</h4>
                 <ul class="list-unstyled social-list">
-                    <li><h3 class="numbers-dont-lie"><b>205,400</b> accounts</h3></li>
-                    <li><h3 class="numbers-dont-lie"><b>354,282</b> downloads</h3></li>
+                    <li><h3 class="numbers-dont-lie"><b>205,469</b> accounts</h3></li>
+                    <li><h3 class="numbers-dont-lie"><b>354,389</b> downloads</h3></li>
 
                 </ul>
             </div>
@@ -2109,12 +680,12 @@
             <div class="col-sm-3 col-xs-4">
                 <h4>Help and Support</h4>
                 <ul class="list-unstyled">
-                    <li><a href="https://www.creative-tim.com/about-us">About Us</a></li>
-                    <li><a href="https://www.creative-tim.com/contact-us">Contact Us</a></li>
-                    <li><a href="https://www.creative-tim.com/sponsorships">Sponsorships</a></li>
-                    <li><a href="https://www.creative-tim.com/bootstrap">Bootstrap</a></li>
-                    <li><a href="https://www.creative-tim.com/license">Licenses</a></li>
-                    <li><a href="https://www.creative-tim.com/gallery/get-shit-done-pro">Products Gallery</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                    <li><a href="/sponsorships">Sponsorships</a></li>
+                    <li><a href="/bootstrap">Bootstrap</a></li>
+                    <li><a href="/license">Licenses</a></li>
+                    <li><a href="/gallery/get-shit-done-pro">Products Gallery</a></li>
                 </ul>
             </div>
 
@@ -2133,7 +704,7 @@
         <hr>
         <div class="row">
             <div class="social-area text-center" itemscope itemtype="http://schema.org/LocalBusiness">
-                <a itemprop="url" href="index.html" class="footer-brand">
+                <a itemprop="url" href="https://www.creative-tim.com/" class="footer-brand">
                     <div class="logo">
                         <img itemprop="logo" src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" />
                     </div>
@@ -2168,7 +739,22 @@
  </script>
 
 
-</body>
+<script type="text/javascript">
+
+
+    $().ready(function (){
+	    initTextareaForMention();
+
+	    $('.edit-comment-modal').on('shown.bs.modal', function () {
+		  	textarea = $(this).find('textarea.hidden').html();
+		  	$(this).find('textarea.mention').val(textarea);
+		})
+    });
+
+</script>
+
+
+<script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
 
 
 </html>
