@@ -209,3 +209,41 @@ def cryapp_edit(request, cryorders_id = 0):
         return render(request, 'material/seller/table.html')
 
 #-------orders add delete update -----#
+
+
+
+
+def buyeradmin(request):
+        return render(request, 'material/buyer/dashboard.html')
+
+
+class buyer_orders(LoginRequiredMixin, View):
+    def get(self, request, *args, **kwargs):
+        pagenumber=1
+        pagearray =[]
+        productnumber=30
+        orderslists = {}
+        ordersfilter = CryOrder.objects.filter(buyerid=request.user.id).order_by()
+        pagetotal = len(ordersfilter)
+        pagearray = int(productnumber/pagetotal)+1
+        orderlistid = 1
+        for orderslist in ordersfilter:
+            orderslists[orderlistid] = {
+                'id':orderslist.id,
+                'images':orderslist.GoodId.image1,
+                'goodid':orderslist.GoodId,
+                'shopname':orderslist.ShopId.shopname,
+                'shopkeepname':orderslist.ShopId.shopkeepername,
+                'Keywords':orderslist.Keywords,
+                'platform':orderslist.ShopId.platform,
+                'OrderSort':orderslist.OrderSort,
+                'Status':orderslist.Status,
+                'StartTime':orderslist.StartTime,
+                'EndTime':orderslist.EndTime,
+                'Note':orderslist.Note,
+                'Money':orderslist.Money,
+            }
+            orderlistid += 1
+
+        print(len(ordersfilter))
+        return render(request, 'material/buyer/table.html',{'orderslists':orderslists})

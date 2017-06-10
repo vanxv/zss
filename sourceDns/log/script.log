@@ -6591,3 +6591,72 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 208, in cryapp_edit
     editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'], Money=int(request.POST['money']))
 ValueError: invalid literal for int() with base 10: '323232.0'
+2017-06-10 15:29:20,945 [Thread-7:123145572581376] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller
+2017-06-10 15:29:33,077 [Thread-11:123145572581376] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller
+2017-06-10 15:29:41,924 [Thread-13:123145583091712] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/dashboard.html
+2017-06-10 15:30:01,897 [Thread-17:123145572581376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2017-06-10 15:32:32,210 [Thread-7:123145328848896] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2017-06-10 15:33:17,805 [Thread-7:123145534357504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2017-06-10 15:33:19,615 [Thread-8:123145534357504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2017-06-10 15:33:20,754 [Thread-9:123145534357504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2017-06-10 15:34:26,662 [Thread-13:123145457664000] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/material.min.js
+2017-06-10 15:34:26,714 [Thread-10:123145441898496] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/css/demo.css
+2017-06-10 15:34:26,751 [Thread-11:123145447153664] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/jquery-3.1.0.min.js
+2017-06-10 15:34:26,797 [Thread-9:123145436643328] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/css/material-dashboard.css
+2017-06-10 15:34:26,943 [Thread-12:123145452408832] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/bootstrap.min.js
+2017-06-10 15:34:26,982 [Thread-8:123145431388160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/css/bootstrap.min.css
+2017-06-10 15:34:27,573 [Thread-16:123145473429504] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/material-dashboard.js
+2017-06-10 15:34:27,633 [Thread-14:123145462919168] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/chartist.min.js
+2017-06-10 15:34:27,655 [Thread-15:123145468174336] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/bootstrap-notify.js
+2017-06-10 15:34:27,692 [Thread-17:123145478684672] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/demo.js
+2017-06-10 15:34:27,759 [Thread-18:123145436643328] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/jquery-3.1.0.min.js
+2017-06-10 15:34:28,015 [Thread-19:123145431388160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/bootstrap.min.js
+2017-06-10 15:34:28,229 [Thread-20:123145436643328] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/material.min.js
+2017-06-10 15:34:28,583 [Thread-21:123145431388160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/chartist.min.js
+2017-06-10 15:34:28,806 [Thread-22:123145436643328] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/bootstrap-notify.js
+2017-06-10 15:34:29,037 [Thread-23:123145431388160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/material-dashboard.js
+2017-06-10 15:34:29,201 [Thread-24:123145431388160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/js/demo.js
+2017-06-10 15:34:30,196 [Thread-25:123145431388160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/assets/img/favicon.png
+2017-06-10 15:44:10,494 [Thread-7:123145568985088] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/order/
+2017-06-10 15:44:42,218 [Thread-7:123145576177664] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/order/
+2017-06-10 15:44:44,495 [Thread-8:123145581432832] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/order/

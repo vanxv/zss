@@ -8,5 +8,9 @@ urlpatterns=[
     url(r'^orders/delete/(?P<cryorders_id>\d+)/$', views.cryapp_delete, name='cryorders_delete'),
     url(r'^orders/edit/(?P<cryorders_id>\d+)/$', views.cryapp_edit, name='cryorders_edit'),
     url(r'^orders/$', views.seller_orders.as_view(), name='sellerindex'),
-    #    url(r'sellermanager', views.sellermanager, name='sellermanage')
+
+    #------ managerbuyer ---#
+    url(r'^buyer/$', views.buyeradmin, name='buyerindex'),
+    url(r'^buyer/orders/$', views.buyer_orders.as_view(), name='buyerorders'),
+    #------ managerbuyer ---#
 ]
