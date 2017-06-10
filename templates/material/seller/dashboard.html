@@ -19,7 +19,7 @@
     <link href="{% static "/assets/css/material-dashboard.css" %}" rel="stylesheet"/>
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="{% static "/assets/css/demo.css" rel="stylesheet" %}" />
+    <link href="{% static "/assets/css/demo.css" %}" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -141,14 +141,14 @@
     <form method="post" action="/cryapp/GoodIndexAdd/">
     {% csrf_token %}
     <div class="input-group">
-        产品链接URL：<input id="txtIndexAddUrl" type="text" name="txtIndexAddUrl"><br>
-        关键词：<input id="keywords" type="text" name="keywords"><br>
-        金额：<input id="money" onkeyup="onlyNumber(this)" type="text" name="money" placeholder="0.00" /><br>
-        数量：<input id="number" type="number" name="number"><br>
-        备注支持html：<input id="note" type="text" name="note"><br>
-        启动日期：<input id="startdatetime" type="date" value="" name="startDate"><br>
-        结束日期：<input id="endDateTime" type="date" name="endDate"><br>
-        <input type="submit" value="Submit" /><br>
+        增加任务：<input id="txtIndexAddUrl" type="text" name="txtIndexAddUrl" class="form-control" placeholder="产品连接">
+        <input id="keywords" type="text" name="keywords" class="form-control" placeholder="关键词">
+        <input id="money" onkeyup="onlyNumber(this)" type="text" name="money" placeholder="金额"  class="form-control">
+        <input id="number" type="number" name="number"  class="form-control" placeholder="好评返现数量">
+        <input id="note" type="text" name="note" class="form-control" placeholder="备注">
+        <input id="startdatetime" type="date" value="" name="startDate"  class="form-control" placeholder="开始时间">
+        <input id="endDateTime" type="date" name="endDate"  class="form-control" placeholder="结束时间">
+        <input type="submit" value="发布试用" /><br>
     </div>
     </form>
     {{ test }}

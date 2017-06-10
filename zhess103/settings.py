@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'testapp',
     'crm',
     'users',
     'goods',
@@ -55,8 +56,11 @@ INSTALLED_APPS = [
     'cryapp',
     'rest_framework',
     'snippets.apps.SnippetsConfig',
+    'django_tables2',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
+
+APPEND_SLASH=False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -22,6 +22,7 @@ from users.views import *
 from django.views.static import serve
 from cryapp.views import *
 
+
 #!-------- rest freawork --------------##
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
@@ -64,8 +65,6 @@ urlpatterns = [
     url(r'^logout/', logout, name='logout'),
     url(r'^welcome/$', TemplateView.as_view(template_name="welcome.html"), name='welcome'),
     #---seller admin-----#
-    url(r'^seller/$', sellerIndex.as_view(), name='sellerindex'),
-    url(r'^seller/orders/$', seller_orders.as_view(), name='sellerindex'),
     #---seller admin-----#
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
     url(r'^users/', include('users.urls')),
@@ -74,10 +73,12 @@ urlpatterns = [
     url(r'^router/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     url(r'^snippets/', include('snippets.urls')),
-#!-------- rest freawork --------------##
+    #!-------- rest freawork --------------##
+
 
 #!------- new index -----#
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
+#!------- new index -----#
 
 ]
 

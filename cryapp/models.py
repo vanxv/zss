@@ -20,9 +20,8 @@ StatusChoices =(
     (1, '启动'),
     (2, '接任务'),
     (3, '提交等待审核'),
-    (4, '审核通过'),
+    (4, '审核不通过'),
     (5, '完成'),
-
 )
 # Create your models here.
 class CryOrder(models.Model):

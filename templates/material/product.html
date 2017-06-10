@@ -544,9 +544,9 @@
 
     	    </div>
 
-    	    <div class="tab-pane" id="developer">
+    <div class="tab-pane" id="developer">
     {% for loop in money %}
-        <form name="vanxv", action="./{{ goodsview.id }}", method="POST">
+        <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
         <input type='hidden' name='cryorderid' value="{{ loop.id }}">
         {{ loop.Money }}
         <input type="submit" name="button1" value="submit" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">

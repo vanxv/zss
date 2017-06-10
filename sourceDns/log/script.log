@@ -5834,3 +5834,760 @@ Traceback (most recent call last):
     "variable or in setting.py" % name)
 django.core.exceptions.ImproperlyConfigured: Can't find config for 'QINIU_ACCESS_KEY' either in environmentvariable or in setting.py
 2017-06-07 17:08:26,224 [Thread-72:123145501433856] [django.request:152] [base:get_response] [WARNING]- Not Found: /good/
+2017-06-07 23:17:17,409 [Thread-11:123145452994560] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/table.html
+2017-06-08 07:49:59,694 [Thread-122:123145447739392] [django.request:152] [base:get_response] [WARNING]- Not Found: /buy/material-kit-pro
+2017-06-08 07:50:48,900 [Thread-147:123145447739392] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/icons.html
+2017-06-08 07:51:19,113 [Thread-153:123145447739392] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/typography.html
+2017-06-08 07:51:20,240 [Thread-154:123145452994560] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/icons.html
+2017-06-08 07:51:21,021 [Thread-155:123145458249728] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/icons.html
+2017-06-08 08:37:25,029 [Thread-171:123145479270400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/order
+2017-06-08 09:10:35,778 [Thread-7:123145585188864] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /seller/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 71, in get
+    ordersfilter = CryOrder.objects.all().order_by()[:2-3]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 275, in __getitem__
+    "Negative indexing is not supported."
+AssertionError: Negative indexing is not supported.
+2017-06-08 09:37:56,592 [Thread-7:123145498771456] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /seller/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 71, in get
+    ordersfilter = CryOrder.objects.filter(UserId=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'UserId' into field. Choices are: AddTime, EndTime, GoodId, GoodId_id, Keywords, Money, Note, OrderSort, ShopId, ShopId_id, StartTime, Status, Userid, Userid_id, buyerid, buyerid_id, id, platform
+2017-06-08 09:37:57,788 [Thread-9:123145504026624] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-08 09:37:57,892 [Thread-8:123145498771456] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-08 09:39:05,021 [Thread-7:123145540231168] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /seller/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 72, in get
+    ordersfilter = CryOrder.objects.filter(UserId=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'UserId' into field. Choices are: AddTime, EndTime, GoodId, GoodId_id, Keywords, Money, Note, OrderSort, ShopId, ShopId_id, StartTime, Status, Userid, Userid_id, buyerid, buyerid_id, id, platform
+2017-06-08 10:23:33,477 [Thread-8:123145596358656] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/&aa=1
+2017-06-08 10:23:42,203 [Thread-9:123145601613824] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders&aa=1
+2017-06-08 10:25:36,007 [Thread-11:123145601613824] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders&aa=1
+2017-06-08 10:25:48,671 [Thread-12:123145591103488] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders&aa=1
+2017-06-08 10:25:50,814 [Thread-13:123145591103488] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders&aa=1
+2017-06-08 10:30:50,491 [Thread-17:123145465114624] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/cryapp/cryorder/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/options.py", line 617, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 274, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 308, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/options.py", line 619, in get_field
+    raise FieldDoesNotExist('%s has no field named %r' % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: CryOrder has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 339, in result_list
+    'results': list(results(cl))}
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 315, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 306, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    value = attr()
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/models.py", line 47, in __str__
+    return self.goodid
+AttributeError: 'CryOrder' object has no attribute 'goodid'
+2017-06-08 10:31:07,118 [Thread-23:123145465114624] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/cryapp/cryorder/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/options.py", line 617, in get_field
+    return self.fields_map[field_name]
+KeyError: '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 274, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 308, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/options.py", line 619, in get_field
+    raise FieldDoesNotExist('%s has no field named %r' % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: CryOrder has no field named '__str__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/library.py", line 225, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 339, in result_list
+    'results': list(results(cl))}
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 315, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 306, in __init__
+    super(ResultList, self).__init__(*items)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/admin/utils.py", line 290, in lookup_field
+    value = attr()
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/models.py", line 47, in __str__
+    return self.goodid
+AttributeError: 'CryOrder' object has no attribute 'goodid'
+2017-06-08 10:31:24,493 [Thread-38:123145465114624] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /admin/goods/goods/14968059463023229/change/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/response.py", line 109, in render
+    self.content = self.rendered_content
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/response.py", line 86, in rendered_content
+    content = template.render(context, self._request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 174, in render
+    return compiled_parent._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 70, in render
+    result = block.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader_tags.py", line 210, in render
+    return template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 392, in render
+    return strip_spaces_between_tags(self.nodelist.render(context).strip())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 209, in render
+    nodelist.append(node.render_annotated(context))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 315, in render
+    return nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 1050, in render
+    return render_value_in_context(output, context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 1028, in render_value_in_context
+    value = force_text(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/html.py", line 391, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/forms/boundfield.py", line 43, in __str__
+    return self.as_widget()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/forms/boundfield.py", line 101, in as_widget
+    return force_text(widget.render(name, self.value(), attrs=attrs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/forms/widgets.py", line 413, in render
+    if self.is_initial(value):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/forms/widgets.py", line 392, in is_initial
+    return bool(value and getattr(value, 'url', False))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/files.py", line 69, in _get_url
+    return self.storage.url(self.name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/functional.py", line 234, in inner
+    self._setup()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/files/storage.py", line 474, in _setup
+    self._wrapped = get_storage_class()()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/files/storage.py", line 469, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 978, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 950, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 655, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 205, in _call_with_frames_removed
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/qiniustorage/backends.py", line 42, in <module>
+    QINIU_ACCESS_KEY = get_qiniu_config('QINIU_ACCESS_KEY')
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/qiniustorage/backends.py", line 39, in get_qiniu_config
+    "variable or in setting.py" % name)
+django.core.exceptions.ImproperlyConfigured: Can't find config for 'QINIU_ACCESS_KEY' either in environmentvariable or in setting.py
+2017-06-08 11:55:58,898 [Thread-42:123145399099392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /seller/orders/<https://img.alicdn.com/bao/uploaded/i1/TB1O4VaPpXXXXawXpXXXXXXXXXX_!!0-item_pic.jpg
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'zss.cashback_tasks' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/wechat/views/activity.py", line 16, in get
+    get_object_or_404(CashbackTask, id=activity_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'zss.cashback_tasks' doesn't exist")
+2017-06-08 11:55:59,911 [Thread-44:123145388589056] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /seller/orders/<https://img.alicdn.com/bao/uploaded/i4/TB1y4M7QXXXXXX4aXXXXXXXXXXX_!!0-item_pic.jpg
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'zss.cashback_tasks' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/wechat/views/activity.py", line 16, in get
+    get_object_or_404(CashbackTask, id=activity_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'zss.cashback_tasks' doesn't exist")
+2017-06-08 11:55:59,936 [Thread-43:123145404354560] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /seller/orders/<https://img.alicdn.com/bao/uploaded/i1/TB19PplIXXXXXa7aXXXXXXXXXXX_!!0-item_pic.jpg
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'zss.cashback_tasks' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/wechat/views/activity.py", line 16, in get
+    get_object_or_404(CashbackTask, id=activity_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 379, in get
+    num = len(clone)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'zss.cashback_tasks' doesn't exist")
+2017-06-08 12:19:54,718 [Thread-83:123145388589056] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/user.html
+2017-06-08 14:34:41,658 [Thread-104:123145388589056] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/dashboard.html
+2017-06-09 08:03:51,506 [Thread-11:123145517178880] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-09 08:04:46,947 [Thread-24:123145517178880] [django.request:152] [base:get_response] [WARNING]- Not Found: /product/buy/bundle/
+2017-06-09 08:04:47,515 [Thread-25:123145522434048] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-09 08:05:25,631 [Thread-36:123145511923712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/table.html
+2017-06-09 08:05:33,742 [Thread-37:123145511923712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/table/
+2017-06-09 09:32:34,499 [Thread-6:123145487114240] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/delete
+2017-06-09 09:32:52,327 [Thread-11:123145487114240] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/delete/2121
+2017-06-09 09:34:12,110 [Thread-3:123145318510592] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/delete
+2017-06-09 09:34:23,931 [Thread-8:123145313255424] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/delete/1212121/
+2017-06-09 09:34:26,446 [Thread-9:123145318510592] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/delete/1212121/
+2017-06-09 09:34:30,210 [Thread-11:123145329020928] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/delete/1/
+2017-06-09 09:37:31,208 [Thread-13:123145375027200] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/dashboard.html
+2017-06-09 09:39:22,172 [Thread-7:123145517445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders
+2017-06-09 09:39:33,056 [Thread-13:123145517445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/
+2017-06-09 09:39:47,183 [Thread-19:123145517445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders
+2017-06-09 09:39:58,549 [Thread-26:123145517445120] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders
+2017-06-09 09:44:06,958 [Thread-13:123145461497856] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-09 09:44:24,707 [Thread-19:123145461497856] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/
+2017-06-09 09:48:55,447 [Thread-33:123145461497856] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/delete/1/
+2017-06-09 09:52:26,978 [Thread-13:123145511227392] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/delete/1/
+2017-06-09 09:52:30,116 [Thread-14:123145516482560] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/delete/11212
+2017-06-09 14:27:32,618 [Thread-34:123145511227392] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 14:27:34,267 [Thread-35:123145516482560] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-09 15:08:08,304 [Thread-9:123145520185344] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-09 15:08:08,345 [Thread-8:123145514930176] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-09 16:06:27,400 [Thread-7:123145459544064] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 16:06:30,359 [Thread-8:123145464799232] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 16:06:34,059 [Thread-9:123145470054400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/
+2017-06-09 16:06:46,230 [Thread-11:123145459544064] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/
+2017-06-09 16:06:54,902 [Thread-14:123145459544064] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 17:17:47,022 [Thread-15:123145475579904] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (POST): /cryapp/orders/
+2017-06-09 20:04:24,091 [Thread-10:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 20:04:29,752 [Thread-11:123145518202880] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/
+2017-06-09 20:04:48,237 [Thread-18:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 20:04:54,447 [Thread-21:123145518202880] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/
+2017-06-09 20:35:13,858 [Thread-30:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-09 20:42:50,276 [Thread-44:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/delete/1496112150619984/dashboard.html
+2017-06-09 21:44:48,409 [Thread-57:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/dashboard.html
+2017-06-10 13:32:52,497 [Thread-154:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 13:32:52,509 [Thread-155:123145518202880] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 13:34:45,879 [Thread-156:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 13:34:45,905 [Thread-157:123145518202880] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 13:34:46,401 [Thread-158:123145523458048] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 13:34:46,434 [Thread-159:123145528713216] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 13:39:19,993 [Thread-166:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-10 13:39:21,826 [Thread-167:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-10 13:39:28,540 [Thread-168:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-10 13:40:00,026 [Thread-172:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-10 13:52:33,589 [Thread-177:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/dashboard.html
+2017-06-10 13:53:40,972 [Thread-185:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-10 13:54:24,427 [Thread-190:123145512947712] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/edit/14961117468531919
+2017-06-10 14:21:13,809 [Thread-7:123145406304256] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-06-10 14:21:16,989 [Thread-8:123145411559424] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-06-10 14:21:35,791 [Thread-13:123145406304256] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-06-10 14:21:48,755 [Thread-17:123145406304256] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-06-10 14:38:04,084 [Thread-38:123145426116608] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/edit/14961117468531919
+2017-06-10 14:38:10,743 [Thread-39:123145426116608] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/edit/14961117468531919/
+2017-06-10 14:38:27,007 [Thread-44:123145426116608] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/edit/14961117468531919/
+2017-06-10 14:40:24,737 [Thread-49:123145426116608] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/edit/14961117468531919/
+2017-06-10 14:41:30,964 [Thread-8:123145537044480] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/edit/149707400517628/table.html
+2017-06-10 14:54:34,420 [Thread-8:123145535492096] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-06-10 14:56:47,160 [Thread-7:123145515151360] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/edit/14961117468531919
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:8000/cryapp/orders/edit/14961117468531919/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-06-10 14:57:35,562 [Thread-7:123145446277120] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/edit/14961117468531919
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/deprecation.py", line 134, in __call__
+    response = self.process_request(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/middleware/common.py", line 63, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/middleware/common.py", line 101, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 0.0.0.0:8000/cryapp/orders/edit/14961117468531919/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2017-06-10 14:58:59,563 [Thread-8:123145505320960] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/edit/14961117468531919
+2017-06-10 14:59:06,401 [Thread-9:123145510576128] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/edit/14961117468531919
+2017-06-10 14:59:45,313 [Thread-16:123145505320960] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/edit/14961117468531919
+2017-06-10 15:03:14,020 [Thread-7:123145347407872] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/edit/14961117468531919/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 208, in cryapp_edit
+    editcryappdata = CryOrder.objects.get(id=cryorders).update(Keywords=requests.POST['keywords'], Money=int(requests.POST['money']))
+AttributeError: 'CryOrder' object has no attribute 'update'
+2017-06-10 15:03:45,521 [Thread-9:123145548238848] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 15:03:45,533 [Thread-8:123145542983680] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-10 15:03:54,415 [Thread-10:123145542983680] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/edit/14961117468531919/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 208, in cryapp_edit
+    editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=requests.POST['keywords'], Money=int(requests.POST['money']))
+AttributeError: module 'requests' has no attribute 'POST'
+2017-06-10 15:05:01,701 [Thread-7:123145520640000] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/edit/14961117468531919/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 208, in cryapp_edit
+    editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'], Money=int(request.POST['money']))
+ValueError: invalid literal for int() with base 10: '323232.0'

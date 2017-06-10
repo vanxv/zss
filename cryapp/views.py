@@ -59,7 +59,6 @@ class savegroup():
     def Goods(self):
         pass
 #save task
-
 #Create your views here.
 ##Home_page_add_product
 class sellerIndex(LoginRequiredMixin, View):
@@ -68,7 +67,34 @@ class sellerIndex(LoginRequiredMixin, View):
 
 class seller_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'material/seller/table.html')
+        pagenumber=1
+        pagearray =[]
+        productnumber=30
+        orderslists = {}
+        ordersfilter = CryOrder.objects.filter(Userid=request.user.id).order_by()
+        pagetotal = len(ordersfilter)
+        pagearray = int(productnumber/pagetotal)+1
+        orderlistid = 1
+        for orderslist in ordersfilter:
+            orderslists[orderlistid] = {
+                'id':orderslist.id,
+                'images':orderslist.GoodId.image1,
+                'goodid':orderslist.GoodId,
+                'shopname':orderslist.ShopId.shopname,
+                'shopkeepname':orderslist.ShopId.shopkeepername,
+                'Keywords':orderslist.Keywords,
+                'platform':orderslist.ShopId.platform,
+                'OrderSort':orderslist.OrderSort,
+                'Status':orderslist.Status,
+                'StartTime':orderslist.StartTime,
+                'EndTime':orderslist.EndTime,
+                'Note':orderslist.Note,
+                'Money':orderslist.Money,
+            }
+            orderlistid += 1
+
+        print(len(ordersfilter))
+        return render(request, 'material/seller/table.html',{'orderslists':orderslists})
 
 class buyerIndex(View):
     def get(self, request, *args, **kwargs):
@@ -93,6 +119,7 @@ class buyerIndex(View):
                 else:
                     orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
             return render(request, 'index/index.html', {'orderdict':orderdict})
+
 def GetGoods(request, goodid):
     if request.user.is_authenticated:
         if request.method=="GET":
@@ -111,8 +138,6 @@ def GetGoods(request, goodid):
 
     else:
         return render(request, 'login.html')
-
-
 
 class Good_Index_Add(LoginRequiredMixin, View):
     ##############首页增加产品#######################
@@ -159,3 +184,28 @@ class Good_Index_Add(LoginRequiredMixin, View):
             savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
             savecryorder.save()
         return render(request, 'material/seller/dashboard.html',{'test':'已经发布任务'})
+
+#-------orders add delete update -----#
+def cryapp_delete(request, cryorders_id = 0):
+    cryorders = int(cryorders_id)
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0)
+    print(cryorders)
+    return render(request, 'material/seller/dashboard.html',{})
+
+class cryapp_update(LoginRequiredMixin, View):
+    pass
+
+class cryapp_audit(LoginRequiredMixin, View):
+    pass
+
+def cryapp_edit(request, cryorders_id = 0):
+    if request.method=="GET":
+        cryorders = int(cryorders_id)
+        editcryappdata = CryOrder.objects.get(id=cryorders)
+        return render(request, 'material/seller/project_edit.html', {'editcryappdata':editcryappdata})
+    if request.method=="POST":
+        cryorders = int(cryorders_id)
+        editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'])
+        return render(request, 'material/seller/table.html')
+
+#-------orders add delete update -----#
