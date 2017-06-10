@@ -185,15 +185,23 @@ class Good_Index_Add(LoginRequiredMixin, View):
             savecryorder.save()
         return render(request, 'material/seller/dashboard.html',{'test':'已经发布任务'})
 
-#-------orders add delete update -----#
+#-------seller CRUD -----#
 def cryapp_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0)
     print(cryorders)
     return render(request, 'material/seller/dashboard.html',{})
 
-class cryapp_update(LoginRequiredMixin, View):
-    pass
+
+def ordersnotdone(request, cryorders_id = 0):
+    cryorders = int(cryorders_id)
+    notthrough = CryOrder.objects.filter(id=cryorders).update(Status=4)
+    return render(request, 'material/seller/dashboard.html',{})
+
+def ordersdone(request, cryorders_id = 0):
+    cryorders = int(cryorders_id)
+    through = CryOrder.objects.filter(id=cryorders).update(Status=5)
+    return render(request, 'material/seller/dashboard.html',{})
 
 class cryapp_audit(LoginRequiredMixin, View):
     pass
@@ -208,13 +216,13 @@ def cryapp_edit(request, cryorders_id = 0):
         editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'])
         return render(request, 'material/seller/table.html')
 
-#-------orders add delete update -----#
+#-------seller CRUD -----#
 
 
 
 
 def buyeradmin(request):
-        return render(request, 'material/buyer/dashboard.html')
+    return render(request, 'material/buyer/dashboard.html')
 
 
 class buyer_orders(LoginRequiredMixin, View):
@@ -247,3 +255,11 @@ class buyer_orders(LoginRequiredMixin, View):
 
         print(len(ordersfilter))
         return render(request, 'material/buyer/table.html',{'orderslists':orderslists})
+
+
+def buyer_commit_orders(request, cryorders_id = 0):
+    cryorderid=cryorders_id
+    print(request.POST['paltfromorders'])
+    print(int(request.POST['paltfromorders']))
+    commitorders = CryOrder.objects.filter(id=cryorderid).update(PlatformOrdersid=int(request.POST['paltfromorders']), Status=3)
+    return render(request, 'material/buyer/dashboard.html')

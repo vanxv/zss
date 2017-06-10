@@ -34,6 +34,7 @@ class CryOrder(models.Model):
     Keywords = models.CharField(verbose_name=u'关键词', max_length=20)
     platform = models.CharField('店铺平台', max_length=20, null=True, choices=PLATFORM)
     OrderSort = models.IntegerField(verbose_name=u'订单分类', choices=orderSortChoices, null=True)
+    PlatformOrdersid = models.IntegerField(verbose_name=u'平台订单编号', null=True, default=0)
     Status = models.IntegerField(verbose_name=u'状态启动与关闭', choices=StatusChoices)
     StartTime = models.DateField(verbose_name=u'startTime开始时间')
     EndTime = models.DateField(verbose_name=u'EndTime结束时间')

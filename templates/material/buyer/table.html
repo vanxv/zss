@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" href="{%static "/assets/img/favicon.png"  %}"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Material Dashboard by Creative Tim</title>
+	<title>buyer orders-tables</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -199,9 +199,9 @@
                                                             <button value="delete" type="submit">删除</button></td>
                                                     {% else %}
                                                     {% endif %}
-2                                                {% if orderlist.1.Status == 2 %}
+                                                {% if orderlist.1.Status == 2 %}
                                                     <td>
-                                                        <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">
+                                                        <form action="/cryapp/buyer/orders/commitorders/{{ orderlist.1.id }}/" method="post">
                                                             <input id="paltfromorders" type="text" name="paltfromorders" class="form-control" placeholder="请输入订单编号">
                                                             <button value="submit" type="submit">提交订单</button>
                                                     </td>
@@ -209,7 +209,7 @@
                                                     </form>
                                                 {% endif %}
                                                 {% if orderlist.1.Status == 3 %}
-                                                    <td><button>审核通过</button>
+                                                    <td><button>审核通中</button>
                                                     <button>审核不通过</button></td>
                                                     {% endif %}
                                                 {% if orderlist.1.Status == 4 %}

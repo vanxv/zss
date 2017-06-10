@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" href="{%static "/assets/img/favicon.png"  %}"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Material Dashboard by Creative Tim</title>
+	<title>seller orders-tables</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -199,7 +199,7 @@
                                                             <button value="delete" type="submit">删除</button></td>
                                                     {% else %}
                                                     {% endif %}
-2                                                {% if orderlist.1.Status == 2 %}
+                                                {% if orderlist.1.Status == 2 %}
                                                     <td>
                                                         <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">
                                                             <button value="编辑" type="submit">编辑</button>
@@ -208,8 +208,13 @@
                                                     </form>
                                                 {% endif %}
                                                 {% if orderlist.1.Status == 3 %}
-                                                    <td><button>审核通过</button>
-                                                    <button>审核不通过</button></td>
+                                                    <td><form action="/cryapp/orders/done/{{ orderlist.1.id }}/" method="post">
+                                                        <input type="submit" value="'审核通过">
+                                                        </form>
+                                                     <form action="/cryapp/orders/notdone/{{ orderlist.1.id }}/" method="post">
+                                                        <input type="submit" value="'审核不通过">
+                                                        </form></td>
+
                                                     {% endif %}
                                                 {% if orderlist.1.Status == 4 %}
                                                     <td>等待会员提交<p>
