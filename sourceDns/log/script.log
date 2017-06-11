@@ -6986,3 +6986,111 @@ django.db.utils.DataError: (1264, "Out of range value for column 'PlatformOrders
 2017-06-10 17:03:57,957 [Thread-32:123145493106688] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/dashboard.html
 2017-06-10 17:40:55,327 [Thread-65:123145498898432] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
 2017-06-10 17:40:55,377 [Thread-66:123145504153600] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 11:47:41,086 [Thread-13:123145410060288] [django.request:152] [base:get_response] [WARNING]- Not Found: /buy/material-kit-pro
+2017-06-11 14:28:28,494 [Thread-14:123145410367488] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:29:06,844 [Thread-21:123145410367488] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders
+2017-06-11 14:29:16,066 [Thread-23:123145420877824] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/table.html
+2017-06-11 14:31:11,870 [Thread-34:123145410367488] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/commitorders/1497085483028267/table.html
+2017-06-11 14:32:28,703 [Thread-42:123145415622656] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:32:28,712 [Thread-43:123145420877824] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:40:52,505 [Thread-20:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-11 14:42:11,178 [Thread-22:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:11,566 [Thread-23:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:11,982 [Thread-24:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:12,094 [Thread-25:123145369116672] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:12,209 [Thread-26:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:12,585 [Thread-27:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:12,601 [Thread-28:123145369116672] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:42:13,229 [Thread-29:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 14:52:49,541 [Thread-30:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /login
+2017-06-11 14:53:04,113 [Thread-31:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /login
+2017-06-11 14:54:34,669 [Thread-34:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /reg/
+2017-06-11 14:54:36,129 [Thread-35:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /reg/
+2017-06-11 15:03:55,266 [Thread-96:123145363861504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '18606622210' for key 'username'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 44, in post
+    user_profile.save()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/base_user.py", line 80, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1054, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1010, in _read_packet
+    packet.check_error()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 393, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.IntegrityError: (1062, "Duplicate entry '18606622210' for key 'username'")
+2017-06-11 15:05:53,017 [Thread-107:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /logout
+2017-06-11 15:06:01,517 [Thread-109:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /logout
+2017-06-11 15:10:22,630 [Thread-124:123145363861504] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-11 15:10:22,637 [Thread-125:123145369116672] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card

@@ -8,7 +8,6 @@ import re
 import requests
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
 from django.contrib.auth import authenticate, login
-
 #url切出数字和切出店铺分类
 def platformUrl(self):
     if 'tmall' in self:
@@ -118,7 +117,7 @@ class buyerIndex(View):
                     orderdict[corder.GoodId.id][0] += 1
                 else:
                     orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
-            return render(request, 'index/index.html', {'orderdict':orderdict})
+            return render(request, 'material/index.html', {'orderdict':orderdict})
 
 def GetGoods(request, goodid):
     if request.user.is_authenticated:
