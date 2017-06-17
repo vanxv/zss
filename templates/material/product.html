@@ -433,7 +433,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">&nbsp;</h4>
         </div>
-        <img src={% static "assets/valentines-day-54de97c0244637dcac32e0da8c952975.jpg" %} alt="Valentines day" />
+        <img src={% static "assets/valentines-day-54de97c0244637dcac32e0da8c952975.jpg" %}" alt="Valentines day" />
         <div class="modal-body">
 <!--             <p><b class="merry">Happy Valentine's Day!</b><br /> -->
             <p><b>
@@ -464,15 +464,15 @@
         <div class="row">
             <div class="col-md-6 col-sm-5 col-xs-5 text-right">
 
-                        <a class="btn btn-default btn-simple" target="_blank" href="http://demos.creative-tim.com/material-kit-pro/presentation.html">Live Preview</a>
+                {% for loop in money %}
+        <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
+        <input type='hidden' name='cryorderid' value="{{ loop.id }}">
+        <input type='hidden' name='platform' value="{{ loop.platform }}">
+        <input type="submit" name="button1" value="立即试用：{{ loop.Money }}" class="btn btn-info btn-fill btn-wd btn-round">
 
-                        <a class="btn btn-default btn-simple" href="/product/material-kit">Get Free Demo</a>
+        </form>
+    {% endfor %}
 
-
-
-                        <a href="/buy/material-kit-pro?license=1&affiliate_id=87385" class="btn btn-info btn-fill btn-wd btn-round">
-                            Buy now &middot;<b>
-                                $79
                             </b>
                         </a>
 
@@ -530,36 +530,18 @@
 
 
     	    <div class="tab-pane active" id="personal">
-
-                        <a href="/buy/material-kit-pro?license=1&affiliate_id=87385" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
-                            Buy<b>
-                                $79
-                            </b>
-                        </a>
-
-
-                    <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html" class="hidden-xs btn btn-new btn-wd btn-neutral btn-round" target="_blank">
-                        Live Preview name1
-                    </a>
-
-    	    </div>
-
-    <div class="tab-pane" id="developer">
-    {% for loop in money %}
+                {% for loop in money %}
         <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
         <input type='hidden' name='cryorderid' value="{{ loop.id }}">
-        {{ loop.Money }}
-        <input type="submit" name="button1" value="submit" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
-                            Buy now &middot; <b>
-                                {{ loop.Money }}
-                            </b>
+        <input type='hidden' name='platform' value="{{ loop.platform }}">
+        <input type="submit" name="button1" value="{{ loop.platform }}试用金额：{{ loop.Money }}" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
                         </a>
         </form>
     {% endfor %}
 
-                    <a href="http://demos.creative-tim.com/material-kit-pro/presentation.html" class="btn btn-new btn-wd btn-neutral btn-round" target="_blank">
-                        Live Preview
-                    </a>
+
+    	    </div>
+
 
     	    </div>
 

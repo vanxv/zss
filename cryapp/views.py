@@ -146,6 +146,7 @@ def GetGoods(request, goodid):
         elif request.method == "POST":
             yesterday = datetime.now() - timedelta(hours=1)
             pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
+
             if pcguid:
                 print('have')
                 print(pcguid)
