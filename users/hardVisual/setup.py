@@ -1,4 +1,4 @@
 from distutils.core import setup
 import py2exe
 
-setup(console=['autolinkedin.py'])
+setup(console=['linkedin.py'])

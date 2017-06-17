@@ -1,0 +1,296 @@
+[0.048][INFO]: COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+
+      },
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [ "lang=en", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" ],
+         "extensions": [  ]
+      },
+      "firstMatch": [  ],
+      "javascriptEnabled": true,
+      "platform": "ANY",
+      "version": ""
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "chromeOptions": {
+         "args": [ "lang=en", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" ],
+         "extensions": [  ]
+      },
+      "javascriptEnabled": true,
+      "platform": "ANY",
+      "version": ""
+   }
+}
+[0.052][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "show_welcome_page": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[0.053][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[0.057][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --ignore-certificate-errors --lang=en --load-component-extension=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.8KjAXE/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12774 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.FjpuKP data:,
+[1.179][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1.735][INFO]: RESPONSE InitSession {
+   "acceptSslCerts": true,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b)",
+      "userDataDir": "/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.FjpuKP"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Mac OS X",
+   "rotatable": false,
+   "takesHeapSnapshot": true,
+   "takesScreenshot": true,
+   "~~~": "..."
+}
+[1.741][INFO]: COMMAND Navigate {
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707",
+   "url": "https://www.facebook.com/"
+}
+[1.741][INFO]: Waiting for pending navigations...
+[1.744][INFO]: Done waiting for pending navigations. Status: ok
+[2.775][INFO]: Waiting for pending navigations...
+[4.787][INFO]: Done waiting for pending navigations. Status: ok
+[4.787][INFO]: RESPONSE Navigate
+[4.790][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "httpOnly": false,
+      "name": "presence",
+      "path": "/",
+      "secure": true,
+      "value": "EDvF3EtimeF1497420483EuserFA21B17627533416A2EstateFDutF1497420483559CEchFDp_5f1B17627533416F1CC"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.790][INFO]: Waiting for pending navigations...
+[4.791][INFO]: Done waiting for pending navigations. Status: ok
+[4.795][INFO]: Waiting for pending navigations...
+[4.796][INFO]: Done waiting for pending navigations. Status: ok
+[4.796][INFO]: RESPONSE AddCookie
+[4.798][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1505196468.53932,
+      "httpOnly": true,
+      "name": "pl",
+      "path": "/",
+      "secure": true,
+      "value": "n"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.798][INFO]: Waiting for pending navigations...
+[4.799][INFO]: Done waiting for pending navigations. Status: ok
+[4.803][INFO]: Waiting for pending navigations...
+[4.803][INFO]: Done waiting for pending navigations. Status: ok
+[4.803][INFO]: RESPONSE AddCookie
+[4.805][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1505196468.539274,
+      "httpOnly": true,
+      "name": "fr",
+      "path": "/",
+      "secure": true,
+      "value": "0k5ZFM5DwnlDi2Kva.AWXouSZYShIG6zqe8g92qdWL7Gs.BZQNKa.NL.AAA.0.0.BZQNK0.AWVTIKxp"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.805][INFO]: Waiting for pending navigations...
+[4.806][INFO]: Done waiting for pending navigations. Status: ok
+[4.809][INFO]: Waiting for pending navigations...
+[4.810][INFO]: Done waiting for pending navigations. Status: ok
+[4.810][INFO]: RESPONSE AddCookie
+[4.812][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1505196468.539219,
+      "httpOnly": false,
+      "name": "c_user",
+      "path": "/",
+      "secure": true,
+      "value": "100017627533416"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.812][INFO]: Waiting for pending navigations...
+[4.813][INFO]: Done waiting for pending navigations. Status: ok
+[4.817][INFO]: Waiting for pending navigations...
+[4.818][INFO]: Done waiting for pending navigations. Status: ok
+[4.818][INFO]: RESPONSE AddCookie
+[4.820][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1560492468.53919,
+      "httpOnly": true,
+      "name": "sb",
+      "path": "/",
+      "secure": true,
+      "value": "tNJAWWiniyrMidvijh8gmAdb"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.820][INFO]: Waiting for pending navigations...
+[4.821][INFO]: Done waiting for pending navigations. Status: ok
+[4.824][INFO]: Waiting for pending navigations...
+[4.825][INFO]: Done waiting for pending navigations. Status: ok
+[4.825][INFO]: RESPONSE AddCookie
+[4.827][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1505196468.539245,
+      "httpOnly": true,
+      "name": "xs",
+      "path": "/",
+      "secure": true,
+      "value": "46%3Abv4zjZ_swlcVqw%3A2%3A1497420468%3A-1%3A-1"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.827][INFO]: Waiting for pending navigations...
+[4.828][INFO]: Done waiting for pending navigations. Status: ok
+[4.832][INFO]: Waiting for pending navigations...
+[4.834][INFO]: Done waiting for pending navigations. Status: ok
+[4.834][INFO]: RESPONSE AddCookie
+[4.836][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1560492468.539349,
+      "httpOnly": true,
+      "name": "lu",
+      "path": "/",
+      "secure": true,
+      "value": "gA"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.836][INFO]: Waiting for pending navigations...
+[4.837][INFO]: Done waiting for pending navigations. Status: ok
+[4.840][INFO]: Waiting for pending navigations...
+[4.841][INFO]: Done waiting for pending navigations. Status: ok
+[4.841][INFO]: RESPONSE AddCookie
+[4.844][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1512972468.539031,
+      "httpOnly": true,
+      "name": "dats",
+      "path": "/",
+      "secure": true,
+      "value": "1"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.844][INFO]: Waiting for pending navigations...
+[4.844][INFO]: Done waiting for pending navigations. Status: ok
+[4.848][INFO]: Waiting for pending navigations...
+[4.849][INFO]: Done waiting for pending navigations. Status: ok
+[4.849][INFO]: RESPONSE AddCookie
+[4.851][INFO]: COMMAND AddCookie {
+   "cookie": {
+      "domain": ".facebook.com",
+      "expiry": 1560492468.538975,
+      "httpOnly": true,
+      "name": "datr",
+      "path": "/",
+      "secure": true,
+      "value": "mtJAWaMUd_uiC3qqAXT-q7Mz"
+   },
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707"
+}
+[4.852][INFO]: Waiting for pending navigations...
+[4.852][INFO]: Done waiting for pending navigations. Status: ok
+[4.856][INFO]: Waiting for pending navigations...
+[4.856][INFO]: Done waiting for pending navigations. Status: ok
+[4.856][INFO]: RESPONSE AddCookie
+[4.860][INFO]: COMMAND Navigate {
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707",
+   "url": "https://www.facebook.com/PopfieldOfficial/"
+}
+[4.860][INFO]: Waiting for pending navigations...
+[4.861][INFO]: Done waiting for pending navigations. Status: ok
+[4.864][INFO]: Waiting for pending navigations...
+[5.216][SEVERE]: Unable to receive message from renderer
+[5.216][INFO]: Done waiting for pending navigations. Status: disconnected: Unable to receive message from renderer
+[5.301][INFO]: RESPONSE Navigate
+[5.305][INFO]: COMMAND FindElement {
+   "sessionId": "3d2cc3e39e93700ea572dc4a9b637707",
+   "using": "xpath",
+   "value": "//*[@id=\"PHOTO_VIDEO\"]/div/i"
+}
+[5.305][INFO]: RESPONSE FindElement no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=58.0.3029.110)

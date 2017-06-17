@@ -54,7 +54,7 @@ class Goods(models.Model):
     keyword4 = models.CharField('关键词4', max_length=50, null=True)
     price4 = models.FloatField('价格4', max_length=50, null=True)
     remark4 = models.CharField('备注4', max_length=50, null=True)
-    keywor5 = models.CharField('关键词5', max_length=50, null=True)
+    keyword5 = models.CharField('关键词5', max_length=50, null=True)
     price5 = models.FloatField('价格5', max_length=50, null=True)
     remark5 = models.CharField('备注5', max_length=50, null=True)
     add_time = models.DateTimeField(default=timezone.now)
