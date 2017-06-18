@@ -2,12 +2,11 @@
 # -*- coding: utf-8 -*-
 
 '''
-Created on 2017年6月17日
-@author: Irony."[讽刺]
-@site: http://alyl.vip, http://orzorz.vip, https://coding.net/u/892768447, https://github.com/892768447
-@email: 892768447@qq.com
-@file: AgentBrowser
-@description: 
+python3.4.4 + pyqt5.5.1
+wmi
+pywin32
+pyinstaller
+pyinstaller -w Anxxx.py -i main.ico
 '''
 from random import randint
 import sys
@@ -19,35 +18,15 @@ from PyQt5.QtNetwork import QNetworkRequest
 from PyQt5.QtWebKit import QWebSettings
 from PyQt5.QtWebKitWidgets import QWebView, QWebPage
 from PyQt5.QtWidgets import QWidget, QVBoxLayout, QLineEdit, QComboBox,\
-    QHBoxLayout, QPushButton, QMessageBox, QToolBar, QProgressBar
+    QHBoxLayout, QPushButton, QMessageBox, QToolBar, QProgressBar, \
+    QApplication, QGridLayout
 
 import hardVisual  # @UnresolvedImport @UnusedImport
 
 
-__Author__ = "By: Irony.\"[讽刺]\nQQ: 892768447\nEmail: 892768447@qq.com"
-__Copyright__ = "Copyright (c) 2017 Irony.\"[讽刺]"
+__Author__ = "By: vanxv"
+__Copyright__ = "Copyright (c) 2017 vanxv"
 __Version__ = "Version 1.0"
-
-# ━━━━━━神兽出没━━━━━━
-#　　　 ┏┓　　　┏┓
-#　　┏ ┛┻━━━━┛┻ ┓
-#　　┃　　　　　　　┃
-#　　┃　　　━　　　 ┃
-#　　┃　  ┳┛　┗┳　　┃
-#　　┃　　　　　　　┃
-#　　┃　　　┻　　　┃
-#　　┃　　　　　　　┃
-#　　┗━┓　　　　┏━┛
-#　　　┃　　　　┃   神兽保佑
-#　　　┃　　　　┃   代码无BUG！
-#　　　┃　　　　┗━━━┓
-#　　　┃　　　　　　　┣┓
-#　　　┃　　　　　　　┏┛
-#　　　┗┓┓┏━━━━━┳┓┏┛
-#　　　　┃┫┫　　　┃┫┫
-#　　　　┗┻┛　　　┗┻┛
-# ━━━━━━感觉萌萌哒━━━━━━
-
 
 class AgentPage(QWebPage):
 
@@ -88,16 +67,29 @@ class HardVisualRunnable(QRunnable):
             self.signal.emit(data)
 
 
+class Button(QPushButton):
+
+    def __init__(self, url, webView, *args, **kwargs):
+        super(Button, self).__init__(*args, **kwargs)
+        self.url = QUrl(url)
+        self.webView = webView
+        self.clicked.connect(self.onClick)
+
+    def onClick(self):
+        self.webView.load(self.url)
+
+
 class AgentBrowser(QWidget):
 
-    Url_TB = QUrl("https://www.taobao.com/")
-    Url_JD = QUrl("https://www.jd.com/")
     Url_PCI = QUrl("http://www.zhess.com/users/PcHardwareInsert/")
     SignalGetData = pyqtSignal(dict)
 
-    def __init__(self, agents, *args, **kwargs):
+    def __init__(self, agents, urls, *args, **kwargs):
         super(AgentBrowser, self).__init__(*args, **kwargs)
         self.resize(800, 600)
+        # 浏览器
+        self.webView = QWebView(self)
+
         hlayout = QHBoxLayout()
         # 账号输入框
         self.edit_username = QLineEdit(
@@ -107,17 +99,17 @@ class AgentBrowser(QWidget):
         self.edit_password = QLineEdit(
             self, placeholderText="请输入密码", clearButtonEnabled=True)
         hlayout.addWidget(self.edit_password)
-        # 登录阿牛
-        hlayout.addWidget(QPushButton("登　　录", self, clicked=self.onLogin))
-        # 打开淘宝按钮
-        hlayout.addWidget(QPushButton("打开淘宝", self, clicked=self.onOpenTaobao))
-        # 打开京东按钮
-        hlayout.addWidget(
-            QPushButton("打开京东", self, clicked=self.onOpenJingDong))
+        # 登录按钮
+        self.buttonLogin = QPushButton("登　　录", self, clicked=self.onLogin)
+        hlayout.addWidget(self.buttonLogin)
+
+        # 初始化动态url按钮
+        urlLayout = self.setupUrls(urls)
+
         layout = QVBoxLayout(self)
         layout.addItem(hlayout)
-        # 浏览器
-        self.webView = QWebView(self)
+        layout.addItem(urlLayout)
+
         self.webView.linkClicked.connect(self.webView.load)
         self.webPage = AgentPage(self.webView)
         self.webPage.setLinkDelegationPolicy(QWebPage.DelegateAllLinks)
@@ -157,11 +149,31 @@ class AgentBrowser(QWidget):
         layout.addWidget(self.webView)
 
         # 随机选择一个agent
-        self.box_agents.setCurrentIndex(randint(0, len(agents)))
+        self.box_agents.setCurrentIndex(randint(0, len(agents) - 1))
 
         # 获取信息的信号槽
         self.SignalGetData.connect(self.onGetData)
         self.loginRunnable = None
+
+    def setupUrls(self, urls):
+        layout = QGridLayout()
+        _urls = []
+        for url in urls:
+            try:
+                _urls.append(url.split("  ###  "))
+            except:
+                pass
+        m = len(_urls) % 6
+        items = []
+        for i in range(int(len(_urls) / 6)):
+            items.append(_urls[i * 6:i * 6 + 6])
+        if m > 0:
+            items.append(_urls[-m:])
+        for row, item in enumerate(items):
+            for col, value in enumerate(item):
+                layout.addWidget(
+                    Button(value[1], self.webView, value[0], self), row, col)
+        return layout
 
     def onLogin(self):
         username = self.edit_username.text().strip()
@@ -170,10 +182,15 @@ class AgentBrowser(QWidget):
         password = self.edit_password.text().strip()
         if not password:
             return QMessageBox.critical(self, "提示", "请输入密码")
+        # 不可用
+        self.buttonLogin.setText("登陆中...")
+        self.buttonLogin.setEnabled(False)
         threadPool = QThreadPool.globalInstance()
         if threadPool.maxThreadCount() < 6:
             threadPool.setMaxThreadCount(6)
         if threadPool.activeThreadCount() == 4:
+            self.buttonLogin.setText("登　　陆")
+            self.buttonLogin.setEnabled(True)
             return QMessageBox.information(self, "提示", "任务进行太快请稍后再试")
         #print(threadPool.maxThreadCount(), threadPool.activeThreadCount())
         # 先停止
@@ -184,6 +201,8 @@ class AgentBrowser(QWidget):
         threadPool.tryStart(self.loginRunnable)
 
     def replyFinished(self, reply):
+        self.buttonLogin.setText("登　　陆")
+        self.buttonLogin.setEnabled(True)
         data = reply.readAll()
         reply.deleteLater()
         try:
@@ -272,22 +291,35 @@ class AgentBrowser(QWidget):
         # 跨站点
         webSettings.setAttribute(QWebSettings.XSSAuditingEnabled, True)
 
-if __name__ == "__main__":
-    from PyQt5.QtWidgets import QApplication
+
+def main():
+    # 加载agents
     try:
         with open("agents.txt", "rb") as fp:
-            agents = fp.read().decode().split("\r\n")
+            agents = fp.read().decode("utf8", errors="ignore").split("\r\n")
+            agents = [agent for agent in agents if agent]
     except Exception as e:
         print(e)
         agents = [
             "Chrome  ###  Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"]
+    # 加载页面url
     try:
-        app = QApplication(sys.argv)
-        app.setWindowIcon(QIcon("main.ico"))
-        app.quitOnLastWindowClosed()
-        w = AgentBrowser(agents)
-        w.show()
-        sys.exit(app.exec_())
+        with open("urls.txt", "rb") as fp:
+            urls = fp.read().decode("utf8", errors="ignore").split("\r\n")
+            urls = [url for url in urls if url]
+    except Exception as e:
+        print(e)
+        urls = []
+    app = QApplication(sys.argv)
+    app.setWindowIcon(QIcon("main.ico"))
+    app.quitOnLastWindowClosed()
+    w = AgentBrowser(agents, urls)
+    w.show()
+    sys.exit(app.exec_())
+
+if __name__ == "__main__":
+    try:
+        main()
     except SystemExit as e:
         print(e)
     except Exception as e:

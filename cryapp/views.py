@@ -3,12 +3,16 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
 from goods.models import Shop, Goods
-from users.models import AuthUser, pcGuidLog
+from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername
 import re
 import requests
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
 from django.contrib.auth import authenticate, login
 from datetime import datetime, timedelta
+#from django.urls import reverse
+from django.http import HttpResponseRedirect
+from django.core.urlresolvers import reverse
+
 #url切出数字和切出店铺分类
 def platformUrl(self):
     if 'tmall' in self:
@@ -145,8 +149,15 @@ def GetGoods(request, goodid):
             return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
         elif request.method == "POST":
             yesterday = datetime.now() - timedelta(hours=1)
+            platform = request.POST['platform']
             pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
-
+            tb = ['tmall','taobao','1688']
+            if platform in tb:
+                platformusername = tbUsername.objects.filter(user=request.user.id)
+                return HttpResponseRedirect(reverse('buyerusers'))
+            elif platform == 'jd':
+                platformusername = jdUsername.objects.filter(user=request.user.id)
+                return HttpResponseRedirect(reverse('buyerusers'))
             if pcguid:
                 print('have')
                 print(pcguid)

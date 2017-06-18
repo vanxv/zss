@@ -102,7 +102,7 @@ def PcHardwareInsert(request):
             usersRequest = 'usernamehave'
             auth.login(request, user)
             #visual rules
-            if visual == 1:
+            if visual == 0:
                 pass
             else:
                 user = AuthUser.objects.get(username=username)

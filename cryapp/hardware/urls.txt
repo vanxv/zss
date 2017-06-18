@@ -1,0 +1,3 @@
+淘宝  ###  https://www.taobao.com/
+京东  ###  https://www.jd.com/
+UA分析  ###  http://tool.lu/useragent/
