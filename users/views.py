@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.hashers import make_password
-from .models import AuthUser, pcGuid, pcGuidLog
+from .models import AuthUser, pcGuid, pcGuidLog, Visuallog
 from django.views.generic.base import View
 from .forms import LoginForm, RegisterForm
 from cryapp.models import CryOrder
@@ -44,7 +44,6 @@ class RegisterView(View):
         user_profile.save()
 
         return redirect('login')
-
 class LoginView(View):
     def get(self, request):
         return render(request, "login.html")
@@ -69,12 +68,11 @@ class LoginView(View):
 ##pc hardware insert
 def PcHardwareInsert(request):
     if request.method == 'GET':
-        return render(request, 'users/0.html')
-        pass
+        return render(request, 'users/usersRequest.html', {'usersRequest':1});
     elif request.method == 'POST':
         form = LoginForm(request.POST)
         if not form.is_valid():
-            return render(request,{'form': form})
+            return render(request, 'users/usersRequest.html', {'usersRequest':form});
         #get hardVisual
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -102,8 +100,14 @@ def PcHardwareInsert(request):
             usersRequest = 'usernamehave'
             auth.login(request, user)
             #visual rules
-            if visual == 0:
-                pass
+            if visual == 1:
+                user = AuthUser.objects.get(username=username)
+                visuallog = Visuallog.objects.create(user=user, resip=ip)
+                Visuallog.save()
+                BlackListUpdate = AuthUser.objects.update(username=user, is_blacklist=1)
+                BlackListUpdate.save()
+                usersRequest = 1
+                return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
             else:
                 user = AuthUser.objects.get(username=username)
                 try:
@@ -114,9 +118,8 @@ def PcHardwareInsert(request):
                     pcguidTurn = pcGuid.objects.get(PcGuid=hardkey)
                     pcGuidLog.objects.create(user=AuthUser, PcGuid=pcguidTurn, resip=ip)
             return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
-
         else:
-            usersRequest = 'usernameNone'
+            usersRequest = 0
             return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
 
 def get_client_ip(request):

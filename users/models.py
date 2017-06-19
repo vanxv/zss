@@ -5,6 +5,7 @@ from django.contrib.auth.models import AbstractUser  # AbstractBaseUser继承自
 from django.utils import timezone
 class AuthUser(AbstractUser):
     is_seller = models.IntegerField(default="0", null=True, blank=True, verbose_name=u"是否是卖家")
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
     mobile = models.IntegerField(verbose_name=u"手机号", null=True)
     balance = models.DecimalField('账户余额', default=0, max_digits=18, decimal_places=2, blank=True, null=True)
@@ -74,7 +75,8 @@ class sellscore(models.Model):
 
 class tbUsername(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    tbUsername = models.CharField(max_length=30, verbose_name=u'淘宝账号')
+    tbUsername = models.CharField(max_length=30,unique=True, verbose_name=u'淘宝账号')
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
 
     class Meta:
         verbose_name = u'淘宝账号'
@@ -86,7 +88,8 @@ class tbUsername(models.Model):
 
 class jdUsername(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    jdUsername = models.CharField(max_length=30, verbose_name=u'京东账号')
+    jdUsername = models.CharField(max_length=30,unique=True, verbose_name=u'京东账号')
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
 
     class Meta:
         verbose_name = u'京东账号'
@@ -96,24 +99,36 @@ class jdUsername(models.Model):
         return '{0}({1})'.format(self.user, self.jdUsername)
 
 
+
 class pcGuid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    PcGuid = models.IntegerField(max_length=60, verbose_name=u'pcGuid', blank=True, null=True)
+    PcGuid = models.IntegerField(max_length=60, verbose_name=u'pcGuid', unique=True, null=True)
     cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
     diskid = models.CharField(max_length=120, verbose_name=u'diskid', blank=True, null=True)
     boardid = models.CharField(max_length=120, verbose_name=u'boardid', blank=True, null=True)
     biosid = models.CharField(max_length=120, verbose_name=u'biosid', blank=True, null=True)
     resip = models.GenericIPAddressField(verbose_name=u'RegisterIP', blank=True, null=True)
     addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now(), blank=True, null=True)
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     class Meta:
         verbose_name = u'pcguid'
         verbose_name_plural = verbose_name
 
 class pcGuidLog(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'user')
-    PcGuid = models.ForeignKey(pcGuid, verbose_name=u'pcGuid')
+    PcGuid = models.ForeignKey(pcGuid, verbose_name=u'pcGuid', null=True)
     resip = models.GenericIPAddressField(verbose_name=u'IP')
+    visual = models.IntegerField(max_length=10, verbose_name=u'pcGuid', null=True, blank=True, default=0)
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now())
     class Meta:
         verbose_name = u'guidlog'
+        verbose_name_plural = verbose_name
+
+
+class Visuallog(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'user')
+    resip = models.GenericIPAddressField(verbose_name=u'IP')
+    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now())
+    class Meta:
+        verbose_name = u'VisualLog'
         verbose_name_plural = verbose_name

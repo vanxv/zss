@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 #from django.urls import reverse
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
+from django.shortcuts import redirect
 
 #url切出数字和切出店铺分类
 def platformUrl(self):
@@ -68,7 +69,6 @@ def platformUrl(self):
         pass
     return id, platform, shopname ,shopusername, GoodsImage, Goodsname
 
-
 class savegroup():
     #save shop
     def saveshop(self,user,shopname,shopkeepername,platform):
@@ -89,7 +89,7 @@ class seller_orders(LoginRequiredMixin, View):
         pagearray =[]
         productnumber=30
         orderslists = {}
-        ordersfilter = CryOrder.objects.filter(Userid=request.user.id).order_by()
+        ordersfilter = CryOrder.objects.filter(Userid_id=request.user.id).order_by()
         pagetotal = len(ordersfilter)
         pagearray = int(productnumber/pagetotal)+1
         orderlistid = 1
@@ -148,13 +148,23 @@ def GetGoods(request, goodid):
             # --- old product list
             return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
         elif request.method == "POST":
+            #---Authentication blacklist
+            UserBlackList = AuthUser.objects.filter(id=request.user.id, is_blacklist=1)
+            if UserBlackList:
+                return redirect('/')
+            #---Authentication blacklist
+
+            #-- hard authentiaction
             yesterday = datetime.now() - timedelta(hours=1)
             platform = request.POST['platform']
-            pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
+            try:
+                pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
+            except:
+                return redirect('/webbrowser/')
             tb = ['tmall','taobao','1688']
             if platform in tb:
                 platformusername = tbUsername.objects.filter(user=request.user.id)
-                return HttpResponseRedirect(reverse('buyerusers'))
+                return redirect('/cryapp/buyer/orders/')
             elif platform == 'jd':
                 platformusername = jdUsername.objects.filter(user=request.user.id)
                 return HttpResponseRedirect(reverse('buyerusers'))
@@ -256,6 +266,15 @@ def cryapp_edit(request, cryorders_id = 0):
         editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'])
         return render(request, 'material/seller/table.html')
 #-------seller CRUD -----#
+def cryapp_buyer_delete(request, cryorders_id = 0):
+    cryorders = int(cryorders_id)
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1)
+    print(cryorders)
+    return redirect('/cryapp/seller/orders/')
+#----- buyer CRUD ----#
+
+#----- buyer CRUD ----#
+
 
 #———————buyer admin------#
 def buyeradmin(request):
@@ -277,7 +296,7 @@ class buyer_orders(LoginRequiredMixin, View):
         pagearray =[]
         productnumber=30
         orderslists = {}
-        ordersfilter = CryOrder.objects.filter(buyerid=request.user.id).order_by()
+        ordersfilter = CryOrder.objects.filter(buyerid_id=request.user.id).order_by()
         pagetotal = len(ordersfilter)
         pagearray = int(productnumber/pagetotal)+1
         orderlistid = 1

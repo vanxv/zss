@@ -14,9 +14,13 @@ urlpatterns=[
     #----- seller CRUD ----#
 
     #------ managerbuyer ---#
+
     url(r'^buyer/$', views.buyeradmin, name='buyerindex'),
     url(r'^buyer/users/$', views.buyer_user, name='buyerusers'),
     url(r'^buyer/orders/$', views.buyer_orders.as_view(), name='buyerorders'),
     url(r'^buyer/orders/commitorders/(?P<cryorders_id>\d+)/$', views.buyer_commit_orders, name='commitorders'),
     #------ managerbuyer ---#
+
+    #--- buyer CRUD --#
+    url(r'^orders/buyer/delete/(?P<cryorders_id>\d+)/$', views.cryapp_buyer_delete, name='cryorders_buyer_delete'),
 ]

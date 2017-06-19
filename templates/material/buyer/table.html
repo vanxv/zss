@@ -196,17 +196,19 @@
                                                             <button value="编辑" type="submit">编辑</button>
                                                     </form>
                                                     <form action="/cryapp/orders/delete/{{ orderlist.1.id }}/" method="get">
-                                                            <button value="delete" type="submit">删除</button></td>
+                                                            <button value="delete" type="submit">删除</button>
                                                     {% else %}
                                                     {% endif %}
                                                 {% if orderlist.1.Status == 2 %}
                                                     <td>
                                                         <form action="/cryapp/buyer/orders/commitorders/{{ orderlist.1.id }}/" method="post">
                                                             <input id="paltfromorders" type="text" name="paltfromorders" class="form-control" placeholder="请输入订单编号">
-                                                            <button value="submit" type="submit">提交订单</button>
-                                                    </td>
+                                                            <button value="submit" type="submit">提交订单</button></form></td>
+                                                            <td><form action="/cryapp/orders/buyer/delete/{{ orderlist.1.id }}/" method="get">
+                                                            <button value="delete" type="submit">删除</button></td>
                                                     {% else %}
-                                                    </form>
+
+
                                                 {% endif %}
                                                 {% if orderlist.1.Status == 3 %}
                                                     <td><button>审核通中</button>

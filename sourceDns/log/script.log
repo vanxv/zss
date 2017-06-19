@@ -7380,3 +7380,259 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
     (lookup_view_s, args, kwargs, len(patterns), patterns)
 django.urls.exceptions.NoReverseMatch: Reverse for 'buyerusers' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-06-18 15:40:32,008 [Thread-13:123145335603200] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:40:53,376 [Thread-14:123145335603200] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:41:01,551 [Thread-15:123145335603200] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:42:40,827 [Thread-8:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:42:59,588 [Thread-9:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:43:13,712 [Thread-10:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:43:46,417 [Thread-25:123145556967424] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-18 15:44:18,593 [Thread-27:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:48:09,059 [Thread-28:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:48:28,520 [Thread-29:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:50:28,878 [Thread-30:123145556967424] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:51:33,178 [Thread-7:123145444618240] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:51:51,385 [Thread-8:123145444618240] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:51:56,514 [Thread-9:123145444618240] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:54:37,180 [Thread-10:123145444618240] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:56:19,404 [Thread-7:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:57:25,598 [Thread-8:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:57:32,505 [Thread-9:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:57:40,209 [Thread-10:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:57:53,560 [Thread-11:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:58:10,246 [Thread-12:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 15:59:03,730 [Thread-13:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 16:17:23,784 [Thread-14:123145468162048] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-18 16:17:28,869 [Thread-16:123145473417216] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-18 16:17:31,244 [Thread-17:123145478672384] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-18 16:21:13,981 [Thread-30:123145478672384] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-18 16:24:52,683 [Thread-37:123145468162048] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-18 16:25:59,930 [Thread-38:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 16:27:47,910 [Thread-39:123145468162048] [django.request:158] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /users/PcHardwareInsert/
+2017-06-18 17:23:40,554 [Thread-10:123145490231296] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 75, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-06-18 17:24:15,438 [Thread-11:123145490231296] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 75, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-06-18 17:56:05,516 [Thread-17:123145560059904] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 75, in PcHardwareInsert
+    return render(request,{'form': form})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: {'form': <LoginForm bound=True, valid=False, fields=(username;password)>}
+2017-06-18 23:49:42,177 [Thread-26:123145591336960] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-19 00:55:23,340 [Thread-29:123145480589312] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-19 01:10:14,110 [Thread-12:123145369649152] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-19 01:10:14,269 [Thread-13:123145369649152] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-19 12:02:30,459 [Thread-17:123145476485120] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1497085483006318
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 158, in GetGoods
+    userblacklistreturn()
+TypeError: userblacklistreturn() missing 1 required positional argument: 'request'
+2017-06-19 12:02:32,636 [Thread-19:123145476485120] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-19 12:04:24,860 [Thread-13:123145572155392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 159, in GetGoods
+    userblacklistreturn(userblistidtest)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 73, in userblacklistreturn
+    UserBlackList = AuthUser.objects.get(user=userid, is_blacklist=1)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: address, alipay, balance, bankID, bankName, blacklist, buyscore, cashback, cryorder, date_joined, email, first_name, forder, fwalletbill, goods, groups, id, image, index, is_active, is_blacklist, is_seller, is_staff, is_superuser, jdusername, last_login, last_name, logentry, manager, mobile, order, password, pcguid, pcguidlog, qq, realname, referrercode, remark, seller, sellscore, shop, tags, tbusername, user_permissions, username, visuallog, wechat, wechatName
+2017-06-19 12:05:28,468 [Thread-14:123145572155392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 159, in GetGoods
+    userblacklistreturn(userblistidtest)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 73, in userblacklistreturn
+    UserBlackList = AuthUser.objects.get(user=userid, is_blacklist=1)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: address, alipay, balance, bankID, bankName, blacklist, buyscore, cashback, cryorder, date_joined, email, first_name, forder, fwalletbill, goods, groups, id, image, index, is_active, is_blacklist, is_seller, is_staff, is_superuser, jdusername, last_login, last_name, logentry, manager, mobile, order, password, pcguid, pcguidlog, qq, realname, referrercode, remark, seller, sellscore, shop, tags, tbusername, user_permissions, username, visuallog, wechat, wechatName
+2017-06-19 12:07:14,289 [Thread-13:123145363595264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 158, in GetGoods
+    UserBlackList = AuthUser.objects.get(user=request.user.id, is_blacklist=1)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: address, alipay, balance, bankID, bankName, blacklist, buyscore, cashback, cryorder, date_joined, email, first_name, forder, fwalletbill, goods, groups, id, image, index, is_active, is_blacklist, is_seller, is_staff, is_superuser, jdusername, last_login, last_name, logentry, manager, mobile, order, password, pcguid, pcguidlog, qq, realname, referrercode, remark, seller, sellscore, shop, tags, tbusername, user_permissions, username, visuallog, wechat, wechatName
+2017-06-19 12:09:07,846 [Thread-17:123145403404288] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 158, in GetGoods
+    UserBlackList = AuthUser.objects.get(id=request.user.id, is_blacklist=1)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-06-19 12:10:00,940 [Thread-13:123145469341696] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 167, in GetGoods
+    return HttpResponseRedirect(reverse('buyerusers'))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyerusers' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-06-19 12:10:57,455 [Thread-14:123145469341696] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 167, in GetGoods
+    return HttpResponseRedirect(reverse('buyerusers'))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyerusers' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-06-19 12:12:40,679 [Thread-18:123145493110784] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/
+2017-06-19 12:56:08,315 [Thread-13:123145433571328] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1496112141111512
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 167, in GetGoods
+    return HttpResponseRedirect(reverse('buyerusers'))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/base.py", line 91, in reverse
+    return force_text(iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs)))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 392, in _reverse_with_prefix
+    (lookup_view_s, args, kwargs, len(patterns), patterns)
+django.urls.exceptions.NoReverseMatch: Reverse for 'buyerusers' with arguments '()' and keyword arguments '{}' not found. 0 pattern(s) tried: []
+2017-06-19 12:58:44,566 [Thread-10:123145582039040] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-19 12:58:44,575 [Thread-11:123145587294208] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-19 12:59:12,646 [Thread-20:123145582039040] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/table.html
+2017-06-19 13:24:29,519 [Thread-8:123145464451072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders
+2017-06-19 13:25:17,587 [Thread-8:123145553674240] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp//orders/
+2017-06-19 13:25:21,700 [Thread-13:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/
+2017-06-19 13:30:43,689 [Thread-40:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/table.html
+2017-06-19 13:31:33,843 [Thread-53:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/table.html

@@ -74,8 +74,11 @@ urlpatterns = [
     url(r'^snippets/', include('snippets.urls')),
     #!-------- rest freawork --------------##
 
+    #!---- webbrowser ----#
+    url(r'webbrowser/', TemplateView.as_view(template_name="webbrowser.html"), name='webbrowser'),
+    #!---- webbrowser ----#
 
-#!------- new index -----#
+    #!------- new index -----#
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
 #!------- new index -----#
 
