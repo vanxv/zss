@@ -102,13 +102,13 @@ class jdUsername(models.Model):
 
 class pcGuid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    PcGuid = models.IntegerField(max_length=60, verbose_name=u'pcGuid', unique=True, null=True)
+    PcGuid = models.IntegerField(verbose_name=u'pcGuid', unique=True, null=True)
     cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
     diskid = models.CharField(max_length=120, verbose_name=u'diskid', blank=True, null=True)
     boardid = models.CharField(max_length=120, verbose_name=u'boardid', blank=True, null=True)
     biosid = models.CharField(max_length=120, verbose_name=u'biosid', blank=True, null=True)
     resip = models.GenericIPAddressField(verbose_name=u'RegisterIP', blank=True, null=True)
-    addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now(), blank=True, null=True)
+    addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now, blank=True, null=True)
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     class Meta:
         verbose_name = u'pcguid'
@@ -118,8 +118,8 @@ class pcGuidLog(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'user')
     PcGuid = models.ForeignKey(pcGuid, verbose_name=u'pcGuid', null=True)
     resip = models.GenericIPAddressField(verbose_name=u'IP')
-    visual = models.IntegerField(max_length=10, verbose_name=u'pcGuid', null=True, blank=True, default=0)
-    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now())
+    visual = models.IntegerField(verbose_name=u'pcGuid', null=True, blank=True, default=0)
+    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
         verbose_name = u'guidlog'
         verbose_name_plural = verbose_name
@@ -128,7 +128,7 @@ class pcGuidLog(models.Model):
 class Visuallog(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'user')
     resip = models.GenericIPAddressField(verbose_name=u'IP')
-    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now())
+    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
         verbose_name = u'VisualLog'
         verbose_name_plural = verbose_name

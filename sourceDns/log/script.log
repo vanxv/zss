@@ -7636,3 +7636,4 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'buyerusers' with arguments '
 2017-06-19 13:25:21,700 [Thread-13:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/
 2017-06-19 13:30:43,689 [Thread-40:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/table.html
 2017-06-19 13:31:33,843 [Thread-53:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/table.html
+2017-06-19 14:15:09,373 [Thread-60:123145548419072] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/user.html

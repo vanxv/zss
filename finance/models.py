@@ -4,7 +4,6 @@ from datetime import datetime
 from enum import Enum #枚举：1、2、3、4、5
 
 from django.db import models
-
 from libs.utils.string_extension import get_formattime
 from users.models import AuthUser
 
