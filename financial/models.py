@@ -75,11 +75,23 @@ BankStatusSort = (
     (1, 'on'),
 )
 #BankAccount
-class BankAccount():
+class BankAccount(models.Model):
     BankSort = models.IntegerField('BankSort', choices=bankSort, max_length=5)
     BankAccount = models.CharField('BankAccount', max_length=30)
     Status = models.IntegerField('bankStatus', choices=BankStatusSort, max_length=2, default=1)
     Note = models.CharField('Note', max_length=100)
     class Meta:
         verbose_name = 'BankAccount'
+        verbose_name_plural = verbose_name
+
+class alipayDetail(models.Model):
+    alipayid = models.CharField(max_length=70, name='alipayid', unique=True)
+    alipayNote = models.CharField(max_length=200, name='alipayNote')
+    alipayAmount = models.DecimalField(decimal_places=2, max_digits=6, name='alipayAmount')
+    datetime = models.DateTimeField(default=timezone.now())
+    alipayUsername = models.CharField(max_length=50, name='alipayusername', null=True)
+    userid = models.ForeignKey(AuthUser, null=True)
+
+    class Meta:
+        verbose_name = 'alipayDetail'
         verbose_name_plural = verbose_name

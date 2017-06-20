@@ -6,6 +6,9 @@ import re
 def scroll(n,i):
     return "window.scrollTo(0,(document.body.scrollHeight/{0})*{1});".format(n,i)
 
+
+
+
 def crawler(self):
     key = self
     for i in range(0, 100):
