@@ -159,11 +159,12 @@ def GetGoods(request, goodid):
 
             #-- hard authentiaction
             yesterday = datetime.now() - timedelta(hours=1)
-            platform = request.POST['platform']
-            try:
-                pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
-            except:
+            pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
+            if pcguid.count() == 0:
                 return redirect('/webbrowser/')
+            #-- hard authentiaction
+
+            platform = request.POST['platform']
             tb = ['tmall','taobao','1688']
             if platform in tb:
                 platformusername = tbUsername.objects.filter(user=request.user.id)
