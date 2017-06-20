@@ -78,6 +78,9 @@ urlpatterns = [
     url(r'webbrowser/', TemplateView.as_view(template_name="webbrowser.html"), name='webbrowser'),
     #!---- webbrowser ----#
 
+    #----- financial ----#
+    url(r'^financial/', include('financial.urls', namespace='financialurl')),
+    #----- financial ----#
     #!------- new index -----#
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
 #!------- new index -----#

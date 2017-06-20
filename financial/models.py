@@ -2,7 +2,7 @@ from django.db import models
 from users.models import AuthUser
 from django.utils import timezone
 from cryapp.models import CryOrder
-import uuid
+from libs.utils.string_extension import get_uuid
 class deposit(models.Model):
     user = models.ForeignKey(AuthUser)
     deposit = models.DecimalField(max_digits=6, decimal_places=2)
@@ -23,6 +23,7 @@ orderBill_orderBillSort =(
 )
 
 class orderBill(models.Model):
+    id = models.CharField('id', max_length=32, default=get_uuid, primary_key=True)
     CryOrderid = models.ForeignKey(CryOrder, related_name='orderBillCryOrderid')
     total_amount = models.DecimalField('总金额(元)', max_digits=8, decimal_places=2, blank=True, null=True)
     orderBillSort = models.IntegerField('订单状态', choices=orderBill_orderBillSort, blank=True, null=True)

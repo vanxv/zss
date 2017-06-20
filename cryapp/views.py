@@ -173,11 +173,8 @@ def GetGoods(request, goodid):
                 platformusername = jdUsername.objects.filter(user=request.user.id)
                 return HttpResponseRedirect(reverse('buyerusers'))
             if pcguid:
-                print('have')
-                print(pcguid)
-                print(request.POST['cryorderid'])
+
                 goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
-                print('-----')
                 return render(request, 'material/index.html')
             else:
                 return render(request, 'material/index.html')

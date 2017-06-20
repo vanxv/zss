@@ -2,19 +2,7 @@ import pickle
 from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
-# import pymysql
-#
-# #---- ready mysql ---#
-# connect = pymysql.Connect(
-#     host='localhost',
-#     port=3306,
-#     user='root',
-#     passwd='1q2w3e4r',
-#     db='autofacebook',
-#     charset='utf8'
-# )
-# cursor = connect.cursor()
-#---- ready mysql ---#
+
 
 #---- setting useragent ---#
 ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'

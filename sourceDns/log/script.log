@@ -7966,3 +7966,418 @@ ZeroDivisionError: division by zero
 2017-06-20 08:47:28,359 [Thread-8:123145348599808] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
 2017-06-20 08:54:34,197 [Thread-18:123145444003840] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
 2017-06-20 08:54:34,209 [Thread-19:123145449259008] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-20 09:06:28,179 [Thread-26:123145487101952] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/table.html
+2017-06-20 09:07:02,293 [Thread-33:123145487101952] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/order/
+2017-06-20 09:07:06,531 [Thread-34:123145492357120] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/
+2017-06-20 09:07:15,094 [Thread-39:123145487101952] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/order/
+2017-06-20 09:09:06,594 [Thread-44:123145487101952] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/delete/1496112150619984/table.html
+2017-06-20 09:09:16,867 [Thread-45:123145487101952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 310, in get
+    pagearray = int(productnumber/pagetotal)+1
+ZeroDivisionError: division by zero
+2017-06-20 09:09:24,099 [Thread-46:123145492357120] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/order/
+2017-06-20 09:09:36,336 [Thread-51:123145487101952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 310, in get
+    pagearray = int(productnumber/pagetotal)+1
+ZeroDivisionError: division by zero
+2017-06-20 09:10:05,159 [Thread-55:123145487101952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 310, in get
+    pagearray = int(productnumber/pagetotal)+1
+ZeroDivisionError: division by zero
+2017-06-20 09:10:24,665 [Thread-58:123145487101952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/buyer/orders/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 310, in get
+    pagearray = int(productnumber/pagetotal)+1
+ZeroDivisionError: division by zero
+2017-06-20 10:52:59,804 [Thread-8:123145434423296] [django.request:152] [base:get_response] [WARNING]- Not Found: /financial
+2017-06-20 10:53:02,035 [Thread-9:123145439678464] [django.request:152] [base:get_response] [WARNING]- Not Found: /financial/
+2017-06-20 10:57:07,568 [Thread-7:123145474453504] [django.request:152] [base:get_response] [WARNING]- Not Found: /financial/
+2017-06-20 10:57:19,130 [Thread-10:123145474453504] [django.request:152] [base:get_response] [WARNING]- Not Found: /financial/
+2017-06-20 10:57:43,463 [Thread-7:123145567154176] [django.request:152] [base:get_response] [WARNING]- Not Found: /financial/
+2017-06-20 14:18:44,737 [Thread-7:123145413763072] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view financial.views.financial_index didn't return an HttpResponse object. It returned None instead.
+2017-06-20 14:19:24,478 [Thread-13:123145413763072] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view financial.views.financial_index didn't return an HttpResponse object. It returned None instead.
+2017-06-20 14:20:34,931 [Thread-13:123145585692672] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 24, in financial_index
+    financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 22, in __init__
+    self.orderBill()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 16, in orderBill
+    orderBilldef =orderBill.objects.filter(user=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: CryOrderid, CryOrderid_id, datetime, id, orderBillSort, remark, total_amount
+2017-06-20 14:21:58,646 [Thread-7:123145434525696] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 24, in financial_index
+    financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 22, in __init__
+    self.orderBill()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 16, in orderBill
+    orderBilldef =orderBill.objects.filter(user=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: CryOrderid, CryOrderid_id, datetime, id, orderBillSort, remark, total_amount
+2017-06-20 14:30:19,086 [Thread-8:123145468219392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 23, in financial_index
+    financial_index_post()
+TypeError: __init__() should return None, not 'HttpResponse'
+2017-06-20 14:30:27,629 [Thread-13:123145473474560] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-20 14:30:27,639 [Thread-14:123145478729728] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-20 14:32:48,623 [Thread-20:123145468219392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 23, in financial_index
+    financial_index_post()
+TypeError: __init__() should return None, not 'HttpResponse'
+2017-06-20 14:36:20,236 [Thread-7:123145561772032] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 23, in financial_index
+    financial_index_post()
+TypeError: __init__() should return None, not 'HttpResponse'
+2017-06-20 14:50:40,321 [Thread-8:123145441144832] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 30, in financial_index
+    financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 28, in __init__
+    TopUpwithdrawaldef = self.TopUpwithdrawaldef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 15, in TopUpwithdrawaldef
+    print(type(TopUpwithdrawaldef.objects.values()))
+AttributeError: 'QuerySet' object has no attribute 'objects'
+2017-06-20 14:51:40,129 [Thread-7:123145427935232] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 31, in financial_index
+    financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 29, in __init__
+    TopUpwithdrawaldef = self.TopUpwithdrawaldef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 15, in TopUpwithdrawaldef
+    print(TopUpwithdrawaldef.objects.values())
+AttributeError: 'QuerySet' object has no attribute 'objects'
+2017-06-20 14:51:52,091 [Thread-8:123145433190400] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 31, in financial_index
+    financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 29, in __init__
+    TopUpwithdrawaldef = self.TopUpwithdrawaldef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 15, in TopUpwithdrawaldef
+    print(TopUpwithdrawaldef.objects.values())
+AttributeError: 'QuerySet' object has no attribute 'objects'
+2017-06-20 15:20:00,223 [Thread-7:123145420787712] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 27, in financial_index
+    money, TopUpwithdrawaldef, orderBilldef = financial_index_post()
+TypeError: __init__() should return None, not 'tuple'
+2017-06-20 15:20:20,267 [Thread-9:123145420787712] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 27, in financial_index
+    money, TopUpwithdrawaldef, orderBilldef = financial_index_post()
+TypeError: __init__() should return None, not 'tuple'
+2017-06-20 15:22:48,276 [Thread-8:123145383256064] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 28, in financial_index
+    money, TopUpwithdrawaldef, orderBilldef = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 26, in __init__
+    print(type(money, TopUpwithdrawaldef, orderBilldef))
+TypeError: type.__new__() argument 1 must be str, not decimal.Decimal
+2017-06-20 15:23:31,316 [Thread-7:123145520312320] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 28, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 26, in __init__
+    print(type(money, TopUpwithdrawaldef, orderBilldef))
+TypeError: type.__new__() argument 1 must be str, not decimal.Decimal
+2017-06-20 15:24:20,899 [Thread-7:123145501315072] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 28, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 26, in __init__
+    print(type(float(money), TopUpwithdrawaldef, orderBilldef))
+TypeError: type.__new__() argument 1 must be str, not float
+2017-06-20 15:25:25,221 [Thread-7:123145403600896] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 30, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+TypeError: __init__() should return None, not 'tuple'
+2017-06-20 15:25:43,631 [Thread-8:123145403600896] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 30, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+TypeError: __init__() should return None, not 'tuple'
+2017-06-20 15:27:58,588 [Thread-8:123145399947264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 32, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+TypeError: __init__() should return None, not 'tuple'
+2017-06-20 15:28:54,473 [Thread-7:123145498734592] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 32, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+TypeError: __init__() should return None, not 'tuple'
+2017-06-20 15:33:10,262 [Thread-8:123145550016512] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 32, in financial_index
+    aaa, bbb, ccc = financial_index_post()
+TypeError: 'financial_index_post' object is not iterable
+2017-06-20 15:34:51,650 [Thread-7:123145371172864] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 34, in financial_index
+    #return money, TopUpwithdrawaldef, orderBilldef
+TypeError: 'financial_index_post' object is not iterable
+2017-06-20 15:36:37,512 [Thread-8:123145338068992] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 32, in financial_index
+    aaa, bbb= financial_index_post()
+TypeError: 'financial_index_post' object is not iterable
+2017-06-20 15:36:47,756 [Thread-9:123145338068992] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 32, in financial_index
+    aaa, bbb= financial_index_post()
+TypeError: 'financial_index_post' object is not iterable
+2017-06-20 15:49:55,887 [Thread-8:123145497001984] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 33, in financial_index
+    print(aaa)
+TypeError: __str__ returned non-string (type QuerySet)
+2017-06-20 15:50:11,120 [Thread-9:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:11,134 [Thread-10:123145502257152] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:11,671 [Thread-11:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:11,843 [Thread-12:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:12,710 [Thread-13:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:12,871 [Thread-14:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:29,846 [Thread-15:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:32,802 [Thread-16:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 15:50:35,076 [Thread-17:123145497001984] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-20 16:25:04,024 [Thread-7:123145491095552] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 22, in financial_index
+    print(financial_index_class.TopUpwithdrawaldef)
+AttributeError: 'financial_index_post' object has no attribute 'TopUpwithdrawaldef'
