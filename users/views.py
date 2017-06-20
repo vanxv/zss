@@ -8,6 +8,7 @@ from django.views.generic.base import View
 from .forms import LoginForm, RegisterForm
 from cryapp.models import CryOrder
 from goods.models import Goods
+from financial.models import deposit
 # Create your views here.
 
 @login_required
@@ -42,7 +43,8 @@ class RegisterView(View):
         user_profile.password = make_password(password)
         user_profile.is_active = True
         user_profile.save()
-
+        createdeposit = deposit.objects.create(user=user_profile, deposit=0)
+        createdeposit.save()
         return redirect('login')
 class LoginView(View):
     def get(self, request):

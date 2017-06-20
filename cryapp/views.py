@@ -2,7 +2,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
+from financial.models import deposit
 from goods.models import Shop, Goods
+from financial.models import deposit
 from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername
 import re
 import requests
@@ -81,7 +83,8 @@ class savegroup():
 ##Home_page_add_product
 class sellerIndex(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'material/seller/dashboard.html')
+        mymoney = deposit.objects.get(user=request.user.id)
+        return render(request, 'material/seller/dashboard.html', {'mymoney':mymoney})
 
 class seller_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
@@ -185,12 +188,20 @@ def GetGoods(request, goodid):
 class Good_Index_Add(LoginRequiredMixin, View):
     ##############首页增加产品#######################
     def post(self, request, *args, **kwargs):
+        number = float(request.POST['number']) #获取数量
+        money = float(request.POST['money'])
+        total = float(number*money)
+        deposit = float(request.POST['deposit'])
+        a = (total > deposit)
+        if a == True:
+            text = '余额不足请充值'
+            return render(request, 'material/seller/dashboard.html', {'test': text, 'money':deposit})
         txtIndexAddUrl = request.POST['txtIndexAddUrl'] #获取链接
         keywords = request.POST['keywords'] #获取关键词
-        number = int(request.POST['number']) #获取数量
         note = request.POST['note'] #获取备注
         startdatetime = request.POST['startDate'] #获取启动时间
         endDateTime = request.POST['endDate'] #获取结束时间
+
         id,platform,shopname,shopusername,GoodsImage,Goodsname = platformUrl(txtIndexAddUrl) #用正则读取数据
         tempGoodsTrue = Goods.objects.filter(pgoods_id=id, platform=platform, shop__shopname__contains=shopname)
         tempGoodsUserTrue = Goods.objects.filter(pgoods_id=id, platform=platform, shop__shopname__contains=shopname, user_id=request.user.id)
