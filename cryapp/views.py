@@ -159,7 +159,7 @@ def GetGoods(request, goodid):
 
             #-- hard authentiaction
             yesterday = datetime.now() - timedelta(hours=1)
-            pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__lt=yesterday)
+            pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__gt=yesterday)
             if pcguid.count() == 0:
                 return redirect('/webbrowser/')
             #-- hard authentiaction
