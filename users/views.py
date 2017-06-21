@@ -22,6 +22,13 @@ def logout(request):
     auth.logout(request)
     return redirect('login')
 
+def AuUserlogin(request):
+    authen = request.user.is_authenticated()
+    if authen == False:
+        return render(request, 'login.html')
+        pass
+
+
 class RegisterView(View):
     template_name = 'register.html'
     def get(self, request):

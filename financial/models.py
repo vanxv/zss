@@ -48,7 +48,7 @@ TopUp_withdrawalStatus=(
 class TopUpwithdrawal(models.Model):
     TopUp_withdrawalSort = models.CharField('交易类型', choices=TopUp_withdrawalSort, max_length=20, null=True)
     certificate = models.CharField('充值凭证', null=True, blank=True, max_length=200)
-    certificateid = models.IntegerField('账单编号', null=True, blank=True)
+    certificateid = models.CharField('账单编号', null=True, blank=True, max_length=200)
     amount = models.DecimalField('金额', max_digits=8, decimal_places=2, blank=True, null=True)
     transfer_account = models.CharField('收款账户', null=True, blank=True, max_length=200)
     user = models.ForeignKey(AuthUser, name='user', null=True, related_name='user')

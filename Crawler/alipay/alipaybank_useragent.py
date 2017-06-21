@@ -125,5 +125,5 @@ class AutoWebUA():
         self.setUa()
         self.cookieAndWeb()
         self.mysqldb()
-
+        #缺cookie保存
 AutoWebUA()
