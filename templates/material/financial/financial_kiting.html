@@ -125,10 +125,10 @@
 	        <div class="content">
 	            <div class="container-fluid">
 
-                    <h5 style="color: mediumvioletred"></h5>
-                    <h5>可提金额：{{ text }}</h5>
-                    <form method="post" action="/financial/financial_kiting/">
-                    <input type="text" name='alipayid' class="form-control" placeholder="支付宝流水号" >
+                    <h5 style="color: mediumvioletred">{{ text }}</h5>
+                    <h5>可提金额：{{ money }}</h5>
+                    <form method="post" action="/financial/kiting/">
+                    <input type="text" onkeyup="onlyNumber(this)" name='kiting' class="form-control" placeholder="0.00" >
                         <input type="submit" value="提现金额" class="btn btn-primary">
                     </form>
 	                </div>
@@ -190,5 +190,29 @@
 
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="{%static "/assets/js/demo.js" %}"></script>
+
+    <script>
+
+    function onlyNumber(obj){
+
+                //得到第一个字符是否为负号
+                var t = obj.value.charAt(0);
+                //先把非数字的都替换掉，除了数字和.
+                obj.value = obj.value.replace(/[^\d\.]/g,'');
+                 //必须保证第一个为数字而不是.
+                 obj.value = obj.value.replace(/^\./g,'');
+                 //保证只有出现一个.而没有多个.
+                 obj.value = obj.value.replace(/\.{2,}/g,'.');
+                 //保证.只出现一次，而不能出现两次以上
+                 obj.value = obj.value.replace('.','$#$').replace(/\./g,'').replace('$#$','.');
+                 obj.value = obj.value.replace(/^(\-)*(\d+)\.(\d\d).*$/,'$1$2.$3');
+                 //如果第一位是负号，则允许添加
+                 if(t == '-'){
+
+                   return;
+                 }
+
+            }
+    </script>
 
 </html>

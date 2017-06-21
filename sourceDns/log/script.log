@@ -8875,3 +8875,5 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 211, in __set__
     self.field.remote_field.model._meta.object_name,
 ValueError: Cannot assign "1": "TopUpwithdrawal.user" must be a "AuthUser" instance.
+2017-06-21 17:20:02,064 [Thread-19:123145451569152] [django.request:152] [base:get_response] [WARNING]- Not Found: /financial/financial_kiting/
+2017-06-21 17:20:03,143 [Thread-20:123145451569152] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

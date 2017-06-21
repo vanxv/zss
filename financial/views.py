@@ -90,8 +90,19 @@ def financial_AutoTopUp(request):
                 return render(request, 'material/financial/financial_autoTopUp.html', {'text':text})
 
 def financial_kiting(request):
+    getdeposit = deposit.objects.get(user=request.user.id)
     if request.method == 'GET':
-        return render(request, 'material/financial/financial_autoTopUp.html')
+        money = getdeposit.deposit
+        return render(request, 'material/financial/financial_kiting.html',{'money':money})
     if request.method == 'POST':
         text= '提现成功'
-        return render(request, 'material/financial/financial_autoTopUp.html', {'text':text})
+        if getdeposit.deposit > float(request.POST['kiting']):
+            try:
+                deposit.objects.filter(user=request.user.id).update(deposit=(float(getdeposit.deposit) - float(request.POST['kiting'])))
+                TopUpwithdrawal.objects.create(TopUp_withdrawalSort=2,amount=float(request.POST['kiting']),user=request.user,status=1)
+            except:
+                text = '信息错误'
+        else:
+            text = '信息错误'
+
+        return render(request, 'material/financial/financial_kiting.html', {'text':text})
