@@ -84,6 +84,8 @@ class BankAccount(models.Model):
         verbose_name = 'BankAccount'
         verbose_name_plural = verbose_name
 
+
+
 class alipayDetail(models.Model):
     alipayid = models.CharField(max_length=70, name='alipayid', unique=True)
     alipayNote = models.CharField(max_length=200, name='alipayNote')

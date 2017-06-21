@@ -3,7 +3,9 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
 import pymysql
+from datetime import datetime
 import re
+
 
 def replace(x):
 	# 去除img标签,7位长空格
@@ -91,14 +93,21 @@ class AutoWebUA():
         cursor = conn.cursor()
         # 执行SQL，并返回收影响行数
         for res in self.results:
-            print(res[0])
-            print(res[1])
-            print(res[2])
-            print(res[3])
-            print(res[4])
-            print(res[0])
-        selectalipayid = cursor.execute("select * from financial_alipaydetail WHERE alipayid=2;")
-        selectalipayid2 = cursor.execute("select * from financial_alipaydetail WHERE alipayid=3;")
+            #测试是否有订单编号
+            selectalipayid = cursor.execute("select * from financial_alipaydetail WHERE alipayid='" +  res[1] + "';")
+            if selectalipayid ==0:
+                if res[3] == '交易成功':
+                    if res[4] == '-':
+                        res[2] = (float(res[2]) * -1)
+                        valueNone = 1
+                    else:
+                        valueNone = None
+                    sql = "INSERT INTO financial_alipaydetail VALUES (%s,%s,%s,%s,%s,%s,%s)"
+                    cmd = (cursor.lastrowid,res[1], res[0], res[2], datetime.now(), self.alipayusername, valueNone)
+                    effect_row = cursor.execute(sql,cmd)
+                    conn.commit()
+
+
         # 执行SQL，并返回受影响行数
         # effect_row = cursor.execute("update tb7 set pass = '123' where nid = %s", (11,))
         # 执行SQL，并返回受影响行数,执行多次
