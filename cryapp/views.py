@@ -1,4 +1,3 @@
-#coding=utf-8
 from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
@@ -8,6 +7,7 @@ from financial.models import deposit
 from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername
 import re
 import requests
+from django.db.models import Q
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
 from django.contrib.auth import authenticate, login
 from datetime import datetime, timedelta
@@ -71,14 +71,36 @@ def platformUrl(self):
         pass
     return id, platform, shopname ,shopusername, GoodsImage, Goodsname
 
-class savegroup():
-    #save shop
-    def saveshop(self,user,shopname,shopkeepername,platform):
-        saveshop = Shop.objects.create(user=user, shopname=shopname,shopkeepername=shopkeepername,platform=platform)
-        saveshop.save()
-#save Goods
-    def Goods(self):
-        pass
+def crycost(x):
+    x = float(x)
+    c = 10
+    sellercost = round((x/100) + 10,2)
+    buyercost = round(((x/100)*0.5) + 5,2)
+    return sellercost, buyercost
+
+def ordermoney(request):
+    ordermoneytotal = 0
+    orderMoneyFilter = CryOrder.objects.filter(Userid=request.user.id).filter(Q(Status=1),Q(Status=2),Q(Status=3),Q(Status=4))
+    #orderMoneyFilter = CryOrder.objects.filter(Userid=x)
+    for money in orderMoneyFilter:
+        ordermoneytotal += (float(money.Money) + float(money.Express) + float(money.sellerMoney))
+    return ordermoneytotal
+
+def lockOrderAuthentication(request):
+    # lock_Authentication_orders
+    lockdaynumber = 33
+    lockday = datetime.now() - timedelta(days=lockdaynumber)
+    lockOrderSelect = CryOrder.objects.filter(buyerid=request.user.id).filter(AddTime__gt=lockday).filter(~Q(Status=0))
+    lockOrderlist = []
+    for CLOS in lockOrderSelect:
+        if CLOS.ShopId in lockOrderlist:
+            break
+        else:
+            lockOrderlist.append(CLOS.ShopId)
+
+    return lockOrderlist
+
+
 #save task
 ##Home_page_add_product
 class sellerIndex(LoginRequiredMixin, View):
@@ -94,7 +116,10 @@ class seller_orders(LoginRequiredMixin, View):
         orderslists = {}
         ordersfilter = CryOrder.objects.filter(Userid_id=request.user.id).order_by()
         pagetotal = len(ordersfilter)
-        pagearray = int(productnumber/pagetotal)+1
+        try:
+            pagearray = int(productnumber/pagetotal)+1
+        except:
+            pagearray = 0
         orderlistid = 1
         for orderslist in ordersfilter:
             orderslists[orderlistid] = {
@@ -121,8 +146,11 @@ class buyerIndex(View):
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             orderdict = {}
-            order = CryOrder.objects.filter()
-            for corder in order:
+            select_cryorder = CryOrder.objects.filter()
+            lockOrderlist = lockOrderAuthentication(request)
+            for corder in select_cryorder:
+                if corder.ShopId in lockOrderlist:
+                    continue
                 if corder.GoodId.id in orderdict:
                     orderdict[corder.GoodId.id][0] += 1
                 else:
@@ -141,6 +169,7 @@ class buyerIndex(View):
                     orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
             return render(request, 'material/index.html', {'orderdict':orderdict})
 
+
 def GetGoods(request, goodid):
     if request.user.is_authenticated:
         if request.method=="GET":
@@ -150,6 +179,7 @@ def GetGoods(request, goodid):
             #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
             # --- old product list
             return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
+
         elif request.method == "POST":
             #---Authentication blacklist
             UserBlackList = AuthUser.objects.filter(id=request.user.id, is_blacklist=1)
@@ -164,20 +194,27 @@ def GetGoods(request, goodid):
                 return redirect('/webbrowser/')
             #-- hard authentiaction
 
-            platform = request.POST['platform']
-            tb = ['tmall','taobao','1688']
-            if platform in tb:
-                platformusername = tbUsername.objects.filter(user=request.user.id)
-                return redirect('/cryapp/buyer/orders/')
-            elif platform == 'jd':
-                platformusername = jdUsername.objects.filter(user=request.user.id)
-                return HttpResponseRedirect(reverse('buyerusers'))
-            if pcguid:
 
+            #-- authentication account --#
+            # platform = request.POST['platform']
+            # tb = []
+            # tb = ["tmall","taobao","1688"]
+            # if platform in tb:
+            #     platformusername = tbUsername.objects.filter(user=request.user.id)
+            #     return redirect('/cryapp/buyer/orders/')
+            # elif platform == 'jd':
+            #     platformusername = jdUsername.objects.filter(user=request.user.id)
+            #     return HttpResponseRedirect(reverse('buyerusers'))
+            # -- authentication account --#
+            LockOrderList = lockOrderAuthentication(request)
+            goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
+            if goodsviews.ShopId in LockOrderList:
+                return redirect('/')
+            if pcguid:
                 goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
-                return render(request, 'material/index.html')
+                return redirect('/cryapp/buyer/orders/')
             else:
-                return render(request, 'material/index.html')
+                return redirect('/')
 
 
     else:
@@ -186,61 +223,74 @@ def GetGoods(request, goodid):
 class Good_Index_Add(LoginRequiredMixin, View):
     ##############首页增加产品#######################
     def post(self, request, *args, **kwargs):
-        number = float(request.POST['number']) #获取数量
+
+        # ----- get values-----#
+        self.ordernumber_index_add = int(request.POST['number']) #获取数量
+        global ordeordernumber_index_addrnumber
         money = float(request.POST['money'])
-        total = float(number*money)
-        deposit = float(request.POST['deposit'])
-        a = (total > deposit)
-        if a == True:
-            text = '余额不足请充值'
-            return render(request, 'material/seller/dashboard.html', {'test': text, 'money':deposit})
+        sellercost, buyercost = crycost(money)
+        sellercosttotal = (sellercost * self.ordernumber_index_add)
+        total = float((self.ordernumber_index_add*money)+sellercosttotal)
+        geteposit = deposit.objects.get(user=request.user.id)
+        deposit_index_add = float(geteposit.deposit)
+        cryordermoney = ordermoney(request)
         txtIndexAddUrl = request.POST['txtIndexAddUrl'] #获取链接
         keywords = request.POST['keywords'] #获取关键词
         note = request.POST['note'] #获取备注
         startdatetime = request.POST['startDate'] #获取启动时间
         endDateTime = request.POST['endDate'] #获取结束时间
+        # ----- get values-----#
+        def saveorder():
+            while self.ordernumber_index_add > 0:
+                savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort=1, ShopId=saveshop, Status=1, GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'], Express=0, buyerMoney=buyercost, sellerMoney=sellercost)
+                savecryorder.save()
+                self.ordernumber_index_add -= 1
 
+        def savegoods():
+            saveGoods = Goods.objects.create(user=request.user, shop=saveshop, name=Goodsname, pgoods_id=id, sendaddress='', platform=platform,image1=GoodsImage,keyword1=keywords,price1=request.POST['money'],remark1=note)
+            saveGoods.save()
+
+        #deposit 
+        trytotal = (total > (deposit_index_add - cryordermoney - 200))
+        if trytotal == True:
+            text = '余额不足请充值,'
+            return render(request, 'material/seller/dashboard.html', {'test': text, 'money':deposit})
+        #deposit
+
+        #get urls values
         id,platform,shopname,shopusername,GoodsImage,Goodsname = platformUrl(txtIndexAddUrl) #用正则读取数据
+
+        #判断产品是否存在
         tempGoodsTrue = Goods.objects.filter(pgoods_id=id, platform=platform, shop__shopname__contains=shopname)
         tempGoodsUserTrue = Goods.objects.filter(pgoods_id=id, platform=platform, shop__shopname__contains=shopname, user_id=request.user.id)
-        tempShopTrue = Shop.objects.filter(shopname=shopname, platform=platform)
-        tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform, user_id=request.user.id)
-        #这里到时候还得改，写可用再说
+        tempShopFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
+        tempShopUserFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
+        tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform).filter(Q(user_id=request.user.id))
+
         if len(tempGoodsUserTrue) >0: #判断产品是否存在
             print('发布任务')
             saveshop = Shop.objects.get(user=request.user, shopname=shopname) #店铺名称
             saveGoods = Goods.objects.get(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
-            while number > 0:
-                savecryorder = CryOrder.objects.create(Userid=request.user, ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
-                savecryorder.save()
-                number -= 1
-        elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
+            saveorder()
+        elif len(tempShopUserFlase) >0: #判断产品是否在其他账户上
             return render(request, 'material/seller/dashboard.html', {'test': '产品已存在'})
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
             print('发布任务，发布产品')
             saveshop = Shop.objects.get(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
             saveshop.save()
-            saveGoods = Goods.objects.create(user=request.user, shop=saveshop, name=Goodsname, pgoods_id=id, sendaddress='', platform=platform,image1=GoodsImage,keyword1=keywords,price1=request.POST['money'],remark1=note)
-            saveGoods.save()
+            savegoods()
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
-            while number > 0:
-                savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
-                savecryorder.save()
-                number -= 1
-        elif len(tempShopTrue) >0: #判断产品是否在其他账户上
+            saveorder()
+        elif len(tempShopFlase) >0: #判断产品是否在其他账户上
             return render(request, 'material/seller/dashboard.html', {'test': '店铺已存在其他人账户上'})
         else:
             print('发布店铺、发布产品、发布任务')
             saveshop = Shop.objects.create(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
             saveshop.save()
-            saveGoods = Goods.objects.create(user=request.user, shop=saveshop, name=Goodsname, pgoods_id=id, sendaddress='', platform=platform,image1=GoodsImage,keyword1=keywords,price1=request.POST['money'],remark1=note)
-            saveGoods.save()
-            while number > 0:
-                savecryorder = CryOrder.objects.create(Userid=request.user,ShopId=saveshop, Status='1', GoodId=saveGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'])
-                savecryorder.save()
-                number -= 1
-            return render(request, 'material/seller/dashboard.html',{'test':'已经发布任务'})
+            savegoods()
+            saveorder()
+        return render(request, 'material/seller/dashboard.html',{'test':'已经发布任务'})
 
 
 
@@ -259,11 +309,10 @@ def ordersnotdone(request, cryorders_id = 0):
 
 def ordersdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-    through = CryOrder.objects.filter(id=cryorders).update(Status=5)
-    return render(request, 'material/seller/dashboard.html',{})
 
-class cryapp_audit(LoginRequiredMixin, View):
-    pass
+    through = CryOrder.objects.filter(id=cryorders).update(Status=5)
+    return redirect('/cryapp/seller/orders/')
+
 
 def cryapp_edit(request, cryorders_id = 0):
     if request.method=="GET":
@@ -277,9 +326,9 @@ def cryapp_edit(request, cryorders_id = 0):
 #-------seller CRUD -----#
 def cryapp_buyer_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1)
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, buyerid=None)
     print(cryorders)
-    return redirect('/cryapp/seller/orders/')
+    return redirect('/cryapp/buyer/orders/')
 #----- buyer CRUD ----#
 
 #----- buyer CRUD ----#
@@ -305,9 +354,12 @@ class buyer_orders(LoginRequiredMixin, View):
         pagearray =[]
         productnumber=30
         orderslists = {}
-        ordersfilter = CryOrder.objects.filter(buyerid_id=request.user.id).order_by()
+        ordersfilter = CryOrder.objects.filter(buyerid=request.user.id).order_by()
         pagetotal = len(ordersfilter)
-        pagearray = int(productnumber/pagetotal)+1
+        try:
+            pagearray = int(productnumber/pagetotal)+1
+        except:
+            pagearray = 0
         orderlistid = 1
         for orderslist in ordersfilter:
             orderslists[orderlistid] = {
@@ -336,5 +388,5 @@ def buyer_commit_orders(request, cryorders_id = 0):
     print(request.POST['paltfromorders'])
     print(int(request.POST['paltfromorders']))
     commitorders = CryOrder.objects.filter(id=cryorderid).update(PlatformOrdersid=int(request.POST['paltfromorders']), Status=3)
-    return render(request, 'material/buyer/dashboard.html')
+    return redirect('/cryapp/buyer/orders/')
 #———————buyer admin------#

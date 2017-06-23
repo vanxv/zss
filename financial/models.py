@@ -5,7 +5,7 @@ from cryapp.models import CryOrder
 from libs.utils.string_extension import get_uuid
 class deposit(models.Model):
     user = models.ForeignKey(AuthUser)
-    deposit = models.DecimalField(max_digits=6, decimal_places=2)
+    deposit = models.DecimalField(max_digits=12, decimal_places=2)
     datetime = models.DateTimeField(default=timezone.now)
     remark = models.CharField('备注', max_length=500, blank=True, null=True)
 
@@ -25,7 +25,7 @@ orderBill_orderBillSort =(
 class orderBill(models.Model):
     id = models.CharField('id', max_length=32, default=get_uuid, primary_key=True)
     CryOrderid = models.ForeignKey(CryOrder, related_name='orderBillCryOrderid')
-    total_amount = models.DecimalField('总金额(元)', max_digits=8, decimal_places=2, blank=True, null=True)
+    total_amount = models.DecimalField('总金额(元)', max_digits=12, decimal_places=2, blank=True, null=True)
     orderBillSort = models.IntegerField('订单状态', choices=orderBill_orderBillSort, blank=True, null=True)
     datetime = models.DateTimeField(default=timezone.now)
     remark = models.CharField('备注', max_length=500, blank=True, null=True)
@@ -49,7 +49,7 @@ class TopUpwithdrawal(models.Model):
     TopUp_withdrawalSort = models.CharField('交易类型', choices=TopUp_withdrawalSort, max_length=20, null=True)
     certificate = models.CharField('充值凭证', null=True, blank=True, max_length=200)
     certificateid = models.CharField('账单编号', null=True, blank=True, max_length=200)
-    amount = models.DecimalField('金额', max_digits=8, decimal_places=2, blank=True, null=True)
+    amount = models.DecimalField('金额', max_digits=12, decimal_places=2, blank=True, null=True)
     transfer_account = models.CharField('收款账户', null=True, blank=True, max_length=200)
     user = models.ForeignKey(AuthUser, name='user', null=True, related_name='user')
     managerUser = models.ForeignKey(AuthUser, name='manager', null=True, related_name='manageUser')

@@ -1,4 +1,4 @@
-[1.020][INFO]: COMMAND InitSession {
+[1.109][INFO]: COMMAND InitSession {
    "capabilities": {
       "alwaysMatch": {
 
@@ -24,7 +24,7 @@
       "version": ""
    }
 }
-[1.025][INFO]: Populating Preferences file: {
+[1.112][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -78,7 +78,7 @@
       "enabled": false
    }
 }
-[1.025][INFO]: Populating Local State file: {
+[1.112][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -88,16 +88,16 @@
       }
    }
 }
-[1.030][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --ignore-certificate-errors --lang=en --load-component-extension=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.dB9lEF/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12211 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.ihF3c8 data:,
-[2.096][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[2.456][INFO]: RESPONSE InitSession {
+[1.115][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --ignore-certificate-errors --lang=en --load-component-extension=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.9DT4E3/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12401 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.iwtysc data:,
+[1.831][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[2.095][INFO]: RESPONSE InitSession {
    "acceptSslCerts": true,
    "applicationCacheEnabled": false,
    "browserConnectionEnabled": false,
    "browserName": "chrome",
    "chrome": {
       "chromedriverVersion": "2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b)",
-      "userDataDir": "/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.ihF3c8"
+      "userDataDir": "/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.iwtysc"
    },
    "cssSelectorsEnabled": true,
    "databaseEnabled": false,
@@ -115,109 +115,10 @@
    "takesScreenshot": true,
    "~~~": "..."
 }
-[2.461][INFO]: COMMAND Navigate {
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
+[2.097][INFO]: COMMAND Navigate {
+   "sessionId": "b1e6998821a98ee310d1c21410cfa8c7",
    "url": "https://www.alipay.com/"
 }
-[2.461][INFO]: Waiting for pending navigations...
-[2.463][INFO]: Done waiting for pending navigations. Status: ok
-[7.095][INFO]: Waiting for pending navigations...
-[9.445][INFO]: Done waiting for pending navigations. Status: ok
-[9.445][INFO]: RESPONSE Navigate
-[9.451][INFO]: COMMAND Navigate {
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "url": "https://auth.alipay.com/login/index.htm"
-}
-[9.451][INFO]: Waiting for pending navigations...
-[9.451][INFO]: Done waiting for pending navigations. Status: ok
-[9.454][INFO]: Waiting for pending navigations...
-[15.107][INFO]: Done waiting for pending navigations. Status: ok
-[15.107][INFO]: RESPONSE Navigate
-[15.117][INFO]: COMMAND FindElement {
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "using": "id",
-   "value": "J-input-user"
-}
-[15.117][INFO]: Waiting for pending navigations...
-[15.121][INFO]: Done waiting for pending navigations. Status: ok
-[15.157][INFO]: Waiting for pending navigations...
-[15.159][INFO]: Done waiting for pending navigations. Status: ok
-[15.159][INFO]: RESPONSE FindElement {
-   "ELEMENT": "0.22294959749575738-1"
-}
-[15.167][INFO]: COMMAND TypeElement {
-   "id": "0.22294959749575738-1",
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "text": "18606622210",
-   "value": [ "1", "8", "6", "0", "6", "6", "2", "2", "2", "1", "0" ]
-}
-[15.167][INFO]: Waiting for pending navigations...
-[15.171][INFO]: Done waiting for pending navigations. Status: ok
-[15.431][INFO]: Waiting for pending navigations...
-[15.432][INFO]: Done waiting for pending navigations. Status: ok
-[15.432][INFO]: RESPONSE TypeElement
-[15.437][INFO]: COMMAND FindElement {
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "using": "id",
-   "value": "password_rsainput"
-}
-[15.437][INFO]: Waiting for pending navigations...
-[15.439][INFO]: Done waiting for pending navigations. Status: ok
-[15.479][INFO]: Waiting for pending navigations...
-[15.489][INFO]: Done waiting for pending navigations. Status: ok
-[15.489][INFO]: RESPONSE FindElement {
-   "ELEMENT": "0.22294959749575738-2"
-}
-[15.492][INFO]: COMMAND TypeElement {
-   "id": "0.22294959749575738-2",
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "text": "hotsren1121",
-   "value": [ "h", "o", "t", "s", "r", "e", "n", "1", "1", "2", "1" ]
-}
-[15.492][INFO]: Waiting for pending navigations...
-[15.517][INFO]: Done waiting for pending navigations. Status: ok
-[15.771][INFO]: Waiting for pending navigations...
-[15.773][INFO]: Done waiting for pending navigations. Status: ok
-[15.773][INFO]: RESPONSE TypeElement
-[15.779][INFO]: COMMAND FindElement {
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "using": "id",
-   "value": "J-login-btn"
-}
-[15.779][INFO]: Waiting for pending navigations...
-[15.785][INFO]: Done waiting for pending navigations. Status: ok
-[15.822][INFO]: Waiting for pending navigations...
-[15.823][INFO]: Done waiting for pending navigations. Status: ok
-[15.823][INFO]: RESPONSE FindElement {
-   "ELEMENT": "0.22294959749575738-3"
-}
-[15.828][INFO]: COMMAND ClickElement {
-   "id": "0.22294959749575738-3",
-   "sessionId": "44140acc051700da21a2ab0a09124d48"
-}
-[15.828][INFO]: Waiting for pending navigations...
-[15.829][INFO]: Done waiting for pending navigations. Status: ok
-[15.937][INFO]: Waiting for pending navigations...
-[16.056][INFO]: Done waiting for pending navigations. Status: ok
-[16.056][INFO]: RESPONSE ClickElement
-[43.004][INFO]: COMMAND Navigate {
-   "sessionId": "44140acc051700da21a2ab0a09124d48",
-   "url": "https://consumeprod.alipay.com/record/standard.htm"
-}
-[43.012][INFO]: Waiting for pending navigations...
-[43.014][INFO]: Done waiting for pending navigations. Status: ok
-[43.019][INFO]: Waiting for pending navigations...
-[49.845][INFO]: Done waiting for pending navigations. Status: ok
-[49.845][INFO]: RESPONSE Navigate
-[49.851][INFO]: COMMAND GetSource {
-
-}
-[49.851][INFO]: Waiting for pending navigations...
-[49.858][INFO]: Done waiting for pending navigations. Status: ok
-[49.899][INFO]: Waiting for pending navigations...
-[49.907][INFO]: Done waiting for pending navigations. Status: ok
-[49.907][INFO]: RESPONSE GetSource "\u003C!DOCTYPE html>\u003Chtml xmlns=\"http://www.w3.org/1999/xhtml\" class=\"\">\u003Chead>\n\u003Cmeta charset=\"GBK\" />\n\u003Cmeta name=\"keywords\" content=\"\" />\n\u003Cmeta name=\"description\" content=\"\" />\n\u003Cmeta name=\"renderer\" con..."
-[12834.894][INFO]: COMMAND QuitAll {
-
-}
-[12834.998][INFO]: RESPONSE QuitAll
+[2.097][INFO]: Waiting for pending navigations...
+[2.100][INFO]: Done waiting for pending navigations. Status: ok
+[2.453][INFO]: Waiting for pending navigations...
