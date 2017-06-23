@@ -10073,3 +10073,5 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 946, in get_prep_value
     return int(value)
 TypeError: int() argument must be a string, a bytes-like object or a number, not 'AuthUser'
+2017-06-23 20:36:28,295 [Thread-29:123145502507008] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 20:36:28,336 [Thread-28:123145497251840] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
