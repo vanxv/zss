@@ -9858,3 +9858,218 @@ django.db.utils.DataError: (1264, "Out of range value for column 'PlatformOrders
 2017-06-23 16:36:18,440 [Thread-76:123145549582336] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
 2017-06-23 16:38:49,058 [Thread-130:123145512796160] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/table.html
 2017-06-23 16:38:49,218 [Thread-131:123145512796160] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-23 17:13:50,412 [Thread-9:123145582518272] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 314, in ordersdone
+    Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryorderGet.Money+cryorderGet.Express+cryorderGet.sellerMoney), orderBillSort=1)
+NameError: name 'cryorderGet' is not defined
+2017-06-23 17:14:53,951 [Thread-17:123145577263104] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 314, in ordersdone
+    Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryorderGet.Money+cryorderGet.Express+cryorderGet.sellerMoney), orderBillSort=1)
+NameError: name 'cryorderGet' is not defined
+2017-06-23 17:16:39,203 [Thread-7:123145464397824] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 318, in ordersdone
+    depositSeller =deposit.filter(id=cryordersGet.Userid).update(deposit=deposit-(cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney))
+AttributeError: type object 'deposit' has no attribute 'filter'
+2017-06-23 17:56:15,385 [Thread-7:123145383432192] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller =deposit.filter(id=cryordersGet.Userid).update(deposit=F('deposit')-(cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney))
+AttributeError: type object 'deposit' has no attribute 'filter'
+2017-06-23 17:59:59,710 [Thread-7:123145566523392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller =deposit.filter(id=cryordersGet.Userid).update(deposit=F('deposit')-(cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney))
+AttributeError: type object 'deposit' has no attribute 'filter'
+2017-06-23 18:01:11,536 [Thread-13:123145566523392] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller =deposit.filter(id=cryordersGet.Userid).update(deposit=F('deposit')-(cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney))
+AttributeError: type object 'deposit' has no attribute 'filter'
+2017-06-23 18:02:11,556 [Thread-19:123145571778560] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller =deposit.filter(id=cryordersGet.Userid).update(deposit=F('deposit')-(cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney))
+AttributeError: type object 'deposit' has no attribute 'filter'
+2017-06-23 18:14:09,508 [Thread-7:123145363628032] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller =deposit.get(id=cryordersGet.Userid).update(deposit=F('deposit')-(cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney))
+AttributeError: type object 'deposit' has no attribute 'get'
+2017-06-23 18:24:04,346 [Thread-7:123145345503232] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller = deposit.get(id=cryordersGet.Userid)
+AttributeError: type object 'deposit' has no attribute 'get'
+2017-06-23 18:26:17,796 [Thread-7:123145530925056] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller = deposit.get(id=cryordersGet.Userid)
+AttributeError: type object 'deposit' has no attribute 'get'
+2017-06-23 18:26:59,306 [Thread-7:123145470287872] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller = deposit.get(user=cryordersGet.Userid)
+AttributeError: type object 'deposit' has no attribute 'get'
+2017-06-23 18:27:02,460 [Thread-8:123145475543040] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller = deposit.get(user=cryordersGet.Userid)
+AttributeError: type object 'deposit' has no attribute 'get'
+2017-06-23 18:29:00,159 [Thread-7:123145493204992] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 322, in ordersdone
+    depositSeller = deposit.get(user=cryordersGet.Userid_id)
+AttributeError: type object 'deposit' has no attribute 'get'
+2017-06-23 18:30:51,097 [Thread-8:123145493204992] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 18:30:51,182 [Thread-9:123145498460160] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 18:30:52,665 [Thread-10:123145493204992] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 18:30:52,694 [Thread-11:123145498460160] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 18:30:52,707 [Thread-12:123145503715328] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 18:30:52,789 [Thread-13:123145508970496] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-23 18:31:57,246 [Thread-7:123145539067904] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 325, in ordersdone
+    depositbuyer = deposit.objects.get(id=cryordersGet.buyerid)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 946, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'AuthUser'
+2017-06-23 18:32:54,201 [Thread-8:123145539067904] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/orders/done/1497085483028267/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 325, in ordersdone
+    depositbuyer = deposit.objects.get(id=cryordersGet.buyerid)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 376, in get
+    clone = self.filter(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1083, in build_lookup
+    return final_lookup(lhs, rhs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 19, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/lookups.py", line 59, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 946, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'AuthUser'

@@ -19,7 +19,7 @@ class deposit(models.Model):
 orderBill_orderBillSort =(
     (0, 'refund'),
     (1, 'CryOrders'),
-    (2, 'FlowOrder'),
+    (2, 'cost'),
 )
 
 class orderBill(models.Model):

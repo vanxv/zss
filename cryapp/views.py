@@ -1,13 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
-from financial.models import deposit
+from financial.models import deposit, orderBill
 from goods.models import Shop, Goods
-from financial.models import deposit
 from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername
 import re
 import requests
-from django.db.models import Q
+from django.db.models import Q, F
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
 from django.contrib.auth import authenticate, login
 from datetime import datetime, timedelta
@@ -309,7 +308,23 @@ def ordersnotdone(request, cryorders_id = 0):
 
 def ordersdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-
+    # - create money
+    cryordersGet = CryOrder.objects.get(id=cryorders)
+    # - create money
+    Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Express-cryordersGet.sellerMoney), orderBillSort=1)
+    Createsellermoney.save()
+    Createbuyermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Express+cryordersGet.buyerMoney), orderBillSort=1)
+    Createbuyermoney.save()
+    CreatesellerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Money), orderBillSort=2)
+    CreatesellerCost.save()
+    CreatebuyerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Money), orderBillSort=2)
+    CreatebuyerCost.save()
+    depositSeller = deposit.objects.get(user=cryordersGet.Userid)
+    depositSeller.deposit = F('deposit') - (cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney)
+    depositSeller.save()
+    depositbuyer = deposit.objects.get(id=cryordersGet.buyerid_id)
+    depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+cryordersGet.buyerMoney)
+    depositbuyer.save()
     through = CryOrder.objects.filter(id=cryorders).update(Status=5)
     return redirect('/cryapp/seller/orders/')
 
