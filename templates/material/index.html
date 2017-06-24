@@ -20,23 +20,7 @@
       折试试平台zhess.com
   </title>
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@CreativeTim" />
-    <meta name="twitter:creator" content="@CreativeTim" />
-    <meta name="twitter:title" content="Premium Bootstrap Themes and Templates" />
-    <meta name="twitter:description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/metatag-tim-cover-amazon.jpg" />
-    <meta name="twitter:url" content="https://www.creative-tim.com/" />
 
-
-<meta name="description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
-<meta name="keywords" content="creativetim, creative tim, bootstrap, theme, freebies, bootstrap kit, bootstrap template, free items, beautiful ui, awesome freebies, css cards, bootstrap wizard, bootstrap plugin" />
-<meta property="og:title" content="Premium Bootstrap Themes and Templates" />
-<meta property="og:url" content="https://www.creative-tim.com/" />
-<meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/metatag-tim-cover-amazon.jpg" />
-<meta property="og:description" content="UI Kits, Templates and Snippets, built with Bootstrap, that will speed up your front-end development. Join 110.000+ users and to access all our free items!" />
-<meta name="data-turbolinks-track" content="false" />
   <link rel="stylesheet" media="all" href={% static "assets/application-5983038036a092579f0a61ac4dcfa044.css" %} data-turbolinks-track="true" />
 
   <!-- font -->
@@ -65,12 +49,11 @@
             <span class="icon-bar"></span>
         </button>
         <div data-no-turbolink>
-            <a href="index.html" class="navbar-brand">
-                <div class="logo">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height ="60"/>
-                </div>
-                <p>van <br>xv</p>
-            </a>
+{#            <a href="index.html" class="navbar-brand">#}
+{#                <div class="logo">#}
+{#                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height ="60"/>#}
+{#                </div>#}
+{#            </a>#}
         </div>
 
     </div>
@@ -95,25 +78,35 @@
                         全部分类
                     </a>
                 </li>
-
-
                 <li>
-                    <a href="https://www.creative-tim.com/bootstrap-themes/free">
-                        优惠产品
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.creative-tim.com/bootstrap-themes/premium">
+                    <a href="https://www.zhess.com">
                         买家秀
                     </a>
                 </li>
             </ul>
         </li>
-
             <li>
-                <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">
+            <a href="/cryapp/seller/" role="button" data-toggle="modal">
+
+{#                <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">#}
                     <i class="icon-male-sign-alt icon-2x"></i>
-                    <p>Login/Register</p>
+                    <p>卖家中心</p>
+                </a>
+            </li>
+                        <li>
+            <a href="/cryapp/buyer/" role="button" data-toggle="modal">
+
+{#                <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">#}
+                    <i class="icon-male-sign-alt icon-2x"></i>
+                    <p>试用中心</p>
+                </a>
+            </li>
+            <li>
+            <a href="/login/" role="button" data-toggle="modal">
+
+{#                <a href="javascript:void(0)" onclick="openLoginModal();" role="button" data-toggle="modal">#}
+                    <i class="icon-male-sign-alt icon-2x"></i>
+                    <p>登录</p>
                 </a>
             </li>
 
@@ -325,7 +318,7 @@
             <div class="clearfix"></div>
                 <div class="col-md-12">
                     <div class="landing-title">
-                        <span class="title">Latest products</span>
+                        <span class="title">折试试用平台</span>
                     </div>
                 </div>
 

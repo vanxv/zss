@@ -10075,3 +10075,207 @@ Traceback (most recent call last):
 TypeError: int() argument must be a string, a bytes-like object or a number, not 'AuthUser'
 2017-06-23 20:36:28,295 [Thread-29:123145502507008] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
 2017-06-23 20:36:28,336 [Thread-28:123145497251840] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:33:01,978 [Thread-6:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:33:02,011 [Thread-7:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:34:55,349 [Thread-32:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:34:55,352 [Thread-33:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:40:05,433 [Thread-34:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:40:05,437 [Thread-35:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:40:25,920 [Thread-44:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:40:25,930 [Thread-45:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:40:26,516 [Thread-46:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:40:26,525 [Thread-47:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:55,683 [Thread-53:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:55,729 [Thread-56:123145467027456] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:55,743 [Thread-54:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:55,756 [Thread-55:123145461772288] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:57,466 [Thread-57:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:57,893 [Thread-58:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:57,896 [Thread-59:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:58,234 [Thread-60:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:58,588 [Thread-61:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:59,196 [Thread-62:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:59,214 [Thread-63:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:59,484 [Thread-64:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:42:59,823 [Thread-65:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:43:00,379 [Thread-66:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:43:00,384 [Thread-67:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:43:00,870 [Thread-68:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:43:00,873 [Thread-69:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:43:00,894 [Thread-70:123145461772288] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:43:26,776 [Thread-76:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-24 14:43:27,046 [Thread-77:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-24 14:43:31,190 [Thread-78:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-06-24 14:44:36,438 [Thread-84:123145451261952] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:44:36,439 [Thread-85:123145456517120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:48:11,754 [Thread-4:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:48:11,769 [Thread-5:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:52,578 [Thread-20:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:52,698 [Thread-21:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:58,038 [Thread-22:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:58,091 [Thread-24:123145485172736] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:58,096 [Thread-23:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:58,100 [Thread-25:123145490427904] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:58,523 [Thread-26:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:53:58,550 [Thread-27:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:09,072 [Thread-32:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:09,100 [Thread-33:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:13,708 [Thread-35:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:13,757 [Thread-36:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:49,939 [Thread-39:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:49,949 [Thread-40:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:51,474 [Thread-41:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:55:51,499 [Thread-42:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:56:00,890 [Thread-47:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/favicon.ico
+2017-06-24 14:56:06,836 [Thread-49:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-24 14:58:59,620 [Thread-86:123145474662400] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-06-24 14:58:59,661 [Thread-87:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-24 14:59:15,650 [Thread-90:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:59:15,673 [Thread-91:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 14:59:18,602 [Thread-92:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /product/material-kit-pro
+2017-06-24 15:00:48,712 [Thread-101:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-06-24 15:00:48,735 [Thread-102:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /index.html
+2017-06-24 15:00:52,192 [Thread-104:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 15:00:52,197 [Thread-105:123145485172736] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 15:01:22,732 [Thread-131:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 15:01:22,739 [Thread-132:123145479917568] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 15:01:51,331 [Thread-139:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /logout
+2017-06-24 15:04:57,759 [Thread-145:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-24 15:04:58,824 [Thread-146:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-24 15:05:01,870 [Thread-147:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller
+2017-06-24 15:05:05,069 [Thread-148:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-24 15:05:07,411 [Thread-149:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /seller/orders/
+2017-06-24 15:14:07,367 [Thread-183:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/user.html
+2017-06-24 15:15:01,566 [Thread-189:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-24 15:16:06,487 [Thread-202:123145474662400] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp
+2017-06-24 15:18:14,568 [Thread-2:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 291, in post
+    saveorder()
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 244, in saveorder
+    savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort=1, ShopId=saveshop, Status=1, GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'], Express=0, buyerMoney=buyercost, sellerMoney=sellercost)
+NameError: free variable 'getGoods' referenced before assignment in enclosing scope
+2017-06-24 16:02:32,622 [Thread-21:123145551507456] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/
+2017-06-24 16:03:06,514 [Thread-28:123145540997120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:03:06,642 [Thread-29:123145546252288] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:18:10,117 [Thread-49:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-24 16:18:24,790 [Thread-53:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:18:24,837 [Thread-54:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:20:12,868 [Thread-84:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:20:13,936 [Thread-85:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:23:22,057 [Thread-120:123145540997120] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:23:22,073 [Thread-119:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-24 16:27:23,972 [Thread-131:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-24 16:27:25,535 [Thread-132:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-24 16:28:36,271 [Thread-134:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:28:45,023 [Thread-135:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:28:54,068 [Thread-136:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:29:12,021 [Thread-137:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:29:31,735 [Thread-138:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:29:37,380 [Thread-139:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:29:43,050 [Thread-140:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:29:51,838 [Thread-141:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:31:33,963 [Thread-156:123145535205376] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/PcHardwareInsert/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
+    Visuallog.save()
+TypeError: save() missing 1 required positional argument: 'self'
+2017-06-24 16:43:33,811 [Thread-170:123145535205376] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
