@@ -152,7 +152,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+# STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 # STATIC_ROOT = TO_ABS_PATH('static')
 
 # ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
