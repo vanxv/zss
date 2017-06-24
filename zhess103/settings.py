@@ -97,26 +97,16 @@ WSGI_APPLICATION = 'zhess103.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-try:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'zss',
-            'USER': 'root',
-            'PASSWORD': '1q2w3e4r',
-            'HOST': '182.254.150.176',
-        }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'zss',
+        'USER': 'root',
+        'PASSWORD': '1121hotsren',
+        'HOST': 'localhost',
     }
-except:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'zss',
-            'USER': 'root',
-            'PASSWORD': '1q2w3e4r',
-            'HOST': 'localhost',
-        }
-    }
+}
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
