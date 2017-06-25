@@ -88,7 +88,7 @@ class AutoWebUA():
 
     def mysqldb(self):
         # 创建连接
-        conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='1q2w3e4r', db='zss', charset='utf8')
+        conn = pymysql.connect(host='www.zhess.com', port=3306, user='root', passwd='1121hotsren', db='zss', charset='utf8')
         # 创建游标
         cursor = conn.cursor()
         # 执行SQL，并返回收影响行数

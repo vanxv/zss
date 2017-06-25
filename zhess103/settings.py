@@ -104,7 +104,7 @@ DATABASES = {
         'NAME': 'zss',
         'USER': 'root',
         'PASSWORD': '1121hotsren',
-        'HOST': 'localhost',
+        'HOST': 'www.zhess.com',
     }
 }
 # REST_FRAMEWORK = {

@@ -11027,3 +11027,37 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 115, in PcHardwareInsert
     Visuallog.save()
 TypeError: save() missing 1 required positional argument: 'self'
+2017-06-25 14:58:44,214 [Thread-48:123145575821312] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-25 15:10:55,340 [Thread-94:123145581076480] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/typography.html
+2017-06-25 15:10:56,021 [Thread-95:123145586331648] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-06-25 15:16:16,081 [Thread-136:123145575821312] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/AutoTopUp/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 66, in financial_AutoTopUp
+    updatealipay = alipayDetail.objects.get(alipayid=request.POST['alipayid'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: alipayDetail matching query does not exist.
+2017-06-25 15:16:26,932 [Thread-137:123145575821312] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/AutoTopUp/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 66, in financial_AutoTopUp
+    updatealipay = alipayDetail.objects.get(alipayid=request.POST['alipayid'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: alipayDetail matching query does not exist.
+2017-06-25 15:25:14,970 [Thread-187:123145575821312] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg

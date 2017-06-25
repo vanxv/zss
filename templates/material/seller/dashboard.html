@@ -46,36 +46,36 @@
 	    	<div class="sidebar-wrapper">
 	            <ul class="nav">
 	                <li class="active">
-	                    <a href="dashboard.html">
+	                    <a href="/cryapp/seller/">
 	                        <i class="material-icons">user</i>
-	                        <p>首页</p>
+	                        <p>发布试用</p>
 	                    </a>
 	                </li>
 
 	                <li>
-	                    <a href="table.html">
+	                    <a href="/cryapp/seller/orders/">
 	                        <i class="material-icons">inbox</i>
-	                        <p>订单</p>
+	                        <p>试用订单</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="typography.html">
+	                    <a href="/financial/">
 	                        <i class="material-icons">storage</i>
-	                        <p>产品</p>
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="notifications.html">
-	                        <i class="material-icons text-gray">notifications</i>
 	                        <p>财务</p>
 	                    </a>
 	                </li>
                     <li>
-	                    <a href="user.html">
-	                        <i class="material-icons">face</i>
-	                        <p>店铺</p>
+	                    <a href="/financial/AutoTopUp/">
+	                        <i class="material-icons">icon</i>
+	                        <p>充值</p>
 	                    </a>
 	                </li>
+                    <li>
+	                    <a href="/financial/kiting/">
+	                        <i class="material-icons">icon</i>
+	                        <p>提现</p>
+	                    </a>
+                    <li>
 	            </ul>
 	    	</div>
 	    </div>
@@ -170,18 +170,17 @@
     <form method="post" action="/cryapp/GoodIndexAdd/">
     {% csrf_token %}
     <div class="input-group">
-
-        增加任务：<br>
-        {{ test }}
+        {{ test }}<br>
+        增加试用：<br>
+        <input type="submit" value="发布试用" /><br>
         <br><input id="txtIndexAddUrl" type="text" name="txtIndexAddUrl" class="form-control" placeholder="产品连接">
         <input id="keywords" type="text" name="keywords" class="form-control" placeholder="关键词">
         <input id="money" onkeyup="onlyNumber(this)" type="text" name="money" placeholder="金额"  class="form-control">
         <input id="number" type="number" name="number"  class="form-control" placeholder="好评返现数量">
         <input id="note" type="text" name="note" class="form-control" placeholder="备注">
-        <input id="startdatetime" type="date" value="" name="startDate"  class="form-control" placeholder="开始时间">
-        <input id="endDateTime" type="date" name="endDate"  class="form-control" placeholder="结束时间">
+        <input id="startdatetime" type="date" value="" name="startDate" default="" class="form-control" placeholder="开始时间">
+        <input id="endDateTime" type="date" name="endDate" class="form-control" default="" placeholder="结束时间">
         <input id="deposit" type="hidden" name="deposit" value="{{ mymoney.deposit }}{{ money }}">
-        <input type="submit" value="发布试用" /><br>
 
     </div>
     </form>
