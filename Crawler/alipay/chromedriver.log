@@ -1,4 +1,4 @@
-[1.109][INFO]: COMMAND InitSession {
+[0.998][INFO]: COMMAND InitSession {
    "capabilities": {
       "alwaysMatch": {
 
@@ -24,7 +24,7 @@
       "version": ""
    }
 }
-[1.112][INFO]: Populating Preferences file: {
+[1.001][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -78,7 +78,7 @@
       "enabled": false
    }
 }
-[1.112][INFO]: Populating Local State file: {
+[1.002][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -88,16 +88,16 @@
       }
    }
 }
-[1.115][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --ignore-certificate-errors --lang=en --load-component-extension=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.9DT4E3/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12401 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.iwtysc data:,
-[1.831][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[2.095][INFO]: RESPONSE InitSession {
+[1.004][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --ignore-certificate-errors --lang=en --load-component-extension=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.aBkWjP/internal --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=12446 --safebrowsing-disable-auto-update --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.Hp2OL2 data:,
+[2.297][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[2.673][INFO]: RESPONSE InitSession {
    "acceptSslCerts": true,
    "applicationCacheEnabled": false,
    "browserConnectionEnabled": false,
    "browserName": "chrome",
    "chrome": {
       "chromedriverVersion": "2.29.461585 (0be2cd95f834e9ee7c46bcc7cf405b483f5ae83b)",
-      "userDataDir": "/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.iwtysc"
+      "userDataDir": "/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/.org.chromium.Chromium.Hp2OL2"
    },
    "cssSelectorsEnabled": true,
    "databaseEnabled": false,
@@ -115,10 +115,27 @@
    "takesScreenshot": true,
    "~~~": "..."
 }
-[2.097][INFO]: COMMAND Navigate {
-   "sessionId": "b1e6998821a98ee310d1c21410cfa8c7",
+[2.676][INFO]: COMMAND Navigate {
+   "sessionId": "bf3dedb3b2ee28c06ba267611411c39c",
    "url": "https://www.alipay.com/"
 }
-[2.097][INFO]: Waiting for pending navigations...
-[2.100][INFO]: Done waiting for pending navigations. Status: ok
-[2.453][INFO]: Waiting for pending navigations...
+[2.676][INFO]: Waiting for pending navigations...
+[2.682][INFO]: Done waiting for pending navigations. Status: ok
+[3.145][INFO]: Waiting for pending navigations...
+[4.005][INFO]: Done waiting for pending navigations. Status: ok
+[4.005][INFO]: RESPONSE Navigate
+[4.007][INFO]: COMMAND Navigate {
+   "sessionId": "bf3dedb3b2ee28c06ba267611411c39c",
+   "url": "https://auth.alipay.com/login/index.htm"
+}
+[4.016][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[4.323][SEVERE]: Unable to receive message from renderer
+[4.325][INFO]: RESPONSE Navigate
+[4.327][INFO]: COMMAND FindElement {
+   "sessionId": "bf3dedb3b2ee28c06ba267611411c39c",
+   "using": "id",
+   "value": "J-input-user"
+}
+[4.328][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[4.329][INFO]: RESPONSE FindElement chrome not reachable
+  (Session info: chrome=58.0.3029.110)
