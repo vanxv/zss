@@ -119,6 +119,7 @@ def PcHardwareInsert(request):
                 return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
             else:
                 user = AuthUser.objects.get(username=username)
+                usersRequest = 1
                 try:
                     pcguidTurn = pcGuid.objects.get(PcGuid=hardkey, user=user)
                     pcGuidLog.objects.create(user=user, PcGuid=pcguidTurn, resip=ip)
