@@ -73,7 +73,7 @@ class AutoWebUA():
 
     def cookieAndWeb(self):
         #---- open setting cookie and web ---#
-        firefox = webdriver.Chrome(chrome_options=self.options,executable_path='/Users/VANXV/Downloads/coding/chromedriver', service_log_path=self.service_log_path)
+        firefox = webdriver.Chrome(chrome_options=self.options,executable_path='./chromedriver', service_log_path=self.service_log_path)
         #cookies = pickle.load(open("alipaycookie.pkl", "rb"))
         firefox.get("https://www.alipay.com/")
         #for cookie in cookies:
