@@ -124,7 +124,7 @@ def PcHardwareInsert(request):
                     pcguidTurn = pcGuid.objects.get(PcGuid=hardkey, user=user)
                     pcGuidLogturn =pcGuidLog.objects.create(user=user, PcGuid=pcguidTurn, resip=ip)
                     pcGuidLogturn.save()
-                except DoesNotExist:
+                except:
                     savehard = pcGuid.objects.create(user=user, PcGuid=hardkey, cpuid=cpuid, diskid=diskid, boardid=boardid, biosid=biosid, resip=ip)
                     savehard.save()
                     pcguidTurn = pcGuid.objects.get(PcGuid=hardkey)
