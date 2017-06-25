@@ -122,11 +122,14 @@ def PcHardwareInsert(request):
                 usersRequest = 1
                 try:
                     pcguidTurn = pcGuid.objects.get(PcGuid=hardkey, user=user)
-                    pcGuidLog.objects.create(user=user, PcGuid=pcguidTurn, resip=ip)
+                    pcGuidLogturn =pcGuidLog.objects.create(user=user, PcGuid=pcguidTurn, resip=ip)
+                    pcGuidLogturn.save()
                 except:
-                    pcGuid.objects.create(user=user, PcGuid=hardkey, cpuid=cpuid, diskid=diskid, boardid=boardid, biosid=biosid, resip=ip)
+                    savehard = pcGuid.objects.create(user=user, PcGuid=hardkey, cpuid=cpuid, diskid=diskid, boardid=boardid, biosid=biosid, resip=ip)
+                    savehard.save()
                     pcguidTurn = pcGuid.objects.get(PcGuid=hardkey)
-                    pcGuidLog.objects.create(user=AuthUser, PcGuid=pcguidTurn, resip=ip)
+                    pcGuidLogturn = pcGuidLog.objects.create(user=user, PcGuid=pcguidTurn, resip=ip)
+                    pcGuidLogturn.save()
             return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
         else:
             usersRequest = 0

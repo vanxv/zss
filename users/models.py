@@ -102,7 +102,7 @@ class jdUsername(models.Model):
 
 class pcGuid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    PcGuid = models.IntegerField(verbose_name=u'pcGuid', unique=True, null=True)
+    PcGuid = models.CharField(verbose_name=u'pcGuid', unique=True, null=True, max_length=120)
     cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
     diskid = models.CharField(max_length=120, verbose_name=u'diskid', blank=True, null=True)
     boardid = models.CharField(max_length=120, verbose_name=u'boardid', blank=True, null=True)
