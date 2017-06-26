@@ -130,7 +130,7 @@ class AutoWebUA():
         self.alipayps = 'hotsren1121'
         self.setUa()
         self.cookieAndWeb()
-        a = 10
+        a = 11
         while a > 1:
             self.getid()
             self.mysqldb()
