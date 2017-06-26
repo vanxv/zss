@@ -322,7 +322,7 @@ def ordersdone(request, cryorders_id = 0):
     depositSeller = deposit.objects.get(user=cryordersGet.Userid)
     depositSeller.deposit = F('deposit') - (cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney)
     depositSeller.save()
-    depositbuyer = deposit.objects.get(id=cryordersGet.buyerid_id)
+    depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
     depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+cryordersGet.buyerMoney)
     depositbuyer.save()
     through = CryOrder.objects.filter(id=cryorders).update(Status=5)
