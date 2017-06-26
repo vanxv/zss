@@ -74,20 +74,21 @@ class AutoWebUA():
     def cookieAndWeb(self):
         #---- open setting cookie and web ---#
         #firefox = webdriver.Chrome(chrome_options=self.options,executable_path='./chromedriver', service_log_path=self.service_log_path)
-        firefox = webdriver.Chrome(chrome_options=self.options, service_log_path=self.service_log_path)
+        self.firefox = webdriver.Chrome(chrome_options=self.options, service_log_path=self.service_log_path)
         #cookies = pickle.load(open("alipaycookie.pkl", "rb"))
-        firefox.get("https://www.alipay.com/")
+        self.firefox.get("https://www.alipay.com/")
         #for cookie in cookies:
         #    firefox.add_cookie(cookie)
-        firefox.get("https://auth.alipay.com/login/index.htm")
-        firefox.find_element_by_id('J-input-user').send_keys(self.alipayusername)
-        firefox.find_element_by_id('password_rsainput').send_keys(self.alipayps)
-        firefox.find_element_by_id('J-login-btn').click()
-        html = firefox.page_source
+        self.firefox.get("https://auth.alipay.com/login/index.htm")
+        self.firefox.find_element_by_id('J-input-user').send_keys(self.alipayusername)
+        self.firefox.find_element_by_id('password_rsainput').send_keys(self.alipayps)
+        self.firefox.find_element_by_id('J-login-btn').click()
+        html = self.firefox.page_source
         print(html)
         inputcode = input()
-        firefox.get('https://consumeprod.alipay.com/record/standard.htm')
-        html = firefox.page_source
+    def getid(self):
+        self.firefox.get('https://consumeprod.alipay.com/record/standard.htm')
+        html = self.firefox.page_source
         self.results = chuli(html)
 
     def mysqldb(self):
@@ -98,6 +99,7 @@ class AutoWebUA():
         # 执行SQL，并返回收影响行数
         for res in self.results:
             #测试是否有订单编号
+            print(res[0])
             selectalipayid = cursor.execute("select * from financial_alipaydetail WHERE alipayid='" +  res[1] + "';")
             if selectalipayid ==0:
                 if res[3] == '交易成功':
@@ -128,7 +130,11 @@ class AutoWebUA():
         self.alipayps = 'hotsren1121'
         self.setUa()
         self.cookieAndWeb()
-        self.mysqldb()
+        a = 10
+        while a > 1:
+            self.getid()
+            self.mysqldb()
+            time.sleep(3)
         #缺cookie保存
 AutoWebUA()
 
