@@ -87,6 +87,10 @@ class AutoWebUA():
         print(html)
         inputcode = input()
     def getid(self):
+        try:
+            self.firefox.get('https://consumeprod.alipay.com/record/standard.htm')
+        finally:
+            pass
         self.firefox.get('https://consumeprod.alipay.com/record/standard.htm')
         html = self.firefox.page_source
         self.results = chuli(html)
@@ -134,7 +138,7 @@ class AutoWebUA():
         while a > 1:
             self.getid()
             self.mysqldb()
-            time.sleep(600)
+            time.sleep(90)
         #缺cookie保存
 AutoWebUA()
 
