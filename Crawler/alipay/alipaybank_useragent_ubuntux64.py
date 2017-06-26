@@ -66,7 +66,7 @@ def chuli(ss): # 从网页源码中提取需要的信息,传入的ss必须是uni
 class AutoWebUA():
     def setUa(self):
         self.ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-        self.options = webdriver.FirefoxProfile()
+        self.options = webdriver.ChromeOptions()
         self.options.add_argument('lang=en')
         self.options.add_argument(self.ua)
         self.service_log_path = "./chromedriver.log"
@@ -99,7 +99,7 @@ class AutoWebUA():
         # 执行SQL，并返回收影响行数
         for res in self.results:
             #测试是否有订单编号
-            print(res[0])
+            print(res[1])
             selectalipayid = cursor.execute("select * from financial_alipaydetail WHERE alipayid='" +  res[1] + "';")
             if selectalipayid ==0:
                 if res[3] == '交易成功':
@@ -134,7 +134,7 @@ class AutoWebUA():
         while a > 1:
             self.getid()
             self.mysqldb()
-            time.sleep(3)
+            time.sleep(600)
         #缺cookie保存
 AutoWebUA()
 
