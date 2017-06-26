@@ -66,7 +66,7 @@ def chuli(ss): # 从网页源码中提取需要的信息,传入的ss必须是uni
 class AutoWebUA():
     def setUa(self):
         self.ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
-        self.options = webdriver.ChromeOptions()
+        self.options = webdriver.FirefoxProfile()
         self.options.add_argument('lang=en')
         self.options.add_argument(self.ua)
         self.service_log_path = "./chromedriver.log"
@@ -74,7 +74,7 @@ class AutoWebUA():
     def cookieAndWeb(self):
         #---- open setting cookie and web ---#
         #firefox = webdriver.Chrome(chrome_options=self.options,executable_path='./chromedriver', service_log_path=self.service_log_path)
-        firefox = webdriver.Chrome(chrome_options=self.options,executable_path='./chromedriver_ubuntux64', service_log_path=self.service_log_path)
+        firefox = webdriver.Chrome(chrome_options=self.options, service_log_path=self.service_log_path)
         #cookies = pickle.load(open("alipaycookie.pkl", "rb"))
         firefox.get("https://www.alipay.com/")
         #for cookie in cookies:
@@ -83,6 +83,9 @@ class AutoWebUA():
         firefox.find_element_by_id('J-input-user').send_keys(self.alipayusername)
         firefox.find_element_by_id('password_rsainput').send_keys(self.alipayps)
         firefox.find_element_by_id('J-login-btn').click()
+        html = firefox.page_source
+        print(html)
+        inputcode = input()
         firefox.get('https://consumeprod.alipay.com/record/standard.htm')
         html = firefox.page_source
         self.results = chuli(html)
@@ -128,3 +131,6 @@ class AutoWebUA():
         self.mysqldb()
         #缺cookie保存
 AutoWebUA()
+
+
+a = webdriver.Firefox.firefox_profile()
