@@ -1,0 +1,17 @@
+2017-06-28 12:12:01,765 [Thread-17:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-06-28 12:13:31,533 [Thread-22:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:13:31,770 [Thread-23:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:13:31,798 [Thread-24:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:13:32,750 [Thread-25:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:13:32,754 [Thread-26:123145447727104] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:13:33,089 [Thread-27:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:00,731 [Thread-31:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:00,734 [Thread-32:123145447727104] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:03,180 [Thread-33:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:03,551 [Thread-34:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:17,286 [Thread-35:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:19,341 [Thread-36:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:23,046 [Thread-37:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:23,354 [Thread-38:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:37,819 [Thread-39:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 12:15:38,113 [Thread-40:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
