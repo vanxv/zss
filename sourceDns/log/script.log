@@ -11129,3 +11129,189 @@ Traceback (most recent call last):
     self.model._meta.object_name
 financial.models.DoesNotExist: deposit matching query does not exist.
 2017-06-26 19:23:03,720 [Thread-14:123145572073472] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-27 10:33:00,829 [Thread-7:123145490345984] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 21, in financial_index
+    financial_index_class = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 18, in __init__
+    self.money = self.depositdef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 10, in depositdef
+    deposit_def = deposit.objects.get(user=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-06-27 10:33:56,385 [Thread-9:123145490345984] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 21, in financial_index
+    financial_index_class = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 18, in __init__
+    self.money = self.depositdef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 10, in depositdef
+    deposit_def = deposit.objects.get(user=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-06-27 10:34:31,790 [Thread-13:123145490345984] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 21, in financial_index
+    financial_index_class = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 18, in __init__
+    self.money = self.depositdef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 10, in depositdef
+    deposit_def = deposit.objects.get(user=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-06-27 10:34:34,851 [Thread-15:123145495601152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 21, in financial_index
+    financial_index_class = financial_index_post()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 18, in __init__
+    self.money = self.depositdef()
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 10, in depositdef
+    deposit_def = deposit.objects.get(user=request.user.id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-06-27 10:35:34,616 [Thread-26:123145490345984] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-27 10:35:34,627 [Thread-27:123145495601152] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-27 10:35:34,637 [Thread-28:123145500856320] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-27 10:35:34,647 [Thread-29:123145506111488] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-27 11:18:24,058 [Thread-14:123145553129472] [django.request:152] [base:get_response] [WARNING]- Not Found: /login
+2017-06-27 13:15:29,951 [Thread-95:123145553129472] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /financial/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1017, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+TimeoutError: [Errno 60] Operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 983, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1025, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 60] Operation timed out)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/financial/views.py", line 24, in financial_index
+    'orderBill':financial_index_class.orderBilldef
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 238, in __len__
+    self._fetch_all()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1087, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 109, in __iter__
+    for row in compiler.results_iter():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 789, in results_iter
+    results = self.execute_sql(MULTI)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 110, in execute
+    return self.cursor.execute(query, args)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 166, in execute
+    result = self._query(query)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/cursors.py", line 322, in _query
+    conn.query(q)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 852, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1053, in _read_query_result
+    result.read()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1336, in read
+    first_packet = self.connection._read_packet()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 983, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1025, in _read_bytes
+    "Lost connection to MySQL server during query (%s)" % (e,))
+django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 60] Operation timed out)')
+2017-06-27 13:47:05,487 [Thread-52:123145505718272] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-27 13:47:19,036 [Thread-53:123145505718272] [django.request:152] [base:get_response] [WARNING]- Not Found: /outlog
+2017-06-27 13:47:46,165 [Thread-60:123145510973440] [django.request:152] [base:get_response] [WARNING]- Not Found: /outlog
+2017-06-27 13:58:46,616 [Thread-15:123145346109440] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-27 13:59:46,202 [Thread-18:123145346109440] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-27 14:02:41,046 [Thread-22:123145346109440] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-27 14:02:41,055 [Thread-23:123145351364608] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-27 14:04:21,526 [Thread-26:123145346109440] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-27 14:06:13,539 [Thread-37:123145346109440] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-06-27 14:06:17,528 [Thread-38:123145346109440] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/orders/edit/14968059463248498

@@ -150,8 +150,7 @@
                                     <th>产品图片</th>
                                     <th>关键词</th>
                                     <th>任务日期</th>
-                                    <th>订单编号</th>
-                                    <th>任务状态</th>
+                                    <th>平台订单号</th>
                                     <th>金额</th>
                                     <th>操作</th>
 
@@ -164,8 +163,7 @@
                             <td><img src="{{ orderlist.1.images }}" style="width: 100px;"></td>
                             <td>{{ orderlist.1.Keywords }}</td>
                             <td>{{ orderlist.1.StartTime }}</td>
-                            <td>{{ orderlist.1.id }}</td>
-                            <td>{{ orderlist.1.Status }}</td>
+                            <td>{{ orderlist.1.PlatformOrdersid }}</td>
                             <td>${{ orderlist.1.Money }}</td>
                                                     {% if orderlist.1.Status == 0 %}
                                                     <td>

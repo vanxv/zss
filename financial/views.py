@@ -17,7 +17,6 @@ def financial_index(request):
             def __init__(self):
                 self.money = self.depositdef()
                 self.orderBilldef =self.orderBill()
-                #return money, TopUpwithdrawaldef, orderBilldef
 
         financial_index_class = financial_index_post()
         return render(request, 'material/financial/moneytable.html',{

@@ -156,9 +156,9 @@
 	                                    <thead class="text-primary">
                                     <th>产品图片</th>
                                     <th>关键词</th>
-                                    <th>任务日期</th>
-                                    <th>订单编号</th>
-                                    <th>任务状态</th>
+                                    <th>店铺名</th>
+                                    <th>店铺账户</th>
+                                    <th>平台</th>
                                     <th>金额</th>
                                     <th>操作</th>
 
@@ -170,24 +170,12 @@
                              {% for orderlist in orderslists.items %}
                             <td><img src="{{ orderlist.1.images }}" style="width: 100px;"></td>
                             <td>{{ orderlist.1.Keywords }}</td>
-                            <td>{{ orderlist.1.StartTime }}</td>
-                            <td>{{ orderlist.1.id }}</td>
-                            <td>{{ orderlist.1.Status }}</td>
+                            <td>{{ orderlist.1.shopname }}</td>
+                            <td>{{ orderlist.1.shopkeepname }}</td>
+                            <td>{{ orderlist.1.platform }}</td>
                             <td>${{ orderlist.1.Money }}</td>
-                                                    {% if orderlist.1.Status == 0 %}
-                                                    <td>
-                                                        <h5>订单关闭</h5></td>
-                                                    {% else %}
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 1 %}
-                                                    <td>
-                                                        <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">
-                                                            <button value="编辑" type="submit">编辑</button>
-                                                    </form>
-                                                    <form action="/cryapp/orders/delete/{{ orderlist.1.id }}/" method="get">
-                                                            <button value="delete" type="submit">删除</button>
-                                                    {% else %}
-                                                    {% endif %}
+
+
                                                 {% if orderlist.1.Status == 2 %}
                                                     <td>
                                                         <form action="/cryapp/buyer/orders/commitorders/{{ orderlist.1.id }}/" method="post">
@@ -200,12 +188,12 @@
 
                                                 {% endif %}
                                                 {% if orderlist.1.Status == 3 %}
-                                                    <td><button>审核通中</button>
-                                                    <button>审核不通过</button></td>
+                                                    <td><button>编辑订单与金额</button>
+                                                    提交等待审核</td>
                                                     {% endif %}
                                                 {% if orderlist.1.Status == 4 %}
-                                                    <td>等待会员提交<p>
-                                                    <button>审核通过</button></td>
+                                                    <td><button>重新提交</button><p>
+                                                    <button>关闭订单</button></td>
                                                     {% endif %}
                                                 {% if orderlist.1.Status == 5 %}
                                                     <td><h5>订单完成</h5></td>

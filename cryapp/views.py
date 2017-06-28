@@ -135,6 +135,8 @@ class seller_orders(LoginRequiredMixin, View):
                 'EndTime':orderslist.EndTime,
                 'Note':orderslist.Note,
                 'Money':orderslist.Money,
+                'PlatformOrdersid':orderslist.PlatformOrdersid
+
             }
             orderlistid += 1
 
