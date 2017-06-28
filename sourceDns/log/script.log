@@ -15,3 +15,4 @@
 2017-06-28 12:15:23,354 [Thread-38:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
 2017-06-28 12:15:37,819 [Thread-39:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
 2017-06-28 12:15:38,113 [Thread-40:123145442471936] [django.request:152] [base:get_response] [WARNING]- Not Found: /create_user_card
+2017-06-28 16:29:07,200 [Thread-19:123145546874880] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
