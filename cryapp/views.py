@@ -141,13 +141,11 @@ class buyerIndex(View):
             return render(request, 'material/index.html', {'orderdict':orderdict})
         else:
             orderdict = {}
-            order = CryOrder.objects.filter()
-            for corder in order:
-                if corder.GoodId.id in orderdict:
-                    orderdict[corder.GoodId.id][0] += 1
-                else:
-                    orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
-            return render(request, 'material/index.html', {'orderdict':orderdict})
+            order = CryOrder.objects.all().distinct('GoodId_id')
+            order1 = CryOrder.objects.values('GoodId','GoodId__image1','Money').distinct().order_by('GoodId')
+            order2 = CryOrder.objects.values('GoodId').distinct()
+            order3 = CryOrder.objects.raw('SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id)')
+            return render(request, 'material/index.html', {'orderdict':order3})
 
 
 def GetGoods(request, goodid):

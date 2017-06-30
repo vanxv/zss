@@ -323,14 +323,14 @@
 
 <!-- for in product show -->
 <!-- valuedict -->
-{% for key,values in orderdict.items %}
-
+<!--  for key,values in orderdict.items %} -->
+{% for values in orderdict %}
 <div class="col-xs-12 col-sm-6  col-md-3 col-lg-3 " data-my-order="2017-03-24 16:13:59 UTC ">
             <div class="card" data-no-turbolink>
                 <div class="thumbnail">
-                    <img src="{{ values.1 }}" data-retina="{{ values.1 }}" alt="No Image"/>
+                    <img src="{{ values.GoodId.image1 }}" data-retina="{{ values.GoodId.image1 }}" alt="No Image"/>
 
-                        <a href="/goods/{{ key }}" target="_blank" class="thumb-cover"></a>
+                        <a href="/goods/{{ values.GoodId }}" target="_blank" class="thumb-cover"></a>
 
                     <div class="details">
                         <div class="authors-container" data-collaborators="2">
@@ -352,32 +352,32 @@
                     </div>
 
                     <b class="actions">
-                            <a href="/goods/{{ key }}" target="_blank" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                            <a href="/goods/{{ values.GoodId }}" target="_blank" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
                                 <i class="fa fa-align-left"></i>
                             </a>
 
-                        <a href="/goods/{{ key }}" target="_blank" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                        <a href="/goods/{{ values.GoodId }}" target="_blank" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
                             <i class="fa fa-laptop"></i>
                         </a>
-                            <a class="btn btn-info btn-round btn-fill" target="_blank" rel="tooltip" title="Add to Cart" data-remote="true" href="/goods/{{ key }}">
+                            <a class="btn btn-info btn-round btn-fill" target="_blank" rel="tooltip" title="Add to Cart" data-remote="true" href="/goods/{{ values.GoodId }}">
                                 <i class="fa fa-shopping-cart"></i>
 </a>                    </b>
 
                 </div>
                 <div class="card-info">
 
-                        <a href="/goods/{{ key }}">
-                        <h3>{{ values.2 }}
+                        <a href="/goods/{{ values.GoodId }}">
+                        <h3>{{ values.GoodId.name }}
 
 
 
                             <div class="time pull-right  premium-product ">
 
-                                    ${{ values.4 }}
+                                    ${{ values.Money }}
                             </div>
                         </h3>
 
-                    <p>{{ values.3 }}</p>
+                    <p>{{ values.platform }}</p>
                     </a>
                 </div>
             </div>

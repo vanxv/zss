@@ -61,32 +61,34 @@ def financial_AutoTopUp(request):
             return render(request, 'material/financial/financial_autoTopUp.html')
         if request.method == 'POST':
             # Authentication alipaylist
-            #try:
+            try:
                 updatealipay = alipayDetail.objects.get(alipayid=request.POST['alipayid'])
-                if updatealipay.userid:
-                    text = '没有流水号或已使用，请确认信息。'
-                else:
-                    print(request.POST['alipayid'])
-                    print(type(request.POST['alipayid']))
-                    alipayupid = alipayDetail.objects.filter(alipayid=request.POST['alipayid']).update(userid=request.user.id)
-                    depositupdate = deposit.objects.get(user=request.user.id)
-                    depositupdate = deposit.objects.filter(user=request.user.id).update(deposit=depositupdate.deposit+updatealipay.alipayAmount)
-                    TopUpwithdrawalcreate = TopUpwithdrawal.objects.create(
-                        TopUp_withdrawalSort=1,
-                        certificate=request.POST['alipayid'],
-                        certificateid=request.POST['alipayid'],
-                        amount = updatealipay.alipayAmount,
-                        transfer_account = 'ironvanxv@gmail.com',
-                        status = 2,
-                        user= request.user
-                    )
-                    TopUpwithdrawalcreate.save()
-
-                    text = ('充值成功充值金额：' + str(updatealipay.alipayAmount))
-                return render(request, 'material/financial/financial_autoTopUp.html', {'text':text})
-            #except:
+            except:
                 text = '没有流水号或已使用，请确认信息。'
-                return render(request, 'material/financial/financial_autoTopUp.html', {'text':text})
+                return render(request, 'material/financial/financial_autoTopUp.html', {'text': text})
+
+
+            print(request.POST['alipayid'])
+            print(type(request.POST['alipayid']))
+            alipayupid = alipayDetail.objects.filter(alipayid=request.POST['alipayid']).update(userid=request.user.id)
+            depositupdate = deposit.objects.get(user=request.user.id)
+            depositupdate = deposit.objects.filter(user=request.user.id).update(deposit=depositupdate.deposit+updatealipay.alipayAmount)
+            TopUpwithdrawalcreate = TopUpwithdrawal.objects.create(
+                TopUp_withdrawalSort=1,
+                certificate=request.POST['alipayid'],
+                certificateid=request.POST['alipayid'],
+                amount = updatealipay.alipayAmount,
+                transfer_account = 'ironvanxv@gmail.com',
+                status = 2,
+                user= request.user
+            )
+            TopUpwithdrawalcreate.save()
+
+            text = ('充值成功充值金额：' + str(updatealipay.alipayAmount))
+            return render(request, 'material/financial/financial_autoTopUp.html', {'text':text})
+        #except:
+            text = '没有流水号或已使用，请确认信息。'
+            return render(request, 'material/financial/financial_autoTopUp.html', {'text':text})
 
 def financial_kiting(request):
     getdeposit = deposit.objects.get(user=request.user.id)
