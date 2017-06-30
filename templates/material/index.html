@@ -158,12 +158,12 @@
         <div class="box">
             <div class="content registerBox" style="display:none;">
              <div class="form">
-                <form html="{:multipart=&gt;true}" action="https://www.creative-tim.com/register" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+                <form html="{:multipart=&gt;true}" action="https://www.zhess.com/register" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
                     <input type="text" name="email" id="email" class="form-control" placeholder="Email" />
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password" />
                   	<input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Repeat Password" />
                     <input type="hidden" name="destination" id="destination" value="dashboard" />
-                    <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.creative-tim.com%2F" />
+                    <input type="hidden" name="url" id="url" value="https%3A%2F%2Fwww.zhess.com%2F" />
                     <input type="submit" name="commit" value="Create account" class="btn btn-default btn-register" />
                         <label class="checkbox">
                             <input type="checkbox" value="1" data-toggle="checkbox" name="subscribed" class="ct-info checkbox-subscribe" checked>
@@ -181,7 +181,7 @@
                  <a href="javascript: showRegisterForm();">create an account</a>
             ?</span>
             <br />
-            <span><a href="https://www.creative-tim.com/forgot-password">Forgot password</a> ?</span>
+            <span><a href="https://www.zhess.com/forgot-password">Forgot password</a> ?</span>
         </div>
         <div class="forgot register-footer" style="display:none">
              <span>Already have an account?</span>
@@ -231,7 +231,7 @@
     <h4>Your cart is currently empty.</h4>
 </div>
 <div class="text-center">
-    <a href="https://www.creative-tim.com/bootstrap-themes/premium#from-empty-shopping-cart" class="btn btn-info btn-new btn-fill btn-wd">
+    <a href="https://www.zhess.com/bootstrap-themes/premium#from-empty-shopping-cart" class="btn btn-info btn-new btn-fill btn-wd">
         Start Shopping
     </a>
 </div>
@@ -261,10 +261,10 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="https://www.creative-tim.com/bootstrap-themes" type="button" class="btn btn-default btn-fill btn-new" data-dismiss="modal">
+                <a href="https://www.zhess.com/bootstrap-themes" type="button" class="btn btn-default btn-fill btn-new" data-dismiss="modal">
                     Continue Shopping
                 </a>
-                <a type="button" class="btn btn-success btn-fill btn-new" href="https://www.creative-tim.com/checkout", data-cart="0">
+                <a type="button" class="btn btn-success btn-fill btn-new" href="https://www.zhess.com/checkout", data-cart="0">
                     Checkout & Download
                 </a>
             </div>
@@ -297,7 +297,7 @@
             </ol>
             </p>
             <div class="text-center" data-no-turbolink>
-                <a href="https://www.creative-tim.com/bootstrap-themes?utm_campaign=christmas-gift-offer&amp;utm_source=tim&amp;utm_medium=modal" class="btn btn-danger btn-round btn-fill btn-new">Start shopping</a>
+                <a href="https://www.zhess.com/bootstrap-themes?utm_campaign=christmas-gift-offer&amp;utm_source=tim&amp;utm_medium=modal" class="btn btn-danger btn-round btn-fill btn-new">Start shopping</a>
             </div>
             
             <div class="design-courtesy">Photo Courtesy of <a href="https://dribbble.com/shots/2525661-Heart">Henrique Athayde</a></div>
@@ -330,7 +330,7 @@
                 <div class="thumbnail">
                     <img src="{{ values.GoodId.image1 }}" data-retina="{{ values.GoodId.image1 }}" alt="No Image"/>
 
-                        <a href="/goods/{{ values.GoodId }}" target="_blank" class="thumb-cover"></a>
+                        <a href="/goods/{{ values.GoodId.id }}" target="_blank" class="thumb-cover"></a>
 
                     <div class="details">
                         <div class="authors-container" data-collaborators="2">
@@ -352,11 +352,11 @@
                     </div>
 
                     <b class="actions">
-                            <a href="/goods/{{ values.GoodId }}" target="_blank" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
+                            <a href="/goods/{{ values.GoodId.id }}" target="_blank" class="btn btn-neutral btn-round btn-fill" rel="tooltip" title="More Details">
                                 <i class="fa fa-align-left"></i>
                             </a>
 
-                        <a href="/goods/{{ values.GoodId }}" target="_blank" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
+                        <a href="/goods/{{ values.GoodId.id }}" target="_blank" class="btn btn-neutral btn-fill btn-round" target="_blank" title="Livew Preview" rel="tooltip">
                             <i class="fa fa-laptop"></i>
                         </a>
                             <a class="btn btn-info btn-round btn-fill" target="_blank" rel="tooltip" title="Add to Cart" data-remote="true" href="/goods/{{ values.GoodId }}">
@@ -366,7 +366,7 @@
                 </div>
                 <div class="card-info">
 
-                        <a href="/goods/{{ values.GoodId }}">
+                        <a href="/goods/{{ values.GoodId.id }}">
                         <h3>{{ values.GoodId.name }}
 
 
@@ -392,21 +392,7 @@
         </div>
     </div>
 <!-- product main -->
-<!-- page -->
-<div class="text-center" data-no-turbolink="">
-<div class="pagination pagination-azure pagination-no-border " is_active="true">
-    <a class="previous_page" rel="prev" href="/product/material-kit-pro?page=12#comments">«</a>
-    <a href="/product/material-kit-pro?page=1#comments">1</a>
-    <a href="/product/material-kit-pro?page=2#comments">2</a>
-    <a href="/product/material-kit-pro?page=3#comments">3</a>
-    <a href="/product/material-kit-pro?page=4#comments">4</a>
-    <a href="/product/material-kit-pro?page=5#comments">5</a>
- <em class="current">13</em> <span class="next_page disabled">»
 
-</span>
-</div>
-</div>
-<!-- page -->
 <div class="footer">
     <div class="overlayer">
     <div class="container">

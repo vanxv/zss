@@ -131,21 +131,19 @@ class buyerIndex(View):
             orderdict = {}
             select_cryorder = CryOrder.objects.filter()
             lockOrderlist = lockOrderAuthentication(request)
-            for corder in select_cryorder:
-                if corder.ShopId in lockOrderlist:
-                    continue
-                if corder.GoodId.id in orderdict:
-                    orderdict[corder.GoodId.id][0] += 1
-                else:
-                    orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
+            buyerIndexSqlMove = ''
+            buyerIndexSql = 'SELECT *  FROM cryapp_cryorder GROUP BY GoodId_id'
+            if len(lockOrderlist) == 1:
+                buyerIndexSql = 'SELECT *  FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0] + 'GROUP BY GoodId_id'
+            elif len(lockOrderlist) > 1:
+                for i in range(1, len(lockOrderlist)):
+                    buyerIndexSqlMove = buyerIndexSqlMove + 'AND ShopId_id <>' + lockOrderlist[i]
+                buyerIndexSql = 'SELECT *  FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0] + buyerIndexSqlMove + 'GROUP BY GoodId_id'
+            orderdict = CryOrder.objects.raw(buyerIndexSql)
             return render(request, 'material/index.html', {'orderdict':orderdict})
         else:
-            orderdict = {}
-            order = CryOrder.objects.all().distinct('GoodId_id')
-            order1 = CryOrder.objects.values('GoodId','GoodId__image1','Money').distinct().order_by('GoodId')
-            order2 = CryOrder.objects.values('GoodId').distinct()
-            order3 = CryOrder.objects.raw('SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id)')
-            return render(request, 'material/index.html', {'orderdict':order3})
+            orderdict = CryOrder.objects.raw('SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id)')
+            return render(request, 'material/index.html', {'orderdict':orderdict})
 
 
 def GetGoods(request, goodid):
