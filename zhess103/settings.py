@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     'snippets.apps.SnippetsConfig',
     'django_tables2',
     'financial',
+    'servers',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 

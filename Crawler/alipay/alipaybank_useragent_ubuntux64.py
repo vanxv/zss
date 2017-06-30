@@ -138,7 +138,7 @@ class AutoWebUA():
         while a > 1:
             self.getid()
             self.mysqldb()
-            time.sleep(90)
+            time.sleep(300)
         #缺cookie保存
 AutoWebUA()
 

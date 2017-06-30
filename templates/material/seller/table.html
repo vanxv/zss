@@ -158,53 +158,95 @@
 	                                    <tbody>
 	                                        <tr>
 
+{% for contact in orderslists %}
+    {# Each "contact" is a Contact model object. #}
+    {% if contact.Status == 0 %}
+    {% else %}
+    <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
+    <th>{{ contact.keywords }}</th>
+    <th>{{ contact.AddTime }}</th>
+    <th>{{ contact.PlatformOrdersid }}</th>
+    <th>{{ contact.Money }}</th>
+<th>
+{% if contact.Status == 1 %}
+     <form action="/cryapp/orders/edit/{{ orderlist.id }}" method="get">
+         <button value="编辑" type="submit">编辑</button>
+     </form>
+     <form action="/cryapp/orders/delete/{{ orderlist.id }}/" method="get"></form>
+         <button value="delete" type="submit">删除</button></td>
+    {% elif orderlist.Status == 2 %}
+        <form action="/cryapp/orders/edit/{{ orderlist.id }}" method="get">
+            <button value="编辑" type="submit">编辑</button>
 
-                             {% for orderlist in orderslists.items %}
-                            <td><img src="{{ orderlist.1.images }}" style="width: 100px;"></td>
-                            <td>{{ orderlist.1.Keywords }}</td>
-                            <td>{{ orderlist.1.StartTime }}</td>
-                            <td>{{ orderlist.1.PlatformOrdersid }}</td>
-                            <td>${{ orderlist.1.Money }}</td>
-                                                    {% if orderlist.1.Status == 0 %}
-                                                    <td>
-                                                        <h5>订单关闭</h5></td>
-                                                    {% else %}
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 1 %}
-                                                    <td>
-                                                        <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">
-                                                            <button value="编辑" type="submit">编辑</button>
-                                                    </form>
-                                                    <form action="/cryapp/orders/delete/{{ orderlist.1.id }}/" method="get">
-                                                            <button value="delete" type="submit">删除</button></td>
-                                                    {% else %}
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 2 %}
-                                                    <td>
-                                                        <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">
-                                                            <button value="编辑" type="submit">编辑</button>
-                                                    </td>
-                                                    {% else %}
-                                                    </form>
-                                                {% endif %}
-                                                {% if orderlist.1.Status == 3 %}
-                                                    <td><form action="/cryapp/orders/done/{{ orderlist.1.id }}/" method="post">
-                                                        <input type="submit" value="'审核通过">
-                                                        </form>
-                                                     <form action="/cryapp/orders/notdone/{{ orderlist.1.id }}/" method="post">
-                                                        <input type="submit" value="'审核不通过">
-                                                        </form></td>
+    {% elif orderlist.Status == 3 %}
+        <td><form action="/cryapp/orders/done/{{ orderlist.id }}/" method="post">
+            <input type="submit" value="'审核通过">
+        </form>
+            <form action="/cryapp/orders/notdone/{{ orderlist.id }}/" method="post">
+                <input type="submit" value="'审核不通过">
+            </form></td>
+    {% elif orderlist.Status == 4 %}
+        <td>等待会员提交<p>
+            <button>审核通过</button></td>
+    {% elif orderlist.Status == 5 %}
+        <td><h5>订单完成</h5></td>
+    {% endif %}
+</th>
+        </form>
+{% endif %}
+</tr>
+{% endfor %}
 
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 4 %}
-                                                    <td>等待会员提交<p>
-                                                    <button>审核通过</button></td>
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 5 %}
-                                                    <td><h5>订单完成</h5></td>
-                                                    {% endif %}
-	                                        </tr>
-                                        {% endfor %}
+
+
+
+
+{#                             {% for orderlist in orderslists.items %}#}
+{#                            <td><img src="{{ orderlist.1.images }}" style="width: 100px;"></td>#}
+{#                            <td>{{ orderlist.1.Keywords }}</td>#}
+{#                            <td>{{ orderlist.1.StartTime }}</td>#}
+{#                            <td>{{ orderlist.1.PlatformOrdersid }}</td>#}
+{#                            <td>${{ orderlist.1.Money }}</td>#}
+{#                                                    {% if orderlist.1.Status == 0 %}#}
+{#                                                    <td>#}
+{#                                                        <h5>订单关闭</h5></td>#}
+{#                                                    {% else %}#}
+{#                                                    {% endif %}#}
+{#                                                {% if orderlist.1.Status == 1 %}#}
+{#                                                    <td>#}
+{#                                                        <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">#}
+{#                                                            <button value="编辑" type="submit">编辑</button>#}
+{#                                                    </form>#}
+{#                                                    <form action="/cryapp/orders/delete/{{ orderlist.1.id }}/" method="get">#}
+{#                                                            <button value="delete" type="submit">删除</button></td>#}
+{#                                                    {% else %}#}
+{#                                                    {% endif %}#}
+{#                                                {% if orderlist.1.Status == 2 %}#}
+{#                                                    <td>#}
+{#                                                        <form action="/cryapp/orders/edit/{{ orderlist.1.id }}" method="get">#}
+{#                                                            <button value="编辑" type="submit">编辑</button>#}
+{#                                                    </td>#}
+{#                                                    {% else %}#}
+{#                                                    </form>#}
+{#                                                {% endif %}#}
+{#                                                {% if orderlist.1.Status == 3 %}#}
+{#                                                    <td><form action="/cryapp/orders/done/{{ orderlist.1.id }}/" method="post">#}
+{#                                                        <input type="submit" value="'审核通过">#}
+{#                                                        </form>#}
+{#                                                     <form action="/cryapp/orders/notdone/{{ orderlist.1.id }}/" method="post">#}
+{#                                                        <input type="submit" value="'审核不通过">#}
+{#                                                        </form></td>#}
+{##}
+{#                                                    {% endif %}#}
+{#                                                {% if orderlist.1.Status == 4 %}#}
+{#                                                    <td>等待会员提交<p>#}
+{#                                                    <button>审核通过</button></td>#}
+{#                                                    {% endif %}#}
+{#                                                {% if orderlist.1.Status == 5 %}#}
+{#                                                    <td><h5>订单完成</h5></td>#}
+{#                                                    {% endif %}#}
+{#	                                        </tr>#}
+{#                                        {% endfor %}#}
 
 	                                    </tbody>
 	                                </table>
@@ -212,15 +254,22 @@
 	                            </div>
 	                        </div>
 	                    </div>
-                        <ul class="pagination pagination-primary">
-		          <li><a href="#">&lt;</a></li>
-		          <li class="active"><a href="#">1</a></li>
-		          <li><a href="#">2</a></li>
-		          <li><a href="#">3</a></li>
-		          <li><a href="#">4</a></li>
-		          <li><a href="#">5</a></li>
-		          <li><a href="#">&gt;</a></li>
-		        </ul>
+
+<div class="pagination" style="">
+    <span class="step-links">
+        {% if orderslists.has_previous %}
+            <a href="?page={{ orderslists.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        <span class="current">
+             {{ orderslists.number }} of {{ orderslists.paginator.num_pages }}.
+        </span>
+
+        {% if orderslists.has_next %}
+            <a href="?page={{ orderslists.next_page_number }}">下一页</a>
+        {% endif %}
+    </span>
+</div>
 </div>
 	                </div>
 	            </div>

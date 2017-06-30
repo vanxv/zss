@@ -14,6 +14,8 @@ from datetime import datetime, timedelta
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
+#---- test Paginator
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 #url切出数字和切出店铺分类
 def platformUrl(self):
@@ -109,39 +111,19 @@ class sellerIndex(LoginRequiredMixin, View):
 
 class seller_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        pagenumber=1
-        pagearray =[]
-        productnumber=30
-        orderslists = {}
-        ordersfilter = CryOrder.objects.filter(Userid_id=request.user.id).order_by()
-        pagetotal = len(ordersfilter)
+        ordersfilter = CryOrder.objects.filter(Userid_id=request.user.id).order_by('-AddTime')
+        paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
+        page = request.GET.get('page')
         try:
-            pagearray = int(productnumber/pagetotal)+1
-        except:
-            pagearray = 0
-        orderlistid = 1
-        for orderslist in ordersfilter:
-            orderslists[orderlistid] = {
-                'id':orderslist.id,
-                'images':orderslist.GoodId.image1,
-                'goodid':orderslist.GoodId,
-                'shopname':orderslist.ShopId.shopname,
-                'shopkeepname':orderslist.ShopId.shopkeepername,
-                'Keywords':orderslist.Keywords,
-                'platform':orderslist.ShopId.platform,
-                'OrderSort':orderslist.OrderSort,
-                'Status':orderslist.Status,
-                'StartTime':orderslist.StartTime,
-                'EndTime':orderslist.EndTime,
-                'Note':orderslist.Note,
-                'Money':orderslist.Money,
-                'PlatformOrdersid':orderslist.PlatformOrdersid
+            contacts = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            contacts = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            contacts = paginator.page(paginator.num_pages)
+        return render(request, 'material/seller/table.html', {'orderslists':contacts})
 
-            }
-            orderlistid += 1
-
-        print(len(ordersfilter))
-        return render(request, 'material/seller/table.html',{'orderslists':orderslists})
 
 class buyerIndex(View):
     def get(self, request, *args, **kwargs):
@@ -156,9 +138,6 @@ class buyerIndex(View):
                     orderdict[corder.GoodId.id][0] += 1
                 else:
                     orderdict[corder.GoodId.id] = [1,corder.GoodId.image1,corder.GoodId.name, corder.GoodId.platform,corder.Money]
-            # ------ old index
-            # return render(request, 'index/index.html', {'orderdict':orderdict})
-            # ------ old index
             return render(request, 'material/index.html', {'orderdict':orderdict})
         else:
             orderdict = {}

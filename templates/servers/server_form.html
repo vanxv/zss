@@ -1,0 +1,10 @@
+<form method="post">{% csrf_token %}
+{#    {{ form.as_p }}<br>#}
+    {{ form.as_table }}
+    {{ form.name }}<br>
+    {{ form.order }}<br>
+    {{ form.ip }}<br>
+
+    <input type="submit" value="Submit" />
+</form>
+

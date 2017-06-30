@@ -85,7 +85,9 @@ urlpatterns = [
     #!------- new index -----#
     url(r'^$', buyerIndex.as_view(), name='buyerindex'),
 #!------- new index -----#
-
+    #---- CRUD---#
+    url(r'^servers/', include('servers.urls')),
+    #----CRUD---#
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用
