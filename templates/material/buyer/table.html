@@ -156,9 +156,8 @@
 	                                    <thead class="text-primary">
                                     <th>产品图片</th>
                                     <th>关键词</th>
-                                    <th>店铺名</th>
-                                    <th>店铺账户</th>
-                                    <th>平台</th>
+                                    <th>任务日期</th>
+                                    <th>平台订单号</th>
                                     <th>金额</th>
                                     <th>操作</th>
 
@@ -166,56 +165,66 @@
 	                                    <tbody>
 	                                        <tr>
 
+{% for contact in orderslists %}
+    {# Each "contact" is a Contact model object. #}
+    {% if contact.Status == 0 %}
+    {% elif contact.Status == 1  %}
+    {% else %}
+    <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
+    <th>{{ contact.keywords }}</th>
+    <th>{{ contact.id }}</th>
+    <th>{{ contact.PlatformOrdersid }}</th>
+    <th>{{ contact.Money }}</th>
+<th>
 
-                             {% for orderlist in orderslists.items %}
-                            <td><img src="{{ orderlist.1.images }}" style="width: 100px;"></td>
-                            <td>{{ orderlist.1.Keywords }}</td>
-                            <td>{{ orderlist.1.shopname }}</td>
-                            <td>{{ orderlist.1.shopkeepname }}</td>
-                            <td>{{ orderlist.1.platform }}</td>
-                            <td>${{ orderlist.1.Money }}</td>
+{% if contact.Status == 2 %}
+<form action="/cryapp/buyer/orders/commitorders/{{ contact.id }}/" method="post">
+        <input id="paltfromorders" type="text" name="paltfromorders" class="form-control" placeholder="请输入订单编号">
+    <br>
+        <button value="submit" type="submit" class="btn btn-primary pull-right">提交订单</button></form>
+    <br>
+<form action="/cryapp/buyer/orders/delete/{{ contact.id }}/" method="get">
+        <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button>
 
+{% elif contact.Status == 3 %}
 
-                                                {% if orderlist.1.Status == 2 %}
-                                                    <td>
-                                                        <form action="/cryapp/buyer/orders/commitorders/{{ orderlist.1.id }}/" method="post">
-                                                            <input id="paltfromorders" type="text" name="paltfromorders" class="form-control" placeholder="请输入订单编号">
-                                                            <button value="submit" type="submit">提交订单</button></form></td>
-                                                            <td><form action="/cryapp/orders/buyer/delete/{{ orderlist.1.id }}/" method="get">
-                                                            <button value="delete" type="submit">删除</button></td>
-                                                    {% else %}
+<form action="/cryapp/buyer/orders/edit/{{ contact.id }}/" method="get">
+        <button value="edit" type="submit" class="btn btn-primary pull-right">编辑</button>
+提交等待审核
+{% elif contact.Status == 4 %}
+<td><button class="btn btn-primary pull-right">重新提交</button><p>
+<button class="btn btn-primary pull-right">关闭订单</button></td>
+{% elif contact.Status == 5 %}
+<td><h5>订单完成</h5></td>
+{% endif %}
+</th>
 
-
-                                                {% endif %}
-                                                {% if orderlist.1.Status == 3 %}
-                                                    <td><button>编辑订单与金额</button>
-                                                    提交等待审核</td>
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 4 %}
-                                                    <td><button>重新提交</button><p>
-                                                    <button>关闭订单</button></td>
-                                                    {% endif %}
-                                                {% if orderlist.1.Status == 5 %}
-                                                    <td><h5>订单完成</h5></td>
-                                                    {% endif %}
-	                                        </tr>
-                                        {% endfor %}
-
+</form>
+{% endif %}
+</tr>
+{% endfor %}
 	                                    </tbody>
 	                                </table>
 
 	                            </div>
 	                        </div>
 	                    </div>
-                        <ul class="pagination pagination-primary">
-		          <li><a href="#">&lt;</a></li>
-		          <li class="active"><a href="#">1</a></li>
-		          <li><a href="#">2</a></li>
-		          <li><a href="#">3</a></li>
-		          <li><a href="#">4</a></li>
-		          <li><a href="#">5</a></li>
-		          <li><a href="#">&gt;</a></li>
-		        </ul>
+
+<div class="pagination" style="">
+    <span class="step-links">
+        {% if orderslists.has_previous %}
+            <a href="?page={{ orderslists.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        <span class="current">
+             {{ orderslists.number }} of {{ orderslists.paginator.num_pages }}.
+        </span>
+
+        {% if orderslists.has_next %}
+            <a href="?page={{ orderslists.next_page_number }}">下一页</a>
+        {% endif %}
+    </span>
+</div>
 </div>
 	                </div>
 	            </div>

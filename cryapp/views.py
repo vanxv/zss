@@ -276,13 +276,13 @@ def cryapp_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0)
     print(cryorders)
-    return render(request, 'material/seller/dashboard.html',{})
+    return redirect('/cryapp/buyer/orders/')
 
 
 def ordersnotdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     notthrough = CryOrder.objects.filter(id=cryorders).update(Status=4)
-    return render(request, 'material/seller/dashboard.html',{})
+    return redirect('/cryapp/buyer/orders/')
 
 def ordersdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
@@ -306,24 +306,33 @@ def ordersdone(request, cryorders_id = 0):
     through = CryOrder.objects.filter(id=cryorders).update(Status=5)
     return redirect('/cryapp/seller/orders/')
 
-
+# ---- seller_edit------#
 def cryapp_edit(request, cryorders_id = 0):
+    cryorders = int(cryorders_id)
+    editcryappdata = CryOrder.objects.get(id=cryorders)
     if request.method=="GET":
-        cryorders = int(cryorders_id)
-        editcryappdata = CryOrder.objects.get(id=cryorders)
-        return render(request, 'material/seller/project_edit.html', {'editcryappdata':editcryappdata})
+        return render(request, 'material/seller/seller_edit.html', {'commitorders':editcryappdata})
     if request.method=="POST":
-        cryorders = int(cryorders_id)
-        editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'])
-        return render(request, 'material/seller/table.html')
+        editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['Note'],PlatformOrdersid=request.POST['orderid'])
+        return redirect('/cryapp/seller/orders/')
+# ---- seller_edit------#
+
+
 #-------seller CRUD -----#
 def cryapp_buyer_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, buyerid=None)
-    print(cryorders)
     return redirect('/cryapp/buyer/orders/')
-#----- buyer CRUD ----#
 
+#----- buyer CRUD ----#
+def buyer_edit(request, cryorders_id = 0):
+    cryorderid = cryorders_id
+    if request.method == 'GET':
+        commitorders = CryOrder.objects.get(id=cryorderid)
+        return render(request, 'material/buyer/buyer_edit.html', {'commitorders':commitorders})
+    if request.method == 'POST':
+        commitorders = CryOrder.objects.filter(id=cryorderid).update(Money=request.POST['money'],PlatformOrdersid=request.POST['orderid'], Status=3)
+        return redirect('/cryapp/buyer/orders/')
 #----- buyer CRUD ----#
 
 
@@ -343,43 +352,22 @@ def buyer_user(request):
 
 class buyer_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        pagenumber=1
-        pagearray =[]
-        productnumber=30
-        orderslists = {}
-        ordersfilter = CryOrder.objects.filter(buyerid=request.user.id).order_by()
-        pagetotal = len(ordersfilter)
+        ordersfilter = CryOrder.objects.filter(buyerid_id=request.user.id).order_by('-AddTime')
+        paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
+        page = request.GET.get('page')
         try:
-            pagearray = int(productnumber/pagetotal)+1
-        except:
-            pagearray = 0
-        orderlistid = 1
-        for orderslist in ordersfilter:
-            orderslists[orderlistid] = {
-                'id':orderslist.id,
-                'images':orderslist.GoodId.image1,
-                'goodid':orderslist.GoodId,
-                'shopname':orderslist.ShopId.shopname,
-                'shopkeepname':orderslist.ShopId.shopkeepername,
-                'Keywords':orderslist.Keywords,
-                'platform':orderslist.ShopId.platform,
-                'OrderSort':orderslist.OrderSort,
-                'Status':orderslist.Status,
-                'StartTime':orderslist.StartTime,
-                'EndTime':orderslist.EndTime,
-                'Note':orderslist.Note,
-                'Money':orderslist.Money,
-            }
-            orderlistid += 1
-
-        print(len(ordersfilter))
-        return render(request, 'material/buyer/table.html',{'orderslists':orderslists})
+            contacts = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            contacts = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            contacts = paginator.page(paginator.num_pages)
+            return render(request, 'material/buyer/table.html',{'orderslists':contacts})
 
 
 def buyer_commit_orders(request, cryorders_id = 0):
     cryorderid=cryorders_id
-    print(request.POST['paltfromorders'])
-    print(int(request.POST['paltfromorders']))
     commitorders = CryOrder.objects.filter(id=cryorderid).update(PlatformOrdersid=int(request.POST['paltfromorders']), Status=3)
     return redirect('/cryapp/buyer/orders/')
 #———————buyer admin------#
