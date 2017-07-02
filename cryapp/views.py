@@ -111,7 +111,7 @@ class sellerIndex(LoginRequiredMixin, View):
 
 class seller_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        ordersfilter = CryOrder.objects.filter(Userid_id=request.user.id).order_by('-AddTime')
+        ordersfilter = CryOrder.objects.filter(Userid=request.user.id).filter(~Q(Status=0)).order_by('-AddTime')
         paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
         page = request.GET.get('page')
         try:
@@ -275,14 +275,13 @@ class Good_Index_Add(LoginRequiredMixin, View):
 def cryapp_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0)
-    print(cryorders)
-    return redirect('/cryapp/buyer/orders/')
+    return redirect('/cryapp/seller/orders/')
 
 
 def ordersnotdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     notthrough = CryOrder.objects.filter(id=cryorders).update(Status=4)
-    return redirect('/cryapp/buyer/orders/')
+    return redirect('/cryapp/seller/orders/')
 
 def ordersdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
@@ -349,21 +348,27 @@ def buyer_user(request):
     else:
         return render(request, 'login.html')
 
-
 class buyer_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        ordersfilter = CryOrder.objects.filter(buyerid_id=request.user.id).order_by('-AddTime')
+        ordersfilter = CryOrder.objects.filter(buyerid=request.user.id).filter(~Q(Status=0),~Q(Status=1)).order_by('-AddTime')
         paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
         page = request.GET.get('page')
         try:
-            contacts = paginator.page(page)
+            contactsb = paginator.page(page)
         except PageNotAnInteger:
             # If page is not an integer, deliver first page.
-            contacts = paginator.page(1)
+            contactsb = paginator.page(1)
         except EmptyPage:
             # If page is out of range (e.g. 9999), deliver last page of results.
-            contacts = paginator.page(paginator.num_pages)
-            return render(request, 'material/buyer/table.html',{'orderslists':contacts})
+            contactsb = paginator.page(paginator.num_pages)
+        return render(request, 'material/buyer/table.html',{'orderslists':contactsb})
+
+
+
+
+
+
+
 
 
 def buyer_commit_orders(request, cryorders_id = 0):

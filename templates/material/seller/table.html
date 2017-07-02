@@ -177,9 +177,9 @@
          <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button></td>
     </form>
     {% elif contact.Status == 2 %}
-        <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="get">
-            <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
-
+     <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="get">
+         <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
+     </form>
     {% elif contact.Status == 3 %}
         <td><form action="/cryapp/seller/orders/done/{{ contact.id }}/" method="post">
             <input type="submit" value="'审核通过"  class="btn btn-primary pull-right">
@@ -191,7 +191,7 @@
         <td>等待会员提交<p>
             <button>审核通过</button></td>
     {% elif contact.Status == 5 %}
-        <td><h5>订单完成</h5></td>
+        <td><h5>试用完成</h5></td>
     {% endif %}
 </th>
         </form>
