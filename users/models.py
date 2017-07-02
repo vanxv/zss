@@ -132,3 +132,33 @@ class Visuallog(models.Model):
     class Meta:
         verbose_name = u'VisualLog'
         verbose_name_plural = verbose_name
+
+
+class phoneid(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    phoneid = models.CharField(verbose_name=u'pcGuid', unique=True, null=True, max_length=120)
+    cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
+    resip = models.GenericIPAddressField(verbose_name=u'RegisterIP', blank=True, null=True)
+    addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now, blank=True, null=True)
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
+    class Meta:
+        verbose_name = u'phoneid'
+        verbose_name_plural = verbose_name
+
+class phonelog(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    phoneid = models.ForeignKey(phoneid, verbose_name=u'phoneid', null=True)
+    resip = models.GenericIPAddressField(verbose_name=u'IP')
+    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
+    class Meta:
+        verbose_name = u'phonelog'
+        verbose_name_plural = verbose_name
+
+
+class realName(models.Model):
+    realnameid = models.ForeignKey(phoneid, verbose_name=u'phoneid', null=True, unique=True)
+    resip = models.GenericIPAddressField(verbose_name=u'IP')
+    addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
+    class Meta:
+        verbose_name = u'realName'
+        verbose_name_plural = verbose_name

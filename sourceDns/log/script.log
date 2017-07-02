@@ -3771,3 +3771,6 @@ ValueError: invalid literal for int() with base 10: 'wqdwqdqwdq'
 2017-07-02 09:02:34,299 [Thread-161:123145564585984] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
 2017-07-02 09:02:38,982 [Thread-165:123145554075648] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
 2017-07-02 09:04:57,849 [Thread-10:123145581252608] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-02 19:50:37,650 [Thread-11:123145402064896] [django.request:152] [base:get_response] [WARNING]- Not Found: /Public/images/image/mark.png
+2017-07-02 19:50:40,578 [Thread-20:123145402064896] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-07-02 19:51:00,037 [Thread-23:123145402064896] [django.request:152] [base:get_response] [WARNING]- Not Found: /Public/images/image/mark.png
