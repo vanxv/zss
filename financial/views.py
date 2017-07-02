@@ -53,8 +53,6 @@ def financial_topUp_list(request):
     if request.method == 'POST':
         pass
 
-
-
 def financial_AutoTopUp(request):
         #AuUserlogin(request)
         if request.method == 'GET':

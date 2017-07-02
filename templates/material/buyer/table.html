@@ -183,27 +183,28 @@
     <br>
         <button value="submit" type="submit" class="btn btn-primary pull-right">提交订单</button></form>
     <br>
+    </form>
 <form action="/cryapp/buyer/orders/delete/{{ contact.id }}/" method="get">
         <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button>
-
+</form>
 {% elif contact.Status == 3 %}
 提交等待审核
 <form action="/cryapp/buyer/orders/edit/{{ contact.id }}/" method="get">
         <button value="edit" type="submit" class="btn btn-primary pull-right">编辑</button>
+    </form>
 <form action="/cryapp/buyer/orders/delete/{{ contact.id }}/" method="get">
         <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button>
+    </form>
 {% elif contact.Status == 4 %}
 提交等待审核
 <form action="/cryapp/buyer/orders/edit/{{ contact.id }}/" method="get">
-        <button value="edit" type="submit" class="btn btn-primary pull-right">编辑</button>
+        <button value="edit" type="submit" class="btn btn-primary pull-right">编辑</button></form>
 <form action="/cryapp/buyer/orders/delete/{{ contact.id }}/" method="get">
-        <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button>
+        <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button></form>
 {% elif contact.Status == 5 %}
-<td><h5>订单完成</h5></td>
+<h2>订单完成</h2>
 {% endif %}
 </th>
-
-</form>
 {% endif %}
 </tr>
 {% endfor %}
