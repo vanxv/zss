@@ -76,9 +76,9 @@ BankStatusSort = (
 )
 #BankAccount
 class BankAccount(models.Model):
-    BankSort = models.IntegerField('BankSort', choices=bankSort, max_length=5)
+    BankSort = models.IntegerField('BankSort', choices=bankSort)
     BankAccount = models.CharField('BankAccount', max_length=30)
-    Status = models.IntegerField('bankStatus', choices=BankStatusSort, max_length=2, default=1)
+    Status = models.IntegerField('bankStatus', choices=BankStatusSort, default=1)
     Note = models.CharField('Note', max_length=100)
     class Meta:
         verbose_name = 'BankAccount'

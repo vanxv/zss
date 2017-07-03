@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
 from financial.models import deposit, orderBill
 from goods.models import Shop, Goods
-from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername
+from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername,mobileid,mobilelog,real_name, blacklistlog
 import re
 import requests
 from django.db.models import Q, F
@@ -79,6 +79,14 @@ def crycost(x):
     buyercost = round(((x/100)*0.5) + 5,2)
     return sellercost, buyercost
 
+def ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 def ordermoney(request):
     ordermoneytotal = 0
     orderMoneyFilter = CryOrder.objects.filter(Userid=request.user.id).filter(Q(Status=1),Q(Status=2),Q(Status=3),Q(Status=4))
@@ -87,18 +95,19 @@ def ordermoney(request):
         ordermoneytotal += (float(money.Money) + float(money.Express) + float(money.sellerMoney))
     return ordermoneytotal
 
+
 def lockOrderAuthentication(request):
     # lock_Authentication_orders
     lockdaynumber = 33
     lockday = datetime.now() - timedelta(days=lockdaynumber)
-    lockOrderSelect = CryOrder.objects.filter(buyerid=request.user.id).filter(AddTime__gt=lockday).filter(~Q(Status=0))
+    lockOrderSelect = CryOrder.objects.filter(buyerid=request.user.id).filter(AddTime__gt=lockday).filter(
+        ~Q(Status=0))
     lockOrderlist = []
     for CLOS in lockOrderSelect:
         if CLOS.ShopId in lockOrderlist:
             break
         else:
             lockOrderlist.append(CLOS.ShopId)
-
     return lockOrderlist
 
 
@@ -131,7 +140,6 @@ class buyerIndex(View):
             orderdict = {}
             select_cryorder = CryOrder.objects.filter()
             lockOrderlist = lockOrderAuthentication(request)
-            print(len(lockOrderlist))
             buyerIndexSqlMove = ''
             buyerIndexSql = 'SELECT *  FROM cryapp_cryorder GROUP BY GoodId_id'
             if len(lockOrderlist) == 1:
@@ -148,54 +156,85 @@ class buyerIndex(View):
 
 
 def GetGoods(request, goodid):
-    if request.user.is_authenticated:
-        if request.method=="GET":
-            goodsview = Goods.objects.get(id=goodid)
-            money = CryOrder.objects.filter(GoodId=goodid)
-            # --- old product list
-            #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
-            # --- old product list
-            return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
+    if request.method=="GET":
+        goodsview = Goods.objects.get(id=goodid)
+        money = CryOrder.objects.filter(GoodId=goodid)
+        # --- old product list
+        #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
+        # --- old product list
+        return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
 
-        elif request.method == "POST":
-            #---Authentication blacklist
+    elif request.method == "POST":
+
+        def authenticationlogin(request):
+            if request.user.is_authenticated == False:
+                return render(request, 'login.html')
+            # ---Authentication blacklist
             UserBlackList = AuthUser.objects.filter(id=request.user.id, is_blacklist=1)
             if UserBlackList:
                 return redirect('/')
-            #---Authentication blacklist
-
-            #-- hard authentiaction
-            yesterday = datetime.now() - timedelta(hours=1)
-            pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__gt=yesterday)
-            if pcguid.count() == 0:
-                return redirect('/webbrowser/')
-            #-- hard authentiaction
-
-
-            #-- authentication account --#
-            # platform = request.POST['platform']
-            # tb = []
-            # tb = ["tmall","taobao","1688"]
-            # if platform in tb:
-            #     platformusername = tbUsername.objects.filter(user=request.user.id)
-            #     return redirect('/cryapp/buyer/orders/')
-            # elif platform == 'jd':
-            #     platformusername = jdUsername.objects.filter(user=request.user.id)
-            #     return HttpResponseRedirect(reverse('buyerusers'))
-            # -- authentication account --#
-            LockOrderList = lockOrderAuthentication(request)
+                # ---Authentication blacklist
+        def Platform_account(request):
             goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
-            if goodsviews.ShopId in LockOrderList:
-                return redirect('/')
-            if pcguid:
-                goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
-                return redirect('/cryapp/buyer/orders/')
+            if goodsviews.platform == 'tmall' or goodsviews.platform == 'taobao' or goodsviews.platform == '1688':
+                if len(tbUsername.objects.filter(user=request.user.id).values()) == 0:
+                    return HttpResponseRedirect('/cryapp/buyer/users/')
+            elif goodsviews.platform == 'jd':
+                if jdUsername.objects.filter(user=request.user.id) == False:
+                    return HttpResponseRedirect('/cryapp/buyer/users/')
+        def iphoneid_authentication(request):
+            phoneid_post = str(request.POST['phoneid'])
+            if len(phoneid_post) == 0:
+                return redirect('/webbrowser/')
+            if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 0:
+                mobileid_have_user = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user.id))
+                if len(mobileid_have_user) >0:
+                    blacklistlogcreate = blacklistlog.objects.create(user=request.user.id,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid not have:'+phoneid_post))
+                    blacklistlogcreate.save()
+                    return redirect('/')
+                else:
+                    mobileidget = mobileid.objects.get(id=phoneid_post)
+                    mobilelogcreate = mobilelog.objects.create(user=request.user.id,resip=ip(request), phoneid=mobileidget)
+                    mobilelogcreate.save()
+
+
             else:
-                return redirect('/')
+                if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 3:
+                    blacklistlogcreate = blacklistlog.objects.create(user=request.user.id,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid>3'+phoneid_post))
+                    blacklistlogcreate.save()
 
+                else:
+                    mobilecreate = mobileid.objects.create(user=request.user.id,resip=ip(request),mobileid=phoneid_post)
+                    mobilecreate.save()
+        goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
+        authenticationlogin_def=authenticationlogin(request)
+        if not authenticationlogin_def is None:
+            return authenticationlogin_def
 
-    else:
-        return render(request, 'login.html')
+        lockOrderlist = lockOrderAuthentication(request)
+        iphoneid_authenticatio_def = iphoneid_authentication(request)
+        if not iphoneid_authenticatio_def is None:
+            return iphoneid_authenticatio_def
+        if goodsviews.ShopId in lockOrderlist:
+            return redirect('/')
+        Platform_account_def = Platform_account(request)
+        if not Platform_account_def is None:
+            return Platform_account_def
+
+        #-- Authentication phonelog---#
+
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
+            return redirect('/cryapp/buyer/orders/')
+        else:
+            return redirect('/')
+
+            #--- Authentication phonelog ---#
+            #-- hard authentiaction
+            # yesterday = datetime.now() - timedelta(hours=1)
+            # pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__gt=yesterday)
+            # if pcguid.count() == 0:
+            #     return redirect('/webbrowser/')
+            #-- hard authentiaction
 
 class Good_Index_Add(LoginRequiredMixin, View):
     ##############首页增加产品#######################
@@ -362,14 +401,6 @@ class buyer_orders(LoginRequiredMixin, View):
             # If page is out of range (e.g. 9999), deliver last page of results.
             contactsb = paginator.page(paginator.num_pages)
         return render(request, 'material/buyer/table.html',{'orderslists':contactsb})
-
-
-
-
-
-
-
-
 
 def buyer_commit_orders(request, cryorders_id = 0):
     cryorderid=cryorders_id

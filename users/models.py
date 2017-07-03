@@ -134,20 +134,19 @@ class Visuallog(models.Model):
         verbose_name_plural = verbose_name
 
 
-class phoneid(models.Model):
+class mobileid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    phoneid = models.CharField(verbose_name=u'pcGuid', unique=True, null=True, max_length=120)
-    cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
+    mobileid = models.CharField(verbose_name=u'mobileid', unique=True, null=True, max_length=120)
     resip = models.GenericIPAddressField(verbose_name=u'RegisterIP', blank=True, null=True)
     addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now, blank=True, null=True)
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     class Meta:
-        verbose_name = u'phoneid'
+        verbose_name = u'mobileid'
         verbose_name_plural = verbose_name
 
-class phonelog(models.Model):
+class mobilelog(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    phoneid = models.ForeignKey(phoneid, verbose_name=u'phoneid', null=True)
+    phoneid = models.ForeignKey(mobileid, verbose_name=u'phoneid', null=True)
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
@@ -155,10 +154,17 @@ class phonelog(models.Model):
         verbose_name_plural = verbose_name
 
 
-class realName(models.Model):
-    realnameid = models.ForeignKey(phoneid, verbose_name=u'phoneid', null=True, unique=True)
+class real_name(models.Model):
+    user = models.ForeignKey(AuthUser, null=True, verbose_name=u'related_name')
+    realNameid = models.CharField(max_length=30, verbose_name=u'RealNameid', unique=True)
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
         verbose_name = u'realName'
         verbose_name_plural = verbose_name
+
+class blacklistlog(models.Model):
+    user = models.ForeignKey(AuthUser, null=True, verbose_name=u'related_name')
+    addtime = models.DateTimeField(verbose_name=u'addTime', default=timezone.now)
+    resip = models.GenericIPAddressField(verbose_name=u'IP', null=True)
+    Remarks = models.CharField(max_length=9999, null=True)
