@@ -3883,3 +3883,5 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 191, in iphoneid_authentication
     printtext.write(len(phoneid_post)+188)
 TypeError: write() argument must be str, not int
+2017-07-03 16:53:14,033 [Thread-7:123145496948736] [django.request:152] [base:get_response] [WARNING]- Not Found: //goods/14968059463023229
+2017-07-03 16:53:14,296 [Thread-8:123145496948736] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
