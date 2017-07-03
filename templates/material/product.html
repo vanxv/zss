@@ -618,9 +618,11 @@
     </div>
 </div>
 <script type="text/javascript">
-                    var van = getDeviceIdentifier()
-                    alert(van)
-                    document.getElementsByName("phoneid")[0].value=van;
+                    function getDeviceIdCallBack(val){
+                        alert(val);
+                        document.getElementsByName("phoneid")[0].value=val;
+                    }
+                    getDeviceIdentifier('getDeviceIdCallBack')
 
 </script>
 
