@@ -202,16 +202,19 @@ def GetGoods(request, goodid):
                     mobileidget = mobileid.objects.get(mobileid=phoneid_post)
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), phoneid=mobileidget)
                     mobilelogcreate.save()
+                    return
 
 
             else:
                 if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 3:
                     blacklistlogcreate = blacklistlog.objects.create(user=request.user.id,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid>3'+phoneid_post))
                     blacklistlogcreate.save()
-
+                    return
                 else:
                     mobilecreate = mobileid.objects.create(user=request.user,resip=ip(request),mobileid=phoneid_post)
                     mobilecreate.save()
+                    return
+
         goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
         authenticationlogin_def=authenticationlogin(request)
         if not authenticationlogin_def is None:
