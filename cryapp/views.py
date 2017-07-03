@@ -197,7 +197,7 @@ def GetGoods(request, goodid):
                     return redirect('/')
                 else:
                     mobileidget = mobileid.objects.get(id=phoneid_post)
-                    mobilelogcreate = mobilelog.objects.create(user=request.user.id,resip=ip(request), phoneid=mobileidget)
+                    mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), phoneid=mobileidget)
                     mobilelogcreate.save()
 
 
@@ -207,7 +207,7 @@ def GetGoods(request, goodid):
                     blacklistlogcreate.save()
 
                 else:
-                    mobilecreate = mobileid.objects.create(user=request.user.id,resip=ip(request),mobileid=phoneid_post)
+                    mobilecreate = mobileid.objects.create(user=request.user,resip=ip(request),mobileid=phoneid_post)
                     mobilecreate.save()
         goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
         authenticationlogin_def=authenticationlogin(request)
