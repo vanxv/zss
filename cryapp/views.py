@@ -185,6 +185,11 @@ def GetGoods(request, goodid):
         def iphoneid_authentication(request):
             phoneid_post = str(request.POST['phoneid'])
             if len(phoneid_post) == 0:
+                print('188')
+                print(len(phoneid_post))
+                printtext = open('debug.txt','w+')
+                printtext.write(str(len(phoneid_post))+'188')
+                printtext.close()
                 return redirect('/webbrowser/')
             if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 0:
                 mobileid_have_user = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user.id))
@@ -221,7 +226,7 @@ def GetGoods(request, goodid):
         if not Platform_account_def is None:
             return Platform_account_def
 
-        #-- Authentication phonelog---#
+        #--Authentication phonelog---#
 
             goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
             return redirect('/cryapp/buyer/orders/')
@@ -233,7 +238,6 @@ def GetGoods(request, goodid):
             # yesterday = datetime.now() - timedelta(hours=1)
             # pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__gt=yesterday)
             # if pcguid.count() == 0:
-            #     return redirect('/webbrowser/')
             #-- hard authentiaction
 
 class Good_Index_Add(LoginRequiredMixin, View):
@@ -272,7 +276,6 @@ class Good_Index_Add(LoginRequiredMixin, View):
             text = '余额不足请充值,'
             return render(request, 'material/seller/dashboard.html', {'test': text, 'money':deposit})
         #deposit
-
         #get urls values
         id,platform,shopname,shopusername,GoodsImage,Goodsname = platformUrl(txtIndexAddUrl) #用正则读取数据
 
@@ -284,7 +287,6 @@ class Good_Index_Add(LoginRequiredMixin, View):
         tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform).filter(Q(user_id=request.user.id))
 
         if len(tempGoodsUserTrue) >0: #判断产品是否存在
-            print('发布任务')
             saveshop = Shop.objects.get(user=request.user, shopname=shopname) #店铺名称
             saveGoods = Goods.objects.get(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
@@ -292,7 +294,6 @@ class Good_Index_Add(LoginRequiredMixin, View):
         elif len(tempShopUserFlase) >0: #判断产品是否在其他账户上
             return render(request, 'material/seller/dashboard.html', {'test': '产品已存在'})
         elif len(tempShopUserTrue) >0: #判断产品是否在其他账户上
-            print('发布任务，发布产品')
             saveshop = Shop.objects.get(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
             saveshop.save()
             savegoods()
@@ -301,21 +302,17 @@ class Good_Index_Add(LoginRequiredMixin, View):
         elif len(tempShopFlase) >0: #判断产品是否在其他账户上
             return render(request, 'material/seller/dashboard.html', {'test': '店铺已存在其他人账户上'})
         else:
-            print('发布店铺、发布产品、发布任务')
             saveshop = Shop.objects.create(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
             saveshop.save()
             savegoods()
             saveorder()
         return render(request, 'material/seller/dashboard.html',{'test':'已经发布任务'})
 
-
-
 #-------seller CRUD -----#
 def cryapp_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0)
     return redirect('/cryapp/seller/orders/')
-
 
 def ordersnotdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
@@ -354,7 +351,6 @@ def cryapp_edit(request, cryorders_id = 0):
         editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['Note'],PlatformOrdersid=request.POST['orderid'])
         return redirect('/cryapp/seller/orders/')
 # ---- seller_edit------#
-
 
 #-------seller CRUD -----#
 def cryapp_buyer_delete(request, cryorders_id = 0):

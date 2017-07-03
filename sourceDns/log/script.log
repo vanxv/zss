@@ -3831,3 +3831,55 @@ Traceback (most recent call last):
 users.models.DoesNotExist: tbUsername matching query does not exist.
 2017-07-03 10:23:40,953 [Thread-28:123145490325504] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-07-03 10:30:28,725 [Thread-9:123145334865920] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-07-03 15:48:18,651 [Thread-8:123145565134848] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14968059463023229
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 220, in GetGoods
+    iphoneid_authenticatio_def = iphoneid_authentication(request)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 190, in iphoneid_authentication
+    printtext = open('/sourceDns/log/debug.txt','w')
+FileNotFoundError: [Errno 2] No such file or directory: '/sourceDns/log/debug.txt'
+2017-07-03 15:49:19,413 [Thread-8:123145483345920] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14968059463023229
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 220, in GetGoods
+    iphoneid_authenticatio_def = iphoneid_authentication(request)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 190, in iphoneid_authentication
+    printtext = open('/sourceDns/log/debug.txt','w+')
+FileNotFoundError: [Errno 2] No such file or directory: '/sourceDns/log/debug.txt'
+2017-07-03 16:12:26,456 [Thread-8:123145500569600] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14968059463023229
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 220, in GetGoods
+    iphoneid_authenticatio_def = iphoneid_authentication(request)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 191, in iphoneid_authentication
+    printtext.write(len(phoneid_post)+'188')
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2017-07-03 16:12:58,239 [Thread-8:123145356431360] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14968059463023229
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 220, in GetGoods
+    iphoneid_authenticatio_def = iphoneid_authentication(request)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 191, in iphoneid_authentication
+    printtext.write(len(phoneid_post)+188)
+TypeError: write() argument must be str, not int
