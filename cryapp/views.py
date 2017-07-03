@@ -196,10 +196,10 @@ def GetGoods(request, goodid):
                     blacklistlogcreate.save()
                     return redirect('/')
                 else:
-                    printtext = open('debug.txt', 'w+')
-                    printtext.write(str(datetime.now()) + str(len(phoneid_post)) + '188' + 'phoneid_post:' + str(phoneid_post))
-                    printtext.close()
                     mobileidget = mobileid.objects.get(mobileid=phoneid_post)
+                    printtext = open('debug.txt', 'w+')
+                    printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post))
+                    printtext.close()
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), phoneid=mobileidget)
                     mobilelogcreate.save()
                     return

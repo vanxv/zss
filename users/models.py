@@ -146,7 +146,7 @@ class mobileid(models.Model):
 
 class mobilelog(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    phoneid = models.ForeignKey(mobileid, verbose_name=u'phoneid', null=True)
+    mobileid = models.ForeignKey(mobileid, verbose_name=u'mobileid', null=True)
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
