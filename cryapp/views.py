@@ -190,17 +190,16 @@ def GetGoods(request, goodid):
                 printtext.close()
                 return redirect('/webbrowser/')
             if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 0:
-                mobileid_have_user = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user.id))
+                mobileid_have_user = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user))
                 if len(mobileid_have_user) >0:
-                    blacklistlogcreate = blacklistlog.objects.create(user=request.user.id,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid not have:'+phoneid_post))
+                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid not have:'+phoneid_post))
                     blacklistlogcreate.save()
                     return redirect('/')
                 else:
                     printtext = open('debug.txt', 'w+')
-                    printtext.write(
-                    str(datetime.now()) + str(len(phoneid_post)) + '188' + 'phoneid_post:' + str(phoneid_post))
+                    printtext.write(str(datetime.now()) + str(len(phoneid_post)) + '188' + 'phoneid_post:' + str(phoneid_post))
                     printtext.close()
-                    mobileidget = mobileid.objects.get(id=phoneid_post)
+                    mobileidget = mobileid.objects.get(mobileid=phoneid_post)
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), phoneid=mobileidget)
                     mobilelogcreate.save()
 
@@ -230,10 +229,9 @@ def GetGoods(request, goodid):
 
         #--Authentication phonelog---#
 
-            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
-            return redirect('/cryapp/buyer/orders/')
-        else:
-            return redirect('/')
+        goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
+        return redirect('/cryapp/buyer/orders/')
+
 
             #--- Authentication phonelog ---#
             #-- hard authentiaction
