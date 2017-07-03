@@ -185,10 +185,8 @@ def GetGoods(request, goodid):
         def iphoneid_authentication(request):
             phoneid_post = str(request.POST['phoneid'])
             if len(phoneid_post) == 0:
-                print('188')
-                print(len(phoneid_post))
                 printtext = open('debug.txt','w+')
-                printtext.write(str(len(phoneid_post))+'188')
+                printtext.write(str(datetime.now())+str(len(phoneid_post))+'188'+'phoneid_post:'+str(phoneid_post))
                 printtext.close()
                 return redirect('/webbrowser/')
             if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 0:
