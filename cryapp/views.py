@@ -198,7 +198,7 @@ def GetGoods(request, goodid):
                 else:
                     mobileidget = mobileid.objects.get(mobileid=phoneid_post)
                     printtext = open('debug.txt', 'w+')
-                    printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post))
+                    printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
                     printtext.close()
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
                     mobilelogcreate.save()
