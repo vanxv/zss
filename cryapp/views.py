@@ -162,7 +162,7 @@ def GetGoods(request, goodid):
         # --- old product list
         #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
         # --- old product list
-        return render(request, 'material/product.html', {'goodsview':goodsview,'money':money})
+        return render(request, 'material/product.html', {'goodsview':goodsview,'money':money[0]})
 
     elif request.method == "POST":
 

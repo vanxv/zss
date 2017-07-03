@@ -368,14 +368,13 @@
         <div class="row">
             <div class="col-md-6 col-sm-5 col-xs-5 text-right">
 
-                {% for loop in money %}
         <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
-        <input type='hidden' name='cryorderid' value="{{ loop.id }}">
-        <input type='hidden' name='platform' value="{{ loop.platform }}">
-        <input type="submit" name="button1" onclick="zhss()" value="立即试用：{{ loop.Money }}" class="btn btn-info btn-fill btn-wd btn-round">
+        <input type='hidden' name='cryorderid' value="{{ money.id }}">
+        <input type='hidden' name='platform' value="{{ money.platform }}">
+        <input type="hidden" name="phoneid" value="">
+        <input type="submit" name="button1" onclick="zhss()" value="立即试用：{{ money.Money }}" class="btn btn-info btn-fill btn-wd btn-round">
 
         </form>
-    {% endfor %}
 
                             </b>
                         </a>
@@ -434,15 +433,13 @@
 
 
     	    <div class="tab-pane active" id="personal">
-                {% for loop in money %}
         <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
-        <input type='hidden' name='cryorderid' value="{{ loop.id }}">
-        <input type='hidden' name='platform' value="{{ loop.platform }}">
+        <input type='hidden' name='cryorderid' value="{{ money.id }}">
+        <input type='hidden' name='platform' value="{{ money.platform }}">
         <input type="hidden" name="phoneid" value="">
-        <input type="submit" name="button1" value="{{ loop.platform }}试用金额：{{ loop.Money }}" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
+        <input type="submit" name="button1" value="{{ money.platform }}试用金额：{{ money.Money }}" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
         </a>
         </form>
-    {% endfor %}
 
 
     	    </div>
@@ -620,6 +617,7 @@
 <script type="text/javascript">
                     function getDeviceIdCallBack(val){
                         document.getElementsByName("phoneid")[0].value=val;
+                        document.getElementsByName("phoneid")[1].value=val;
                     }
                     getDeviceIdentifier('getDeviceIdCallBack')
 

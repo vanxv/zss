@@ -3934,3 +3934,157 @@ Traceback (most recent call last):
     self.model._meta.object_name
 users.models.DoesNotExist: mobileid matching query does not exist.
 2017-07-03 17:59:08,530 [Thread-11:123145451528192] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/buyer/orders/delete/1498193073726437/
+2017-07-03 21:06:36,156 [Thread-8:123145407721472] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14374902753
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 160, in GetGoods
+    goodsview = Goods.objects.get(id=goodid)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+goods.models.DoesNotExist: Goods matching query does not exist.
+2017-07-03 21:07:23,821 [Thread-7:123145398280192] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14374902753
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 160, in GetGoods
+    goodsview = Goods.objects.get(id=goodid)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+goods.models.DoesNotExist: Goods matching query does not exist.
+2017-07-03 21:07:34,895 [Thread-12:123145398280192] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14374902753
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 160, in GetGoods
+    goodsview = Goods.objects.get(id=goodid)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+goods.models.DoesNotExist: Goods matching query does not exist.
+2017-07-03 21:08:47,093 [Thread-17:123145398280192] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/14374902753
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 160, in GetGoods
+    goodsview = Goods.objects.get(id=goodid)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+goods.models.DoesNotExist: Goods matching query does not exist.
+2017-07-03 21:09:57,137 [Thread-23:123145403535360] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1497085483006318
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 161, in GetGoods
+    money = CryOrder.objects.filter(GoodId=goodid)[1]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 295, in __getitem__
+    return list(qs)[0]
+IndexError: list index out of range
+2017-07-03 21:10:28,196 [Thread-7:123145496440832] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1497085483006318
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 165, in GetGoods
+    return render(request, 'material/product.html', {'goodsview':goodsview,'money':money[0]})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'CryOrder' object is not iterable
+2017-07-03 21:11:33,473 [Thread-8:123145496440832] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1497085483006318
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 165, in GetGoods
+    return render(request, 'material/product.html', {'goodsview':goodsview,'money':money[0]})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'CryOrder' object is not iterable
+2017-07-03 21:11:53,211 [Thread-9:123145496440832] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /goods/1497085483006318
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 165, in GetGoods
+    return render(request, 'material/product.html', {'goodsview':goodsview,'money':money[0]})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+TypeError: 'CryOrder' object is not iterable
