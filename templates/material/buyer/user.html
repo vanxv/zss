@@ -147,27 +147,46 @@
 	                    <div class="col-md-8">
 	                        <div class="card">
 	                            <div class="card-header" data-background-color="purple">
-	                                <h4 class="title">Edit Profile</h4>
-									<p class="category">Complete your profile</p>
+	                                <h4 class="title">编辑用户信息</h4>
 	                            </div>
 	                            <div class="card-content">
                                         	<div class="row">
 	                                        <div class="col-md-4">
 												<div class="form-group label-floating">
-                                                    <from>
+                                                    <li>账户一旦关联将无法修改.</li>
+                                                    <br>
+                                                    <h2>{{ usersRequest }}</h2>
+                                                    <br>
+                                                    {% if tb %}
+                                                    {% for tbfor in tb %}
+
+                                                        <li>淘宝账号：{{ tbfor.tbUsername }}</li>
+                                                    {% endfor %}
+                                                    {% else %}
+                                                    <form action="/users/tb/" method="post">
 													<label class="control-label">淘宝账号</label>
-													<input name="tbusername" type="text" class="form-control"><button type="submit" class="btn btn-primary pull-right">确定</button>
-                                                </from>
+													<input name="tbusername" type="text" class="form-control">
+                                                    <button type="submit" class="btn btn-primary pull-right">保存</button>
+                                                    </form>
+                                                    {% endif %}
+
 												</div>
 	                                        </div>
 	                                        </div>
                                         	<div class="row">
 	                                        <div class="col-md-4">
 												<div class="form-group label-floating">
-                                                    <from>
+                                                    {% if jd %}
+                                                    {% for jdfor in jd %}
+                                                    <li>京东账号：{{ jdfor.jdUsername }}</li>
+                                                    {% endfor %}
+                                                    {% else %}
+                                                    <form action="/users/jd/" method="post">
 													<label class="control-label">京东账号</label>
-													<input name="jduername" type="text" class="form-control"><button type="submit" class="btn btn-primary pull-right">确定</button>
-                                                </from>
+													<input name="jdusername" type="text" class="form-control">
+                                                    <button type="submit" class="btn btn-primary pull-right">保存</button>
+                                                    </form>
+                                                    {% endif %}
 												</div>
 	                                        </div>
 	                                        </div>

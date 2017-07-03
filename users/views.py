@@ -3,12 +3,13 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.hashers import make_password
-from .models import AuthUser, pcGuid, pcGuidLog, Visuallog
+from .models import AuthUser, pcGuid, pcGuidLog, Visuallog, tbUsername, jdUsername, real_name,blacklistlog
 from django.views.generic.base import View
-from .forms import LoginForm, RegisterForm
+from .forms import LoginForm, RegisterForm, tbForm, jdForm
 from cryapp.models import CryOrder
 from goods.models import Goods
 from financial.models import deposit
+from cryapp.views import authenticationlogin
 # Create your views here.
 
 @login_required
@@ -136,6 +137,7 @@ def PcHardwareInsert(request):
             usersRequest = 0
             return render(request, 'users/usersRequest.html', {'usersRequest':usersRequest});
 
+
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
     if x_forwarded_for:
@@ -143,3 +145,44 @@ def get_client_ip(request):
     else:
         ip = request.META.get('REMOTE_ADDR')
     return ip
+
+
+
+#--------- tb 1688 -----#
+def tb(request):
+    authenticationlogin_def = authenticationlogin(request)
+    if not authenticationlogin_def is None:
+        return authenticationlogin_def
+    if request.method == 'GET':
+        pass
+    elif request.method == "POST":
+        form = tbForm(request.POST)
+        if not form.is_valid():
+            return render(request, 'users/usersRequest.html', {'usersRequest':form});
+        selecttbid = tbUsername.objects.filter(tbUsername=request.POST['tbusername'])
+        if len(selecttbid.values()) > 0:
+            blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request), Remarks ='tbiderror:'+ request.POST['tbusername'])
+            blacklistlogsave.save()
+            return render(request, 'users/usersRequest.html', {'usersRequest':'ID exist'});
+        createtbid = tbUsername.objects.create(user = request.user, tbUsername = request.POST['tbusername'])
+        createtbid.save()
+        return redirect('/cryapp/buyer/users/')
+
+def jd(request):
+    authenticationlogin_def = authenticationlogin(request)
+    if not authenticationlogin_def is None:
+        return authenticationlogin_def
+    if request.method == 'GET':
+        pass
+    if request.method == 'POST':
+        form = jdForm(request.POST)
+        if not form.is_valid():
+            return render(request, 'users/usersRequest.html', {'usersRequest':form});
+        selecttbid = jdUsername.objects.filter(jdUsername=request.POST['jdusername'])
+        if len(selecttbid.values()) > 0:
+            blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request), Remarks ='jdiderror:'+ request.POST['jdusername'])
+            blacklistlogsave.save()
+            return render(request, 'users/usersRequest.html', {'usersRequest':'ID exist'});
+        createjdid = jdUsername.objects.create(user = request.user, jdUsername = request.POST['jdusername'])
+        createjdid.save()
+        return redirect('/cryapp/buyer/users/')

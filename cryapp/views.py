@@ -4,6 +4,7 @@ from .models import CryOrder
 from financial.models import deposit, orderBill
 from goods.models import Shop, Goods
 from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername,mobileid,mobilelog,real_name, blacklistlog
+from users.forms import tbForm, jdForm
 import re
 import requests
 from django.db.models import Q, F
@@ -96,6 +97,15 @@ def ordermoney(request):
     return ordermoneytotal
 
 
+def authenticationlogin(request):
+    if request.user.is_authenticated == False:
+        return render(request, 'login.html')
+    # ---Authentication blacklist
+    UserBlackList = AuthUser.objects.filter(id=request.user.id, is_blacklist=1)
+    if UserBlackList:
+        return redirect('/')
+        # ---Authentication blacklist
+
 def lockOrderAuthentication(request):
     # lock_Authentication_orders
     lockdaynumber = 33
@@ -166,14 +176,6 @@ def GetGoods(request, goodid):
 
     elif request.method == "POST":
 
-        def authenticationlogin(request):
-            if request.user.is_authenticated == False:
-                return render(request, 'login.html')
-            # ---Authentication blacklist
-            UserBlackList = AuthUser.objects.filter(id=request.user.id, is_blacklist=1)
-            if UserBlackList:
-                return redirect('/')
-                # ---Authentication blacklist
         def Platform_account(request):
             goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
             if goodsviews.platform == 'tmall' or goodsviews.platform == 'taobao' or goodsviews.platform == '1688':
@@ -197,9 +199,9 @@ def GetGoods(request, goodid):
                     return redirect('/')
                 else:
                     mobileidget = mobileid.objects.get(mobileid=phoneid_post)
-                    printtext = open('debug.txt', 'w+')
-                    printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
-                    printtext.close()
+                    # printtext = open('debug.txt', 'w+')
+                    # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
+                    # printtext.close()
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
                     mobilelogcreate.save()
                     return
@@ -381,10 +383,13 @@ def buyeradmin(request):
         return render(request, 'login.html')
 
 def buyer_user(request):
-    if request.user.is_authenticated:
-        return render(request, 'material/buyer/user.html')
-    else:
-        return render(request, 'login.html')
+    if request.method == "GET":
+        if request.user.is_authenticated:
+            tb = tbUsername.objects.filter(user=request.user.id)
+            jd = jdUsername.objects.filter(user=request.user.id)
+            return render(request, 'material/buyer/user.html', {'tb':tb,'jd':jd})
+        else:
+            return render(request, 'login.html')
 
 class buyer_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
@@ -406,3 +411,11 @@ def buyer_commit_orders(request, cryorders_id = 0):
     commitorders = CryOrder.objects.filter(id=cryorderid).update(PlatformOrdersid=int(request.POST['paltfromorders']), Status=3)
     return redirect('/cryapp/buyer/orders/')
 #———————buyer admin------#
+
+
+
+#---------tb,jd accunt ------#
+
+
+
+#---------tb,jd accunt ------#
