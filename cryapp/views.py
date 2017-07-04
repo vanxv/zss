@@ -153,7 +153,9 @@ class buyerIndex(View):
             buyerIndexSqlMove = ''
             buyerIndexSql = 'SELECT * FROM cryapp_cryorder GROUP BY GoodId_id'
             if len(lockOrderlist) == 1:
-                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0].id + ' ' + ' GROUP BY GoodId_id'
+                buyerIndexSqltest = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0].id + ' GROUP BY GoodId_id'
+                buyerIndexSqltest1 = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> ' + ' GROUP BY GoodId_id' + lockOrderlist[0].id
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0].id + ' GROUP BY GoodId_id'
             elif len(lockOrderlist) > 1:
                 for i in range(1, len(lockOrderlist)):
                     buyerIndexSqlMove = buyerIndexSqlMove + ' AND ShopId_id <>' + str(lockOrderlist[i].id)
