@@ -153,11 +153,11 @@ class buyerIndex(View):
             buyerIndexSqlMove = ''
             buyerIndexSql = 'SELECT * FROM cryapp_cryorder GROUP BY GoodId_id'
             if len(lockOrderlist) == 1:
-                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0].id + ' GROUP BY GoodId_id'
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0].id + ' ' + ' GROUP BY GoodId_id'
             elif len(lockOrderlist) > 1:
                 for i in range(1, len(lockOrderlist)):
                     buyerIndexSqlMove = buyerIndexSqlMove + ' AND ShopId_id <>' + str(lockOrderlist[i].id)
-                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ str(lockOrderlist[0].id) + buyerIndexSqlMove + ' GROUP BY GoodId_id'
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ str(lockOrderlist[0].id) + buyerIndexSqlMove + ' ' + ' GROUP BY GoodId_id'
             orderdict = CryOrder.objects.raw(buyerIndexSql)
             # Html_file= open("bug.html","w")
             # Html_file.write(datetime.now()+buyerIndexSql+type(orderdict)+orderdict)
