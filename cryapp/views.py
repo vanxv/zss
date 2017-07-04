@@ -188,29 +188,28 @@ def GetGoods(request, goodid):
             phoneid_post = str(request.POST['phoneid'])
             if phoneid_post == '':
                 printtext = open('debug.txt','w+')
-                printtext.write(str(datetime.now())+str(len(phoneid_post))+'188'+'phoneid_post:'+str(phoneid_post))
+                printtext.write(str(datetime.now())+str(phoneid_post)+'188'+'phoneid_post:'+str(phoneid_post))
                 printtext.close()
                 return redirect('/webbrowser/')
-            mobileidvalues = mobileid.objects.filter(mobileid=phoneid_post).exists()
-            if mobileidvalues:
-                #mobileuserexists = mobileid.objects.filter(mobileid=phoneid_post)
-                #mobileuserexists1 = mobileuserexists.filter(user=request.user.id).exists()
-                #if mobileuserexists1:
-                blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(),Remarks='mobileid not have')
-                blacklistlogcreate.save()
-                return redirect('/')
-                #else:
-                mobileidget = mobileid.objects.get(mobileid=phoneid_post)
+            mobileidvalues = mobileid.objects.filter(mobileid=phoneid_post)
+            if mobileidvalues.exists():
+                mobileuserexists1 = mobileidvalues.filter(user=request.user.id)
+                if mobileuserexists1.exists():
+                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(),Remarks='mobileid not have')
+                    blacklistlogcreate.save()
+                    return redirect('/')
+                else:
+                    mobileidget = mobileid.objects.get(mobileid=phoneid_post)
                 # printtext = open('debug.txt', 'w+')
                 # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
                     # printtext.close()
-                mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
-                mobilelogcreate.save()
-                return
+                    mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
+                    mobilelogcreate.save()
+                    return
 
 
             else:
-                if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 3:
+                if mobileid.objects.filter(mobileid=phoneid_post).count() > 3:
                     blacklistlogcreate = blacklistlog.objects.create(user=request.user.id,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid>3'+phoneid_post))
                     blacklistlogcreate.save()
                     return
