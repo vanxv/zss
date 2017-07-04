@@ -2320,3 +2320,11 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [msg] in "[{'Tr
 2017-07-04 15:58:22,666 [Dummy-6:123145518452736] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
 2017-07-04 15:58:23,725 [Dummy-6:123145518452736] [django.db.backends:90] [utils:execute] [DEBUG]- (0.090) SHOW FULL TABLES; args=None
 2017-07-04 15:58:23,814 [Dummy-6:123145518452736] [django.db.backends:90] [utils:execute] [DEBUG]- (0.061) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-04 16:01:50,093 [Dummy-6:123145358430208] [django.db.backends:90] [utils:execute] [DEBUG]- (0.043) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-04 16:01:50,109 [Dummy-6:123145358430208] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
+2017-07-04 16:01:51,431 [Dummy-6:123145358430208] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SHOW FULL TABLES; args=None
+2017-07-04 16:01:51,463 [Dummy-6:123145358430208] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-07-04 16:02:36,554 [Dummy-6:123145345957888] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-07-04 16:02:36,572 [Dummy-6:123145345957888] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-07-04 16:02:37,488 [Dummy-6:123145345957888] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SHOW FULL TABLES; args=None
+2017-07-04 16:02:37,511 [Dummy-6:123145345957888] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
