@@ -185,7 +185,7 @@ def GetGoods(request, goodid):
                 if jdUsername.objects.filter(user=request.user.id) == False:
                     return HttpResponseRedirect('/cryapp/buyer/users/')
         def iphoneid_authentication(request):
-            phoneid_post = request.POST['phoneid']
+            phoneid_post = str(request.POST['phoneid'])
             if len(phoneid_post) == 0:
                 printtext = open('debug.txt','w+')
                 printtext.write(str(datetime.now())+str(len(phoneid_post))+'188'+'phoneid_post:'+str(phoneid_post))
