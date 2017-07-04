@@ -151,16 +151,16 @@ class buyerIndex(View):
             select_cryorder = CryOrder.objects.filter()
             lockOrderlist = lockOrderAuthentication(request)
             buyerIndexSqlMove = ''
-            buyerIndexSql = 'SELECT Status = 1 FROM cryapp_cryorder GROUP BY GoodId_id'
+            buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 GROUP BY GoodId_id'
             if len(lockOrderlist) == 1:
-                buyerIndexSql = 'SELECT Status = 1 FROM cryapp_cryorder WHERE ShopId_id <> '+ lockOrderlist[0].id + ' GROUP BY GoodId_id'
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 and ShopId_id <> '+ lockOrderlist[0].id + ' GROUP BY GoodId_id'
             elif len(lockOrderlist) > 1:
                 for i in range(1, len(lockOrderlist)):
                     buyerIndexSqlMove = buyerIndexSqlMove + ' AND ShopId_id <>' + str(lockOrderlist[i].id)
-                buyerIndexSql = 'SELECT Status = 1 FROM cryapp_cryorder WHERE ShopId_id <> '+ str(lockOrderlist[0].id) + buyerIndexSqlMove + ' ' + ' GROUP BY GoodId_id'
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 and ShopId_id <> '+ lockOrderlist[0].id + buyerIndexSqlMove + ' ' + ' GROUP BY GoodId_id'
             orderdict = CryOrder.objects.raw(buyerIndexSql)
             # Html_file= open("bug.html","w")
-            # Html_file.write(datetime.now()+buyerIndexSql+type(orderdict)+orderdict)
+            # Html_file.write(datetime.now()+bxuyerIndexSql+type(orderdict)+orderdict)
             # Html_file.close
             return render(request, 'material/index.html', {'orderdict':orderdict})
         else:

@@ -5175,3 +5175,108 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 162, in get
     Html_file= open("/bug.html","w")
 PermissionError: [Errno 13] Permission denied: '/bug.html'
+2017-07-04 16:33:24,041 [Thread-11:123145568350208] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 165, in get
+    return render(request, 'material/index.html', {'orderdict':orderdict})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1252, in __iter__
+    raise InvalidQuery('Raw query must include the primary key')
+django.db.models.query_utils.InvalidQuery: Raw query must include the primary key
+2017-07-04 16:34:50,089 [Thread-25:123145568350208] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 165, in get
+    return render(request, 'material/index.html', {'orderdict':orderdict})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 68, in render_to_string
+    return template.render(context, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 208, in render
+    return self._render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 994, in render
+    bit = node.render_annotated(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/defaulttags.py", line 165, in render
+    values = list(values)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1252, in __iter__
+    raise InvalidQuery('Raw query must include the primary key')
+django.db.models.query_utils.InvalidQuery: Raw query must include the primary key
+2017-07-04 16:34:52,627 [Thread-26:123145568350208] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-07-04 16:44:40,493 [Thread-34:123145434931200] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 317, in post
+    saveorder()
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 274, in saveorder
+    savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort=1, ShopId=saveshop, Status=1, GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'], Express=0, buyerMoney=buyercost, sellerMoney=sellercost)
+NameError: free variable 'getGoods' referenced before assignment in enclosing scope
+2017-07-04 16:46:24,316 [Thread-36:123145434931200] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /cryapp/GoodIndexAdd/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/auth/mixins.py", line 56, in dispatch
+    return super(LoginRequiredMixin, self).dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 317, in post
+    saveorder()
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 274, in saveorder
+    savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort=1, ShopId=saveshop, Status=1, GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'], Express=0, buyerMoney=buyercost, sellerMoney=sellercost)
+NameError: free variable 'getGoods' referenced before assignment in enclosing scope
