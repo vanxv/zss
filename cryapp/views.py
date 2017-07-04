@@ -196,17 +196,17 @@ def GetGoods(request, goodid):
                 #mobileuserexists = mobileid.objects.filter(mobileid=phoneid_post)
                 #mobileuserexists1 = mobileuserexists.filter(user=request.user.id).exists()
                 #if mobileuserexists1:
-                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(),Remarks='mobileid not have')
-                    blacklistlogcreate.save()
-                    return redirect('/')
+                blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(),Remarks='mobileid not have')
+                blacklistlogcreate.save()
+                return redirect('/')
                 #else:
-                    mobileidget = mobileid.objects.get(mobileid=phoneid_post)
-                    # printtext = open('debug.txt', 'w+')
-                    # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
+                mobileidget = mobileid.objects.get(mobileid=phoneid_post)
+                # printtext = open('debug.txt', 'w+')
+                # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
                     # printtext.close()
-                    mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
-                    mobilelogcreate.save()
-                    return
+                mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
+                mobilelogcreate.save()
+                return
 
 
             else:
