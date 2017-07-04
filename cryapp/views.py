@@ -193,7 +193,7 @@ def GetGoods(request, goodid):
                 return redirect('/webbrowser/')
             if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 0:
                 if len(mobileid.objects.filter(mobileid=str(phoneid_post)).filter(~Q(user=request.user.id)).values()) > 0:
-                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(request),Remarks=(request.user.id+'ERROR:mobileid not have:'))
+                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(request),Remarks='ERROR:mobileid not have:')
                     blacklistlogcreate.save()
                     return redirect('/')
                 else:
