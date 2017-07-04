@@ -159,6 +159,9 @@ class buyerIndex(View):
                     buyerIndexSqlMove = buyerIndexSqlMove + ' AND ShopId_id <>' + str(lockOrderlist[i].id)
                 buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE ShopId_id <> '+ str(lockOrderlist[0].id) + buyerIndexSqlMove + ' GROUP BY GoodId_id'
             orderdict = CryOrder.objects.raw(buyerIndexSql)
+            Html_file= open("bug.html","w")
+            Html_file.write(buyerIndexSql)
+            Html_file.close
             return render(request, 'material/index.html', {'orderdict':orderdict})
         else:
             orderdict = CryOrder.objects.raw('SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id)')
