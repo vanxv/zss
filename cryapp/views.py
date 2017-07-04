@@ -175,7 +175,6 @@ def GetGoods(request, goodid):
         return render(request, 'material/product.html', {'goodsview':goodsview,'money':money[0]})
 
     elif request.method == "POST":
-
         def Platform_account(request):
             goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
             if goodsviews.platform == 'tmall' or goodsviews.platform == 'taobao' or goodsviews.platform == '1688':
@@ -193,16 +192,16 @@ def GetGoods(request, goodid):
                 print('open')
                 return redirect('/webbrowser/')
             mobileidvalues = mobileid.objects.filter(mobileid=phoneid_post)
-            if mobileidvalues.exists():
-                mobileuserexists1 = mobileidvalues.filter(user=request.user.id)
-                if mobileuserexists1.exists():
-                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(),Remarks='mobileid not have')
+            if mobileidvalues.exists() == True:
+                mobileuserexists1 = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user))
+                if mobileuserexists1.exists() == True:
+                    blacklistlogcreate = blacklistlog.objects.create(user=request.user,resip=ip(request),Remarks='request.user.id:'+str(request.user.id)+'mobileid not have:'+phoneid_post)
                     blacklistlogcreate.save()
                     return redirect('/')
                 else:
                     mobileidget = mobileid.objects.get(mobileid=phoneid_post)
-                # printtext = open('debug.txt', 'w+')
-                # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
+                    # printtext = open('debug.txt', 'w+')
+                    # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
                     # printtext.close()
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
                     mobilelogcreate.save()
