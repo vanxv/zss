@@ -186,7 +186,7 @@ def GetGoods(request, goodid):
                     return HttpResponseRedirect('/cryapp/buyer/users/')
         def iphoneid_authentication(request):
             phoneid_post = str(request.POST['phoneid'])
-            if len(phoneid_post) == 0:
+            if phoneid_post == '':
                 printtext = open('debug.txt','w+')
                 printtext.write(str(datetime.now())+str(len(phoneid_post))+'188'+'phoneid_post:'+str(phoneid_post))
                 printtext.close()
