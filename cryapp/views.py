@@ -190,6 +190,7 @@ def GetGoods(request, goodid):
                 printtext = open('debug.txt','w+')
                 printtext.write(str(datetime.now())+str(phoneid_post)+'188'+'phoneid_post:'+str(phoneid_post))
                 printtext.close()
+                print('open')
                 return redirect('/webbrowser/')
             mobileidvalues = mobileid.objects.filter(mobileid=phoneid_post)
             if mobileidvalues.exists():
