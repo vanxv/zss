@@ -192,7 +192,10 @@ def GetGoods(request, goodid):
                 printtext.close()
                 return redirect('/webbrowser/')
             if len(mobileid.objects.filter(mobileid=phoneid_post).values()) > 0:
-                if len(mobileid.objects.filter(mobileid=str(phoneid_post)).filter(~Q(user=request.user)).values()) > 0:
+                if len(mobileid.objects.filter(mobileid=str(phoneid_post)).filter(~Q(user=request.user.id)).values()) > 0:
+                    printtext = open('debug.txt', 'w+')
+                    printtext.write(str('hardid No have 200line'))
+                    printtext.close()
                     blacklistlogcreate = blacklistlog.objects.create(user=request.user,ip=ip(request),Remarks='mobileid not have')
                     blacklistlogcreate.save()
                     return redirect('/')
