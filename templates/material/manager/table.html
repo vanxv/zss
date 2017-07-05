@@ -1,0 +1,283 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{% static "/assets/img/apple-icon.png" %}"/>
+	<link rel="icon" type="image/png" href="{%static "/assets/img/favicon.png"  %}"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>会员管理后台</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="{%static "/assets/css/bootstrap.min.css" %}" rel="stylesheet" />
+
+    <!--  Material Dashboard CSS    -->
+    <link href="{%static "/assets/css/material-dashboard.css" %}" rel="stylesheet"/>
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="{%static "/assets/css/demo.css" %}" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+
+	<div class="wrapper">
+	    <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
+			<!--
+		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+
+		        Tip 2: you can also add an image using data-image tag
+		    -->
+
+			<div class="logo">
+				<a href="http://www.zhess.com" class="simple-text">
+					会员中心
+				</a>
+			</div>
+	    	<div class="sidebar-wrapper">
+	            <ul class="nav">
+
+	                <li class="active">
+	                    <a href="/users/manage/">
+	                        <i class="material-icons">inbox</i>
+	                        <p>管理试用</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="/users/manage/statussix/">
+	                        <i class="material-icons">inbox</i>
+	                        <p>我的任务</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="/users/manage/hardware/">
+	                        <i class="material-icons">user</i>
+	                        <p>硬件管理</p>
+	                    </a>
+	                </li>
+	                <li>
+	                    <a href="/users/manage/statusseven/">
+	                        <i class="material-icons">inbox</i>
+	                        <p>审核区</p>
+	                    </a>
+	                </li>
+
+		</div>
+		</div>
+	    <div class="main-panel">
+			<nav class="navbar navbar-transparent navbar-absolute">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Table List</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">dashboard</i>
+									<p class="hidden-lg hidden-md">Dashboard</p>
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">notifications</i>
+									<span class="notification">5</span>
+									<p class="hidden-lg hidden-md">Notifications</p>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Mike John responded to your email</a></li>
+									<li><a href="#">You have 5 new tasks</a></li>
+									<li><a href="#">You're now friend with Andrew</a></li>
+									<li><a href="#">Another Notification</a></li>
+									<li><a href="#">Another One</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
+	 							   <i class="material-icons">person</i>
+	 							   <p class="hidden-lg hidden-md">Profile</p>
+	 						   </a>
+							</li>
+						</ul>
+
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group  is-empty">
+	                        	<input type="text" class="form-control" placeholder="Search">
+	                        	<span class="material-input"></span>
+							</div>
+							<button type="submit" class="btn btn-white btn-round btn-just-icon">
+								<i class="material-icons">search</i><div class="ripple-container"></div>
+							</button>
+	                    </form>
+					</div>
+				</div>
+			</nav>
+
+	        <div class="content">
+	            <div class="container-fluid">
+	                <div class="row">
+
+	                    <div class="col-md-12">
+	                        <div class="card">
+	                            <div class="card-header" data-background-color="purple">
+	                                <h4 class="title">Simple Table</h4>
+	                                <p class="category">Here is a subtitle for this table</p>
+	                            </div>
+	                            <div class="card-content table-responsive">
+	                                <table class="table">
+	                                    <thead class="text-primary">
+                                    <th>产品图片</th>
+                                    <th>关键词</th>
+                                    <th>用户名</th>
+                                    <th>平台订单号</th>
+                                    <th>金额</th>
+                                    <th>试用费</th>
+                                    <th>操作</th>
+
+	                                    </thead>
+	                                    <tbody>
+	                                        <tr>
+
+
+    {% for contact in CryOrderfilter %}
+    {# Each "contact" is a Contact model object. #}
+
+
+    <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
+    <th>{{ contact.Keywords }}</th>
+    <th>{{ contact.Userid.username }}</th>
+    <th>{{ contact.PlatformOrdersid }}</th>
+    <th>{{ contact.Money }}</th>
+    <th></th>
+<th>
+{% if contact.Status == 6 %}
+    <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="post">
+    <button value="编辑" type="submit" class="btn btn-primary pull-right">确认</button>
+    </form>
+    <form action="/users/manage/edit/{{ contact.id }}/" method="get">
+    <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
+    </form>
+     <form action="/users/manage/delete/{{ contact.id }}/" method="POST">
+    <button value="编辑" type="submit" class="btn btn-primary pull-right">删除</button>
+     </form>
+    {% elif contact.Status == 7 %}
+    <form action="/cryapp/seller/orders/done/{{ contact.id }}/" method="post">
+    <button value="编辑" type="submit" class="btn btn-primary pull-right">审核通过</button>
+    </form>
+    <form action="/users/manage/edit/{{ contact.id }}/" method="get">
+    <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
+    </form>
+     <form action="/users/manage/delete/{{ contact.id }}/" method="POST">
+    <button value="编辑" type="submit" class="btn btn-primary pull-right">删除</button>
+     </form>
+    {% elif contact.Status == 8 %}
+    完成订单
+    {% else %}
+        <form action="/users/manage/get/{{ contact.id }}/" method="post">
+            <input type="submit" value="领取"  class="btn btn-primary pull-right">
+        </form>
+</th>
+{% endif %}
+</tr>
+{% endfor %}
+
+
+	                                    </tbody>
+	                                </table>
+
+	                            </div>
+	                        </div>
+	                    </div>
+
+<div class="pagination" style="">
+    <span class="step-links">
+        {% if orderslists.has_previous %}
+            <a href="?page={{ orderslists.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        <span class="current">
+             {{ orderslists.number }} of {{ orderslists.paginator.num_pages }}.
+        </span>
+
+        {% if orderslists.has_next %}
+            <a href="?page={{ orderslists.next_page_number }}">下一页</a>
+        {% endif %}
+    </span>
+</div>
+</div>
+	                </div>
+	            </div>
+	        </div>
+
+	        <footer class="footer">
+	            <div class="container-fluid">
+	                <nav class="pull-left">
+	                    <ul>
+	                        <li>
+	                            <a href="#">
+	                                Home
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                Company
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                                Portfolio
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+	                               Blog
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </nav>
+	                <p class="copyright pull-right">
+	                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.zhess.com">www.zhess.com</a>, made with love for a better web
+	                </p>
+	            </div>
+	        </footer>
+	    </div>
+	</div>
+
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="{%static "/assets/js/jquery-3.1.0.min.js" %}" type="text/javascript"></script>
+	<script src="{%static "/assets/js/bootstrap.min.js" %}" type="text/javascript"></script>
+	<script src="{%static "/assets/js/material.min.js" %}" type="text/javascript"></script>
+
+	<!--  Charts Plugin -->
+	<script src="{%static "/assets/js/chartist.min.js" %}"></script>
+
+	<!--  Notifications Plugin    -->
+	<script src="{%static "/assets/js/bootstrap-notify.js" %}"></script>
+
+	<!--  Google Maps Plugin    -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!-- Material Dashboard javascript methods -->
+	<script src="{%static "/assets/js/material-dashboard.js" %}"></script>
+
+	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
+	<script src="{%static "/assets/js/demo.js" %}"></script>
+
+</html>

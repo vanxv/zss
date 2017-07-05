@@ -22,6 +22,10 @@ StatusChoices =(
     (3, '提交等待审核'),
     (4, '审核不通过'),
     (5, '完成'),
+    (6, '操作员接试用'),
+    (7, '等待审核'),
+    (8, '操作员完成'),
+
 )
 # Create your models here.
 class CryOrder(models.Model):
@@ -30,6 +34,7 @@ class CryOrder(models.Model):
     ShopId = models.ForeignKey(Shop, verbose_name=u'Shopid')
     Userid = models.ForeignKey(AuthUser, related_name='Userid')
     buyerid = models.ForeignKey(AuthUser, related_name='buyerid', null=True)
+    managerid = models.ForeignKey(AuthUser, related_name='managerid', null=True)
     Money = models.DecimalField(max_digits=12, decimal_places=2, name='Money', null=True)
     Express = models.DecimalField(max_digits=12, decimal_places=2, verbose_name=u'快递费', null=True)
     sellerMoney = models.DecimalField(max_digits=12, decimal_places=2, verbose_name=u'商家费用', null=True)

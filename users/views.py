@@ -3,10 +3,12 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.hashers import make_password
-from .models import AuthUser, pcGuid, pcGuidLog, Visuallog, tbUsername, jdUsername, real_name,blacklistlog
+from .models import AuthUser, pcGuid, pcGuidLog, Visuallog, tbUsername, jdUsername, real_name,blacklistlog, pcGuid, pcGuidLog
 from django.views.generic.base import View
+from cryapp.models import CryOrder
 from .forms import LoginForm, RegisterForm, tbForm, jdForm
 from cryapp.models import CryOrder
+from django.db.models import Q
 from goods.models import Goods
 from financial.models import deposit
 from cryapp.views import authenticationlogin
@@ -146,9 +148,103 @@ def get_client_ip(request):
         ip = request.META.get('REMOTE_ADDR')
     return ip
 
+def managelogin(request):
+    if not request.user.is_authenticated:
+        return render(request, 'login.html')
+    if not AuthUser.objects.filter(id=request.user.id).filter(is_staff=1).exists():
+        return render(request, "login.html")
+    return
+
+#------ manageviews -------#
+def manage(request):
+    managelogin(request)
+    if request.method == 'GET':
+        CryOrderfilter = CryOrder.objects.filter(~Q(Status=0),~Q(Status=5),~Q(Status=8),~Q(Status=6)).order_by('-AddTime')
+        return render(request, 'material/manager/table.html',{'CryOrderfilter':CryOrderfilter})
+    if request.method == 'POST':
+        return render(request, 'material/manager/table.html')
+
+#------ manageviews -------#
+
+def manage_hardware(request):
+    managelogin(request)
+    if request.method == 'GET':
+        return render(request, 'material/manager/hardware.html')
+    if request.method == 'POST':
+        username = request.POST['username']
+        hardware = str(request.POST['hardware'])
+        if not pcGuid.objects.filter(pcGuid=hardware).filter(user__username=username).exists():
+            if not AuthUser.objects.filter(user__username=username).exists():
+                return render(request, 'material/manager/hardware.html', {'test':'账户不存在'})
+            else:
+                GuidgetUsername = AuthUser.objects.get(username=username)
+                pcGuidsave = pcGuid.objects.create(user=GuidgetUsername, PcGuid=hardware)
+                pcGuidsave.save()
+                pcGuidLogsave = pcGuidLog.objects.create(user = GuidgetUsername,PcGuid = pcGuidsave, resip = get_client_ip(), visual = 0)
+                return render(request, 'material/manager/hardware.html', {'test':'增加了新硬件与登录记录'})
+
+        else:
+            GuidgetUsername = AuthUser.objects.get(username=username)
+            pcGuidsave = pcGuid.objects.get(PcGuid=hardware)
+            pcGuidLogsave = pcGuidLog.objects.create(user=GuidgetUsername, PcGuid=pcGuidsave, resip=get_client_ip(),visual=0)
+            return render(request, 'material/manager/hardware.html', {'test': '增加了登录记录'})
 
 
-#--------- tb 1688 -----#
+#----status6 ----#
+def managestatusSix(request):
+        managelogin(request)
+        if request.method == 'GET':
+            CryOrderfilter = CryOrder.objects.filter(Status=6, managerid=request.user).order_by('-AddTime')
+            return render(request, 'material/manager/table.html', {'CryOrderfilter': CryOrderfilter})
+
+#----status7 ----#
+def managestatusSeven(request):
+        managelogin(request)
+        if request.method == 'GET':
+            CryOrderfilter = CryOrder.objects.filter(Q(Status=7)).order_by('-AddTime')
+            return render(request, 'material/manager/table.html', {'CryOrderfilter': CryOrderfilter})
+
+# ----update order----#
+def getorder(request, cryorders_id=0):
+    managelogin(request)
+    if request.method == 'POST':
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=6, managerid=request.user, buyerMoney=3.5)
+        return redirect('/users/manage/')
+
+def update_cryorder_statussix(request, cryorders_id=0):
+    managelogin(request)
+    if request.method == 'POST':
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=7, managerid=request.user, buyerMoney=3.5)
+        return redirect('/users/manage/')
+
+def update_cryorder_statusSeven(request, cryorders_id=0):
+    managelogin(request)
+    if request.method == 'POST':
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=6, managerid=request.user, buyerMoney=3.5)
+        return redirect('/users/manage/')
+
+def update_cryorder_delete(request, cryorders_id=0):
+    managelogin(request)
+    if request.method == 'POST':
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=1, managerid='', buyerMoney='')
+        return redirect('/users/manage/')
+
+def cryorder_edit(request, cryorders_id=0):
+    managelogin(request)
+    if request.method == 'GET':
+        return render(request, 'material/manager/project_edit.html')
+    if request.method == 'POST':
+        return redirect('/users/manage/')
+# ----update order----#
+
+
+
+
+
+# ------ manageviews -------#
+
+
+#------ tb 1688 -----#
 def tb(request):
     authenticationlogin_def = authenticationlogin(request)
     if not authenticationlogin_def is None:
