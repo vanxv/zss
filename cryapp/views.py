@@ -368,7 +368,7 @@ def cryapp_edit(request, cryorders_id = 0):
 #-------seller CRUD -----#
 def cryapp_buyer_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, buyerid=None)
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, buyerid=None, tbUsername=None, jdUsername=None,)
     return redirect('/cryapp/buyer/orders/')
 
 #----- buyer CRUD ----#

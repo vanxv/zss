@@ -23,5 +23,5 @@ urlpatterns=[
     #------ managerbuyer ---#
 
     #--- buyer CRUD --#
-    url(r'^orders/buyer/orders/delete/(?P<cryorders_id>\d+)/$', views.cryapp_buyer_delete, name='cryorders_buyer_delete'),
+    url(r'^buyer/orders/delete/(?P<cryorders_id>\d+)/$', views.cryapp_buyer_delete, name='cryorders_buyer_delete'),
 ]
