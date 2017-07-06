@@ -149,7 +149,8 @@
 	                                    <thead class="text-primary">
                                     <th>产品图片</th>
                                     <th>关键词</th>
-                                    <th>订单编号</th>
+                                    <th>账户</th>
+
                                     <th>平台订单号</th>
                                     <th>金额</th>
                                     <th>操作</th>
@@ -165,9 +166,16 @@
 
     <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
     <th>{{ contact.Keywords }}</th>
-    <th>{{ contact.id }}</th>
-    <th>{{ contact.PlatformOrdersid }}</th>
-    <th>{{ contact.Money }}</th>
+    <th>手机：{{ contact.Userid.username }}<br>
+     淘宝:{{ contact.tbUsername.tbUsername }}
+        <br>
+     京东:{{ contact.tbUsername.tbUsername }}</th>
+    <th>
+        订单编号：{{ contact.id }}<br>
+        平台单号：{{ contact.PlatformOrdersid }}</th>
+    <th>产品金额：{{ contact.Money }}<br>
+        </th>
+    <th></th>
 <th>
 {% if contact.Status == 1 %}
      <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="get">
@@ -192,6 +200,16 @@
             <button>审核通过</button></td>
     {% elif contact.Status == 5 %}
         <h5>试用完成</h5>
+    {% elif contact.Status == 6 %}
+     <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="get">
+         <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
+     </form>
+    {% elif contact.Status == 7 %}
+     <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="get">
+         <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
+     </form>
+    {% elif contact.Status == 8 %}
+    <h5>试用完成</h5>
     {% endif %}
 </th>
         </form>

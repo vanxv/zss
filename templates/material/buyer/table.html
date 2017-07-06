@@ -203,6 +203,13 @@
         <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button></form>
 {% elif contact.Status == 5 %}
 <h2>订单完成</h2>
+{% elif contact.Status == 6 %}
+<h2>任务审核中</h2>
+{% elif contact.Status == 7 %}
+<h2>任务审核中</h2>
+{% elif contact.Status == 8 %}
+<h2>订单完成</h2>
+
 {% endif %}
 </th>
 {% endif %}

@@ -20,6 +20,7 @@ orderBill_orderBillSort =(
     (0, 'refund'),
     (1, 'CryOrders'),
     (2, 'cost'),
+    (3, 'manageorders'),
 )
 
 class orderBill(models.Model):
@@ -90,7 +91,7 @@ class alipayDetail(models.Model):
     alipayid = models.CharField(max_length=70, name='alipayid', unique=True)
     alipayNote = models.CharField(max_length=200, name='alipayNote')
     alipayAmount = models.DecimalField(decimal_places=2, max_digits=6, name='alipayAmount')
-    datetime = models.DateTimeField(default=timezone.now())
+    datetime = models.DateTimeField(default=timezone.now)
     alipayUsername = models.CharField(max_length=50, name='alipayusername', null=True)
     userid = models.ForeignKey(AuthUser, null=True)
 

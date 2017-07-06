@@ -6151,3 +6151,151 @@ ValueError: The view users.views.managestatusSix didn't return an HttpResponse o
 2017-07-06 00:01:07,275 [Thread-9:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manager/
 2017-07-06 00:01:23,934 [Thread-12:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
 2017-07-06 00:01:41,190 [Thread-15:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 00:03:42,196 [Thread-18:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 00:04:14,158 [Thread-21:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 00:04:27,863 [Thread-24:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 00:04:32,625 [Thread-26:123145440067584] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 00:06:08,920 [Thread-7:123145576529920] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/delete/1499158010672513/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.update_cryorder_delete didn't return an HttpResponse object. It returned None instead.
+2017-07-06 00:06:28,551 [Thread-13:123145576529920] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/delete/1499158010672513/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.update_cryorder_delete didn't return an HttpResponse object. It returned None instead.
+2017-07-06 00:07:09,825 [Thread-19:123145576529920] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/delete/1499158010672513/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view users.views.update_cryorder_delete didn't return an HttpResponse object. It returned None instead.
+2017-07-06 00:07:57,267 [Thread-29:123145576529920] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 00:08:03,797 [Thread-31:123145576529920] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 00:08:54,716 [Thread-32:123145576529920] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/
+2017-07-06 00:09:15,366 [Thread-34:123145576529920] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 00:13:37,507 [Thread-8:123145591549952] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 07:09:36,657 [Thread-8:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /manager/
+2017-07-06 07:09:54,712 [Thread-11:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /user/manager/
+2017-07-06 07:09:56,818 [Thread-12:123145397248000] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manager/
+2017-07-06 07:10:23,572 [Thread-15:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:10:38,089 [Thread-18:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:10:44,437 [Thread-20:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 07:11:05,778 [Thread-23:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:11:10,403 [Thread-25:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 07:11:28,933 [Thread-29:123145397248000] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 07:11:33,331 [Thread-31:123145397248000] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 07:12:06,409 [Thread-36:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:12:26,120 [Thread-39:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:12:40,316 [Thread-43:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:13:24,276 [Thread-47:123145391992832] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:14:14,126 [Thread-13:123145582759936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:14:39,207 [Thread-17:123145582759936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:14:54,076 [Thread-20:123145582759936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:15:07,956 [Thread-23:123145582759936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 07:15:11,209 [Thread-25:123145582759936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 07:15:15,516 [Thread-27:123145582759936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 10:59:30,731 [Thread-9:123145519276032] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 10:59:51,151 [Thread-13:123145519276032] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:00:21,885 [Thread-19:123145519276032] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:00:42,614 [Thread-25:123145514020864] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:00:48,003 [Thread-27:123145514020864] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:00:58,747 [Thread-30:123145514020864] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:01:03,743 [Thread-32:123145514020864] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:01:18,738 [Thread-38:123145514020864] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:01:23,884 [Thread-41:123145524531200] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:01:27,351 [Thread-44:123145519276032] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:02:41,728 [Thread-8:123145482919936] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:02:51,926 [Thread-11:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:02:56,595 [Thread-13:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:03:02,698 [Thread-16:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:03:07,254 [Thread-18:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:03:15,906 [Thread-20:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:03:18,823 [Thread-22:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:03:33,404 [Thread-25:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:03:35,359 [Thread-27:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:03:38,477 [Thread-29:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:06:25,203 [Thread-31:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:06:36,181 [Thread-33:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:06:42,730 [Thread-35:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:07:04,300 [Thread-37:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:07:12,868 [Thread-40:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:07:16,693 [Thread-42:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:07:22,827 [Thread-44:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:07:24,465 [Thread-46:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:07:38,991 [Thread-48:123145477664768] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:19:35,649 [Thread-8:123145487122432] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/edit/14984754359416711/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'Note'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 238, in cryorder_edit
+    updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['Note'],PlatformOrdersid=request.POST['orderid'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'Note'"
+2017-07-06 11:19:36,771 [Thread-9:123145487122432] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-07-06 11:20:01,931 [Thread-7:123145506828288] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/edit/14984754359416711/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'orderid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 238, in cryorder_edit
+    updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['note'],PlatformOrdersid=request.POST['orderid'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'orderid'"
+2017-07-06 11:20:40,072 [Thread-7:123145558761472] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/edit/14984754359416711/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'cryorderid'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 238, in cryorder_edit
+    updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['note'],PlatformOrdersid=request.POST['cryorderid'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'cryorderid'"
+2017-07-06 11:26:06,693 [Thread-10:123145429909504] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:26:21,424 [Thread-14:123145429909504] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:28:16,484 [Thread-10:123145569046528] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:28:22,412 [Thread-13:123145569046528] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:28:24,764 [Thread-15:123145569046528] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 11:28:26,898 [Thread-17:123145569046528] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:51:52,373 [Thread-9:123145411047424] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-07-06 11:52:17,726 [Thread-12:123145405792256] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg

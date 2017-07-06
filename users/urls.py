@@ -14,6 +14,9 @@ urlpatterns = [
     url(r'^manage/get/(?P<cryorders_id>\d+)/$', views.getorder, name='ordersdone'),
     url(r'^manage/statussix/$', views.managestatusSix),
     url(r'^manage/statusseven/$', views.managestatusSeven),
+
+    url(r'^manage/upstatusseven/(?P<cryorders_id>\d+)/$', views.update_cryorder_statussix),
+    url(r'^manage/done/(?P<cryorders_id>\d+)/$', views.cryorder_done),
     url(r'^manage/delete/(?P<cryorders_id>\d+)/$', views.update_cryorder_delete, name='ordersdelete'),
     url(r'^manage/edit/(?P<cryorders_id>\d+)/$', views.cryorder_edit, name='ordersedit'),
 ]

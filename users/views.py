@@ -8,9 +8,9 @@ from django.views.generic.base import View
 from cryapp.models import CryOrder
 from .forms import LoginForm, RegisterForm, tbForm, jdForm
 from cryapp.models import CryOrder
-from django.db.models import Q
+from django.db.models import Q,F
 from goods.models import Goods
-from financial.models import deposit
+from financial.models import deposit, orderBill
 from cryapp.views import authenticationlogin
 # Create your views here.
 
@@ -159,7 +159,7 @@ def managelogin(request):
 def manage(request):
     managelogin(request)
     if request.method == 'GET':
-        CryOrderfilter = CryOrder.objects.filter(~Q(Status=0),~Q(Status=5),~Q(Status=8),~Q(Status=6)).order_by('-AddTime')
+        CryOrderfilter = CryOrder.objects.filter(~Q(Status=0),~Q(Status=1),~Q(Status=5),~Q(Status=8),~Q(Status=6)).order_by('-AddTime')
         return render(request, 'material/manager/table.html',{'CryOrderfilter':CryOrderfilter})
     if request.method == 'POST':
         return render(request, 'material/manager/table.html')
@@ -214,7 +214,7 @@ def getorder(request, cryorders_id=0):
 def update_cryorder_statussix(request, cryorders_id=0):
     managelogin(request)
     if request.method == 'POST':
-        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=7, managerid=request.user, buyerMoney=3.5)
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=7)
         return redirect('/users/manage/')
 
 def update_cryorder_statusSeven(request, cryorders_id=0):
@@ -226,15 +226,45 @@ def update_cryorder_statusSeven(request, cryorders_id=0):
 def update_cryorder_delete(request, cryorders_id=0):
     managelogin(request)
     if request.method == 'POST':
-        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=1, managerid='', buyerMoney='')
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=1, managerid=None, buyerMoney=None, tbUsername=None, jdUsername=None)
         return redirect('/users/manage/')
 
 def cryorder_edit(request, cryorders_id=0):
     managelogin(request)
+    getorderedit = CryOrder.objects.get(id=cryorders_id)
     if request.method == 'GET':
-        return render(request, 'material/manager/project_edit.html')
+        return render(request, 'material/manager/project_edit.html', {'order':getorderedit})
     if request.method == 'POST':
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['note'],PlatformOrdersid=request.POST['platformid'], buyerMoney=request.POST['crymoney'])
         return redirect('/users/manage/')
+
+def cryorder_done(request, cryorders_id=0):
+    managelogin(request)
+    cryordersGet = CryOrder.objects.get(id=cryorders_id)
+    if request.method == 'POST':
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=8)
+        Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet,
+                                                     total_amount=(-cryordersGet.Express - cryordersGet.sellerMoney),
+                                                     orderBillSort=1)
+        Createsellermoney.save()
+        Createbuyermoney = orderBill.objects.create(CryOrderid=cryordersGet,
+                                                    total_amount=(cryordersGet.Express + cryordersGet.buyerMoney),
+                                                    orderBillSort=1)
+        Createbuyermoney.save()
+        CreatesellerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Money),
+                                                    orderBillSort=2)
+        CreatesellerCost.save()
+        CreatebuyerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Money),
+                                                   orderBillSort=2)
+        CreatebuyerCost.save()
+        depositSeller = deposit.objects.get(user=cryordersGet.Userid)
+        depositSeller.deposit = F('deposit') - (cryordersGet.Money + cryordersGet.Express + cryordersGet.sellerMoney)
+        depositSeller.save()
+        depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
+        depositbuyer.deposit = F('deposit') + (cryordersGet.Money + cryordersGet.Express + cryordersGet.buyerMoney)
+        depositbuyer.save()
+
+        return redirect('/users/manage/statusseven/')
 # ----update order----#
 
 

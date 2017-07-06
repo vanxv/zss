@@ -1,6 +1,6 @@
 from django.db import models
 from goods.models import Goods, Shop
-from users.models import AuthUser
+from users.models import AuthUser, tbUsername,jdUsername
 from datetime import datetime
 from libs.utils.string_extension import get_uuid
 
@@ -35,6 +35,8 @@ class CryOrder(models.Model):
     Userid = models.ForeignKey(AuthUser, related_name='Userid')
     buyerid = models.ForeignKey(AuthUser, related_name='buyerid', null=True)
     managerid = models.ForeignKey(AuthUser, related_name='managerid', null=True)
+    tbUsername = models.ForeignKey(tbUsername, related_name='tbid', null=True)
+    jdUsername = models.ForeignKey(jdUsername, related_name='jdid', null=True)
     Money = models.DecimalField(max_digits=12, decimal_places=2, name='Money', null=True)
     Express = models.DecimalField(max_digits=12, decimal_places=2, verbose_name=u'快递费', null=True)
     sellerMoney = models.DecimalField(max_digits=12, decimal_places=2, verbose_name=u'商家费用', null=True)

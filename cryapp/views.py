@@ -237,12 +237,16 @@ def GetGoods(request, goodid):
             return Platform_account_def
 
         #--Authentication phonelog---#
+        if goodsviews.platform == 'jd':
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, jdUsername=jdUsername.objects.get(user=request.user).jdUsername)
+            return redirect('/cryapp/buyer/orders/')
+        else:
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, tbUsername=tbUsername.objects.get(user=request.user).tbUsername)
+            return redirect('/cryapp/buyer/orders/')
 
-        goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2)
-        return redirect('/cryapp/buyer/orders/')
 
 
-            #--- Authentication phonelog ---#
+        #--- Authentication phonelog ---#
             #-- hard authentiaction
             # yesterday = datetime.now() - timedelta(hours=1)
             # pcguid = pcGuidLog.objects.filter(user=request.user.id).filter(addtime__gt=yesterday)
@@ -320,7 +324,7 @@ class Good_Index_Add(LoginRequiredMixin, View):
 #-------seller CRUD -----#
 def cryapp_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0)
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0, tbUsername=None,jdUsername=None)
     return redirect('/cryapp/seller/orders/')
 
 def ordersnotdone(request, cryorders_id = 0):
@@ -333,9 +337,10 @@ def ordersdone(request, cryorders_id = 0):
     # - create money
     cryordersGet = CryOrder.objects.get(id=cryorders)
     # - create money
-    Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Express-cryordersGet.sellerMoney), orderBillSort=1)
+    through = CryOrder.objects.filter(id=cryorders).update(Status=5)
+    Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Express-cryordersGet.sellerMoney), orderBillSort=3)
     Createsellermoney.save()
-    Createbuyermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Express+cryordersGet.buyerMoney), orderBillSort=1)
+    Createbuyermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Express+cryordersGet.buyerMoney), orderBillSort=3)
     Createbuyermoney.save()
     CreatesellerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Money), orderBillSort=2)
     CreatesellerCost.save()
@@ -347,7 +352,6 @@ def ordersdone(request, cryorders_id = 0):
     depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
     depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+cryordersGet.buyerMoney)
     depositbuyer.save()
-    through = CryOrder.objects.filter(id=cryorders).update(Status=5)
     return redirect('/cryapp/seller/orders/')
 
 # ---- seller_edit------#
