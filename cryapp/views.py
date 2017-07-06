@@ -238,10 +238,10 @@ def GetGoods(request, goodid):
 
         #--Authentication phonelog---#
         if goodsviews.platform == 'jd':
-            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, jdUsername=jdUsername.objects.get(user=request.user).jdUsername)
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, jdUsername=jdUsername.objects.get(user=request.user))
             return redirect('/cryapp/buyer/orders/')
         else:
-            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, tbUsername=tbUsername.objects.get(user=request.user).tbUsername)
+            goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, tbUsername=tbUsername.objects.get(user=request.user))
             return redirect('/cryapp/buyer/orders/')
 
 

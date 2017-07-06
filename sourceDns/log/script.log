@@ -6299,3 +6299,4 @@ django.utils.datastructures.MultiValueDictKeyError: "'cryorderid'"
 2017-07-06 11:28:26,898 [Thread-17:123145569046528] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
 2017-07-06 11:51:52,373 [Thread-9:123145411047424] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
 2017-07-06 11:52:17,726 [Thread-12:123145405792256] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-07-06 16:03:35,736 [Thread-15:123145529593856] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
