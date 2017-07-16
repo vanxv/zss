@@ -5,7 +5,8 @@
 # appium原理：1.server and andriod connection，
 from appium import webdriver
 import time
-
+import requests
+import json
 # using images model
 import os
 import platform
@@ -18,18 +19,7 @@ import pytesseract
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
 # get user tempfile
-desired_caps = {
-                'platformName': 'Android',
-                'deviceName': 'vbox86p',
-                'platformVersion': '4.3',
-                # apk
-                'appPackage': 'com.tencent.mobileqq',
-                # apk launcherActivity
-                'appActivity': '.activity.SplashActivity',
-                'unicodeKeyboard': "True",
-                'resetKeyboard': "True",
-                }
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+
 #DiffImg coding
 class Appium_Extend(object):
     def __init__(self, driver):
@@ -150,18 +140,17 @@ class getimages():
 #using reference
 
 #Need add_QQ_list
-def addPeople():
+def addPeople(number):
     time.sleep(7)
     print('click')
     driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
     time.sleep(5)
     driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').click()
     time.sleep(2)
-    driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys("24782122")
+    driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys(number)
     time.sleep(4)
     #driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]").click()
-    driver.find_element_by_android_uiautomator('new UiSelector().text("24782122")').click()
-    time.sleep(5)
+    #driver.find_element_by_android_uiautomator('new UiSelector().text(' + number +')').click()
     driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
     time.sleep(3)
     driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
@@ -218,11 +207,32 @@ def GetGrouplist():
 def GetGroupPeoplelist():
     pass
 
-def __init__():
-    while wx:
-        GetPoplelist()
-    pass
-#addPeople()
+deviceName = 'vbox86p'
+platformVersion = '4.3'
+response = requests.post('http://127.0.0.1:8000/auto/task/' + deviceName + '/' + platformVersion + '/')
+data = response.json()
+nl = {}
+for x,y in data.iteritems():
+    x = x.encode('utf-8')
+    try:
+        y = y.encode('utf-8')
+    except:
+        y = y
+    nl[x] = y
+#data中 1.APP名，2.Activety名， 3任务信息
+desired_caps = {
+    'platformName': 'Android',
+    'deviceName': deviceName,
+    'platformVersion': platformVersion,
+    # apk
+    'appPackage': nl['appPackage'],
+    # apk launcherActivity
+    'appActivity': nl['appActivity'],
+    'unicodeKeyboard': "True",
+    'resetKeyboard': "True",
+}
+driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+addPeople(nl['AccountId'])
 
 
 

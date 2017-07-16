@@ -37,9 +37,9 @@ mobiletask_taskSort_choices = (
     (6, 'send_message_to_GROUP_list'),
 )
 class mobiletask(models.Model):
-    mobileid = models.ForeignKey(AuthUser)
+    mobileid = models.ForeignKey(mobileid)
     softid = models.ForeignKey(softid)
-    taskSort = models.IntegerField(name='mobileSort', choices=mobiletask_taskSort_choices, null=True)
+    taskSort = models.IntegerField(choices=mobiletask_taskSort_choices, null=True)
     AccountId = models.CharField(null=True, max_length=200, name='AccountId')
     content = models.CharField(null=True, max_length=200, name='content')
     startTime = models.DateTimeField(null=True,default=timezone.now)
