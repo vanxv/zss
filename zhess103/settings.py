@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django_tables2',
     'financial',
     'servers',
+    'auto',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 

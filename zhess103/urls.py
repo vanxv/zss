@@ -50,6 +50,7 @@ from users.models import AuthUser
 #!-------- rest freawork --------------##
 
 urlpatterns = [
+    url(r'^auto/', include('auto.urls', namespace='auto')),
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^blacklist/', include('blacklist.urls', namespace='blacklist')),
