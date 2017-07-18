@@ -14,7 +14,12 @@ import tempfile
 import shutil
 from PIL import Image
 # using images model
-import pytesseract
+#import pytesseract
+
+import multiprocessing
+
+Pool = multiprocessing.Pool
+
 # get user tempfile
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
@@ -139,101 +144,128 @@ class getimages():
 
 #using reference
 
-#Need add_QQ_list
-def addPeople(number):
-    time.sleep(7)
-    print('click')
-    driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
-    time.sleep(5)
-    driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').click()
-    time.sleep(2)
-    driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys(number)
-    time.sleep(4)
-    #driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]").click()
-    #driver.find_element_by_android_uiautomator('new UiSelector().text(' + number +')').click()
-    driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
-    time.sleep(3)
-    driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
-    time.sleep(3)
-    driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys('hello')
-    time.sleep(5)
-    driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
-    print('click')
+class multipleLoop(multiprocessing.Process):
+    def __init__(self, mobile_id_for):
+        multiprocessing.Process.__init__(self)
+        self.mobile_id_for = mobile_id_for
 
-#Need add_Group_list
-def addGroup():
-    time.sleep(7)
-    print('click')
-    driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
-    time.sleep(5)
-    driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').click()
-    time.sleep(2)
-    driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys("24782122")
-    time.sleep(4)
-    #driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]").click()
-    driver.find_element_by_android_uiautomator('new UiSelector().text("24782122")').click()
-    time.sleep(5)
-    driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
-    time.sleep(3)
-    driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
-    time.sleep(3)
-    driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys('hello')
-    time.sleep(5)
-    driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
-    print('click')
+    def run(self):
+        print(self.mobile_id_for)
+        time.sleep(self.mobile_id_for)
+        response = requests.post('http://127.0.0.1:8000/auto/task/' + str(self.mobile_id_for) + '/')
+        data = response.json()
+        mark = {}
+        for x, y in data.items():
+            # x = x.encode('utf-8')
+            # try:
+            #     y = y.encode('utf-8')
+            mark[x] = y
+        # data中 1.APP名，2.Activety名， 3任务信息
+        print(data)
+        desired_caps = {
+            'platformName': 'Android',
+            'deviceName': mark['deviceName'],
+            'platformVersion': mark['platformVersion'],
+            'appPackage': mark['appPackage'],
+            'appActivity': mark['appActivity'],
+            'udid':mark['deviceName'],
+            #'exported': "True",
+            'unicodeKeyboard': "True",
+            'resetKeyboard': "True",
+        }
+        self.driver = webdriver.Remote(mark['webserverurl'], desired_caps)
 
-#Need Send_message_Need_time
-def SendPeopleMessages():
-    pass
-#Need Send_Group_Message_Need_time
-def SendGroupMessages():
-    pass
+        mobiletask_taskSort_choices = (
+        (1, 'add_User'),
+        (2, 'ADD_GROUP'),
+        (3, 'send_message_to_user_Accoutid'),
+        (4, 'send_message_to_GROUP_Accoutid'),
+        (5, 'send_message_to_friend_list'),
+        (6, 'send_message_to_GROUP_list'),
+        )
+        #---- loop select_work----#
+        if mark['taskSort'] == 1:
+            multipleLoop.addPeople(self,mark)
+        elif mark['taskSort'] == 2:
+            pass
+        elif mark['taskSort'] == 3:
+            pass
 
-#No Need
-def GetPoplelist():
-    time.sleep(7)
-    print('click')
-    driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
-    time.sleep(5)
+            # ---- loop select_work----#
+    #Need add_QQ_list
+    def addPeople(self, desired_caps,mark):
+        driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+        time.sleep(7)
+        print('click')
+        driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
+        time.sleep(5)
+        driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').click()
+        time.sleep(2)
+        driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys(mark['AccountId'])
+        time.sleep(4)
+        driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
+        time.sleep(3)
+        driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
+        time.sleep(3)
+        driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(mark['content'])
+        time.sleep(5)
+        driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
+        print('click')
 
-    cc = driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout")
-    ccc = cc[1].find_element_by_xpath("//android.widget.FrameLayout[1]")
-    getimages_class = getimages(driver)
-    getimages_class.get_screenshot_by_element(ccc)
+    #Need add_Group_list
+    def addGroup(self):
+        time.sleep(7)
+        print('click')
+        driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
+        time.sleep(5)
+        driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').click()
+        time.sleep(2)
+        driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys("24782122")
+        time.sleep(4)
+        #driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[2]").click()
+        driver.find_element_by_android_uiautomator('new UiSelector().text("24782122")').click()
+        time.sleep(5)
+        driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
+        time.sleep(3)
+        driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
+        time.sleep(3)
+        driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys('hello')
+        time.sleep(5)
+        driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
+        print('click')
 
-#No Need
-def GetGrouplist():
-    pass
-def GetGroupPeoplelist():
-    pass
+    #Need Send_message_Need_time
+    def SendPeopleMessages(self):
+        pass
+    #Need Send_Group_Message_Need_time
+    def SendGroupMessages(self):
+        pass
 
-deviceName = 'vbox86p'
-platformVersion = '4.3'
-response = requests.post('http://127.0.0.1:8000/auto/task/' + deviceName + '/' + platformVersion + '/')
-data = response.json()
-nl = {}
-for x,y in data.iteritems():
-    x = x.encode('utf-8')
-    try:
-        y = y.encode('utf-8')
-    except:
-        y = y
-    nl[x] = y
-#data中 1.APP名，2.Activety名， 3任务信息
-desired_caps = {
-    'platformName': 'Android',
-    'deviceName': deviceName,
-    'platformVersion': platformVersion,
-    # apk
-    'appPackage': nl['appPackage'],
-    # apk launcherActivity
-    'appActivity': nl['appActivity'],
-    'unicodeKeyboard': "True",
-    'resetKeyboard': "True",
-}
-driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
-addPeople(nl['AccountId'])
+    #No Need
+    def GetPoplelist(self):
+        time.sleep(7)
+        print('click')
+        self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
+        time.sleep(5)
+
+        cc = self.driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout")
+        ccc = cc[1].find_element_by_xpath("//android.widget.FrameLayout[1]")
+        getimages_class = getimages(self.driver)
+        getimages_class.get_screenshot_by_element(ccc)
+
+    #No Need
+    def GetGrouplist(self):
+        pass
+    def GetGroupPeoplelist(self):
+        pass
+
+if __name__ == '__main__':
+    mobile_id = [1,2]
+
+    for mobile_id_for in mobile_id:
+        locals()['a' + str(mobile_id_for)] = multipleLoop(mobile_id_for)
+        locals()['a' + str(mobile_id_for)].start()
+        locals()['a' + str(mobile_id_for)].join()#加进去以后不会报错，得查查什么原因。
 
 
-
-#test()
+        #locals()['a' + str(mobile_id_for)].start()

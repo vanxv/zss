@@ -10,11 +10,13 @@ def index(request):
     if request.method=='GET':
         return JsonResponse({'foo': 'bar'})
 
-def Task(request, deviceName = '', platformVersion=''):
+def Task(request, mobile_ID = ''):
     if request.method=='POST':
-        mobileID = mobileid.objects.get(andriodname=deviceName, platformVersion=platformVersion)
+        mobileID = mobileid.objects.get(id=int(mobile_ID))
         task = mobiletask.objects.filter(mobileid=mobileID, status=1)[0]
         taskdict ={
+            'deviceName':task.mobileid.deviceName,
+            'platformVersion':task.mobileid.platformVersion,
             'appActivity':task.softid.appActivity,
             'appPackage':task.softid.appPackage,
             'taskSort':task.taskSort,
@@ -24,5 +26,6 @@ def Task(request, deviceName = '', platformVersion=''):
             'endTime': task.endTime,
             'statusTime': task.statusTime,
             'status': task.status,
+            'webserverurl':task.mobileid.webserverurl,
         }
         return JsonResponse(taskdict, safe=False)

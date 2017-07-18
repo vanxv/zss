@@ -6,8 +6,9 @@ from django.utils import timezone
 
 class mobileid(models.Model):
     platformVersion = models.CharField(null=True, max_length=200, name='platformVersion')
-    deviceName = models.CharField(max_length=500, name='andriodname', null=True)
-    StyleLabel = models.CharField(max_length=500, name='label_User_portrait', null=True)
+    deviceName = models.CharField(max_length=500, null=True)
+    StyleLabel = models.CharField(max_length=500, null=True)
+    webserverurl = models.CharField(max_length=500, null=True)
     sort = models.IntegerField(name='mobileSort',null=True)
     class Meta:
         verbose_name = 'mobileid'
@@ -53,3 +54,11 @@ class mobiletask(models.Model):
 class mobiletasklog(models.Model):
     mobileid = models.ForeignKey(mobileid)
     mobiletask = models.ForeignKey(mobiletask)
+
+
+class mobileAccount(models.Model):
+    mobileid = models.ForeignKey(mobileid)
+    QQ = models.CharField(max_length=100)
+    QQps = models.CharField(max_length=100)
+    wechat = models.CharField(max_length=100)
+    wechatps = models.CharField(max_length=100)
