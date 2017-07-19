@@ -27,5 +27,6 @@ def Task(request, mobile_ID = ''):
             'statusTime': task.statusTime,
             'status': task.status,
             'webserverurl':task.mobileid.webserverurl,
+            'udid':task.mobileid.udid,
         }
         return JsonResponse(taskdict, safe=False)

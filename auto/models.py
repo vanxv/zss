@@ -7,6 +7,7 @@ from django.utils import timezone
 class mobileid(models.Model):
     platformVersion = models.CharField(null=True, max_length=200, name='platformVersion')
     deviceName = models.CharField(max_length=500, null=True)
+    udid = models.CharField(max_length=500, null=True)
     StyleLabel = models.CharField(max_length=500, null=True)
     webserverurl = models.CharField(max_length=500, null=True)
     sort = models.IntegerField(name='mobileSort',null=True)
@@ -32,10 +33,13 @@ mobiletask_status_choices = (
 mobiletask_taskSort_choices = (
     (1, 'add_User'),
     (2, 'ADD_GROUP'),
-    (3, 'send_message_to_user_Accoutid'),
-    (4, 'send_message_to_GROUP_Accoutid'),
-    (5, 'send_message_to_friend_list'),
-    (6, 'send_message_to_GROUP_list'),
+    (3, 'send_message_to_friend_list'),
+    (4, 'send_message_to_GROUP_list'),
+    (5, 'send_message_to_user_Accoutid'),
+    (6, 'send_message_to_GROUP_Accoutid'),
+    (7, 'Get_Pople_list'),
+    (8, 'Get_Group_list'),
+    (9, 'Get_Group_People_list'),
 )
 class mobiletask(models.Model):
     mobileid = models.ForeignKey(mobileid)
@@ -58,7 +62,12 @@ class mobiletasklog(models.Model):
 
 class mobileAccount(models.Model):
     mobileid = models.ForeignKey(mobileid)
-    QQ = models.CharField(max_length=100)
-    QQps = models.CharField(max_length=100)
-    wechat = models.CharField(max_length=100)
-    wechatps = models.CharField(max_length=100)
+    QQ = models.CharField(max_length=100, null=True)
+    QQps = models.CharField(max_length=100, null=True)
+    QQmobile = models.CharField(max_length=20, null=True)
+    wechat = models.CharField(max_length=100, null=True)
+    wechatps = models.CharField(max_length=100, null=True)
+    wechatmobile = models.CharField(max_length=20, null=True)
+    class Meta:
+        verbose_name = 'mobileAccount'
+        verbose_name_plural = verbose_name
