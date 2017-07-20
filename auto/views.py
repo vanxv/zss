@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.http import JsonResponse
 from .models import mobiletask, mobileid, softid
 import json
+from datetime import datetime, timedelta
 from django.core import serializers
 
 # Create your views here.
@@ -13,7 +14,8 @@ def index(request):
 def Task(request, mobile_ID = ''):
     if request.method=='POST':
         mobileID = mobileid.objects.get(id=int(mobile_ID))
-        task = mobiletask.objects.filter(mobileid=mobileID, status=1)[0]
+        locktime = datetime.now() - timedelta(minutes=1)
+        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=locktime)[0]
         taskdict ={
             'deviceName':task.mobileid.deviceName,
             'platformVersion':task.mobileid.platformVersion,

@@ -6837,3 +6837,439 @@ Traceback (most recent call last):
 auto.models.DoesNotExist: mobileid matching query does not exist.
 2017-07-18 17:54:31,189 [Thread-59:123145376894976] [django.request:152] [base:get_response] [WARNING]- Not Found: /auto/task/
 2017-07-18 17:54:32,619 [Thread-60:123145382150144] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-07-19 14:47:46,716 [Thread-2:123145465856000] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=timezone.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 14:47:51,840 [Thread-3:123145465856000] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/2/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=timezone.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 14:50:32,044 [Thread-2:123145347948544] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 14:50:35,779 [Thread-3:123145347948544] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/2/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 14:52:00,477 [Thread-7:123145343332352] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 14:52:03,428 [Thread-8:123145343332352] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/2/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 14:52:21,696 [Thread-9:123145343332352] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 15:18:24,456 [Thread-7:123145419198464] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__it=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'it' for DateTimeField or join on the field not permitted.
+2017-07-19 15:20:35,197 [Thread-7:123145531809792] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__Ite=datetime.datetime.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'Ite' for DateTimeField or join on the field not permitted.
+2017-07-19 15:23:18,946 [Thread-7:123145372864512] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__It=timezone.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'It' for DateTimeField or join on the field not permitted.
+2017-07-19 15:23:28,000 [Thread-8:123145372864512] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/2/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__It=timezone.now())[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'It' for DateTimeField or join on the field not permitted.
+2017-07-19 15:25:40,013 [Thread-7:123145380433920] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 19, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__It=timenow)[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'It' for DateTimeField or join on the field not permitted.
+2017-07-19 15:27:22,263 [Thread-7:123145411985408] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    timenow = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+2017-07-19 15:27:32,252 [Thread-7:123145527169024] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    timenow = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+2017-07-19 15:27:45,143 [Thread-8:123145527169024] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 17, in Task
+    timenow = datetime.now()
+AttributeError: module 'datetime' has no attribute 'now'
+2017-07-19 15:33:19,813 [Thread-7:123145438908416] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__It=locktime)[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1187, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1081, in build_lookup
+    lhs = self.try_transform(lhs, name, lookups)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1099, in try_transform
+    (name, lhs.output_field.__class__.__name__))
+django.core.exceptions.FieldError: Unsupported lookup 'It' for DateTimeField or join on the field not permitted.
+2017-07-19 15:33:50,488 [Thread-7:123145355075584] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/2/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1, startTime__gt=locktime)[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 295, in __getitem__
+    return list(qs)[0]
+IndexError: list index out of range
+2017-07-19 20:35:28,240 [Thread-10:123145500057600] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=locktime)[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 295, in __getitem__
+    return list(qs)[0]
+IndexError: list index out of range
+2017-07-19 20:35:31,189 [Thread-11:123145505312768] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=locktime)[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 295, in __getitem__
+    return list(qs)[0]
+IndexError: list index out of range
+2017-07-19 23:47:24,816 [Thread-24:123145531523072] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/2/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 18, in Task
+    task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=locktime)[0]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 295, in __getitem__
+    return list(qs)[0]
+IndexError: list index out of range

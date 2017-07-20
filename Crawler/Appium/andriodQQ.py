@@ -1,12 +1,9 @@
-# coding=utf-8
-#---python2.7
-#---appium
-
 # appium原理：1.server and andriod connection，
 from appium import webdriver
 import time
 import requests
 import json
+import subprocess
 # using images model
 import os
 import platform
@@ -14,7 +11,7 @@ import tempfile
 import shutil
 from PIL import Image
 # using images model
-#import pytesseract
+import pytesseract
 
 import multiprocessing
 
@@ -25,6 +22,21 @@ from selenium.webdriver.support.ui import WebDriverWait
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
 # get user tempfile
+
+
+#images_to_string
+def image_to_string(img, cleanup=True, plus=''):
+    # cleanup为True则识别完成后删除生成的文本文件
+    # plus参数为给tesseract的附加高级参数
+    subprocess.check_output('tesseract ' + img + ' ' +
+                            img + ' ' + plus, shell=True)  # 生成同名txt文件
+    text = ''
+    with open(img + '.txt', 'rt', encoding='utf-8') as f:
+        text = f.read().strip()
+    if cleanup:
+        os.remove(img + '.txt')
+    return text
+    #print(image_to_string('/Users/VANXV/Downloads/pyocr.png', False, '-l chi_sim'))
 
 #DiffImg coding
 class Appium_Extend(object):
@@ -93,9 +105,6 @@ class Appium_Extend(object):
             return False
 
 class getimages():
-    def __init__(self, driver):
-        self.driver = driver
-
     def get_screenshot_by_element(self, element):
         # 先截取整个屏幕，存储至系统临时目录下
         self.driver.get_screenshot_as_file(TEMP_FILE)
@@ -110,7 +119,7 @@ class getimages():
         newImage = image.crop(box)
         newImage.save(TEMP_FILE)
         image1 = Image.open(TEMP_FILE)
-        text = pytesseract.image_to_string(Image.open(TEMP_FILE),lang='chi_sim')
+        text = image_to_string(TEMP_FILE, False, '-l chi_sim')
         print(text)
         print('end')
 
@@ -143,6 +152,7 @@ class getimages():
         else:
             raise Exception("%s is not exist" % image_path)
 
+
 #using reference
 
 class multipleLoop(multiprocessing.Process):
@@ -171,7 +181,7 @@ class multipleLoop(multiprocessing.Process):
                 'platformVersion': mark['platformVersion'],
                 'appPackage': mark['appPackage'],
                 'appActivity': mark['appActivity'],
-                #'udid':mark['udid'],
+                'udid': mark['udid'],
                 #'exported': "True",
                 'unicodeKeyboard': "True",
                 'resetKeyboard': "True",
@@ -196,7 +206,7 @@ class multipleLoop(multiprocessing.Process):
             elif mark['taskSort'] == 2:
                 multipleLoop.QQaddGroup(self,mark)
             elif mark['taskSort'] == 3:
-                multipleLoop.QQaddGroup(self,mark)
+                multipleLoop.send_message_to_friend_list(self,mark)
 
             # ---- loop select_work----#
     #Need add_QQ_list
@@ -226,28 +236,16 @@ class multipleLoop(multiprocessing.Process):
             print('end')
         except:
             pass
-        # print('----')
-        # print(mark['AccountId'])
-        # print('---')
-        # self.driver.find_element_by_id('com.tencent.mobileqq:id/et_search_keyword').send_keys(mark['AccountId'])
-        # time.sleep(4)
-        # self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
-        # time.sleep(3)
-        # self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
-        # time.sleep(3)
-        # self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(mark['content'])
-        # time.sleep(5)
-        # self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
         print('click')
     #Need add_Group_list
     def QQaddGroup(self,mark):
         try:
-            time.sleep(7)
+            self.driver.implicitly_wait(15)
             print('click')
             self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
-            time.sleep(5)
+            self.driver.implicitly_wait(15)
             self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]").click()
-            time.sleep(5)
+            self.driver.implicitly_wait(15)
             self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]").click()
             time.sleep(2)
             self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(mark['AccountId'])
@@ -270,8 +268,36 @@ class multipleLoop(multiprocessing.Process):
         except:
             pass
     #Need Send_message_Need_time
-    def send_message_to_friend_list(self):
-        pass
+    def send_message_to_friend_list(self,mark):
+        #try:
+        print('click')
+        #click contact
+        self.driver.implicitly_wait(15)
+        self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
+        self.driver.implicitly_wait(15)
+        #click friend
+        self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").click()
+        #GO_TOP
+        self.driver.swipe(start_x=75, start_y=500, end_x=75, end_y=0, duration=1000)
+        self.driver.implicitly_wait(15)
+        elementsClick = self.driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+        if elementsClick[2].tag_name == 'android.widget.RelativeLayout':
+            elementsClick[1].click()
+        tempElement = self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/android.widget.RelativeLayout[2]/android.view.View[1]")
+        getimages.get_screenshot_by_element(self, tempElement)
+        self.driver.implicitly_wait(15)
+        for i in range(2):
+            print('开始执行滑动', i + 1)
+            self.driver.swipe(start_x=50, start_y=333, end_x=50, end_y=50, duration=1000)
+            self.driver.implicitly_wait(15)
+        time.sleep(2)
+        print(elementsClick)
+        time.sleep(3)
+        print(elementsClick)
+        for elementsClicklist in elementsClick:
+            print(elementsClicklist.tag_name)
+        # except:
+        #     pass
     #Need Send_Group_Message_Need_time
     def send_message_to_GROUP_list(self):
         pass
