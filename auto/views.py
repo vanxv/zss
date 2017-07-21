@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from django.http import JsonResponse
-from .models import mobiletask, mobileid, softid
+from .models import mobiletask, mobileid, softid, mobiletasklog
 import json
 from datetime import datetime, timedelta
 from django.core import serializers
@@ -30,5 +30,24 @@ def Task(request, mobile_ID = ''):
             'status': task.status,
             'webserverurl':task.mobileid.webserverurl,
             'udid':task.mobileid.udid,
+            'mobileID':task.mobileid_id,
+            'taskid':task.id,
         }
         return JsonResponse(taskdict, safe=False)
+def tasklog(request, mobileID='', taskid=''):
+    if request.method=='GET':
+        mobileidget = mobileid.objects.get(id=int(mobileID))
+        mobiletaskget = mobiletask.objects.get(id=int(taskid))
+        tasklog = mobiletasklog.objects.filter(mobileid=mobileidget, mobiletask=mobiletaskget).order_by('-logdatetime')
+        if tasklog.exists():
+            return HttpResponse(tasklog[0].logid)
+        else:
+            return HttpResponse(0)
+
+def tasklogDone(request, mobileID='', taskid='', objectid=''):
+    if request.method == 'POST':
+        mobileidget = mobileid.objects.get(id=int(mobileID))
+        mobiletaskget = mobiletask.objects.get(id=int(taskid))
+        tasklog = mobiletasklog.objects.create(mobileid=mobileidget, mobiletask=mobiletaskget, logid=objectid)
+        tasklog.save()
+        return HttpResponse('ok')
