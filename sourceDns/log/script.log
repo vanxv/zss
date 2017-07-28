@@ -7538,3 +7538,126 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 959, in connect
     raise exc
 django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'www.zhess.com' ([Errno 8] nodename nor servname provided, or not known)")
+2017-07-28 17:59:42,078 [Thread-23:123145479368704] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-07-28 19:51:17,181 [Thread-8:123145521917952] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-07-28 20:23:14,915 [Thread-22:123145521917952] [django.request:152] [base:get_response] [WARNING]- Not Found: /{% static
+2017-07-28 20:53:04,760 [Thread-18:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:53:04,865 [Thread-19:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 20:53:04,981 [Thread-20:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 20:53:05,034 [Thread-21:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 20:53:05,090 [Thread-22:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 20:53:05,143 [Thread-23:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 20:53:05,186 [Thread-24:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 20:53:06,072 [Thread-25:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:53:06,081 [Thread-26:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 20:53:06,084 [Thread-27:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 20:53:06,087 [Thread-28:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 20:53:06,102 [Thread-29:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 20:53:06,107 [Thread-30:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 20:53:06,135 [Thread-31:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 20:53:06,265 [Thread-37:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/city.jpg
+2017-07-28 20:53:08,136 [Thread-38:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/favicon.png
+2017-07-28 20:54:26,541 [Thread-40:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:54:27,125 [Thread-41:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:54:27,183 [Thread-42:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 20:55:51,971 [Thread-46:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:55:52,595 [Thread-47:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:55:52,763 [Thread-48:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 20:56:09,304 [Thread-51:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:56:09,923 [Thread-55:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/logo.png
+2017-07-28 20:56:09,948 [Thread-56:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:07:35,000 [Thread-69:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 21:07:35,046 [Thread-70:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:07:35,086 [Thread-71:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 21:07:35,120 [Thread-72:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 21:07:35,158 [Thread-73:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 21:07:35,204 [Thread-74:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 21:07:35,920 [Thread-78:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 21:07:35,957 [Thread-76:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:07:35,986 [Thread-77:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 21:07:36,005 [Thread-80:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 21:07:36,031 [Thread-79:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 21:07:36,035 [Thread-75:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 21:07:36,038 [Thread-81:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/city.jpg
+2017-07-28 21:08:08,387 [Thread-84:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 21:08:08,520 [Thread-85:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:08:08,569 [Thread-86:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 21:08:08,618 [Thread-87:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 21:08:08,652 [Thread-88:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 21:08:08,686 [Thread-89:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 21:08:09,548 [Thread-94:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 21:08:09,668 [Thread-95:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 21:08:09,689 [Thread-91:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:08:09,720 [Thread-90:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 21:08:09,732 [Thread-93:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 21:08:09,743 [Thread-92:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 21:08:10,014 [Thread-96:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/city.jpg
+2017-07-28 21:09:21,830 [Thread-98:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 21:09:21,969 [Thread-99:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:09:22,021 [Thread-100:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 21:09:22,070 [Thread-101:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 21:09:22,106 [Thread-102:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 21:09:22,143 [Thread-103:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 21:09:23,084 [Thread-107:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 21:09:23,095 [Thread-106:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 21:09:23,125 [Thread-109:123145376129024] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/profile.jpg
+2017-07-28 21:09:23,128 [Thread-105:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 21:09:23,145 [Thread-104:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/avatar.jpg
+2017-07-28 21:09:23,154 [Thread-108:123145370873856] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/landing.jpg
+2017-07-28 21:09:23,176 [Thread-110:123145365618688] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/city.jpg
+2017-07-28 21:18:27,931 [Thread-111:123145349853184] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/cryapp/views.py", line 168, in get
+    return render(request, 'material/index.html', {'orderdict':orderdict})
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/engine.py", line 160, in get_template
+    template, origin = self.find_template(template_name)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/engine.py", line 134, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/loaders/base.py", line 44, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 191, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 233, in compile_nodelist
+    return parser.parse()
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/contrib/staticfiles/templatetags/staticfiles.py", line 19, in do_static
+    return _do_static(parser, token)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/templatetags/static.py", line 155, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/templatetags/static.py", line 129, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 603, in compile_filter
+    return FilterExpression(token, self)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 703, in __init__
+    "from '%s'" % (token[upto:], token))
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '"img/christian.jpg' from '"img/christian.jpg'
+2017-07-28 21:55:37,257 [Thread-192:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /ProductMasters/ProductsresultFor
+2017-07-28 22:05:59,291 [Thread-209:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /ProductMasters/ProductsresultFor
+2017-07-28 22:06:03,748 [Thread-210:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /ProductMasters/ProductsresultFor
+2017-07-28 22:32:30,496 [Thread-242:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 22:32:30,604 [Thread-243:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
+2017-07-28 22:32:30,613 [Thread-244:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 22:32:56,030 [Thread-251:123145349853184] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg2.jpeg
+2017-07-28 22:32:56,056 [Thread-253:123145360363520] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg4.jpeg
+2017-07-28 22:32:56,059 [Thread-252:123145355108352] [django.request:152] [base:get_response] [WARNING]- Not Found: /assets/img/bg3.jpeg
