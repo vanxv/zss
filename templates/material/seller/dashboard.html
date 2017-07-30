@@ -3,14 +3,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href={% static "/assets/img/apple-icon.png" %} />
-	<link rel="icon" type="image/png" href={% static "/assets/img/favicon.png" %} />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>seller board</title>
+	<title>试用平台 试用网站 - 折试试 - 发布产品</title>
 
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
 
     <!-- Bootstrap core CSS     -->
     <link href="{% static "/assets/css/bootstrap.min.css" %}" rel="stylesheet" />
@@ -46,32 +41,27 @@
 	            <ul class="nav">
 	                <li class="active">
 	                    <a href="/cryapp/seller/">
-	                        <i class="material-icons">user</i>
 	                        <p>发布试用</p>
 	                    </a>
 	                </li>
 
 	                <li>
 	                    <a href="/cryapp/seller/orders/">
-	                        <i class="material-icons">inbox</i>
 	                        <p>试用订单</p>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="/financial/">
-	                        <i class="material-icons">storage</i>
 	                        <p>财务</p>
 	                    </a>
 	                </li>
                     <li>
 	                    <a href="/financial/AutoTopUp/">
-	                        <i class="material-icons">icon</i>
 	                        <p>充值</p>
 	                    </a>
 	                </li>
                     <li>
 	                    <a href="/financial/kiting/">
-	                        <i class="material-icons">icon</i>
 	                        <p>提现</p>
 	                    </a>
                     <li>
@@ -80,87 +70,10 @@
 	    </div>
 
 	    <div class="main-panel">
-			<nav class="navbar navbar-transparent navbar-absolute">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Material Dashboard</a>
-					</div>
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">dashboard</i>
-									<p class="hidden-lg hidden-md">Dashboard</p>
-								</a>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">notifications</i>
-									<span class="notification">5</span>
-									<p class="hidden-lg hidden-md">Notifications</p>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Mike John responded to your email</a></li>
-									<li><a href="#">You have 5 new tasks</a></li>
-									<li><a href="#">You're now friend with Andrew</a></li>
-									<li><a href="#">Another Notification</a></li>
-									<li><a href="#">Another One</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-	 							   <i class="material-icons">person</i>
-	 							   <p class="hidden-lg hidden-md">Profile</p>
-		 						</a>
-							</li>
-						</ul>
 
-						<form class="navbar-form navbar-right" role="search">
-							<div class="form-group  is-empty">
-								<input type="text" class="form-control" placeholder="Search">
-								<span class="material-input"></span>
-							</div>
-							<button type="submit" class="btn btn-white btn-round btn-just-icon">
-								<i class="material-icons">search</i><div class="ripple-container"></div>
-							</button>
-						</form>
-					</div>
-				</div>
-			</nav>
 
 			<div class="content">
             <!-- input money-->
-            <div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="card card-stats">
-								<div class="card-header" data-background-color="orange">
-									<i class="material-icons">content_copy</i>
-								</div>
-								<div class="card-content">
-									<p class="category">执行任务数</p>
-									<h3 class="title">49/50<small>GB</small></h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="card card-stats">
-								<div class="card-header" data-background-color="green">
-									<i class="material-icons">Money</i>
-								</div>
-								<div class="card-content">
-									<p class="category">Money</p>
-									<h3 class="title">${{ mymoney.deposit }}{{ money }}</h3>
-								</div>
-							</div>
-						</div>
-					</div>
-
 
 
                 <!-- input data -->
@@ -267,8 +180,8 @@
 	<!--  Notifications Plugin    -->
 	<script src="{% static "/assets/js/bootstrap-notify.js" %}"></script>
 
-	<!--  Google Maps Plugin    -->
-	<script src='https://maps.googleapis.com/maps/api/js' type='text/javascript'></script>
+	<!--  Google Maps Plugin
+	<script src='https://maps.googleapis.com/maps/api/js' type='text/javascript'></script> -->
 
 	<!-- Material Dashboard javascript methods -->
 	<script src="{% static "/assets/js/material-dashboard.js" %}"></script>

@@ -37,7 +37,7 @@
 		    -->
 
 			<div class="logo">
-				<a href="http://www.creative-tim.com" class="simple-text">
+				<a href="http://www.zhess.com" class="simple-text">
 					会员后台
 				</a>
 			</div>
@@ -46,38 +46,32 @@
 	            <ul class="nav">
 	                <li>
 	                    <a href="/cryapp/buyer/">
-	                        <i class="material-icons">user</i>
 	                        <p>买家首页</p>
 	                    </a>
 	                </li>
 	                <li class="active">
 	                    <a href="/cryapp/buyer/users/">
-	                        <i class="material-icons">face</i>
 	                        <p>账户管理</p>
 	                    </a>
 	                </li>
 	                <li>
 	                    <a href="/cryapp/buyer/orders/">
-	                        <i class="material-icons">inbox</i>
 	                        <p>试用订单列表</p>
 	                    </a>
 	                </li>
 
                     <li>
 	                    <a href="/financial/AutoTopUp/">
-	                        <i class="material-icons">icon</i>
 	                        <p>充值</p>
 	                    </a>
 	                </li>
                     <li>
 	                    <a href="/financial/kiting/">
-	                        <i class="material-icons">icon</i>
 	                        <p>提现</p>
 	                    </a>
                     <li>
                     <li>
 	                    <a href="/financial/">
-	                        <i class="material-icons">icon</i>
 	                        <p>财务</p>
 	                    </a>
 	                </li>
@@ -86,60 +80,6 @@
 	    </div>
 
 	    <div class="main-panel">
-			<nav class="navbar navbar-transparent navbar-absolute">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand" href="#">Profile</a>
-					</div>
-					<div class="collapse navbar-collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">dashboard</i>
-									<p class="hidden-lg hidden-md">Dashboard</p>
-								</a>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">notifications</i>
-									<span class="notification">5</span>
-									<p class="hidden-lg hidden-md">Notifications</p>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Mike John responded to your email</a></li>
-									<li><a href="#">You have 5 new tasks</a></li>
-									<li><a href="#">You're now friend with Andrew</a></li>
-									<li><a href="#">Another Notification</a></li>
-									<li><a href="#">Another One</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-	 							   <i class="material-icons">person</i>
-	 							   <p class="hidden-lg hidden-md">Profile</p>
-	 						   </a>
-							</li>
-						</ul>
-
-						<form class="navbar-form navbar-right" role="search">
-							<div class="form-group  is-empty">
-	                        	<input type="text" class="form-control" placeholder="Search">
-	                        	<span class="material-input"></span>
-							</div>
-							<button type="submit" class="btn btn-white btn-round btn-just-icon">
-								<i class="material-icons">search</i><div class="ripple-container"></div>
-							</button>
-	                    </form>
-					</div>
-				</div>
-			</nav>
-
 	        <div class="content">
 	            <div class="container-fluid">
 	                <div class="row">
@@ -147,12 +87,13 @@
 	                        <div class="card">
 	                            <div class="card-header" data-background-color="purple">
 	                                <h4 class="title">编辑用户信息</h4>
+                                    <p>账户一旦关联，无法修改。</p>
+
 	                            </div>
 	                            <div class="card-content">
                                         	<div class="row">
 	                                        <div class="col-md-4">
 												<div class="form-group label-floating">
-                                                    <li>账户一旦关联将无法修改.</li>
                                                     <br>
                                                     <h2>{{ usersRequest }}</h2>
                                                     <br>
@@ -251,24 +192,6 @@
 	                            </div>
 	                        </div>
 	                    </div>
-						<div class="col-md-4">
-    						<div class="card card-profile">
-    							<div class="card-avatar">
-    								<a href="#pablo">
-    									<img class="img" src="{% static "/assets/img/faces/marc.jpg" %}" />
-    								</a>
-    							</div>
-
-    							<div class="content">
-    								<h6 class="category text-gray">CEO / Co-Founder</h6>
-    								<h4 class="card-title">Alec Thompson</h4>
-    								<p class="card-content">
-    									Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-    								</p>
-    								<a href="#pablo" class="btn btn-primary btn-round">Follow</a>
-    							</div>
-    						</div>
-		    			</div>
 	                </div>
 	            </div>
 	        </div>
@@ -279,28 +202,19 @@
 	                    <ul>
 	                        <li>
 	                            <a href="#">
-	                                Home
+	                                首页
 	                            </a>
 	                        </li>
 	                        <li>
 	                            <a href="#">
-	                                Company
+	                                关于我们
 	                            </a>
 	                        </li>
-	                        <li>
-	                            <a href="#">
-	                                Portfolio
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#">
-	                               Blog
-	                            </a>
-	                        </li>
+
 	                    </ul>
 	                </nav>
 	                <p class="copyright pull-right">
-	                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+	                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.zhess.com">www.zhess.com</a>
 	                </p>
 	            </div>
 	        </footer>

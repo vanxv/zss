@@ -9389,3 +9389,18 @@ Traceback (most recent call last):
     savecryorder = CryOrder.objects.create(Userid=request.user, OrderSort=1, ShopId=saveshop, Status=1, GoodId=getGoods, StartTime=startdatetime, EndTime=endDateTime,  platform=platform, Keywords=keywords,Note=note, Money=request.POST['money'], Express=0, buyerMoney=buyercost, sellerMoney=sellercost)
 NameError: free variable 'getGoods' referenced before assignment in enclosing scope
 2017-07-30 14:16:48,093 [Thread-16:123145439678464] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 14:35:24,930 [Thread-35:123145465954304] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 14:40:05,450 [Thread-60:123145460699136] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 15:00:09,631 [Thread-79:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:01:39,637 [Thread-81:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:01:53,534 [Thread-83:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:02:10,369 [Thread-89:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:02:12,470 [Thread-91:123145439678464] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 15:02:30,149 [Thread-99:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:04:32,041 [Thread-119:123145439678464] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 15:04:32,614 [Thread-120:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:05:26,924 [Thread-130:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:07:49,699 [Thread-149:123145444933632] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 15:09:29,243 [Thread-166:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-07-30 15:10:37,680 [Thread-175:123145439678464] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-07-30 15:10:38,325 [Thread-176:123145432813568] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
