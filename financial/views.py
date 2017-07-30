@@ -4,29 +4,31 @@ from django.db.models import Q
 from users.views import AuUserlogin
 # Create your views here.
 def financial_index(request):
-    if request.method == 'GET':
-        class financial_index_post():
-            def depositdef(self):
-                deposit_def = deposit.objects.get(user=request.user.id)
-                money = deposit_def.deposit
-                return money
-            def orderBill(self):
-                orderBilldef =orderBill.objects.filter(Q(CryOrderid__buyerid_id=request.user.id) | Q(CryOrderid__Userid_id=request.user.id)).order_by('-datetime')
-                return orderBilldef.values()
+    if request.user.is_authenticated:
+        if request.method == 'GET':
+            class financial_index_post():
+                def depositdef(self):
+                    deposit_def = deposit.objects.get(user=request.user.id)
+                    money = deposit_def.deposit
+                    return money
+                def orderBill(self):
+                    orderBilldef =orderBill.objects.filter(Q(CryOrderid__buyerid_id=request.user.id) | Q(CryOrderid__Userid_id=request.user.id)).order_by('-datetime')
+                    return orderBilldef.values()
 
-            def __init__(self):
-                self.money = self.depositdef()
-                self.orderBilldef =self.orderBill()
+                def __init__(self):
+                    self.money = self.depositdef()
+                    self.orderBilldef =self.orderBill()
 
-        financial_index_class = financial_index_post()
-        return render(request, 'material/financial/moneytable.html',{
-                        'money':float(financial_index_class.money),
-                        'orderBill':financial_index_class.orderBilldef
-                      })
+            financial_index_class = financial_index_post()
+            return render(request, 'material/financial/moneytable.html',{
+                            'money':float(financial_index_class.money),
+                            'orderBill':financial_index_class.orderBilldef
+                          })
 
-    if request.method == 'POST':
-        pass
-
+        if request.method == 'POST':
+            pass
+    else:
+        return render(request, 'login.html')
 
 def financial_topUp_list(request):
     if request.method == 'GET':

@@ -14,159 +14,80 @@
   <link rel="apple-touch-icon" sizes="76x76" href={% static "assets/apple-touch-icon-precomposed-60956e08c7bbd5166b96ef4f0340152b.png" %}>
   <link rel="canonical" href="https://www.zhess.com/" data-turbolinks-track="false" itemprop="url"/>
     <title>{{ goodsview.name }}</title>
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@CreativeTim" />
-    <meta name="twitter:creator" content="@CreativeTim" />
-    <meta name="twitter:title" content="Material Kit Pro by Creative Tim" />
-    <meta name="twitter:description" content="Premium Bootstrap UI Kit" />
-    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/46/original/opt_mkp_thumbnail.jpg?1466002372" />
-    <meta name="twitter:url" content="https://www.creative-tim.com/product/material-kit-pro" />
 
-
-  <meta name="description" content="Download Material Kit PRO a premium Bootstrap UI Kit developed by Creative Tim. See the live demo on our site and join over 100.000 creatives!" />
-<meta name="keywords" content="creativetim, creative tim, bootstrap, theme, freebies, bootstrap kit, bootstrap template, free items, beautiful ui" />
-<meta property="og:app_id" content="655968634437471" />
-<meta property="og:type" content="product" />
-<meta property="og:title" content="Material Kit Pro by Creative Tim" />
-<meta property="og:url" content="https://www.creative-tim.com/product/material-kit-pro" />
-<meta name="product:price:amount" content="79.0" />
-<meta name="product:price:currency" content="USD" />
-<meta name="product:availability" content="in Stock" />
-<meta name="product:brand" content="Creative Tim" />
-<meta name="product:category" content="UI Kits" />
-<meta name="data-turbolinks-track" content="false" />
   <link rel="stylesheet" media="all" href={% static "assets/application-5983038036a092579f0a61ac4dcfa044.css" %} data-turbolinks-track="true" />
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
   <!-- font -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="BID6C7bIAWrtFppzJ/uHmbCRooYzvAIdHAIu5yNQkz3l8GgDZM5wUgvUSyg48SIyHcAmPfjJSLCqqyEyIVU6Zw==" />
+    	<!-- CSS Files -->
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet" />
+    <link href="{% static "css/material-kit.css" %}" rel="stylesheet"/>
 
   <!--  js   -->
 </head>
 
 <body class="product-page">
 
-<nav class="navbar filter-bar fixed-absolute">
-    <div class="container">
-    <div class="notification">
-        <div id="notif-message" class="notif-message" style="display: none;" notice-type=success>
-        </div>
-    </div>
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <div data-no-turbolink>
-            <a href="/" class="navbar-brand">
-                <div class="logo">
-                    <img src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" width="60" height ="60"/>
-                </div>
-                <p>Creative <br> Tim</p>
-            </a>
-        </div>
+<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+    	<div class="container">
 
-    </div>
+        	<!-- Brand and toggle get grouped for better mobile display -->
+        	<div class="navbar-header">
+
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+            		<span class="sr-only">Toggle navigation</span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+        		</button>
+                    <a class="navbar-brand" href="http://www.zhess.com">折试试</a>
 
 
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
 
-        <ul class="nav navbar-nav navbar-right" data-no-turbolink>
+        	</div>
 
-        <li class="big-bundle" data-no-turbolink>
-                <a href="/cryapp/seller/">
-                <i class="icon-gift icon-2x"></i>
-                <p>卖家中心</p>
-            </a>
-        </li>
-        <li class="big-bundle" data-no-turbolink>
-                <a href="/cryapp/buyer/">
-                <i class="icon-gift icon-2x"></i>
-                <p>试用中心</p>
-            </a>
-        </li>
-                <div class="dropdown-menu ">
+        	<div class="collapse navbar-collapse" id="navigation-example">
+        		<ul class="nav navbar-nav navbar-right">
+					<li>
+                        <form action="/ProductMasters/" class="navbar-form" id="searchfrm" method="get">
+                    <input type="text" id="TopSearch" name="TopSearch" placeholder="Search">
+                        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
+                            <i class="material-icons">search</i>
+                        </button>
 
-                    <a href="javascript:void(0)" class="btn-read-all keep-dropdown-open" onclick="readAllNotifications()">
-                        Mark All as Read
-                    </a>
-
-                    <ul class="scroll-area">
+                    </form>
+    				</li>
+    				<li>
+						<a href="/cryapp/buyer/" target="_blank">
+							买家
+						</a>
 
 
-        <li data-no-turbolink>
-
-                <a href="/update_read_notifications/456044" class="unread-notification">
-                    😊 Have you had a chance to browse our newest products?
-                    <br><small >1 day ago</small>
-                </a>
-
-                <button title="Mark as Read"
-                rel="tooltip"
-                class="btn btn-neutral btn-notification btn-round btn-fill keep-dropdown-open"
-                data-placement="left"
-                onclick="dismissNotification(456044, this)"
-                >
-                    <i class="fa fa-check"></i>
-                </button>
-
-
-        </li>
-
-
-                    </ul>
-
-
-                    <div class="clearfix"></div>
-                </div>
-
-            </li>
-
-
-            <li class="dropdown">
-                <a href="" class="dropdown-toggle" data-toggle="dropdown">
-                    <div class="user-photo">
-                        <img class="photo" src="https://s3.amazonaws.com/creativetim_bucket/photos/205758/thumb.?1496645353" alt="Thumb" />
-                    </div>
-                    <p>Xv <span class="caret"></span></p>
-                </a>
-
-                <ul class="dropdown-menu dropdown-menu-navbar">
-                    <li data-no-turbolink>
-                        <a href="/downloads">
-                        <i class="icon-shopping-cart"></i>
-                        <p>My Purchases</p>
-</a>                    </li>
-
+    				</li>
+		            <li>
+		                <a href="/cryapp/seller/" target="_blank">
+							卖家
+						</a>
+		            </li>
                     <li>
-                        <a href="/user/credit-history">
-                            <i class="fa fa-diamond"></i>
-                            <p>Credits &middot; 0 </p>
-</a>                    </li>
+                        <a href="/financial/" target="_blank">
+                        财务</a></li>
+		            <li>
+		                <a href="https://twitter.com/CreativeTim" target="_blank">
+							帮助
+						</a>
+		            </li>
+        		</ul>
+        	</div>
+    	</div>
+    </nav>
 
-                    <li>
-                        <a href="/account">
-                        <i class="icon-user"></i>
-                        <p>Account Settings</p>
-</a>                    </li>
 
-                    <li>
-                        <a href="/logout">
-                            <i class="icon-remove-circle"></i>
-                            <p>Log Out</p>
-</a>                    </li>
-                </ul>
-            </li>
-
-        </ul>
-    </div>
-</div>
-
-</nav>
 
 
 <div class="modal fade login" id="loginModal">
@@ -517,103 +438,27 @@
 
             </div>
 
-            <div class="row">
+{#            <div class="row">#}
+{##}
+{#                <div class="col-md-12">#}
+{#                </div>#}
+{##}
+{#                <div class="col-md-10 col-md-offset-1">#}
+{#                    <div class="view-more text-center">#}
+{#                        <button class="btn btn-simple btn-default viewMoreButton" data-target="#productDescription">View More</button>#}
+{#                    </div>#}
+{##}
+{##}
+{#                    <h6 class="text-center">Product certified by: <span itemprop="brand">Creative Tim</span></h6>#}
+{#                </div>#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
 
-                <div class="col-md-12">
-                </div>
-
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="view-more text-center">
-                        <button class="btn btn-simple btn-default viewMoreButton" data-target="#productDescription">View More</button>
-                    </div>
 
 
-                    <h6 class="text-center">Product certified by: <span itemprop="brand">Creative Tim</span></h6>
-                </div>
 
-            </div>
-        </div>
-    </div>
-
-
-<div class="footer">
-    <div class="overlayer">
-    <div class="container">
-        <div class="row support">
-
-            <div class="col-sm-3 col-xs-4">
-                <h4>Creative Tim</h4>
-                <ul class="list-unstyled">
-                    <li> <a href="http://blog.creative-tim.com/">Blog</a></li>
-                    <li> <a href="/affiliates/new">Affiliate Program</a></li>
-                    <li> <a href="/terms">Terms &amp; Conditions</a></li>
-                    <li> <a href="/privacy">Privacy Policy</a></li>
-                    <li> <a href="/faq">FAQ</a></li>
-                    <li><a href="https://mixpanel.com/f/partner" rel="nofollow"><img src="//cdn.mxpnl.com/site_media/images/partner/badge_blue.png" alt="Mobile Analytics" /></a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3 col-xs-4">
-                <h4>Happy people</h4>
-                <ul class="list-unstyled social-list">
-                    <li><h3 class="numbers-dont-lie"><b>205,469</b> accounts</h3></li>
-                    <li><h3 class="numbers-dont-lie"><b>354,389</b> downloads</h3></li>
-
-                </ul>
-            </div>
-
-            <div class="col-sm-3 col-xs-4">
-                <h4>Help and Support</h4>
-                <ul class="list-unstyled">
-                    <li><a href="/about-us">About Us</a></li>
-                    <li><a href="/contact-us">Contact Us</a></li>
-                    <li><a href="/sponsorships">Sponsorships</a></li>
-                    <li><a href="/bootstrap">Bootstrap</a></li>
-                    <li><a href="/license">Licenses</a></li>
-                    <li><a href="/gallery/get-shit-done-pro">Products Gallery</a></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-3 col-xs-12 text-center">
-                    <h4>Latest News</h4>
-                     <a
-                     class="twitter-timeline"
-                     href="https://twitter.com/CreativeTim"
-                     data-widget-id="586445781978124289"
-                     data-chrome="noheader nofooter noborders noscrollbar transparent"
-                     height="200">
-                     Tweets by @CreativeTim</a>
-            </div>
-
-        </div>
-        <hr>
-        <div class="row">
-            <div class="social-area text-center" itemscope itemtype="http://schema.org/LocalBusiness">
-                <a itemprop="url" href="https://www.creative-tim.com/" class="footer-brand">
-                    <div class="logo">
-                        <img itemprop="logo" src="https://s3.amazonaws.com/creativetim_bucket/new_logo.png" />
-                    </div>
-                    <span itemprop="name">Creative Tim</span>
-                </a>
-
-               <br/>
-                <a itemprop="sameAs" href="https://dribbble.com/creativetim" class="btn btn-default btn-social btn-round" rel="publisher" target="_blank"><i class="fa fa-dribbble"></i></a>
-                <a itemprop="sameAs" href="https://www.facebook.com/CreativeTim" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                <a itemprop="sameAs" href="https://twitter.com/CreativeTim" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a itemprop="sameAs" href="https://plus.google.com/+CreativetimPage" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-google-plus-square"></i></a>
-
-                <a itemprop="sameAs" href="https://www.instagram.com/creativetimofficial/" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a itemprop="sameAs" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-youtube"></i></a>
-                <a itemprop="sameAs" href="https://ro.pinterest.com/thecreativetim/" class="btn btn-default btn-social btn-round" target="_blank"><i class="fa fa-pinterest"></i></a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="credits">
-                 &copy; 2017 Creative Tim, all rights reserved. Made with <i class="icon-heart heart" alt="love"></i> for a better web.
-            </div>
-        </div>
-    </div>
-    </div>
-</div>
 <script type="text/javascript">
                     function getDeviceIdCallBack(val){
                         document.getElementsByName("phoneid")[0].value=val;
@@ -623,7 +468,36 @@
 
 </script>
 
+	<!--   Core JS Files   -->
+	<script src="{% static "js/jquery.min.js" %}" type="text/javascript"></script>
+	<script src="{% static "js/bootstrap.min.js" %}" type="text/javascript"></script>
+	<script src="{% static "js/material.min.js" %}"></script>
+
+	<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+	<script src="{% static "js/material-kit.js" %}" type="text/javascript"></script>
+
 <script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body>
 
+   <footer class="footer">
+        <div class="container">
+            <nav class="pull-left">
+				<ul>
+					<li>
+						<a href="http://www.zhess.com">
+							首页
+						</a>
 
+						<a href="http://www.zhess.com/aboutus/">
+						   关于我们
+						</a>
+
+						<a href="http://www.weibo.com">
+						   weibo
+						</a>
+					</li>
+				</ul>
+            </nav>
+
+        </div>
+    </footer>
 </html>
