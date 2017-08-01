@@ -130,19 +130,22 @@ class sellerIndex(LoginRequiredMixin, View):
 
 class seller_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        ordersfilter = CryOrder.objects.filter(Userid=request.user.id).filter(~Q(Status=0)).order_by('-AddTime')
-        paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
-        page = request.GET.get('page')
-        try:
-            contacts = paginator.page(page)
-        except PageNotAnInteger:
-            # If page is not an integer, deliver first page.
-            contacts = paginator.page(1)
-        except EmptyPage:
-            # If page is out of range (e.g. 9999), deliver last page of results.
-            contacts = paginator.page(paginator.num_pages)
-        return render(request, 'material/seller/table.html', {'orderslists':contacts})
+        if request.user.is_authenticated:
 
+            ordersfilter = CryOrder.objects.filter(Userid=request.user.id).filter(~Q(Status=0)).order_by('-AddTime')
+            paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
+            page = request.GET.get('page')
+            try:
+                contacts = paginator.page(page)
+            except PageNotAnInteger:
+                # If page is not an integer, deliver first page.
+                contacts = paginator.page(1)
+            except EmptyPage:
+                # If page is out of range (e.g. 9999), deliver last page of results.
+                contacts = paginator.page(paginator.num_pages)
+            return render(request, 'material/seller/table.html', {'orderslists':contacts})
+        else:
+            return render(request, 'login.html')
 
 class buyerIndex(View):
     def get(self, request, *args, **kwargs):
