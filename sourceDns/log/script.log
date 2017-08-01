@@ -11472,3 +11472,9 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'loan' into field. Cho
 2017-08-01 15:15:49,783 [Thread-23:123145523605504] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
 2017-08-01 15:15:55,590 [Thread-28:123145523605504] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
 2017-08-01 15:17:18,897 [Thread-64:123145523605504] [django.request:152] [base:get_response] [WARNING]- Not Found: /goods/favicon.ico
+2017-08-01 16:12:41,212 [Thread-110:123145556209664] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-01 16:12:41,496 [Thread-117:123145523605504] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-01 16:26:12,181 [Thread-174:123145544626176] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-01 16:26:12,510 [Thread-177:123145523605504] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-01 16:52:15,607 [Thread-287:123145539371008] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-01 16:52:17,141 [Thread-290:123145523605504] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
