@@ -22,14 +22,15 @@
 <div class="middle-box text-center loginscreen   animated fadeInDown">
     <div>
         <div>
-            <h1 class="logo-name">Z+</h1>
+            <h1 class="logo-name">ZSS</h1>
         </div>
-        <h3>欢迎注册www.zhess.com账户</h3>
-        <p></p>
+        <h3>欢迎注册折试试账户</h3>
+        <p>实名制试用平台，请用自用手机号注册</p>
+
         <form method="post" action="{% url 'register' %}">
             {% csrf_token %}
             <div class="form-group">
-                <input name="username" type="text" class="form-control" placeholder="请输入手机号" required="">
+                <input name="username" type="text" class="form-control" placeholder="请输入手机号，" required="">
             </div>
             <div class="form-group">
                 <input name="password" type="password" class="form-control" placeholder="请输入密码" required="">
@@ -46,6 +47,7 @@
                 <a href={% url 'login' %}>点此登录</a>
             </p>
         </form>
+
     </div>
 </div>
 <script src="{% static 'js/jquery.wmin.js?v=2.1.4' %}"></script>

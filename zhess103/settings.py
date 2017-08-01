@@ -109,15 +109,6 @@ DATABASES = {
         'HOST': 'www.zhess.com',
     }
 }
-# REST_FRAMEWORK = {
-#     Use Django's standard `django.contrib.auth` permissions,
-#     or allow read-only access for unauthenticated users.
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-#      ]
-# }
-# Password validation
-# https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -133,6 +124,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# PASSWORDS CHANGER MD5
+PASSWORD_HASHERS = ['django.contrib.auth.hashers.UnsaltedMD5PasswordHasher']
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/

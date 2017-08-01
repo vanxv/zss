@@ -71,8 +71,13 @@ class LoginView(View):
         print(request.POST.get('visual'))
         user = auth.authenticate(username=username, password=password)
         if user is not None:
-            auth.login(request, user)
-            return redirect('buyerindex')
+            getuserblacklist = AuthUser.objects.get(username=username)
+            if getuserblacklist.is_blacklist == 1:
+                return render(request, 'login.html', {'msg': '账户有安全隐患请联系客服。'})
+            else:
+                auth.login(request, user)
+                return redirect('buyerindex')
+
         else:
             return render(request, 'login.html', {'msg': '账号密码错误'})
 
