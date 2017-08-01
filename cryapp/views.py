@@ -125,13 +125,15 @@ def lockOrderAuthentication(request):
 ##Home_page_add_product
 class sellerIndex(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
-        mymoney = deposit.objects.get(user=request.user.id)
-        return render(request, 'material/seller/dashboard.html', {'mymoney':mymoney})
+        if request.user.is_authenticated:
 
+            mymoney = deposit.objects.get(user=request.user.id)
+            return render(request, 'material/seller/dashboard.html', {'mymoney':mymoney})
+        else:
+            return render(request, 'login.html')
 class seller_orders(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-
             ordersfilter = CryOrder.objects.filter(Userid=request.user.id).filter(~Q(Status=0)).order_by('-AddTime')
             paginator = Paginator(ordersfilter, 10)  # Show 25 contacts per page
             page = request.GET.get('page')
