@@ -126,7 +126,6 @@ def lockOrderAuthentication(request):
 class sellerIndex(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-
             mymoney = deposit.objects.get(user=request.user.id)
             return render(request, 'material/seller/dashboard.html', {'mymoney':mymoney})
         else:

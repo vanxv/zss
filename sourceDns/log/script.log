@@ -11353,3 +11353,4 @@ Traceback (most recent call last):
 TypeError: _prepare() takes 1 positional argument but 2 were given
 2017-08-01 11:29:48,628 [Thread-24:123145384095744] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
 2017-08-01 13:28:04,486 [Thread-8:123145360232448] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-01 14:12:59,934 [Thread-3:123145533054976] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
