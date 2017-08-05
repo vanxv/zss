@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'testapp',
     'crm',
     'users',
     'goods',
@@ -54,12 +53,12 @@ INSTALLED_APPS = [
     'wechat',
     'blacklist',
     'cryapp',
-    #'rest_framework',
-    'snippets.apps.SnippetsConfig',
+    'rest_framework',
     'django_tables2',
     'financial',
     'servers',
     'auto',
+    'adapi',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 
@@ -253,3 +252,5 @@ LOGGING = {
         }
     }
 }
+
+

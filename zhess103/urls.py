@@ -27,23 +27,23 @@ from cryapp.views import *
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from users.models import AuthUser
-#from rest_framework import routers, serializers, viewsets
+from rest_framework import routers, serializers, viewsets
 
 # Serializers define the API representation.
 
-# class UserSerializer(serializers.HyperlinkedModelSerializer):
-#     class Meta:
-#         model = AuthUser
-#         fields = ('url', 'username', 'email')
+class UserSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = AuthUser
+        fields = ('url', 'username', 'email')
+
+# ViewSets define the view behavior.
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = AuthUser.objects.all()
+    serializer_class = UserSerializer
 #
-# # ViewSets define the view behavior.
-# class UserViewSet(viewsets.ModelViewSet):
-#     queryset = AuthUser.objects.all()
-#     serializer_class = UserSerializer
-#
-# # Routers provide an easy way of automatically determining the URL conf.
-# router = routers.DefaultRouter()
-# router.register(r'AuthUser', UserViewSet)
+# Routers provide an easy way of automatically determining the URL conf.
+router = routers.DefaultRouter()
+router.register(r'AuthUser', UserViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
@@ -71,8 +71,8 @@ urlpatterns = [
     url(r'^users/', include('users.urls')),
     url(r'^goods/(?P<goodid>(\d+))', GetGoods, name = 'GetGoods'),
     #!-------- rest freawork --------------##
-    #url(r'^router/', include(router.urls)),
-    #url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     #url(r'^snippets/', include('snippets.urls')),
     #!-------- rest freawork --------------##
 
@@ -89,6 +89,10 @@ urlpatterns = [
     #---- CRUD---#
     url(r'^servers/', include('servers.urls')),
     #----CRUD---#
+
+#!---- adapi ---#
+    url(r'^adapi/', include('adapi.urls')),
+#!---- adapi ---#
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用
