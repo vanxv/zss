@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'financial',
     'servers',
     'auto',
-    'adapi',
+    'adapi'
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 
@@ -254,3 +254,14 @@ LOGGING = {
 }
 
 
+
+# api
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+
+# api
