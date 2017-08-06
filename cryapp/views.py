@@ -193,23 +193,16 @@ def GetGoods(request, goodid):
         def iphoneid_authentication(request):
             phoneid_post = str(request.POST['phoneid'])
             if phoneid_post == '':
-                printtext = open('debug.txt','w+')
-                printtext.write(str(datetime.now())+str(phoneid_post)+'188'+'phoneid_post:'+str(phoneid_post))
-                printtext.close()
-                print('open')
                 return redirect('/webbrowser/')
             mobileidvalues = mobileid.objects.filter(mobileid=phoneid_post)
-            if mobileidvalues.exists() == True:
+            if mobileidvalues.count() > 0:
                 mobileuserexists1 = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user))
-                if mobileuserexists1.exists() == True:
+                if mobileuserexists1.count() > 0:
                     blacklistlogcreate = blacklistlog.objects.create(user=request.user,resip=ip(request),Remarks='request.user.id:'+str(request.user.id)+'mobileid not have:'+phoneid_post)
                     blacklistlogcreate.save()
                     return redirect('/')
                 else:
                     mobileidget = mobileid.objects.get(mobileid=phoneid_post)
-                    # printtext = open('debug.txt', 'w+')
-                    # printtext.write(str(datetime.now()) + '201'+str(mobileidget.id) + str(phoneid_post)+'mobileidget:'+str(type(mobileidget)))
-                    # printtext.close()
                     mobilelogcreate = mobilelog.objects.create(user=request.user,resip=ip(request), mobileid=mobileidget)
                     mobilelogcreate.save()
                     return
