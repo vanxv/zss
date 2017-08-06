@@ -22,8 +22,7 @@ def financial_index(request):
             financial_index_class = financial_index_post()
             return render(request, 'material/financial/moneytable.html',{
                             'money':float(financial_index_class.money),
-                            'orderBill':financial_index_class.orderBilldef
-                          })
+                            'orderBill':financial_index_class.orderBilldef})
 
         if request.method == 'POST':
             pass
