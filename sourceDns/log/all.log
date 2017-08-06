@@ -185,3 +185,633 @@
 2017-08-06 19:48:42,339 [Thread-9:123145430048768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SELECT `shops`.`id`, `shops`.`user_id`, `shops`.`shopname`, `shops`.`shopkeepername`, `shops`.`platform`, `shops`.`add_time` FROM `shops` WHERE `shops`.`id` = '15019983676355634'; args=('15019983676355634',)
 2017-08-06 19:48:42,369 [Thread-9:123145430048768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '150199836775589'; args=('150199836775589',)
 2017-08-06 19:48:42,445 [Thread-9:123145430048768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.069) SELECT `users_tbusername`.`id`, `users_tbusername`.`user_id`, `users_tbusername`.`tbUsername`, `users_tbusername`.`is_blacklist` FROM `users_tbusername` WHERE `users_tbusername`.`user_id` = 1; args=(1,)
+2017-08-06 20:39:22,870 [Dummy-6:123145430093824] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 20:39:22,890 [Dummy-6:123145430093824] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT VERSION(); args=None
+2017-08-06 20:39:23,751 [Dummy-6:123145430093824] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SHOW FULL TABLES; args=None
+2017-08-06 20:39:23,777 [Dummy-6:123145430093824] [django.db.backends:90] [utils:execute] [DEBUG]- (0.019) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-06 20:41:22,343 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>"
+2017-08-06 20:41:22,425 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>"
+2017-08-06 20:41:22,437 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-08-06 20:41:22,449 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>"
+2017-08-06 20:41:22,464 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>"
+2017-08-06 20:41:22,478 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>"
+2017-08-06 20:41:22,498 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>"
+2017-08-06 20:41:22,519 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>"
+2017-08-06 20:41:22,526 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 20:41:22,539 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>"
+2017-08-06 20:41:22,555 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>"
+2017-08-06 20:41:22,558 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SELECT VERSION(); args=None
+2017-08-06 20:41:22,623 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>"
+2017-08-06 20:41:22,697 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>"
+2017-08-06 20:41:22,748 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>"
+2017-08-06 20:41:22,753 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.027) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = '1dm94bmoyvc9jv8kd85bogi44ma6mis8' AND `django_session`.`expire_date` > '2017-08-06 20:41:22'); args=('1dm94bmoyvc9jv8kd85bogi44ma6mis8', '2017-08-06 20:41:22')
+2017-08-06 20:41:22,811 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>"
+2017-08-06 20:41:22,828 [Thread-10:123145451114496] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>"
+2017-08-06 20:41:22,879 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.059) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`mobile`, `auth_user`.`balance`, `auth_user`.`wechatName`, `auth_user`.`wechat`, `auth_user`.`qq`, `auth_user`.`alipay`, `auth_user`.`bankName`, `auth_user`.`bankID`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-06 20:41:22,899 [Thread-10:123145451114496] [django.server:131] [basehttp:log_message] [WARNING]- "GET /robots.txt HTTP/1.1" 404 4585
+2017-08-06 20:41:22,928 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.030) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE (`cryapp_cryorder`.`buyerid_id` = 1 AND `cryapp_cryorder`.`AddTime` > '2017-07-04 20:41:22' AND NOT (`cryapp_cryorder`.`Status` = 0)); args=(1, '2017-07-04 20:41:22', 0)
+2017-08-06 20:41:23,406 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:23,430 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:23,467 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:23,491 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:25,521 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.037) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:25,546 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:25,585 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:25,607 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:26,212 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.029) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:26,239 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:26,274 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:26,299 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,278 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.027) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,319 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,353 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,377 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,922 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,944 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:27,982 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:28,005 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-06 20:41:28,958 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT * FROM cryapp_cryorder WHERE Status = 1 GROUP BY GoodId_id; args=()
+2017-08-06 20:41:28,997 [Thread-7:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-06 20:41:29,139 [Thread-7:123145435348992] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 7908
+2017-08-06 20:41:32,492 [Thread-12:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 20:41:32,509 [Thread-12:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-06 20:41:32,613 [Thread-12:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-06 20:41:32,646 [Thread-12:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`GoodId_id` = '1501998367719358' LIMIT 1; args=('1501998367719358',)
+2017-08-06 20:41:32,694 [Thread-12:123145435348992] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/1501998367719358 HTTP/1.1" 200 18963
+2017-08-06 21:04:18,035 [Thread-14:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.317) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:04:18,412 [Thread-14:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.370) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:04:18,423 [Thread-14:123145435348992] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:04:24,535 [Thread-15:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.371) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:04:24,918 [Thread-15:123145435348992] [django.db.backends:90] [utils:execute] [DEBUG]- (0.380) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:04:24,926 [Thread-15:123145435348992] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:10:51,724 [Dummy-6:123145342308352] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:10:51,743 [Dummy-6:123145342308352] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-06 21:10:52,931 [Dummy-6:123145342308352] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SHOW FULL TABLES; args=None
+2017-08-06 21:10:52,973 [Dummy-6:123145342308352] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-06 21:12:38,398 [Thread-7:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.409) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:12:38,768 [Thread-7:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.369) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:12:38,789 [Thread-7:123145347563520] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:12:47,079 [Thread-8:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.141) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:12:47,203 [Thread-8:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.122) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:12:47,208 [Thread-8:123145347563520] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:12:53,300 [Thread-9:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.348) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:12:53,663 [Thread-9:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.361) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:12:53,669 [Thread-9:123145347563520] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:19:16,783 [Thread-10:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.348) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:19:17,140 [Thread-10:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.353) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:19:17,153 [Thread-10:123145347563520] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:19:20,673 [Thread-11:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.291) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:19:20,795 [Thread-11:123145347563520] [django.db.backends:90] [utils:execute] [DEBUG]- (0.121) SELECT `adapi_advert`.`id`, `adapi_advert`.`name`, `adapi_advert`.`title`, `adapi_advert`.`thumb`, `adapi_advert`.`url`, `adapi_advert`.`timeline` FROM `adapi_advert`; args=()
+2017-08-06 21:19:20,801 [Thread-11:123145347563520] [django.server:131] [basehttp:log_message] [INFO]- "GET /adapi/advert HTTP/1.1" 200 865
+2017-08-06 21:40:10,331 [Dummy-6:123145373560832] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:40:10,349 [Dummy-6:123145373560832] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-06 21:40:12,277 [Dummy-6:123145373560832] [django.db.backends:90] [utils:execute] [DEBUG]- (0.019) SHOW FULL TABLES; args=None
+2017-08-06 21:40:12,316 [Dummy-6:123145373560832] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-06 21:40:16,828 [Dummy-6:123145445560320] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:40:16,846 [Dummy-6:123145445560320] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-06 21:40:18,864 [Dummy-6:123145445560320] [django.db.backends:90] [utils:execute] [DEBUG]- (0.019) SHOW FULL TABLES; args=None
+2017-08-06 21:40:18,888 [Dummy-6:123145445560320] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-06 21:43:01,126 [Dummy-6:123145552691200] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-06 21:43:01,145 [Dummy-6:123145552691200] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SELECT VERSION(); args=None
+2017-08-06 21:43:01,936 [Dummy-6:123145552691200] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SHOW FULL TABLES; args=None
+2017-08-06 21:43:01,960 [Dummy-6:123145552691200] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

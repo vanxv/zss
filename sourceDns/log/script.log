@@ -12727,3 +12727,4 @@ AttributeError: 'str' object has no attribute 'decode'
 2017-08-05 20:47:53,445 [Thread-11:123145506074624] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
 2017-08-05 21:01:14,252 [Thread-7:123145346318336] [django.request:152] [base:get_response] [WARNING]- Not Found: /adapi/version_last$
 2017-08-06 19:14:06,039 [Thread-13:123145542107136] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-06 20:41:22,851 [Thread-10:123145451114496] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt

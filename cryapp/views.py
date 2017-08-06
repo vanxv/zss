@@ -196,7 +196,7 @@ def GetGoods(request, goodid):
                 return redirect('/webbrowser/')
             mobileidvalues = mobileid.objects.filter(mobileid=phoneid_post)
             if mobileidvalues.count() > 0:
-                mobileuserexists1 = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user))
+                mobileuserexists1 = mobileid.objects.filter(mobileid=phoneid_post).filter(~Q(user=request.user.id))
                 if mobileuserexists1.count() > 0:
                     blacklistlogcreate = blacklistlog.objects.create(user=request.user,resip=ip(request),Remarks='request.user.id:'+str(request.user.id)+'mobileid not have:'+phoneid_post)
                     blacklistlogcreate.save()
@@ -294,7 +294,6 @@ class Good_Index_Add(LoginRequiredMixin, View):
         tempShopFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform).filter(Q(user_id=request.user.id))
-        print(tempGoodsUserTrue.exists())
         if tempGoodsUserTrue.count() > 0: #判断产品是否存在
             saveshop = Shop.objects.get(user=request.user, shopname=shopname) #店铺名称
             saveGoods = Goods.objects.get(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
