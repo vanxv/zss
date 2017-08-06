@@ -30,7 +30,7 @@ SECRET_KEY = '&9#oe63kes&fs58#!fkq=nq(s8&+ah2l075nbnn0_3xoxkpfcj'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
+CORS_ORIGIN_ALLOW_ALL = True
 # Application definition
 AUTHENTICATION_BACKENDS = (
     'users.backends.CustomBackend',
@@ -38,6 +38,7 @@ AUTHENTICATION_BACKENDS = (
 
 INSTALLED_APPS = [
     'grappelli',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,6 +72,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'zhess103.urls'

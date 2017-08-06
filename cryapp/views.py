@@ -303,20 +303,20 @@ class Good_Index_Add(LoginRequiredMixin, View):
         tempShopUserFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform).filter(Q(user_id=request.user.id))
         print(tempGoodsUserTrue.exists())
-        if tempGoodsUserTrue.ordered == True: #判断产品是否存在
+        if tempGoodsUserTrue.count() > 0: #判断产品是否存在
             saveshop = Shop.objects.get(user=request.user, shopname=shopname) #店铺名称
             saveGoods = Goods.objects.get(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
             saveorder()
         elif tempShopUserFlase.ordered == True: #判断产品是否在其他在其他店铺上
             return render(request, 'material/seller/dashboard.html', {'test': '产品已存在'})
-        elif tempShopUserTrue.ordered == True: #判断产品是否在其他账户上
+        elif tempShopUserTrue.count() > 0: #判断产品是否在其他账户上
             saveshop = Shop.objects.get(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
             saveshop.save()
             savegoods()
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
             saveorder()
-        elif tempShopFlase.ordered == True: #判断产品是否在其他账户上
+        elif tempShopFlase.count() > 0: #判断产品是否在其他账户上
             return render(request, 'material/seller/dashboard.html', {'test': '店铺已存在其他人账户上'})
         else:
             saveshop = Shop.objects.create(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺

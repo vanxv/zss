@@ -12686,3 +12686,43 @@ Traceback (most recent call last):
     "returned None instead." % (callback.__module__, view_name)
 ValueError: The view adapi.views.advert_method didn't return an HttpResponse object. It returned None instead.
 2017-08-05 16:13:40,166 [Thread-10:123145570447360] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 19:06:26,126 [Thread-10:123145549860864] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 19:06:37,902 [Thread-18:123145534095360] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 20:17:23,686 [Thread-8:123145442844672] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 20:30:03,328 [Thread-7:123145405186048] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/advert
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 13, in advert_method
+    advertlist.decode("utf-8")
+AttributeError: 'dict' object has no attribute 'decode'
+2017-08-05 20:30:03,528 [Thread-9:123145415696384] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 20:31:14,819 [Thread-7:123145577025536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/advert
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 12, in advert_method
+    advertlist[i.name] = {'id':i.id,'key':i.name,'title':(i.title).decode("utf-8"),'thumb':i.thumb,'url':i.url,'timeline':i.timeline}
+AttributeError: 'str' object has no attribute 'decode'
+2017-08-05 20:36:56,257 [Thread-8:123145569452032] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 20:37:54,031 [Thread-7:123145426100224] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/advert
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 15, in advert_method
+    return HttpResponse(json.dumps(advertlist, ensure_ascii=False).decode('utf8'), content_type='application/json')
+AttributeError: 'str' object has no attribute 'decode'
+2017-08-05 20:47:53,445 [Thread-11:123145506074624] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-05 21:01:14,252 [Thread-7:123145346318336] [django.request:152] [base:get_response] [WARNING]- Not Found: /adapi/version_last$
