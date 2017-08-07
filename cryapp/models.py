@@ -53,5 +53,4 @@ class CryOrder(models.Model):
     class Meta:
         verbose_name = '试用任务表'
         verbose_name_plural = verbose_name
-    def __str__(self):
-        return self.goodid
+

@@ -280,7 +280,7 @@ class Good_Index_Add(LoginRequiredMixin, View):
             saveGoods.save()
 
         #deposit 
-        trytotal = (total > (deposit_index_add - cryordermoney - 200))
+        trytotal = (total > (deposit_index_add - cryordermoney - 100))
         if trytotal == True:
             text = '余额不足请充值,'
             return render(request, 'material/seller/dashboard.html', {'test': text, 'money':deposit})

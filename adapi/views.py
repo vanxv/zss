@@ -37,7 +37,8 @@ def login(request):
     return HttpResponse(json.dumps(login_list, ensure_ascii=False, indent=2), content_type='application/json')
 
 def package(request):
-    packagelist = {"id":"6","key":"test0","name":"专业版","product":["fun_count"],"data":"false"}
+    #product":["fun_1"] control button
+    packagelist = {"id":"6","key":"test0","name":"专业版","product":["fun_1","fun_1","fun_1","fun_2","fun_3","fun_4","fun_5","fun_6","fun_7","fun_8","fun_9","fun_10","fun_11"],"data":"false"}
     return HttpResponse(json.dumps(packagelist, ensure_ascii=False, indent=2), content_type='application/json')
 
 # Create your views here.
