@@ -13443,3 +13443,4 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
     raise MultiValueDictKeyError(repr(key))
 django.utils.datastructures.MultiValueDictKeyError: "'text'"
+2017-08-08 15:25:04,213 [Thread-12:123145353392128] [django.request:152] [base:get_response] [WARNING]- Not Found: /adapi/version_last

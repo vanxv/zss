@@ -66,7 +66,7 @@ def stat(request):
     return HttpResponse(json.dumps(keyword, ensure_ascii=False, indent=2), content_type='application/json')
 
 def getdata(request):
-    keyword = {"return":0,"result":[{"shop_id":"71171388","shop_name":"Sharp夏普电视","shop_url":"\/\/wjdianshi.taobao.com\/","validity":"1502777024","dateline":"1501854500"},{"shop_id":"59158241","shop_name":"今旺旗舰店","shop_url":"\/\/jinwang.tmall.com","validity":"1501593729","dateline":"1501593729"},{"shop_id":"108854614","shop_name":"匠心店","shop_url":"\/\/shop108854614.taobao.com\/","validity":"1500249425","dateline":"1500249425"},{"shop_id":"57300507","shop_name":"热风旗舰店","shop_url":"\/\/hotwind.tmall.com","validity":"1500129234","dateline":"1500129234"}],"servtime":1502110224}
+    keyword = {"return":0,"result":{"site":"taobao","gid":"534822129268","title":"匠心工厂直营！玻妞遥控电动清洁器家用擦窗机器人擦玻璃机器人","thumb":"\/\/gd1.alicdn.com\/imgextra\/i4\/1976389603\/TB25CGBXjnyQeBjSspbXXazUXXa_!!1976389603.jpg_400x400.jpg","prime":"1377.00","multi":["\/\/gd3.alicdn.com\/imgextra\/i4\/1976389603\/TB25CGBXjnyQeBjSspbXXazUXXa_!!1976389603.jpg_400x400.jpg"],"shop_id":"108854614","shop_url":"\/\/shop108854614.taobao.com\/","shop_name":"匠心店","type":""}}
     return HttpResponse(json.dumps(keyword, ensure_ascii=False, indent=2), content_type='application/json')
 
 
