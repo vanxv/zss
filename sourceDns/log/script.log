@@ -13444,3 +13444,892 @@ Traceback (most recent call last):
     raise MultiValueDictKeyError(repr(key))
 django.utils.datastructures.MultiValueDictKeyError: "'text'"
 2017-08-08 15:25:04,213 [Thread-12:123145353392128] [django.request:152] [base:get_response] [WARNING]- Not Found: /adapi/version_last
+2017-08-08 20:32:37,332 [Thread-9:123145460289536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:33:02,007 [Thread-7:123145338900480] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:33:09,404 [Thread-11:123145344155648] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:34:32,050 [Thread-7:123145548468224] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:34:39,550 [Thread-9:123145548468224] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:34:47,680 [Thread-11:123145548468224] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:35:21,245 [Thread-9:123145503453184] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-08 20:35:35,634 [Thread-211:123145503453184] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    username = request.POST['username']
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'username'"
+2017-08-09 00:27:01,580 [Thread-9:123145536139264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:27:25,354 [Thread-212:123145536139264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:27:33,981 [Thread-413:123145536139264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:27:46,546 [Thread-417:123145536139264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:28:05,687 [Thread-7:123145387073536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:28:13,174 [Thread-11:123145387073536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:29:14,940 [Thread-212:123145387073536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:30:52,920 [Thread-214:123145387073536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:31:37,975 [Thread-218:123145387073536] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:36:21,310 [Thread-208:123145433587712] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:36:48,634 [Thread-9:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:37:12,879 [Thread-212:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:38:22,509 [Thread-216:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:38:47,729 [Thread-419:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:45:09,215 [Thread-622:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:45:34,822 [Thread-825:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:45:37,501 [Thread-826:123145521848320] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:45:39,171 [Thread-827:123145527103488] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:45:57,617 [Thread-831:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:47:11,165 [Thread-833:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:48:10,951 [Thread-1037:123145527103488] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:48:11,051 [Thread-1036:123145521848320] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:48:16,979 [Thread-1038:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 00:49:17,113 [Thread-1042:123145516593152] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:07:09,482 [Thread-9:123145593589760] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:07:46,852 [Thread-209:123145593589760] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:08:21,535 [Thread-215:123145593589760] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:08:48,672 [Thread-416:123145593589760] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:09:34,381 [Thread-420:123145593589760] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:11:01,579 [Thread-460:123145619865600] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/getword
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'postdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 85, in get_word
+    print(request.POST['postdata'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'postdata'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 87, in get_word
+    print('no')
+BrokenPipeError: [Errno 32] Broken pipe
+2017-08-09 01:11:01,592 [Thread-459:123145614610432] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/getword
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'postdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 85, in get_word
+    print(request.POST['postdata'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'postdata'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 87, in get_word
+    print('no')
+BrokenPipeError: [Errno 32] Broken pipe
+2017-08-09 01:11:01,608 [Thread-461:123145593589760] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/getword
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'postdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 85, in get_word
+    print(request.POST['postdata'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'postdata'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 87, in get_word
+    print('no')
+BrokenPipeError: [Errno 32] Broken pipe
+2017-08-09 01:11:01,625 [Thread-462:123145577824256] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/getword
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'postdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 85, in get_word
+    print(request.POST['postdata'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'postdata'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 87, in get_word
+    print('no')
+BrokenPipeError: [Errno 32] Broken pipe
+2017-08-09 01:11:01,658 [Thread-463:123145583079424] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/getword
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'postdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 85, in get_word
+    print(request.POST['postdata'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'postdata'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 87, in get_word
+    print('no')
+BrokenPipeError: [Errno 32] Broken pipe
+2017-08-09 01:20:54,446 [Thread-132:123145388560384] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 94, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:37:03,009 [Thread-8:123145331224576] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:37:51,925 [Thread-208:123145331224576] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:38:45,820 [Thread-210:123145331224576] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=password)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 01:41:30,816 [Thread-8:123145329045504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=pwd)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 07:06:16,758 [Thread-178:123145329045504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=pwd)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 07:07:16,952 [Thread-378:123145329045504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=pwd)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 07:07:32,298 [Thread-380:123145329045504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=pwd)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 07:07:42,037 [Thread-580:123145329045504] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 91, in login
+    userlist = AuthUser.objects.get(id=username, password=pwd)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: AuthUser matching query does not exist.
+2017-08-09 09:11:14,222 [Thread-7:123145433567232] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 93, in login
+    login_list = {"return": 0, "result": {"member_id": userlist.id, "member_name": userlist.username, "status": "1", "level_id": 2},"servtime": 1501755761}
+AttributeError: 'QuerySet' object has no attribute 'id'
+2017-08-09 09:12:15,066 [Thread-8:123145433567232] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /adapi/login
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/adapi/views.py", line 93, in login
+    login_list = {"return": 0, "result": {"member_id": userlist.id, "member_name": userlist.username, "status": "1", "level_id": 2},"servtime": 1501755761}
+AttributeError: 'QuerySet' object has no attribute 'id'
+2017-08-09 10:56:34,917 [Thread-854:123145598193664] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-09 10:56:50,077 [Thread-870:123145586073600] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

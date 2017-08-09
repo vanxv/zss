@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
     url(r'^advert$', views.advert_method, name='advert_method'),
     url(r'^versionlast$', views.version_last, name='last_version'),
-    url(r'^getword', views.get_word, name='last_version'),
+    url(r'^getword', views.getword, name='last_version'),
     url(r'^login', views.login, name='adapi_login'),
     url(r'^package', views.package, name='adapi_package'),
     url(r'^keywords', views.keywords, name='keyword'),

@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "background.js", "jquery-1.11.2.min.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon48.png"
+   },
+   "content_scripts": [ {
+      "css": [ "main.css" ],
+      "js": [ "jquery-1.11.2.min.js", "contentscript.js", "spin.min.js" ],
+      "matches": [ "*://subway.simba.taobao.com/*", "*://s.taobao.com/*", "*://item.taobao.com/*", "*://mai.taobao.com/*" ]
+   } ],
+   "description": "自动广告魔方：可以帮助掌柜节省大把时间！一键添加关键词、一键删除低分词、一键删除地展现词、一键调整关键词出价、一键调整关键词匹配方式、一键添加精选人群、一键优化地域、一键优化出价、一键高级优化出价。",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArXwdrVkjmn3Y89H0mUX8ZQW/i0N1tcTKFxvS5/OXEH0D1dQSTWJq2NG4AX88f3XPg5YR15wEV3SmJk/n4LlqAQMpr5mglw+UMzcwQ178FLYTuq85XcRxVXiKYCuL2nvtzE2xlz3fTUktg4Q8hg7lfiQ+8cMTFgyWpvJ7lMjTjJMp+9n0V8wX+RYvwW9gL3MXzFbVjU9bUIHzgaFK0+FjU+0bf4XSodSZfOhtpVw/6TJnVTIp8ymXNOZNyoTgPaotov0JOqu2RNOrn/kwSl8MkKRicPCuUSZCmKECcXn+NvSbzItJHleNM5z4OOFcxoWQ0HmW+G+/Zsf+UDDAuQUJrQIDAQAB",
+   "manifest_version": 2,
+   "name": "自动广告魔方",
+   "permissions": [ "management", "cookies", "tabs", "contextMenus", "notifications", "storage", "*://subway.simba.taobao.com/*", "*://tool.yqt.so/*", "*://proxy.chaocheyi.com/*" ],
+   "version": "1.0.1",
+   "web_accessible_resources": [ "images/*" ]
+}
