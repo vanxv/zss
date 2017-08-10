@@ -119,8 +119,8 @@
 	                                    <thead class="text-primary">
                                     <th>产品图片</th>
                                     <th>关键词</th>
-                                    <th>任务日期</th>
-                                    <th>平台订单号</th>
+                                    <th>试用单号</th>
+                                    <th>平台单号</th>
                                     <th>金额</th>
                                     <th>操作</th>
 
@@ -133,7 +133,7 @@
     {% elif contact.Status == 1  %}
     {% else %}
     <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
-    <th>{{ contact.Keywords }}</th>
+    <th><p>店名：{{ contact.ShopId.shopkeepername }}</p><tb>试用方法：{{ contact.Keywords }}</tb></th>
     <th>{{ contact.id }}</th>
     <th>{{ contact.PlatformOrdersid }}</th>
     <th>{{ contact.Money }}</th>

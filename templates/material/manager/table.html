@@ -100,11 +100,11 @@
 
 
     <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
-    <th>{{ contact.Keywords }}</th>
+    <th><p>店名：{{ contact.ShopId.shopname }}/{{ contact.ShopId.shopkeepername }}</p>试用：{{ contact.Keywords }}</th>
     <th>手机：{{ contact.Userid.username }}<br>
      淘宝:{{ contact.tbUsername.tbUsername }}
         <br>
-     京东:{{ contact.tbUsername.tbUsername }}</th>
+     京东:{{ contact.tbUsername.jdUsername }}</th>
     <th>
         订单编号：{{ contact.id }}<br>
         平台单号：{{ contact.PlatformOrdersid }}</th>

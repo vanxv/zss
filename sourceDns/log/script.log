@@ -15230,3 +15230,9 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
     raise errorclass(errno, errval)
 django.db.utils.InternalError: (1054, "Unknown column 'users_idcard.Idcardname' in 'field list'")
+2017-08-10 10:49:20,770 [Thread-15:123145539162112] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-10 11:03:56,482 [Thread-65:123145533906944] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-10 11:04:13,121 [Thread-68:123145528651776] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manager/
+2017-08-10 11:04:22,988 [Thread-70:123145539162112] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-10 11:05:06,223 [Thread-78:123145533906944] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-10 11:05:15,289 [Thread-85:123145528651776] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg

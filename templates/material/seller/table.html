@@ -100,7 +100,7 @@
     {% else %}
 
     <th><img src="{{ contact.GoodId.image1 }}" style="width: 100px;"></th>
-    <th>{{ contact.Keywords }}</th>
+    <th><p>店名：{{ contact.ShopId.shopname }}/{{ contact.ShopId.shopkeepername }}</p>试用方法：{{ contact.Keywords }}</th>
     <th>手机：{{ contact.Userid.username }}<br>
      淘宝:{{ contact.tbUsername.tbUsername }}
         <br>
