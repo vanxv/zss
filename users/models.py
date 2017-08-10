@@ -7,16 +7,6 @@ class AuthUser(AbstractUser):
     is_seller = models.IntegerField(default="0", null=True, blank=True, verbose_name=u"是否是卖家")
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     address = models.CharField(max_length=130, default=u"", null=True, blank=True, verbose_name=u"地址")
-    mobile = models.IntegerField(verbose_name=u"手机号", null=True)
-    balance = models.DecimalField('账户余额', default=0, max_digits=18, decimal_places=2, blank=True, null=True)
-    wechatName = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"微信名")
-    wechat = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"微信号")
-    qq = models.CharField(max_length=13, null=True, blank=True, verbose_name=u"qq")
-    alipay = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"alipay")
-    bankName = models.CharField(choices=(
-    ('zsbank', '招商银行'), ('zgbank', '中国银行'), ('jsbank', '建设银行'), ('gsbank', '工商银行'), ('nybank', '农业银行'),
-    ('jtbank', '交通银行')), null=True, verbose_name=u"银行", max_length=9)
-    bankID = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"银行")
     realname = models.CharField(max_length=20, null=True, blank=True, verbose_name=u"真名")
     tags = models.CharField(max_length=200, null=True, blank=True, verbose_name=u"标签")
     image = models.ImageField(upload_to="image/Userimage/%Y/%m", default=u'image/default.png', max_length=100,
@@ -99,6 +89,40 @@ class jdUsername(models.Model):
         return '{0}({1})'.format(self.user, self.jdUsername)
 
 
+class wechat(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    wechat = models.CharField(max_length=100, verbose_name='wechat', blank=True, null=True, unique=True)
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
+    class Meta:
+        verbose_name = u'wechat'
+        verbose_name_plural = verbose_name
+
+class alipay(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    alipay = models.CharField(max_length=100, verbose_name='alipay', blank=True, null=True, unique=True)
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
+    class Meta:
+        verbose_name = u'alipay'
+        verbose_name_plural = verbose_name
+
+class Bankcard(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'user', blank=True, null=True)
+    Bankcard = models.CharField(max_length=100, verbose_name='Bankcard', blank=True, null=True, unique=True)
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
+    class Meta:
+        verbose_name = u'Bankcard'
+        verbose_name_plural = verbose_name
+
+class Idcard(models.Model):
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    Idcard = models.CharField(max_length=100, verbose_name='Idcard', blank=True, null=True, unique=True)
+    Idcardname = models.CharField(max_length=100, verbose_name='Idcardname', blank=True, null=True)
+    is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
+    class Meta:
+        verbose_name = u'Idcard'
+        verbose_name_plural = verbose_name
+    def __str__(self):              # __unicode__ on Python 2
+        return self.user
 
 class pcGuid(models.Model):
     user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
@@ -132,6 +156,7 @@ class Visuallog(models.Model):
     class Meta:
         verbose_name = u'VisualLog'
         verbose_name_plural = verbose_name
+
 
 
 class mobileid(models.Model):

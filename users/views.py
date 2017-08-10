@@ -3,10 +3,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.hashers import make_password
-from .models import AuthUser, pcGuid, pcGuidLog, Visuallog, tbUsername, jdUsername, real_name,blacklistlog, pcGuid, pcGuidLog
+from .models import AuthUser, pcGuid, pcGuidLog, Visuallog, tbUsername, jdUsername, real_name,blacklistlog, pcGuid, pcGuidLog, alipay, wechat, Idcard, Bankcard
 from django.views.generic.base import View
 from cryapp.models import CryOrder
-from .forms import LoginForm, RegisterForm, tbForm, jdForm
+from .forms import LoginForm, RegisterForm, tbForm, jdForm, alipayForm, wechatForm, BankcardForm, IdcardForm
 from cryapp.models import CryOrder
 from django.db.models import Q,F
 from goods.models import Goods
@@ -280,6 +280,9 @@ def cryorder_done(request, cryorders_id=0):
 
 
 #------ tb 1688 -----#
+
+
+#---- add user information ----#
 def tb(request):
     authenticationlogin_def = authenticationlogin(request)
     if not authenticationlogin_def is None:
@@ -289,12 +292,12 @@ def tb(request):
     elif request.method == "POST":
         form = tbForm(request.POST)
         if not form.is_valid():
-            return render(request, 'users/usersRequest.html', {'usersRequest':form});
+            return redirect('/cryapp/buyer/users/?error=%s' % form['tbusername'].errors)
         selecttbid = tbUsername.objects.filter(tbUsername=request.POST['tbusername'])
-        if len(selecttbid.values()) > 0:
+        if selecttbid.count() > 0:
             blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request), Remarks ='tbiderror:'+ request.POST['tbusername'])
             blacklistlogsave.save()
-            return render(request, 'users/usersRequest.html', {'usersRequest':'ID exist'});
+            return redirect('/cryapp/buyer/users/?error=信息错误，请联系管理员')
         createtbid = tbUsername.objects.create(user = request.user, tbUsername = request.POST['tbusername'])
         createtbid.save()
         return redirect('/cryapp/buyer/users/')
@@ -308,12 +311,101 @@ def jd(request):
     if request.method == 'POST':
         form = jdForm(request.POST)
         if not form.is_valid():
-            return render(request, 'users/usersRequest.html', {'usersRequest':form});
+            return redirect('/cryapp/buyer/users/?error=%s' % form['jdusername'].errors)
         selecttbid = jdUsername.objects.filter(jdUsername=request.POST['jdusername'])
-        if len(selecttbid.values()) > 0:
+        if selecttbid.count() > 0:
             blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request), Remarks ='jdiderror:'+ request.POST['jdusername'])
             blacklistlogsave.save()
-            return render(request, 'users/usersRequest.html', {'usersRequest':'ID exist'});
+            return redirect('/cryapp/buyer/users/?error=信息错误，请联系管理员')
         createjdid = jdUsername.objects.create(user = request.user, jdUsername = request.POST['jdusername'])
         createjdid.save()
         return redirect('/cryapp/buyer/users/')
+
+
+def alipay_def(request):
+    authenticationlogin_def = authenticationlogin(request)
+    if not authenticationlogin_def is None:
+        return authenticationlogin_def
+    if request.method == 'GET':
+        pass
+    if request.method == 'POST':
+        form = alipayForm(request.POST)
+        if not form.is_valid():
+            return redirect('/cryapp/buyer/users/?error=%s' % form['alipay'].errors)
+        selectalipayid = alipay.objects.filter(alipay=request.POST['alipay'])
+        if selectalipayid.count() > 0:
+            blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request), Remarks ='alipayiderror:'+ request.POST['alipay'])
+            blacklistlogsave.save()
+            return redirect('/cryapp/buyer/users/?error=信息错误，请联系管理员')
+        alipayid = alipay.objects.create(user = request.user, alipay = request.POST['alipay'])
+        alipayid.save()
+        return redirect('/cryapp/buyer/users/')
+
+
+def wechat_def(request):
+    authenticationlogin_def = authenticationlogin(request)
+    if not authenticationlogin_def is None:
+        return authenticationlogin_def
+    if request.method == 'GET':
+        pass
+    if request.method == 'POST':
+        form = wechatForm(request.POST)
+        if not form.is_valid():
+            return redirect('/cryapp/buyer/users/?error=%s' % form['wechat'].errors)
+        selectwechatid = wechat.objects.filter(wechat=request.POST['wechat'])
+        if selectwechatid.count() > 0:
+            blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request),
+                                                           Remarks='wechatiderror:' + request.POST['wechat'])
+            blacklistlogsave.save()
+            return redirect('/cryapp/buyer/users/?error=信息错误，请联系管理员')
+        wechatid = wechat.objects.create(user=request.user, wechat=request.POST['wechat'])
+        wechatid.save()
+        return redirect('/cryapp/buyer/users/')
+
+def bankcard_def(request):
+    authenticationlogin_def = authenticationlogin(request)
+    if not authenticationlogin_def is None:
+        return authenticationlogin_def
+    if request.method == 'GET':
+        pass
+    if request.method == 'POST':
+        form = BankcardForm(request.POST)
+        if not form.is_valid():
+            return redirect('/cryapp/buyer/users/?error=%s' % form['Bankcard'].errors)
+        selectwechatid = wechat.objects.filter(wechat=request.POST['Bankcard'])
+        if selectwechatid.count() > 0:
+            blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request),
+                                                           Remarks='Bankcardiderror:' + request.POST['Bankcard'])
+            blacklistlogsave.save()
+            return redirect('/cryapp/buyer/users/?error=信息错误，请联系管理员')
+        Bankcardid = Bankcard.objects.create(user=request.user, Bankcard=request.POST['Bankcard'])
+        Bankcardid.save()
+        return redirect('/cryapp/buyer/users/')
+
+
+def Idcard_def(request):
+    authenticationlogin_def = authenticationlogin(request)
+    if not authenticationlogin_def is None:
+        return authenticationlogin_def
+    if request.method == 'GET':
+        pass
+    if request.method == 'POST':
+        form = IdcardForm(request.POST)
+        if not form.is_valid():
+            idcarderror = ''
+            if form['Idcard'].errors:
+                idcarderror += form['Idcard'].errors
+            if form['name'].errors:
+                idcarderror += form['name'].errors
+            return redirect('/cryapp/buyer/users/?error=%s' % idcarderror)
+            Idcardid = Idcard.objects.filter(wechat=request.POST['Idcard'])
+        if Idcardid.count() > 0:
+            blacklistlogsave = blacklistlog.objects.create(user=request.user, resip=get_client_ip(request),
+                                                           Remarks='Idcardiderror:' + request.POST['Idcard'])
+            blacklistlogsave.save()
+            return redirect('/cryapp/buyer/users/?error=信息错误，请联系管理员')
+        Idcardid = Idcard.objects.create(user=request.user, Idcard=request.POST['Idcard'], Idcardname=request.POST['name'])
+        Idcardid.save()
+        return redirect('/cryapp/buyer/users/')
+
+# ---- add user information ----#

@@ -7,6 +7,10 @@ urlpatterns = [
     #---- ADD account ----#
     url(r'^tb/', views.tb),
     url(r'^jd/', views.jd),
+    url(r'^alipay/', views.alipay_def),
+    url(r'^Idcard/', views.Idcard_def),
+    url(r'^wechat/', views.wechat_def),
+    url(r'^Bankcard/', views.bankcard_def),
 
     #----manage ----#
     url(r'^manage/$', views.manage),

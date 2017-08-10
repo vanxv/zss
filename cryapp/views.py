@@ -3,8 +3,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import CryOrder
 from financial.models import deposit, orderBill
 from goods.models import Shop, Goods
-from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername,mobileid,mobilelog,real_name, blacklistlog
-from users.forms import tbForm, jdForm
+from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername,mobileid,mobilelog,real_name, blacklistlog, alipay, wechat, Bankcard, Idcard
+from users.forms import tbForm, jdForm, alipayForm
 import re
 import requests
 from django.db.models import Q, F
@@ -386,12 +386,20 @@ def buyeradmin(request):
     else:
         return render(request, 'login.html')
 
-def buyer_user(request):
+def buyer_user(request, errors=''):
     if request.method == "GET":
         if request.user.is_authenticated:
+            try:
+                error = request.GET['error']
+            except:
+                error = ''
             tb = tbUsername.objects.filter(user=request.user.id)
             jd = jdUsername.objects.filter(user=request.user.id)
-            return render(request, 'material/buyer/user.html', {'tb':tb,'jd':jd})
+            alipay_re = alipay.objects.filter(user=request.user.id)
+            wechat_re = wechat.objects.filter(user=request.user.id)
+            Bankcard_re = Bankcard.objects.filter(user=request.user.id)
+            #Idcard_re = Idcard.objects.filter(user=request.user.id)
+            return render(request, 'material/buyer/user.html', {'tb':tb,'jd':jd,'alipay':alipay_re,'error':error,'wechat':wechat_re,'Bankcard':Bankcard_re})
         else:
             return render(request, 'login.html')
 

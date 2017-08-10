@@ -90,13 +90,12 @@
                                     <p>账户一旦关联，无法修改。</p>
 
 	                            </div>
-	                            <div class="card-content">
+	                            <p class="card-content">
+                                    {% autoescape off %}{{ error }}{% endautoescape %}
                                         	<div class="row">
-	                                        <div class="col-md-4">
+	                                        <div class="col-md-8">
 												<div class="form-group label-floating">
-                                                    <br>
-                                                    <h2>{{ usersRequest }}</h2>
-                                                    <br>
+
                                                     {% if tb %}
                                                     {% for tbfor in tb %}
 
@@ -114,7 +113,7 @@
 	                                        </div>
 	                                        </div>
                                         	<div class="row">
-	                                        <div class="col-md-4">
+	                                        <div class="col-md-8">
 												<div class="form-group label-floating">
                                                     {% if jd %}
                                                     {% for jdfor in jd %}
@@ -131,64 +130,86 @@
 	                                        </div>
 	                                        </div>
 
+
+
                                         	<div class="row">
-	                                        <div class="col-md-4">
+	                                        <div class="col-md-8">
 												<div class="form-group label-floating">
-                                                    <from>
-													<label class="control-label">支付宝账号</label>
-													<input type="text" class="form-control"><button type="submit" class="btn btn-primary pull-right">确定</button>
-                                                </from>
+                                                    {% if Bankcard %}
+                                                    {% for Bankcardfor in Bankcard %}
+                                                    <li>银行卡号：{{ Bankcardfor.Bankcard }}</li>
+                                                    {% endfor %}
+                                                    {% else %}
+                                                    <form action="/users/Bankcard/" method="post">
+													<label class="control-label">银行卡号:</label>
+													<input name="Bankcard" type="text" class="form-control">
+                                                    <button type="submit" class="btn btn-primary pull-right">保存</button>
+                                                    </form>
+                                                    {% endif %}
 												</div>
 	                                        </div>
 	                                        </div>
 
-	                                    <div class="row">
-	                                        <div class="col-md-6">
+                                        	<div class="row">
+	                                        <div class="col-md-8">
 												<div class="form-group label-floating">
-													<label class="control-label">姓名</label>
-													<input type="text" class="form-control" >
+                                                    {% if alipay %}
+                                                    {% for alipayfor in alipay %}
+                                                    <li>支付宝账号:{{ alipayfor.alipay }}</li>
+                                                    {% endfor %}
+                                                    {% else %}
+                                                    <form action="/users/alipay/" method="post">
+													<label class="control-label">支付宝</label>
+													<input name="alipay" type="text" class="form-control">
+                                                    <button type="submit" class="btn btn-primary pull-right">保存</button>
+                                                    </form>
+                                                    {% endif %}
 												</div>
 	                                        </div>
-	                                    </div>
+	                                        </div>
 
-	                                    <div class="row">
-	                                        <div class="col-md-12">
+
+                                        	<div class="row">
+	                                        <div class="col-md-8">
 												<div class="form-group label-floating">
-													<label class="control-label">收件地址</label>
-													<input type="text" class="form-control" >
+                                                    {% if wechat %}
+                                                    {% for wechatfor in wechat %}
+                                                    <li>微信：{{ wechatfor.wechat }}</li>
+                                                    {% endfor %}
+                                                    {% else %}
+                                                    <form action="/users/wechat/" method="post">
+													<label class="control-label">wechat微信</label>
+													<input name="wechat" type="text" class="form-control">
+                                                    <button type="submit" class="btn btn-primary pull-right">保存</button>
+                                                    </form>
+                                                    {% endif %}
 												</div>
 	                                        </div>
-	                                    </div>
+	                                        </div>
 
-	                                    <div class="row">
-	                                        <div class="col-md-4">
+
+                                        	<div class="row">
+	                                        <div class="col-md-8">
 												<div class="form-group label-floating">
-													<label class="control-label">省份</label>
-													<input type="text" class="form-control" >
+                                                    {% if Idcard %}
+                                                    {% for Idcardfor in Idcard %}
+                                                    <li>实名用户(Idcard)：{{ Idcardfor.Idcardname }}</li>
+                                                    {% endfor %}
+                                                    {% else %}
+                                                    <form action="/users/Idcard/" method="post">
+                                                    <P>支付宝、微信、银行卡收款需要信息时使用</P>
+                                                    姓名：<input name="name" type="text" class="form-control">
+
+													身份证：<input name="Idcard" type="text" class="form-control">
+
+                                                    <button type="submit" class="btn btn-primary pull-right">保存</button>
+                                                    </form>
+                                                    {% endif %}
 												</div>
 	                                        </div>
-	                                        <div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">城市</label>
-													<input type="text" class="form-control" >
-												</div>
 	                                        </div>
-	                                    </div>
 
-	                                    <div class="row">
-	                                        <div class="col-md-12">
-	                                            <div class="form-group">
-	                                                <label>About Me</label>
-													<div class="form-group label-floating">
-									    				<label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-								    					<textarea class="form-control" rows="5"></textarea>
-		                        					</div>
-	                                            </div>
-	                                        </div>
-	                                    </div>
 
-	                                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-	                                    <div class="clearfix"></div>
 	                            </div>
 	                        </div>
 	                    </div>
