@@ -106,14 +106,6 @@
         <br>
      京东:{{ contact.tbUsername.tbUsername }}</th>
     <th>
-        <SPAN STYLE="color: #ea80fc">IP地址</SPAN>：207.207.182.64(浙江、杭州电信)<br>
-        <SPAN STYLE="color: #ea80fc">操作系统</SPAN>：iphone<br>
-        <SPAN STYLE="color: #ea80fc">百度坐标</SPAN>：经度：3928 维度：93823<br>
-        （定位地址：杭州市滨江区32号）点击查看地图<br>
-        <SPAN STYLE="color: #ea80fc">算法序列号</SPAN>：83293281029<br>
-
-        <SPAN STYLE="color: #ea80fc">手机号</SPAN>：182*****38<br>
-        <SPAN STYLE="color: #ea80fc">收件人</SPAN>：*香<br>
         订单编号：{{ contact.id }}<br>
         平台单号：{{ contact.PlatformOrdersid }}</th>
     <th>产品金额：{{ contact.Money }}<br>
@@ -125,7 +117,6 @@
          <button value="编辑" type="submit" class="btn btn-primary pull-right">编辑</button>
      </form>
      <form action="/cryapp/seller/orders/delete/{{ contact.id }}/" method="get">
-         <button value="delete" type="submit" class="btn btn-primary pull-right">删除</button></td>
     </form>
     {% elif contact.Status == 2 %}
      <form action="/cryapp/seller/orders/edit/{{ contact.id }}/" method="get">

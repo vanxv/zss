@@ -15609,3 +15609,72 @@ django.template.base.VariableDoesNotExist: Failed lookup for key [keyword1] in '
 2017-08-11 18:26:27,455 [Dummy-6:123145446719488] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
 2017-08-11 18:26:28,314 [Dummy-6:123145446719488] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SHOW FULL TABLES; args=None
 2017-08-11 18:26:28,339 [Dummy-6:123145446719488] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-11 18:28:33,299 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.738) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 18:28:34,287 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.986) SELECT VERSION(); args=None
+2017-08-11 18:28:34,386 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 18:28:28'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 18:28:28')
+2017-08-11 18:28:34,432 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-11 18:28:34,472 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE (`cryapp_cryorder`.`buyerid_id` = 1 AND `cryapp_cryorder`.`AddTime` > '2017-07-09 18:28:34' AND NOT (`cryapp_cryorder`.`Status` = 0)); args=(1, '2017-07-09 18:28:34', 0)
+2017-08-11 18:28:34,852 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 18:28:34,892 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 18:28:36,656 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 18:28:36,692 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 18:28:37,152 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT * FROM cryapp_cryorder WHERE Status = 1 and Userid_id <> 4644 AND Userid_id <>86  GROUP BY GoodId_id; args=()
+2017-08-11 18:28:37,198 [Thread-7:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 18:28:37,207 [Thread-7:123145451974656] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 18:28:37,228 [Thread-7:123145451974656] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 7868
+2017-08-11 18:28:45,899 [Thread-13:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 18:28:45,917 [Thread-13:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
+2017-08-11 18:28:46,016 [Thread-13:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '15021909427752361'; args=('15021909427752361',)
+2017-08-11 18:28:48,133 [Thread-13:123145451974656] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 18:28:48,162 [Thread-13:123145451974656] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'keyword1' in template 'material/product.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'keyword1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'keyword1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [keyword1] in 'CryOrder object'
+2017-08-11 18:28:48,178 [Thread-13:123145451974656] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15021909427752361 HTTP/1.1" 200 18413
