@@ -131,7 +131,9 @@
             </form>
     {% elif contact.Status == 4 %}
         <td>等待会员提交<p>
-            <button>审核通过</button></td>
+        <form action="/cryapp/seller/orders/done/{{ contact.id }}/" method="post">
+            <input type="submit" value="'审核通过"  class="btn btn-primary pull-right">
+        </form>
     {% elif contact.Status == 5 %}
         <h5>试用完成</h5>
     {% elif contact.Status == 6 %}

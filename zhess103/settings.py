@@ -108,6 +108,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '1121hotsren',
         'HOST': 'www.zhess.com',
+        #'HOST': '127.0.0.1',
     }
 }
 

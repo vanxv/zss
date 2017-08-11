@@ -200,17 +200,12 @@ class buyerIndex(View):
 def GetGoods(request, goodid):
     if request.method=="GET":
         getcryorder = CryOrder.objects.get(id=goodid)
-        if getcryorder.Status != 1:
-            return HttpResponseRedirect('/')
         # --- old product list
         #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
         # --- old product list
         return render(request, 'material/product.html', {'goodsview':getcryorder})
 
     elif request.method == "POST":
-        status = CryOrder.objects.get(id=request.POST['cryorderid'])
-        if status.Status != 1:
-            return HttpResponseRedirect('/')
         def Platform_account(request):
             goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
             if goodsviews.platform == 'tmall' or goodsviews.platform == 'taobao' or goodsviews.platform == '1688':
@@ -261,7 +256,9 @@ def GetGoods(request, goodid):
         Platform_account_def = Platform_account(request)
         if not Platform_account_def is None:
             return Platform_account_def
-
+        status = CryOrder.objects.get(id=request.POST['cryorderid'])
+        if status.Status != 1:
+            return HttpResponseRedirect('/')
         #--Authentication phonelog---#
         if goodsviews.platform == 'jd':
             goodsviews = CryOrder.objects.filter(id=request.POST['cryorderid']).update(buyerid_id=request.user.id, Status=2, jdUsername=jdUsername.objects.get(user=request.user))

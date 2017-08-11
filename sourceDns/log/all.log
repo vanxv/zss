@@ -15678,3 +15678,1687 @@ Traceback (most recent call last):
     (bit, current))  # missing attribute
 django.template.base.VariableDoesNotExist: Failed lookup for key [keyword1] in 'CryOrder object'
 2017-08-11 18:28:48,178 [Thread-13:123145451974656] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15021909427752361 HTTP/1.1" 200 18413
+2017-08-11 20:47:52,366 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.003) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 20:47:52,369 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.002) SELECT VERSION(); args=None
+2017-08-11 20:47:53,477 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.004) SHOW FULL TABLES; args=None
+2017-08-11 20:47:53,478 [Dummy-6:123145479577600] [django.db.backends.schema:103] [schema:execute] [DEBUG]- CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); (params None)
+2017-08-11 20:47:53,506 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.028) CREATE TABLE `django_migrations` (`id` integer AUTO_INCREMENT NOT NULL PRIMARY KEY, `app` varchar(255) NOT NULL, `name` varchar(255) NOT NULL, `applied` datetime(6) NOT NULL); args=None
+2017-08-11 20:47:53,513 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.006) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+2017-08-11 20:47:53,517 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.003) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+2017-08-11 20:47:53,518 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+2017-08-11 20:47:53,519 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT engine FROM information_schema.tables WHERE table_name = 'django_migrations'; args=['django_migrations']
+2017-08-11 20:47:53,528 [Dummy-6:123145479577600] [django.db.backends:90] [utils:execute] [DEBUG]- (0.003) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-11 20:48:03,568 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>"
+2017-08-11 20:48:03,579 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 20:48:03,588 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>"
+2017-08-11 20:48:03,594 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.005) SELECT VERSION(); args=None
+2017-08-11 20:48:03,599 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in '<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>'
+2017-08-11 20:48:03,611 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>"
+2017-08-11 20:48:03,621 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>"
+2017-08-11 20:48:03,630 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>"
+2017-08-11 20:48:03,641 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>"
+2017-08-11 20:48:03,643 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.008) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.536870'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.536870')
+2017-08-11 20:48:03,651 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>"
+2017-08-11 20:48:03,665 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>"
+2017-08-11 20:48:03,675 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>"
+2017-08-11 20:48:03,683 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>"
+2017-08-11 20:48:03,724 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>"
+2017-08-11 20:48:03,743 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>"
+2017-08-11 20:48:03,756 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>"
+2017-08-11 20:48:03,766 [Thread-13:123145516363776] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/urls/resolvers.py", line 300, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<RegexURLResolver <module 'auto.urls' from '/Users/VANXV/PycharmProjects/zss/auto/urls.py'> (None:auto) ^auto/>], [<RegexURLResolver <module 'grappelli.urls' from '/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/grappelli/urls.py'> (None:None) ^grappelli/>], [<RegexURLResolver <RegexURLPattern list> (admin:admin) ^admin/>], [<RegexURLResolver <module 'blacklist.urls' from '/Users/VANXV/PycharmProjects/zss/blacklist/urls.py'> (None:blacklist) ^blacklist/>], [<RegexURLResolver <module 'goods.urls' from '/Users/VANXV/PycharmProjects/zss/goods/urls.py'> (None:good) ^good/>], [<RegexURLResolver <module 'orders.urls' from '/Users/VANXV/PycharmProjects/zss/orders/urls.py'> (None:order) ^order/>], [<RegexURLResolver <module 'crm.urls' from '/Users/VANXV/PycharmProjects/zss/crm/urls.py'> (None:crm) ^crm/>], [<RegexURLResolver <module 'finance.urls' from '/Users/VANXV/PycharmProjects/zss/finance/urls.py'> (None:finance) ^finance/>], [<RegexURLResolver <module 'cashback.urls' from '/Users/VANXV/PycharmProjects/zss/cashback/urls.py'> (None:cashback) ^cashback/>], [<RegexURLResolver <module 'cryapp.urls' from '/Users/VANXV/PycharmProjects/zss/cryapp/urls.py'> (None:cryapp) ^cryapp/>], [<RegexURLResolver <module 'wechat.urls' from '/Users/VANXV/PycharmProjects/zss/wechat/urls.py'> (None:wechat) m/>], [<RegexURLPattern login ^login/>], [<RegexURLPattern register ^register/>], [<RegexURLPattern logout ^logout/>], [<RegexURLPattern welcome ^welcome/$>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'users.urls' from '/Users/VANXV/PycharmProjects/zss/users/urls.py'> (None:None) ^users/>], [<RegexURLPattern GetGoods ^goods/(?P<goodid>(\d+))>], [<RegexURLPattern webbrowser webbrowser/>], [<RegexURLResolver <module 'financial.urls' from '/Users/VANXV/PycharmProjects/zss/financial/urls.py'> (None:financialurl) ^financial/>], [<RegexURLPattern buyerindex ^$>], [<RegexURLResolver <module 'servers.urls' from '/Users/VANXV/PycharmProjects/zss/servers/urls.py'> (None:None) ^servers/>], [<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>], [<RegexURLPattern None ^media\/(?P<path>.*)$>]], 'path': 'robots.txt'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'RegexURLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'RegexURLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in "<RegexURLResolver <module 'adapi.urls' from '/Users/VANXV/PycharmProjects/zss/adapi/urls.py'> (None:None) ^adapi/>"
+2017-08-11 20:48:03,837 [Thread-13:123145516363776] [django.server:131] [basehttp:log_message] [WARNING]- "GET /robots.txt HTTP/1.1" 404 4587
+2017-08-11 20:48:03,870 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.866904'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.866904')
+2017-08-11 20:48:03,874 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.871219'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.871219')
+2017-08-11 20:48:03,900 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` LIMIT 21; args=()
+2017-08-11 20:48:03,903 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.536870') LIMIT 21; args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.536870')
+2017-08-11 20:48:03,906 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.536870') LIMIT 21; args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.536870')
+2017-08-11 20:48:03,909 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.536870') LIMIT 21; args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.536870')
+2017-08-11 20:48:03,912 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.536870') LIMIT 21; args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.536870')
+2017-08-11 20:48:03,926 [Thread-7:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:48:03.922621'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:48:03.922621')
+2017-08-11 20:48:11,844 [Thread-7:123145484832768] [django.server:131] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 243501
+2017-08-11 20:55:35,694 [Thread-16:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.002) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 20:55:35,698 [Thread-16:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-08-11 20:55:35,707 [Thread-16:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.005) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:55:35.686731'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:55:35.686731')
+2017-08-11 20:55:35,722 [Thread-16:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.006) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-11 20:55:41,126 [Thread-16:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 20:55:48,675 [Thread-16:123145484832768] [django.server:131] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 240436
+2017-08-11 20:56:12,945 [Thread-22:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 20:56:12,947 [Thread-22:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-08-11 20:56:12,955 [Thread-22:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.003) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:56:12.936178'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:56:12.936178')
+2017-08-11 20:56:12,970 [Thread-22:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.008) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-11 20:56:15,032 [Thread-22:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 20:56:20,816 [Thread-22:123145484832768] [django.server:131] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 240435
+2017-08-11 20:56:27,862 [Thread-28:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 20:56:27,863 [Thread-28:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-08-11 20:56:27,869 [Thread-28:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:56:27.852924'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:56:27.852924')
+2017-08-11 20:56:27,879 [Thread-28:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.005) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-11 20:56:31,811 [Thread-28:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 20:56:37,808 [Thread-28:123145484832768] [django.server:131] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 240435
+2017-08-11 20:59:42,865 [Thread-32:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 20:59:42,866 [Thread-32:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT VERSION(); args=None
+2017-08-11 20:59:42,875 [Thread-32:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.002) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 20:59:42.858152'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 20:59:42.858152')
+2017-08-11 20:59:42,884 [Thread-32:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.005) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-11 20:59:44,914 [Thread-32:123145484832768] [django.db.backends:90] [utils:execute] [DEBUG]- (0.001) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 20:59:52,165 [Thread-32:123145484832768] [django.server:131] [basehttp:log_message] [ERROR]- "GET / HTTP/1.1" 500 240437
+2017-08-11 21:00:04,617 [Dummy-6:123145528602624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:04,633 [Dummy-6:123145528602624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT VERSION(); args=None
+2017-08-11 21:00:05,494 [Dummy-6:123145528602624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SHOW FULL TABLES; args=None
+2017-08-11 21:00:05,520 [Dummy-6:123145528602624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-11 21:00:09,408 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:09,425 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-11 21:00:09,522 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.019) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`session_key` = 'pmbtojdodq0f2suosynkrwc459img781' AND `django_session`.`expire_date` > '2017-08-11 21:00:09'); args=('pmbtojdodq0f2suosynkrwc459img781', '2017-08-11 21:00:09')
+2017-08-11 21:00:09,556 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined`, `auth_user`.`is_seller`, `auth_user`.`is_blacklist`, `auth_user`.`address`, `auth_user`.`realname`, `auth_user`.`tags`, `auth_user`.`image`, `auth_user`.`referrercode`, `auth_user`.`remark` FROM `auth_user` WHERE `auth_user`.`id` = 1; args=(1,)
+2017-08-11 21:00:09,593 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE (`cryapp_cryorder`.`buyerid_id` = 1 AND `cryapp_cryorder`.`AddTime` > '2017-07-09 21:00:09' AND NOT (`cryapp_cryorder`.`Status` = 0)); args=(1, '2017-07-09 21:00:09', 0)
+2017-08-11 21:00:10,031 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.030) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 21:00:10,085 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 21:00:12,053 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 21:00:12,088 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` LIMIT 21; args=()
+2017-08-11 21:00:12,544 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.027) SELECT * FROM cryapp_cryorder WHERE Status = 1 and Userid_id <> 4644 AND Userid_id <>86  GROUP BY GoodId_id; args=()
+2017-08-11 21:00:12,604 [Thread-7:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.030) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:00:12,617 [Thread-7:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:12,650 [Thread-7:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 7868
+2017-08-11 21:00:26,190 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:26,217 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 21:00:26,245 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-11 21:00:26,271 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15016511885802908'; args=('15016511885802908',)
+2017-08-11 21:00:26,278 [Thread-10:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:26,313 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-11 21:00:26,320 [Thread-10:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:26,357 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020830031362257'; args=('15020830031362257',)
+2017-08-11 21:00:26,363 [Thread-10:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:26,400 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.027) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:00:26,413 [Thread-10:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:26,453 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15021653154145925'; args=('15021653154145925',)
+2017-08-11 21:00:26,461 [Thread-10:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:26,499 [Thread-10:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.029) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15023368381525369'; args=('15023368381525369',)
+2017-08-11 21:00:26,512 [Thread-10:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:26,532 [Thread-10:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 13986
+2017-08-11 21:00:26,578 [Thread-13:123145554878464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 93868
+2017-08-11 21:00:26,579 [Thread-11:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 109998
+2017-08-11 21:00:26,580 [Thread-12:123145549623296] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/css/material-kit.css HTTP/1.1" 200 113645
+2017-08-11 21:00:26,964 [Thread-14:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/arrow-left.png HTTP/1.1" 200 2895
+2017-08-11 21:00:27,008 [Thread-16:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/arrow-right.cur HTTP/1.1" 200 1790
+2017-08-11 21:00:27,010 [Thread-17:123145554878464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/arrow-left.cur HTTP/1.1" 200 1790
+2017-08-11 21:00:27,011 [Thread-18:123145560133632] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/arrow-right.png HTTP/1.1" 200 2923
+2017-08-11 21:00:27,016 [Thread-15:123145549623296] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/amazon/3.jpg HTTP/1.1" 200 134432
+2017-08-11 21:00:29,173 [Thread-20:123145549623296] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/material.min.js HTTP/1.1" 200 8137
+2017-08-11 21:00:29,182 [Thread-21:123145554878464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/material-kit.js HTTP/1.1" 200 3693
+2017-08-11 21:00:29,185 [Thread-19:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 36816
+2017-08-11 21:00:29,207 [Thread-22:123145560133632] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/amazon/1.jpg HTTP/1.1" 200 48868
+2017-08-11 21:00:29,214 [Thread-25:123145554878464] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/amazon/5.jpg HTTP/1.1" 200 146725
+2017-08-11 21:00:29,217 [Thread-24:123145549623296] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/amazon/4.jpg HTTP/1.1" 200 137529
+2017-08-11 21:00:29,217 [Thread-23:123145565388800] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/amazon/2.jpg HTTP/1.1" 200 139434
+2017-08-11 21:00:29,220 [Thread-26:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /static/img/amazon/6.jpg HTTP/1.1" 200 151526
+2017-08-11 21:00:51,130 [Thread-27:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:51,149 [Thread-27:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SELECT VERSION(); args=None
+2017-08-11 21:00:51,245 [Thread-27:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '15020830031840377'; args=('15020830031840377',)
+2017-08-11 21:00:51,248 [Thread-27:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15020830031840377 HTTP/1.1" 302 0
+2017-08-11 21:00:53,626 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:53,652 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 21:00:53,680 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
+2017-08-11 21:00:53,706 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15016511885802908'; args=('15016511885802908',)
+2017-08-11 21:00:53,713 [Thread-28:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:53,749 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-11 21:00:53,763 [Thread-28:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:53,811 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.028) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020830031362257'; args=('15020830031362257',)
+2017-08-11 21:00:53,817 [Thread-28:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:53,862 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.034) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:00:53,874 [Thread-28:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:53,986 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.074) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15021653154145925'; args=('15021653154145925',)
+2017-08-11 21:00:54,039 [Thread-28:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:54,093 [Thread-28:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.031) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15023368381525369'; args=('15023368381525369',)
+2017-08-11 21:00:54,112 [Thread-28:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:54,132 [Thread-28:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 13986
+2017-08-11 21:00:55,928 [Thread-29:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:55,945 [Thread-29:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
+2017-08-11 21:00:56,046 [Thread-29:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '15020830031840377'; args=('15020830031840377',)
+2017-08-11 21:00:56,051 [Thread-29:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15020830031840377 HTTP/1.1" 302 0
+2017-08-11 21:00:58,635 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:00:58,661 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 21:00:58,688 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
+2017-08-11 21:00:58,715 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15016511885802908'; args=('15016511885802908',)
+2017-08-11 21:00:58,722 [Thread-30:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:58,758 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.028) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-11 21:00:58,765 [Thread-30:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:58,800 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020830031362257'; args=('15020830031362257',)
+2017-08-11 21:00:58,806 [Thread-30:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:58,850 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.034) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:00:58,863 [Thread-30:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:58,906 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15021653154145925'; args=('15021653154145925',)
+2017-08-11 21:00:58,913 [Thread-30:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:58,946 [Thread-30:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15023368381525369'; args=('15023368381525369',)
+2017-08-11 21:00:58,954 [Thread-30:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:00:58,971 [Thread-30:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 13986
+2017-08-11 21:01:01,080 [Thread-31:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:01,095 [Thread-31:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT VERSION(); args=None
+2017-08-11 21:01:01,201 [Thread-31:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '15020839012955406'; args=('15020839012955406',)
+2017-08-11 21:01:01,205 [Thread-31:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15020839012955406 HTTP/1.1" 302 0
+2017-08-11 21:01:03,464 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:03,488 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 21:01:03,523 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SELECT VERSION(); args=None
+2017-08-11 21:01:03,549 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15016511885802908'; args=('15016511885802908',)
+2017-08-11 21:01:03,555 [Thread-32:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:03,592 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.027) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-11 21:01:03,601 [Thread-32:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:03,634 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020830031362257'; args=('15020830031362257',)
+2017-08-11 21:01:03,640 [Thread-32:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:03,675 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:01:03,686 [Thread-32:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:03,738 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.025) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15021653154145925'; args=('15021653154145925',)
+2017-08-11 21:01:03,773 [Thread-32:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:03,866 [Thread-32:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.028) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15023368381525369'; args=('15023368381525369',)
+2017-08-11 21:01:03,873 [Thread-32:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:03,889 [Thread-32:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 13986
+2017-08-11 21:01:04,861 [Thread-33:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:04,877 [Thread-33:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT VERSION(); args=None
+2017-08-11 21:01:04,974 [Thread-33:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '15016511886461947'; args=('15016511886461947',)
+2017-08-11 21:01:04,977 [Thread-33:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15016511886461947 HTTP/1.1" 302 0
+2017-08-11 21:01:07,011 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.015) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:07,040 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.028) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 21:01:07,172 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-11 21:01:07,199 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.026) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15016511885802908'; args=('15016511885802908',)
+2017-08-11 21:01:07,206 [Thread-34:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:07,251 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.034) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-11 21:01:07,264 [Thread-34:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:07,306 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.022) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020830031362257'; args=('15020830031362257',)
+2017-08-11 21:01:07,313 [Thread-34:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:07,345 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:01:07,352 [Thread-34:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:07,384 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15021653154145925'; args=('15021653154145925',)
+2017-08-11 21:01:07,391 [Thread-34:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:07,423 [Thread-34:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.023) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15023368381525369'; args=('15023368381525369',)
+2017-08-11 21:01:07,429 [Thread-34:123145533857792] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:07,441 [Thread-34:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 13986
+2017-08-11 21:01:16,994 [Thread-35:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:17,020 [Thread-35:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT VERSION(); args=None
+2017-08-11 21:01:17,164 [Thread-35:123145533857792] [django.db.backends:90] [utils:execute] [DEBUG]- (0.056) SELECT `cryapp_cryorder`.`id`, `cryapp_cryorder`.`GoodId_id`, `cryapp_cryorder`.`ShopId_id`, `cryapp_cryorder`.`Userid_id`, `cryapp_cryorder`.`buyerid_id`, `cryapp_cryorder`.`managerid_id`, `cryapp_cryorder`.`tbUsername_id`, `cryapp_cryorder`.`jdUsername_id`, `cryapp_cryorder`.`Money`, `cryapp_cryorder`.`Express`, `cryapp_cryorder`.`sellerMoney`, `cryapp_cryorder`.`buyerMoney`, `cryapp_cryorder`.`Keywords`, `cryapp_cryorder`.`platform`, `cryapp_cryorder`.`OrderSort`, `cryapp_cryorder`.`PlatformOrdersid`, `cryapp_cryorder`.`Status`, `cryapp_cryorder`.`StartTime`, `cryapp_cryorder`.`EndTime`, `cryapp_cryorder`.`AddTime`, `cryapp_cryorder`.`Note` FROM `cryapp_cryorder` WHERE `cryapp_cryorder`.`id` = '15016511886461947'; args=('15016511886461947',)
+2017-08-11 21:01:19,545 [Thread-35:123145533857792] [django.server:131] [basehttp:log_message] [INFO]- "GET /goods/15016511886461947 HTTP/1.1" 302 0
+2017-08-11 21:01:22,817 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:22,905 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.084) SELECT * FROM cryapp_cryorder GROUP BY(GoodId_id); args=()
+2017-08-11 21:01:22,998 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.019) SELECT VERSION(); args=None
+2017-08-11 21:01:23,088 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.085) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15016511885802908'; args=('15016511885802908',)
+2017-08-11 21:01:23,112 [Thread-36:123145549623296] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:23,402 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.249) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '1501998367719358'; args=('1501998367719358',)
+2017-08-11 21:01:23,428 [Thread-36:123145549623296] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:23,530 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.069) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020830031362257'; args=('15020830031362257',)
+2017-08-11 21:01:23,556 [Thread-36:123145549623296] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:23,733 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.098) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15020995728934221'; args=('15020995728934221',)
+2017-08-11 21:01:23,763 [Thread-36:123145549623296] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:23,871 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.070) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15021653154145925'; args=('15021653154145925',)
+2017-08-11 21:01:23,893 [Thread-36:123145549623296] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:24,015 [Thread-36:123145549623296] [django.db.backends:90] [utils:execute] [DEBUG]- (0.066) SELECT `goods`.`id`, `goods`.`user_id`, `goods`.`shop_id`, `goods`.`name`, `goods`.`pgoods_id`, `goods`.`sendaddress`, `goods`.`platform`, `goods`.`image1`, `goods`.`image2`, `goods`.`image3`, `goods`.`keyword1`, `goods`.`price1`, `goods`.`remark1`, `goods`.`keyword2`, `goods`.`price2`, `goods`.`remark2`, `goods`.`keyword3`, `goods`.`price3`, `goods`.`remark3`, `goods`.`keyword4`, `goods`.`price4`, `goods`.`remark4`, `goods`.`keyword5`, `goods`.`price5`, `goods`.`remark5`, `goods`.`add_time` FROM `goods` WHERE `goods`.`id` = '15023368381525369'; args=('15023368381525369',)
+2017-08-11 21:01:24,034 [Thread-36:123145549623296] [django.template:929] [base:_resolve_lookup] [DEBUG]- Exception while resolving variable 'buyMoney' in template 'material/index.html'.
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 885, in _resolve_lookup
+    current = current[bit]
+TypeError: 'CryOrder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'CryOrder' object has no attribute 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 900, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'buyMoney'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/template/base.py", line 907, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [buyMoney] in 'CryOrder object'
+2017-08-11 21:01:24,069 [Thread-36:123145549623296] [django.server:131] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 13986
+2017-08-11 21:01:41,209 [Dummy-6:123145479249920] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:01:41,224 [Dummy-6:123145479249920] [django.db.backends:90] [utils:execute] [DEBUG]- (0.014) SELECT VERSION(); args=None
+2017-08-11 21:01:42,070 [Dummy-6:123145479249920] [django.db.backends:90] [utils:execute] [DEBUG]- (0.017) SHOW FULL TABLES; args=None
+2017-08-11 21:01:42,095 [Dummy-6:123145479249920] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-08-11 21:02:35,631 [Dummy-6:123145419546624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-08-11 21:02:35,649 [Dummy-6:123145419546624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-08-11 21:02:36,893 [Dummy-6:123145419546624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.019) SHOW FULL TABLES; args=None
+2017-08-11 21:02:36,922 [Dummy-6:123145419546624] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
