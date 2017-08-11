@@ -7,6 +7,7 @@ from users.models import AuthUser, pcGuidLog, jdUsername, tbUsername,mobileid,mo
 from users.forms import tbForm, jdForm, alipayForm
 import re
 import requests
+import time
 from django.db.models import Q, F
 from django.views.generic.base import View  # View是一个get和post的一个系统，可以直接def post和get，
 from django.contrib.auth import authenticate, login
@@ -17,6 +18,7 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
 #---- test Paginator
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
 
 #url切出数字和切出店铺分类
 def platformUrl(self):
@@ -69,6 +71,29 @@ def platformUrl(self):
         GoodsImage = ''
     elif '1688' in self:
         platform = '1688'
+        id = re.findall(r'/(\d+).html',self)[0]
+        url1688 ='https://detail.1688.com/offer/' + id +'.html'
+        imagetemp1 = ''
+        while len(imagetemp1) < 10:
+            time.sleep(3)
+            res = requests.get(url1688, headers)
+            res.encoding="gbk"
+            print(res.text)
+            #next get image#
+            imagetemp1 = re.findall(r'ready-to-magnify="true">(.*?)>', res.text) #正则切到J_ImgBooth字段
+        imagetemp2 = re.findall(r'src="(.*?).jpg', imagetemp1[0]) #正则切到J_ImgBooth字段
+        GoodsImage = imagetemp2[0] + '.jpg'
+        if 'http' in GoodsImage:
+            pass
+        else:
+            GoodsImage = 'https:' + GoodsImage
+        #next get GoodsName
+        tempGoodsname = re.findall(r'<title>(.*?)-', res.text)#获取产品名
+        Goodsname = tempGoodsname[0]
+        tempusername = re.findall(r'class="company-name">(.*?)</a>', res.text) #正则获取用户名
+        tempshopname = re.findall(r'class="company-name">(.*?)</a>', res.text) #正则获取用户名
+        shopname = tempshopname[0]
+        shopusername = tempusername[0]
     else:
         pass
     return id, platform, shopname ,shopusername, GoodsImage, Goodsname
@@ -114,10 +139,10 @@ def lockOrderAuthentication(request):
         ~Q(Status=0))
     lockOrderlist = []
     for CLOS in lockOrderSelect:
-        if CLOS.ShopId in lockOrderlist:
+        if CLOS.Userid_id in lockOrderlist:
             break
         else:
-            lockOrderlist.append(CLOS.ShopId)
+            lockOrderlist.append(CLOS.Userid_id)
     return lockOrderlist
 
 
@@ -157,11 +182,11 @@ class buyerIndex(View):
             buyerIndexSqlMove = ''
             buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 GROUP BY GoodId_id'
             if len(lockOrderlist) == 1:
-                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 and ShopId_id <> '+ lockOrderlist[0].id + ' GROUP BY GoodId_id'
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 and Userid_id <> '+ str(lockOrderlist[0]) + ' GROUP BY GoodId_id'
             elif len(lockOrderlist) > 1:
                 for i in range(1, len(lockOrderlist)):
-                    buyerIndexSqlMove = buyerIndexSqlMove + ' AND ShopId_id <>' + str(lockOrderlist[i].id)
-                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 and ShopId_id <> '+ lockOrderlist[0].id + buyerIndexSqlMove + ' ' + ' GROUP BY GoodId_id'
+                    buyerIndexSqlMove = buyerIndexSqlMove + ' AND Userid_id <>' + str(lockOrderlist[i])
+                buyerIndexSql = 'SELECT * FROM cryapp_cryorder WHERE Status = 1 and Userid_id <> '+ str(lockOrderlist[0]) + buyerIndexSqlMove + ' ' + ' GROUP BY GoodId_id'
             orderdict = CryOrder.objects.raw(buyerIndexSql)
             # Html_file= open("bug.html","w")
             # Html_file.write(datetime.now()+bxuyerIndexSql+type(orderdict)+orderdict)
@@ -174,14 +199,18 @@ class buyerIndex(View):
 
 def GetGoods(request, goodid):
     if request.method=="GET":
-        goodsview = Goods.objects.get(id=goodid)
-        money = CryOrder.objects.filter(GoodId=goodid)
+        getcryorder = CryOrder.objects.get(id=goodid)
+        if getcryorder.Status != 1:
+            return HttpResponseRedirect('/')
         # --- old product list
         #return render(request, 'product/goods.html', {'goodsview':goodsview,'money':money})
         # --- old product list
-        return render(request, 'material/product.html', {'goodsview':goodsview,'money':money[0]})
+        return render(request, 'material/product.html', {'goodsview':getcryorder})
 
     elif request.method == "POST":
+        status = CryOrder.objects.get(id=request.POST['cryorderid'])
+        if status.Status != 1:
+            return HttpResponseRedirect('/')
         def Platform_account(request):
             goodsviews = CryOrder.objects.get(id=request.POST['cryorderid'])
             if goodsviews.platform == 'tmall' or goodsviews.platform == 'taobao' or goodsviews.platform == '1688':
@@ -227,7 +256,7 @@ def GetGoods(request, goodid):
         iphoneid_authenticatio_def = iphoneid_authentication(request)
         if not iphoneid_authenticatio_def is None:
             return iphoneid_authenticatio_def
-        if goodsviews.ShopId in lockOrderlist:
+        if goodsviews.Userid_id in lockOrderlist:
             return redirect('/')
         Platform_account_def = Platform_account(request)
         if not Platform_account_def is None:

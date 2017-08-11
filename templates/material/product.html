@@ -13,7 +13,7 @@
   <link rel="shortcut icon" type="image/x-icon" href={% static "assets/favicon-07e579901353a57d289b9b754f0e2912.ico" %} />
   <link rel="apple-touch-icon" sizes="76x76" href={% static "assets/apple-touch-icon-precomposed-60956e08c7bbd5166b96ef4f0340152b.png" %}>
   <link rel="canonical" href="https://www.zhess.com/" data-turbolinks-track="false" itemprop="url"/>
-    <title>{{ goodsview.name }}</title>
+    <title>{{ goodsview.GoodId.name }}</title>
 
   <link rel="stylesheet" media="all" href={% static "assets/application-5983038036a092579f0a61ac4dcfa044.css" %} data-turbolinks-track="true" />
 	<!--     Fonts and icons     -->
@@ -53,15 +53,7 @@
 
         	<div class="collapse navbar-collapse" id="navigation-example">
         		<ul class="nav navbar-nav navbar-right">
-					<li>
-                        <form action="/ProductMasters/" class="navbar-form" id="searchfrm" method="get">
-                    <input type="text" id="TopSearch" name="TopSearch" placeholder="Search">
-                        <button type="submit" class="btn btn-white btn-raised btn-fab btn-fab-mini">
-                            <i class="material-icons">search</i>
-                        </button>
 
-                    </form>
-    				</li>
     				<li>
 						<a href="/cryapp/buyer/" target="_blank">
 							买家
@@ -286,10 +278,9 @@
             <div class="col-md-6 col-sm-5 col-xs-5 text-right">
 
         <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
-        <input type='hidden' name='cryorderid' value="{{ money.id }}">
-        <input type='hidden' name='platform' value="{{ money.platform }}">
+        <input type='hidden' name='platform' value="{{ goodsview.platform }}">
         <input type="hidden" name="phoneid" value="">
-        <input type="submit" name="button1" onclick="zhss()" value="立即试用：{{ money.Money }}" class="btn btn-info btn-fill btn-wd btn-round">
+        <input type="submit" name="button1" onclick="zhss()" value="立即试用：{{ goodsview.Money }}" class="btn btn-info btn-fill btn-wd btn-round">
 
         </form>
 
@@ -305,7 +296,7 @@
 
 
 
-<div itemscope itemtype="http://schema.org/Product">
+<div itemscope itemtype="http://www.zhess.com">
     <div id="productPage" class="parallax parallax-product parallax-" data-no-turbolink style="background: url('{% static 'img/mk_pro_cover.jpg' %}')no-repeat;background-size: cover; ">
 
         <div class="container">
@@ -313,7 +304,7 @@
                 <div class="col-sm-6 col-md-6">
                     <div class="product-image">
                         <!-- images -->
-                            <img src="{{ goodsview.image1 }}" alt="babyid"/>
+                            <img src="{{ goodsview.GoodId.image1 }}" alt="babyid"/>
                         <!-- images -->
                     </div>
                 </div>
@@ -322,8 +313,8 @@
 
     <div class="text-center">
         <!-- product name -->
-        <h1 itemprop="name" class="product-name">{{ goodsview.name }}</h1>
-        <h6 class="tagline">{{ goodsview.keyword1 }}</h6>
+        <h1 itemprop="name" class="product-name">{{ goodsview.GoodId.name }}</h1>
+        <h6 class="tagline">{{ goodsview.Keywords }}</h6>
         <!-- product name -->
 
 	    <div class="choose-license">
@@ -342,7 +333,7 @@
         </div>
 
 
-        <div class="tab-content" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <div class="tab-content" itemprop="offers" itemscope itemtype="http://www.zhess.com">
 
                 <meta content="888.00" itemprop="price">
                 <meta content="USD" itemprop="priceCurrency">
@@ -351,10 +342,10 @@
 
     	    <div class="tab-pane active" id="personal">
         <form name="vanxv", action="./{{ goodsview.id }}", method="POST">{% csrf_token %}
-        <input type='hidden' name='cryorderid' value="{{ money.id }}">
-        <input type='hidden' name='platform' value="{{ money.platform }}">
+        <input type='hidden' name='cryorderid' value="{{ goodsview.id }}">
+        <input type='hidden' name='platform' value="{{ goodsview.platform }}">
         <input type="hidden" name="phoneid" value="">
-        <input type="submit" name="button1" value="{{ money.platform }}试用金额：{{ money.Money }}" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
+        <input type="submit" name="button1" value="{{ goodsview.platform }}试用金额：{{ goodsview.buyerMoney }}" class="btn btn-new btn-neutral btn-fill btn-wd btn-round">
         </a>
         </form>
 

@@ -60,7 +60,7 @@ class mobiletasklog(models.Model):
     mobiletask = models.ForeignKey(mobiletask)
     logname = models.CharField(max_length=30, null=True)
     logid = models.CharField(max_length=15, null=True)
-    logdatetime = models.DateTimeField(default=timezone.now)
+    logdatetime = models.DateTimeField(default=timezone.now())
     class Meta:
         verbose_name = 'mobiletasklog'
         verbose_name_plural = verbose_name

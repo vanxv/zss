@@ -145,10 +145,10 @@ width:250px;
 
 	            <div class="container">
                {% for values in orderdict %}
-<div class="col-xs-12 col-sm-5  col-md-3 col-lg-3 " data-my-order="2017-03-24 16:13:59 UTC ">
+<div class="col-xs-12 col-sm-5  col-md-3 col-lg-3 ">
             <div class="card" data-no-turbolink>
                 <div class="thumbnail">
-                    <a href="/goods/{{ values.GoodId.id }}" class="thumb-cover"><img src="{{ values.GoodId.image1 }}" data-retina="{{ values.GoodId.image1 }}" alt="No Image"/>
+                    <a href="/goods/{{ values.id }}" class="thumb-cover"><img src="{{ values.GoodId.image1 }}" data-retina="{{ values.GoodId.image1 }}" alt="No Image"/>
 </a>
 
 <div class="details">
@@ -165,7 +165,7 @@ width:250px;
                 <div class="card-info">
                         {{ values.GoodId.name }}
                             <div class="time pull-right  premium-product "><BR>
-                                <SPAN STYLE="color: #9c27b0">{{ values.platform }}</SPAN><SPAN STYLE="color:red">${{ values.Money }}</SPAN>
+                                <SPAN STYLE="color: #9c27b0">{{ values.platform }}</SPAN><SPAN STYLE="color:red">试用金：{{ values.buyMoney }}</SPAN>
                             </div>
                 </div>
             </div>

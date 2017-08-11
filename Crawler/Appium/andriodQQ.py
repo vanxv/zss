@@ -6,6 +6,7 @@ import requests
 import json
 import subprocess
 # using images model
+import csv
 import os
 import platform
 import tempfile
@@ -13,7 +14,7 @@ import shutil
 from PIL import Image
 # using images model
 import pytesseract
-
+import pool
 import multiprocessing
 
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,6 +23,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 # get user tempfile
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
+
+geturl = 'http://127.0.0.1:8000/'
 # get user tempfile
 
 
@@ -218,52 +221,59 @@ class multipleLoop(multiprocessing.Process):
         self.mobile_id_for = mobile_id_for
 
     def run(self):
-        print(self.mobile_id_for)
         time.sleep(self.mobile_id_for)
         whilen =1
-        while whilen == 1:
-            response = requests.post('http://127.0.0.1:8000/auto/task/' + str(self.mobile_id_for) + '/')
-            data = response.json()
-            self.mark = {}
-            for x, y in data.items():
-                # x = x.encode('utf-8')
-                # try:
-                #     y = y.encode('utf-8')
-                self.mark[x] = y
-            # data中 1.APP名，2.Activety名， 3任务信息
-            print(data)
-            desired_caps = {
-                'platformName': 'Android',
-                'deviceName': self.mark['deviceName'],
-                'platformVersion': self.mark['platformVersion'],
-                'appPackage': self.mark['appPackage'],
-                'appActivity': self.mark['appActivity'],
-                #'udid': self.mark['udid'],
-                #'exported': "True",
-                'unicodeKeyboard': "True",
-                'resetKeyboard': "True",
-            }
+        #while whilen == 1:
+        response = requests.post(geturl + 'auto/task/' + str(self.mobile_id_for) + '/')
+        data = response.json()
+        self.mark = {}
+        for x, y in data.items():
+            # x = x.encode('utf-8')
+            # try:
+            #     y = y.encode('utf-8')
+            self.mark[x] = y
+        # data中 1.APP名，2.Activety名， 3任务信息
+        desired_caps = {
+            'platformName': 'Android',
+            'deviceName': self.mark['deviceName'],
+            'platformVersion': self.mark['platformVersion'],
+            'appPackage': self.mark['appPackage'],
+            'appActivity': self.mark['appActivity'],
+            #'udid': self.mark['udid'],
+            #'exported': "True",
+            'unicodeKeyboard': "True",
+            'resetKeyboard': "True",
+        }
 
-            self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
+        self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
 
-            mobiletask_taskSort_choices = (
-            (1, 'add_User'),
-            (2, 'ADD_GROUP'),
-            (3, 'send_message_to_friend_list'),
-            (4, 'send_message_to_GROUP_list'),
-            (5, 'send_message_to_user_Accoutid'),
-            (6, 'send_message_to_GROUP_Accoutid'),
-            (7, 'Get_Pople_list'),
-            (8, 'Get_Group_list'),
-            (9, 'Get_Group_People_list'),
-            )
-            #---- loop select_work----#
-            if self.mark['taskSort'] == 1:
-                multipleLoop.QQaddPeople(self)
-            elif self.mark['taskSort'] == 2:
-                multipleLoop.QQaddGroup(self)
-            elif self.mark['taskSort'] == 3:
-                multipleLoop.send_message_to_friend_list(self)
+        mobiletask_taskSort_choices = (
+        (1, 'add_User'),
+        (2, 'ADD_GROUP'),
+        (3, 'send_message_to_friend_list'),
+        (4, 'send_message_to_GROUP_list'),
+        (5, 'send_message_to_user_Accoutid'),
+        (6, 'send_message_to_GROUP_Accoutid'),
+        (7, 'Get_Pople_list'),
+        (8, 'Get_Group_list'),
+        (9, 'Get_Group_People_list'),
+        )
+        #---- loop select_work----#
+        textmarktaskSort = self.mark['taskSort']
+        if textmarktaskSort == 1:
+            multipleLoop.QQaddPeople(self)
+            pass
+        elif textmarktaskSort == 2:
+            multipleLoop.QQaddGroup(self)
+            pass
+        elif textmarktaskSort == 3:
+            multipleLoop.send_message_to_friend_list(self)
+            pass
+        elif textmarktaskSort == 4:
+            multipleLoop.send_message_to_friend_list(self)
+            pass
+        else:
+            pass
 
             # ---- loop select_work----#
     #Need add_QQ_list
@@ -326,7 +336,6 @@ class multipleLoop(multiprocessing.Process):
             pass
     #Need Send_message_Need_time
     def send_message_to_friend_list(self):
-
         self.driver.implicitly_wait(15)
         #click contact
         QQaction.connect(self)
@@ -344,6 +353,8 @@ class multipleLoop(multiprocessing.Process):
             elementsList[1].click()
 
         self.driver.implicitly_wait(15)
+
+
         objectnumber = 0
         AllNumber = 0
         objectName = ''
@@ -351,8 +362,16 @@ class multipleLoop(multiprocessing.Process):
         objectEnd = 0
         severQQ = 0
 
+        #create  && open tempcsv
+        tempcsv = PATH(tempfile.gettempdir() + "/"+ self.mark['taskid'] +".csv")
+        if os.path.exists(tempcsv) == False:
+            with open(tempcsv, 'rw') as csvfile:
+                fieldnames = ['list', 'endnumber']
+                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+                writer.writerheader()
+
         #get_log
-        severQQ = str(requests.get('http://127.0.0.1:8000/auto/tasklog/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/').text)
+        severQQ = str(requests.get(geturl + 'auto/tasklog/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/').text)
         response0 = str(0)
         if severQQ == response0:
             tempElement = elementsList[2].find_element_by_xpath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]')
@@ -361,7 +380,7 @@ class multipleLoop(multiprocessing.Process):
             objectid = QQaction.freindConcentGetQQnumber(self)
 
             QQaction.friendConcentSendMessage(self)
-            responsetext ='http://127.0.0.1:8000/auto/tasklogdone/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/' + str(objectid) + '/'
+            responsetext =geturl +'auto/tasklogdone/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/' + str(objectid) + '/'
             response = requests.post(responsetext)
             # click contact
             self.driver.implicitly_wait(15)
@@ -433,7 +452,7 @@ class multipleLoop(multiprocessing.Process):
                         print('test last firend')
                         QQaction.friendConcentSendMessage(self)
                         QQaction.connect(self)
-                        responsetext = 'http://127.0.0.1:8000/auto/tasklogdone/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/' + str(objectid) + '/'
+                        responsetext = geturl + 'auto/tasklogdone/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/' + str(objectid) + '/'
                         response = requests.post(responsetext)
                         elementsListadd1 = N + 1
                         print(elementsListadd1)
