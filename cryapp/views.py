@@ -115,7 +115,7 @@ def ip(request):
 
 def ordermoney(request):
     ordermoneytotal = 0
-    orderMoneyFilter = CryOrder.objects.filter(Userid=request.user.id).filter(Q(Status=1),Q(Status=2),Q(Status=3),Q(Status=4))
+    orderMoneyFilter = CryOrder.objects.filter(Userid=request.user.id).filter(~Q(Status=0) | ~Q(Status=5) | ~Q(Status=8))
     #orderMoneyFilter = CryOrder.objects.filter(Userid=x)
     for money in orderMoneyFilter:
         ordermoneytotal += (float(money.Money) + float(money.Express) + float(money.sellerMoney))
@@ -135,12 +135,12 @@ def lockOrderAuthentication(request):
     # lock_Authentication_orders
     lockdaynumber = 33
     lockday = datetime.now() - timedelta(days=lockdaynumber)
-    lockOrderSelect = CryOrder.objects.filter(buyerid=request.user.id).filter(AddTime__gt=lockday).filter(
-        ~Q(Status=0))
+    lockOrderSelect = CryOrder.objects.filter(buyerid=request.user.id).filter(AddTime__gt=lockday).filter(~Q(Status=0))
     lockOrderlist = []
     for CLOS in lockOrderSelect:
+        clos_number = CLOS.Userid_id
         if CLOS.Userid_id in lockOrderlist:
-            break
+            pass
         else:
             lockOrderlist.append(CLOS.Userid_id)
     return lockOrderlist
@@ -267,7 +267,6 @@ def GetGoods(request, goodid):
         return redirect('/cryapp/buyer/orders/')
 
 
-
         #--- Authentication phonelog ---#
             #-- hard authentiaction
             # yesterday = datetime.now() - timedelta(hours=1)
@@ -320,20 +319,20 @@ class Good_Index_Add(LoginRequiredMixin, View):
         tempShopFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform).filter(Q(user_id=request.user.id))
-        if tempGoodsUserTrue.count() > 0: #判断产品是否存在
+        if tempGoodsUserTrue.exists(): #判断产品是否存在
             saveshop = Shop.objects.get(user=request.user, shopname=shopname) #店铺名称
             saveGoods = Goods.objects.get(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
             saveorder()
-        elif tempShopUserFlase.ordered == True: #判断产品是否在其他在其他店铺上
+        elif tempShopUserFlase.exists(): #判断产品是否在其他在其他店铺上
             return render(request, 'material/seller/dashboard.html', {'test': '产品已存在'})
-        elif tempShopUserTrue.count() > 0: #判断产品是否在其他账户上
+        elif tempShopUserTrue.exists(): #判断产品是否在其他账户上
             saveshop = Shop.objects.get(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
             saveshop.save()
             savegoods()
             getGoods = Goods.objects.get(user=request.user, pgoods_id=id, platform=platform)
             saveorder()
-        elif tempShopFlase.count() > 0: #判断产品是否在其他账户上
+        elif tempShopFlase.exists(): #判断产品是否在其他账户上
             return render(request, 'material/seller/dashboard.html', {'test': '店铺已存在其他人账户上'})
         else:
             saveshop = Shop.objects.create(user=request.user, shopname=shopname, shopkeepername=shopusername,platform=platform) #增加店铺
@@ -346,11 +345,17 @@ class Good_Index_Add(LoginRequiredMixin, View):
 #-------seller CRUD -----#
 def cryapp_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=0, tbUsername=None,jdUsername=None)
+    getCryOrder = CryOrder.objects.get(id=cryorders)
+    if getCryOrder.Status in [1,5,8]:
+        return redirect('/cryapp/seller/orders/')
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, tbUsername=None,jdUsername=None)
     return redirect('/cryapp/seller/orders/')
 
 def ordersnotdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
+    getCryOrder = CryOrder.objects.get(id=cryorders)
+    if getCryOrder.Status in [1,5,8]:
+        return redirect('/cryapp/seller/orders/')
     notthrough = CryOrder.objects.filter(id=cryorders).update(Status=4)
     return redirect('/cryapp/seller/orders/')
 
@@ -358,23 +363,23 @@ def ordersdone(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
     # - create money
     cryordersGet = CryOrder.objects.get(id=cryorders)
-    # - create money
-    through = CryOrder.objects.filter(id=cryorders).update(Status=5)
-    Createsellermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Express-cryordersGet.sellerMoney), orderBillSort=3)
-    Createsellermoney.save()
-    Createbuyermoney = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Express+cryordersGet.buyerMoney), orderBillSort=3)
-    Createbuyermoney.save()
-    CreatesellerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(-cryordersGet.Money), orderBillSort=2)
-    CreatesellerCost.save()
-    CreatebuyerCost = orderBill.objects.create(CryOrderid=cryordersGet, total_amount=(cryordersGet.Money), orderBillSort=2)
-    CreatebuyerCost.save()
-    depositSeller = deposit.objects.get(user=cryordersGet.Userid)
-    depositSeller.deposit = F('deposit') - (cryordersGet.Money+cryordersGet.Express+cryordersGet.sellerMoney)
-    depositSeller.save()
-    depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
-    depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+cryordersGet.buyerMoney)
-    depositbuyer.save()
-    return redirect('/cryapp/seller/orders/')
+    if cryordersGet.buyerid:
+        try:
+            depositSeller = deposit.objects.get(user=cryordersGet.Userid)
+            sellercost, buyercost = crycost(cryordersGet.Money)
+            CryOrder.objects.filter(id=cryorders).update(Status=5, sellerMoney=sellercost)
+            depositSeller.deposit = F('deposit') - (cryordersGet.Money+cryordersGet.Express+cryordersGet.buyerMoney)
+            depositSeller.save()
+            depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
+            depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+ buyercost)
+            depositbuyer.save()
+            return redirect('/cryapp/seller/orders/')
+        except:
+            print('errorlog')
+            return redirect('/cryapp/seller/orders/')
+    else:
+        return redirect('/cryapp/seller/orders/')
+
 
 # ---- seller_edit------#
 def cryapp_edit(request, cryorders_id = 0):

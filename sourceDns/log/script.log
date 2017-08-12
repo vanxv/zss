@@ -16185,3 +16185,122 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
     raise errorclass(errno, errval)
 django.db.utils.InternalError: (1055, "Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'zss.cryapp_cryorder.id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by")
+2017-08-11 21:40:03,118 [Thread-24:123145424801792] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-12 08:55:01,603 [Thread-9:123145458225152] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 08:55:07,909 [Thread-16:123145447714816] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-12 09:05:42,365 [Thread-12:123145334460416] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 09:05:43,261 [Thread-16:123145355481088] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 09:05:43,875 [Thread-18:123145334460416] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 09:05:47,692 [Thread-13:123145339715584] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 09:12:55,157 [Thread-9:123145355988992] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 09:18:57,668 [Thread-12:123145350733824] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 09:24:46,768 [Thread-25:123145539985408] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 09:24:48,811 [Thread-26:123145545240576] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 11:16:05,887 [Thread-8:123145349169152] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 11:16:16,444 [Thread-10:123145343913984] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-12 11:16:55,935 [Thread-24:123145349169152] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-12 11:22:10,687 [Thread-7:123145459126272] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 11:22:13,395 [Thread-8:123145464381440] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 11:22:15,130 [Thread-9:123145469636608] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-12 11:29:26,703 [Thread-8:123145548464128] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:29:40,840 [Thread-17:123145553719296] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:29:42,730 [Thread-25:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:30:11,582 [Thread-32:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:30:17,962 [Thread-36:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:30:27,819 [Thread-41:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:30:43,185 [Thread-46:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:31:01,161 [Thread-50:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:31:02,686 [Thread-53:123145548464128] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 11:31:06,154 [Thread-57:123145548464128] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:31:09,646 [Thread-61:123145548464128] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:31:13,003 [Thread-66:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:31:23,452 [Thread-70:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:31:34,234 [Thread-77:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:31:45,822 [Thread-84:123145553719296] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:31:57,404 [Thread-92:123145548464128] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:32:07,609 [Thread-95:123145543208960] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:33:25,231 [Thread-7:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/edit/1502501010859576/table.html
+2017-08-12 11:33:30,731 [Thread-9:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/edit/1502501010859576/table.html
+2017-08-12 11:33:59,001 [Thread-16:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:34:35,195 [Thread-23:123145573777408] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:34:41,418 [Thread-29:123145573777408] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:34:44,632 [Thread-32:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:34:49,142 [Thread-36:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:35:01,601 [Thread-41:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:35:10,491 [Thread-45:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:35:26,111 [Thread-50:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:35:28,626 [Thread-52:123145568522240] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/done/15025010113725572/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 268, in cryorder_done
+    depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-08-12 11:35:34,015 [Thread-54:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:35:51,417 [Thread-59:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:35:57,576 [Thread-62:123145573777408] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-12 11:36:02,901 [Thread-66:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:36:11,500 [Thread-70:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:36:21,895 [Thread-75:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:36:25,092 [Thread-77:123145568522240] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/done/1502499981966848/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 268, in cryorder_done
+    depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-08-12 11:36:30,287 [Thread-79:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:36:35,051 [Thread-83:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:36:44,338 [Thread-88:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
+2017-08-12 11:36:55,601 [Thread-93:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:37:00,028 [Thread-95:123145568522240] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/done/1502499879088159/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 268, in cryorder_done
+    depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-08-12 11:45:40,234 [Thread-97:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:45:45,136 [Thread-99:123145568522240] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /users/manage/done/1502499879088159/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/users/views.py", line 268, in cryorder_done
+    depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+financial.models.DoesNotExist: deposit matching query does not exist.
+2017-08-12 11:45:50,555 [Thread-101:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:45:52,662 [Thread-105:123145568522240] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:45:59,106 [Thread-111:123145579032576] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 11:46:07,916 [Thread-116:123145573777408] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
