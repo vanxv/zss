@@ -16389,3 +16389,4 @@ financial.models.DoesNotExist: deposit matching query does not exist.
 2017-08-12 16:04:16,650 [Thread-94:123145442107392] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/assets/img/sidebar-1.jpg
 2017-08-12 16:04:21,057 [Thread-98:123145442107392] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
 2017-08-12 16:06:01,379 [Thread-103:123145442107392] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
+2017-08-12 17:57:11,375 [Thread-13:123145570304000] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
