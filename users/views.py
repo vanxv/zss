@@ -11,7 +11,7 @@ from cryapp.models import CryOrder
 from django.db.models import Q,F
 from goods.models import Goods
 from financial.models import deposit, orderBill
-from cryapp.views import authenticationlogin
+from cryapp.views import authenticationlogin, crycost
 # Create your views here.
 
 @login_required
@@ -164,7 +164,7 @@ def managelogin(request):
 def manage(request):
     managelogin(request)
     if request.method == 'GET':
-        CryOrderfilter = CryOrder.objects.filter(~Q(Status=0) | ~Q(Status=1) | ~Q(Status=5) | ~Q(Status=8) | ~Q(Status=6)).order_by('-AddTime')
+        CryOrderfilter = CryOrder.objects.filter(~Q(Status=0)).filter(~Q(Status=1)).filter(~Q(Status=5)).filter(~Q(Status=6)).filter(~Q(Status=7)).filter(~Q(Status=8)).order_by('-AddTime')
         return render(request, 'material/manager/table.html',{'CryOrderfilter':CryOrderfilter})
     if request.method == 'POST':
         return render(request, 'material/manager/table.html')
@@ -199,7 +199,7 @@ def manage_hardware(request):
 def managestatusSix(request):
         managelogin(request)
         if request.method == 'GET':
-            CryOrderfilter = CryOrder.objects.filter(Status=6, managerid=request.user).order_by('-AddTime')
+            CryOrderfilter = CryOrder.objects.filter(managerid=request.user).filter(Q(Status=6) | Q(Status=7)).order_by('-AddTime')
             return render(request, 'material/manager/table.html', {'CryOrderfilter': CryOrderfilter})
 
 #----status7 ----#
@@ -212,10 +212,13 @@ def managestatusSeven(request):
 # ----update order----#
 def getorder(request, cryorders_id=0):
     managelogin(request)
-    if request.method == 'POST':
-        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=6, managerid=request.user)
+    getCryOrder = CryOrder.objects.get(id=cryorders_id)
+    if getCryOrder.buyerid:
+        if request.method == 'POST':
+            updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=6, managerid=request.user)
+            return redirect('/users/manage/')
+    else:
         return redirect('/users/manage/')
-
 def update_cryorder_statussix(request, cryorders_id=0):
     managelogin(request)
     if request.method == 'POST':
@@ -240,14 +243,18 @@ def cryorder_edit(request, cryorders_id=0):
     if request.method == 'GET':
         return render(request, 'material/manager/project_edit.html', {'order':getorderedit})
     if request.method == 'POST':
-        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['note'],PlatformOrdersid=request.POST['platformid'], buyerMoney=request.POST['crymoney'])
-        return redirect('/users/manage/')
+        try:
+            sellercost, buyercost = crycost(request.POST['money'])
+            updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Keywords=request.POST['keywords'], Money=request.POST['money'], Note=request.POST['note'], PlatformOrdersid=request.POST['platformid'], buyerMoney=buyercost, sellerMoney=sellercost)
+            return redirect('/users/manage/')
+        except:
+            return redirect('/users/manage/')
 
 def cryorder_done(request, cryorders_id=0):
     managelogin(request)
     cryordersGet = CryOrder.objects.get(id=cryorders_id)
     if request.method == 'POST':
-        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=8)
+        updatacryorder = CryOrder.objects.filter(id=cryorders_id).update(Status=5)
         depositSeller = deposit.objects.get(user=cryordersGet.Userid)
         depositSeller.deposit = F('deposit') - (cryordersGet.Money + cryordersGet.Express + cryordersGet.sellerMoney)
         depositSeller.save()

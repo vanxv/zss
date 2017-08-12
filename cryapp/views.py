@@ -249,8 +249,8 @@ def GetGoods(request, goodid):
 
         lockOrderlist = lockOrderAuthentication(request)
         iphoneid_authenticatio_def = iphoneid_authentication(request)
-        if not iphoneid_authenticatio_def is None:
-            return iphoneid_authenticatio_def
+        # if not iphoneid_authenticatio_def is None:
+        #     return iphoneid_authenticatio_def
         if goodsviews.Userid_id in lockOrderlist:
             return redirect('/')
         Platform_account_def = Platform_account(request)
@@ -319,6 +319,9 @@ class Good_Index_Add(LoginRequiredMixin, View):
         tempShopFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserFlase = Shop.objects.filter(shopname=shopname, platform=platform).filter(~Q(user_id=request.user.id))
         tempShopUserTrue = Shop.objects.filter(shopname=shopname, platform=platform).filter(Q(user_id=request.user.id))
+        print('----')
+        print(tempGoodsUserTrue.exists())
+        print('----')
         if tempGoodsUserTrue.exists(): #判断产品是否存在
             saveshop = Shop.objects.get(user=request.user, shopname=shopname) #店铺名称
             saveGoods = Goods.objects.get(user=request.user, pgoods_id=id)#shop=saveshop, name=Goodsname,
@@ -367,11 +370,11 @@ def ordersdone(request, cryorders_id = 0):
         try:
             depositSeller = deposit.objects.get(user=cryordersGet.Userid)
             sellercost, buyercost = crycost(cryordersGet.Money)
-            CryOrder.objects.filter(id=cryorders).update(Status=5, sellerMoney=sellercost)
+            CryOrder.objects.filter(id=cryorders).update(Status=5, buyerMoney=buyercost)
             depositSeller.deposit = F('deposit') - (cryordersGet.Money+cryordersGet.Express+cryordersGet.buyerMoney)
             depositSeller.save()
             depositbuyer = deposit.objects.get(user=cryordersGet.buyerid_id)
-            depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+ buyercost)
+            depositbuyer.deposit = F('deposit') + (cryordersGet.Money+cryordersGet.Express+buyercost)
             depositbuyer.save()
             return redirect('/cryapp/seller/orders/')
         except:
@@ -388,14 +391,15 @@ def cryapp_edit(request, cryorders_id = 0):
     if request.method=="GET":
         return render(request, 'material/seller/seller_edit.html', {'commitorders':editcryappdata})
     if request.method=="POST":
-        editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['Note'],PlatformOrdersid=request.POST['orderid'])
+        sellercost, buyercost = crycost(request.POST['money'])
+        editcryappdata = CryOrder.objects.filter(id=cryorders).update(Keywords=request.POST['keywords'],Money=request.POST['money'],Note=request.POST['Note'],PlatformOrdersid=request.POST['orderid'], buyerMoney=buyercost, sellerMoney=sellercost)
         return redirect('/cryapp/seller/orders/')
 # ---- seller_edit------#
 
 #-------seller CRUD -----#
 def cryapp_buyer_delete(request, cryorders_id = 0):
     cryorders = int(cryorders_id)
-    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, buyerid=None, tbUsername=None, jdUsername=None,)
+    deletecryappdate = CryOrder.objects.filter(id=cryorders).update(Status=1, buyerid=None, tbUsername=None, jdUsername=None)
     return redirect('/cryapp/buyer/orders/')
 
 #----- buyer CRUD ----#
@@ -405,7 +409,8 @@ def buyer_edit(request, cryorders_id = 0):
         commitorders = CryOrder.objects.get(id=cryorderid)
         return render(request, 'material/buyer/buyer_edit.html', {'commitorders':commitorders})
     if request.method == 'POST':
-        commitorders = CryOrder.objects.filter(id=cryorderid).update(Money=request.POST['money'],PlatformOrdersid=request.POST['orderid'], Status=3)
+        sellercost, buyercost = crycost(request.POST['money'])
+        commitorders = CryOrder.objects.filter(id=cryorderid).update(Money=request.POST['money'], PlatformOrdersid=request.POST['orderid'], buyerMoney=buyercost, sellerMoney=sellercost)
         return redirect('/cryapp/buyer/orders/')
 #----- buyer CRUD ----#
 
