@@ -115,7 +115,8 @@ def ip(request):
 
 def ordermoney(request):
     ordermoneytotal = 0
-    orderMoneyFilter = CryOrder.objects.filter(Userid=request.user.id).filter(~Q(Status=0) | ~Q(Status=5) | ~Q(Status=8))
+    statuslist = [0,5,8]
+    orderMoneyFilter = CryOrder.objects.filter(Userid=request.user.id).exclude(Status__in=statuslist)
     #orderMoneyFilter = CryOrder.objects.filter(Userid=x)
     for money in orderMoneyFilter:
         ordermoneytotal += (float(money.Money) + float(money.Express) + float(money.sellerMoney))

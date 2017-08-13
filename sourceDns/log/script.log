@@ -16390,3 +16390,10 @@ financial.models.DoesNotExist: deposit matching query does not exist.
 2017-08-12 16:04:21,057 [Thread-98:123145442107392] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
 2017-08-12 16:06:01,379 [Thread-103:123145442107392] [django.request:152] [base:get_response] [WARNING]- Not Found: /users/manage/assets/img/sidebar-1.jpg
 2017-08-12 17:57:11,375 [Thread-13:123145570304000] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-13 16:43:34,796 [Thread-8:123145465966592] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-08-13 16:43:37,502 [Thread-11:123145460711424] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-13 16:47:17,335 [Thread-65:123145460711424] [django.request:152] [base:get_response] [WARNING]- Not Found: /cryapp/seller/assets/img/sidebar-1.jpg
+2017-08-13 16:51:49,071 [Thread-98:123145460711424] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-08-13 17:00:39,845 [Thread-7:123145395044352] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-13 17:00:41,255 [Thread-8:123145395044352] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-13 17:00:42,388 [Thread-9:123145395044352] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
