@@ -16397,3 +16397,15 @@ financial.models.DoesNotExist: deposit matching query does not exist.
 2017-08-13 17:00:39,845 [Thread-7:123145395044352] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
 2017-08-13 17:00:41,255 [Thread-8:123145395044352] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
 2017-08-13 17:00:42,388 [Thread-9:123145395044352] [django.request:93] [base:http_method_not_allowed] [WARNING]- Method Not Allowed (GET): /cryapp/GoodIndexAdd/
+2017-08-13 20:03:30,783 [Thread-7:123145513246720] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /auto/task/vbox86p/4.3/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/auto/views.py", line 16, in Task
+    mobileID = mobileid.objects.get(id=int(mobile_ID))
+ValueError: invalid literal for int() with base 10: 'vbox86p/4.3'
+2017-08-14 18:06:58,637 [Thread-33:123145578233856] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico

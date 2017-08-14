@@ -24,7 +24,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
 
-geturl = 'http://127.0.0.1:8000/'
+geturl = 'http://www.zhess.com/'
 # get user tempfile
 
 
@@ -336,7 +336,8 @@ class multipleLoop(multiprocessing.Process):
             pass
     #Need Send_message_Need_time
     def send_message_to_friend_list(self):
-        self.driver.implicitly_wait(15)
+        print(type(self.driver.implicitly_wait(20)))
+        self.driver.implicitly_wait(20)
         #click contact
         QQaction.connect(self)
         #click friendlist
@@ -360,32 +361,21 @@ class multipleLoop(multiprocessing.Process):
         objectName = ''
         objectid = 0 #accuont
         objectEnd = 0
-        severQQ = 0
+        severQQ = []
 
         #create  && open tempcsv
-        tempcsv = PATH(tempfile.gettempdir() + "/"+ self.mark['taskid'] +".csv")
+        tempcsv = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
         if os.path.exists(tempcsv) == False:
-            with open(tempcsv, 'rw') as csvfile:
-                fieldnames = ['list', 'endnumber']
-                writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-                writer.writerheader()
+            with open(tempcsv, 'w', newline='') as csvfile:
+                csvWriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+                csvWriter.writerow(['list'])
+                csvfile.close()
+        else:
+            with open(tempcsv, 'r', newline='') as csvfile:
+                for i in csv.reader(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL):
+                    print(i[0])
+                    severQQ.append(i[0])
 
-        #get_log
-        severQQ = str(requests.get(geturl + 'auto/tasklog/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/').text)
-        response0 = str(0)
-        if severQQ == response0:
-            tempElement = elementsList[2].find_element_by_xpath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]')
-            tempElement.click()
-            self.driver.implicitly_wait(15)
-            objectid = QQaction.freindConcentGetQQnumber(self)
-
-            QQaction.friendConcentSendMessage(self)
-            responsetext =geturl +'auto/tasklogdone/' + str(self.mark['mobileID']) + '/' + str(self.mark['taskid']) + '/' + str(objectid) + '/'
-            response = requests.post(responsetext)
-            # click contact
-            self.driver.implicitly_wait(15)
-
-        print(severQQ)
         while (objectEnd != 1):
             selectTrue = 0
             elementsList = self.driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
@@ -396,6 +386,11 @@ class multipleLoop(multiprocessing.Process):
                 print('N:' + str(N) + 'LIST:' + str(elementsList.__len__()))
                 if N == (elementsList.__len__()-2):
                     # rollin
+                    #1.open list
+                    #1. if end  roll
+                    # else open
+                    # if no  end
+
                     print('in rollin list from 379')
                     swipe.qqnumberswipe(self)
                     selectTrue = 0
@@ -431,16 +426,11 @@ class multipleLoop(multiprocessing.Process):
                         self.driver.find_element_by_xpath('//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').click()
                     print('return')
                     self.driver.implicitly_wait(15)
-                    print('objectid:' + str(objectid))
-                    if selectTrue == 0:
-                        if severQQ == objectid:
-                            selectTrue = 1
-                            continue
-                        # rolling
-                        else:
-                            continue
-
+                    print('objectid:' + objectid)
+                    if objectid in severQQ:
+                        continue
                     else:
+                        severQQ.append(objectid)
                         self.driver.implicitly_wait(15)
                         tempElement = elementsList[N].find_element_by_xpath('//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]')
                         tempElement.click()
