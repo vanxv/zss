@@ -76,3 +76,10 @@ class mobileAccount(models.Model):
     class Meta:
         verbose_name = 'mobileAccount'
         verbose_name_plural = verbose_name
+
+class QQID(models.Model):
+    QQID = models.ForeignKey(name='QQid')
+    password = models.CharField(max_length=80)
+    class Meta:
+        verbose_name = 'QQID'
+        verbose_name_plural = verbose_name
