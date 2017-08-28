@@ -16363,7 +16363,7 @@ overflow: hidden
 }
 .mentions-input-box .mentions-autocomplete-list li>.avatar-container img {
 width: 100%;
-height: auto;
+height: auto1;
 vertical-align: top
 }
 .mentions-input-box .mentions-autocomplete-list li em {
@@ -16515,8 +16515,8 @@ overflow: hidden
 }
 .pswp__img {
 position: absolute;
-width: auto;
-height: auto;
+width: auto1;
+height: auto1;
 top: 0;
 left: 0
 }
@@ -16528,7 +16528,7 @@ background: #222
 }
 .pswp--ie .pswp__img {
 width: 100% !important;
-height: auto !important;
+height: auto1 !important;
 left: 0;
 top: 0
 }
@@ -16684,7 +16684,7 @@ background: #FFF;
 top: 56px;
 border-radius: 2px;
 display: block;
-width: auto;
+width: auto1;
 right: 44px;
 -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
@@ -16782,7 +16782,7 @@ color: #BBB
 .pswp__caption__center {
 text-align: left;
 max-width: 420px;
-margin: 0 auto;
+margin: 0 auto1;
 font-size: 13px;
 padding: 10px;
 line-height: 20px;
@@ -16863,8 +16863,8 @@ margin: 0
 @media screen and (max-width:1024px) {
 .pswp__preloader {
 position: relative;
-left: auto;
-top: auto;
+left: auto1;
+top: auto1;
 margin: 0;
 float: right
 }
@@ -16918,7 +16918,7 @@ transform: rotate(0)
 }
 }
 .pswp__ui {
--webkit-font-smoothing: auto;
+-webkit-font-smoothing: auto1;
 visibility: visible;
 opacity: 1;
 z-index: 1550

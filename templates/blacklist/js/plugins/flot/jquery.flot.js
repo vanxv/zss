@@ -50,11 +50,11 @@
                     container: null, // container (as jQuery object) to put legend in, null means default on top of graph
                     position: "ne", // position of default legend container within plot
                     margin: 5, // distance from grid edge to default legend container within plot
-                    backgroundColor: null, // null means auto-detect
+                    backgroundColor: null, // null means auto1-detect
                     backgroundOpacity: 0.85 // set to 0 to avoid background
                 },
                 xaxis: {
-                    show: null, // null = auto-detect, true = always, false = never
+                    show: null, // null = auto1-detect, true = always, false = never
                     position: "bottom", // or "top"
                     mode: null, // null or "time"
                     color: null, // base color, labels, ticks
@@ -63,8 +63,8 @@
                     inverseTransform: null, // if transform is set, this should be the inverse function
                     min: null, // min. value to show, null means set automatically
                     max: null, // max. value to show, null means set automatically
-                    autoscaleMargin: null, // margin in % to add if auto-setting min/max
-                    ticks: null, // either [1, 3] or [[1, "a"], 3] or (fn: axis info -> ticks) or app. number of ticks for auto-ticks
+                    autoscaleMargin: null, // margin in % to add if auto1-setting min/max
+                    ticks: null, // either [1, 3] or [[1, "a"], 3] or (fn: axis info -> ticks) or app. number of ticks for auto1-ticks
                     tickFormatter: null, // fn: number -> string
                     labelWidth: null, // size of tick labels in pixels
                     labelHeight: null,
@@ -73,7 +73,7 @@
                     alignTicksWithAxis: null, // axis number or null for no sync
                     
                     // mode specific options
-                    tickDecimals: null, // no. of decimals, null means auto
+                    tickDecimals: null, // no. of decimals, null means auto1
                     tickSize: null, // number or [number, "unit"]
                     minTickSize: null, // number or [number, "unit"]
                     monthNames: null, // list of names of months
@@ -624,7 +624,7 @@
                 executeHooks(hooks.processDatapoints, [ s, s.datapoints]);
             }
 
-            // second pass: find datamax/datamin for auto-scaling
+            // second pass: find datamax/datamin for auto1-scaling
             for (i = 0; i < series.length; ++i) {
                 s = series[i];
                 points = s.datapoints.points,
@@ -1457,7 +1457,7 @@
                 to = ranges[coord + "2"];
             }
 
-            // auto-reverse as an added bonus
+            // auto1-reverse as an added bonus
             if (from != null && to != null && from > to) {
                 var tmp = from;
                 from = to;
@@ -2372,7 +2372,7 @@
             }
 
             if (options.grid.autoHighlight) {
-                // clear auto-highlights
+                // clear auto1-highlights
                 for (var i = 0; i < highlights.length; ++i) {
                     var h = highlights[i];
                     if (h.auto == eventname &&

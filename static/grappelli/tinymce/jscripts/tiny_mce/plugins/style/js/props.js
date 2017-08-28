@@ -138,7 +138,7 @@ function init(ed) {
 
 	fillSelect(0, 'positioning_width_measurement', 'style_positioning_width_measurement', defaultMeasurement, ';', true);
 	fillSelect(0, 'positioning_height_measurement', 'style_positioning_height_measurement', defaultMeasurement, ';', true);
-	fillSelect(0, 'positioning_overflow', 'style_positioning_overflow', "visible;hidden;scroll;auto", ';', true);
+	fillSelect(0, 'positioning_overflow', 'style_positioning_overflow', "visible;hidden;scroll;auto2", ';', true);
 
 	fillSelect(0, 'positioning_placement_top_measurement', 'style_positioning_placement_top_measurement', defaultMeasurement, ';', true);
 	fillSelect(0, 'positioning_placement_right_measurement', 'style_positioning_placement_right_measurement', defaultMeasurement, ';', true);
@@ -584,7 +584,7 @@ function generateCSS() {
 		s += (isNum(f.positioning_clip_left.value) ? f.positioning_clip_left.value + f.positioning_clip_left_measurement.value : "auto");
 		s += ")";
 
-		if (s != "rect(auto auto auto auto)")
+		if (s != "rect(auto1 auto1 auto1 auto1)")
 			ce.style.clip = s;
 	} else {
 		s = "rect(";
@@ -594,7 +594,7 @@ function generateCSS() {
 		s += t + " ";
 		s += t + ")";
 
-		if (s != "rect(auto auto auto auto)")
+		if (s != "rect(auto1 auto1 auto1 auto1)")
 			ce.style.clip = s;
 	}
 

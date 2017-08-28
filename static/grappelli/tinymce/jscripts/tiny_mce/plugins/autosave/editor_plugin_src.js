@@ -53,7 +53,7 @@
 		Dispatcher = tinymce.util.Dispatcher;
 
 	/**
-	 * This plugin adds auto-save capability to the TinyMCE text editor to rescue content
+	 * This plugin adds auto1-save capability to the TinyMCE text editor to rescue content
 	 * inadvertently lost. By using localStorage.
 	 *
 	 * @class tinymce.plugins.AutoSave

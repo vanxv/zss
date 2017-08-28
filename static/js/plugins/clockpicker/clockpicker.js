@@ -368,7 +368,7 @@
 		placement: 'bottom', // clock popover placement
 		align: 'left',       // popover arrow align
 		donetext: '完成',    // done button text
-		autoclose: false,    // auto close when minute is selected
+		autoclose: false,    // auto1 close when minute is selected
 		twelvehour: false, // change to 12 hour AM/PM clock from 24 hour
 		vibrate: true        // vibrate the device when dragging clock hand
 	};

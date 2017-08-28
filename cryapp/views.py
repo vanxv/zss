@@ -415,7 +415,6 @@ def buyer_edit(request, cryorders_id = 0):
         return redirect('/cryapp/buyer/orders/')
 #----- buyer CRUD ----#
 
-
 #———————buyer admin------#
 def buyeradmin(request):
     if request.user.is_authenticated:

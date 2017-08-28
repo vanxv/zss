@@ -31,8 +31,8 @@
  * @param String  options[type]      text, textarea or select (or any 3rd party input type) **
  * @param Integer options[rows]      number of rows if using textarea **
  * @param Integer options[cols]      number of columns if using textarea **
- * @param Mixed   options[height]    'auto', 'none' or height in pixels **
- * @param Mixed   options[width]     'auto', 'none' or width in pixels **
+ * @param Mixed   options[height]    'auto1', 'none' or height in pixels **
+ * @param Mixed   options[width]     'auto1', 'none' or width in pixels **
  * @param String  options[loadurl]   URL to fetch input content before editing **
  * @param String  options[loadtype]  Request type for load url. Should be GET or POST.
  * @param String  options[loadtext]  Text to display while loading external content.

@@ -12073,7 +12073,7 @@ tinymce.create('tinymce.ui.Separator:tinymce.ui.Control', {
 			m = t.menu;
 			m.settings.offset_x = p2.x;
 			m.settings.offset_y = p2.y;
-			m.settings.keyboard_focus = !tinymce.isOpera; // Opera is buggy when it comes to auto focus
+			m.settings.keyboard_focus = !tinymce.isOpera; // Opera is buggy when it comes to auto1 focus
 
 			// Select in menu
 			each(t.items, function(o) {

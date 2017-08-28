@@ -9,7 +9,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('auto', '0005_mobileid_webserverurl'),
+        ('auto1', '0005_mobileid_webserverurl'),
     ]
 
     operations = [
@@ -21,7 +21,7 @@ class Migration(migrations.Migration):
                 ('QQps', models.CharField(max_length=100)),
                 ('wechat', models.CharField(max_length=100)),
                 ('wechatps', models.CharField(max_length=100)),
-                ('mobileid', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='auto.mobileid')),
+                ('mobileid', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='auto1.mobileid')),
             ],
         ),
     ]

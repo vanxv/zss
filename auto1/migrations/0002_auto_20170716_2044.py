@@ -9,13 +9,13 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('auto', '0001_initial'),
+        ('auto1', '0001_initial'),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='mobiletask',
             name='mobileid',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='auto.mobileid'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='auto1.mobileid'),
         ),
     ]

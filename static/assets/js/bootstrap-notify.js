@@ -253,7 +253,7 @@
 				offsetAmt = this.settings.offset.y,
 				css = {
 					display: 'inline-block',
-					margin: '0px auto',
+					margin: '0px auto1',
 					position: this.settings.position ? this.settings.position : (this.settings.element === 'body' ? 'fixed' : 'absolute'),
 					transition: 'all .5s ease-in-out',
 					zIndex: this.settings.z_index

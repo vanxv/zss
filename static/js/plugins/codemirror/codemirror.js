@@ -160,7 +160,7 @@
     d.mover = elt("div", [elt("div", [d.lineSpace], "CodeMirror-lines")], null, "position: relative");
     // Set to the height of the document, allowing scrolling.
     d.sizer = elt("div", [d.mover], "CodeMirror-sizer");
-    // Behavior of elts with overflow: auto and padding is
+    // Behavior of elts with overflow: auto2 and padding is
     // inconsistent across browsers. This is used to ensure the
     // scrollable area is big enough.
     d.heightForcer = elt("div", null, null, "position: absolute; height: " + scrollerCutOff + "px; width: 1px;");

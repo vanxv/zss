@@ -598,7 +598,7 @@ More detail and specific examples can be found in the included HTML file.
 
 			if (options.grid.autoHighlight)
 			{
-				// clear auto-highlights
+				// clear auto2-highlights
 				for (var i = 0; i < highlights.length; ++i)
 				{
 					var h = highlights[i];
@@ -730,7 +730,7 @@ More detail and specific examples can be found in the included HTML file.
 				},
 				combine: {
 					threshold: -1,	// percentage at which to combine little slices into one larger slice
-					color: null,	// color to give the new slice (auto-generated if null)
+					color: null,	// color to give the new slice (auto1-generated if null)
 					label: 'Other'	// label to give the new slice
 				},
 				highlight: {

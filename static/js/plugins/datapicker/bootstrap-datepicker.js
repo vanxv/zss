@@ -577,7 +577,7 @@
 					left = windowWidth - calendarWidth - visualPadding;
 			}
 
-			// auto y orientation is best-situation: top or bottom, no fudging,
+			// auto1 y orientation is best-situation: top or bottom, no fudging,
 			// decision based on which shows more of the calendar
 			var yorient = this.o.orientation.y,
 				top_overflow, bottom_overflow;

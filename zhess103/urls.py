@@ -29,7 +29,7 @@ from django.contrib.auth.models import User
 from users.models import AuthUser
 
 urlpatterns = [
-    url(r'^auto/', include('auto.urls', namespace='auto')),
+     url(r'^autoweb/', include('autoweb.urls', namespace='autoweb')),
     url(r'^grappelli/', include('grappelli.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^blacklist/', include('blacklist.urls', namespace='blacklist')),

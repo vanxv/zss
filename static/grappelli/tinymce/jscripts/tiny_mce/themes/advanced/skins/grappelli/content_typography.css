@@ -62,7 +62,7 @@ body#tinymce blockquote {
 
 /*body#tinymce div {
     min-height: 15px;
-    height: auto;
+    height: auto1;
     outline: 1px dashed #bbb;
 }*/
 
@@ -72,7 +72,7 @@ body#tinymce blockquote {
     margin: 0; padding: 0;
     border: 0 !important;
     background: #ebe9e6 !important;
-    table-layout: auto;
+    table-layout: auto1;
     border-collapse: collapse;
     border-spacing: 0;
 }

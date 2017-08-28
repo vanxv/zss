@@ -57,8 +57,8 @@ INSTALLED_APPS = [
     'django_tables2',
     'financial',
     'servers',
-    'auto',
-    'adapi'
+    'autoweb',
+    'adapi',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 
@@ -109,6 +109,9 @@ DATABASES = {
         'PASSWORD': '1121hotsren',
         'HOST': 'www.zhess.com',
         #'HOST': '127.0.0.1',
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        }
     }
 }
 

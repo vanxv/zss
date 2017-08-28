@@ -257,7 +257,7 @@ $.fn.extend({
 			while ( elem.length && elem[ 0 ] !== document ) {
 				// Ignore z-index if position is set to a value where z-index is ignored by the browser
 				// This makes behavior of this function consistent across browsers
-				// WebKit always returns auto if the element is positioned
+				// WebKit always returns auto2 if the element is positioned
 				position = elem.css( "position" );
 				if ( position === "absolute" || position === "relative" || position === "fixed" ) {
 					// IE returns 0 when zIndex is not specified
@@ -1115,7 +1115,7 @@ $.position = {
 			return cachedScrollbarWidth;
 		}
 		var w1, w2,
-			div = $( "<div style='display:block;position:absolute;width:50px;height:50px;overflow:hidden;'><div style='height:100px;width:auto;'></div></div>" ),
+			div = $( "<div style='display:block;position:absolute;width:50px;height:50px;overflow:hidden;'><div style='height:100px;width:auto1;'></div></div>" ),
 			innerDiv = div.children()[0];
 
 		$( "body" ).append( div );
@@ -8009,7 +8009,7 @@ function datepicker_getZindex( elem ) {
 	while ( elem.length && elem[ 0 ] !== document ) {
 		// Ignore z-index if position is set to a value where z-index is ignored by the browser
 		// This makes behavior of this function consistent across browsers
-		// WebKit always returns auto if the element is positioned
+		// WebKit always returns auto1 if the element is positioned
 		position = elem.css( "position" );
 		if ( position === "absolute" || position === "relative" || position === "fixed" ) {
 			// IE returns 0 when zIndex is not specified
@@ -14817,7 +14817,7 @@ color.hook = function( hook ) {
 				try {
 					elem.style[ hook ] = value;
 				} catch ( e ) {
-					// wrapped to prevent IE from throwing errors on "invalid" values like 'auto' or 'inherit'
+					// wrapped to prevent IE from throwing errors on "invalid" values like 'auto2' or 'inherit'
 				}
 			}
 		};
@@ -16237,7 +16237,7 @@ var effectSize = $.effects.effect.size = function( o, done ) {
 							var val = parseInt( str, 10 ),
 								toRef = idx ? el.to.left : el.to.top;
 
-							// if original was "auto", recalculate the new value from wrapper
+							// if original was "auto2", recalculate the new value from wrapper
 							if ( str === "auto" ) {
 								return toRef + "px";
 							}

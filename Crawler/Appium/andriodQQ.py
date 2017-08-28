@@ -1,4 +1,4 @@
-# appium原理：1.server and andriod connection，
+# appium：1.server and andriod connection，
 from appium import webdriver
 import time
 import re
@@ -16,7 +16,6 @@ from PIL import Image
 import pytesseract
 import pool
 import multiprocessing
-
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -24,7 +23,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
 
-geturl = 'http://www.zhess.com/'
+geturl = 'http://127.0.0.1:8000/'
 # get user tempfile
 
 
@@ -125,6 +124,7 @@ class getimages():
         newImage.save("//Users/VANXV/Downloads/new.png")
         image1 = Image.open(TEMP_FILE)
         text = image_to_string(TEMP_FILE, False, '-l chi_sim')
+        text = text.replace(" …u_P", "")
         return text
 
         return self
@@ -160,6 +160,7 @@ class getimages():
 #using reference
 class QQaction():
     def connect(self):
+        self.driver.implicitly_wait(15)
         self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabWidget[1]/android.widget.FrameLayout[1]').click()
         self.driver.implicitly_wait(15)
 
@@ -187,11 +188,7 @@ class QQaction():
 
     def friendConcentSendMessage(self):
         self.driver.implicitly_wait(15)
-        try:
-            self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.Button[1]').click()
-        except:
-            self.driver.find_element_by_xpath('//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[2]/android.widget.Button[1]').click()
-        self.driver.implicitly_wait(15)
+        self.driver.find_element_by_xpath("//*[@text='发消息']").click()
         print('start send message')
         # input connect
         # self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]').send_keys(self.mark['content'])
@@ -201,7 +198,7 @@ class QQaction():
         # self.driver.implicitly_wait(15)
         # RETURN
         time.sleep(1)
-        self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]').click()
+        self.driver.keyevent(keycode=4)
         self.driver.implicitly_wait(15)
 
 class swipe():
@@ -224,7 +221,7 @@ class multipleLoop(multiprocessing.Process):
         time.sleep(self.mobile_id_for)
         whilen =1
         #while whilen == 1:
-        response = requests.post(geturl + 'auto/task/' + str(self.mobile_id_for) + '/')
+        response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
         data = response.json()
         self.mark = {}
         for x, y in data.items():
@@ -244,9 +241,7 @@ class multipleLoop(multiprocessing.Process):
             'unicodeKeyboard': "True",
             'resetKeyboard': "True",
         }
-
         self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
-
         mobiletask_taskSort_choices = (
         (1, 'add_User'),
         (2, 'ADD_GROUP'),
@@ -339,83 +334,104 @@ class multipleLoop(multiprocessing.Process):
         self.driver.implicitly_wait(20)
         #click contact
         QQaction.connect(self)
-        #click friendlist
-        self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.HorizontalScrollView[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").click()
+        self.driver.implicitly_wait(20)
+        time.sleep(3)
+        QQaction.connect(self)
+        QQaction.connect(self)
         #GO_TOP
         for i in range(3):
             self.driver.swipe(start_x=75, start_y=500, end_x=75, end_y=0, duration=1000)
             self.driver.implicitly_wait(15)
         #get_elementlist
         elementsList = self.driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+        elementsList[1].click()
         #open_sendlist
         self.driver.implicitly_wait(15)
+        time.sleep(2)
+        elementsList = self.driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
         if elementsList[2].tag_name == 'android.widget.RelativeLayout':
             elementsList[1].click()
-
         self.driver.implicitly_wait(15)
-
-
         objectnumber = 0
         AllNumber = 0
         objectName = ''
         objectid = 0 #accuont
         objectEnd = 0
         severQQ = []
-
+        #get serverqqlist
+        response = requests.get(geturl + 'autoweb/QQID/' + str(self.mark['QQ']))
+        serverqqlist = response.json()
+        #get qq_amount
+        temp_element = self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/android.widget.RelativeLayout[2]/android.view.View[2]')
+        temp_element_text = getimages.get_screenshot_by_element(self, temp_element)
+        temp_element_text_a,temp_element_text_b = temp_element_text.split("/")
         #create  && open tempcsv
         tempcsv = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
-        if os.path.exists(tempcsv) == False:
-            with open(tempcsv, 'w', newline='') as csvfile:
-                csvWriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-                csvWriter.writerow(['list'])
-                csvfile.close()
-        else:
-            with open(tempcsv, 'r', newline='') as csvfile:
-                for i in csv.reader(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL):
-                    for xk in i:
-                        severQQ.append(xk)
+        temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".txt")
+        temp_QQ = PATH(tempfile.gettempdir() + "/"+ str(self.mark['QQ']) +".txt")
+        #create  && open tempcsv
+
+        if os.path.exists(temp_taskid) == False:
+            texttask = open(temp_taskid, 'w')
+            texttask.close()
         while (objectEnd != 1):
             elementsList = self.driver.find_elements_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+            #elementslistname = self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]")
             self.driver.implicitly_wait(15)
             for N in range(1, elementsList.__len__()-1):
+                print(N)
                 if N >= elementsList.__len__() - 1:
-                    continue
+                    break
+                #---- judge element is last ---#
                 if elementsList[N].tag_name == 'android.widget.LinearLayout':
+                    if not elementsList[N + 1]:
+                        print('over409')
+                        objectEnd = 1
                     if elementsList[N + 1]:
                         if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
-                            print('over')
+                            print('over413')
                             objectEnd =1
-                    else:
-                        print('end')
-                        objectEnd = 1
+                # ---- judge element is last ---#
+                    # flow
+                    # 1.get name
+                    #   if name not in serverqq
+                    #       open get number
+                    #       changer note name
+                    #       send
+                    #       return
+                    # 1. post list
+
                     tempElement = elementsList[N].find_element_by_xpath('//android.widget.FrameLayout[1]')
-                    self.driver.implicitly_wait(15)
-                    print(tempElement.location_in_view)
-                    if tempElement.location_in_view['y'] < 295:
-                        positions = [(300, 0)]
-                        self.driver.tap(positions)
-                    else:
-                        tempElement.click()
-                    GetQQnumbertry = QQaction.freindConcentGetQQnumber(self)
-                    if GetQQnumbertry in severQQ:
-                    # RETURN
+                    tempElementqqname = tempElement.find_element_by_xpath('//android.widget.LinearLayout[1]/android.view.View[1]')
+                    qqname = getimages.get_screenshot_by_element(self, tempElementqqname)
+                    print(qqname)
+                    if not qqname in open(temp_taskid, 'r').read():
                         self.driver.implicitly_wait(15)
-                        try:
-                            self.driver.find_element_by_xpath('//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView').click()
-                        except:
-                            self.driver.find_element_by_xpath('//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]').click()
-                        print('return')
-                        self.driver.implicitly_wait(15)
-                    else:
-                        severQQ.append(GetQQnumbertry)
-                        with open(tempcsv, 'w', newline='') as csvfile:
-                            csvWriter = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
-                            csvWriter.writerow(severQQ)
-                            csvfile.close()
+                        if tempElement.location_in_view['y'] < 295:
+                            positions = [(300, 0)]
+                            self.driver.tap(positions)
+                        else:
+                            tempElement.click()
+
+                        GetQQnumbertry = QQaction.freindConcentGetQQnumber(self)
+                        #self.driver.keyevent(keycode=4)
+
+                        # if not GetQQnumbertry in temp_QQ:
+                        #     self.driver.find_element_by_xpath("//*[@text='更多']").click()
+                        #     self.driver.find_element_by_xpath("//*[@text='备注']").click()
+                        #     bak_element = self.driver.find_elements_by_xpath("//android.widget.EditText")[0]
+                        #     bak_element.clear()
+                        #     bak_element.send_keys(GetQQnumbertry)
+                        #     self.driver.find_element_by_xpath("//*[@text='完成']").click()
+                        #     self.driver.keyevent(keycode=4)
                         QQaction.friendConcentSendMessage(self)
                         QQaction.connect(self)
-                    print(severQQ)
-                    print(N)
+                        open(temp_taskid, 'a').write(','+ GetQQnumbertry)
+                        print(GetQQnumbertry)
+                        print(N)
+                        pass
+
+
                     if N == elementsList.__len__()-2:
                         swipe.qqnumberswipe(self)
                         time.sleep(3)
@@ -426,7 +442,7 @@ class multipleLoop(multiprocessing.Process):
         #         print(e.__context__)
         #     else:
         #         print(e)
-
+        #getqqlists
     def send_message_to_GROUP_list(self):
         pass
 
@@ -536,3 +552,9 @@ if __name__ == '__main__':
         locals()['a' + str(mobile_id_for)].start()
         locals()['a' + str(mobile_id_for)].join()#加进去以后不会报错，得查查什么原因。
         #locals()['a' + str(mobile_id_for)].start()
+
+
+
+#---- next is qq list xpath ----#
+# qq friends list name xpath
+#elementslistname = self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.view.View[1]")

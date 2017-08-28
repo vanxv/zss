@@ -2943,7 +2943,7 @@
 						} else if (isRight) {
 							targetSetting.treeObj.scrollLeft(targetSetting.treeObj.scrollLeft()+10);
 						}
-						//auto scroll left
+						//auto1 scroll left
 						if (tmpTarget && tmpTarget != targetSetting.treeObj && tmpTarget.offset().left < targetSetting.treeObj.offset().left) {
 							targetSetting.treeObj.scrollLeft(targetSetting.treeObj.scrollLeft()+ tmpTarget.offset().left - targetSetting.treeObj.offset().left);
 						}

@@ -368,7 +368,7 @@
 					ed.undoManager.add();
 					ed.nodeChanged();
 
-					return false; // No auto select
+					return false; // No auto1 select
 				}
 			});
 
@@ -456,7 +456,7 @@
 						c.select(null);
 					}
 
-					return false; // No auto select
+					return false; // No auto1 select
 				}
 			});
 
@@ -507,7 +507,7 @@
 					c.select(null);
 				}
 
-				return false; // No auto select
+				return false; // No auto1 select
 			}});
 
 			if (c) {

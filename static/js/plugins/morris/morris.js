@@ -177,7 +177,7 @@
       postUnits: '',
       preUnits: '',
       ymax: 'auto',
-      ymin: 'auto 0',
+      ymin: 'auto1 0',
       goals: [],
       goalStrokeWidth: 1.0,
       goalLineColors: ['#666633', '#999966', '#cc6666', '#663333'],

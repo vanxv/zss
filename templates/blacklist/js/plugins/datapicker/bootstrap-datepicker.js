@@ -566,7 +566,7 @@
 				if (this.o.orientation.x === 'right')
 					left -= calendarWidth - width;
 			}
-			// auto x orientation is best-placement: if it crosses a window
+			// auto2 x orientation is best-placement: if it crosses a window
 			// edge, fudge it sideways
 			else {
 				// Default to left
@@ -577,7 +577,7 @@
 					left = windowWidth - calendarWidth - visualPadding;
 			}
 
-			// auto y orientation is best-situation: top or bottom, no fudging,
+			// auto2 y orientation is best-situation: top or bottom, no fudging,
 			// decision based on which shows more of the calendar
 			var yorient = this.o.orientation.y,
 				top_overflow, bottom_overflow;

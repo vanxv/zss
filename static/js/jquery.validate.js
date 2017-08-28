@@ -967,7 +967,7 @@ $.extend($.validator, {
 		});
 
 		if ( $.validator.autoCreateRanges ) {
-			// auto-create ranges
+			// auto1-create ranges
 			if ( rules.min && rules.max ) {
 				rules.range = [rules.min, rules.max];
 				delete rules.min;

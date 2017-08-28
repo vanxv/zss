@@ -209,7 +209,7 @@ def GetGroupPeoplelist():
 
 deviceName = 'vbox86p'
 platformVersion = '4.3'
-response = requests.post('http://127.0.0.1:8000/auto/task/' + deviceName + '/' + platformVersion + '/')
+response = requests.post('http://127.0.0.1:8000/autoweb/task/' + deviceName + '/' + platformVersion + '/')
 data = response.json()
 nl = {}
 for x,y in data.iteritems():
