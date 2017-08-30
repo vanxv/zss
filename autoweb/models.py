@@ -38,7 +38,7 @@ mobiletask_taskSort_choices = (
     (6, 'send_message_to_GROUP_Accoutid'),
     (7, 'Get_Pople_list'),
     (8, 'Get_Group_list'),
-    (9, 'Get_Group_People_list'),
+    (9, 'Get_Group_QQ_list'),
 )
 class mobiletask(models.Model):
     mobileid = models.ForeignKey(mobileid)
