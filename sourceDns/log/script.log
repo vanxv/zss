@@ -16973,3 +16973,35 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 959, in connect
     raise exc
 django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'www.zhess.com' (timed out)")
+2017-09-01 11:31:32,285 [Thread-9:123145604673536] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-01 11:31:35,658 [Thread-27:123145594163200] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-01 11:32:48,146 [Thread-37:123145599418368] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view autoweb.views.index didn't return an HttpResponse object. It returned None instead.
+2017-09-01 11:37:01,106 [Thread-7:123145343840256] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view autoweb.views.index didn't return an HttpResponse object. It returned None instead.
+2017-09-01 11:41:07,853 [Thread-21:123145354350592] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-01 11:41:08,521 [Thread-23:123145354350592] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-01 11:57:49,304 [Thread-18:123145343840256] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view autoweb.views.index didn't return an HttpResponse object. It returned None instead.
+2017-09-01 11:57:49,344 [Thread-27:123145349095424] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view autoweb.views.index didn't return an HttpResponse object. It returned None instead.

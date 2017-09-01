@@ -39,7 +39,10 @@ from django.core import serializers
 
 def index(request):
     if request.method=='GET':
-        return JsonResponse({'foo': 'bar'})
+        return render(request, 'autoweb/autoweb.html')
+    if request.method=='POST':
+        print('a')
+        
 
 def Task(request, mobile_ID = ''):
     if request.method=='POST':

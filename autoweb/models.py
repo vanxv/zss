@@ -13,6 +13,7 @@ class softid(models.Model):
         verbose_name_plural = verbose_name
 
 class mobileid(models.Model):
+    UserPortrait = models.ForeignKey(UserPortrait, null=True)
     platformVersion = models.CharField(null=True, max_length=200, name='platformVersion')
     deviceName = models.CharField(max_length=500, null=True)
     udid = models.CharField(max_length=500, null=True)
@@ -69,8 +70,7 @@ class mobileAccount(models.Model):
 
 
 class UserPortrait(models.Model):
-    UserPortraitKey = models.CharField(max_length=120, name='UserPortrait')
-
+    UserPortraitname = models.CharField(max_length=120, name='UserPortrait')
 
 UserPortraitSortChoose =(
     (1,'QQSendMessage'),

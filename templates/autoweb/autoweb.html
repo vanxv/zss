@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<title>My Example</title>
+<meta charset="UTF-8">
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<style>
+body {
+padding-top: 1em;
+}
+</style>
+
+
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<!-- Initialize Bootstrap functionality -->
+<script>
+// Initialize tooltip component
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Initialize popover component
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+
+<header>
+
+</header>
+<body>
+<div class="container-fluid">
+
+<nav class="navbar navbar-expand-sm navbar-light bg-faded">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Brand -->
+<a class="navbar-brand"><SPAN style="color: #ea80fc">Deeplearning Markting</SPAN></a>
+
+<!-- Links -->
+<div class="collapse navbar-collapse" id="nav-content">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="#">任务发布</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">任务数据</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">账户数据</a>
+</li>
+</ul>
+
+<!-- Search -->
+<form class="form-inline" role="search">
+<input type="text" class="form-control">
+<button type="submit" class="btn btn-secondary">Search</button>
+</form>
+</nav>
+</div>
+<form method="post" action="">
+
+
+    用户画像：<label class="custom-control custom-radio">
+  <input id="radio1" name="radio" type="radio" class="custom-control-input"  value="client1">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">找客户</span>
+</label>
+<label class="custom-control custom-radio">
+  <input id="radio1" name="radio" type="radio" class="custom-control-input" value="buyer1">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">找买手</span>
+</label>
+
+    <br>
+
+<div class="form-check">
+TaskSort：
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="1">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">加好友</span>
+</label>
+
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="2">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">加群</span>
+</label>
+
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="3">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">群发好友</span>
+</label>
+
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="4">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">群发群</span>
+</label>
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="5">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">群发指定好友</span>
+</label>
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="6">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">群发指定群</span>
+</label>
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="7">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">获取群号</span>
+</label>
+<label class="custom-control custom-radio">
+  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="8">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">获取群列表</span>
+</label>
+
+    <br>
+    <div class="form-check has-success">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
+    微信
+  </label>
+</div>
+<div class="form-check has-warning">
+  <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
+    QQ
+  </label>
+</div>
+    <br>
+    <div class="form-group">
+    <label for="exampleTextarea">发送人 以','为分割符</label>
+    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+  </div>
+    <br>
+        <div class="form-group">
+    <label for="exampleTextarea">发送内容</label>
+    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+  </div>
+    <br>
+  <div class="col-3">
+    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input", name="starttime">
+</div>
+</div>
+    <input type="submit" class="btn btn-primary">
+</form>
+</body>
