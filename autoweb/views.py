@@ -62,32 +62,22 @@ def index(request):
             softname = 2
 
         ##1. add firends
-        if TaskSort == 1:
-            for Qs in getlist:
-                if Qs.__len__()<5:
-                    del getlist[getlist.index(Qs):]
-                    continue
-                if QQFriends.objects.filter(QQfriends=int(Qs)).__len__()>2:
-                    del getlist[getlist.index(Qs):]
-                    continue
-
-                softobname = softid.objects.get(id=softname)
-                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget,content=sendcontains,taskSort=TaskSort,softid=softobname,AccountId=int(Qs))
-                createtask.save()
-                return redirect('/autoweb/')
-                #startTime = models.DateTimeField(null=True, default=timezone.now)
-           #TaskSort:
         #2. add group
-        if TaskSort == 2:
+        #5. Send assign firends
+        #6. Send assign Group
+        if TaskSort == 1 or TaskSort == 2 or TaskSort == 5 or TaskSort == 6 or TaskSort == 9:
             for Qs in getlist:
-                # Qsql = Qsql | Q(QQFriends=Qs)
                 if Qs.__len__() < 5:
                     del getlist[getlist.index(Qs):]
                     continue
-                if QQGroup.objects.filter(QQfriends=int(Qs)).__len__() > 2:
-                    del getlist[getlist.index(Qs):]
-                    continue
+                if TaskSort == 1:
+                    if QQFriends.objects.filter(QQfriends=int(Qs)).__len__() > 2:
+                        del getlist[getlist.index(Qs):]
+                        continue
+                elif TaskSort == 2:
+                    if QQGroup.objects.filter(QQfriends=int(Qs)).__len__() > 2:
+                        del getlist[getlist.index(Qs):]
+                        continue
 
                 softobname = softid.objects.get(id=softname)
                 userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
@@ -96,79 +86,17 @@ def index(request):
                 createtask.save()
                 return redirect('/autoweb/')
         #3. sendALL firends
-        if TaskSort == 3:
-                softobname = softid.objects.get(id=softname)
-                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                       taskSort=TaskSort,
-                                                       softid=softobname)
-                createtask.save()
-                return redirect('/autoweb/')
         #4. sendALL Group
-        if TaskSort == 4:
-            softobname = softid.objects.get(id=softname)
-            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                   taskSort=TaskSort,
-                                                   softid=softobname)
-            createtask.save()
-            return redirect('/autoweb/')
-        #5. Send assign firends
-        if TaskSort == 5:
-            for Qs in getlist:
-                if Qs.__len__() < 5:
-                    del getlist[getlist.index(Qs):]
-                    continue
+        if TaskSort == 3 or TaskSort == 4 or TaskSort == 7 or TaskSort == 8:
                 softobname = softid.objects.get(id=softname)
-                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                       taskSort=TaskSort, softid=softobname, AccountId=int(Qs))
-                createtask.save()
-                return redirect('/autoweb/')
-        #6. Send assign Group
-        if TaskSort == 6:
-            for Qs in getlist:
-                if Qs.__len__() < 5:
-                    del getlist[getlist.index(Qs):]
-                    continue
-                softobname = softid.objects.get(id=softname)
-                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                       taskSort=TaskSort, softid=softobname, AccountId=int(Qs))
-                createtask.save()
-                return redirect('/autoweb/')
-        #7. get Group list
-        if TaskSort == 7:
-            softobname = softid.objects.get(id=softname)
-            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                   taskSort=TaskSort,
-                                                   softid=softobname)
-            createtask.save()
-            return redirect('/autoweb/')
-        #8. get Group list Firends
-        if TaskSort == 8:
-            softobname = softid.objects.get(id=softname)
-            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                   taskSort=TaskSort,
-                                                   softid=softobname)
-            createtask.save()
-            return redirect('/autoweb/')
 
-        #8. get Group list Firends
-        if TaskSort == 9:
-            for Qs in getlist:
-                if Qs.__len__() < 5:
-                    del getlist[getlist.index(Qs):]
-                    continue
-            softobname = softid.objects.get(id=softname)
-            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
-                                                   taskSort=TaskSort,
-                                                   softid=softobname)
-            createtask.save()
-            return redirect('/autoweb/')
+                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+                getsendlist = mobileid.objects.filter(UserPortraitId=userportraitIdget)
+                for getsendlistfor in getsendlist:
+                    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort,softid=softobname,mobileid=getsendlistfor)
+                    createtask.save()
+                return redirect('/autoweb/')
+
 
 mobiletask_taskSort_choices = (
     (1, 'add_User'),

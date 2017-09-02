@@ -84,9 +84,21 @@ $(function () {
 
 
     <br>
+    <div class="form-check has-success">
+  推送系统：
+          <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" id="QQ" value="1" name="QQ">
+    QQ
+  </label>
+        <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" id="wechat" value="1" name="wechat">
+    微信
+  </label>
 
+</div>
+<br>
 <div class="form-check">
-TaskSort：
+任务分类：<br>
 <label class="custom-control custom-radio">
   <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="1">
   <span class="custom-control-indicator"></span>
@@ -98,7 +110,7 @@ TaskSort：
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">加群</span>
 </label>
-
+<br>
 <label class="custom-control custom-radio">
   <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="3">
   <span class="custom-control-indicator"></span>
@@ -110,6 +122,7 @@ TaskSort：
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">群发群</span>
 </label>
+    <br>
 <label class="custom-control custom-radio">
   <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="5">
   <span class="custom-control-indicator"></span>
@@ -120,30 +133,25 @@ TaskSort：
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">群发指定群</span>
 </label>
+    <br>
 <label class="custom-control custom-radio">
   <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="7">
   <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">获取群号</span>
+  <span class="custom-control-description">获取好友列表</span>
 </label>
 <label class="custom-control custom-radio">
   <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="8">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">获取群列表</span>
 </label>
+<label class="custom-control custom-radio">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="9">
+  <span class="custom-control-indicator"></span>
+  <span class="custom-control-description">获取群好友列表</span>
+</label>
 
-    <br>
-    <div class="form-check has-success">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="wechat" value="1" name="wechat">
-    微信
-  </label>
-</div>
-<div class="form-check has-warning">
-  <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="QQ" value="1" name="QQ">
-    QQ
-  </label>
-</div>
+
+
     <br>
     <div class="form-group">
     <label for="exampleTextarea">收件人 以','为分割符</label>

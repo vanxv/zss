@@ -17836,3 +17836,41 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 959, in connect
     raise exc
 django.db.utils.OperationalError: (2003, "Can't connect to MySQL server on 'www.zhess.com' (timed out)")
+2017-09-02 16:17:06,010 [Thread-43:123145482653696] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-09-02 16:17:06,060 [Thread-44:123145487908864] [django.request:152] [base:get_response] [WARNING]- Not Found: /gen204
+2017-09-02 16:37:57,922 [Thread-13:123145378152448] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 83, in __getitem__
+    list_ = super(MultiValueDict, self).__getitem__(key)
+KeyError: 'UserPortrait'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 44, in index
+    UserPortrait_Id = int(request.POST['UserPortrait'])
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+django.utils.datastructures.MultiValueDictKeyError: "'UserPortrait'"
+2017-09-02 16:38:13,478 [Thread-16:123145383407616] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-02 16:38:19,922 [Thread-15:123145378152448] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 89, in index
+    softobname = softid.objects.get(id=softname)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+autoweb.models.DoesNotExist: softid matching query does not exist.
