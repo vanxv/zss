@@ -64,7 +64,6 @@ def index(request):
         ##1. add firends
         if TaskSort == 1:
             for Qs in getlist:
-                #Qsql = Qsql | Q(QQFriends=Qs)
                 if Qs.__len__()<5:
                     del getlist[getlist.index(Qs):]
                     continue
@@ -189,7 +188,18 @@ def Task(request, mobile_ID = ''):
     if request.method=='POST':
         mobileID = mobileid.objects.get(id=int(mobile_ID))
         locktime = datetime.now() - timedelta(minutes=1)
-        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=locktime)[0]
+        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now())
+        if not task.exists():
+            task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now())
+            if not task.exists():
+                return HttpResponse(0)
+            else:
+                task=task[0]
+                task.mobileid=mobileID
+                task.startTime=locktime
+                task.save()
+        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now())
+        task = task[0]
         taskdict ={
             'deviceName':task.mobileid.deviceName,
             'platformVersion':task.mobileid.platformVersion,
@@ -209,6 +219,14 @@ def Task(request, mobile_ID = ''):
             'QQ':task.mobileid.QQ,
         }
         return JsonResponse(taskdict, safe=False)
+
+def TaskDone(request, task_id = ''):
+    if request.method=='POST':
+        task = mobiletask.objects.get(id=task_id, status=1)
+        task.status=2
+        task.endTime=datetime.now()
+        task.save()
+    return HttpResponse('1')
 
 def QQID(request, QQ_ID=''):
     if request.method == 'GET':

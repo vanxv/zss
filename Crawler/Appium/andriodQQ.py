@@ -260,10 +260,10 @@ class multipleLoop(multiprocessing.Process):
         #---- loop select_work----#
         textmarktaskSort = self.mark['taskSort']
 
-        if textmarktaskSort == 1:
+        if textmarktaskSort == 1 or textmarktaskSort == 2:
             multipleLoop.QQaddPeople(self)
-        elif textmarktaskSort == 2:
-            multipleLoop.QQaddGroup(self)
+        #elif textmarktaskSort == 2:
+            #multipleLoop.QQaddGroup(self)
         elif textmarktaskSort == 3:
             multipleLoop.send_message_to_friend_list(self)
         elif textmarktaskSort == 4:
@@ -279,30 +279,39 @@ class multipleLoop(multiprocessing.Process):
     #Need add_QQ_list
     def QQaddPeople(self):
         try:
-            time.sleep(7)
+            time.sleep(4)
             print('click')
             QQaction.connect(self)
-            self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.TabHost[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]").click()
-            time.sleep(5)
-            self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.EditText[1]").click()
-            time.sleep(2)
-            self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(self.mark['AccountId'])
-            time.sleep(2)
-            self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]").click()
-            #self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]").click()
-            time.sleep(7)
-            self.driver.find_element_by_xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.Button[1]").click()
-            time.sleep(2)
-            self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
-            time.sleep(2)
-            self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(self.mark['content'])
-            time.sleep(5)
-            self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
-            time.sleep(2)
-            print('end')
+            QQaction.connect(self)
+            self.driver.implicitly_wait(20)
+            self.driver.find_element_by_xpath("//*[contains(@content-desc, '添加')]").click()
+            time.sleep(3)
+            self.driver.find_element_by_xpath("//*[contains(@content-desc, '找人')]").click()
+            self.driver.find_element_by_xpath("//*[contains(@content-desc, 'QQ号')]").click()
+            self.driver.find_element_by_xpath("//*[contains(@text, 'QQ号')]").send_keys(self.mark['AccountId'])
+            if self.mark['taskSort'] == 1:
+                self.driver.find_element_by_xpath("//*[contains(@text, '找人')]").click()
+            elif self.mark['taskSort'] == 2:
+                self.driver.find_element_by_xpath("//*[contains(@text, '找群')]").click()
+            xpathname = "//*[contains(@text, '" + '(' + self.mark['AccountId'] + ')' + "')]"
+            self.driver.find_element_by_xpath(xpathname).click()
+            if self.mark['taskSort'] == 1:
+                self.driver.find_element_by_xpath("//*[contains(@text, '加好友')]").click()
+            elif self.mark['taskSort'] == 2:
+                self.driver.find_element_by_xpath("//*[contains(@text, '申请加群')]").click()
+            self.driver.find_element_by_xpath("//android.widget.EditText").clear()
+            self.driver.find_element_by_xpath("//android.widget.EditText").send_keys(self.mark['content'])
+            self.driver.find_element_by_xpath("//*[contains(@text, '发送')]").click()
+
+            #self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").clear()
+            #self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(self.mark['content'])
+            #self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[3]").click()
+            posturl = geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/'
+            requests.post(str(posturl))
         except:
             pass
-        print('click')
+
+
     #Need add_Group_list
     def QQaddGroup(self):
         try:
