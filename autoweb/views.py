@@ -1,10 +1,9 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse,redirect
 from django.http import JsonResponse
-from .models import mobiletask, mobileid, softid, QQFriends, QQFriendslog
+from .models import mobiletask, mobileid, softid, QQFriends, QQFriendslog,QQGroup,QQGrouplog,QQGroupList,QQGroupListlog, UserPortrait,softid
 import json
 from datetime import datetime, timedelta
 from django.core import serializers
-
 # Create your views here.
 #------- AUTOSERVER FLOW--------#
 #1. mobiles method ='get' server  'task values'
@@ -39,10 +38,152 @@ from django.core import serializers
 
 def index(request):
     if request.method=='GET':
-        return render(request, 'autoweb/autoweb.html')
+        UserPortraitlist = UserPortrait.objects.all()
+        return render(request, 'autoweb/autoweb.html', {"UserPortraitlist":UserPortraitlist})
     if request.method=='POST':
-        print('a')
-        
+        UserPortrait_Id = int(request.POST['UserPortrait'])
+        TaskSort = int(request.POST['TaskSort'])
+        GetMobilelist = mobileid.objects.filter(UserPortraitId=UserPortrait_Id)
+        UserPortraitid = request.POST['UserPortrait']
+        getlist = request.POST['getlist'].split(',')
+        sendcontains = request.POST['sendcontains']
+        softname = 0
+        try:
+            wechat = int(request.POST['wechat'])
+        except:
+            wechat=0
+        try:
+            QQ = int(request.POST['QQ'])
+        except:
+            QQ = 0
+        if QQ == 1:
+            softname = 1
+        elif wechat == 1:
+            softname = 2
+
+        ##1. add firends
+        if TaskSort == 1:
+            for Qs in getlist:
+                #Qsql = Qsql | Q(QQFriends=Qs)
+                if Qs.__len__()<5:
+                    del getlist[getlist.index(Qs):]
+                    continue
+                if QQFriends.objects.filter(QQfriends=int(Qs)).__len__()>2:
+                    del getlist[getlist.index(Qs):]
+                    continue
+
+                softobname = softid.objects.get(id=softname)
+                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget,content=sendcontains,taskSort=TaskSort,softid=softobname,AccountId=int(Qs))
+                createtask.save()
+                return redirect('/autoweb/')
+                #startTime = models.DateTimeField(null=True, default=timezone.now)
+           #TaskSort:
+        #2. add group
+        if TaskSort == 2:
+            for Qs in getlist:
+                # Qsql = Qsql | Q(QQFriends=Qs)
+                if Qs.__len__() < 5:
+                    del getlist[getlist.index(Qs):]
+                    continue
+                if QQGroup.objects.filter(QQfriends=int(Qs)).__len__() > 2:
+                    del getlist[getlist.index(Qs):]
+                    continue
+
+                softobname = softid.objects.get(id=softname)
+                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort,
+                                                       softid=softobname, AccountId=int(Qs))
+                createtask.save()
+                return redirect('/autoweb/')
+        #3. sendALL firends
+        if TaskSort == 3:
+                softobname = softid.objects.get(id=softname)
+                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                       taskSort=TaskSort,
+                                                       softid=softobname)
+                createtask.save()
+                return redirect('/autoweb/')
+        #4. sendALL Group
+        if TaskSort == 4:
+            softobname = softid.objects.get(id=softname)
+            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                   taskSort=TaskSort,
+                                                   softid=softobname)
+            createtask.save()
+            return redirect('/autoweb/')
+        #5. Send assign firends
+        if TaskSort == 5:
+            for Qs in getlist:
+                if Qs.__len__() < 5:
+                    del getlist[getlist.index(Qs):]
+                    continue
+                softobname = softid.objects.get(id=softname)
+                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                       taskSort=TaskSort, softid=softobname, AccountId=int(Qs))
+                createtask.save()
+                return redirect('/autoweb/')
+        #6. Send assign Group
+        if TaskSort == 6:
+            for Qs in getlist:
+                if Qs.__len__() < 5:
+                    del getlist[getlist.index(Qs):]
+                    continue
+                softobname = softid.objects.get(id=softname)
+                userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                       taskSort=TaskSort, softid=softobname, AccountId=int(Qs))
+                createtask.save()
+                return redirect('/autoweb/')
+        #7. get Group list
+        if TaskSort == 7:
+            softobname = softid.objects.get(id=softname)
+            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                   taskSort=TaskSort,
+                                                   softid=softobname)
+            createtask.save()
+            return redirect('/autoweb/')
+        #8. get Group list Firends
+        if TaskSort == 8:
+            softobname = softid.objects.get(id=softname)
+            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                   taskSort=TaskSort,
+                                                   softid=softobname)
+            createtask.save()
+            return redirect('/autoweb/')
+
+        #8. get Group list Firends
+        if TaskSort == 9:
+            for Qs in getlist:
+                if Qs.__len__() < 5:
+                    del getlist[getlist.index(Qs):]
+                    continue
+            softobname = softid.objects.get(id=softname)
+            userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
+            createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,
+                                                   taskSort=TaskSort,
+                                                   softid=softobname)
+            createtask.save()
+            return redirect('/autoweb/')
+
+mobiletask_taskSort_choices = (
+    (1, 'add_User'),
+    (2, 'ADD_GROUP'),
+    (3, 'send_message_to_friend_list'),
+    (4, 'send_message_to_GROUP_list'),
+    (5, 'send_message_to_user_Accoutid'),
+    (6, 'send_message_to_GROUP_Accoutid'),
+    (7, 'Get_Pople_list'),
+    (8, 'Get_Group_list'),
+    (9, 'Get_Group_QQ_list'),
+)
+
+
 
 def Task(request, mobile_ID = ''):
     if request.method=='POST':

@@ -72,61 +72,61 @@ $(function () {
 <form method="post" action="">
 
 
-    用户画像：<label class="custom-control custom-radio">
-  <input id="radio1" name="radio" type="radio" class="custom-control-input"  value="client1">
+    用户画像：
+    {% for UserPortrait in UserPortraitlist %}
+
+            <label class="custom-control custom-radio">
+  <input id="UserPortrait" name="UserPortrait" type="radio" class="custom-control-input"  value="{{ UserPortrait.id }}">
   <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">找客户</span>
+  <span class="custom-control-description">{{ UserPortrait.UserPortraitname }}</span>
 </label>
-<label class="custom-control custom-radio">
-  <input id="radio1" name="radio" type="radio" class="custom-control-input" value="buyer1">
-  <span class="custom-control-indicator"></span>
-  <span class="custom-control-description">找买手</span>
-</label>
+    {% endfor %}
+
 
     <br>
 
 <div class="form-check">
 TaskSort：
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="1">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="1">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">加好友</span>
 </label>
 
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="2">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="2">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">加群</span>
 </label>
 
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="3">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="3">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">群发好友</span>
 </label>
 
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="4">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="4">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">群发群</span>
 </label>
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="5">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="5">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">群发指定好友</span>
 </label>
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="6">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="6">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">群发指定群</span>
 </label>
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="7">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="7">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">获取群号</span>
 </label>
 <label class="custom-control custom-radio">
-  <input id="radio2" name="radio1" type="radio" class="custom-control-input" value="8">
+  <input id="TaskSort" name="TaskSort" type="radio" class="custom-control-input" value="8">
   <span class="custom-control-indicator"></span>
   <span class="custom-control-description">获取群列表</span>
 </label>
@@ -134,25 +134,25 @@ TaskSort：
     <br>
     <div class="form-check has-success">
   <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="checkboxSuccess" value="option1">
+    <input type="checkbox" class="form-check-input" id="wechat" value="1" name="wechat">
     微信
   </label>
 </div>
 <div class="form-check has-warning">
   <label class="form-check-label">
-    <input type="checkbox" class="form-check-input" id="checkboxWarning" value="option1">
+    <input type="checkbox" class="form-check-input" id="QQ" value="1" name="QQ">
     QQ
   </label>
 </div>
     <br>
     <div class="form-group">
-    <label for="exampleTextarea">发送人 以','为分割符</label>
-    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+    <label for="exampleTextarea">收件人 以','为分割符</label>
+    <textarea class="form-control" id="exampleTextarea" rows="5" name="getlist"></textarea>
   </div>
     <br>
         <div class="form-group">
     <label for="exampleTextarea">发送内容</label>
-    <textarea class="form-control" id="exampleTextarea" rows="5"></textarea>
+    <textarea class="form-control" id="exampleTextarea" rows="5" name="sendcontains"></textarea>
   </div>
     <br>
   <div class="col-3">

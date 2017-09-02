@@ -1,8 +1,21 @@
-
 from django.db import models
 from users.models import AuthUser
 from django.utils import timezone
 # Create your models here.
+
+class UserPortrait(models.Model):
+    UserPortraitname = models.CharField(max_length=120)
+
+UserPortraitSortChoose =(
+    (1,'QQSendMessage'),
+    (2,'QQSaysay'),
+    (3,'QQSpace'),
+)
+class UserPortraitlog(models.Model):
+    UserPortraitId = models.ForeignKey(UserPortrait, name='UserPortkey')
+    contains = models.CharField(max_length=9999, name='contains')
+    UserPortraitSort = models.IntegerField(choices=UserPortraitSortChoose, name='UserPortSort')
+    startTime = models.DateTimeField(name='startTime')
 
 
 class softid(models.Model):
@@ -13,7 +26,6 @@ class softid(models.Model):
         verbose_name_plural = verbose_name
 
 class mobileid(models.Model):
-    UserPortrait = models.ForeignKey(UserPortrait, null=True)
     platformVersion = models.CharField(null=True, max_length=200, name='platformVersion')
     deviceName = models.CharField(max_length=500, null=True)
     udid = models.CharField(max_length=500, null=True)
@@ -21,6 +33,8 @@ class mobileid(models.Model):
     webserverurl = models.CharField(max_length=500, null=True)
     sort = models.IntegerField(name='mobileSort',null=True)
     QQ = models.IntegerField(name='QQ', null=True)
+    UserPortraitId = models.ForeignKey(UserPortrait, null=True, blank=True)
+
     class Meta:
         verbose_name = 'mobileid'
         verbose_name_plural = verbose_name
@@ -42,7 +56,8 @@ mobiletask_taskSort_choices = (
     (9, 'Get_Group_QQ_list'),
 )
 class mobiletask(models.Model):
-    mobileid = models.ForeignKey(mobileid)
+    mobileid = models.ForeignKey(mobileid, null=True)
+    UserPortraitId = models.ForeignKey(UserPortrait, name='UserPortraitId', null=True)
     softid = models.ForeignKey(softid)
     taskSort = models.IntegerField(choices=mobiletask_taskSort_choices, null=True)
     AccountId = models.CharField(null=True, max_length=200, name='AccountId')
@@ -54,7 +69,6 @@ class mobiletask(models.Model):
     class Meta:
         verbose_name = 'mobileid'
         verbose_name_plural = verbose_name
-
 
 class mobileAccount(models.Model):
     mobileid = models.ForeignKey(mobileid)
@@ -68,32 +82,18 @@ class mobileAccount(models.Model):
         verbose_name = 'mobileAccount'
         verbose_name_plural = verbose_name
 
-
-class UserPortrait(models.Model):
-    UserPortraitname = models.CharField(max_length=120, name='UserPortrait')
-
-UserPortraitSortChoose =(
-    (1,'QQSendMessage'),
-    (2,'QQSaysay'),
-    (3,'QQSpace'),
-)
-class UserPortraitlog(models.Model):
-    UserPortraitId = models.ForeignKey(UserPortrait, name='UserPortkey')
-    contains = models.CharField(max_length=9999, name='contains')
-    UserPortraitSort = models.IntegerField(choices=UserPortraitSortChoose, name='UserPortSort')
-    startTime = models.DateTimeField(name='startTime')
-
-
 class QQID(models.Model):
-    qq = models.IntegerField(name='QQid',primary_key=True)
+    QQ = models.IntegerField(primary_key=True)
     password = models.CharField(max_length=80)
     class Meta:
         verbose_name = 'QQID'
         verbose_name_plural = verbose_name
 
 class QQFriends(models.Model):
-    QQid = models.IntegerField(name='QQid',primary_key=True)
-    QQFriends = models.IntegerField(name='QQfriends')
+    QQ = models.IntegerField(primary_key=True)
+    QQFriends = models.IntegerField(null=True)
+    time = models.DateTimeField(null=True,default=timezone.now)
+
     class Meta:
         verbose_name = 'QQFriends'
         verbose_name_plural = verbose_name
@@ -103,11 +103,47 @@ QQFriendslog_add_del = (
     (2,'delete')
 )
 class QQFriendslog(models.Model):
-    qq = models.IntegerField(name='QQid',primary_key=True)
-    QQFriends = models.IntegerField(name='QQfriends')
+    QQ = models.IntegerField(primary_key=True)
+    QQFriends = models.IntegerField()
     status = models.IntegerField(choices=QQFriendslog_add_del)
+    time = models.DateTimeField(null=True,default=timezone.now)
     class Meta:
         verbose_name = 'QQFriendslog'
         verbose_name_plural = verbose_name
 
 
+class QQGroup(models.Model):
+    QQ = models.IntegerField(primary_key=True)
+    QQGroup = models.IntegerField(null=True)
+    time = models.DateTimeField(null=True,default=timezone.now)
+    class Meta:
+        verbose_name = 'QQGroup'
+        verbose_name_plural = verbose_name
+
+class QQGrouplog(models.Model):
+    QQ = models.IntegerField(primary_key=True)
+    QQGroup = models.IntegerField()
+    status = models.IntegerField(choices=QQFriendslog_add_del)
+    time = models.DateTimeField(null=True,default=timezone.now)
+    class Meta:
+        verbose_name = 'QQGrouplog'
+        verbose_name_plural = verbose_name
+
+class QQGroupList(models.Model):
+    QQGroup = models.IntegerField(primary_key=True)
+    QQGroupList = models.IntegerField(null=True)
+    time = models.DateTimeField(null=True,default=timezone.now)
+
+    class Meta:
+        verbose_name = 'QQGroupList'
+        verbose_name_plural = verbose_name
+
+class QQGroupListlog(models.Model):
+    QQGroup = models.IntegerField(primary_key=True)
+    QQGroupList = models.IntegerField()
+    status = models.IntegerField(choices=QQFriendslog_add_del)
+    time = models.DateTimeField(null=True,default=timezone.now)
+
+    class Meta:
+        verbose_name = 'QQGroupList'
+        verbose_name_plural = verbose_name
