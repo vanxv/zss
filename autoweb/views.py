@@ -155,6 +155,36 @@ def TaskDone(request, task_id = ''):
         task.endTime=datetime.now()
         task.save()
     return HttpResponse('1')
+def TaskDone(request, task_id = '', task_sort=''):
+    print(type(task_sort))
+    if request.method=='POST':
+        task = mobiletask.objects.get(id=task_id, status=1)
+        #task.status=2
+        #task.endTime=datetime.now()
+        #task.save()
+        if int(task_sort) == 3:
+            print(type(task_sort))
+            QqFList_1 = QQFriends.objects.filter(QQ=task.mobileid.QQ)
+            QqFList = []
+            for QQFlistN in QqFList_1:
+                QqFList.append(QQFlistN.QQFriends)
+            json_data1 = json.loads(request.body)
+            json_data = json_data1[task_sort]
+            AddQqFList = set(QqFList) - set(json_data)
+            delQqFList = set(json_data) - set(QqFList)
+            if not len(AddQqFList) ==0:
+                for AddQqFListN in AddQqFList:
+                    QFListLog = QQFriendslog.objects.create(status=1, QQ=task.mobileid.QQ, QQFriends=AddQqFListN)
+                    QFListLog.save()
+                    QFListadd = QQFriends.objects.create(QQ=task.mobileid.QQ, QQFriends=AddQqFListN)
+                    QFListadd.save()
+            if not len(delQqFList) ==0:
+                for delQqFListN in delQqFList:
+                    QFListLog = QQFriendslog.objects.create(status=2, QQ=task.mobileid.QQ, QQFriends=AddQqFListN)
+                    QFListLog.save()
+                    QFListLog = QQFriends.objects.filter(QQ=task.mobileid.QQ, QQFriends=delQqFListN).delete()
+                    QFListLog.save()
+    return HttpResponse('1')
 
 def QQID(request, QQ_ID=''):
     if request.method == 'GET':
@@ -163,22 +193,3 @@ def QQID(request, QQ_ID=''):
         for x in QQlist_temp:
             QQlist.append(x.QQFriends)
     return JsonResponse(QQlist, safe=False)
-
-
-# def tasklog(request, mobileID='', taskid=''):
-#     if request.method=='GET':
-#         mobileidget = mobileid.objects.get(id=int(mobileID))
-#         mobiletaskget = mobiletask.objects.get(id=int(taskid))
-#         tasklog = mobiletasklog.objects.filter(mobileid=mobileidget, mobiletask=mobiletaskget).order_by('-logdatetime')
-#         if tasklog.exists():
-#             return HttpResponse(tasklog[0].logid)
-#         else:
-#             return HttpResponse(0)
-#
-# def tasklogDone(request, mobileID='', taskid='', objectid=''):
-#     if request.method == 'POST':
-#         mobileidget = mobileid.objects.get(id=int(mobileID))
-#         mobiletaskget = mobiletask.objects.get(id=int(taskid))
-#         tasklog = mobiletasklog.objects.create(mobileid=mobileidget, mobiletask=mobiletaskget, logid=objectid)
-#         tasklog.save()
-#         return HttpResponse('ok')
