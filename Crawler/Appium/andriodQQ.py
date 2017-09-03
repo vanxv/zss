@@ -258,8 +258,6 @@ class multipleLoop(multiprocessing.Process):
             multipleLoop.send_message_And_get_to_friend_list(self)
         elif textmarktaskSort == 4 or textmarktaskSort == 8:
             multipleLoop.send_message_to_GROUP_list(self)
-        elif textmarktaskSort == 8:
-            multipleLoop.Get_Group_list(self)
         elif textmarktaskSort == 9:
             multipleLoop.Get_Group_QQ_list(self)
         else:
@@ -436,8 +434,13 @@ class multipleLoop(multiprocessing.Process):
                         break
         #getGrouplists
         #postlist + name
-        temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
-        texttask = open(temp_taskid, 'r').read()
+        done = open(temp_taskid, 'r', encoding='utf-8').read()
+        done = done.split(',')
+        newdone = []
+        for doneN in done:
+            newdone.append(int(doneN))
+        requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=done)
+
 
     def send_message_to_user_Accoutid(self):
         pass
@@ -601,7 +604,15 @@ class multipleLoop(multiprocessing.Process):
         # click list
         #
         # return
-        pass
+        done = open(temp_taskid, 'r', encoding='utf-8').read()
+        done = done.split(',')
+        newdone = []
+
+        for doneN in done:
+            newdone.append(int(doneN))
+
+        requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=newdone)
+
 
 if __name__ == '__main__':
     mobile_id = [1]
