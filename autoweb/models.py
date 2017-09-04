@@ -57,11 +57,11 @@ mobiletask_taskSort_choices = (
 )
 class mobiletask(models.Model):
     mobileid = models.ForeignKey(mobileid, null=True)
-    UserPortraitId = models.ForeignKey(UserPortrait, name='UserPortraitId', null=True)
+    UserPortraitId = models.ForeignKey(UserPortrait, null=True)
     softid = models.ForeignKey(softid)
     taskSort = models.IntegerField(choices=mobiletask_taskSort_choices, null=True)
-    AccountId = models.CharField(null=True, max_length=200, name='AccountId')
-    content = models.CharField(null=True, max_length=200, name='content')
+    AccountId = models.CharField(null=True, max_length=200)
+    content = models.CharField(null=True, max_length=200)
     startTime = models.DateTimeField(null=True,default=timezone.now)
     endTime = models.DateTimeField(null=True,default=timezone.now)
     statusTime = models.DateTimeField(null=True,default=timezone.now)
@@ -83,14 +83,14 @@ class mobileAccount(models.Model):
         verbose_name_plural = verbose_name
 
 class QQID(models.Model):
-    QQ = models.IntegerField(primary_key=True, unique = False)
+    QQ = models.IntegerField(null=True)
     password = models.CharField(max_length=80)
     class Meta:
         verbose_name = 'QQID'
         verbose_name_plural = verbose_name
 
 class QQFriends(models.Model):
-    QQ = models.IntegerField(primary_key=True, unique = False)
+    QQ = models.IntegerField(null=True)
     QQFriends = models.IntegerField(null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
 
@@ -103,8 +103,8 @@ QQFriendslog_add_del = (
     (2,'delete')
 )
 class QQFriendslog(models.Model):
-    QQ = models.IntegerField(primary_key=True,unique = False)
-    QQFriends = models.IntegerField()
+    QQ = models.IntegerField(null=True)
+    QQFriends = models.IntegerField(null=True)
     status = models.IntegerField(choices=QQFriendslog_add_del)
     time = models.DateTimeField(null=True,default=timezone.now)
     class Meta:
@@ -113,7 +113,7 @@ class QQFriendslog(models.Model):
 
 
 class QQGroup(models.Model):
-    QQ = models.IntegerField(primary_key=True, unique = False)
+    QQ = models.IntegerField(null=True)
     QQGroup = models.IntegerField(null=True)
     QQGroupName = models.CharField(null=True, max_length=220)
     time = models.DateTimeField(null=True,default=timezone.now)
@@ -122,8 +122,8 @@ class QQGroup(models.Model):
         verbose_name_plural = verbose_name
 
 class QQGrouplog(models.Model):
-    QQ = models.IntegerField(primary_key=True, unique = False)
-    QQGroup = models.IntegerField()
+    QQ = models.IntegerField(null=True)
+    QQGroup = models.IntegerField(null=True)
     QQGroupName = models.CharField(null=True, max_length=220)
     status = models.IntegerField(choices=QQFriendslog_add_del)
     time = models.DateTimeField(null=True,default=timezone.now)
@@ -132,7 +132,7 @@ class QQGrouplog(models.Model):
         verbose_name_plural = verbose_name
 
 class QQGroupList(models.Model):
-    QQGroup = models.IntegerField(primary_key=True, unique = False)
+    QQGroup = models.IntegerField(null=True)
     QQGroupList = models.IntegerField(null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
 
@@ -141,8 +141,8 @@ class QQGroupList(models.Model):
         verbose_name_plural = verbose_name
 
 class QQGroupListlog(models.Model):
-    QQGroup = models.IntegerField(primary_key=True, unique = False)
-    QQGroupList = models.IntegerField()
+    QQGroup = models.IntegerField(null=True)
+    QQGroupList = models.IntegerField(null=True)
     status = models.IntegerField(choices=QQFriendslog_add_del)
     time = models.DateTimeField(null=True,default=timezone.now)
 

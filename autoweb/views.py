@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse,redirect
 from django.http import JsonResponse
-from .models import mobiletask, mobileid, softid, QQFriends, QQFriendslog,QQGroup,QQGrouplog,QQGroupList,QQGroupListlog, UserPortrait,softid
+from .models import mobiletask, mobileid, softid, UserPortrait,softid, QQFriends, QQFriendslog,QQGroup,QQGrouplog,QQGroupList,QQGroupListlog
 import json
 from datetime import datetime, timedelta
 from django.core import serializers
@@ -205,7 +205,7 @@ def TaskDone(request, task_id = '', task_sort=''):
             QqFList_1 = QQGroupList.objects.filter(QQGroup=task.mobileid.QQ)
             QqFList = []
             for QQFlistN in QqFList_1:
-                QqFList.append(QQFlistN.QQGroupList)
+            QqFList.append(QQFlistN.QQGroupList)
             json_data1 = json.loads(request.body)
             json_data = json_data1[task_sort]
             AddQqFList = set(QqFList) - set(json_data)
