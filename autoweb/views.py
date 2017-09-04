@@ -110,8 +110,6 @@ mobiletask_taskSort_choices = (
     (9, 'Get_Group_QQ_list'),
 )
 
-
-
 def Task(request, mobile_ID = ''):
     if request.method=='POST':
         mobileID = mobileid.objects.get(id=int(mobile_ID))
@@ -148,19 +146,11 @@ def Task(request, mobile_ID = ''):
         }
         return JsonResponse(taskdict, safe=False)
 
-def TaskDone(request, task_id = ''):
+def TaskDone(request, task_id = '', task_sort=''):
     if request.method=='POST':
         task = mobiletask.objects.get(id=task_id, status=1)
         task.status=2
         task.endTime=datetime.now()
-        task.save()
-    return HttpResponse('1')
-def TaskDone(request, task_id = '', task_sort=''):
-    print(type(task_sort))
-    if request.method=='POST':
-        task = mobiletask.objects.get(id=task_id, status=1)
-        #task.status=2
-        #task.endTime=datetime.now()
         #task.save()
         if int(task_sort) == 3:
             QqFList_1 = QQFriends.objects.filter(QQ=task.mobileid.QQ)
@@ -183,49 +173,55 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListLog.save()
                     QFListLog = QQFriends.objects.filter(QQ=task.mobileid.QQ, QQFriends=delQqFListN).delete()
                     QFListLog.save()
-    if int(task_sort) == 4:
-        QqFList_1 = QQGroup.objects.filter(QQ=task.mobileid.QQ)
-        QqFList = []
-        for QQFlistN in QqFList_1:
-            QqFList.append(QQFlistN.QQFriends)
-        json_data1 = json.loads(request.body)
-        json_data = json_data1[task_sort]
-        AddQqFList = set(QqFList) - set(json_data)
-        delQqFList = set(json_data) - set(QqFList)
-        if not len(AddQqFList) == 0:
-            for AddQqFListN in AddQqFList:
-                QFListLog = QQGrouplog.objects.create(status=1, QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
-                QFListLog.save()
-                QFListadd = QQGroup.objects.create(QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
-                QFListadd.save()
-        if not len(delQqFList) == 0:
-            for delQqFListN in delQqFList:
-                QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
-                QFListLog.save()
-                QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
-                QFListLog.save()
+        if int(task_sort) == 4 or int(task_sort) == 8:
+            QqFList_1 = QQGroup.objects.filter(QQ=task.mobileid.QQ)
+            QqFList = []
+            for QQFlistN in QqFList_1:
+                QqFList.append(QQFlistN.QQGroup)
+            json_data1 = json.loads(request.body)
+            json_data =[]
+            print(json_data1)
+            print(type(json_data1))
+            for x,y in json_data1.items():
+                json_data.append(int(x))
+            delQqFList = set(QqFList) - set(json_data)
+            AddQqFList = set(json_data) - set(QqFList)
+            if not len(AddQqFList) == 0:
+                for AddQqFListN in AddQqFList:
+                    json_data1name = json_data1[str(AddQqFListN)]
+                    QFListLog = QQGrouplog.objects.create(status=1, QQ=task.mobileid.QQ, QQGroup=AddQqFListN, QQGroupName=json_data1name)
+                    QFListLog.save()
+                    QFListadd = QQGroup.objects.create(QQ=task.mobileid.QQ, QQGroup=AddQqFListN, QQGroupName=json_data1name)
+                    QFListadd.save()
+            if not len(delQqFList) == 0:
+                for delQqFListN in delQqFList:
+                    json_data1name = json_data1[str(AddQqFListN)]
+                    QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=AddQqFListN, QQGroupName=json_data1name)
+                    QFListLog.save()
+                    QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
+                    QFListLog.save()
 
-    if int(task_sort) == 9:
-        QqFList_1 = QQGroupList.objects.filter(QQGroup=task.mobileid.QQ)
-        QqFList = []
-        for QQFlistN in QqFList_1:
-            QqFList.append(QQFlistN.QQGroupList)
-        json_data1 = json.loads(request.body)
-        json_data = json_data1[task_sort]
-        AddQqFList = set(QqFList) - set(json_data)
-        delQqFList = set(json_data) - set(QqFList)
-        if not len(AddQqFList) == 0:
-            for AddQqFListN in AddQqFList:
-                QFListLog = QQGrouplog.objects.create(status=1, QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
-                QFListLog.save()
-                QFListadd = QQGroup.objects.create(QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
-                QFListadd.save()
-        if not len(delQqFList) == 0:
-            for delQqFListN in delQqFList:
-                QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
-                QFListLog.save()
-                QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
-                QFListLog.save()
+        if int(task_sort) == 9:
+            QqFList_1 = QQGroupList.objects.filter(QQGroup=task.mobileid.QQ)
+            QqFList = []
+            for QQFlistN in QqFList_1:
+                QqFList.append(QQFlistN.QQGroupList)
+            json_data1 = json.loads(request.body)
+            json_data = json_data1[task_sort]
+            AddQqFList = set(QqFList) - set(json_data)
+            delQqFList = set(json_data) - set(QqFList)
+            if not len(AddQqFList) == 0:
+                for AddQqFListN in AddQqFList:
+                    QFListLog = QQGrouplog.objects.create(status=1, QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
+                    QFListLog.save()
+                    QFListadd = QQGroup.objects.create(QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
+                    QFListadd.save()
+            if not len(delQqFList) == 0:
+                for delQqFListN in delQqFList:
+                    QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=AddQqFListN)
+                    QFListLog.save()
+                    QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
+                    QFListLog.save()
     return HttpResponse('1')
 
 def QQID(request, QQ_ID=''):
