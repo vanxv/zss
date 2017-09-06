@@ -34,6 +34,7 @@ class mobileid(models.Model):
     sort = models.IntegerField(name='mobileSort',null=True)
     QQ = models.IntegerField(name='QQ', null=True)
     UserPortraitId = models.ForeignKey(UserPortrait, null=True, blank=True)
+    note = models.CharField(max_length=500, null=True)
 
     class Meta:
         verbose_name = 'mobileid'

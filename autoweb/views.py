@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse,redirect
 from django.http import JsonResponse
 from .models import mobiletask, mobileid, softid, UserPortrait,softid, QQFriends, QQFriendslog,QQGroup,QQGrouplog,QQGroupList,QQGroupListlog
 import json
+import re
 from datetime import datetime, timedelta
 from django.core import serializers
 # Create your views here.
@@ -148,17 +149,20 @@ def Task(request, mobile_ID = ''):
 
 def TaskDone(request, task_id = '', task_sort=''):
     if request.method=='POST':
-        task = mobiletask.objects.get(id=task_id, status=1)
+        #task = mobiletask.objects.get(id=task_id, status=1)
+        task = mobiletask.objects.get(id=task_id)
         task.status=2
         task.endTime=datetime.now()
         #task.save()
-        if int(task_sort) == 3:
+        if int(task_sort) == 3 or int(task_sort) == 7:
             QqFList_1 = QQFriends.objects.filter(QQ=task.mobileid.QQ)
             QqFList = []
             for QQFlistN in QqFList_1:
                 QqFList.append(QQFlistN.QQFriends)
             json_data1 = json.loads(request.body)
-            json_data = json_data1[task_sort]
+            json_data = []
+            for x,y in json_data1.items():
+                json_data.append(int(x))
             AddQqFList = set(QqFList) - set(json_data)
             delQqFList = set(json_data) - set(QqFList)
             if not len(AddQqFList) ==0:
@@ -202,12 +206,18 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListLog.save()
 
         if int(task_sort) == 9:
-            QqFList_1 = QQGroupList.objects.filter(QQGroup=task.mobileid.QQ)
+            QqFList_1 = QQGroupList.objects.filter(QQGroup=task.AccountId)
             QqFList = []
             for QQFlistN in QqFList_1:
-            QqFList.append(QQFlistN.QQGroupList)
-            json_data1 = json.loads(request.body)
-            json_data = json_data1[task_sort]
+                QqFList.append(QQFlistN.QQGroupList)
+            json_data1 = json.loads(request.body,encoding='utf-8')
+            testjson =json.loads(json_data1)
+            print(testjson)
+            print(type(testjson))
+            json_data = []
+            for x,y in testjson.items():
+                print(int(x))
+                json_data.append(int(x))
             AddQqFList = set(QqFList) - set(json_data)
             delQqFList = set(json_data) - set(QqFList)
             if not len(AddQqFList) == 0:
