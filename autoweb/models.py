@@ -93,6 +93,9 @@ class QQID(models.Model):
 class QQFriends(models.Model):
     QQ = models.IntegerField(null=True)
     QQFriends = models.IntegerField(null=True)
+    name = models.CharField(max_length=120,null=True)
+    nick = models.CharField(max_length=120,null=True)
+    contains = models.CharField(max_length=200,null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
 
     class Meta:
@@ -106,6 +109,9 @@ QQFriendslog_add_del = (
 class QQFriendslog(models.Model):
     QQ = models.IntegerField(null=True)
     QQFriends = models.IntegerField(null=True)
+    name = models.CharField(max_length=120,null=True)
+    nick = models.CharField(max_length=120,null=True)
+    contains = models.CharField(max_length=200,null=True)
     status = models.IntegerField(choices=QQFriendslog_add_del)
     time = models.DateTimeField(null=True,default=timezone.now)
     class Meta:
@@ -117,6 +123,7 @@ class QQGroup(models.Model):
     QQ = models.IntegerField(null=True)
     QQGroup = models.IntegerField(null=True)
     QQGroupName = models.CharField(null=True, max_length=220)
+    number = models.IntegerField(null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
     class Meta:
         verbose_name = 'QQGroup'
@@ -125,6 +132,7 @@ class QQGroup(models.Model):
 class QQGrouplog(models.Model):
     QQ = models.IntegerField(null=True)
     QQGroup = models.IntegerField(null=True)
+    number = models.IntegerField(null=True)
     QQGroupName = models.CharField(null=True, max_length=220)
     status = models.IntegerField(choices=QQFriendslog_add_del)
     time = models.DateTimeField(null=True,default=timezone.now)
@@ -134,7 +142,10 @@ class QQGrouplog(models.Model):
 
 class QQGroupList(models.Model):
     QQGroup = models.IntegerField(null=True)
-    QQGroupList = models.IntegerField(null=True)
+    QQ = models.CharField(max_length=20,null=True)
+    level = models.IntegerField(null=True)
+    name = models.CharField(max_length=100, null=True)
+    contains = models.CharField(max_length=500, null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
 
     class Meta:
@@ -143,10 +154,13 @@ class QQGroupList(models.Model):
 
 class QQGroupListlog(models.Model):
     QQGroup = models.IntegerField(null=True)
-    QQGroupList = models.IntegerField(null=True)
-    status = models.IntegerField(choices=QQFriendslog_add_del)
+    QQ = models.CharField(max_length=20,null=True)
+    name = models.CharField(max_length=100, null=True)
+    contains = models.CharField(max_length=500, null=True)
+    status = models.IntegerField(choices=QQFriendslog_add_del,null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
 
+
     class Meta:
-        verbose_name = 'QQGroupList'
+        verbose_name = 'QQGroupListlog'
         verbose_name_plural = verbose_name

@@ -3,73 +3,75 @@ import requests
 import codecs
 
 #----post sort 3 & 7-----#
-csvfile = codecs.open('ename.csv', 'w')
-namefield = ['QQ', 'name', 'nick', 'contains']
-writer = csv.DictWriter(csvfile,fieldnames=namefield)
-writer.writeheader()
-writer.writerow({'QQ': '678092', 'name': 'Beans','nick':'nick','contains':'contains'})
-writer.writerow({'QQ': '24781222', 'name': 'vanxv','nick':'nick','contains':'contains'})
-writer.writerow({'QQ': '7382732', 'name': 'google','nick':'nick','contains':'contains'})
-csvfile.close()
-
-csvfile2 = codecs.open('ename.csv')
-reader = csv.DictReader(csvfile2, fieldnames=namefield)
+import csv
+import requests
+import json
+import codecs
+temp_taskid = codecs.open('36.csv','r', encoding='utf_8')
+fieldname = ['QQ','name','nick','contains']
+reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
 csvtuples = {}
 for row in reader:
-    a ={'name':row['name'],'nick':row['nick'],'contains':row['contains']}
-    if not row['QQ'] == 'QQ':
-        csvtuples[row['QQ']] = a
+    if 'QQ' in row['QQ']:
+        continue
+    a={}
+    a['name']= row['name']
+    a['nick']=row['nick']
+    a['contains']=row['contains']
+    b = row['QQ']
+    b = b.replace(u'\ufeff', '')
+    csvtuples[b] = a
+    out = json.dumps(csvtuples)
 
-print(csvtuples)
-requests.post('http://127.0.0.1:8000/autoweb/done/22/7/', json=csvtuples)
+a = requests.post('http://127.0.0.1:8000/autoweb/done/36/7/', json=out)
 
+open('index.html','r').write(a.text)
 
 #----post sort 4 & 8-----#
-csvfile = codecs.open('ename.csv', 'w')
-fieldname = ['GroupId','GroupName']
-writer = csv.DictWriter(csvfile,fieldnames=fieldname)
-writer.writeheader()
-writer.writerow({'GroupId': '678092', 'GroupName': 'Beans'})
-writer.writerow({'GroupId': '24781222', 'GroupName': 'vanxv'})
-writer.writerow({'GroupId': '7382732', 'GroupName': 'google'})
-csvfile.close()
+import csv
+import requests
+import json
+import codecs
+temp_taskid = codecs.open('29.csv','r', encoding='utf_8')
+fieldname = ['GroupId','GroupName','number']
+reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
+csvtuples = {}
+for row in reader:
+    if 'GroupId' in row['GroupId']:
+        continue
+    a={}
+    a['GroupName']= row['GroupName']
+    a['number']=row['number']
+    b = row['GroupId']
+    b = b.replace(u'\ufeff', '')
+    csvtuples[b] = a
+    out = json.dumps(csvtuples)
 
-csvfile2 = codecs.open('ename.csv')
-reader = csv.DictReader(csvfile2)
-dictlist = {}
-for xx in reader:
-    dictlist[xx['GroupId']]=xx['GroupName']
+a = requests.post('http://127.0.0.1:8000/autoweb/done/29/8/', json=out)
 
-print(dictlist)
-requests.post('http://127.0.0.1:8000/autoweb/done/22/8/', json=dictlist)
-
+open('index.html','r').write(a.text)
+#---post sort 9
 
 import csv
 import requests
 import json
 import codecs
-#---post sort 9 ---#
-csvfile = codecs.open('ename.csv', 'w')
-fieldname = ['QQ','name','level','contains']
-writer = csv.DictWriter(csvfile,fieldnames=fieldname)
-writer.writeheader()
-writer.writerow({'QQ': 678092, 'name': '广州','level':1,'contains':'电影'})
-writer.writerow({'QQ': 24781222, 'name': 'vanxv','level':1,'contains':'游戏'})
-writer.writerow({'QQ': 7382732, 'name': 'google','level':1,'contains':'游戏'})
-csvfile.close()
-
-csvfile2 = open('ename.csv','r')
-reader = csv.DictReader(csvfile2,fieldnames=fieldname)
+temp_taskid = codecs.open('27.csv','r', encoding='utf_8')
+fieldname = ['QQ', 'name', 'level', 'contains']
+reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
 csvtuples = {}
 for row in reader:
-    a ={'name':row['name'],'level':row['level'],'contains':row['contains']}
-    if not row['QQ'] == 'QQ':
-        csvtuples[row['QQ']] = a
-
-out = json.dumps(csvtuples)
-
-RETURNhtml = requests.post('http://127.0.0.1:8000/autoweb/done/24/9/',  json=out)
-
+    if 'QQ' in row['QQ']:
+        continue
+    a={}
+    a['name']= row['name']
+    a['level']=row['level']
+    a['contains']=row['contains']
+    b = row['QQ']
+    b = b.replace(u'\ufeff', '')
+    csvtuples[b] = a
+    out = json.dumps(csvtuples)
+RETURNhtml = requests.post('http://127.0.0.1:8000/autoweb/done/27/9/', json=out)
 
 
 

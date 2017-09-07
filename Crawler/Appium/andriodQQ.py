@@ -1,7 +1,7 @@
 # appium：1.server and andriod connection，
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
-
+import datetime
 import time
 import re
 import requests
@@ -261,7 +261,7 @@ class multipleLoop(multiprocessing.Process):
 
     def run(self):
         time.sleep(self.mobile_id_for)
-        whilen =1
+        whilen = 1
         #while whilen == 1:
         response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
         data = response.json()
@@ -314,6 +314,7 @@ class multipleLoop(multiprocessing.Process):
             # ---- loop select_work----#
     #Need add_QQ_list
     def QQaddPeople_group(self):
+        #sort 1 & 2
         time.sleep(4)
         QQaction.connect(self)
         QQaction.connect(self)
@@ -340,6 +341,7 @@ class multipleLoop(multiprocessing.Process):
         requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/')
     #Need Send_message_Need_time
     def send_message_And_get_to_friend_list(self):
+        #-- sort 3 & 7
         #create  && open tempcsv
         temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
 
@@ -410,23 +412,31 @@ class multipleLoop(multiprocessing.Process):
                         break
 
 
-        namefield = ['QQ', 'name', 'nick', 'contains']
-        reader = csv.DictReader(open(temp_taskid, 'r', encoding='utf-8'),fieldnames=namefield)
+        fieldname = ['QQ', 'name', 'nick', 'contains']
+        reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
         csvtuples = {}
         for row in reader:
-            a = {'name': row['name'], 'nick': row['nick'], 'contains': row['contains']}
-            csvtuples[row['QQ']] = a
-        out = json.dumps(csvtuples)
+            if 'QQ' in row['QQ']:
+                continue
+            a = {}
+            a['name'] = row['name']
+            a['nick'] = row['nick']
+            a['contains'] = row['contains']
+            b = row['QQ']
+            b = b.replace(u'\ufeff', '')
+            csvtuples[b] = a
+            out = json.dumps(csvtuples)
         requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=out)
 
     def send_message_to_GROUP_list(self):
+        #-- sort 4 &8
         #create  && open tempcsv
         temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
 
 
         if os.path.exists(temp_taskid) == False:
             texttask = codecs.open(temp_taskid, 'w', 'utf_8_sig')
-            fieldname = ['GroupId','GroupName']
+            fieldname = ['GroupId','GroupName','number']
             writers = csv.DictWriter(texttask,fieldnames=fieldname)
             writers.writeheader()
             texttask.close()
@@ -491,15 +501,16 @@ class multipleLoop(multiprocessing.Process):
                     # ----have '我知道了' gourp ----#
 
                     getgroupinfo = QQaction.clickGroupinfo(self)
-                    time.sleep(1.5)
+                    time.sleep(2.5)
                     GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
                     getGroupname = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]").text
+                    number = self.driver.find_element_by_xpath("//*[contains(@text, '名成员')]").text.replace('名成员', '')
                     self.driver.keyevent(keycode=4)
                     if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8_sig').read():
                         opentemp = codecs.open(temp_taskid, 'a', 'utf_8_sig')
-                        fieldname = ['GroupId', 'GroupName']
+                        fieldname = ['GroupId', 'GroupName', 'number']
                         writers = csv.DictWriter(opentemp,fieldnames=fieldname)
-                        writers.writerow({'GroupId': GetQQnumbertry, 'GroupName': getGroupname})
+                        writers.writerow({'GroupId': GetQQnumbertry, 'GroupName': getGroupname,'number':number})
                         opentemp.close()
                     time.sleep(3)
                     print(getGroupname+GetQQnumbertry)
@@ -522,18 +533,29 @@ class multipleLoop(multiprocessing.Process):
                             break
         #getGrouplists
         #postlist + name
-        fieldname = ['GroupId', 'GroupName']
-        reader = csv.DictReader(open(temp_taskid, 'r', encoding='utf-8'),fieldnames=fieldname)
-        out = json.dumps([row for row in reader])
+        fieldname = ['GroupId', 'GroupName', 'number']
+        reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
+        csvtuples = {}
+        for row in reader:
+            if 'GroupId' in row['GroupId']:
+                continue
+            a = {}
+            a['GroupName'] = row['GroupName']
+            a['number'] = row['number']
+            b = row['GroupId']
+            b = b.replace(u'\ufeff', '')
+            csvtuples[b] = a
+            out = json.dumps(csvtuples)
         requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=out)
 
     def Get_Group_QQ_list(self):
+        #-- sort 9
         #create  && open tempcsv
         temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
 
         if os.path.exists(temp_taskid) == False:
                 texttask = codecs.open(temp_taskid, 'w','utf_8_sig')
-                fieldname = ['QQ','name','level']
+                fieldname = ['QQ', 'name', 'level', 'contains']
                 writers = csv.DictWriter(texttask,fieldnames=fieldname)
                 writers.writeheader()
                 texttask.close()
@@ -555,7 +577,7 @@ class multipleLoop(multiprocessing.Process):
         self.driver.implicitly_wait(15)
         QQaction.clickGroupinfo(self)
         self.driver.implicitly_wait(15)
-        time.sleep(3)
+        time.sleep(4)
         self.driver.find_element_by_xpath("//*[contains(@text, '名成员')]").click()
         #if elements# wait...loading
         loadingwait = 0
@@ -605,12 +627,32 @@ class multipleLoop(multiprocessing.Process):
                 elementjudge = elementjudge[0]
                 self.driver.implicitly_wait(15)
                 temp_elements_List.click()
+                self.driver.implicitly_wait(15)
+                time.sleep(2)
+                timea = datetime.datetime.now()
+                # try:
+                #     age = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
+                # except:
+                #     age = ''
+                # try:
+                #     address = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]").text
+                # except:
+                #     address = ''
+                try:
+                    contains = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]").text
+                except:
+                    contains = ''
                 GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
-                if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8_sig').read():
-                    texttask = codecs.open(temp_taskid, 'a', 'utf_8_sig')
-                    fieldname = ['QQ', 'name', 'level']
+                timeb = datetime.datetime.now()
+                timec = timeb - timea
+                print(timec)
+                print(str(contains))
+                print(str(GetQQnumbertry))
+                if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8').read():
+                    texttask = codecs.open(temp_taskid, 'a', 'utf_8')
+                    fieldname = ['QQ', 'name', 'level', 'contains']
                     writers = csv.DictWriter(texttask, fieldnames=fieldname)
-                    writers.writerow({'QQ': GetQQnumbertry, 'name': QQname, 'level': qqlevel})
+                    writers.writerow({'QQ': GetQQnumbertry, 'name': QQname, 'level': qqlevel, 'contains':contains })
                     texttask.close()
                     self.driver.keyevent(keycode=4)
                     print('QQ:'+str(GetQQnumbertry) + 'QQname:'+str(QQname)+' QQlevel:'+str(qqlevel)+'N:'+str(N))
@@ -632,13 +674,19 @@ class multipleLoop(multiprocessing.Process):
                         break
         # return
         fieldname = ['QQ', 'name', 'level', 'contains']
-        reader = csv.DictReader(open(temp_taskid, 'r', encoding='utf-8'),fieldnames=fieldname)
+        reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
         csvtuples = {}
         for row in reader:
-            a = {'name': row['name'], 'level': row['level'], 'contains': row['contains']}
-            csvtuples[row['QQ']] = a
-
-        out = json.dumps(csvtuples)
+            if 'QQ' in row['QQ']:
+                continue
+            a = {}
+            a['name'] = row['name']
+            a['level'] = row['level']
+            a['contains'] = row['contains']
+            b = row['QQ']
+            b = b.replace(u'\ufeff', '')
+            csvtuples[b] = a
+            out = json.dumps(csvtuples)
         requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=out)
 
 if __name__ == '__main__':
