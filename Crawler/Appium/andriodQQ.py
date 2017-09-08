@@ -16,7 +16,7 @@ import shutil
 from PIL import Image
 # using images model
 import pytesseract
-import pool
+from multiprocessing import Pool
 import multiprocessing
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -254,64 +254,11 @@ class swipe():
             print('qqnumberswipe', i + 1)
             self.driver.swipe(start_x=400, start_y=270, end_x=500, end_y=100, duration=4000)
             self.driver.implicitly_wait(15)
-class multipleLoop(multiprocessing.Process):
+class multipleLoop():
+    #class multipleLoop(multiprocessing.Process):
     def __init__(self, mobile_id_for):
-        multiprocessing.Process.__init__(self)
         self.mobile_id_for = mobile_id_for
-
-    def run(self):
-        time.sleep(self.mobile_id_for)
-        whilen = 1
-        #while whilen == 1:
-        response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
-        data = response.json()
-        self.mark = {}
-        self.Groupcardx = 0
-        self.Groupcardy = 0
-        for x, y in data.items():
-            # x = x.encode('utf-8')
-            # try:
-            #     y = y.encode('utf-8')
-            self.mark[x] = y
-        # data中 1.APP名，2.Activety名， 3任务信息
-        desired_caps = {
-            'platformName': 'Android',
-            'deviceName': self.mark['deviceName'],
-            'platformVersion': self.mark['platformVersion'],
-            'appPackage': self.mark['appPackage'],
-            'appActivity': self.mark['appActivity'],
-            #'udid': self.mark['udid'],
-            #'exported': "True",
-            'unicodeKeyboard': "True",
-            'resetKeyboard': "True",
-        }
-        self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
-        mobiletask_taskSort_choices = (
-        (1, 'add_User'),
-        (2, 'ADD_GROUP'),
-        (3, 'send_message_to_friend_list'),
-        (4, 'send_message_to_GROUP_list'),
-        (5, 'send_message_to_user_Accoutid'),
-        (6, 'send_message_to_GROUP_Accoutid'),
-        (7, 'Get_Pople_list'),
-        (8, 'Get_Group_list'),
-        (9, 'Get_Group_People_list'),
-        )
-        #---- loop select_work----#
-        textmarktaskSort = self.mark['taskSort']
-        print("taskSort:"+str(textmarktaskSort)+"taskid:"+str(self.mark['taskid']))
-
-        if textmarktaskSort == 1 or textmarktaskSort == 2:
-            multipleLoop.QQaddPeople_group(self)
-        elif textmarktaskSort == 3 or textmarktaskSort == 7:
-            multipleLoop.send_message_And_get_to_friend_list(self)
-        elif textmarktaskSort == 4 or textmarktaskSort == 8:
-            multipleLoop.send_message_to_GROUP_list(self)
-        elif textmarktaskSort == 9:
-            multipleLoop.Get_Group_QQ_list(self)
-        else:
-            pass
-            # ---- loop select_work----#
+        multipleLoop.run(self)
     #Need add_QQ_list
     def QQaddPeople_group(self):
         #sort 1 & 2
@@ -334,11 +281,14 @@ class multipleLoop(multiprocessing.Process):
         if self.mark['taskSort'] == 1:
             self.driver.find_element_by_xpath("//*[contains(@text, '加好友')]").click()
         elif self.mark['taskSort'] == 2:
-            self.driver.find_element_by_xpath("//*[contains(@text, '申请加群')]").click()
+            try:
+                self.driver.find_element_by_xpath("//*[contains(@text, '申请加群')]").click()
+            except:
+                self.driver.find_element_by_xpath("//*[contains(@text, '发消息')]").click()
         self.driver.find_element_by_xpath("//android.widget.EditText").clear()
         self.driver.find_element_by_xpath("//android.widget.EditText").send_keys(self.mark['content'])
         self.driver.find_element_by_xpath("//*[contains(@text, '发送')]").click()
-        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/')
+        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + str(self.mark['taskSort']) + '/')
     #Need Send_message_Need_time
     def send_message_And_get_to_friend_list(self):
         #-- sort 3 & 7
@@ -432,7 +382,7 @@ class multipleLoop(multiprocessing.Process):
         #-- sort 4 &8
         #create  && open tempcsv
         temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
-
+        self.returnnumber = 0
 
         if os.path.exists(temp_taskid) == False:
             texttask = codecs.open(temp_taskid, 'w', 'utf_8_sig')
@@ -440,7 +390,6 @@ class multipleLoop(multiprocessing.Process):
             writers = csv.DictWriter(texttask,fieldnames=fieldname)
             writers.writeheader()
             texttask.close()
-
         QQaction.connect(self)
         self.driver.implicitly_wait(20)
         clickGROUP =0
@@ -512,9 +461,25 @@ class multipleLoop(multiprocessing.Process):
                         writers = csv.DictWriter(opentemp,fieldnames=fieldname)
                         writers.writerow({'GroupId': GetQQnumbertry, 'GroupName': getGroupname,'number':number})
                         opentemp.close()
-                    time.sleep(3)
+                    time.sleep(2)
                     print(getGroupname+GetQQnumbertry)
-                    self.driver.keyevent(keycode=4)
+                    #click return number
+                    if self.returnnumber == 0:
+                        try:
+                            groupjudge = self.driver.find_elements_by_xpath("//android.widget.ImageView[contains(@content-desc, '群资料卡')]")
+                            if groupjudge.__len__()>0:
+                                self.returnnumber  = 1
+                                self.driver.keyevent(keycode=4)
+                            if groupjudge.__len__()==0:
+                                self.returnnumber =2
+                        except:
+                            self.driver.keyevent(keycode=4)
+                            self.returnnumber = 1
+                    elif self.returnnumber == 1:
+                        self.driver.keyevent(keycode=4)
+                    elif self.returnnumber == 2:
+                        pass
+                    #click return number
                     self.driver.implicitly_wait(15)
                     QQaction.connect(self)
                     elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
@@ -689,10 +654,70 @@ class multipleLoop(multiprocessing.Process):
             out = json.dumps(csvtuples)
         requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=out)
 
+    def run(self):
+        print('task:'+self.mobile_id_for)
+        whilen = 1
+        while whilen == 1:
+            try:
+                response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
+                data = response.json()
+                self.mark = {}
+                self.Groupcardx = 0
+                self.Groupcardy = 0
+                for x, y in data.items():
+                    # x = x.encode('utf-8')
+                    # try:
+                    #     y = y.encode('utf-8')
+                    self.mark[x] = y
+                # data中 1.APP名，2.Activety名， 3任务信息
+                desired_caps = {
+                    'platformName': 'Android',
+                    'deviceName': self.mark['deviceName'],
+                    'platformVersion': self.mark['platformVersion'],
+                    'appPackage': self.mark['appPackage'],
+                    'appActivity': self.mark['appActivity'],
+                    #'udid': self.mark['udid'],
+                    #'exported': "True",
+                    'unicodeKeyboard': "True",
+                    'resetKeyboard': "True",
+                }
+                print(self.mark['webserverurl'])
+                self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
+                mobiletask_taskSort_choices = (
+                (1, 'add_User'),
+                (2, 'ADD_GROUP'),
+                (3, 'send_message_to_friend_list'),
+                (4, 'send_message_to_GROUP_list'),
+                (5, 'send_message_to_user_Accoutid'),
+                (6, 'send_message_to_GROUP_Accoutid'),
+                (7, 'Get_Pople_list'),
+                (8, 'Get_Group_list'),
+                (9, 'Get_Group_People_list'),
+                )
+                #---- loop select_work----#
+                textmarktaskSort = self.mark['taskSort']
+                print("taskSort:"+str(textmarktaskSort)+"taskid:"+str(self.mark['taskid']))
+
+                if textmarktaskSort == 1 or textmarktaskSort == 2:
+                    multipleLoop.QQaddPeople_group(self)
+                elif textmarktaskSort == 3 or textmarktaskSort == 7:
+                    multipleLoop.send_message_And_get_to_friend_list(self)
+                elif textmarktaskSort == 4 or textmarktaskSort == 8:
+                    multipleLoop.send_message_to_GROUP_list(self)
+                elif textmarktaskSort == 9:
+                    multipleLoop.Get_Group_QQ_list(self)
+                else:
+                    pass
+                    # ---- loop select_work----#
+            except:
+                print('error')
+
+
 if __name__ == '__main__':
-    mobile_id = [1]
-    for mobile_id_for in mobile_id:
-        locals()['a' + str(mobile_id_for)] = multipleLoop(mobile_id_for)
-        locals()['a' + str(mobile_id_for)].start()
-        locals()['a' + str(mobile_id_for)].join()#加进去以后不会报错，得查查什么原因。
+    p = Pool(8)
+    p.map(multipleLoop, ['1','2'])
+    # for mobile_id_for in mobile_id:
+    #     locals()['a' + str(mobile_id_for)] = multipleLoop(mobile_id_for)
+    #     locals()['a' + str(mobile_id_for)].start()
+    #     locals()['a' + str(mobile_id_for)].join()#加进去以后不会报错，得查查什么原因。
 

@@ -32,7 +32,7 @@ class mobileid(models.Model):
     StyleLabel = models.CharField(max_length=500, null=True)
     webserverurl = models.CharField(max_length=500, null=True)
     sort = models.IntegerField(name='mobileSort',null=True)
-    QQ = models.IntegerField(name='QQ', null=True)
+    QQ = models.CharField(name='QQ', null=True,max_length=20)
     UserPortraitId = models.ForeignKey(UserPortrait, null=True, blank=True)
     note = models.CharField(max_length=500, null=True)
 
@@ -84,8 +84,9 @@ class mobileAccount(models.Model):
         verbose_name_plural = verbose_name
 
 class QQID(models.Model):
-    QQ = models.IntegerField(null=True)
-    password = models.CharField(max_length=80)
+    QQ = models.CharField(null=True,max_length=13)
+    password = models.CharField(max_length=80,null=True)
+    note = models.CharField(max_length=300,null=True)
     class Meta:
         verbose_name = 'QQID'
         verbose_name_plural = verbose_name

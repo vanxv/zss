@@ -72,11 +72,11 @@ def index(request):
                     del getlist[getlist.index(Qs):]
                     continue
                 if TaskSort == 1:
-                    if QQFriends.objects.filter(QQfriends=int(Qs)).__len__() > 2:
+                    if QQFriends.objects.filter(QQGroup=int(Qs)).__len__() > 2:
                         del getlist[getlist.index(Qs):]
                         continue
                 elif TaskSort == 2:
-                    if QQGroup.objects.filter(QQfriends=int(Qs)).__len__() > 2:
+                    if QQGroup.objects.filter(QQGroup=int(Qs)).__len__() > 2:
                         del getlist[getlist.index(Qs):]
                         continue
 
@@ -151,9 +151,6 @@ def TaskDone(request, task_id = '', task_sort=''):
     if request.method=='POST':
         #task = mobiletask.objects.get(id=task_id, status=1)
         task = mobiletask.objects.get(id=task_id)
-        task.status=2
-        task.endTime=datetime.now()
-        #task.save()
         if int(task_sort) == 3 or int(task_sort) == 7:
             QqFList_1 = QQFriends.objects.filter(QQ=task.mobileid.QQ)
             QqFList = []
@@ -231,6 +228,9 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListLog = QQGroupListlog.objects.create(status=2, QQGroup=int(task.AccountId), QQ=delQqFListN,name=getdeletecontains.name,contains=getdeletecontains.contains)
                     QFListLog.save()
                     QFListLog = QQGroupList.objects.filter(QQGroup=int(task.AccountId), QQ=delQqFListN).delete()
+        task.status=2
+        task.endTime=datetime.now()
+        task.save()
     return HttpResponse('1')
 
 def QQID(request, QQ_ID=''):
