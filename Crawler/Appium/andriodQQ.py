@@ -215,8 +215,6 @@ class QQaction():
         try:
             if self.Groupcardx == 0:
                 groupjudge = self.driver.find_element_by_xpath("//android.widget.ImageView[contains(@content-desc, '群资料卡')]")
-                print(groupjudge.location['y'])
-                print(groupjudge.location['x'])
                 self.Groupcardx = int(groupjudge.location['x'])
                 self.Groupcardy = int(groupjudge.location['y'])
             if self.mark['taskSort'] == 9:
@@ -710,15 +708,10 @@ class multipleLoop():
                 else:
                     pass
                     # ---- loop select_work----#
-            except:
-                print('error')
+            except Exception as e:
+                print(e)
 
 
 if __name__ == '__main__':
     p = Pool(8)
     p.map(multipleLoop, ['1','2'])
-    # for mobile_id_for in mobile_id:
-    #     locals()['a' + str(mobile_id_for)] = multipleLoop(mobile_id_for)
-    #     locals()['a' + str(mobile_id_for)].start()
-    #     locals()['a' + str(mobile_id_for)].join()#加进去以后不会报错，得查查什么原因。
-
