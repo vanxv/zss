@@ -26,8 +26,8 @@ import codecs
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
 print(str(28)+tempfile.gettempdir())
-geturl = 'http://127.0.0.1:8000/'
-#geturl = 'http://www.zhess.com/'
+#geturl = 'http://127.0.0.1:8000/'
+geturl = 'http://www.zhess.com/'
 # get user tempfile
 
 
