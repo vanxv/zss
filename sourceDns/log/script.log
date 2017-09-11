@@ -23665,3 +23665,6 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/connections.py", line 1025, in _read_bytes
     "Lost connection to MySQL server during query (%s)" % (e,))
 django.db.utils.OperationalError: (2013, 'Lost connection to MySQL server during query ([Errno 54] Connection reset by peer)')
+2017-09-11 13:15:19,677 [Thread-78:123145381355520] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-11 13:15:23,564 [Thread-96:123145370845184] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-11 13:24:17,896 [Thread-102:123145376100352] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
