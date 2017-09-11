@@ -9,7 +9,7 @@ import json
 import subprocess
 # using images model
 import csv
-import os
+import os,sys
 import platform
 import tempfile
 import shutil
@@ -762,6 +762,9 @@ class multipleLoop():
                     pass
                     # ---- loop select_work----#
             except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                print(exc_type, fname, exc_tb.tb_lineno)
                 print(e)
 
 
