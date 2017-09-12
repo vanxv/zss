@@ -585,9 +585,11 @@ class multipleLoop():
         QQaction.connect(self)
         self.driver.implicitly_wait(15)
         time.sleep(2)
-        self.driver.find_element_by_xpath("//android.widget.EditText[contains(@content-desc, '搜索')]").click()
+        print('a')
+        self.driver.find_element_by_xpath("//android.widget.EditText[contains(@content-desc, '搜索')]").send_keys(self.mark['AccountId'])
+        print('b')
         time.sleep(2)
-        self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(self.mark['AccountId'])
+        #self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]").send_keys(self.mark['AccountId'])
         #self.driver.find_element_by_xpath("//android.widget.EditText[contains(@text, '搜索')]").send_keys(self.mark['AccountId'])
         #INPUT GROUP NUMBER
         #CLICK GROUP NUMBER LIST
