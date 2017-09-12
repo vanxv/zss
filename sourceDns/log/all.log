@@ -8258,3 +8258,11 @@
 2017-09-12 15:29:15,578 [Dummy-6:123145373642752] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
 2017-09-12 15:29:16,991 [Dummy-6:123145373642752] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SHOW FULL TABLES; args=None
 2017-09-12 15:29:17,024 [Dummy-6:123145373642752] [django.db.backends:90] [utils:execute] [DEBUG]- (0.021) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-09-12 15:40:36,617 [Dummy-6:123145564565504] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-09-12 15:40:36,636 [Dummy-6:123145564565504] [django.db.backends:90] [utils:execute] [DEBUG]- (0.016) SELECT VERSION(); args=None
+2017-09-12 15:40:38,065 [Dummy-6:123145564565504] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SHOW FULL TABLES; args=None
+2017-09-12 15:40:38,096 [Dummy-6:123145564565504] [django.db.backends:90] [utils:execute] [DEBUG]- (0.024) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2017-09-12 15:40:48,204 [Dummy-6:123145436209152] [django.db.backends:90] [utils:execute] [DEBUG]- (0.018) SELECT @@SQL_AUTO_IS_NULL; args=None
+2017-09-12 15:40:48,231 [Dummy-6:123145436209152] [django.db.backends:90] [utils:execute] [DEBUG]- (0.020) SELECT VERSION(); args=None
+2017-09-12 15:40:54,208 [Dummy-6:123145436209152] [django.db.backends:90] [utils:execute] [DEBUG]- (0.069) SHOW FULL TABLES; args=None
+2017-09-12 15:40:54,366 [Dummy-6:123145436209152] [django.db.backends:90] [utils:execute] [DEBUG]- (0.123) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

@@ -163,6 +163,12 @@ def TaskDone(request, task_id = '', task_sort=''):
                 json_data.append(int(x))
             delQqFList = set(QqFList) - set(json_data)
             AddQqFList = set(json_data) - set(QqFList)
+            if not len(delQqFList) ==0:
+                for delQqFListN in delQqFList:
+                    getdeletenumber = QQFriends.objects.get(QQ=task.mobileid.QQ,QQFriends=delQqFListN)
+                    QFListLog = QQFriendslog.objects.create(status=2, QQ=task.mobileid.QQ, QQFriends=delQqFListN,contains=getdeletenumber['contains'], name=getdeletenumber['name'], nick=getdeletenumber['nick'])
+                    QFListLog.save()
+                    QFListLog = QQFriends.objects.filter(QQ=task.mobileid.QQ, QQFriends=delQqFListN).delete()
             if not len(AddQqFList) ==0:
                 for AddQqFListN in AddQqFList:
                     jsondict = json_data1[str(AddQqFListN)]
@@ -170,12 +176,6 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListLog.save()
                     QFListadd = QQFriends.objects.create(QQ=task.mobileid.QQ, QQFriends=AddQqFListN, contains=jsondict['contains'], name=jsondict['name'], nick=jsondict['nick'])
                     QFListadd.save()
-            if not len(delQqFList) ==0:
-                for delQqFListN in delQqFList:
-                    getdeletenumber = QQFriends.objects.get(QQ=task.mobileid.QQ,QQFriends=delQqFListN)
-                    QFListLog = QQFriendslog.objects.create(status=2, QQ=task.mobileid.QQ, QQFriends=delQqFListN,contains=getdeletenumber['contains'], name=getdeletenumber['name'], nick=getdeletenumber['nick'])
-                    QFListLog.save()
-                    QFListLog = QQFriends.objects.filter(QQ=task.mobileid.QQ, QQFriends=delQqFListN).delete()
         if int(task_sort) == 4 or int(task_sort) == 8:
             QqFList_1 = QQGroup.objects.filter(QQ=task.mobileid.QQ)
             QqFList = []
@@ -188,6 +188,13 @@ def TaskDone(request, task_id = '', task_sort=''):
                 json_data.append(int(x))
             delQqFList = set(QqFList) - set(json_data)
             AddQqFList = set(json_data) - set(QqFList)
+            if not len(delQqFList) == 0:
+                for delQqFListN in delQqFList:
+                    getdeletecontains = QQGroup.objects.get(QQ=task.mobileid.QQ,QQGroup=int(delQqFListN))
+                    QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=delQqFListN, QQGroupName=getdeletecontains.QQGroupName, number=getdeletecontains.number)
+                    QFListLog.save()
+                    QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
+
             if not len(AddQqFList) == 0:
                 for AddQqFListN in AddQqFList:
                     json_data1name = json_data2[str(AddQqFListN)]
@@ -195,12 +202,6 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListLog.save()
                     QFListadd = QQGroup.objects.create(QQ=task.mobileid.QQ, QQGroup=AddQqFListN, QQGroupName=json_data1name['GroupName'], number=json_data1name['number'])
                     QFListadd.save()
-            if not len(delQqFList) == 0:
-                for delQqFListN in delQqFList:
-                    getdeletecontains = QQGroup.objects.get(QQ=task.mobileid.QQ,QQGroup=int(delQqFListN))
-                    QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=delQqFListN, QQGroupName=getdeletecontains.QQGroupName, number=getdeletecontains.number)
-                    QFListLog.save()
-                    QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
 
         if int(task_sort) == 9:
             QqFList_1 = QQGroupList.objects.filter(QQGroup=int(task.AccountId))
@@ -214,6 +215,12 @@ def TaskDone(request, task_id = '', task_sort=''):
                 json_data.append(x)
             delQqFList = set(QqFList) - set(json_data)
             AddQqFList = set(json_data) - set(QqFList)
+            if not len(delQqFList) == 0:
+                for delQqFListN in delQqFList:
+                    getdeletecontains = QQGroupList.objects.get(QQGroup=task.AccountId, QQ=str(delQqFListN))
+                    QFListLog = QQGroupListlog.objects.create(status=2, QQGroup=int(task.AccountId), QQ=delQqFListN,name=getdeletecontains.name,contains=getdeletecontains.contains)
+                    QFListLog.save()
+                    QFListLog = QQGroupList.objects.filter(QQGroup=task.AccountId, QQ=delQqFListN).delete()
             if not len(AddQqFList) == 0:
                 for AddQqFListN in AddQqFList:
                     print(AddQqFListN)
@@ -222,12 +229,7 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListLog.save()
                     QFListadd = QQGroupList.objects.create(QQGroup=int(task.AccountId), QQ=int(AddQqFListN), name=groupdict['name'], contains=groupdict['contains'],level=int(groupdict['level']))
                     QFListadd.save()
-            if not len(delQqFList) == 0:
-                for delQqFListN in delQqFList:
-                    getdeletecontains = QQGroupList.objects.get(QQGroup=task.AccountId, QQ=str(delQqFListN))
-                    QFListLog = QQGroupListlog.objects.create(status=2, QQGroup=int(task.AccountId), QQ=delQqFListN,name=getdeletecontains.name,contains=getdeletecontains.contains)
-                    QFListLog.save()
-                    QFListLog = QQGroupList.objects.filter(QQGroup=task.AccountId, QQ=delQqFListN).delete()
+
         task.status=2
         task.endTime=datetime.now()
         task.save()
