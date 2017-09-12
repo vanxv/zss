@@ -84,7 +84,6 @@ def index(request):
                 userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
                 createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs))
                 createtask.save()
-                return redirect('/autoweb/')
             return redirect('/autoweb/')
         #3. sendALL firends
         #4. sendALL Group

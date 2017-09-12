@@ -32081,3 +32081,5 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
     raise errorclass(errno, errval)
 django.db.utils.DataError: (1406, "Data too long for column 'QQGroup' at row 1")
+2017-09-12 22:14:55,522 [Thread-14:123145362771968] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-12 22:14:57,992 [Thread-13:123145357516800] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
