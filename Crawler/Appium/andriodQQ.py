@@ -788,66 +788,66 @@ class multipleLoop():
 
     def run(self):
         print('task:'+self.mobile_id_for)
-        # whilen = 1
-        # while whilen == 1:
-        #     try:
-        response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
-        data = response.json()
-        self.mark = {}
-        self.Groupcardx = 0
-        self.Groupcardy = 0
-        for x, y in data.items():
-            # x = x.encode('utf-8')
-            # try:
-            #     y = y.encode('utf-8')
-            self.mark[x] = y
-        # data中 1.APP名，2.Activety名， 3任务信息
-        desired_caps = {
-            'platformName': 'Android',
-            'deviceName': self.mark['deviceName'],
-            'platformVersion': self.mark['platformVersion'],
-            'appPackage': self.mark['appPackage'],
-            'appActivity': self.mark['appActivity'],
-            #'udid': self.mark['udid'],
-            #'exported': "True",
-            'unicodeKeyboard': "True",
-            'resetKeyboard': "True",
-        }
-        print(self.mark['webserverurl'])
-        self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
-        mobiletask_taskSort_choices = (
-        (1, 'add_User'),
-        (2, 'ADD_GROUP'),
-        (3, 'send_message_to_friend_list'),
-        (4, 'send_message_to_GROUP_list'),
-        (5, 'send_message_to_user_Accoutid'),
-        (6, 'send_message_to_GROUP_Accoutid'),
-        (7, 'Get_Pople_list'),
-        (8, 'Get_Group_list'),
-        (9, 'Get_Group_People_list'),
-        )
-        #---- loop select_work----#
-        textmarktaskSort = self.mark['taskSort']
-        print("taskSort:"+str(textmarktaskSort)+"taskid:"+str(self.mark['taskid']))
+        whilen = 1
+        while whilen == 1:
+            try:
+                response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
+                data = response.json()
+                self.mark = {}
+                self.Groupcardx = 0
+                self.Groupcardy = 0
+                for x, y in data.items():
+                    # x = x.encode('utf-8')
+                    # try:
+                    #     y = y.encode('utf-8')
+                    self.mark[x] = y
+                # data中 1.APP名，2.Activety名， 3任务信息
+                desired_caps = {
+                    'platformName': 'Android',
+                    'deviceName': self.mark['deviceName'],
+                    'platformVersion': self.mark['platformVersion'],
+                    'appPackage': self.mark['appPackage'],
+                    'appActivity': self.mark['appActivity'],
+                    #'udid': self.mark['udid'],
+                    #'exported': "True",
+                    'unicodeKeyboard': "True",
+                    'resetKeyboard': "True",
+                }
+                print(self.mark['webserverurl'])
+                self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
+                mobiletask_taskSort_choices = (
+                (1, 'add_User'),
+                (2, 'ADD_GROUP'),
+                (3, 'send_message_to_friend_list'),
+                (4, 'send_message_to_GROUP_list'),
+                (5, 'send_message_to_user_Accoutid'),
+                (6, 'send_message_to_GROUP_Accoutid'),
+                (7, 'Get_Pople_list'),
+                (8, 'Get_Group_list'),
+                (9, 'Get_Group_People_list'),
+                )
+                #---- loop select_work----#
+                textmarktaskSort = self.mark['taskSort']
+                print("taskSort:"+str(textmarktaskSort)+"taskid:"+str(self.mark['taskid']))
 
-        if textmarktaskSort == 1 or textmarktaskSort == 2:
-            multipleLoop.QQaddPeople_group(self)
-        elif textmarktaskSort == 3 or textmarktaskSort == 7:
-            multipleLoop.send_message_And_get_to_friend_list(self)
-        elif textmarktaskSort == 4 or textmarktaskSort == 8:
-            multipleLoop.send_message_to_GROUP_list(self)
-        elif textmarktaskSort == 9:
-            multipleLoop.Get_Group_QQ_list(self)
-        else:
-            pass
+                if textmarktaskSort == 1 or textmarktaskSort == 2:
+                    multipleLoop.QQaddPeople_group(self)
+                elif textmarktaskSort == 3 or textmarktaskSort == 7:
+                    multipleLoop.send_message_And_get_to_friend_list(self)
+                elif textmarktaskSort == 4 or textmarktaskSort == 8:
+                    multipleLoop.send_message_to_GROUP_list(self)
+                elif textmarktaskSort == 9:
+                    multipleLoop.Get_Group_QQ_list(self)
+                else:
+                    pass
                 # ---- loop select_work----#
-            # except Exception as e:
-            #     exc_type, exc_obj, exc_tb = sys.exc_info()
-            #     fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            #     print(exc_type, fname, exc_tb.tb_lineno)
-            #     print(e)
+            except Exception as e:
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                print(exc_type, fname, exc_tb.tb_lineno)
+                print(e)
 
 
 if __name__ == '__main__':
     p = Pool(8)
-    p.map(multipleLoop, ['1'])
+    p.map(multipleLoop, ['1','2','3'])
