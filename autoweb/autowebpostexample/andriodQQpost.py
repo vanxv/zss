@@ -47,8 +47,8 @@ for row in reader:
     csvtuples[b] = a
     out = json.dumps(csvtuples)
 
-#a = requests.post('http://www.zhess.com/autoweb/done/39/8/', json=out)
-a = requests.post('http://127.0.0.1:8000/autoweb/done/39/8/', json=out)
+a = requests.post('http://www.zhess.com/autoweb/done/39/8/', json=out)
+#a = requests.post('http://127.0.0.1:8000/autoweb/done/39/8/', json=out)
 
 open('index.html','w').write(a.text)
 #---post sort 9
@@ -57,7 +57,7 @@ import csv
 import requests
 import json
 import codecs
-temp_taskid = codecs.open('27.csv','r', encoding='utf_8')
+temp_taskid = codecs.open('/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/temp/43.csv','r', encoding='utf_8')
 fieldname = ['QQ', 'name', 'level', 'contains']
 reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
 csvtuples = {}
@@ -72,7 +72,10 @@ for row in reader:
     b = b.replace(u'\ufeff', '')
     csvtuples[b] = a
     out = json.dumps(csvtuples)
-RETURNhtml = requests.post('http://127.0.0.1:8000/autoweb/done/27/9/', json=out)
+
+
+a = requests.post('http://127.0.0.1:8000/autoweb/done/43/9/', json=out)
+open('index.html','w').write(a.text)
 
 
 
