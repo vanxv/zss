@@ -21,7 +21,6 @@ import multiprocessing
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import codecs
-import codecs
 # get user tempfile
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
@@ -562,7 +561,7 @@ class multipleLoop():
             b = b.replace(u'\ufeff', '')
             csvtuples[b] = a
             out = json.dumps(csvtuples)
-        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=out)
+        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + str(self.mark['taskSort']) + '/', json=out)
 
     def Get_Group_QQ_list(self):
         #-- sort 9

@@ -26,7 +26,7 @@ class softid(models.Model):
         verbose_name_plural = verbose_name
 
 class mobileid(models.Model):
-    platformVersion = models.CharField(null=True, max_length=200, name='platformVersion')
+    platformVersion = models.CharField(null=True, max_length=200)
     deviceName = models.CharField(max_length=500, null=True)
     udid = models.CharField(max_length=500, null=True)
     StyleLabel = models.CharField(max_length=500, null=True)
@@ -73,8 +73,8 @@ class mobiletask(models.Model):
 
 class mobileAccount(models.Model):
     mobileid = models.ForeignKey(mobileid)
-    QQ = models.CharField(max_length=100, null=True)
-    QQps = models.CharField(max_length=100, null=True)
+    QQ = models.CharField(max_length=13, null=True)
+    QQps = models.CharField(max_length=30, null=True)
     QQmobile = models.CharField(max_length=20, null=True)
     wechat = models.CharField(max_length=100, null=True)
     wechatps = models.CharField(max_length=100, null=True)
@@ -92,8 +92,8 @@ class QQID(models.Model):
         verbose_name_plural = verbose_name
 
 class QQFriends(models.Model):
-    QQ = models.IntegerField(null=True)
-    QQFriends = models.IntegerField(null=True)
+    QQ = models.CharField(null=True,max_length=13)
+    QQFriends = models.CharField(null=True,max_length=13)
     name = models.CharField(max_length=120,null=True)
     nick = models.CharField(max_length=120,null=True)
     contains = models.CharField(max_length=200,null=True)
@@ -108,8 +108,8 @@ QQFriendslog_add_del = (
     (2,'delete')
 )
 class QQFriendslog(models.Model):
-    QQ = models.IntegerField(null=True)
-    QQFriends = models.IntegerField(null=True)
+    QQ = models.CharField(null=True,max_length=13)
+    QQFriends = models.CharField(null=True,max_length=13)
     name = models.CharField(max_length=120,null=True)
     nick = models.CharField(max_length=120,null=True)
     contains = models.CharField(max_length=200,null=True)
@@ -121,8 +121,8 @@ class QQFriendslog(models.Model):
 
 
 class QQGroup(models.Model):
-    QQ = models.IntegerField(null=True)
-    QQGroup = models.IntegerField(null=True)
+    QQ = models.CharField(null=True,max_length=13)
+    QQGroup = models.CharField(null=True,max_length=13)
     QQGroupName = models.CharField(null=True, max_length=220)
     number = models.IntegerField(null=True)
     time = models.DateTimeField(null=True,default=timezone.now)
@@ -131,8 +131,8 @@ class QQGroup(models.Model):
         verbose_name_plural = verbose_name
 
 class QQGrouplog(models.Model):
-    QQ = models.IntegerField(null=True)
-    QQGroup = models.IntegerField(null=True)
+    QQ = models.CharField(null=True,max_length=13)
+    QQGroup = models.CharField(null=True,max_length=13)
     number = models.IntegerField(null=True)
     QQGroupName = models.CharField(null=True, max_length=220)
     status = models.IntegerField(choices=QQFriendslog_add_del)
@@ -142,8 +142,8 @@ class QQGrouplog(models.Model):
         verbose_name_plural = verbose_name
 
 class QQGroupList(models.Model):
-    QQGroup = models.IntegerField(null=True)
-    QQ = models.CharField(max_length=20,null=True)
+    QQGroup = models.CharField(null=True,max_length=13)
+    QQ = models.CharField(max_length=13,null=True)
     level = models.IntegerField(null=True)
     name = models.CharField(max_length=100, null=True)
     contains = models.CharField(max_length=500, null=True)
@@ -154,8 +154,8 @@ class QQGroupList(models.Model):
         verbose_name_plural = verbose_name
 
 class QQGroupListlog(models.Model):
-    QQGroup = models.IntegerField(null=True)
-    QQ = models.CharField(max_length=20,null=True)
+    QQGroup = models.CharField(null=True,max_length=13)
+    QQ = models.CharField(max_length=13,null=True)
     name = models.CharField(max_length=100, null=True)
     contains = models.CharField(max_length=500, null=True)
     status = models.IntegerField(choices=QQFriendslog_add_del,null=True)

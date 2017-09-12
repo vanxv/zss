@@ -181,7 +181,7 @@ def TaskDone(request, task_id = '', task_sort=''):
             QqFList = []
             for QQFlistN in QqFList_1:
                 QqFList.append(QQFlistN.QQGroup)
-            json_data1 = json.loads(request.body)
+            json_data1 = json.loads(request.body.decode('utf-8'))
             json_data2 = json.loads(json_data1)
             json_data =[]
             for x,y in json_data2.items():

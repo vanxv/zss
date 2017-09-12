@@ -32,7 +32,7 @@ import csv
 import requests
 import json
 import codecs
-temp_taskid = codecs.open('29.csv','r', encoding='utf_8')
+temp_taskid = codecs.open('/var/folders/b2/3clz71qj661cjh_b3wg2jqcm0000gn/T/temp/40.csv','r', encoding='utf_8')
 fieldname = ['GroupId','GroupName','number']
 reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
 csvtuples = {}
@@ -47,7 +47,9 @@ for row in reader:
     csvtuples[b] = a
     out = json.dumps(csvtuples)
 
-a = requests.post('http://127.0.0.1:8000/autoweb/done/29/8/', json=out)
+a = requests.post('http://www.zhess.com/autoweb/done/40/8/', json=out)
+
+#a = requests.post('http://127.0.0.1:8000/autoweb/done/40/8/', json=out)
 
 open('index.html','r').write(a.text)
 #---post sort 9
