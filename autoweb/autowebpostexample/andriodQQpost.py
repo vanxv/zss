@@ -47,9 +47,8 @@ for row in reader:
     csvtuples[b] = a
     out = json.dumps(csvtuples)
 
-a = requests.post('http://www.zhess.com/autoweb/done/39/8/', json=out)
-
-#a = requests.post('http://127.0.0.1:8000/autoweb/done/40/8/', json=out)
+#a = requests.post('http://www.zhess.com/autoweb/done/39/8/', json=out)
+a = requests.post('http://127.0.0.1:8000/autoweb/done/39/8/', json=out)
 
 open('index.html','w').write(a.text)
 #---post sort 9
