@@ -172,7 +172,7 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListadd.save()
             if not len(delQqFList) ==0:
                 for delQqFListN in delQqFList:
-                    getdeletenumber = QQFriends.objects.get(QQFriends=delQqFListN)
+                    getdeletenumber = QQFriends.objects.get(QQ=task.mobileid.QQ,QQFriends=delQqFListN)
                     QFListLog = QQFriendslog.objects.create(status=2, QQ=task.mobileid.QQ, QQFriends=delQqFListN,contains=getdeletenumber['contains'], name=getdeletenumber['name'], nick=getdeletenumber['nick'])
                     QFListLog.save()
                     QFListLog = QQFriends.objects.filter(QQ=task.mobileid.QQ, QQFriends=delQqFListN).delete()
@@ -197,7 +197,7 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListadd.save()
             if not len(delQqFList) == 0:
                 for delQqFListN in delQqFList:
-                    getdeletecontains = QQGroup.objects.get(QQGroup=int(delQqFListN))
+                    getdeletecontains = QQGroup.objects.get(QQ=task.mobileid.QQ,QQGroup=int(delQqFListN))
                     QFListLog = QQGrouplog.objects.create(status=2, QQ=task.mobileid.QQ, QQGroup=delQqFListN, QQGroupName=getdeletecontains.QQGroupName, number=getdeletecontains.number)
                     QFListLog.save()
                     QFListLog = QQGroup.objects.filter(QQ=task.mobileid.QQ, QQGroup=delQqFListN).delete()
@@ -224,10 +224,10 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListadd.save()
             if not len(delQqFList) == 0:
                 for delQqFListN in delQqFList:
-                    getdeletecontains = QQGroupList.objects.get(QQ=str(delQqFListN))
+                    getdeletecontains = QQGroupList.objects.get(QQGroup=task.AccountId, QQ=str(delQqFListN))
                     QFListLog = QQGroupListlog.objects.create(status=2, QQGroup=int(task.AccountId), QQ=delQqFListN,name=getdeletecontains.name,contains=getdeletecontains.contains)
                     QFListLog.save()
-                    QFListLog = QQGroupList.objects.filter(QQGroup=int(task.AccountId), QQ=delQqFListN).delete()
+                    QFListLog = QQGroupList.objects.filter(QQGroup=task.AccountId, QQ=delQqFListN).delete()
         task.status=2
         task.endTime=datetime.now()
         task.save()
