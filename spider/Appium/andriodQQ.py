@@ -875,4 +875,4 @@ class multipleLoop():
 
 if __name__ == '__main__':
     p = Pool(8)
-    p.map(multipleLoop, ['1','2','3'])
+    p.map(multipleLoop, ['2','3'])
