@@ -447,7 +447,14 @@ class multipleLoop():
                     time.sleep(1.5)
                     getgroupinfo = QQaction.clickGroupinfo(self)
                     time.sleep(2.5)
-                    GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
+                    try:
+                        GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
+                    except Exception as e:
+                        exc_type, exc_obj, exc_tb = sys.exc_info()
+                        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                        print(exc_type, fname, exc_tb.tb_lineno)
+                        print(e)
+                        GetQQnumbertry = ''
                     self.driver.keyevent(keycode=4)
                     time.sleep(1.3)
                     QQaction.groupreturn(self)
@@ -612,7 +619,7 @@ class multipleLoop():
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             except:
                 action = TouchAction(self.driver)
-                action.long_press(x=400, y=200).move_to(x=400, y=100).release().perform()
+                action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
                 continue
             elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             self.driver.implicitly_wait(15)
@@ -687,7 +694,7 @@ class multipleLoop():
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             except:
                 action = TouchAction(self.driver)
-                action.long_press(x=400, y=200).move_to(x=400, y=100).release().perform()
+                action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
                 continue
             elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             self.driver.implicitly_wait(15)
