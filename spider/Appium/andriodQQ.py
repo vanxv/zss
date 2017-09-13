@@ -433,10 +433,10 @@ class multipleLoop():
         elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
         self.driver.implicitly_wait(15)
 
-        self.driver.swipe(start_x=elementsList[elementsList.__len__()-3].location_in_view['x'],
-                          start_y=elementsList[elementsList.__len__()-3].location_in_view['y'],
-                          end_x=elementsList[1].location_in_view['x'],
-                          end_y=elementsList[1].location_in_view['y'])
+        self.driver.swipe(start_x=elementsList[elementsList.__len__()-2].location_in_view['x'],
+                          start_y=elementsList[elementsList.__len__()-2].location_in_view['y'],
+                          end_x=elementsList[0].location_in_view['x'],
+                          end_y=elementsList[0].location_in_view['y'])
         time.sleep(2)
         while (rolltostarttask != 1):
             elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
