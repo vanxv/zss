@@ -866,8 +866,9 @@ class multipleLoop():
                     texttaska.close()
                 else:
                     texttaska = codecs.open(temp_taskiderror, 'a', 'utf_8',',')
-                    texttaska.write(','+ errore)
-                    texttaska.close()
+                    for errorex in errore:
+                        texttaska.write(','+ errorex)
+                        texttaska.close()
 
 
 
