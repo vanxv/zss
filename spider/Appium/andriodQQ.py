@@ -425,6 +425,7 @@ class multipleLoop():
         QQaction.connect(self)
         time.sleep(2)
         elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+        print(elementsList.__len__())
         elementsList[elementsList.__len__() - 1].click()
         time.sleep(2)
         # -- start get qqlist --- #
