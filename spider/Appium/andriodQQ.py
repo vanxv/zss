@@ -859,16 +859,17 @@ class multipleLoop():
                 print(e)
                 print('e')
                 print(errore)
-                temp_taskiderror = PATH(tempfile.gettempdir() + "/" + str(self.mark['taskid']) + "error.csv")
-
-                if os.path.exists(temp_taskiderror) == False:
-                    texttaska = codecs.open(temp_taskiderror, 'w', 'utf_8')
-                    texttaska.close()
-                else:
-                    texttaska = codecs.open(temp_taskiderror, 'a', 'utf_8',',')
-                    for errorex in errore:
-                        texttaska.write(','+ errorex)
-                        texttaska.close()
+                print(type(errore))
+                # temp_taskiderror = PATH(tempfile.gettempdir() + "/" + str(self.mark['taskid']) + "error.csv")
+                #
+                # if os.path.exists(temp_taskiderror) == False:
+                #     texttaska = codecs.open(temp_taskiderror, 'w', 'utf_8')
+                #     texttaska.close()
+                # else:
+                #     texttaska = codecs.open(temp_taskiderror, 'a', 'utf_8',',')
+                #     for errorex in errore:
+                #         texttaska.write(','+ errorex)
+                #         texttaska.close()
 
 
 
