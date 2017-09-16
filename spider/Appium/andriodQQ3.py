@@ -380,7 +380,7 @@ class multipleLoop():
 
         opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
         fieldname = ['QQ', 'name', 'nick', 'contains']
-        reader = csv.DictReader(opentemp, fieldnames=fieldname)
+        reader = csv.DictReader(opentemp)
         reader = csv.DictReader()
         csvtuples = {}
         for row in reader:
@@ -559,9 +559,8 @@ class multipleLoop():
         #postlist + name
 
         print('ready send data')
-        fieldname = ['GroupId', 'GroupName', 'number']
         opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
-        reader = csv.DictReader(opentemp, fieldnames=fieldname)
+        reader = csv.DictReader(opentemp)
         csvtuples = {}
         for row in reader:
             if 'GroupId' in row['GroupId']:
@@ -783,7 +782,7 @@ class multipleLoop():
         print('end')
         fieldname = ['QQ', 'name', 'level', 'contains']
         opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
-        reader = csv.DictReader(opentemp, fieldnames=fieldname)
+        reader = csv.DictReader(opentemp)
         csvtuples = {}
         for row in reader:
             if 'QQ' in row['QQ']:
