@@ -16,7 +16,7 @@ import tempfile
 import shutil
 from PIL import Image
 # using images model
-import pytesseract
+#import pytesseract
 from multiprocessing import Pool
 import multiprocessing
 from selenium.webdriver.support import expected_conditions as EC
@@ -26,8 +26,8 @@ import codecs
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
 print(str(28)+tempfile.gettempdir())
-#geturl = 'http://127.0.0.1:8000/'
-geturl = 'http://www.zhess.com/'
+geturl = 'http://127.0.0.1:8000/'
+#geturl = 'http://www.zhess.com/'
 # get user tempfile
 
 
@@ -38,7 +38,7 @@ def image_to_string(img, cleanup=True, plus=''):
     subprocess.check_output('tesseract ' + img + ' ' +
                             img + ' ' + plus, shell=True)  # 生成同名txt文件
     text = ''
-    with open(img + '.txt', 'rt', encoding='utf-8') as f:
+    with open(img + '.txt', 'rt', encoding='utf-8-sig') as f:
         text = f.read().strip()
     if cleanup:
         os.remove(img + '.txt')
@@ -349,7 +349,7 @@ class multipleLoop():
                     if elementsList.__len__()< N:
                         whileclick = 1
                 GetQQnumbertry, name,nick,usercontains= QQaction.freindConcentGetQQnumber(self)
-                if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8').read():
+                if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
                     csvfile = codecs.open(temp_taskid, 'a','utf_8')
                     namefield = ['QQ', 'name', 'nick', 'contains']
                     whiter = csv.DictWriter(csvfile,fieldnames=namefield)
@@ -378,9 +378,10 @@ class multipleLoop():
                         objectEndNo = GetQQnumbertry
                         break
 
-
+        opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
         fieldname = ['QQ', 'name', 'nick', 'contains']
-        reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
+        reader = csv.DictReader(opentemp, fieldnames=fieldname)
+        reader = csv.DictReader()
         csvtuples = {}
         for row in reader:
             if 'QQ' in row['QQ']:
@@ -407,7 +408,7 @@ class multipleLoop():
         #-- group card tacking---#
 
         if os.path.exists(temp_taskid) == False:
-            texttask = codecs.open(temp_taskid, 'w', 'utf_8')
+            texttask = codecs.open(temp_taskid, 'w', 'utf-8-sig')
             fieldname = ['GroupId','GroupName','number']
             writers = csv.DictWriter(texttask,fieldnames=fieldname)
             writers.writeheader()
@@ -464,7 +465,7 @@ class multipleLoop():
                     QQaction.connect(self)
                     if rolltostarttaskend == GetQQnumbertry:
                         rolltostarttask = 1
-                    if GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8').read():
+                    if GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
                         elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
                         self.driver.swipe(start_x=elementsList[elementsList.__len__()-3].location_in_view['x'],
                                           start_y=elementsList[elementsList.__len__()-3].location_in_view['y'],
@@ -527,8 +528,8 @@ class multipleLoop():
                         getGroupname = ''
                     number = self.driver.find_element_by_xpath("//*[contains(@text, '名成员')]").text.replace('名成员', '')
                     self.driver.keyevent(keycode=4)
-                    if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8').read():
-                        opentemp = codecs.open(temp_taskid, 'a', 'utf_8')
+                    if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
+                        opentemp = codecs.open(temp_taskid, 'a', 'utf-8-sig')
                         fieldname = ['GroupId', 'GroupName', 'number']
                         writers = csv.DictWriter(opentemp,fieldnames=fieldname)
                         writers.writerow({'GroupId': GetQQnumbertry, 'GroupName': getGroupname,'number':number})
@@ -559,7 +560,8 @@ class multipleLoop():
 
         print('ready send data')
         fieldname = ['GroupId', 'GroupName', 'number']
-        reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
+        opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
+        reader = csv.DictReader(opentemp, fieldnames=fieldname)
         csvtuples = {}
         for row in reader:
             if 'GroupId' in row['GroupId']:
@@ -582,7 +584,7 @@ class multipleLoop():
         rolltostarttask = 0
         rolltostarttaskend = 0
         if os.path.exists(temp_taskid) == False:
-                texttask = codecs.open(temp_taskid, 'w','utf_8')
+                texttask = codecs.open(temp_taskid, 'w','utf_8_sig')
                 fieldname = ['QQ', 'name', 'level', 'contains']
                 writers = csv.DictWriter(texttask,fieldnames=fieldname)
                 writers.writeheader()
@@ -780,7 +782,8 @@ class multipleLoop():
         # return
         print('end')
         fieldname = ['QQ', 'name', 'level', 'contains']
-        reader = csv.DictReader(temp_taskid, fieldnames=fieldname)
+        opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
+        reader = csv.DictReader(opentemp, fieldnames=fieldname)
         csvtuples = {}
         for row in reader:
             if 'QQ' in row['QQ']:
@@ -798,81 +801,71 @@ class multipleLoop():
     def run(self):
         print('task:'+self.mobile_id_for)
         whilen = 1
-        while whilen == 1:
-            try:
-                response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
-                data = response.json()
-                self.mark = {}
-                self.Groupcardx = 0
-                self.Groupcardy = 0
-                for x, y in data.items():
-                    # x = x.encode('utf-8')
-                    # try:
-                    #     y = y.encode('utf-8')
-                    self.mark[x] = y
-                # data中 1.APP名，2.Activety名， 3任务信息
-                desired_caps = {
-                    'platformName': 'Android',
-                    'deviceName': self.mark['deviceName'],
-                    'platformVersion': self.mark['platformVersion'],
-                    'appPackage': self.mark['appPackage'],
-                    'appActivity': self.mark['appActivity'],
-                    #'udid': self.mark['udid'],
-                    #'exported': "True",
-                    'unicodeKeyboard': "True",
-                    'resetKeyboard': "True",
-                }
-                print(self.mark['webserverurl'])
-                self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
-                mobiletask_taskSort_choices = (
-                (1, 'add_User'),
-                (2, 'ADD_GROUP'),
-                (3, 'send_message_to_friend_list'),
-                (4, 'send_message_to_GROUP_list'),
-                (5, 'send_message_to_user_Accoutid'),
-                (6, 'send_message_to_GROUP_Accoutid'),
-                (7, 'Get_Pople_list'),
-                (8, 'Get_Group_list'),
-                (9, 'Get_Group_People_list'),
-                )
-                #---- loop select_work----#
-                textmarktaskSort = self.mark['taskSort']
-                print("taskSort:"+str(textmarktaskSort)+"taskid:"+str(self.mark['taskid']))
+        #while whilen == 1:
+            # try:
+        response = requests.post(geturl + 'autoweb/task/' + str(self.mobile_id_for) + '/')
+        data = response.json()
+        self.mark = {}
+        self.Groupcardx = 0
+        self.Groupcardy = 0
+        for x, y in data.items():
+            # x = x.encode('utf-8-sig')
+            # try:
+            #     y = y.encode('utf-8-sig')
+            self.mark[x] = y
+        # data中 1.APP名，2.Activety名， 3任务信息
+        desired_caps = {
+            'platformName': 'Android',
+            'deviceName': self.mark['deviceName'],
+            'platformVersion': self.mark['platformVersion'],
+            'appPackage': self.mark['appPackage'],
+            'appActivity': self.mark['appActivity'],
+            #'udid': self.mark['udid'],
+            #'exported': "True",
+            'unicodeKeyboard': "True",
+            'resetKeyboard': "True",
+        }
+        print(self.mark['webserverurl'])
+        self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
+        mobiletask_taskSort_choices = (
+        (1, 'add_User'),
+        (2, 'ADD_GROUP'),
+        (3, 'send_message_to_friend_list'),
+        (4, 'send_message_to_GROUP_list'),
+        (5, 'send_message_to_user_Accoutid'),
+        (6, 'send_message_to_GROUP_Accoutid'),
+        (7, 'Get_Pople_list'),
+        (8, 'Get_Group_list'),
+        (9, 'Get_Group_People_list'),
+        )
+        #---- loop select_work----#
+        textmarktaskSort = self.mark['taskSort']
+        print("taskSort:"+str(textmarktaskSort)+"taskid:"+str(self.mark['taskid']))
 
-                if textmarktaskSort == 1 or textmarktaskSort == 2:
-                    multipleLoop.QQaddPeople_group(self)
-                elif textmarktaskSort == 3 or textmarktaskSort == 7:
-                    multipleLoop.send_message_And_get_to_friend_list(self)
-                elif textmarktaskSort == 4 or textmarktaskSort == 8:
-                    multipleLoop.send_message_to_GROUP_list(self)
-                elif textmarktaskSort == 9:
-                    multipleLoop.Get_Group_QQ_list(self)
-                else:
-                    pass
+        if textmarktaskSort == 1 or textmarktaskSort == 2:
+            multipleLoop.QQaddPeople_group(self)
+        elif textmarktaskSort == 3 or textmarktaskSort == 7:
+            multipleLoop.send_message_And_get_to_friend_list(self)
+        elif textmarktaskSort == 4 or textmarktaskSort == 8:
+            multipleLoop.send_message_to_GROUP_list(self)
+        elif textmarktaskSort == 9:
+            multipleLoop.Get_Group_QQ_list(self)
+        else:
+            pass
                 # ---- loop select_work----#
-            except Exception as e:
-                exc_type, exc_obj, exc_tb = sys.exc_info()
-                errore= sys.exc_info()
-                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                print(exc_type, fname, exc_tb.tb_lineno)
-                print('exc_type, fname, exc_tb.tb_lineno')
-                print(e)
-                print('e')
-                print(errore)
-                print(type(errore))
-                # temp_taskiderror = PATH(tempfile.gettempdir() + "/" + str(self.mark['taskid']) + "error.csv")
-                #
-                # if os.path.exists(temp_taskiderror) == False:
-                #     texttaska = codecs.open(temp_taskiderror, 'w', 'utf_8')
-                #     texttaska.close()
-                # else:
-                #     texttaska = codecs.open(temp_taskiderror, 'a', 'utf_8',',')
-                #     for errorex in errore:
-                #         texttaska.write(','+ errorex)
-                #         texttaska.close()
-
+            # except Exception as e:
+            #     exc_type, exc_obj, exc_tb = sys.exc_info()
+            #     errore= sys.exc_info()
+            #     fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+            #     print(exc_type, fname, exc_tb.tb_lineno)
+            #     print('exc_type, fname, exc_tb.tb_lineno')
+            #     print(e)
+            #     print('e')
+            #     print(errore)
+            #     print(type(errore))
+            #
 
 
 if __name__ == '__main__':
-    p = Pool(8)
-    p.map(multipleLoop, ['2','3'])
+    p = Pool(3)
+    p.map(multipleLoop, ['3'])

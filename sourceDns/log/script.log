@@ -32083,3 +32083,17 @@ Traceback (most recent call last):
 django.db.utils.DataError: (1406, "Data too long for column 'QQGroup' at row 1")
 2017-09-12 22:14:55,522 [Thread-14:123145362771968] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
 2017-09-12 22:14:57,992 [Thread-13:123145357516800] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-16 14:47:32,165 [Thread-18:123145356185600] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-16 14:47:34,692 [Thread-17:123145350930432] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-16 16:35:31,703 [Thread-443:123145345675264] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/done/3/8/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 192, in TaskDone
+    getdeletecontains = QQGroup.objects.get(QQ=task.mobileid.QQ,QQGroup=int(delQqFListN))
+ValueError: invalid literal for int() with base 10: 't'
+2017-09-16 18:50:53,603 [Thread-9:123145442861056] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
