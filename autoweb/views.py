@@ -146,10 +146,10 @@ def Task(request, mobile_ID = ''):
         }
         return JsonResponse(taskdict, safe=False)
 
-def TaskDone(request, task_id = '', task_sort=''):
+def TaskDone(request, task_id = ''):
     if request.method=='POST':
-        #task = mobiletask.objects.get(id=task_id, status=1)
-        task = mobiletask.objects.get(id=task_id)
+        task = mobiletask.objects.get(id=int(task_id))
+        task_sort = task.taskSort
         if int(task_sort) == 3 or int(task_sort) == 7:
             QqFList_1 = QQFriends.objects.filter(QQ=task.mobileid.QQ)
             QqFList = []
@@ -176,6 +176,7 @@ def TaskDone(request, task_id = '', task_sort=''):
                     QFListadd = QQFriends.objects.create(QQ=task.mobileid.QQ, QQFriends=AddQqFListN, contains=jsondict['contains'], name=jsondict['name'], nick=jsondict['nick'])
                     QFListadd.save()
         if int(task_sort) == 4 or int(task_sort) == 8:
+            print(task.mobileid.QQ)
             QqFList_1 = QQGroup.objects.filter(QQ=task.mobileid.QQ)
             QqFList = []
             for QQFlistN in QqFList_1:
@@ -187,6 +188,7 @@ def TaskDone(request, task_id = '', task_sort=''):
                 json_data.append(str(x))
             delQqFList = set(QqFList) - set(json_data)
             AddQqFList = set(json_data) - set(QqFList)
+
             if not delQqFList.__len__() == 0:
                 for delQqFListN in delQqFList:
                     getdeletecontains = QQGroup.objects.get(QQ=task.mobileid.QQ,QQGroup=int(delQqFListN))

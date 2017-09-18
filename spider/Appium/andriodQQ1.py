@@ -264,13 +264,12 @@ class swipe():
     def qqswipe(self):
         for i in range(1):
             print('qqswipe', i + 1)
-            #TouchAction(self.driver).press(x=400)
             self.driver.swipe(start_x=400, start_y=450, end_x=400, end_y=100)
             self.driver.implicitly_wait(15)
     def qqnumberswipe(self):
         for i in range(1):
             print('qqnumberswipe', i + 1)
-            self.driver.swipe(start_x=400, start_y=270, end_x=500, end_y=100, duration=4000)
+            self.driver.swipe(start_x=400, start_y=270, end_x=500, end_y=100, duration=1000)
             self.driver.implicitly_wait(15)
 class multipleLoop():
     #class multipleLoop(multiprocessing.Process):
@@ -306,7 +305,7 @@ class multipleLoop():
         self.driver.find_element_by_xpath("//android.widget.EditText").clear()
         self.driver.find_element_by_xpath("//android.widget.EditText").send_keys(self.mark['content'])
         self.driver.find_element_by_xpath("//*[contains(@text, '发送')]").click()
-        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + str(self.mark['taskSort']) + '/')
+        requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/')
     #Need Send_message_Need_time
     def send_message_And_get_to_friend_list(self):
         #-- sort 3 & 7
@@ -378,13 +377,13 @@ class multipleLoop():
                         objectEndNo = GetQQnumbertry
                         break
 
-        opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
+        opentemp = codecs.open(temp_taskid, 'r', 'utf-8-sig')
         fieldname = ['QQ', 'name', 'nick', 'contains']
         reader = csv.DictReader(opentemp)
         reader = csv.DictReader()
         csvtuples = {}
         for row in reader:
-            if 'QQ' in row['QQ']:
+            if row['QQ'] == 'QQ':
                 continue
             a = {}
             a['name'] = row['name']
@@ -425,23 +424,25 @@ class multipleLoop():
 
         QQaction.connect(self)
         QQaction.connect(self)
-        time.sleep(2)
+        swipe.qqswipe(self)
+        swipe.qqswipe(self)
+        self.driver.implicitly_wait(20)
         elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
         print(elementsList.__len__())
-        elementsList[elementsList.__len__() - 1].click()
-        time.sleep(2)
-        # -- start get qqlist --- #
-        #---roll to task--#
+        print(elementsList[elementsList.__len__() - 1].location)
         elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-        self.driver.implicitly_wait(15)
-
-        self.driver.swipe(start_x=elementsList[elementsList.__len__()-2].location_in_view['x'],
-                          start_y=elementsList[elementsList.__len__()-2].location_in_view['y'],
-                          end_x=elementsList[0].location_in_view['x'],
-                          end_y=elementsList[0].location_in_view['y'])
+        time.sleep(2)
+        print(elementsList[elementsList.__len__() - 1].location)
+        elementsList[elementsList.__len__() - 1].click()
+        # -- start get qqlist --- #
         time.sleep(2)
         while (rolltostarttask != 1):
-            elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+            try:
+                elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+            except:
+                print('442')
+                swipe.qqnumberswipe(self)
+                continue
             for N in range(2, elementsList.__len__() - 1):
                 if  elementsList[N].tag_name == 'android.widget.LinearLayout':
                     elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
@@ -559,11 +560,12 @@ class multipleLoop():
         #postlist + name
 
         print('ready send data')
-        opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
+        opentemp = codecs.open(temp_taskid, 'r', 'utf-8-sig')
         reader = csv.DictReader(opentemp)
         csvtuples = {}
         for row in reader:
-            if 'GroupId' in row['GroupId']:
+            print(row['GroupId'])
+            if row['GroupId'] == 'GroupId':
                 continue
             a = {}
             a['GroupName'] = row['GroupName']
@@ -572,7 +574,9 @@ class multipleLoop():
             b = b.replace(u'\ufeff', '')
             csvtuples[b] = a
             out = json.dumps(csvtuples)
-        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + str(self.mark['taskSort']) + '/', json=out)
+
+        requesttext = requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
+        print('text')
 
     def Get_Group_QQ_list(self):
         #-- sort 9
@@ -582,6 +586,7 @@ class multipleLoop():
         objectEndNo = 0
         rolltostarttask = 0
         rolltostarttaskend = 0
+        GetQQnumbertry = 9
         if os.path.exists(temp_taskid) == False:
                 texttask = codecs.open(temp_taskid, 'w','utf_8_sig')
                 fieldname = ['QQ', 'name', 'level', 'contains']
@@ -614,15 +619,19 @@ class multipleLoop():
         loadingwait = 0
         while loadingwait== 0:
             time.sleep(2)
-            if self.driver.find_elements_by_xpath("//android.widget.TextView[contains(@text, '加载中')]").__len__() != 1:
+            try:
+                self.driver.find_element_by_xpath("//android.widget.TextView[contains(@text, '加载中')]")
+            except:
                 loadingwait = 1
             time.sleep(2)
         while (rolltostarttask != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             except:
-                action = TouchAction(self.driver)
-                action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
+                #action = TouchAction(self.driver)
+                #action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
+                swipe.qqnumberswipe(self)
+                print('620')
                 continue
             elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             self.driver.implicitly_wait(15)
@@ -637,8 +646,8 @@ class multipleLoop():
                         if objectEndNo == GetQQnumbertry:
                             objectEnd = 1
                         else:
-                            self.driver.swipe(start_x=elementsList[9].location_in_view['x'],
-                                              start_y=elementsList[9].location_in_view['y'],
+                            self.driver.swipe(start_x=elementsList[elementsList.__len__() -2].location_in_view['x'],
+                                              start_y=elementsList[elementsList.__len__() -2].location_in_view['y'],
                                               end_x=elementsList[1].location_in_view['x'],
                                               end_y=elementsList[1].location_in_view['y'])
                             time.sleep(3)
@@ -696,8 +705,10 @@ class multipleLoop():
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             except:
-                action = TouchAction(self.driver)
-                action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
+                #action = TouchAction(self.driver)
+                #action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
+                swipe.qqnumberswipe(self)
+                print('695')
                 continue
             elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             self.driver.implicitly_wait(15)
@@ -781,11 +792,11 @@ class multipleLoop():
         # return
         print('end')
         fieldname = ['QQ', 'name', 'level', 'contains']
-        opentemp = codecs.open(temp_taskid, 'w', 'utf-8-sig')
+        opentemp = codecs.open(temp_taskid, 'r', 'utf-8-sig')
         reader = csv.DictReader(opentemp)
         csvtuples = {}
         for row in reader:
-            if 'QQ' in row['QQ']:
+            if row['QQ'] == 'QQ':
                 continue
             a = {}
             a['name'] = row['name']
@@ -795,7 +806,7 @@ class multipleLoop():
             b = b.replace(u'\ufeff', '')
             csvtuples[b] = a
             out = json.dumps(csvtuples)
-        requests.post(geturl + 'autoweb/done/' + str(self.mobile_id_for) + '/' + self.mark['taskSort'] + '/', json=out)
+        requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
 
     def run(self):
         print('task:'+self.mobile_id_for)
