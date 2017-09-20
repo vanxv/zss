@@ -116,7 +116,7 @@ def Task(request, mobile_ID = ''):
         locktime = datetime.now() - timedelta(minutes=1)
         task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now())
         if not task.exists():
-            task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now())
+            task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now()).filter(mobileid__isnull=True)
             if not task.exists():
                 return HttpResponse(0)
             else:
@@ -230,7 +230,7 @@ def TaskDone(request, task_id = ''):
                     QFListLog.save()
                     QFListadd = QQGroupList.objects.create(QQGroup=int(task.AccountId), QQ=int(AddQqFListN), name=groupdict['name'], contains=groupdict['contains'],level=int(groupdict['level']))
                     QFListadd.save()
-
+        task = mobiletask.objects.get(id=int(task_id))
         task.status=2
         task.endTime=datetime.now()
         task.save()
