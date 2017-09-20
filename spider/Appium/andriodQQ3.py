@@ -387,6 +387,7 @@ class multipleLoop():
                             numberinxlsnumber = GetQQnumbertry
                             break
 
+                time.sleep(0.8)
                 if N == elementsList.__len__()-2:
                     if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
                         objectEnd = 1
@@ -423,8 +424,8 @@ class multipleLoop():
         self.returnnumber = 0
         objectEnd = 0
         objectEndNo = 0
-        rolltostarttask = 0
-        rolltostarttaskend = 0
+        numberinxlsnumber = 0
+        numberinxls = 0
         #-- group card tacking---#
 
         if os.path.exists(temp_taskid) == False:
@@ -444,104 +445,44 @@ class multipleLoop():
                 clickGROUP =1
 
         QQaction.connect(self)
-        time.sleep(1.5)
-        self.driver.implicitly_wait(20)
-        temproll429 = 0
-        elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+        swipe.qqswipe(self)
+        swipe.qqswipe(self)
+        time.sleep(4)
+        elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
         tempclickelement = elementsList.__len__()
         elementsList[elementsList.__len__() - 1].click()
-        while temproll429 == 0:
-            time.sleep(1.5)
-            elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-
-            if tempclickelement == elementsList.__len__():
-                elementsList[elementsList.__len__() - 1].click()
-            else:
-                temproll429 =1
-        swipe.qqswipe(self)
+        time.sleep(4)
+        elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+        if tempclickelement == elementsList.__len__():
+            raise Exception
 
         # -- start get qqlist --- #
         while (rolltostarttask != 1):
-            elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-            for N in range(2, elementsList.__len__() - 1):
-                if  elementsList[N].tag_name == 'android.widget.LinearLayout':
-                    elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-                    self.driver.implicitly_wait(15)
-                    elementsList[N].click()
-                    time.sleep(1.5)
-                    getgroupinfo = QQaction.clickGroupinfo(self)
-                    time.sleep(2.5)
-                    try:
-                        GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
-                    except Exception as e:
-                        exc_type, exc_obj, exc_tb = sys.exc_info()
-                        fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                        print(exc_type, fname, exc_tb.tb_lineno)
-                        print(e)
-                        GetQQnumbertry = ''
-                    self.driver.keyevent(keycode=4)
-                    time.sleep(1.3)
-                    QQaction.groupreturn(self)
-                    time.sleep(0.7)
-                    QQaction.connect(self)
-                    if rolltostarttaskend == GetQQnumbertry:
-                        rolltostarttask = 1
-                    if GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
-                        elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-                        swipe.listswipe(self,elementsList)
-                        time.sleep(2)
-                        rolltostarttaskend = GetQQnumbertry
-                        break
-                    else:
-                        rolltostarttask = 1
-                        break
-        # ---roll to task--#
-
+            try:
+                elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+                if tempclickelement == elementsList.__len__():
+                    raise Exception
+            except:
+                swipe.qqnumberswipe(self)
+                print('467')
+                continue
         while (objectEnd != 1):
             try:
-                elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+                elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+                if tempclickelement == elementsList.__len__():
+                    raise Exception
             except:
                 swipe.qqnumberswipe(self)
                 print('489')
                 continue
-            self.driver.implicitly_wait(15)
             for N in range(2, elementsList.__len__()-1):
                 #---- judge element is last ---#
-                elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+                elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
                 if elementsList[N].tag_name == 'android.widget.LinearLayout':
                 # ---- judge element is last ---#
-                    elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+                    elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
                     self.driver.implicitly_wait(15)
                     elementsList[N].click()
-                    # whileclick = 0
-                    # while whileclick==0:
-                    #     self.driver.implicitly_wait(15)
-                    #     elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-                    #     self.driver.implicitly_wait(15)
-                    #     elementsList[N].click()
-                    #     time.sleep(2)
-                    #     elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-                    #     if elementsList.__len__()< N:
-                    #         whileclick = 1
-
-                    # elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-                    # tempElement = elementsList[N].find_element_by_xpath('//android.widget.TextView[1]')
-                    # tempElement.click()
-                    # self.driver.implicitly_wait(15)
-                    # time.sleep(3)
-
-
-                    #----have '我知道了' gourp ----#
-                    # print(self.driver.find_elements_by_xpath("//*['@text=我知道了']").__len__())
-                    # if self.driver.find_elements_by_xpath("//*['@text=我知道了']").__len__() >1:
-                    #     print('我知道了')
-                    #     self.driver.find_element_by_xpath("//*['@text=我知道了']").click()
-                    #     self.driver.keyevent(keycode=4)
-                    #     self.driver.implicitly_wait(15)
-                    #     QQaction.connect(self)
-                    #     continue
-                    # ----have '我知道了' gourp ----#
-
                     getgroupinfo = QQaction.clickGroupinfo(self)
                     time.sleep(2.5)
                     GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
@@ -551,20 +492,36 @@ class multipleLoop():
                         getGroupname = ''
                     number = self.driver.find_element_by_xpath("//*[contains(@text, '名成员')]").text.replace('名成员', '')
                     self.driver.keyevent(keycode=4)
-                    if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
-                        opentemp = codecs.open(temp_taskid, 'a', 'utf-8-sig')
-                        fieldname = ['GroupId', 'GroupName', 'number']
-                        writers = csv.DictWriter(opentemp,fieldnames=fieldname)
-                        writers.writerow({'GroupId': GetQQnumbertry, 'GroupName': getGroupname,'number':number})
-                        opentemp.close()
-                    time.sleep(2)
-                    print(getGroupname+GetQQnumbertry)
+
+
+
                     #click return number
                     QQaction.groupreturn(self)
                     #click return number
                     self.driver.implicitly_wait(15)
                     QQaction.connect(self)
-                    elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
+                    # ----------------if -----#
+                    if GetQQnumbertry == '':
+                        self.driver.keyevent(keycode=4)
+                    elif not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
+                        opentemp = codecs.open(temp_taskid, 'a', 'utf-8-sig')
+                        fieldname = ['GroupId', 'GroupName', 'number']
+                        writers = csv.DictWriter(opentemp, fieldnames=fieldname)
+                        writers.writerow({'GroupId': GetQQnumbertry, 'GroupName': getGroupname, 'number': number})
+                        opentemp.close()
+                    else:
+                        self.driver.keyevent(keycode=4)
+                        if numberinxls == 0:
+                            if numberinxlsnumber == GetQQnumbertry:
+                                numberinxls = 1
+                            else:
+                                swipe.listswipe(self, elementsList)
+                                time.sleep(3)
+                                numberinxlsnumber = GetQQnumbertry
+                                break
+
+                    time.sleep(0.8)
+
                     if N == elementsList.__len__() - 2:
                         if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
                             objectEnd = 1
@@ -642,89 +599,15 @@ class multipleLoop():
             except:
                 loadingwait = 1
             time.sleep(2)
-        while (rolltostarttask != 1):
-            try:
-                elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-            except:
-                #action = TouchAction(self.driver)
-                #action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
-                swipe.qqnumberswipe(self)
-                print('620')
-                continue
-            elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-            self.driver.implicitly_wait(15)
-            for N in range(1, elementsList.__len__()-1):
-                if elementsList[N].tag_name =='android.widget.LinearLayout':
-                    continue
-                elementjudge = elementsList[N].find_elements_by_xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
-                if elementjudge.__len__() == 0:
-                    if N == elementsList.__len__() - 2:
-                        if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
-                            objectEnd = 1
-                        if objectEndNo == GetQQnumbertry:
-                            objectEnd = 1
-                        else:
-                            swipe.listswipe(self, elementsList)
-                            time.sleep(3)
-                            objectEndNo = GetQQnumbertry
-                            break
-                    continue
-                temp_elements_List = elementsList[N].find_element_by_xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
-                QQname = elementsList[N].find_element_by_xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]").text
-                qqlevel = elementsList[N].find_element_by_xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
-                if qqlevel == '群主' or qqlevel == '管理员':
-                    qqlevel = 1
-                else:
-                    qqlevel = 0
-                elementjudge = elementjudge[0]
-                self.driver.implicitly_wait(15)
-                temp_elements_List.click()
-                self.driver.implicitly_wait(15)
-                time.sleep(2)
-                timea = datetime.datetime.now()
-                # try:
-                #     age = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
-                # except:
-                #     age = ''
-                # try:
-                #     address = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]").text
-                # except:
-                #     address = ''
-                try:
-                    contains = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]").text
-                except:
-                    contains = ''
-                GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
-                self.driver.keyevent(keycode=4)
-                timeb = datetime.datetime.now()
-                timec = timeb - timea
-                print(timec)
-                print(str(contains))
-                print(str(GetQQnumbertry))
-                if rolltostarttaskend == GetQQnumbertry:
-                    rolltostarttask = 1
-                if GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8').read():
-                    time.sleep(2)
-                    #elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.FrameLayout[1]/android.widget.AbsListView[1]/*")
-                    swipe.listswipe(self, elementsList)
 
-                    time.sleep(2)
-                    rolltostarttaskend = GetQQnumbertry
-                    break
-                else:
-                    rolltostarttask = 1
-                    break
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             except:
-                #action = TouchAction(self.driver)
-                #action.press(x=400, y=200).move_to(x=400, y=100).release().perform()
+
                 swipe.qqnumberswipe(self)
-                print('695')
+                print('609')
                 continue
-            elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-            self.driver.implicitly_wait(15)
             for N in range(1, elementsList.__len__()-1):
                 if elementsList[N].tag_name =='android.widget.LinearLayout':
                     continue
@@ -754,14 +637,6 @@ class multipleLoop():
                 self.driver.implicitly_wait(15)
                 time.sleep(2)
                 timea = datetime.datetime.now()
-                # try:
-                #     age = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
-                # except:
-                #     age = ''
-                # try:
-                #     address = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]").text
-                # except:
-                #     address = ''
                 try:
                     contains = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[2]").text
                 except:
@@ -775,7 +650,11 @@ class multipleLoop():
                 print(timec)
                 print(str(contains))
                 print(str(GetQQnumbertry))
-                if not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8').read():
+
+                # ----------------if -----#
+                if GetQQnumbertry == '':
+                    self.driver.keyevent(keycode=4)
+                elif not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf_8').read():
                     texttask = codecs.open(temp_taskid, 'a', 'utf_8')
                     fieldname = ['QQ', 'name', 'level', 'contains']
                     writers = csv.DictWriter(texttask, fieldnames=fieldname)
@@ -785,7 +664,16 @@ class multipleLoop():
                     print('QQ:'+str(GetQQnumbertry) + 'QQname:'+str(QQname)+' QQlevel:'+str(qqlevel)+'N:'+str(N))
                 else:
                     self.driver.keyevent(keycode=4)
+                    if numberinxls == 0:
+                        if numberinxlsnumber == GetQQnumbertry:
+                            numberinxls = 1
+                        else:
+                            swipe.listswipe(self, elementsList)
+                            time.sleep(2)
+                            numberinxlsnumber = GetQQnumbertry
+                            break
 
+                time.sleep(0.8)
                 if N == elementsList.__len__() - 2:
                     if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
                         objectEnd = 1
