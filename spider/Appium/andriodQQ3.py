@@ -457,15 +457,6 @@ class multipleLoop():
             raise Exception
 
         # -- start get qqlist --- #
-        while (rolltostarttask != 1):
-            try:
-                elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-                if tempclickelement == elementsList.__len__():
-                    raise Exception
-            except:
-                swipe.qqnumberswipe(self)
-                print('467')
-                continue
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
@@ -560,8 +551,8 @@ class multipleLoop():
         temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
         objectEnd = 0
         objectEndNo = 0
-        rolltostarttask = 0
-        rolltostarttaskend = 0
+        numberinxls = 0
+        numberinxlsnumber = 0
         if os.path.exists(temp_taskid) == False:
                 texttask = codecs.open(temp_taskid, 'w','utf_8_sig')
                 fieldname = ['QQ', 'name', 'level', 'contains']
@@ -675,8 +666,6 @@ class multipleLoop():
 
                 time.sleep(0.8)
                 if N == elementsList.__len__() - 2:
-                    if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
-                        objectEnd = 1
                     if objectEndNo == GetQQnumbertry:
                         objectEnd = 1
                     else:
