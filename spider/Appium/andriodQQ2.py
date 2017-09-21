@@ -341,8 +341,6 @@ class multipleLoop():
         self.driver.implicitly_wait(20)
         self.driver.find_element_by_xpath("//*[contains(@text, '好友')]").click()
         QQaction.connect(self)
-        swipe.qqswipe(self)
-        swipe.qqswipe(self)
         time.sleep(4)
         temproll335 = 0
         elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
@@ -352,15 +350,16 @@ class multipleLoop():
         elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
         if tempclickelement ==elementsList.__len__():
             raise Exception
+        swipe.qqswipe(self)
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-                if tempclickelement == elementsList.__len__():
-                    raise Exception
             except:
                 swipe.qqnumberswipe(self)
                 print('345')
                 continue
+            if tempclickelement == elementsList.__len__():
+                raise Exception
             for N in range(2, elementsList.__len__()-1):
                 elementsList[N].click()
                 GetQQnumbertry, name,nick,usercontains= QQaction.freindConcentGetQQnumber(self)
@@ -455,12 +454,12 @@ class multipleLoop():
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-                if tempclickelement == elementsList.__len__():
-                    raise Exception
             except:
                 swipe.qqnumberswipe(self)
                 print('489')
                 continue
+            if tempclickelement == elementsList.__len__():
+                raise Exception
             for N in range(2, elementsList.__len__()-1):
                 #---- judge element is last ---#
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
@@ -589,7 +588,6 @@ class multipleLoop():
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
             except:
-
                 swipe.qqnumberswipe(self)
                 print('609')
                 continue
