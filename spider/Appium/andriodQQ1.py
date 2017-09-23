@@ -325,7 +325,7 @@ class multipleLoop():
         temp_taskid = PATH(tempfile.gettempdir() + "/"+ str(self.mark['taskid']) +".csv")
         objectEnd =0
         objectEndNo =0
-
+        objectendroll = 0
         numberinxls = 0
         numberinxlsnumber = 0
 
@@ -348,16 +348,23 @@ class multipleLoop():
         elementsList[elementsList.__len__() - 1].click()
         time.sleep(4)
         elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+        print(tempclickelement)
+        print(elementsList.__len__())
         if tempclickelement ==elementsList.__len__():
             raise Exception
         swipe.qqswipe(self)
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+                objectendroll = 0
             except:
-                swipe.qqnumberswipe(self)
-                print('345')
-                continue
+                if objectendroll < 3:
+                    swipe.qqnumberswipe(self)
+                    objectendroll += 1
+                    print('609')
+                    continue
+                elif objectendroll > 3:
+                    objectEnd = 1
             if tempclickelement == elementsList.__len__():
                 raise Exception
             for N in range(2, elementsList.__len__()-1):
@@ -426,6 +433,7 @@ class multipleLoop():
         objectEndNo = 0
         numberinxlsnumber = 0
         numberinxls = 0
+        objectendroll = 0
         #-- group card tacking---#
 
         if os.path.exists(temp_taskid) == False:
@@ -454,10 +462,15 @@ class multipleLoop():
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+                objectendroll =0
             except:
-                swipe.qqnumberswipe(self)
-                print('489')
-                continue
+                if objectendroll < 3:
+                    swipe.qqnumberswipe(self)
+                    objectendroll += 1
+                    print('609')
+                    continue
+                elif objectendroll > 3:
+                    objectEnd = 1
             if tempclickelement == elementsList.__len__():
                 raise Exception
             for N in range(2, elementsList.__len__()-1):
@@ -470,7 +483,10 @@ class multipleLoop():
                     elementsList[N].click()
                     getgroupinfo = QQaction.clickGroupinfo(self)
                     time.sleep(2.5)
-                    GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
+                    try:
+                        GetQQnumbertry = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.TextView[1]").text
+                    except:
+                        GetQQnumbertry = ''
                     try:
                         getGroupname = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.AbsListView[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]").text
                     except:
@@ -545,6 +561,7 @@ class multipleLoop():
         objectEnd = 0
         objectEndNo = 0
         numberinxls = 0
+        objectendroll = 0
         numberinxlsnumber = 0
         if os.path.exists(temp_taskid) == False:
                 texttask = codecs.open(temp_taskid, 'w','utf_8_sig')
@@ -587,10 +604,16 @@ class multipleLoop():
         while (objectEnd != 1):
             try:
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+                objectendroll = 0
             except:
-                swipe.qqnumberswipe(self)
-                print('609')
-                continue
+                if objectendroll < 3:
+                    swipe.qqnumberswipe(self)
+                    objectendroll+=1
+                    print('609')
+                    continue
+                elif objectendroll > 3:
+                    objectEnd =1
+
             for N in range(1, elementsList.__len__()-1):
                 if elementsList[N].tag_name =='android.widget.LinearLayout':
                     continue
