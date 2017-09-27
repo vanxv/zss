@@ -358,13 +358,14 @@ class multipleLoop():
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
                 objectendroll = 0
             except:
-                if objectendroll < 3:
+                if objectendroll <= 15:
                     swipe.qqnumberswipe(self)
                     objectendroll += 1
                     print('609')
                     continue
-                elif objectendroll > 3:
+                elif objectendroll > 15:
                     objectEnd = 1
+                    continue
             if tempclickelement == elementsList.__len__():
                 raise Exception
             for N in range(2, elementsList.__len__()-1):
@@ -464,13 +465,15 @@ class multipleLoop():
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
                 objectendroll =0
             except:
-                if objectendroll < 3:
+                if objectendroll <= 15:
                     swipe.qqnumberswipe(self)
                     objectendroll += 1
                     print('609')
                     continue
-                elif objectendroll > 3:
+                elif objectendroll > 15:
                     objectEnd = 1
+                    continue
+
             if tempclickelement == elementsList.__len__():
                 raise Exception
             for N in range(2, elementsList.__len__()-1):
@@ -606,18 +609,21 @@ class multipleLoop():
                 elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
                 objectendroll = 0
             except:
-                if objectendroll < 3:
+                if objectendroll <= 15:
                     swipe.qqnumberswipe(self)
                     objectendroll+=1
                     print('609')
                     continue
-                elif objectendroll > 3:
+                elif objectendroll > 15:
                     objectEnd =1
-
+                    continue
             for N in range(1, elementsList.__len__()-1):
                 if elementsList[N].tag_name =='android.widget.LinearLayout':
                     continue
-                elementjudge = elementsList[N].find_elements_by_xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
+                try:
+                    elementjudge = elementsList[N].find_elements_by_xpath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.TextView[1]")
+                except:
+                    continue
                 if elementjudge.__len__() == 0:
                     if N == elementsList.__len__() - 2:
                         if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
@@ -705,7 +711,8 @@ class multipleLoop():
             b = b.replace(u'\ufeff', '')
             csvtuples[b] = a
             out = json.dumps(csvtuples)
-        requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
+        requeststext = requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
+        print(requeststext.text)
 
     def run(self):
         print('task:'+self.mobile_id_for)
@@ -761,7 +768,7 @@ class multipleLoop():
                     multipleLoop.Get_Group_QQ_list(self)
                 else:
                     pass
-                    # ---- loop select_work----#
+            # ---- loop select_work----#
             except Exception as e:
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 errore= sys.exc_info()

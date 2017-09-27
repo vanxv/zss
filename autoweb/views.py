@@ -230,6 +230,7 @@ def TaskDone(request, task_id = ''):
                     QFListLog.save()
                     QFListadd = QQGroupList.objects.create(QQGroup=int(task.AccountId), QQ=int(AddQqFListN), name=groupdict['name'], contains=groupdict['contains'],level=int(groupdict['level']))
                     QFListadd.save()
+
         task = mobiletask.objects.get(id=int(task_id))
         task.status=2
         task.endTime=datetime.now()
