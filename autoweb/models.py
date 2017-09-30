@@ -67,6 +67,9 @@ class mobiletask(models.Model):
     endTime = models.DateTimeField(null=True,default=timezone.now)
     statusTime = models.DateTimeField(null=True,default=timezone.now)
     status = models.IntegerField(null=True, default=1, choices=mobiletask_status_choices)
+    SpecifyStartTime = models.IntegerField(null=True)
+    SpecifyEndTime = models.IntegerField(null=True)
+
     class Meta:
         verbose_name = 'mobileid'
         verbose_name_plural = verbose_name

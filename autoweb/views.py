@@ -113,18 +113,22 @@ mobiletask_taskSort_choices = (
 def Task(request, mobile_ID = ''):
     if request.method=='POST':
         mobileID = mobileid.objects.get(id=int(mobile_ID))
+        nowhour = datetime.now().hour
         locktime = datetime.now() - timedelta(minutes=1)
-        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now())
+        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now()).filter(SpecifyStartTime__isnull=True)
         if not task.exists():
-            task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now()).filter(mobileid__isnull=True)
+            task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now()).filter(SpecifyStartTime__lte=nowhour, SpecifyEndTime__gte=nowhour)
             if not task.exists():
-                return HttpResponse(0)
-            else:
-                task=task[0]
-                task.mobileid=mobileID
-                task.startTime=locktime
-                task.save()
-        task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now())
+                task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now()).filter(mobileid__isnull=True)
+                if not task.exists():
+                    task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now()).filter(SpecifyStartTime__lte=nowhour, SpecifyEndTime__gte=nowhour)
+                    if not task.exists():
+                        return HttpResponse(0)
+                    else:
+                        task=task[0]
+                        task.mobileid=mobileID
+                        task.startTime=locktime
+                        task.save()
         task = task[0]
         taskdict ={
             'deviceName':task.mobileid.deviceName,

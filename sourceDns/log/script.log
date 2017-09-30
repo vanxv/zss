@@ -34942,3 +34942,9 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 179, in TaskDone
     print(task.mobileid.QQ)
 BrokenPipeError: [Errno 32] Broken pipe
+2017-09-29 12:58:34,077 [Thread-7:123145364283392] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-29 12:58:35,007 [Thread-11:123145369538560] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-29 12:58:35,812 [Thread-13:123145364283392] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-29 12:58:42,695 [Thread-9:123145374793728] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-29 12:59:46,902 [Thread-17:123145364283392] [django.request:152] [base:get_response] [WARNING]- Not Found: /task/2/
+2017-09-29 13:00:04,515 [Thread-19:123145364283392] [django.request:152] [base:get_response] [WARNING]- Not Found: /task/2/
