@@ -139,9 +139,9 @@ def Task(request, mobile_ID = ''):
         if not task.exists():
             task = mobiletask.objects.filter(mobileid=mobileID, status=1).filter(startTime__lt=datetime.now()).filter(SpecifyStartTime__lte=nowhour, SpecifyEndTime__gte=nowhour)
             if not task.exists():
-                task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now()).filter(mobileid__isnull=True)
+                task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1,mobileid__isnull=True).filter(startTime__lt=datetime.now()).filter(mobileid__isnull=True)
                 if not task.exists():
-                    task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1).filter(startTime__lt=datetime.now()).filter(SpecifyStartTime__lte=nowhour, SpecifyEndTime__gte=nowhour)
+                    task = mobiletask.objects.filter(UserPortraitId=mobileID.UserPortraitId, status=1,mobileid__isnull=True).filter(startTime__lt=datetime.now()).filter(SpecifyStartTime__lte=nowhour, SpecifyEndTime__gte=nowhour)
                     if not task.exists():
                         return HttpResponse(0)
                     else:
