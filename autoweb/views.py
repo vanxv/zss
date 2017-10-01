@@ -49,6 +49,7 @@ def index(request):
         getlist = request.POST['getlist'].split(',')
         sendcontains = request.POST['sendcontains']
         softname = 0
+        print(request.POST['starttime'])
         try:
             wechat = int(request.POST['wechat'])
         except:
@@ -61,6 +62,25 @@ def index(request):
             softname = 1
         elif wechat == 1:
             softname = 2
+        try:
+            time = int(request.POST['time'])
+        except:
+            time = None
+        if time == None:
+            starttime = None
+            endtime = None
+        elif time == 1:
+            try:
+                starttime = int(request.POST['starttime'])
+            except:
+                starttime = None
+            try:
+                endtime = int(request.POST['endtime'])
+            except:
+                endtime = None
+        else:
+            starttime = None
+            endtime = None
 
         ##1. add firends
         #2. add group
@@ -72,7 +92,7 @@ def index(request):
                     del getlist[getlist.index(Qs):]
                     continue
                 if TaskSort == 1:
-                    if QQFriends.objects.filter(QQGroup=int(Qs)).__len__() > 2:
+                    if QQFriends.objects.filter(QQFriends=int(Qs)).__len__() > 2:
                         del getlist[getlist.index(Qs):]
                         continue
                 elif TaskSort == 2:
@@ -82,7 +102,7 @@ def index(request):
 
                 softobname = softid.objects.get(id=softname)
                 userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
-                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs))
+                createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),SpecifyStartTime=starttime, SpecifyEndTime=endtime)
                 createtask.save()
             return redirect('/autoweb/')
         #3. sendALL firends
@@ -93,7 +113,7 @@ def index(request):
                 userportraitIdget = UserPortrait.objects.get(id=int(UserPortrait_Id))
                 getsendlist = mobileid.objects.filter(UserPortraitId=userportraitIdget)
                 for getsendlistfor in getsendlist:
-                    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort,softid=softobname,mobileid=getsendlistfor)
+                    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort,softid=softobname,mobileid=getsendlistfor,SpecifyStartTime=starttime, SpecifyEndTime=endtime)
                     createtask.save()
                 return redirect('/autoweb/')
 
@@ -125,11 +145,17 @@ def Task(request, mobile_ID = ''):
                     if not task.exists():
                         return HttpResponse(0)
                     else:
-                        task=task[0]
-                        task.mobileid=mobileID
-                        task.startTime=locktime
-                        task.save()
+                        task1=task[0]
+                        task1.mobileid=mobileID
+                        task1.startTime=locktime
+                        task1.save()
+                else:
+                    task1 = task[0]
+                    task1.mobileid = mobileID
+                    task1.startTime = locktime
+                    task1.save()
         task = task[0]
+        print(task)
         taskdict ={
             'deviceName':task.mobileid.deviceName,
             'platformVersion':task.mobileid.platformVersion,

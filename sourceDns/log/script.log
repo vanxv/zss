@@ -34948,3 +34948,624 @@ BrokenPipeError: [Errno 32] Broken pipe
 2017-09-29 12:58:42,695 [Thread-9:123145374793728] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-09-29 12:59:46,902 [Thread-17:123145364283392] [django.request:152] [base:get_response] [WARNING]- Not Found: /task/2/
 2017-09-29 13:00:04,515 [Thread-19:123145364283392] [django.request:152] [base:get_response] [WARNING]- Not Found: /task/2/
+2017-09-30 15:30:20,507 [Thread-8:123145532993536] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 15:30:26,254 [Thread-11:123145527738368] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-30 15:37:14,944 [Thread-25:123145543503872] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 15:51:45,816 [Thread-43:123145532993536] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 16:15:34,173 [Thread-7:123145365790720] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 94, in index
+    if QQFriends.objects.filter(QQGroup=int(Qs)).__len__() > 2:
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'QQGroup' into field. Choices are: QQ, QQFriends, contains, id, name, nick, time
+2017-09-30 16:15:56,457 [Thread-10:123145371045888] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 16:15:57,304 [Thread-11:123145376301056] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 16:16:06,223 [Thread-9:123145365790720] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 94, in index
+    if QQFriends.objects.filter(QQGroup=int(Qs)).__len__() > 2:
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 796, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 814, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1227, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1253, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1133, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1019, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1327, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'QQGroup' into field. Choices are: QQ, QQFriends, contains, id, name, nick, time
+2017-09-30 16:18:14,907 [Thread-7:123145396973568] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),starttime=starttime, endtime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 555, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'starttime' is an invalid keyword argument for this function
+2017-09-30 16:19:39,203 [Thread-8:123145396973568] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),starttime=starttime, endtime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 397, in create
+    obj = self.model(**kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 555, in __init__
+    raise TypeError("'%s' is an invalid keyword argument for this function" % list(kwargs)[0])
+TypeError: 'starttime' is an invalid keyword argument for this function
+2017-09-30 16:20:34,019 [Thread-7:123145456971776] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:20:57,296 [Thread-8:123145456971776] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:21:30,423 [Thread-10:123145456971776] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:21:46,646 [Thread-12:123145456971776] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:24:22,741 [Thread-14:123145456971776] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:24:54,050 [Thread-18:123145435951104] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:25:20,013 [Thread-20:123145435951104] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:27:05,616 [Thread-40:123145435951104] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:39:53,025 [Thread-8:123145395589120] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-30 16:40:28,939 [Thread-14:123145390333952] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 104, in index
+    createtask = mobiletask.objects.create(UserPortraitId=userportraitIdget, content=sendcontains,taskSort=TaskSort, softid=softobname, AccountId=int(Qs),startTime=starttime, endTime=endtime)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 399, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 796, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 824, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 908, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/base.py", line 947, in _do_insert
+    using=using, raw=raw)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/query.py", line 1045, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1053, in execute_sql
+    for sql, params in self.as_sql():
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in as_sql
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1006, in <listcomp>
+    for obj in self.query.objs
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 1005, in <listcomp>
+    [self.prepare_value(field, self.pre_save_val(field, obj)) for field in fields]
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/sql/compiler.py", line 945, in prepare_value
+    value = field.get_db_prep_save(value, connection=self.connection)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 755, in get_db_prep_save
+    prepared=False)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1438, in get_db_prep_value
+    value = self.get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1417, in get_prep_value
+    value = super(DateTimeField, self).get_prep_value(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1275, in get_prep_value
+    return self.to_python(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1378, in to_python
+    parsed = parse_datetime(value)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/utils/dateparse.py", line 93, in parse_datetime
+    match = datetime_re.match(value)
+TypeError: expected string or bytes-like object
+2017-09-30 16:45:46,482 [Thread-21:123145395589120] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 17:41:35,356 [Thread-9:123145444212736] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-09-30 20:58:12,291 [Thread-16:123145385046016] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-09-30 20:58:20,811 [Thread-32:123145374535680] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-01 12:24:52,338 [Thread-11:123145461882880] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-10-01 12:24:52,910 [Thread-19:123145467138048] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-10-01 12:24:55,286 [Thread-29:123145461882880] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-01 12:24:59,716 [Thread-37:123145493413888] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-10-01 12:27:25,698 [Thread-40:123145461882880] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 154, in Task
+    'deviceName':task.mobileid.deviceName,
+AttributeError: 'NoneType' object has no attribute 'deviceName'
+2017-10-01 12:27:53,153 [Thread-41:123145461882880] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 154, in Task
+    'deviceName':task.mobileid.deviceName,
+AttributeError: 'NoneType' object has no attribute 'deviceName'
+2017-10-01 12:30:20,643 [Thread-7:123145584324608] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 155, in Task
+    'deviceName':task.mobileid.deviceName,
+AttributeError: 'NoneType' object has no attribute 'deviceName'
+2017-10-01 12:31:15,267 [Thread-9:123145584324608] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 155, in Task
+    'deviceName':task.mobileid.deviceName,
+AttributeError: 'NoneType' object has no attribute 'deviceName'
+2017-10-01 12:37:16,882 [Thread-11:123145584324608] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 155, in Task
+    'deviceName':task.mobileid.deviceName,
+AttributeError: 'NoneType' object has no attribute 'deviceName'
+2017-10-01 12:39:21,970 [Thread-7:123145383391232] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 156, in Task
+    'deviceName':task.mobileid.deviceName,
+AttributeError: 'NoneType' object has no attribute 'deviceName'
+2017-10-01 12:41:11,689 [Thread-7:123145372459008] [django.request:132] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /autoweb/task/1/
+Traceback (most recent call last):
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 42, in inner
+    response = get_response(request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/VANXV/PycharmProjects/venvDjango1.11py3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 157, in Task
+    task = task[0]
+TypeError: 'mobiletask' object does not support indexing

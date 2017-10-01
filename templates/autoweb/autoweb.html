@@ -70,9 +70,20 @@ $(function () {
 </nav>
 </div>
 <form method="post" action="">
-    <input type="submit" class="btn btn-primary">
+    <input type="submit" class="btn btn-primary" value="post">
+    <br>
+执行时间：
+       <label class="form-check-label">
+    <input type="checkbox" class="form-check-input" id="time" value="1" name="time">
+    指定时间
+           StartTime: <input type="text" pattern="[0-2]{1}[0-9]{1}" name="starttime"/>
+           -
+           EndTime: <input type="text" pattern="[0-2]{1}[0-9]{1}" name="endtime"/>
+
+  </label>
 
 
+<br>
     用户画像：
     {% for UserPortrait in UserPortraitlist %}
 
@@ -165,7 +176,7 @@ $(function () {
   </div>
     <br>
   <div class="col-3">
-    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input", name="starttime">
+    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input", name="posttime">
 </div>
 </div>
 </form>
