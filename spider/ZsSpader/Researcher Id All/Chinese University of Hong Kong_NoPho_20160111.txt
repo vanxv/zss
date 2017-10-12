@@ -1,0 +1,189 @@
+University: [Chinese University of Hong Kong]  Name: [CUHK_Shaoguang_Wang_王绍光]  ID: [VEeXOR8AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jimmy_C_Yu]  ID: [HPYzdEAAAAAJ]  Has uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jeffrey_Xu_Yu]  ID: [_XVoXQ8AAAAJ]  Has uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Justin_Wu]  ID: [JtfgdmoAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hong_Cheng]  ID: [s3lQL7YAAAAJ]  Has uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Francis_K_L_Chan]  ID: [gm9OtDEAAAAJ]  Has uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Zee_Chung_Ying_Benny]  ID: [Ecd1TNYAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kwok_Leung]  ID: [D8BwKOwAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_YT_Zhang]  ID: [vn4ZznEAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Paul_K_S_Chan]  ID: [zmFtFdMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Michael_R_Lyu]  ID: [uQnBgK0AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Mary_Miu_Yee_Waye]  ID: [9_mBNFAAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Xiaoou_Tang]  ID: [qpBtpGsAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jianfang_Wang_(王建方)]  ID: [7SK4Gn4AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jimmy_Lee]  ID: [3IV-UTsAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Raymond_W_Yeung]  ID: [tej5yuAAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hau_Kit_Tai]  ID: [G-c_YRAAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Rui_Zhang]  ID: [11-5WScAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chi_Yue_CHIU]  ID: [Yee16qYAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Wei_Zhang]  ID: [-e-QkGMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yu_Huang]  ID: [lJsXZnoAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jun_Zou]  ID: [ZhPAK3UAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_TJ_Wong]  ID: [t-XRlCwAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_CC_Szeto]  ID: [5YL2HTYAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Vincent_Lee]  ID: [ZgwJZ5IAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jun_Wang]  ID: [TBcb-1kAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Joseph_PH_Fan]  ID: [-vaRdEUAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lei_Xu]  ID: [rN2ny9kAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Dah_Ming_Chiu]  ID: [6foKsAIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jeffrey_Xu_Yu]  ID: [iHevumsAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ada_Wai_Chee_Fu]  ID: [tcwyqtUAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_yuanzhi_zhang]  ID: [CrllssgAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lanjun_Zhou]  ID: [VbmQjzEAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Zhen_Yu_Chen]  ID: [sYy3NCYAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Catherine_McBride_Chang]  ID: [Vq--fdoAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_TENG_FONG_WONG__黃庭芳]  ID: [kea3HkIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Duan_Li]  ID: [e0IkYKcAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chun_Kwok_WONG]  ID: [wqFX2uwAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Thierry_Blu]  ID: [KyuvBaQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Nelson_LS_Tang]  ID: [nBtfmp8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Andrew_M_L_Chan]  ID: [VCqR4I4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Irwin_King]  ID: [MXvC7tkAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Soung_Chang_Liew]  ID: [jkO-JoQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Nelson_Lee]  ID: [1-RVFyAAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kevin_Y_Yip]  ID: [pAD5GlEAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Raymond_H_Chan]  ID: [ICiiEOAAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_William_KK_Wu]  ID: [TQKBcgIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Po_Keung_Wong]  ID: [UQWOka8AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jie_Huang]  ID: [wPGNh9oAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_t_kwok]  ID: [AdSPds4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Xiaogang_Wang]  ID: [-B5JgjsAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jiaya_Jia]  ID: [OIYxQPoAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jiaya_Jia]  ID: [XPAkzTEAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Le_Li]  ID: [fmtx_vUAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_King_Ngi_Ngan]  ID: [09ihVXEAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Zuowei_Xie]  ID: [iW3rK-oAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lai_Shan_Tam]  ID: [xolyRc8AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_James_F_Griffith]  ID: [vmJciSMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_jun_zou]  ID: [R_G0BNkAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yi_Xiang_Wang]  ID: [msnG4VQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Pheng_Ann_Heng]  ID: [OFdytjoAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Terence_Lao]  ID: [Ew6YZ4QAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Shige_Makino]  ID: [Q9Q6HzwAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_KC_Allen_Chan]  ID: [xL_eg8IAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kwong_Sak_Leung]  ID: [0hg8ibwAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_David_Ahlstrom]  ID: [UhwWQikAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kwong_Sak_Leung]  ID: [x--r9cIAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Shige_Makino]  ID: [iCBHgd4AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Wai_Lam]  ID: [ewA4NAcAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Larry_Baum]  ID: [LS6cVf4AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Max_Meng]  ID: [DxDCU7AAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jian_Bin_XU_許建斌]  ID: [bdqiHxIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Louis_Leung]  ID: [dL0MbqMAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Tien_Tsin_Wong]  ID: [05U81tIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jinling_Tang]  ID: [BYaERI8AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Anthony_WH_Chan]  ID: [eskO1OQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hao_Sun_PhD]  ID: [nFPk7EkAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Carmel_McNaught]  ID: [P98syoEAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Carmel_McNaught]  ID: [jHsG-xkAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hon_Ming_Lam]  ID: [b-duIhMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hang_Yue_Ngo]  ID: [5ErXmF0AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Cris_Wai_Ching_Liu]  ID: [Z-vaOR8AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Andrew_Burd]  ID: [gSqOadMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_H_K_Tsang]  ID: [PhSv958AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ka_Nang_Leung]  ID: [obwP3HAAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Helene_Fung]  ID: [OC89VPAAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kin_Wah_Yu_(余建華)]  ID: [xGFQjCwAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ke_Qing_Xia]  ID: [zCTQ4LgAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_HY_Edwin_Chan]  ID: [XQc1aKEAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jack_Linchuan_Qiu_邱林川]  ID: [XP_nQToAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lianjiang_Li]  ID: [AoAfJSkAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Haiqin_YANG]  ID: [nfijDy4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chiu_Philip_Wai_Yan]  ID: [zWMqyd8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Li_Zhang]  ID: [noZFyGsAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Colin_A_Graham]  ID: [OAsmLn8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kenneth_KH_Lee]  ID: [F42rYsMAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Daphne_W_Yiu]  ID: [zZRZ3agAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Calvin_Chun_Kit_Chan]  ID: [j07vRDgAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_S_S_Lee]  ID: [9EAY4lQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Vivian_WY_Lee]  ID: [wkEw624AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lian_Kuan_Chen]  ID: [0gxC-bcAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chun_Hung_CHENG]  ID: [THd7GwIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Patrick_C_M_Wong]  ID: [LdK1DlUAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Stephen_Chim]  ID: [y3tU0zIAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_ni_zhao]  ID: [xMOTgY4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hai_HU]  ID: [lPyGz7gAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ho_fung_Leung]  ID: [JDErdKcAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yongqin_David_Chen]  ID: [pV-1oi0AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_shekhar_kumta]  ID: [4jpDvYkAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_King_Ming_Chan]  ID: [Z1b9Rq8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ip_Siu_Po]  ID: [KAm5pLoAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Calvin_SH_Ng]  ID: [gBkmHXIAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Alan_CHEUNG]  ID: [eFw-WaUAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Charlie_C_L_Wang]  ID: [-EXti64AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Minghua_Chen]  ID: [WzEQ9QwAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kwan_H_S]  ID: [fZgmGicAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Winnie_Mak]  ID: [GVZa7lsAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chung_Hang_Jonathan_Choi]  ID: [YfIJmT0AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Dajun_Wang]  ID: [BNq-xoIAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Sidharth_Jaggi]  ID: [AX7276AAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Wong_Kam_Bo]  ID: [LKsRfecAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Virginia_Yip]  ID: [M8I3NCYAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Baopu_LI]  ID: [OOY-4CwAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ping_Yuan]  ID: [0A2Rbr4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Icy_Lee]  ID: [kzuNJJgAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Eugene_D_Ponomarev]  ID: [SZDQ_oQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lai_K_LEUNG]  ID: [0sQlkdUAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_man_cheung_chung]  ID: [TmDFl1cAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chester_Shu]  ID: [aQPYEKMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Wing_Cheong_Lau]  ID: [iM0lua0AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Dora_Lau]  ID: [fHy2WbEAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Anthony_Man_Cho_So]  ID: [whi3UisAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yuedong_Xu]  ID: [gmiMkc0AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_LM_Chu]  ID: [o3Kf8fUAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Stephen_L_Chan_陳林醫生]  ID: [vx-sVaIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jiang_Xiao_hua]  ID: [hEZSDt4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Urs_Maurer]  ID: [ntkr5G8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_woody_wu]  ID: [48jK-FgAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Patrick_P_C_Lee]  ID: [gyRtVVEAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Sau_Dan_Lee]  ID: [BWmVe5wAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Sai_Ming_Ngai_Saiming]  ID: [uqySJAcAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yongsheng_Chen]  ID: [sbtRWjoAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Xufei_MA]  ID: [H_4WI3cAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Cham_Wai_Kuen]  ID: [HWb447UAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Shiqian_Ma]  ID: [kkzUrUgAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Suk_Hang_Cheng]  ID: [nY4-ZDcAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Tan_Lee_李丹]  ID: [5VTS11IAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Edward_Ng]  ID: [9GGXmRkAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kin_Che_Lam]  ID: [A8DhjOMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Gordon_Mathews]  ID: [umQ0IpoAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ting_Fung_Chan]  ID: [oJSNjq0AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Mee_Kam_Ng]  ID: [MpA2IMwAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yi_Wang]  ID: [45GB-1kAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Alex_Pui_Wai_Lee]  ID: [xNw1OL8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chen_Mao]  ID: [M6dnjp4AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_De_Jun_Feng]  ID: [4GwC4LsAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hanqiu_Sun]  ID: [ezvIdPEAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Silin_Zhong]  ID: [CLqQnvAAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yuet_Wah_Cheung]  ID: [aF3NVnMAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Shih_Chi_Chen]  ID: [L3W3SvQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Hualing_Zeng]  ID: [I9xs2S4AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Jiabiao_Lian]  ID: [GcNezZcAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_anthony_yuen_bun_teoh]  ID: [hJt1mlgAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Maggie_Haitian_Wang]  ID: [dbkJf0cAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Wai_Chan]  ID: [jg5SWqMAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_S_Alvin_Leung]  ID: [kWWB53UAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Feng_Wang]  ID: [bsinqtEAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Francis_L_F_Lee]  ID: [0OVbbwUAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lu_Gang]  ID: [mICx5P0AAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Chen_Change_Loy]  ID: [559LF80AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Vincent_C_K_Cheung]  ID: [0jvjVzQAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Sora_Kim]  ID: [irA_KM8AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kevin_C_K_Lam]  ID: [grBjEiIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Renjun_Duan]  ID: [00fjiTUAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Shengyu_Zhang]  ID: [h9_LPeAAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Ruibin_Jiang]  ID: [sQHsGvAAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Anthony_YH_Fung]  ID: [a-sLzDIAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kenneth_Shum]  ID: [DdNBcogAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Kin_Hong_Wong]  ID: [GJDv8mwAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Yifan_Zhang]  ID: [sPZZB4UAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Feng_Wang]  ID: [vT79w58AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lin_GAO]  ID: [41wcJi4AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Martin_Chan]  ID: [Zv1WfIAAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Donghui_Wu]  ID: [qpv139EAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Wanli_Ouyang]  ID: [pw_0Z_UAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Silu_Li]  ID: [9R0znVQAAAAJ]  Has not upload photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Liqiang_Huang]  ID: [40gb__wAAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Lei_Xu]  ID: [Bpg1ru0AAAAJ]  Has  uploaded photo.
+University: [Chinese University of Hong Kong]  Name: [CUHK_Alan_Chun_Nang_Wong]  ID: [lTwbxuMAAAAJ]  Has not upload photo.

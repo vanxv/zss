@@ -1,0 +1,184 @@
+University: [Kyoto University]  Name: [Kyoto_Shigekazu_Nagata]  ID: [eKZ3iHYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Minoru_Kanehisa]  ID: [HIoc184AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kazutoshi_Takahashi]  ID: [lX62Pr0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Susumu_Goto]  ID: [wHoNzDEAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Y_Maeno]  ID: [DMzCcsUAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shin_Yonehara]  ID: [VDIGOkYAAAAJ]  Has uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_Imahori]  ID: [EHPULJYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Misao_Sasaki]  ID: [5iFetUsAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kazunari_Shibata]  ID: [n0C8VzgAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kazuki_Nakanishi]  ID: [GqI7Cf8AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_miyachi_yoshiki]  ID: [W9F3dmgAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Wei_CHEN]  ID: [LV1BousAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Takehiro_Yamamoto]  ID: [8ZDsbX8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hongna_Zhang]  ID: [3y79ruAAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Isao_Tanaka]  ID: [j4fGCSQAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Yasushi_Ishihama]  ID: [5xEq6pcAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_Sugiyama]  ID: [RnaV0YEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Junji_Sugiyama]  ID: [GWzrFGgAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Junji_Sugiyama]  ID: [SmIdbFIAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tetsuro_Matsuzawa]  ID: [3tl7--4AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Akio_IKEDA_MD_PhD]  ID: [BdLNk6YAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Satou_Yutaka]  ID: [sY_gi9kAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shu_SEKI]  ID: [893WmR0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hideya_Fukuzawa]  ID: [r-ezNeIAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Teiji_Kunihiro]  ID: [BQ2t_PEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Kenji_Kabashima]  ID: [5uwXXKAAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tadashi_Takayanagi]  ID: [YQau8AQAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Satohiro_Masuda_PhD]  ID: [mLB7zwsAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Setsuhisa__Tanabe_]  ID: [cihaZ4UAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_Kitagawa]  ID: [f1AXm6MAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tomohisa_Okada]  ID: [EShyce8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kaoru_Kitajima]  ID: [bjZ9cusAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Satoshi_Horike]  ID: [LBbmEVgAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Takahiro_Fujiwara]  ID: [Oi2L2WEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Fumiaki_Sato]  ID: [_8ECDYgAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Ryutaro_Tao]  ID: [Qzq-_k8AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Koichiro_Tanaka]  ID: [DUE6m-8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiraku_Nakajima]  ID: [JmRobgkAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Yoshiharu_Omura]  ID: [2WrBxqwAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Akihiko_Yoshizawa]  ID: [4R6_2z0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tatsuya_Kawahara]  ID: [o3AmlFYAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Motofumi_Suzuki]  ID: [hwK4-QsAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masayoshi_Nakashima]  ID: [Rw1JJswAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shuhei_Furukawa]  ID: [2iuLifgAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shinji_Nishiwaki]  ID: [0Sr04AMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masashi_Shiraishi]  ID: [idzgdOkAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Manabu_Minami]  ID: [bm6pilYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tetsuya_Aruga]  ID: [N_ZReWoAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Toyoaki_Nishida]  ID: [yBpGoLMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Makoto_Urushitani]  ID: [G17GQWcAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Makoto_Urushitani]  ID: [BH_rnkEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Yasushi_Imamoto]  ID: [3Ofl6H4AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Masatoshi_Sato]  ID: [fl30hAgAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hyenjong_Hong]  ID: [3NOfQNwAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shiro_Tanaka]  ID: [eTIolfAAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masaki_Tomonaga]  ID: [UtTYCnEAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Sadao_Kurohashi]  ID: [gpKS5P0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Manabu_Kano]  ID: [qAEWLEYAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Teiji_Sota]  ID: [tZUIzdEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Taiji_Adachi]  ID: [w7w2tCIAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hisayo_Yamane]  ID: [8POugjgAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shigeru_Kasahara]  ID: [7CMuH9wAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Yoshihiko_Miyata]  ID: [gIkWo2kAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kazuo_Fujita]  ID: [YL4Y_fAAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Atsushi_Igarashi]  ID: [OupExl8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hideaki_OHGAKI]  ID: [8VGIyqwAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Sotaro_Ooto]  ID: [MvnXRvUAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tomoaki_Kunugi]  ID: [gnNw4XIAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shigeru_Shinomoto]  ID: [0YlLtk4AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Peter_Carlton]  ID: [CWCdJQ0AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Makoto_Ouchi]  ID: [hlGSyZgAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Suda_Jun]  ID: [Q8GIeq0AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Kazuro_Hirahara]  ID: [uBFv64oAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shuhei_Nasuda]  ID: [zPS8O5cAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Toshiyuki_Tanaka]  ID: [J_bqd7EAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Ryoichi_Yamamoto]  ID: [ZVwSewgAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Tetsu_Kogiso]  ID: [lcYDOCQAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Naoyuki_Amemiya]  ID: [XCQQSBQAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shiro_Kohshima]  ID: [SUJpZc0AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hajime_Mase]  ID: [EUoJE84AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Makoto_Ohsaki]  ID: [RLJ3mM8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroyuki_Nakano]  ID: [vQIMNe0AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shin_ichi_Sasa]  ID: [ywOAAjkAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Kenji_Matsuura]  ID: [x5ROo_cAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Ryuichi_Nishihama]  ID: [c7jgnjIAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tomoya_Mori]  ID: [7aVRNQoAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Takuya_Nishimura]  ID: [TRlIYIsAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Noriyuki_Miyazaki]  ID: [BYZIQy0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Norimoto_Gotoh]  ID: [n979l-gAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tetsu_Ichitsubo]  ID: [Ky6Q_3EAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Narutaka_OZAWA]  ID: [e_k0JwcAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Peiliang_Xu]  ID: [JJHbLeIAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kouichi_C_Nakamura]  ID: [Uc8tvSQAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Miho_Inoue_Murayama]  ID: [Bw6NpqQAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tetsuya_Uda]  ID: [fyNv7WMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hiromi_Imamura]  ID: [hPEQHnQAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Atsushi_Nakazawa]  ID: [vsAumE0AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hideyuki_OKUMURA]  ID: [yBUSzbwAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Yukiko_Uchida]  ID: [vdpppuEAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Takashi_Hikihara]  ID: [kCJM65kAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Yukinori_Matsuo]  ID: [p0b3ezkAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Yukinori_Matsuo]  ID: [pnwpP38AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tatsuhiko_Kawamoto]  ID: [mJ03tjMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Yoshiki_Arakawa]  ID: [bI8LAscAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Tetsuaki_Fujihara]  ID: [qL3pa5cAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kazuhiro_Aoki]  ID: [q9S3S28AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroyuki_Fujioka]  ID: [V9-_FzwAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shigeru_Takata]  ID: [Rg-N5VkAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tamotsu_KANAI]  ID: [1a51LKQAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Ryoichi_Kurose]  ID: [x3jPvtsAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Akihiro_Shimizu]  ID: [EkCsjt0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroki_Tokinaga]  ID: [AyKZmmMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Kenji_Fujimoto]  ID: [fO8RYK8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_TAMURA]  ID: [zuyeVvsAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Akitsu_Hotta_PhD]  ID: [qQdk4H4AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Katsuaki_Tanabe]  ID: [-3G7btYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Naoyuki_Itagaki]  ID: [dzcyASEAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kazuhiro_Izui]  ID: [rcxRgxoAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Daisuke_Kan]  ID: [dKioIgUAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Daisuke_Kawahara]  ID: [Cfp1XmUAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Takeaki_Araki]  ID: [yXIZ-3cAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Naoki_Sasakura]  ID: [AaXsURwAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hikaru_Komatsu]  ID: [g6MypxcAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Masaaki_Sakakura]  ID: [wNpLbF0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Yoichi_Fukuda]  ID: [RpbdeY4AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masaki_Shigemori]  ID: [60xTomcAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Yusuke_Ebihara]  ID: [KYFj8FEAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Masao_Kitano]  ID: [XXw35CcAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Izumi_Oinuma]  ID: [omRjhN0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Shigeyuki_Oba]  ID: [Jj0r98UAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masako_Myowa_Yamakoshi]  ID: [F9Pi2OcAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Koji_Koyamada]  ID: [qcd4AWkAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Dr_Arivazhagan_RAJENDRAN]  ID: [kgWdQxEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Kaoru_Takara]  ID: [3Nsze_MAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Yudai_Suwa]  ID: [C67-SO4AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Satoshi_Hirata]  ID: [jkUV0t8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_Yamakawa]  ID: [O_DL9gcAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Izuru_Ohki]  ID: [Nr6aD_oAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Jan_Dirk_Schmöcker]  ID: [DIFXh60AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Michio_Nomura]  ID: [SwBgRx8AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Toshiyuki_Ohtsuka]  ID: [inxER_cAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masayoshi_Hata]  ID: [bqtpEs0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_Kudoh]  ID: [ak0sXbYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Katsuaki_Koike]  ID: [7icYO9EAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shiro_Suzuki]  ID: [xW_yrLAAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shuichi_Miyazaki]  ID: [6rzcMYwAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Satoshi_Tsujimoto]  ID: [QSqqmzEAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Adam_Jatowt]  ID: [l2vn9GoAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Katsutoshi_Watanabe]  ID: [jKVTNlYAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Soichi_Ibaraki]  ID: [fA99Oi0AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Madhab_C_Das]  ID: [DLxduRMAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Takahiro_Moriyama]  ID: [Y2zWQ3cAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroshi_Kamitakahara]  ID: [NYlQxvYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Ken_ichiro_Kamei]  ID: [u63wTooAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Ryuhei_Wakasugi]  ID: [j1e9qFUAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hideki_Hirori]  ID: [X7yAMPcAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Ben_McLellan]  ID: [KtpYk4oAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shunsuke_Murai]  ID: [YS5iWkQAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Takashi_Kobayashi]  ID: [c05AK4cAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kakeya_Itsuhiro]  ID: [hLEbCe8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Atsushi_Matsubara]  ID: [AtGRPlkAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Naoya_Osawa]  ID: [nvaBK0gAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Osamu_Nishihara]  ID: [iFI2R2YAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Kenji_Harada]  ID: [WL02S9oAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Ken_Umeno]  ID: [LH8eRMMAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Tomohiro_Kuroda]  ID: [bdKMzcwAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masatoshi_Miyazawa]  ID: [U95royIAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_田窪行則]  ID: [Heq8yJIAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shun_ichi_Azuma]  ID: [HJRr_KcAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Masatoshi_Murai]  ID: [I66ybkoAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Shigeyuki_Koshikawa]  ID: [dY5pujoAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masahito_Hasegawa]  ID: [QLbPVLIAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Hiroaki_Mizuhara]  ID: [iSI_3FgAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Aki_Hiro_SATO]  ID: [p6X4GYYAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Takanori_Ida]  ID: [t4iTioMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Takeshi_Waki]  ID: [ynidnbYAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Hirokazu_Toju]  ID: [hFw1odUAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Masaaki_Nagahara]  ID: [lkD2Vk8AAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Takahiro_Shimada___(嶋田_隆広)]  ID: [nh8fdYQAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Dr_Sanjog_S_Nagarkar]  ID: [lGlk0B8AAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Sunmin_Kim]  ID: [_PYhJDgAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Takayuki_Yamada_（山田_崇恭）]  ID: [ozHKBgMAAAAJ]  Has  uploaded photo.
+University: [Kyoto University]  Name: [Kyoto_Marco_Cuturi]  ID: [kQEydDMAAAAJ]  Has not upload photo.
+University: [Kyoto University]  Name: [Kyoto_Manabu_Tsujimoto]  ID: [GYY7-BsAAAAJ]  Has not upload photo.

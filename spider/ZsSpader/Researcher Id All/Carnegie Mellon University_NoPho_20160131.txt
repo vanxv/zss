@@ -1,0 +1,191 @@
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_John_R_Anderson]  ID: [PGcc-RIAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Krzysztof_Matyjaszewski]  ID: [TSkli5EAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Takeo_Kanade]  ID: [LQ87h3sAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Sheldon_Cohen]  ID: [8xLwgYQAAAAJ]  Has uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_George_Loewenstein]  ID: [8nyQzDsAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Michael_F_Scheier]  ID: [MKjVDG4AAAAJ]  Has uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Christos_Faloutsos]  ID: [nd8lQQIAAAAJ]  Has uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Baruch_Fischhoff]  ID: [GxvFzdcAAAAJ]  Has uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_denise_m_rousseau]  ID: [Y6f6mNMAAAAJ]  Has uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Denise_Rousseau]  ID: [06nqu3sAAAAJ]  Has uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Sara_Kiesler]  ID: [8Qu_gAMAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Junggon_Kim]  ID: [BdRCA9cAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Katia_Sycara]  ID: [TuacnBkAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Tom_Mitchell]  ID: [MnfzuPYAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marcel_Just]  ID: [yxaa_fsAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marcel_Adam_Just]  ID: [6cKXXHwAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ignacio_E_Grossmann]  ID: [fiZryxEAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_E_Kraut]  ID: [HKGYvu4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Brian_MacWhinney]  ID: [V8EhIsIAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Daniel_Nagin]  ID: [YRbB4CgAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_Siegler]  ID: [doVtJ-0AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Yiming_Yang]  ID: [MlZq4XwAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_martial_hebert]  ID: [0ytii2EAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Anind_K_Dey]  ID: [ydA8Q5AAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Qinsi_Wang]  ID: [rWw08U8AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Randal_Bryant]  ID: [AFgYa68AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Mahadev_Satyanarayanan]  ID: [0y6JDD4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Manuela_M_Veloso]  ID: [2FbkAzYAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_F_Davis]  ID: [rW8HHvYAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alexander_Waibel]  ID: [uHwTzpYAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Brad_A_Myers]  ID: [E1cp_aYAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Avrim_Blum]  ID: [Jlv4MR4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Linda_Argote]  ID: [lgaWJAkAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_William_W_Cohen]  ID: [8ys-38kAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marcel_P_Bruchez]  ID: [8SIqR9kAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Lorenz_T_Biegler]  ID: [mQQl9soAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Wei_Hao_Lin]  ID: [PlBXfHEAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jaime_Carbonell]  ID: [uSfaEgUAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_H_Swendsen]  ID: [KoHdmZEAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_E_Kass]  ID: [0y68V1kAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Eduard_Hovy]  ID: [PUFxrroAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Tuomas_Sandholm]  ID: [0DpK1EMAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Garth_Alan_Gibson]  ID: [WYctQAQAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Mary_Shaw]  ID: [CTXoO1AAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Srinivasan_Seshan]  ID: [0irVeiQAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ken_Koedinger]  ID: [_8DDVkAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Bennett__McCallum]  ID: [dD2ErN4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Russell_Schwartz]  ID: [6ArMETUAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_Krackhardt]  ID: [bvG0NJkAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Roberta_Klatzky]  ID: [wUPKh58AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Kathryn_Roeder]  ID: [KPxl53wzvv4C]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_John_F_Nagle]  ID: [a9Boo7wAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Wenjie_Xu]  ID: [g0l1YMcAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Vicki_Helgeson]  ID: [0jpv0HIAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Phillip_Gibbons]  ID: [F9kqUXkAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jim_Herbsleb]  ID: [Q3xxVngAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Michael_Shamos]  ID: [PswI6pYAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Reinhard_A_Schumacher]  ID: [LibSWRMAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Reid_G_Simmons]  ID: [t-VqN7sAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Neil_M_Donahue]  ID: [ILambBMAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Anthony_Rollett]  ID: [K5ja68wAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Pileggi]  ID: [ZGg2s2cAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Christian_Lebiere]  ID: [UWr1yg0AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jason_Hong]  ID: [MoFbcc0AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Lawrence_Pileggi]  ID: [Mm-vQM8AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Anthony_Stentz]  ID: [cnFhxvMAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Randall_Feenstra]  ID: [p1aFEDYAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Dennis_Epple]  ID: [yhiqQhIAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_E_Laughlin]  ID: [WSdMg_4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_Laughlin]  ID: [8w6dQJ0AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alan_W_Black]  ID: [Es-YRKMAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_B_V_K_Vijaya_Kumar]  ID: [3IdSGX8AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Deva_Ramanan]  ID: [9B8PoXUAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ramayya_Krishnan]  ID: [AkvAUzkAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Frank_Pfenning]  ID: [ghWKWBUAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ralph_Gross]  ID: [BtRCOQoAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Metin_Sitti]  ID: [YU4Ce_MAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Tomasz_Kowalewski]  ID: [6VKJW4kAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_C_Plaut]  ID: [Rr847PIAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Bruce_H_Krogh]  ID: [s4yZTp4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_lynne_reder]  ID: [UvDHa2kAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Howie_Choset]  ID: [4fvo61oAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Gregory_Lowry]  ID: [gFZ3W5wAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Rahul_Sukthankar]  ID: [bmZbi_UNs-oC]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_weiwei_huang]  ID: [m5XpESUAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Shirley_Ho]  ID: [fhOi--4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alessandro_Acquisti]  ID: [2XCryp4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_Klahr]  ID: [THMMoLwAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jie_Yang]  ID: [fROFaKgAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Stephanie_Tristram_Nagle]  ID: [PFPNTa4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Seth_R_Flaxman]  ID: [Wnxq0mgAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Matthew_T_Mason]  ID: [D_JpQnAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alan_Russell]  ID: [lATvGKQAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_G_Andersen]  ID: [wUArfPgAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Radu_Marculescu]  ID: [ZCmYP5cAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Michael_McHenry]  ID: [jtorb88AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Scott_E_Fahlman]  ID: [ecNmblAAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_A_Dzombak]  ID: [Dnezdi8AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Onur_Mutlu]  ID: [7XyGUGkAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Roni_Rosenfeld]  ID: [ct3WjtoAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ziv_Bar_Joseph]  ID: [9DCRnPkAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Guy_Blelloch]  ID: [Z6nLCukAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Seth_Copen_Goldstein]  ID: [NoNHPb4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_F_Murphy]  ID: [qQLlBH4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Melih_Ozbek]  ID: [49quCDgAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jamie_Callan]  ID: [Un5KXJ4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Chris_Hendrickson]  ID: [0LqbCKAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Richard_Scheines]  ID: [HlTD6JUAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Mark_Paulk]  ID: [ilY9bPQAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Michael_D_Smith]  ID: [rzPlMfQAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marvin_Goodfriend]  ID: [PKVTpYcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jian_Gang_(Jimmy)_Zhu]  ID: [9bI_N18AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marija_D_Ilić]  ID: [9xLOzFcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Rupert_Croft]  ID: [wex9ft0AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Sanjiv_Singh]  ID: [IxCZDBQAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Gary_K_Fedder]  ID: [JOMYt6gAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_R_Ravi]  ID: [_vjPh4UAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Lee_Weiss]  ID: [am9JUZgAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_William_Scherlis]  ID: [F6LzqwMAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Todd_C_Mowry]  ID: [MYsIXF4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Tai_Sing_Lee]  ID: [9TAiIIMAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Vincent_Aleven]  ID: [ztkfnCsAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Cosma_Rohilla_Shalizi]  ID: [2i_mta4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ge_Yang]  ID: [nSlIK18AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_kannan_srinivasan]  ID: [whB5QDoAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_W_Maly]  ID: [-tI-MAkAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_H_Scott_Matthews]  ID: [YsAG7gkAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_William_Scherlis]  ID: [bwK6NOIAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Di_Xiao]  ID: [d41WKG4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marek_Skowronski]  ID: [IFFsG-oAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Venkatesan_Guruswami]  ID: [Es6jE1kAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_bhiksha_raj]  ID: [IWcGY98AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_John_Hooker]  ID: [gG7M_pIAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Chris_Dyer]  ID: [W2DsnAkAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Richard_Holman]  ID: [cM1a0QYAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Bruno_Sinopoli]  ID: [zZO9qG4AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alexander_Rudnicky]  ID: [axOnEnQAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Carolyn_Penstein_Rose]  ID: [BMydCgcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Sridhar_Tayur]  ID: [abn9WWMAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_J_Andrew_Bagnell]  ID: [7t4jbPQAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Maxim_Likhachev]  ID: [Ic8NqXwAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Barbara_Johnstone]  ID: [R5RtQxAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Christian_Kästner]  ID: [PR-ZnJUAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Mark_Fichman]  ID: [ncF86k4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Aniket_Kittur]  ID: [2vZ5zRQAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alon_Lavie]  ID: [iZEl7j4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_John_Kitchin]  ID: [jD_4h7sAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_James_Antaki]  ID: [61W9XTwAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Fernando_De_la_Torre]  ID: [YB8_6gkAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Srinivasa_Narasimhan]  ID: [MhYrLJAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Martin_Griss]  ID: [TFaxRTYAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Mohammad_F_Islam]  ID: [SL5tv4gAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jennifer_Mankoff]  ID: [mhmvCgsAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Lee_Branstetter]  ID: [SaInRPcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_James_Morris]  ID: [9Y2cn3EAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_Creswell]  ID: [UzpIzvEAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Rohit_Negi]  ID: [ppVNXUsAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Lowell_J_Taylor]  ID: [tuJ3h2kAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Laura_Dabbish]  ID: [DdNAgNwAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Mariana_Vargas_Magaña]  ID: [vvMo3o8AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jon_Peha]  ID: [uhIGX-MAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Yi_Zhang]  ID: [jcl4qT0AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marvin_Sirbu]  ID: [fdXGPJgAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Markus_Deserno]  ID: [1J28ExgAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_David_Brumley]  ID: [O-29z5AAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Burr_Settles]  ID: [HYCeF6QAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Shelley_L_Anna]  ID: [2u09mlAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_James_C_Hoe]  ID: [ZnRhcFUAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Daniel_Huber]  ID: [zlQnPukAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_B_Erik_Ydstie]  ID: [HiNCNyUAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Alonzo_Kelly]  ID: [W7yeGUoAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ragunathan_(Raj)_Rajkumar]  ID: [6JU9KqgAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Burcu_Akinci]  ID: [5VQf2cgAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jonathan_Aldrich]  ID: [AzHmOtcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Brooke_Feeney]  ID: [bHhd428AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Allan_L_Fisher]  ID: [V5-wYX0AAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Michael_Christel]  ID: [9gdkXgcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Marc_DeGraef]  ID: [ZTnog9YAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Steve_Collins]  ID: [eF5vfBAAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Edward_Fredkin]  ID: [5QMmygwAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Matthew_G_Walker]  ID: [IcEsJfAAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Jack_Mostow]  ID: [P0Mv6pIAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Charles_Kemp]  ID: [Zbo61UMAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Priya_Narasimhan]  ID: [qyPWUBcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Michael_Christel]  ID: [9YufRp4AAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_A_Miller]  ID: [1qae7OsAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Anthony_Tomasic]  ID: [ybfAUpsAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Ting_Liu]  ID: [hG3iRAMAAAAJ]  Has not upload photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Vyas_Sekar]  ID: [5V852JcAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Robert_M_Suter]  ID: [jF3_kJEAAAAJ]  Has  uploaded photo.
+University: [Carnegie Mellon University]  Name: [CarnegieMellon_Steven_Rudich]  ID: [qLuAbhMAAAAJ]  Has not upload photo.

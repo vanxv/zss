@@ -1,0 +1,188 @@
+University: [Osaka University]  Name: [Osaka_Junqiu_Wang]  ID: [0tmalKMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Jingwei_Wang]  ID: [XXdqASGf8VwC]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hiromi_Yamashita]  ID: [vssDIwsAAAAJ]  Has uploaded photo.
+University: [Osaka University]  Name: [Osaka_Zhe_Zhang]  ID: [ia2q8OMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takeshi_Noda]  ID: [hhp0awkAAAAJ]  Has uploaded photo.
+University: [Osaka University]  Name: [Osaka_Isao_Tanihata]  ID: [eWoDSP0AAAAJ]  Has uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hiroshi_Toki]  ID: [HzNNR_AAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Nakamura_Haruki]  ID: [nNnAHuwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masahito_Ikawa]  ID: [AM4gdngAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_H_Katayama_Yoshida]  ID: [VaJrvsAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Kazutaka_Katoh]  ID: [RA-XeqIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hiroshi_Katayama_Yoshida]  ID: [67PnpsUAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yoshishige_Suzuki]  ID: [5PTxsRwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_M_Asada]  ID: [eG10MqcAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Akira_Shinohara]  ID: [qux1-fcAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Toshimichi_Fujiwara]  ID: [jgbWLTIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hidetoshi_Shimodaira]  ID: [LvoIaIsAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hiroaki_Nishimura]  ID: [w-2jJYoAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Izumi_Ohzawa]  ID: [wSOtDZkAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Ryota_Hashimoto]  ID: [8tfXKQkAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masayoshi_Tonouchi]  ID: [ef1T1nsAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hideo_Matsuda]  ID: [0uA2DM8AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Nobuyuki_Imoto]  ID: [-fZ1CoIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kazuaki_Yoshikawa]  ID: [IG0B0uQAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Charles_Yuji_Horioka]  ID: [l_l3FUUAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tadao_Nagatsuma]  ID: [HTc41oQAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Mitsutaka_Okumura]  ID: [qT8rUsAAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Katsuro_Inoue]  ID: [S1iG5sAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tatsuo_Fukagawa]  ID: [IWqjc9cAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kazuyoshi_Itoh]  ID: [dTQ3q1YAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Katsuya_Shimizu]  ID: [eOjNdYIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masayoshi_NAKANO]  ID: [uV_gRvUAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Atsushi_Nakagawa]  ID: [hoNWV8gAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Eiichiro_Fukusaki]  ID: [39WjjzEAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yoshitada_Morikawa]  ID: [Sv5UTF8AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hideaki_Takabe]  ID: [_IJ9JjsAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hiroshi_Miyasaka]  ID: [XFjHQW0AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Shoji_Tajima]  ID: [gL9iTSMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kaori_Hirahara]  ID: [6FIyy-0AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hiroki_Nishida]  ID: [_P1tnAQAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yasushi_Yagi]  ID: [byuA_UEAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Koh_Hosoda]  ID: [5ledxpAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Akira_Sakai]  ID: [JhwqNoIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Haruo_Takemura]  ID: [iiYmQ9YAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Keisuke_Shigemori]  ID: [cYH-lOYAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_yoichi_takenaka]  ID: [a47DKBQAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masahiro_Inuiguchi]  ID: [WlJzuZAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Daron_Standley]  ID: [2PNZxpQAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Satoshi_Hamaguchi]  ID: [vO7cZPwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takahiro_Hara]  ID: [Ly6jrBoAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Takashi_KUBO]  ID: [Yyk5UXAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yutaro_Kumagai]  ID: [nEUjacUAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yasushi_Umeda]  ID: [j8wy9LEAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Ichiro_Fujita]  ID: [amerMDcAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hiroshi_Ajiki]  ID: [UfQ7EugAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hiroshi_Shimizu]  ID: [q8MRoisAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Akihito_Hashidzume]  ID: [VUJlfpMAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shin_ichi_Kimura]  ID: [_mUo_I4AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shinsuke_FUJIOKA]  ID: [iuKWYEsAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shusuke_Yamanaka]  ID: [TxGpvFkAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yasutaka_Kitagawa]  ID: [FrH_bqAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tomoko_Kubori]  ID: [Im3vnoIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hidetomo_Usui]  ID: [sskZZukAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yutaka_Fujita]  ID: [o9NU3XMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Norihito_Shintani_/_新谷_紀人]  ID: [pEwmxB4AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Satoshi_Fujimoto]  ID: [G4YFwqYAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tetsuya_Tsuda]  ID: [v1-lohgAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_SHIGENOBU_OGATA]  ID: [eCaGi_sAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tatsushi_Nishi]  ID: [O31vd7kAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Alexey_Taskin]  ID: [GhpVE0YAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Isao_Suetake]  ID: [p70oQl8AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Mitsunori_Fukuda]  ID: [SpdRcjwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yasuhisa_Mizutani]  ID: [sGhT0F0AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yoshinobu_Kitamura]  ID: [FDAHzXYAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yu_Takano]  ID: [jzPVu9IAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Toshiya_Muranaka]  ID: [ksc4fuUAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Ryouhei_Ishii]  ID: [5flKPJMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Nobuya_Mori]  ID: [GTd_WEIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_山田雅司]  ID: [AR7-fCEAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kentaro_Nagamine]  ID: [VGZNhicAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shigeto_Seno]  ID: [rL6QQ1QAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tetsuya_Takine]  ID: [OUTgeB0AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Kazunori_Komatani]  ID: [hP1hn98AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Takayoshi_Sano]  ID: [EWPKSUsAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Youichi_Sakawa]  ID: [5r6PBrcAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Koji_Hashimoto]  ID: [Mmva544AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Chojiro_Kojima]  ID: [YseBfjQAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Fumio_Ohtake]  ID: [y_8ft4wAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kei_Hirai]  ID: [9-lPvhMAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Kohei_Hamaya]  ID: [DeyiFuMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Teruo_Higashino]  ID: [dkN3IYgAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Prabhat_Verma]  ID: [cj7p3SEAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shinji_Sakai]  ID: [BWAuiywAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tadashi_Nakano]  ID: [-gzOQnYAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yukio_Ago]  ID: [Zz_lMbIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Masae_Kuboniwa]  ID: [jr2nZRcAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takeshi_Omasa]  ID: [0blM2C0AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yoshihiro_Kamada]  ID: [Gg28yLIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Alexei_Zhidkov]  ID: [Mgw4ddMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takayuki_Hamano]  ID: [laHtqh4AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kiyoshi_Kiyokawa]  ID: [Za5kSocAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Takeshi_Sugahara]  ID: [HtU1z2EAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takeshi_Mizushima]  ID: [CBoVDcEAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yoshiyasu_Ono]  ID: [CQ1i-q4AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Shota_Nakamura]  ID: [AuiInXQAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tomoo_Ushio]  ID: [ozXVUEkAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_zhaoke_zheng]  ID: [qGxdGQwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Taishin_Nomura]  ID: [J6Xgq-AAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takao_Onoye]  ID: [Ln4-4eAAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tomoaki_Matsuura]  ID: [UCpLbHYAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Toshimitsu_Masuzawa]  ID: [kzkqyg8AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Ken_Terao　(寺尾_憲)]  ID: [x7qggwcAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hajime_Yoshino]  ID: [DcbWJ0UAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Naomi_Kato]  ID: [XmLakNkAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Kiyoko_Makimoto]  ID: [Q5YlzS4AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Masanori_Hashimoto]  ID: [sRfe3mgAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shigeki_Tokita]  ID: [Xzn60xEAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Kanoh_J]  ID: [BIyOQZMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takeshi_Sato]  ID: [0zxC1VMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Satoshi_Yukawa]  ID: [aEJiKhAAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Osamu_Urakawa]  ID: [qfE47_4AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Ayako_Isotani]  ID: [SsMgW-YAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Takuro_Nakagawa]  ID: [FJUVoAkAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Noriaki_Matsushima]  ID: [a2cQrDcAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Keisuke_Morishima]  ID: [mvQQ4qkAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Keisuke_UENISHI]  ID: [NaUiZhIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Shinpei_Yamaguchi]  ID: [nAZgH6UAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Iwao_Kawayama]  ID: [1AZfMkIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kohsuke_Honda]  ID: [DrIo-fUAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hideyuki_Nakanishi]  ID: [PL-7J4UAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_shinji_shimojo]  ID: [Lh8xk14AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tatsuhiro_Tsuchiya]  ID: [HbZ9G7IAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shuji_Tachibanaki]  ID: [5LpnpUwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Van_An_Dinh]  ID: [hnDC51IAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yasushi_Makihara]  ID: [0Nsl3HUAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tatsuhiro_Tsuchiya]  ID: [JaqO-dIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Koji_Tsubakimoto]  ID: [xSs7RqAAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Haruto_ISHIKAWA]  ID: [mK50TvYAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Kozaki_Kouji]  ID: [ppDfjoIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hiroshi_Kinoshita]  ID: [d2a7SwkAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Nicolas_Pavillon]  ID: [Lle-khoAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Shigemasa_Takai]  ID: [7zjGs4EAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hisashi_Serizawa]  ID: [LOr4icQAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Shohei_SHIMIZU]  ID: [OpLI4xcAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hirotaka_Koga]  ID: [xVNnIswAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Ken_Kiyono]  ID: [PWjp53oAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yuichi_Itoh]  ID: [ZIj-RTkAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yukie_Nagai]  ID: [HqTUx7YAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Ken_Kiyono]  ID: [U_5Z_70AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tatsuo_Nishitani]  ID: [SUVqZKcAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masakazu_TANE]  ID: [D1Z_F_wAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hirozumi_Yamaguchi]  ID: [pUpK9hYAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Akihiro_Nakatani]  ID: [G7JWaPIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yutaka_Maruyama]  ID: [4vkVQnAAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yasuhiro_Mukaigawa]  ID: [oI5TxzsAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Ryoichi_HORISAKI]  ID: [Ubba3VMAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Toru_Saito]  ID: [PslFm5AAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_George_Hasegawa]  ID: [TG6Bt9EAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Tsuyohito_Ito]  ID: [NEZVsMYAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yuichiro_Fujiwara]  ID: [OTLVOgIAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yuhkoh_Satouh]  ID: [jGBznJcAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Katsunori_Yoshikawa]  ID: [qAvu0coAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masaki_Nakahata]  ID: [qScyZg8AAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Fumihiko_Ino]  ID: [uBAdxGEAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tsuyoshi_Morita]  ID: [q7TbspYAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hiroufmi_Suzuki]  ID: [gF_AzPgAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yuki_Yoshida]  ID: [naZ4C1wAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Yoichi_Otsuka]  ID: [vREoiS0AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Masahito_Mihara]  ID: [xHDkM0cAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yutaka_Nakamura]  ID: [iyhUqkQAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Shijo_Nagao]  ID: [LC6UqMwAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hui_Wang_Cui]  ID: [SGxYT2YAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Fan_Yang]  ID: [spk2f6sAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Shigehiro_Serizawa]  ID: [dH1ndfsAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_HIROSHI_MORITA]  ID: [EwlFoXIAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Naohiro_Matsumura]  ID: [vGwvjb0AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Diego_Diez]  ID: [DmQLj7gAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Masato_Wakeda]  ID: [Pta_xHMAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Tomoki_Yoshihisa]  ID: [oYcc778AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Koichi_Fujimoto]  ID: [DiHpVKwAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Yasuko_Osakada]  ID: [fMLFaqQAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Hajime_Kimizuka]  ID: [GePh9OEAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Joji_Mima]  ID: [YFda51AAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Zhan_Jin]  ID: [bhH-os0AAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Andree_Hubber]  ID: [6ftgDqgAAAAJ]  Has not upload photo.
+University: [Osaka University]  Name: [Osaka_Hiroaki_Sandoh]  ID: [CISUdyUAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Nobuchika_Sakata]  ID: [bEXv1VYAAAAJ]  Has  uploaded photo.
+University: [Osaka University]  Name: [Osaka_Jun_Ando]  ID: [M9fnK9EAAAAJ]  Has  uploaded photo.

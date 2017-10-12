@@ -1,0 +1,195 @@
+University: [University of California Los Angeles]  Name: [UCLA_Peter_M_Bentler]  ID: [esb4VbgAAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Edward_L_Wright]  ID: [0rlyyTwAAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Michael_Phelps]  ID: [7duynOgAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_David_S_Eisenberg]  ID: [DLXzRi8AAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Judea_Pearl]  ID: [bAipNH8AAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Ron_D_Hays]  ID: [M_UF6MgAAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Tomas_Ganz]  ID: [qpIfQNcAAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yang_Yang_(楊陽)]  ID: [ceCfTvcAAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Harold_Demsetz]  ID: [ZVUFe_UAAAAJ]  Has uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Lixia_Zhang]  ID: [CZyWk8kAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Bernard_Weiner]  ID: [W4DnOKgAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Demetri_Terzopoulos]  ID: [pKuBFaQAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Terence_Tao]  ID: [TFx_gLQAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Dan_Geschwind]  ID: [0GdjrfYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Leonid_Kruglyak]  ID: [nww4HVUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Daniel_Geschwind]  ID: [oVjEiVkAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Patricia_A_Ganz]  ID: [EWd7dyUAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Mani_Srivastava]  ID: [X2Qs7XYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Katsushi_Arisaka]  ID: [NWKOsDQAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Robert_I_Lehrer]  ID: [5XqwBRcAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Lieven_Vandenberghe]  ID: [WLptLzgAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_William_M_Pardridge_MD]  ID: [VTfGghUAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Peter_Tontonoz]  ID: [4rDv_MAAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Tatsuo_Itoh]  ID: [ADSxFAQAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Harry_V_Vinters]  ID: [Fa_PDB0AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Chunqing_Lin]  ID: [0x1JDU8AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Sebastian_Edwards]  ID: [f7k5lWUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yuanhao_Chen]  ID: [X075llEAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Shimon_Weiss]  ID: [pFLEH24AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Keith_Holyoak]  ID: [hAg_qXEAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_SHIMON_______________WEISS]  ID: [O6WepQgAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_T_Mark_Harrison]  ID: [tsaCqu8AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Emeran_A_Mayer_MD]  ID: [8AZjP3MAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Gang_Li]  ID: [j3lq2jQAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Andre_Nel]  ID: [975yvVwAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Steven_E_Jacobsen]  ID: [_bACLswAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_John_Heritage]  ID: [hjsl6bcAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Eduardo_Schwartz]  ID: [YTCnA4EAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Behzad_Razavi]  ID: [D3k39fMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Allen_J_Scott]  ID: [K7Pn97sAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Robert_M_Kaplan]  ID: [WYcS6eAAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Xiangfeng_Duan]  ID: [rw_uaoQAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Lynne_G_Zucker]  ID: [u3yBiQUAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Robert_Elashoff]  ID: [E1Ltp5AAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Gregory_Cole]  ID: [qcnL7hsAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_GEORGE_GRUNER]  ID: [1mgA1YgAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_ivo_welch]  ID: [QYb3tbYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jeffrey_I_Zink]  ID: [fcPa-3QAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Michael_Fanselow]  ID: [icxDcwkAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Stan_Nelson]  ID: [gurKt_QAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_elinor_ochs]  ID: [v2Ib2YUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Steve_Horvath]  ID: [mEM8q5cAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Joan_Selverstone_Valentine]  ID: [jW7rZCcAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Alan_Yuille]  ID: [FJ-huxgAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Marco_Iacoboni]  ID: [wZk7sZcAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Songwu_Lu]  ID: [PVdTviYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_James_K_Gimzewski]  ID: [HuTiCaQAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Alcino_J_Silva]  ID: [XFLfPIwAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Hong_Wu]  ID: [vF-La7EAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Mark_R_Morris]  ID: [szfNAeEAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Hongjie_Zhang]  ID: [JHPCQ3QAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Irwin_MR;_Irwin_M]  ID: [rhvMO-0AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Avanidhar_Subrahmanyam]  ID: [bCf2Yk8AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Rogers_Brubaker]  ID: [whihIW8AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_You_Sheng_Lin]  ID: [4W5MbXkAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Kenneth_Lange]  ID: [AG6N6KMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Stephen_G_Young]  ID: [ZweaJTMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jack_W_Chen]  ID: [r1J4K7kAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Steven_G_Clarke]  ID: [GAO_BdUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_John_Kim]  ID: [yup9q7gAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yahya_Rahmat_Samii]  ID: [odoaZuAAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_James_N_Weiss_MD]  ID: [ysFa3pIAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Amit_Sahai]  ID: [gqB23VMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Arthur_P_Arnold]  ID: [aiMWCUwAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yu_Huang]  ID: [yEmTuycAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Adrienne_S_Lavine]  ID: [X7mvvgYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Michael_Ghil]  ID: [8KDiiDUAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Zili_Liu]  ID: [xB18jGcAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Daniel_Wallace]  ID: [V9wtZWIAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Chih_Ming_Ho]  ID: [pOr5d7AAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Francis_Longstaff]  ID: [WMXMWYcAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Patricia_M_Greenfield]  ID: [oPWLcqwAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_sw_french]  ID: [g8asLu4AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Roel_A_Ophoff]  ID: [Od-MfB0AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yunfeng_Lu]  ID: [iNFvy3cAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Neil_A_Martin_MD]  ID: [LYQvDRIAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_SAMUEL_W_FRENCH]  ID: [4pLFQNAAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Wei_Wang]  ID: [UedS9LQAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Todd_O_Yeates]  ID: [vuAMQKYAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Matthew_Lieberman]  ID: [BbxU8lwAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Richard_Thorne]  ID: [SBk1vXsAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Tian_Xia_MD_PhD]  ID: [z8Qoj7wAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Rafail_Ostrovsky]  ID: [UvFrX04AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jack_L_Feldman]  ID: [7VU42UMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_James_C_Liao]  ID: [Qi06GzQAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Scott_G_Filler]  ID: [vgRGifIAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_James_W_Stigler]  ID: [80WtxD0AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_An_Yin]  ID: [BL8f0VsAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Barbara_Knowlton]  ID: [a508bl0AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Sally_Frautschy]  ID: [JX-WGEgAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yiping_Fan]  ID: [zUCMuvUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Peter_C_Butler]  ID: [7lLyrLkAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Marc_A_Suchard]  ID: [vF2UV4MAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_James_W_Stigler]  ID: [UJ2nXWQAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Eleazar_Eskin]  ID: [VBXG4CwAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_David_Miklowitz]  ID: [RIcU35EAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_matteo_pellegrini]  ID: [TT_duF0AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Thomas_Bradbury]  ID: [hiERaYwAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_MICHAEL_JERRETT]  ID: [kGJfHkUAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Algirdas_Avižienis]  ID: [ujXEG6oAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jeffry_R_Alger]  ID: [sut9q2YAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Hiroyasu_Furukawa]  ID: [SXJCtxsAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Lonnie_Zeltzer]  ID: [iWoVzjEAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Bruce_Hayes]  ID: [85b9nTGMz8sC]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Patrick_Kupelian]  ID: [VvvmU9YAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Bahram_Jalali]  ID: [BjGZb8oAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_William_M_Gelbart]  ID: [8OLDE3wAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_John_Riley]  ID: [1-FCsR4AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Donald_Treiman]  ID: [DYZUS1wAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Arnold_Harberger]  ID: [O2ojRbEAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Richard_R_Muntz]  ID: [e9OxXgwAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_PAUL_M_VESPA]  ID: [IaL6GHoAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Chang_Jin_&quot;CJ&quot;_Kim]  ID: [FAS0l4YAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_yibin_wang]  ID: [YUb-nMsAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jan_de_Leeuw]  ID: [Ccp--gIAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Zhiwei_Xu]  ID: [rXdk0PwAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Beate_R_Ritz]  ID: [y-qehhIAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_J_Agnew]  ID: [aaBqW94AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Philip_W_Rundel]  ID: [Y-KJRwoAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Akhil_Gupta]  ID: [PZaJ3mgAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Barry_Merriman]  ID: [jbCLgAkAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_David_Jewitt]  ID: [AZZ0PqYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Roger_Waldinger]  ID: [GvSYk80AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_song_chun_zhu]  ID: [Al8dyb4AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Gary_Orfield]  ID: [ezhZReQAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Steve_Reise]  ID: [FDv7ZYAAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jingsheng_Jason_Cong]  ID: [UVGe0gQAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Thomas_B__Smith___]  ID: [9CC9gHoAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_G_M__MacDonald]  ID: [V9bLXZoAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_J_David_Neelin]  ID: [ytRqlfcAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Romain_Wacziarg]  ID: [u_-T7RIAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Larry_Simpson]  ID: [bhxG3YsAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_C_Joshi]  ID: [47YEY-4AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Bruce_F_Chorpita]  ID: [5QWukW8AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Alan_Garfinkel]  ID: [cfdcgXcAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_DT_Blumstein]  ID: [cFbbY_gAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Panagiotis_D_Christofides]  ID: [i6OT2lkAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jonathan_M_Tobis]  ID: [ss0TXlwAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_William_A_V_Clark]  ID: [5MDX4RMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Xavier_Michalet]  ID: [eFXociIAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Robert_D_Mare]  ID: [R77Xmr0AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Seung_Hoon_Lee]  ID: [KniqC44AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Naomi_I_Eisenberger]  ID: [lr7BC-QAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_majid_sarrafzadeh]  ID: [LYt_4uIAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Alessandro_Duranti]  ID: [_SVCYFJyM18C]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Thomas_R_Belin]  ID: [azGB_bcAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Sherven_Sharma_PhD]  ID: [B1ISfe8AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Christopher_S_Tang]  ID: [Kk-QbksAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Bruce_Dobkin]  ID: [QzRgZsoAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Michael_Ross]  ID: [YjnagkEAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Roger_S_Lo]  ID: [p9tXFUwAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Sushil_Bikhchandani]  ID: [uJ4jxxwAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_JEFFREY_M_SCHWARTZ]  ID: [9euqeU0AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Jason_Ernst]  ID: [XoMpU7gAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_David_Elashoff]  ID: [rs3M7_AAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Eric_M_V_Hoek_PhD]  ID: [VtCQ_PoAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Andrew_J_Fuligni]  ID: [MQScMDkAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yongkang_Xue]  ID: [a6CCWdMAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Daniel_Treisman]  ID: [p9BcO30AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Daniel_Treisman]  ID: [rFEk49YAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Junghoo_Cho]  ID: [DSLquxEAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_jie_lu]  ID: [-EOmGlUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Wotao_Yin]  ID: [kpQGGFUAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Peng_Li]  ID: [6Fei8D4AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_KATHERINE_L_NARR]  ID: [cXPscXUAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Ilan_H_Meyer]  ID: [vMVLfxcAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Ya_Hong_Xie]  ID: [feNboL4AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Richard_E_Korf]  ID: [LsuWoRoAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_James_Tidball]  ID: [oclouSEAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_DIMITRIOS_ILIOPOULOS]  ID: [14YcD9oAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Carlo_Zaniolo]  ID: [f8FjAtMAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Christian_Altenbach]  ID: [iGMo_gcAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yongkang_Xue]  ID: [ow48XH4AAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Ziruo_Hong_(洪自若）]  ID: [6BR8o2cAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Yan_Y_Kagan]  ID: [_twbr4UAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Kevin_D_McKeegan]  ID: [696ypCAAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Marvin_Lieberman]  ID: [4kU8ZykAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Eric_Miller]  ID: [i-xQua8AAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Julian_Whitelegge]  ID: [-mBe8EYAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Hsian_Rong_Tseng]  ID: [ZEd9xNoAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_David_S_Williams]  ID: [1yDyzbYAAAAJ]  Has not upload photo.
+University: [University of California Los Angeles]  Name: [UCLA_Mihaela_van_der_Schaar]  ID: [DZ3S--MAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_Vwani_Roychowdhury]  ID: [DRouXxsAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_David_Haake]  ID: [KREI_OoAAAAJ]  Has  uploaded photo.
+University: [University of California Los Angeles]  Name: [UCLA_shlomo_benartzi]  ID: [wiAHVicAAAAJ]  Has not upload photo.

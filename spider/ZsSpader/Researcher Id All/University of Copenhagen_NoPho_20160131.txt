@@ -1,0 +1,173 @@
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Søren_Johansen]  ID: [xudndFUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Oluf_Pedersen]  ID: [RCb5o70AAAAJ]  Has uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Arne_Astrup]  ID: [bmq9NToAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Michael_J_Davies]  ID: [KI-wLnYAAAAJ]  Has uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kristian_Helin]  ID: [sjBhDZYAAAAJ]  Has uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jesper_V_Olsen]  ID: [Lm42fWcAAAAJ]  Has uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jan_H_Jensen]  ID: [lOz-SVQAAAAJ]  Has uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Albert_Gjedde]  ID: [Vg3obbcAAAAJ]  Has uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Albert_Gjedde]  ID: [X0eXGEwAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Charles_M_Marcus]  ID: [ift9VLcAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Michael_J_Davies]  ID: [xqtUcc4AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Professor_Kim_F_Michaelsen]  ID: [rdKDB1sAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Frederik_Orellana]  ID: [gzZLxgsAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Niels_Tommerup]  ID: [2o7SnG8AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Albin_Sandelin]  ID: [LogVjoAAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Christian_Holm_Christensen]  ID: [LpAiccgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ole_Wæver]  ID: [VHZXwMwAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Rasmus_Bro]  ID: [gW_FGdQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jan_Ambjorn]  ID: [Jt7gwsYAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Eske_Willerslev]  ID: [SLVtfioAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Eugene_Polzik]  ID: [dXmbUEAAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kenn_Gerdes]  ID: [pCu8ejYAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kenn_Gerdes]  ID: [HNZgVLsAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_M_Thomas_P_Gilbert]  ID: [3LFRpqYAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thor_Grundtvig_Theander]  ID: [2vU1SowAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kim_Sneppen]  ID: [LIBL6nQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kaj_Sand_Jensen]  ID: [cXg0NYQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Prof_SM_Moghimi]  ID: [hK1RM-4AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Mikkel_Thorup]  ID: [UPBuOPIAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jan_Rossmeisl]  ID: [-4KYdZwAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jacobus_J_Boomsma]  ID: [QhbO4ggwbZkC]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ulrik_Gether]  ID: [iruN8lUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Andrew_D_Jackson]  ID: [9SU9wKcAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jacob_Weiner]  ID: [7tP7ZvQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jan_K_Schjoerring]  ID: [ZhzVMo8AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Mogens_H_Jensen]  ID: [bHTmvNkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Anders_H_Lund]  ID: [aHR-xWgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Poul_Olesen]  ID: [rda2ozIAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Michael_Kühl]  ID: [Nfg82gMAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Cornelis_J_P_Grimmelikhuijzen]  ID: [D9Bi6J8AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Rades]  ID: [jangS5sAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Birger_Lindberg_Møller]  ID: [okLB8vkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Erik_Lykke_Mortensen]  ID: [Kg3iDvkAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Manimozhiyan_Arumugam]  ID: [25-_aRgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Birger_L_Møller]  ID: [0EjRlsYAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Else_K_Hoffmann]  ID: [Y4z2O0sAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lars_Hviid]  ID: [F47sdScAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kurt_V_Mikkelsen]  ID: [YX25clEAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_thomas_scheike]  ID: [396gufYAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ole_John_Nielsen]  ID: [ys633EMAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Søren_J_Sørensen]  ID: [HlNN0OQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Birger_Hjørland]  ID: [MUtqG2wAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Niels_Henrik_Holstein_Rathlou]  ID: [08YXX00AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Henrik_Hansen]  ID: [5GPHH9EAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Flemming_Dela]  ID: [fmfsN-oAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hans_Thybo]  ID: [j4gFTVsAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jes_Kristian_Jørgensen]  ID: [CbUV72IAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Anders_Svensson]  ID: [yLr1hVcAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Carsten_Wiuf]  ID: [38cb5XQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Nathan_Sanders]  ID: [lJidUkQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Finn_Diderichsen]  ID: [XCBeVSgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Matthias_Arenz]  ID: [rP5LTLEAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Michael_Gajhede]  ID: [ap7l-ywAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Søren_Brøgger_Christensen]  ID: [PBrIMt4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hans_Bräuner_Osborne]  ID: [SZiockkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Marie_Luise_Soes_Bisgaard]  ID: [pEm4k_UAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Christian_Mølgaard]  ID: [ZonFDToAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_jorn_hounsgaard]  ID: [wgG7380AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Joerg_P_Kutter]  ID: [Aj0TC4oAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Stefan_Olsson]  ID: [2P7fbCQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ludovic_Orlando]  ID: [zSlox0oAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Pape]  ID: [bTf1p9MAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Claus_Bundesen]  ID: [sxMHMx4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ian_Manners]  ID: [47vM7bwAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Stephan_P_A_Sauer]  ID: [nSDleHMAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Per_Juel_Hansen]  ID: [ZA3QKxEAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Michael_Storey]  ID: [kqxVPYIAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Alexander_Schulz]  ID: [p4wWXe8AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jens_Borum]  ID: [-B6PBXoAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Karen_Skriver]  ID: [F3J3NdwAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Karen_Skriver]  ID: [hAlTPBEAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Keld_West]  ID: [3ddbhz4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lars_Stoumann_Jensen]  ID: [mVL4R2QAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Anders_Albrechtsen]  ID: [20oVxFsAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Barbora_de_Courten]  ID: [gCn04a0AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jukka_Rantanen_professor_PhD]  ID: [GIjMNwIAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Benny_Lautrup]  ID: [_5JkAj4AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Helle_Waagepetersen]  ID: [TVMQ-uIAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Karl_Bang_Christensen]  ID: [7q4maCQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jørn_Wulff_Helge]  ID: [oq6hvbQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Peter_Brodersen]  ID: [t4piG_8AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ben_Rosamond]  ID: [r6ZcX-cAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Klaus_Mosegaard]  ID: [bTZCvSsAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Christian_Igel]  ID: [d-jF4zIAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_A_Mullertz]  ID: [IOwH0-MAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jorge_Ruiz]  ID: [fUhOJfoAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Anette_Mullertz]  ID: [hgMLEmUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kasper_Hornbæk]  ID: [Tb_3GlgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kasper_Hornbaek]  ID: [S6VMDA8AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Andrew_D_Bond]  ID: [szsLYi4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Soren_Tvorup_Christensen]  ID: [1e5qRHkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Mari_Anne_Newman]  ID: [Rq5eHsUAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Henrik_Christensen]  ID: [yQAWiB4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hans_Houe]  ID: [tJWr6dIAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jørgen_Eilenberg]  ID: [838sUfkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Søren_Hansen]  ID: [r3Rs62gAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Maurice_Ptito]  ID: [1wUKItQAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Qunxin_She]  ID: [f1prOi0AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Pawel_Winter]  ID: [akQtjYcAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Alexander_Gerds]  ID: [GmRe1_gAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jakob_R_Winther]  ID: [caLvkqQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Waleed_Abu_Al_Soud]  ID: [NA9WidoAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Matthias_Christandl]  ID: [IcOC-2sAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Niels_Ulrik_Frigaard]  ID: [HXYKtl4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jakob_Balslev_Sørensen]  ID: [13SicpoAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Claus_Felby]  ID: [p0jSAJoAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Morten_Hertzum]  ID: [_R4VNRwAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lars_Vesterdal]  ID: [IEaAJcgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lasse_Riemann]  ID: [D3xG8pUAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Mette_Schmidt]  ID: [9GfS7K0AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_David_Nogués_Bravo]  ID: [6ll9rWcAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ali_Salanti]  ID: [7oElXKcAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Bente_Merete_Stallknecht]  ID: [v63LesUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Anders_Johannes_Hansen]  ID: [rpQLiLEAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Axel_Kornerup_Hansen]  ID: [YPxrbA4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lotte_Lauritzen]  ID: [jZh9toMAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lene_B_Oddershede]  ID: [y7VDT38AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Lotte_Holm]  ID: [Gl5Lmh1arI0C]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Mads_Bak]  ID: [sq-FuWUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Leila_Lo_Leggio]  ID: [SeUlcN0AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Martin_V_Sørensen]  ID: [-w3qGQ4AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_steen_dissing]  ID: [MBRvn5UAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Pape]  ID: [z8HnNNUAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Anna_Jonsson]  ID: [RVhEYTMAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Brian_Grout]  ID: [SaqAbQgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Pape]  ID: [eW-ubMEAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hanne_Frøkiær]  ID: [fKP0t-EAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Jespersen]  ID: [9TvQEHgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Finn_Kensing]  ID: [m_e3GYkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jørgen_K_Kanters]  ID: [lKVKQ6gAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Birthe_B_Kragelund]  ID: [uz9v5MgAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Brian_Odlaug]  ID: [G0y69kQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Mads_Nielsen]  ID: [2QCJXEkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Fulai_Liu]  ID: [jRVYy-gAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Tue_Hassenkam]  ID: [vaDKxl8AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Thomas_Hamelryck]  ID: [YoTlzjkAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Kristian_Thorup_Kristensen]  ID: [uvvd428AAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ole_Pedersen]  ID: [d7l_QfYAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Paula_F_Campos]  ID: [uB-IJX4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Niels_Daugbjerg_PhD]  ID: [Jdb4YxYAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jan_Philip_Solovej]  ID: [7EwzGuEAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Ole_Mertz]  ID: [J0Ql-JwAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hans_Joerg_Trenz]  ID: [kJESpNgAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Marleen_de_Bruijne]  ID: [7kTk3LUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_yvonne_due_billing]  ID: [sy5Y0sUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Gary_Shaffer]  ID: [edGHYcEAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jens_C_Rekling]  ID: [R6syIWgAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Stig_Hjarvard]  ID: [uA8Ja9MAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Annie_Høgh]  ID: [I7C3cu4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jens_J_Led]  ID: [_LmABBQAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Andre_Chwalibog]  ID: [gGHqFfqrqYYC]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Erik_Hviid_Larsen]  ID: [pC5DyW4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Nina_Lundholm]  ID: [D_UitlUAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Claus_B_Jorgensen]  ID: [KbVLM5MAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Gertrud_Pfister]  ID: [1TlhftgAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Morten_Pejrup]  ID: [TdmY1I0AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Aimee_T_Classen]  ID: [8Hmz_P4AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Carl_Johan_Dalgaard]  ID: [0EhfJ8UAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hogni_Weihe]  ID: [5FaAD9AAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Camilla_Foged]  ID: [sGWIgNwAAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Jesper_Bendix]  ID: [r8eWpGEAAAAJ]  Has not upload photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Hans_Henrik_Bruun]  ID: [rg4liP8AAAAJ]  Has  uploaded photo.
+University: [University of Copenhagen]  Name: [UniversityCopenhagen_Bo_W_Laursen]  ID: [pY318osAAAAJ]  Has not upload photo.

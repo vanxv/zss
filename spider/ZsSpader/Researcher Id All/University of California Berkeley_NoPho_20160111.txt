@@ -1,0 +1,183 @@
+University: [University of California Berkeley]  Name: [Berkeley_Lotfi_A_Zadeh]  ID: [S6H-0RAAAAAJ]  Has uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_George_Lakoff]  ID: [KEU0vpcAAAAJ]  Has uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Alexei_V_FILIPPENKO]  ID: [dTpeWooAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Paul_Alivisatos]  ID: [uzbKuXAAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_J_Teece]  ID: [RVsEj5EAAAAJ]  Has uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ross_Levine]  ID: [XizBm0kAAAAJ]  Has uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ross_Levine]  ID: [POPJ1kkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_chenming_hu]  ID: [AydvDQ0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_CULLER]  ID: [urTiL7QAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Leo_Breiman_1928_2005]  ID: [mXSv_1UAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Michael_B_Eisen]  ID: [z2foFg4AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jitendra_Malik]  ID: [oY9R5YQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Steven_G_Louie]  ID: [m0u9N18AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_christos_papadimitriou]  ID: [ZDvxbWYAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Patterson]  ID: [Wj4ZBFIAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Christos_H_PAPADIMITRIOU]  ID: [rXYLXJMAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Randy_Katz]  ID: [PkfChMgAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_P_Huelsenbeck]  ID: [rQ0w89cAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_ramamoorthy_ramesh]  ID: [OVZqWKEAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Carl_Shapiro]  ID: [lbqAV0UAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Su_Yeon_Kim]  ID: [JcmSFs0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_A_L_Sangiovanni_Vincentelli]  ID: [Sbh1BBkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Vern_Paxson]  ID: [HvwPRJ0AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Oliver_P_JOHN]  ID: [Iin2LSIAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Card]  ID: [lqmGJIkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Dennis_BALDOCCHI]  ID: [dJ8MMFoAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_Canny]  ID: [LAv0HTEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Rasmus_Nielsen]  ID: [PySbfcEAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Mark_D&#39;Esposito]  ID: [s7gOlh8AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_W_Taylor]  ID: [bMK_K2cAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_J_SAYKALLY]  ID: [3pgW21QAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Henry_Chesbrough]  ID: [ovM1qcsAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_A_Mathies]  ID: [Gc1H0LkAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Junqiao_Wu]  ID: [08NbivUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Bronwyn_Hall]  ID: [xNiD7IUAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Andrew_Rose]  ID: [d-V5o2MAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Andrew_K_Rose]  ID: [XhpyWAMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Carlos_Jose_Bustamante]  ID: [Lk38PP0AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Bruns_Thomas_D]  ID: [9i2wHgMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Lior_Pachter]  ID: [DKfEcuEAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Peter_Evans]  ID: [J27wOrMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Carolyn_R_BERTOZZI]  ID: [t5PHthoAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jan_Rabaey]  ID: [GP64q_kAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Robert_Thomas_Knight]  ID: [WYv36DIAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_JB_Poline]  ID: [BU7Zdi4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Chris_Somerville]  ID: [CXXYxf4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_peter_bickel]  ID: [t4w1jE4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Connie_Chang_Hasnain]  ID: [O2HSABIAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Robert_O_RITCHIE]  ID: [eisw3hsAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jeffrey_R_LONG]  ID: [XCP3qr0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Michael_Franklin]  ID: [p0sQC6sAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Arthur_L_Reingold]  ID: [WNYs930AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Joseph_Hellerstein]  ID: [uFJi3IUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Wagner]  ID: [67kghxAAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Xiang_Zhang]  ID: [9dVnc6YAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Martin_WHITE]  ID: [h3ZhFpgAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Joshua_S_Bloom]  ID: [fHkUYk0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Berend_Smit]  ID: [-GxdGBQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Edward_A_LEE]  ID: [IJgXsgwAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Paul_Pierson]  ID: [LnUkxkoAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Sandrine_Dudoit]  ID: [hBWARYEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Luke_P_Lee]  ID: [xADN4DUAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Pravin_VARAIYA]  ID: [9M6W0AEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_H_RAULET]  ID: [bf7u8fUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Dan_M_STAMPER_KURN]  ID: [W1-hAXkAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Dacher_Keltner]  ID: [oqw_lMkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Patricia_M_Dechow]  ID: [evMSF7gAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_M_HARLAND]  ID: [lh527_4AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Kenneth_Train]  ID: [2bj9dJcAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_Harland]  ID: [GHphTwwAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Pranab_Bardhan]  ID: [CvoogxEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Kannan_Ramchandran]  ID: [DcV-5RAAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Marti_A_Hearst]  ID: [Yy6xbCYAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jay_Keasling]  ID: [hTcSb8IAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Drubin]  ID: [FU0EhwoAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ronald_E_Dahl]  ID: [zfCmRZkAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Martyn_T_SMITH]  ID: [I8Kp8SEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Martyn_Smith]  ID: [Rs3vIZQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Bernd_Sturmfels]  ID: [Bwtxxf8AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_George_OSTER]  ID: [zUlNSmIAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Chen_Chen]  ID: [BNSWS_kAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Kristofer_SJ_Pister]  ID: [oxz4XKYAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_Kubiatowicz]  ID: [00M1AqQAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Enrique_Iglesia]  ID: [ZFCBfWAAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Alan_J_AUERBACH]  ID: [vERFLi0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_AnnaLee_Saxenian]  ID: [gZKiYWwAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_AnnaLee_SAXENIAN]  ID: [hrQ6BRcAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jennifer_Chatman]  ID: [xDjTAD4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Tsu_Jae]  ID: [SdBYB0wAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Robert_Cervero]  ID: [4Cp_lusAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Alan_H_Schoenfeld]  ID: [npuK4DkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Allen_H_Goldstein]  ID: [Z0YoUrIAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ali_Javey]  ID: [1gqyKqcAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Masayoshi_Tomizuka]  ID: [8m8taGEAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Joseph_Farrell]  ID: [k5Glsi0AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Kimmen_Sjolander]  ID: [4VVgg_UAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Xu_Chen]  ID: [gBuVIbAAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_D_Ackerly]  ID: [_umQuNkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_IVRY]  ID: [nicnuy4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Gibor_BASRI]  ID: [1j332TMAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_E_Hearst]  ID: [3691TcwAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Peter_Bartlett]  ID: [yQNhFGUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Lee_RILEY]  ID: [tZvNZ4cAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Thomas_L_Griffiths]  ID: [UAwKvEsAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Alison_GOPNIK]  ID: [2tt6ZJ0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Hugh_Hudson]  ID: [b5_U6BgAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Carlos_Daganzo]  ID: [QZfgzHgAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Zilberman]  ID: [DhU5JswAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Emmanuel_Saez]  ID: [qZpr_CQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Zilberman]  ID: [PFcT1cEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Forrest_Mozer]  ID: [aWSj1GUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_B_Wake]  ID: [jNUs6LsAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Morten_T_Hansen]  ID: [YLee1cYAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Hao_Ming_Chen]  ID: [0E40bLMAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jeffrey_Boore]  ID: [rk0_IlUAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Mary_K_FIRESTONE]  ID: [EvHVef4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Jeffrey_Bokor_]  ID: [ylSEuoIAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Claire_Kremen]  ID: [v7a8-e0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Kurt_Keutzer]  ID: [IzaagZkAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Alexei_A_Efros]  ID: [d97bGd8AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Gerard_Roland]  ID: [qFtg6AUAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Phillip_B_Messersmith]  ID: [S7gGCq0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Peter_Duesberg]  ID: [R1Wg5b8AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Anastasios_Melis]  ID: [flkOoEQAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_Harte]  ID: [fPR9ZeMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Daniel_M_Neumark]  ID: [jjLvIh4AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Judith_P_KLINMAN]  ID: [3LXru1EAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Bin_YU]  ID: [xT19Jc0AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Anne_E_Cunningham]  ID: [hXsJJf0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Krishna_K_Niyogi]  ID: [U8BwWrwAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_James_Hurley]  ID: [SoNEZA8AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Toby_Stuart]  ID: [wSfdgJIAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Mark_WILSON]  ID: [myjNdL0AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_dennis_m_levi]  ID: [R2ZCcfcAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Dennis_M_LEVI]  ID: [QUvcOBUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_S_Muller]  ID: [MCTxijQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Dennis_Levi]  ID: [BsSAVlkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Richard_B_Norgaard]  ID: [TvP5m6AAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Nelson_Morgan]  ID: [ROU76KkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Daniel_FARBER]  ID: [SHAqMV0AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_James_R_Graham]  ID: [41aogyQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Robert_S_Zucker]  ID: [pgU0FTwAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Paul_Gertler]  ID: [-9rc-pYAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Elisabeth_Sadoulet]  ID: [8pAG9YEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ming_C_Wu]  ID: [Yr2yu_sAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Paul_J_GERTLER]  ID: [As7rG9QAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Andy_Konwinski]  ID: [0VwIiIsAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Sheng_LUAN]  ID: [NckY6S4AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Pablo_T_Spiller]  ID: [dL2KEJIAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Rubinsky_Boris]  ID: [5l0ygwEAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Aldous]  ID: [dJpvuDMAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Dornfeld]  ID: [yVbS56QAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Pablo_T_SPILLER]  ID: [gyXczIMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_K_Birgitta_WHALEY]  ID: [9kzo1XUAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ralph_Freeman]  ID: [R-4fAJcAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Arthur_Shimamura]  ID: [35Cb9ygAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Dornfeld]  ID: [acXN8EQAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_R_BRILLINGER]  ID: [SIlq7g4AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Shauna_Somerville]  ID: [8qSYEsMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Edward_Miguel]  ID: [okJiGugAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Martin_Banks]  ID: [Smr99uEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_William_W_Nazaroff]  ID: [U29LDuAAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Douglas_S_CLARK]  ID: [b-lmJRsAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Blackwell_1919__2010]  ID: [_JRugkAAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Severin_Borenstein]  ID: [WRXoiuEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Severin_BORENSTEIN]  ID: [mRaY7PEAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Mark_van_der_Laan]  ID: [-zaDQ10AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Costas_Grigoropoulos]  ID: [JZ_7VVAAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Gary_L_Firestone]  ID: [z5ovGi0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Kentaro_Toyama]  ID: [JdxjEQIAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Philip_A_Cowan]  ID: [h_STwA0AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Evan_Williams]  ID: [BZDdXOIAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Stephen_E_Palmer]  ID: [xTKVgwkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_D_Coates]  ID: [bckdbY4AAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_David_Vogel]  ID: [gwcLduUAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Michael_Armbrust]  ID: [Bl8GgEcAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Ronald_C_COHEN]  ID: [XT6xjNMAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Matthew_Walker]  ID: [lhjZVXkAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Wayne_Marcus_Getz]  ID: [e_zv3UoAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Lin_He]  ID: [M7cOMT4AAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_Roland_Burgmann]  ID: [zaKntLEAAAAJ]  Has  uploaded photo.
+University: [University of California Berkeley]  Name: [Berkeley_Mark_J_VAN_DER_LAAN]  ID: [kaO8ZXsAAAAJ]  Has not upload photo.
+University: [University of California Berkeley]  Name: [Berkeley_John_J_OHALA]  ID: [sSgrvhwAAAAJ]  Has not upload photo.

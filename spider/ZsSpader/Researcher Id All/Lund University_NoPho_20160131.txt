@@ -1,0 +1,178 @@
+University: [Lund University]  Name: [LundUniversity_Anders_Björklund]  ID: [W8CXjsMAAAAJ]  Has uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Karl_Johan_Åström]  ID: [ZS-RjQsAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Oxana_Smirnova]  ID: [exYF0P8AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Mats_Alvesson]  ID: [xsQ0B9IAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Torsten_Akesson]  ID: [TFyP1QgAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_David_Silvermyr]  ID: [K_jdlu0AAAAJ]  Has uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Åke_Borg]  ID: [rPlLZ7kAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Klaus_Mosbach]  ID: [B4FVtawAAAAJ]  Has uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Stefan_Lohmander]  ID: [mcHmsR0AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Bo_Mattiasson]  ID: [oXw-hxQAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Fredrik_Mertens]  ID: [nJU-vUQAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Songen_Zhang]  ID: [3RpnXnoAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Björn_Wittenmark]  ID: [M0F_avEAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Peter_Gärdenfors]  ID: [ZW8RWdAAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anne_L&#39;Huillier]  ID: [1Gw3hs0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Åke_Malmqvist]  ID: [TXRNGmIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_lars_Björck]  ID: [IfPpodYAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Reine_Wallenberg_]  ID: [qBq-QR0AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Daniel_J_Conley]  ID: [kNP3EjcAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Bengt_Johansson]  ID: [o28vDsgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Thomas_Alerstam]  ID: [rVGG3FAAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Rönnstrand]  ID: [9oqEnUAAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anders_Rantzer]  ID: [_X4Yr3oAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Runeson]  ID: [7B58FysAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Ola_Borjesson]  ID: [d1kt1NUAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Ulf_G_Gerdtham]  ID: [b_Xwss8AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Oskar_Hansson]  ID: [61zbXSIAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lei_Ye]  ID: [j3Y8ZZsAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Georg_Lindgren]  ID: [G7BfJUMAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Marcus_Aldén]  ID: [E5cdQEcAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Gunnar_Keppler_Gouras]  ID: [VUJ6UFsAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mattias_Höglund]  ID: [9k7RkO0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Ove_Edfors]  ID: [YdmLp0sAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Kristian_Pietras]  ID: [xraZigYAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Stefan_Gössling]  ID: [cQjZDXIAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Juan_Merlo]  ID: [-947SggAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Martin_Höst]  ID: [9HNtvo0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anna_Blom]  ID: [TQdUcx0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Milladur_Rahman]  ID: [dJxOWE0AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Edvin_Lundgren]  ID: [_bCEjVEAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Fredrik_Tufvesson]  ID: [B5pXQGgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Frédéric_Delmar]  ID: [c_81mf8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lao_H_Saal]  ID: [NKli0CwAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Karl_Erik_Arzen]  ID: [OZIadUUAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Leif_Sörnmo]  ID: [Vl6bTjYAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Hongqi_Xu_(H_Q_Xu)]  ID: [-9wTDF4AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anders_Hedenström]  ID: [BAje388AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Raimund_Muscheler]  ID: [QZAovYsAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lennart_Olsson]  ID: [LfQd2nQAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Karin_Jirström]  ID: [KrA2pN0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Peter_Höglund]  ID: [pTRdKBoAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Melvyn_Davies]  ID: [n22jFqEAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Tomas_Akenine_Möller]  ID: [Ch4LHOgAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Björn_E_Berglund]  ID: [fzrEL94AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Arkady_Yartsev]  ID: [8JY2HOsAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Montelius]  ID: [xnO3gTEAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Per_Lundberg]  ID: [gsPR6sAAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Susanne_Iwarsson]  ID: [xaGO0kQAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Martin_EnglundMD_PhD]  ID: [DuZ_IogAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mats_Erik_Pistol]  ID: [nyyzNXgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Eklundh]  ID: [8duO9-IAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Harald_Ulrik_Sverdrup]  ID: [BmnRgvoAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Erik_Svensson]  ID: [-66nqTEAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Fredrik_Sjöholm]  ID: [SIxj_x8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Jia_Yi_Li]  ID: [mqidZbkAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Lennart_Olsson]  ID: [A1UzJxYAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Måns_Magnusson]  ID: [Zo4RvaUAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anton_Cervin]  ID: [j1hxZisAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Sofia_Feltzing]  ID: [Pe5_7X4AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Susanne_Akesson]  ID: [A7-CoCAAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Björn_Bergenståhl]  ID: [ds2wOd4AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Thomas_Johansson]  ID: [1kxNWbkAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Stefan_Baumgartner]  ID: [enEqKHsAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Pål_Axel_Olsson]  ID: [rG-1NVUAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Bengt_Hansson]  ID: [QBO8po8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Jan_Olhager]  ID: [3brY0coAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_David_Gisselsson]  ID: [S-QEV7gAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Rui_Dong_Duan]  ID: [li-eP38AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Björn_Canbäck]  ID: [dQ3oWqUAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Yann_Clough]  ID: [YSRCYPsAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Jonung]  ID: [zve1q_UAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Christian_Hjort]  ID: [FEXJ8YsAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Coenen]  ID: [NCHXVEAAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Pietro_Andreani]  ID: [pWfeWbwAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Bo_Bernhardsson]  ID: [ZdudhjcAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Magnus_Wilhelm_Larsson]  ID: [nummsfgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Coenen]  ID: [1B1m6M0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Tunestål]  ID: [ulnUneMAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Torleif_Dahlin]  ID: [wW5BObEAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Yvonne_Granfeldt]  ID: [-57HYfgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mattias_Belting]  ID: [p9gJ5foAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Göran_Jönsson]  ID: [_rNoOtoAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Petter_Persson]  ID: [n8XzhOoAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anders_Mikkelsen]  ID: [lpy3hJMAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Ronny_Berndtsson]  ID: [CzF8Z5IAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Ronny_Berndtsson]  ID: [fwrq6UIAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Michael_Ljungberg]  ID: [gBpXTlUAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Johan_Malmstrom]  ID: [amR2glkAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Jonas_Ardö]  ID: [sE8Eh28AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Johan_Staaf]  ID: [k8aj2bIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Halldór_Ármann_Sigurðsson]  ID: [wdygwUoAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Alf_Hornborg]  ID: [8bB40ZMAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Per_Möller]  ID: [-S3YwP4AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Johan_Vallon_Christersson]  ID: [EvRvswQAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Jörgen_Larsson]  ID: [ImVq5zsAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Thomas_Brambor]  ID: [Pyfz9DIAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Michaela_Trippl]  ID: [JsOCD3kAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Christofer_Edling]  ID: [-KrC9Y4AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Ulf_Söderlund]  ID: [LJa7lccAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Almut_Kelber]  ID: [Y-t6tfkAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_almut_kelber]  ID: [9z7cTK8AAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Svetlana_Bogdanova]  ID: [FCO4UAEAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Anders_Heyden]  ID: [9j-6i_oAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Gerhard_Kristensson]  ID: [JYOgrYUAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Niklas_Mattsson_MD_PhD]  ID: [nZdOLNgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Carola_Tilgmann]  ID: [4XLWvOIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Anders_Johansen]  ID: [rkFcdNIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Petr_Dejmek]  ID: [VN0n054AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Jorn_W_Janneck]  ID: [acaDIH8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Jalal_Taneera]  ID: [zyspcugAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Hans_Ehrencrona]  ID: [yAczmikAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Johannes_Rousk]  ID: [PTG7ETMAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Dan_Hammarlund]  ID: [K5lkjNkAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Emily_Sonestedt]  ID: [ONDH2WQAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Warfvinge]  ID: [U2GIeL8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Kalle_Åström]  ID: [YIzs6eoAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Lars_Olof_Nilsson]  ID: [JNLOw0MAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Fredrik_Kahl]  ID: [P_w6UgMAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Buon_Kiong_Lau]  ID: [sKjP93QAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Johan_Mauritsson]  ID: [c8-hMtcAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Stefan_R_Hansson]  ID: [RBgj73gAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Salam_Al_Karadaghi]  ID: [mTES-rgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Ed_van_Niel]  ID: [ecFnsZYAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Erik_Bengtsson]  ID: [WWl3V4wAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Cristina_Chaminade]  ID: [nBnO5DAAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Sven_Månsson_PhD]  ID: [tlXe1S4AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Marie_Paulsson]  ID: [xr0yAkgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mats_Gustafsson]  ID: [gTpjIKcAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Janusz_Sadowski]  ID: [swktxZIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Harry_Björkbacka]  ID: [mJV2AYMAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Anna_Axmon]  ID: [CKto6dIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Tomas_Brage]  ID: [ejCJqboAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Chris_Sinha]  ID: [OCfcQCcAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mikhail_Mastepanov]  ID: [WOib_ZQAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Zhongshan_Li]  ID: [p7zWf80AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Tommy_bengtsson]  ID: [9_u3I0wAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Ola_Olsson]  ID: [T8I2A9gAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mats_Hansson]  ID: [O_2nQ3kAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Pardeep_Kumar]  ID: [OGfMf3MAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Pyotr_G_Platonov]  ID: [VeIZ9N0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Xue_Song_Bai]  ID: [DCSDVg8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Mohammad_Hossain]  ID: [Kt-ChboAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Gabriela_Godaly]  ID: [uUQNgswAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Pierre_Nugues]  ID: [WaxK-y9Xx18C]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Mattias_Collin]  ID: [81hgJUMAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Maj_Rundlöf]  ID: [FkXb8ncAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_P_Anders_Nilsson]  ID: [eKk_EUwAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Martin_Andersson]  ID: [KZ5WF3EAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Görel_Hedin]  ID: [Kc9cchcAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_eva_nordberg_karlsson]  ID: [9aWVPhoAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Dan_Metcalfe]  ID: [dBXZyvIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Dag_Ahren]  ID: [lqZKmqIAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Olle_Lundh]  ID: [xMwxHZgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Marcus_Carlsson]  ID: [tPXkhkwAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Tommy_Knoos]  ID: [guC44LUAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Joakim_H_Pagels]  ID: [TjGc6N8AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Andreas_Jakobsson]  ID: [BmKADSgAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Michael_Lentmaier]  ID: [uPJGqIUAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_David_Lindgren]  ID: [1khj1y0AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Marcus_Stensmyr]  ID: [nYvoTi4AAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Helena_Alexanderson]  ID: [f8tVo_EAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Einar_Heiberg]  ID: [Mr2027YAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Stefan_Anderberg]  ID: [LQ7adXYAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Eva_Ageberg]  ID: [Lq0ChowAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Magnus_Persson]  ID: [el0JatIAAAAJ]  Has  uploaded photo.
+University: [Lund University]  Name: [LundUniversity_Per_Carlsson]  ID: [g_TL_5EAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Daniel_Topgaard]  ID: [FaCtLTsAAAAJ]  Has not upload photo.
+University: [Lund University]  Name: [LundUniversity_Rashmi_Prasad]  ID: [bpjGVjIAAAAJ]  Has not upload photo.

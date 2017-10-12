@@ -1,0 +1,198 @@
+University: [University of Hong Kong]  Name: [UniversityHongKong_Paul_M_Vanhoutte]  ID: [bfSkNEMAAAAJ]  Has uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Pak_Sham]  ID: [rHTAld0AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ho_Yin_Lee]  ID: [AixF7p4AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_WANG_Xi_Ling]  ID: [4h1dIUUAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Minhong_Wang]  ID: [ieRf-R0AAAAJ]  Has uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Juan_CHEN_Catherine]  ID: [TcC1H1QAAAAJ]  Has uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kevin_Zheng_Zhou]  ID: [p5vSQtoAAAAJ]  Has uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Y_Lee]  ID: [11QTz-oAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_WW_Lu]  ID: [tQ2PPOkAAAAJ]  Has uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ken_Hyland]  ID: [887HnVcAAAAJ]  Has uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Mingfu_Wang]  ID: [1KhYzNwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Zhongjun_Zhou]  ID: [_I4fuBMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Shiu_Kum_Lam_OBE_MD_MACG_FRCP]  ID: [2XE35TMAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Man_Fung_Yuen]  ID: [XVbgceMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Cho_Li_Wang]  ID: [pO6yT2cAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_David_Dian_Zhang]  ID: [QIFXp1IAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_GUAN_Xin_Yuan]  ID: [ZatdtQ8AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Paul_Yip]  ID: [QyV42h8AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Aimin_Xu]  ID: [vyPfQmIAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Hoi_Wai_Choi]  ID: [pVyGuoAAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jiangang_Shen]  ID: [i5EQrSsAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Tse_Hung_fat]  ID: [Sv06CTwAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_David_John_Hill]  ID: [jk3NXWcAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Lakshman__P_Samaranayake]  ID: [Zv__1NsAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Dr_Ping_Li]  ID: [LjazML4AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Li_Zhang]  ID: [sX9z0wIAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Gabriel_Leung]  ID: [RDMlPasAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wai_K_Leung]  ID: [HSZiJtIAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Fiona_F_Yang]  ID: [3rie38kAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wutian_Wu]  ID: [iyxLcDUAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_BCY_Wong]  ID: [Ye-s-EsAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Xiao_Hu]  ID: [_0DuC1sAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_George_Q_Huang]  ID: [zp9GA7EAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Nagendra_P_Shah]  ID: [nnAL-58AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Harold_Corke]  ID: [rbILVOkAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Herbert_H_P_Fang]  ID: [INaDFOsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ming_De_Li]  ID: [II2JGsEAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ruibang_Luo]  ID: [CwGy9jsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wu_Cuncun]  ID: [Act4y_gAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Li_Li]  ID: [4extCKUAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Dr_You_Qiang_Song]  ID: [kakweU0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_HO_Pak_Leung_何栢良]  ID: [0FWUuOkAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_David_Tse]  ID: [rZQ_yEoAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kent_Man_Chu_朱建民]  ID: [nTSKdIgAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Victor_OK_Li]  ID: [oU0JgI4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Simon_Law]  ID: [gS1-sjoAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jerry_Yu]  ID: [PRVumbcAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Victor_OK_Li]  ID: [GKL_i6sAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Quentin_Parker]  ID: [vgSPFg4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_KT_Chau]  ID: [5wptXfQAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_David_Dudgeon]  ID: [ikmvoHgAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_CCChan_(Ching_Chuen_Chan)]  ID: [HsnyiPUAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Sun_Kwok_]  ID: [oAlHDcwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Anthony_GO_Yeh]  ID: [0zhn9YUAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_John_M_Luk]  ID: [eBCssO0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Roberto_Bruzzone]  ID: [jirZ_qcAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Guodong_Li]  ID: [ud6Sco0AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_David_D_Zhang_章典]  ID: [O0dFT3cAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Dr_Mei_Sun]  ID: [JaXqa7MAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_S_Hui]  ID: [kuXvNmkAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yu_Hang_Leung_(Ian)]  ID: [MRRktREAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_David_W_Cheung]  ID: [wwb5LGsAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Lam_Ching_Wan]  ID: [zYfJrQgAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wai_Keung_Li]  ID: [WzBcLEkAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Siu_Ming_Yiu]  ID: [QFNVqjEAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_K_S_Cheng]  ID: [NMCFshUAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Raymond_Chuen_Chung_Chang]  ID: [-jeM-fcAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Mark__Bray]  ID: [XrGWTmwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Nikos_Mamoulis]  ID: [jOvUDjYAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Tatia_MC_Lee]  ID: [5gRvZeoAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Sookja_Kim_Chung]  ID: [7VnZgMMAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chenggang_Xu]  ID: [jWkk11QAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Z_D_Wang]  ID: [SUF20fgAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Amy_B_M_Tsui]  ID: [HMCSJuQAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Tong_Zhang_(HKU)]  ID: [sYWdALkAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ben_Cowling]  ID: [ywWh3ycAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wang_Yao]  ID: [fkJk8H4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Xiao_yan_LI__(XY_Li)]  ID: [VUfwTBYAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Michael_Enright]  ID: [O_2drywAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Terence_Lee]  ID: [TaTpE0YAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kenneth_M_C_Cheung]  ID: [khOLoTMAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ji_Dong_Gu]  ID: [tUCPGt0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yuguo_Li]  ID: [jd_lT0UAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_CY_Jim]  ID: [aZobaBoAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Thomas_Ng]  ID: [ufmQRNkAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wai_Lun_Law]  ID: [3vcWyEMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Shun_Qing_Shen]  ID: [ZGvCd0IAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ed_X_Wu]  ID: [jZdGp4QAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ben_Kao]  ID: [TwSParMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Reynold_Cheng]  ID: [7R7MSb4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Michael_Irwin]  ID: [fRrxDMsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_See_Ching_CHAN]  ID: [zNJnQYwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Gary_C_Biddle]  ID: [5D70aGsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Gary_C_Biddle]  ID: [VmscPYoAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Simon_Lam]  ID: [2HZiQtEAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wallace_CH_Choy]  ID: [GEJf9dAAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jason_R_Ali]  ID: [KHJHB7YAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_George_CS_Lin]  ID: [lWPh0Xso5I0C]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Professor_Mai_Har_Sham]  ID: [omt_OykAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Francis_C_M_Lau]  ID: [FmneJesAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chris_Webster]  ID: [2Dlik3cAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Xiaodong_Cui]  ID: [95jcNHsAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Michael_Chau]  ID: [Ro1O8N4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Khe_Foon_HEW_Timothy]  ID: [QjFsWdsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong__W_Keung_Leung]  ID: [_5oT-hQAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Alice_S_T_Wong]  ID: [RRW7Qf0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chan_MK_Karen]  ID: [2xcba9gAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Lim_Kwong_Cheung]  ID: [bz5bq8QAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Connie_S_H_Ho]  ID: [UXQnMKAAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Zhigang_Tao]  ID: [EKrTBIQAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_TH_Tse]  ID: [vy2QmV0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_A_K_H_Kwan]  ID: [XL0TkkYAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Hani_El_Nezami]  ID: [cOVnueoAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yuan_Lin]  ID: [eUPtdC8AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Graziano_Chesi]  ID: [GGfRRbEAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jasper_Fuk_Woo_Chan]  ID: [EujYi5oAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Quan_Hao]  ID: [NqKI3b0AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_zhengyuan_xia]  ID: [JJXBtIwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Terry_Au]  ID: [kuzMUvQAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chul_W_Park]  ID: [Il7PR_oAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Minhong_Wang]  ID: [qFxNHpwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wai_Ki_CHING]  ID: [5_jYTb4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Hing_Ling_Lau]  ID: [fGI4eGQAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_KYSze]  ID: [ZpBlHEQAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yick_Pang_Ching]  ID: [lipX_4gAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chi_Kin_(Bennett)_Yim]  ID: [0_17uDYAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Stephanie_Ma]  ID: [6B9wwJ0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_John_P_Burns]  ID: [yPY_CfcAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Xuanhua_Li]  ID: [_oIFtzoAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kenneth_Mei_Yee_LEUNG]  ID: [WMutl9oAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Duncan_Macfarlane]  ID: [wv0o3JAAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jiangnan_Zhu]  ID: [kJ4GzKEAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Tommy_Tsan_Yuk_Lam]  ID: [kRtxIw0AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kenneth_Kin_Yip_Wong]  ID: [qTcmHIcAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_K_W_Chau]  ID: [jNI-01UAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Nancy_Law]  ID: [qX1KfZIAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ui_Soon_Khoo]  ID: [VTgY-3IAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Dickson_K_W_Chiu]  ID: [9vgZNKsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wai_Ting_Siok]  ID: [m4RRtGcAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Angel_Lin]  ID: [6mLpwAYAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Amy_Lo]  ID: [cxvxYcAAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ivan_K_CHU]  ID: [s2nNu9MAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wing_Suen]  ID: [g-pab9EAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jetty_Chung_Yung_Lee]  ID: [PuX7GB0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Francis_TK_Au]  ID: [DuxcYD8AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Merce_Garcia_Barcelo]  ID: [l122EyMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Michael_SY_Huen]  ID: [YHiGWrkAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Siew_Chong_TAN_]  ID: [9OAdaW0AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jiu_Jimmy_Jiao_(焦赳赳)]  ID: [t7zybZUAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Stefano_Cannicci]  ID: [a6D5Si4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_anita_liu]  ID: [fK7QxxEAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Brendan_Weekes]  ID: [XwJbVEMAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Carol_Chan]  ID: [t4S0QNMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kaibin_Huang]  ID: [HfuA3uIAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_W_Y_Szeto]  ID: [N3IuhzIAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Stephen_Matthews]  ID: [-uDtJQsAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Junwen_Wang]  ID: [-DvO8pQAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chan_Y_F_Frankie]  ID: [Qnw-NVAAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Sheng_Hua_Li]  ID: [rP2r0wwAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Feng_Yibin]  ID: [2ODfxvQAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_William_WL_Choi]  ID: [wughRq0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Antoinette_Marie_Lee]  ID: [wC-uligAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wei_E_I_Sha_(沙威)]  ID: [UO6RJKUAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Brian_Moeran]  ID: [T8GdoxcAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Brian_Moeran]  ID: [EcjY5M0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Xuechen_Li]  ID: [WNcJP-YAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yik_Chung_WU]  ID: [pEpkokUAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chuan_Wu]  ID: [mY7MWXMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Jinyao_Tang]  ID: [FLEhTkIAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Guosheng_Yin]  ID: [HAE6EtkAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yiu_EM]  ID: [m4LUnusAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Liu_Zhonghui]  ID: [IB_qzeEAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yiu_Kai_Hang]  ID: [Vdqi52QAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Xiaobin_Zhao]  ID: [41H2yf4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_YILIANG_LI]  ID: [WQGmJWYAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Bing_Li_(HKU)]  ID: [7DQaWJYAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Thomas_Yau]  ID: [wAg8gVMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_King_Ho_Cheung]  ID: [YyJjntMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chunhua_Liu_(刘春华)]  ID: [7WEZSaIAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wai_Kay_Seto]  ID: [20RXJoQAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Joseph_SK_Kwan]  ID: [lW5sV1cAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Professor_John_Bacon_Shone]  ID: [A-FV72wAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Bradley_McPherson]  ID: [UOoA7y4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Yang_Rui]  ID: [NtyTaV0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Chi_Wa_Yuen]  ID: [i7lwKj4AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Thomas_Klee]  ID: [6aektr0AAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_King_Shan_Lui]  ID: [x7M72lcAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Wing_Yee_Lui]  ID: [4pqWILsAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Peter_Hills]  ID: [EfSavwYAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Professor_Peter_Hills]  ID: [1xvhYCIAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Philip_CN_Chiu]  ID: [YOjV_-QAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Kwok_W_Chow]  ID: [MI6S9IwAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Liaquat_Hossain]  ID: [zISaoL0AAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Bayden_D_Russell]  ID: [xBMU-kUAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Macfarlane_Bruce_J]  ID: [HDeNXMMAAAAJ]  Has not upload photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Agnes_Tiwari]  ID: [F6uc7BMAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Hoi_Wai_Choi]  ID: [OMczk-IAAAAJ]  Has  uploaded photo.
+University: [University of Hong Kong]  Name: [UniversityHongKong_Ko_Ling_Chan]  ID: [rWDiHH4AAAAJ]  Has  uploaded photo.

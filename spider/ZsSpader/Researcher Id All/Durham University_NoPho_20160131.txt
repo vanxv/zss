@@ -1,0 +1,189 @@
+University: [Durham University]  Name: [Durham_Carlos_Frenk]  ID: [1sSj1fYAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Shaun_Cole]  ID: [ZxMtKxcAAAAJ]  Has uploaded photo.
+University: [Durham University]  Name: [Durham_Ian_Smail]  ID: [k_CxVKUAAAAJ]  Has uploaded photo.
+University: [Durham University]  Name: [Durham_Carlton_Baugh]  ID: [DZVUsuoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Cedric_Lacey]  ID: [HxQbxU8AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Alastair_Edge]  ID: [Y0jvrTsAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Sam_Nolan]  ID: [kif5R4wAAAAJ]  Has uploaded photo.
+University: [Durham University]  Name: [Durham_Stephen_Gorard]  ID: [lkMsihQAAAAJ]  Has uploaded photo.
+University: [Durham University]  Name: [Durham_Keming_Yang]  ID: [-a8-6-AAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Daniel_Zhiyun_LI]  ID: [AbrGAE8AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Stewart_Clark]  ID: [4TNvtxYAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Simon_Morris]  ID: [IrpZVg0AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Anthony_Brown]  ID: [tLqptaEAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Jonathan_William_Steed]  ID: [kg9UA80AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Jonathan_William_Steed]  ID: [IO1g-lMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Carolyn_Summerbell]  ID: [wLYAECgAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_A_Monkman]  ID: [RH6p3HkAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Marc_R_Knight]  ID: [KlZVDc0AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_glover_ewn]  ID: [qgDkNJkAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Yaoling_Niu]  ID: [UcjfkSMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Professor_Jeremy_M_Hutson_FRS]  ID: [5jpoY_QAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_tom_theuns]  ID: [mKlvSLQAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ray_Sharples]  ID: [FQYgV6IAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_George_Wright]  ID: [SmYVZSoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Harriet_Bulkeley]  ID: [f3J9FZEAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_mike_crang]  ID: [iDyrZxIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_raquinlan]  ID: [STyaS6kAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Carol_Adams]  ID: [wzIsuJUAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Emeritus_Prof_Peter_Tavner]  ID: [1ld93dMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Mike_Burt]  ID: [i_x5VSwAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_John_S_O_Evans]  ID: [KZ3yfKkAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Charles_S_Adams]  ID: [AX_tUOsAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Richard_Harris]  ID: [3_zsM6YAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_David_J_A_Evans]  ID: [qzKEvOMAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Ruth_Gregory]  ID: [7bCvETYAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_A_P_S_Hungin]  ID: [dgcrwpoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Clare_Bambra]  ID: [od9c8psAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Rachel_Pain]  ID: [eGUKKg8AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_charlotte_a_roberts]  ID: [pW_XmM4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_brian_straughan]  ID: [htqyp20AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Bob_Holdsworth]  ID: [w5Dd7kQAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_EJ_Lowe]  ID: [mrlg57YAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Horst_Puschmann]  ID: [QZri24gAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_robert_barton]  ID: [w-v58gYAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_David_Budgen]  ID: [CTtHu1UAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_David_Bridgland]  ID: [EFRu0iAAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_David_Greatbatch]  ID: [A_evS-0AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Tim_Roberts]  ID: [h_l38b0AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Steven_Higgins]  ID: [gVGYShYAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Timothy_Clark]  ID: [DealoPMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Simon_Cornish]  ID: [CfmFaf4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Ray_Land]  ID: [-5ZfMrYAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ray_Land]  ID: [lHOEVvwAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Simon_Ross]  ID: [T2XNC1gAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Stephen_G_Willis]  ID: [ghwK4nQAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Darren_Grocke]  ID: [9YRhcnYAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Darren_R_Gröcke]  ID: [kYv6BFcAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Chu_chong_sun]  ID: [7HxsZrMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Elizabeth_Meins]  ID: [gG4O5vIAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Colm_Ó_Cofaigh]  ID: [XBGYA1EAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Julian_Elliott]  ID: [GP_DIgwAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Ben__Anderson]  ID: [bh-k2-4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Tooraj_Jamasb]  ID: [ML3NqCMAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_David_S_Wall]  ID: [9n8AtS0AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Martyn_C_Lucas]  ID: [WUseXegAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Robert_Baxter]  ID: [kcbqWOsAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ian_Evans]  ID: [NRtqkz0AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_P_Tymms:_PB_Tymms:_Peter_Tymms]  ID: [mUVty2YAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Adrian_Robert_Walmsley]  ID: [bHH3TD8AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Chris_R_Stokes]  ID: [Mb6tIp4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Ifan_G_Hughes]  ID: [XX-PzpgAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Stefan_Nielsen]  ID: [4JDzoGQAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Russell_Hill]  ID: [V0RbJcAAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Mark_Fox]  ID: [LqINCxUAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Louise_Amoore]  ID: [E9b7jowAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Gavin_Bridge]  ID: [k3AWDt0AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Viv_Kendon]  ID: [DDVPbxUAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Helen_Moore]  ID: [R2ZVfmgAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ian_H_Jermyn]  ID: [0P1xwo0AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Madeline_J_Eacott]  ID: [xa4ZZXIAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Russell_J_Smith]  ID: [3C7MvkwAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_S_A_Gardiner]  ID: [YmCaZJEAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Gordon_Love]  ID: [3xJXtlwAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Bob_Hudson]  ID: [mf_IWssAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Paul_Hodgkinson]  ID: [rWcztwkAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Apostolos_Kotsialos]  ID: [fYXJDOAAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Susanne_Weis]  ID: [GvyH0cwAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_A_J_Deeks]  ID: [ZJ489fYAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Robert_Kentridge]  ID: [wOvKtwYAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Mark_Booth]  ID: [b4olcp0AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Lars_Olof_Pålsson]  ID: [5wevloIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_michael_humphreys]  ID: [stIawjMAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Ian_K_Bailiff]  ID: [dLBn4hUAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Colin_Lever]  ID: [qzLvz40AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Robert_Coe]  ID: [ln2kZXIXtMcC]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Janet_Montgomery]  ID: [A9UW9KQAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Frank_Coolen]  ID: [axQ3nTgAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Matthew_P_A_Jones]  ID: [EGE_HlIAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Kasper_Peeters]  ID: [QF6Dtr4AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ian_Greener]  ID: [Gj7dp4YAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Prof_David_J_Robertson]  ID: [-aZSzTkAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Andrei_Krokhin]  ID: [QhiPV08AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Thomas_Ward]  ID: [qBCGDRQAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ted_Schrecker]  ID: [AS8-O5cAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Jeroen_van_hunen]  ID: [C9sSqsMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Shane_A_Richards]  ID: [SduZ3wIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Andrew_Millard]  ID: [1_ZM4AsAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Rachel_Kendal]  ID: [Vs6wtGEAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Paul_Langley]  ID: [MkVW66QAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Carole_Torgerson]  ID: [kAnEotkAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Nicholas_Cox]  ID: [xaYqQzwAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Lynda_Boothroyd]  ID: [7ZBaR_sAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_ASMcGough]  ID: [ZgtwW-0AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Richard_W_Wilson]  ID: [04Bu0NcAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_David_Weinkove]  ID: [FDY3YScAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Charles_Augarde]  ID: [ybc-VSMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Peter_J_Atkins]  ID: [PxP3masAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_barry_cooper]  ID: [maqaZ4cAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Amanda_Ellison]  ID: [-z_DSs4AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Michele_Fumagalli]  ID: [1AQs2j4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Damian_Hampshire]  ID: [k6UfQ8kAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Ivana_Radosavljevic_Evans]  ID: [GusqPoIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Nick_Collins]  ID: [FkcGDKoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Helen_L_Ball]  ID: [cMJfrYUAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Jason_H_Gill]  ID: [u4HesjsAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Sarah_Atkinson]  ID: [9Su9W5MAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Amelia_A_Lake]  ID: [dhhtv6kAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Emma_Flynn]  ID: [v6wnmncAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Mark_Learmonth]  ID: [kVo6CGIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Alexander_Easton]  ID: [J3dF7AUAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Jon_Trevelyan]  ID: [IL8LQ3wAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_John_R_Parker]  ID: [SnqExikAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Luna_C_Muñoz_Centifanti]  ID: [UgUe7rEAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Mathew_Hughes]  ID: [3BB3sfMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Richard_Thompson]  ID: [sbQz-QQAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_David_J_Sanderson]  ID: [pDc1fR4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Matthew_David]  ID: [bkKSyA0AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Thom_Scott_Phillips]  ID: [Ub40Oi4AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Toby_P_Breckon]  ID: [9hpHb44AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Pippa_Whitehouse]  ID: [MkSdgxEAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Adrian_Simpson]  ID: [g4-Ed3wAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Kevin_Weatherill]  ID: [Ex6hi98AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_jyotirmoy_bhattacharya]  ID: [V0NjFqoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_David_H_Roberts]  ID: [lxtLalQAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Nigar_Hashimzade]  ID: [3lytuvgAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Graham_Philip]  ID: [o1Zktq8AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Kislon_Voïtchovsky]  ID: [fvDnDZIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Christine_Merrell]  ID: [dipne60AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Balt_van_Rees]  ID: [00v17JoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Richard_J_Brown]  ID: [mmDupF8AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Patrice_Carbonneau]  ID: [xg4HkKoAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Kiran_Fernandes]  ID: [khDMoc8AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Anthony_McGregor]  ID: [GRoRViUAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Marko_Nardini]  ID: [gmiPwRgAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Felicity_Callard]  ID: [_iRRn80AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Tiago_Moreira]  ID: [JdEbpkEAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_David_Stevens]  ID: [K7CYdUwAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Dr_Christopher_J_Crabtree]  ID: [yu29sbAAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Frederick_WB_Li]  ID: [V9XyRX8AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Mark_McCormack]  ID: [UzeUDZ8AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Sim_Reaney]  ID: [kncbfdAAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Nicola_De_Paola]  ID: [mCpaszIAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Prue_Holmes]  ID: [cO_2gOcAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Alastair_Basden]  ID: [8c9HjtEAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_JF_Beckmann]  ID: [1qLMWAwAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_James_MM_Good]  ID: [1SswBqkAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Rich_Bielby]  ID: [VXJDiAwAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Ioannis_Ivrissimtzis]  ID: [7FuCYU0AAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Miguel_De_Lucas]  ID: [_o_AK1kAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Mariana_T_Carvalho]  ID: [5IC_gEMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Jamshid_Tehrani]  ID: [j-s4w2cAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Graham_Towl]  ID: [y6D_KtYAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Sarah_Woodroffe]  ID: [WAbqGKIAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Sarah_Woodroffe]  ID: [gombq7IAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Omneya_Abdelsalam]  ID: [AL21CXsAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Daniel_T_Smith]  ID: [wFAqIX8AAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Pedro_Gonnet]  ID: [IqOpdUkAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Sam_Hillyard_SH_Hillyard]  ID: [wyxce-UAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Matthias_C_M_Troffaes]  ID: [4drHecgAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Magnus_Bordewich]  ID: [rHYx-PMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Vanessa_Kind]  ID: [3kPPpqgAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Stewart_S_R_Jamieson]  ID: [KJszxhMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Clare_McGlynn]  ID: [0IaeaxMAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Nikitas_I_Gidopoulos]  ID: [k2TSsvQAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Beng_Huat_See]  ID: [jaFEsFUAAAAJ]  Has not upload photo.
+University: [Durham University]  Name: [Durham_Thom_Brooks]  ID: [x5VUWhMAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Hongjian_Sun]  ID: [1xfh33oAAAAJ]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Simon_Beaumont]  ID: [yZMthESjkjsC]  Has  uploaded photo.
+University: [Durham University]  Name: [Durham_Andrew_Davis]  ID: [59QaPo8AAAAJ]  Has not upload photo.

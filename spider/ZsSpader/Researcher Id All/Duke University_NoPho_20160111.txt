@@ -1,0 +1,189 @@
+University: [Duke University]  Name: [Duke_Weitao_Yang]  ID: [UuyW8AwAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Terrie_E_Moffitt]  ID: [NR0nMHkAAAAJ]  Has uploaded photo.
+University: [Duke University]  Name: [Duke_avshalom_caspi]  ID: [7iOXJVoAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_David_Swofford]  ID: [H1jbCPkAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Dan_Blazer]  ID: [kr1E6vsAAAAJ]  Has uploaded photo.
+University: [Duke University]  Name: [Duke_D_Blazer]  ID: [SFHqL6IAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Adrian_Bejan]  ID: [Inu2EBwAAAAJ]  Has uploaded photo.
+University: [Duke University]  Name: [Duke_Campbell_R_Harvey]  ID: [cajqjGAAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Robert_B_Jackson]  ID: [qqGzmdoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Mark_R_Leary]  ID: [5dyA1nYAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Guillermo_Sapiro]  ID: [ISRNX3gAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_R_Calderbank]  ID: [XtUBAtwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Kelly_D_Brownell]  ID: [LcV1NtkAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Simon_Gregory]  ID: [4MNrVwoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Hae_Young_Kim]  ID: [EoXa1BcAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Linda_George]  ID: [Zxfwr_YAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Kishor_Trivedi]  ID: [fEVXhhAAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Jane_S_Richardson]  ID: [UF1_VRcAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Roger_Mclendon]  ID: [HAizMLYAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Jennifer_West]  ID: [XlhhQA0AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Francis_J_Keefe]  ID: [Dy_ac4wAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_James_Bettman]  ID: [N49qsI0AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Carlo_Tomasi]  ID: [xViwZ0QAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Nan_Lin]  ID: [HpqAmUcAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_xiaoting_wang]  ID: [LFkaSiYAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Nancy_C_Andrews]  ID: [qbfrSIkAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_David_Dunson]  ID: [PxPxCv8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Jie_Liu]  ID: [8-G09HYAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_gary_gereffi]  ID: [2Kd61F0AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_stuart_pimm]  ID: [FmTTcdMAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Roberto_Cabeza]  ID: [aTcWW-QAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_David_C_Richardson]  ID: [7P3t1woAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Harold_P_Erickson]  ID: [R2isddoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Farshid_Guilak]  ID: [CWj6pVcAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Joseph_A_Izatt]  ID: [y3h0vpkAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Donald_P_McDonnell]  ID: [45eqt94AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_John_R_Graham]  ID: [znKtbQUAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Kenneth_Manton]  ID: [EWougnAAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Berndt_Mueller]  ID: [dNS161AAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Ahmad_Hariri]  ID: [1z2umKoAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Drew_Shindell]  ID: [MeraHu8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_E_Allan_Lind]  ID: [NV0u3QkAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_E_Allan_Lind]  ID: [H7DaJBoAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Sayan_Mukherjee]  ID: [R94cBVgAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Gabriel_Katul]  ID: [OVCVvgEAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_James_F_Reynolds]  ID: [YTvAfu4AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Jeffrey_R_Marks]  ID: [vecJPVYAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Nicolelis]  ID: [RefX_60AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Steven_R_Asher]  ID: [In4CZLUAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Raymond_J_Kim]  ID: [duqjDHQAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Warren_H_Meck]  ID: [OFydajcAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_William_H_Majoros]  ID: [Esgj1PoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Raymond_J_Kim]  ID: [LhvNbiUAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Willie_Padilla]  ID: [5mFPlG0AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Ashutosh_Chilkoti]  ID: [h9Tji70AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Krishnendu_Chakrabarty]  ID: [R_VPUyEAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Christine_Moorman]  ID: [z0THeskAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Xinnian_Dong]  ID: [YeDriCsAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Patrick_J_Casey]  ID: [vl3U7kMAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Sim_B_Sitkin]  ID: [MNXGDy8AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Tuan_Vo_Dinh]  ID: [OVka5AMAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Ram_Oren]  ID: [LrRwXXcAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_John_Reif]  ID: [Er-gEaoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Rytas_Vilgalys]  ID: [RznCjloAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Frank_Sloan]  ID: [tQcpVPAAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Richard_T_Barber]  ID: [igVM0AEAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Ru_Rong_Ji]  ID: [ojqDWlEAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Rick_Durrett]  ID: [pzkLOIwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_James_S_Clark]  ID: [t6XVnH8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Nicholas_Katsanis]  ID: [5dNYKKcAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_William_E_Kraus_MD]  ID: [bI55uuIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Herbert_Kitschelt]  ID: [OyZXMZ0AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Thomas_Mitchell_Olds]  ID: [G6jpQWYAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Duncan_Thomas]  ID: [7FdKDucAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Geoffrey_Rubin]  ID: [Anps42gAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Pankaj_K_Agarwal]  ID: [xe0eVksAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_David_C_Rubin]  ID: [ORp4hvgAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Truls_Østbye]  ID: [iFnZBEgAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_OstbyeTruls]  ID: [3YvbEpMAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Truls_Østbye]  ID: [ivsaY5gAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Lynn_Smith_Lovin]  ID: [aI_za38AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Philip_Cook]  ID: [zPB2xwsAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Chuan_Yuan_Li]  ID: [VM4vhoUAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Marty_Woldorff]  ID: [aVC9SpsAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Helen_F_Ladd]  ID: [dChUsR8AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Adrian_F_Hernandez]  ID: [z0OkOiwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Benjamin_Wiley]  ID: [aGcifQQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Steven_Cummer]  ID: [GyoOOQYAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_TsoPang_Yao]  ID: [xgL8zMAAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Qing_Huo_Liu_(柳清伙)]  ID: [fz1Z-7oAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Rendon_C_Nelson_MD]  ID: [BbU6zgcAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_G_Michael_Felker]  ID: [UHAa4wUAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Peter_Ubel]  ID: [mDywSnQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Rendon_Nelson]  ID: [4wYrR5EAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Kevin_LaBar]  ID: [KpAiQMIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Lawrence_Carin]  ID: [2nmHOtoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Douglas_E_Williamson_PhD]  ID: [pd538yoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Ashish_Arora]  ID: [iNcqCNwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Steffen_A_Bass]  ID: [ddcNrFYAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_David_N_Beratan]  ID: [XMwdTIQAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Xiaowei_Yang]  ID: [cVTdh_sAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Warren_S_Warren]  ID: [KHuz_EMAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Lei_Li]  ID: [f4KlrXIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_H_Frederik_Nijhout]  ID: [q9z6Pt8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Allen_Buchanan]  ID: [0mU2xRcAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Anne_Pusey]  ID: [LNWymLwAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Stanley_Robboy]  ID: [XTMph3EAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Craig_Burnside]  ID: [dJYWn18AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Francois_Lutzoni]  ID: [pktpbkEAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Yu_Zeng]  ID: [UdRoEwgAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Ken_Gall]  ID: [wrpt8w0AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Brian_Hare]  ID: [5UI11PgAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Richard_B_Fair]  ID: [0k53cZgAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Lori_A_Setton]  ID: [HUxQ1TAAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Erich_Jarvis]  ID: [cI-fi9MAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Huiman_Barnhart]  ID: [Lzo5gtUAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Gregg_E_Trahey]  ID: [LuXAL7iDTcwC]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Gerard_Blobe]  ID: [R371McoAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Martin_Ruef]  ID: [J1m_OKUAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Amilcare_Porporato]  ID: [vqnUTqMAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Rathnayaka_M_Gunasingha_PhD]  ID: [4yaJ20gAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Gregory_Wray]  ID: [ktyhG_oAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Richard_G_Newell]  ID: [EwWAkHYAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Ines_Batinic_Haberle]  ID: [nWyEHywAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Haiyan_Gao]  ID: [xib3OoYAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Joel_Huber]  ID: [1nO-ue8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Michael_D_Gunn]  ID: [H4N4LiYAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Bruce_Maggs]  ID: [Gwrwxa0AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Rachel_Kranton]  ID: [drAt2gwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Richard_F_Kay]  ID: [V-lb1hoAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Warren_M_Grill]  ID: [bm5waP8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Guangya_Liu]  ID: [K4ZxcvZ2N9IC]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Timur_Kuran]  ID: [zgPXIvMAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Manju_Puri]  ID: [yDmxVkoAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Scott_Huettel]  ID: [v9totq8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Harold_U_Baranger]  ID: [JNd8RnAAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Andrew_J_Read]  ID: [iyW20p8AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_John_Dolbow]  ID: [s0DS61cAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_david_f_katz]  ID: [z4Q0crIAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_C_Frank_Starmer]  ID: [jlaUqdoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Scott_Swartzwelder]  ID: [Q9f99ZMAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Daniel_deB_Richter]  ID: [93r9SRsAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Jonathon_Cummings]  ID: [l5NUrPUAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Piotr_Marszalek]  ID: [pHaBxkIAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Michael_Platt]  ID: [U9Hu2rcAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Jeffrey_T_Glass]  ID: [W4oXu7AAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Cynthia_Toth]  ID: [M1IsnHsAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Mohamed_Noor]  ID: [5nkhrpUAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Marc_A_Deshusses]  ID: [Sm1ECLwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Tobias_Egner]  ID: [621XqxQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_David_J_Brady]  ID: [CcSZwTsAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_W_Robert_Lee]  ID: [sR8yUTkAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Thomas_G_Mitchell]  ID: [x_JfHuIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_S_Viswanathan]  ID: [Bz-VsLwAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Bruce_Donald]  ID: [TkayRqQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_William_L_Hylander]  ID: [BkawKowAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Carey_E_Floyd_Jr]  ID: [8rc4BjQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Susan_C_Alberts]  ID: [Wtm4VtQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_David_Kirsch]  ID: [1x_y-_UAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Yujun_Han]  ID: [nGqHx8UAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Patrick_Wolf]  ID: [kCLnYd8AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_James_Moody]  ID: [sF0O-pIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Bradley_G_Hammill]  ID: [265ZDuEAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Brian_R_Silliman]  ID: [JSuqquwAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Kathleen_Pryer]  ID: [mlwcH4gAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Kathleen_Pryer]  ID: [xXBPAdQAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_William_Pizer]  ID: [Im8TwrIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Timothy_E_Reddy]  ID: [B4VkeloAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_George_Truskey]  ID: [F2Tt4CAAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_George_Truskey]  ID: [BBMeAZMAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Stephen_Nowicki]  ID: [A1NhsZgAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Cindy_Van_Dover]  ID: [z9_wwB0AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Ronald_Parr]  ID: [b-GJ3QIAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Robert_Bryant]  ID: [n7HjYQoAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Doug_Breeden]  ID: [WtoaH5cAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Douglas_T_Breeden]  ID: [7sgrJHMAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Mikhail_Lebedev]  ID: [cvd2xxcAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Romit_Roy_Choudhury]  ID: [dq2wG-AAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Vadim_Arshavsky]  ID: [Q_Y4mUwAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_cris_Slentz]  ID: [ojhphS4AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Alexander_J_Hartemink]  ID: [HLRZ3oAAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Michael_D_Ward]  ID: [HEfS6A4AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Daniel_C_Sullivan]  ID: [j-821s8AAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Sina_Farsiu]  ID: [mzcr92sAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Kathryn_R_Nightingale]  ID: [JstWsaQAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Andrew_J_Armstrong]  ID: [ULlSvjEAAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Alvin_Lebeck]  ID: [6s2hs3oAAAAJ]  Has not upload photo.
+University: [Duke University]  Name: [Duke_Timothy_J_Strauman]  ID: [OQLVTq4AAAAJ]  Has  uploaded photo.
+University: [Duke University]  Name: [Duke_Subhrendu_K_Pattanayak]  ID: [tzMoBegAAAAJ]  Has  uploaded photo.

@@ -1,0 +1,188 @@
+University: [Korea University]  Name: [Korea_Heenam_Stanley_Kim]  ID: [Nr5zm_cAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Hyeoncheol_Kim]  ID: [IiZfsvsAAAAJ]  Has uploaded photo.
+University: [Korea University]  Name: [Korea_Eunil_Won]  ID: [EYR6R8gAAAAJ]  Has uploaded photo.
+University: [Korea University]  Name: [Korea_Seung_Wook_Lee]  ID: [iXTr0mIAAAAJ]  Has uploaded photo.
+University: [Korea University]  Name: [Korea_Kim_Joong_Hoon]  ID: [M6yu0sAAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Hyun_Geun_Lee]  ID: [0waEjB4AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Lee_Jong_Wha]  ID: [pt6iAeoAAAAJ]  Has uploaded photo.
+University: [Korea University]  Name: [Korea_Hae_chang_Rim]  ID: [3jkEJxEAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Woojin_Lee]  ID: [95eeQU4AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jaewoo_Kang]  ID: [iiIxp8cAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jichai_Jeong]  ID: [qiWlWmUAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Heejo_Lee]  ID: [lsKlsJ8AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_SangHoon_Lee]  ID: [7IqkgA4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Minhaeng_Cho]  ID: [IUzIpJgAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Johnmarshall_Reeve]  ID: [DFsmvRIAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dong_Hoon_Lee]  ID: [UPhwO9EAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Cheolbeom_Park]  ID: [x13-1RsAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Seong_Tae_Yeon]  ID: [ZN3fro4AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Wonjun_Lee]  ID: [pl6zPg4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jae_Hong_Kim]  ID: [XMVx3gIAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jong_Heun_Lee]  ID: [FVvdLjsAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Yun_Chan_Kang]  ID: [FCU2uPgAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Seoung_Bum_Kim]  ID: [2BS2L44AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Bong_Rae_Cho]  ID: [tMUiCfYAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Dong_Wan_Kim]  ID: [ngmnBpwAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Q_Han_Park]  ID: [D97nh-EAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Ji_Hoon_Ahn]  ID: [kSS4nkYAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Timothy_R_Levine]  ID: [y_04krsAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Inkyu_Lee]  ID: [y0ve6xwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Kwangyeol__Lee]  ID: [bCx9LMEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jeong_Gyu_Kim]  ID: [UOJ51gsAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jae_Seung_Lee]  ID: [4L61UtMAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Chang_Seop_Hong]  ID: [vBbP7IcAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_DONG_HOON_CHOI]  ID: [Ha8qMQwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hwi_Kim]  ID: [GyhA-j8AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Joong_Hoon_KIM]  ID: [c_iisoEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Heenam_Stanley_Kim]  ID: [Nnk8zcQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hyun_Kyu_Song]  ID: [GNJdiyQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jeong_hoon_Mo]  ID: [has32OkAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Gerard_Jounghyun_Kim]  ID: [7UCco8IAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Ki_Bong_Lee]  ID: [UlX7fDUAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sangjin_Lee]  ID: [saNBwbQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Myoung_Gyu_Lee]  ID: [wW0npOUAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Seungjoo_(Gabriel)_Kim]  ID: [MjJzWJEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Seok_(Sid)_Chung]  ID: [WbV9IREAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hyunggee_Kim]  ID: [nKAUU1kAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Min_Kyu_Oh]  ID: [d_xRi3MAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sanghun_Jeon]  ID: [YmypcdMAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jae_Ho_Han]  ID: [3VntERAAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_HyungJun_Cho]  ID: [jwDNDwIAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Woochan_Kim]  ID: [cQ2OY7AAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Han_Young_Woo]  ID: [ODcjUNEAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Kyung_Jin_Lee]  ID: [a2IOLlsAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Dr_Suk_Joong_Lee]  ID: [NLpND7sAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hackjin_Kim]  ID: [UaNbG5EAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Chang_Su_Kim]  ID: [KOdKwNsAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Seong_JY]  ID: [2hvJeHMAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_June_Huh]  ID: [GP8J_SgAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Kwanho_Shin]  ID: [nk6XKucAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_HYUNSEUK_MOON]  ID: [JrdTV28AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sangheon_Pack]  ID: [UCKmmOwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Chung_G_Kang]  ID: [Nb62BUgAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Christian_Wallraven]  ID: [VJuuzLwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jae_Ho_Chung]  ID: [jKqsXZoAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Sang_Bin_Lee]  ID: [JmuCMjwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Byung_Jo_Kim]  ID: [Y65H04EAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sang_Won_Lee]  ID: [fvPdPjoAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Woojun_Park]  ID: [BR9Zmt0AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sehyun_Shin]  ID: [Hekmlv4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jaesang_Lee]  ID: [HdPjrM4AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Sung_Joon_Lee]  ID: [PSZtZa4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Byung_Joo_Ham]  ID: [OGbMPTEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Heonchang_Yu]  ID: [dwvceYUAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Chul_Ho_Lee]  ID: [Ri2au2AAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jae_Yun_Moon]  ID: [49OdIUcAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Chang_Su_Lim]  ID: [_ayg4b0AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sungpyo_Kim]  ID: [rKGdtZ4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sungnam_Park]  ID: [OfYMDDUAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Kwang_Won_Park]  ID: [CM1w6XIAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Chung_In_Um_(엄정인)]  ID: [VFiwPEEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Taek_Lee]  ID: [f-A41pAAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hee_Deung_Park]  ID: [h9wxbfcAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Woojin_Chung]  ID: [Hk9z_7AAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jong_ho_Choi]  ID: [TpsoAjQAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Gunuk_Wang]  ID: [i1TvMp4AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Sang_Min_Lee]  ID: [j7brhmgAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hoh_Peter_In]  ID: [OGdx-IUAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Youngjoo_Byun]  ID: [e77PLLAAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_영완_김]  ID: [pudeo8EAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Yoo_Chulsang]  ID: [yy_gTZcAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Sam_Sukgoo_Yoon]  ID: [rrt9Pm8AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_이인모]  ID: [nmQUE_AAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dong_Kwon_Lim]  ID: [zWCTYa0AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jong_Sub(Jong_Sub;_Jongsub)_Lee]  ID: [uasRpnAAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Byeongseon_Seo___서병선]  ID: [pNf-JAYAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hak_Eun_Lee]  ID: [D0rqAqUAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Joon_Hyung_Shim]  ID: [--ED6v0AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sung_Phil_Kim]  ID: [YHjx7qoAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jung_Sik_Kong]  ID: [_CxUmSE2_O4C]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jeong_Won_Kang]  ID: [mQxowuIAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dong_Joo_Kim]  ID: [Ivm_0PEAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Suk_Won_Hwang]  ID: [L-nwx40AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sungkyu_Seo]  ID: [4pIsk3UAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Yong_Joo_Doh]  ID: [IxKbhbYAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jong_Hwan_Lee]  ID: [jiT6fH0AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Chai_Youn_Kim]  ID: [glUesCEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Haejoo_Chung]  ID: [x5I8GRIAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Kwan_Woo_Lee]  ID: [X48FWzQAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Siamac_Fazli]  ID: [Vjv6HDoAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Siamac_Fazli]  ID: [QK3vLywAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sung_il_Kim]  ID: [6TEgXpoAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Soong_Ju_Oh]  ID: [2pnv_gQAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Shim_Hyun_Woo]  ID: [9Y-EpOIAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Young_Jong_Kang]  ID: [VyMXmpwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Young_Soo_Yoon]  ID: [S2wQUJkAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Wookbong_Lee]  ID: [-WRcVVcAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Sang_Hee_Kim]  ID: [6caVUNQAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Kijong_Cho]  ID: [48rsjhwAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Moon_Soo_Lee]  ID: [xfHDwCEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Minho_Jo]  ID: [XMaiAcMAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Seongpil_Hwang]  ID: [At0DKvUAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dongwon_Lee]  ID: [g7xleZ4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hyeonjoong_Cho]  ID: [_NNDAzIAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_JI_YOUNG_HWANG]  ID: [9It2XQwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Lee_Woojin]  ID: [SznBtRwAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Youngho_Lee]  ID: [Y1Tu3zoAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sung_Woo_Chung]  ID: [njN9VcoAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Sung_il_Kim]  ID: [Ucst0SIAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hyun_Joon_Kim]  ID: [LNffdsgAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Byoung_Kyong_Min]  ID: [XZyLGFEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hugh_I_Kim]  ID: [q3HZX8oAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dong_Myung_Jang]  ID: [sFThtuQAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dong_Hwee_Kim]  ID: [j9FmdA8AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Ik_Rae_Jeong]  ID: [cMn-vC0AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Yong_Geun_Choi]  ID: [7KEBiZ4AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Dae_Soo_Yang]  ID: [oqEwMfEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_SangKeun_Lee]  ID: [BGSUpLgAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dhrubajyoti_Bhattacharjya]  ID: [n95uc74AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Nitin_Chaudhari]  ID: [VcrXRCYAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jae_Young_Park]  ID: [G_VyyuEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Cheol_Hong_Cheon]  ID: [VLoFXEsAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Young_Jun_Hong]  ID: [NUsdw14AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Heung_Il_Suk]  ID: [dl_oZLwAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hun_Joon_Kim]  ID: [nk46dRQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jung_Hwan_Kwon]  ID: [XkR_kvQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_soo_man_seo]  ID: [wKsSeUAAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Kihoon_Han]  ID: [GPDVEwIAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hyung_Jin_Yang]  ID: [-s7ETqcAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Byunghyun_Kang]  ID: [OmN6YFIAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hee_Jin_Lee]  ID: [H88HjCkAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Sudeshna_Chaudhari]  ID: [xkbps2oAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Han_Yi]  ID: [I65qJjkAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Huy_Kang_Kim]  ID: [329wHz0AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hak_Joong_Kim]  ID: [7tRImhsAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jongil_Ju]  ID: [vw5f33kAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_yoonmook_kang]  ID: [r10WIjkAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Kyung_Woo_Kim]  ID: [bsz6peAAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Heuiseok_LIm]  ID: [HMTkz7oAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Xueqiu_You]  ID: [9-sBwJIAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Kwanho_Suk]  ID: [E560qFAAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jaejoon_Jung]  ID: [7iw7s58AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_H_C_Oh]  ID: [fb6VYAwAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jae_Woo_Lee]  ID: [SGWiNbEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Jeong_Hoon_Park]  ID: [P1-DrhUAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Han_Seon_Lee]  ID: [S6xfQvMAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Paik_Kyungrock]  ID: [J-frToQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Hyong_Seok_Park]  ID: [Z8J3-KQAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Bhavana_N_Joshi]  ID: [wzKuG80AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Kwangsu_Lee]  ID: [KAad8-0AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Mingcan_Cui]  ID: [JvwDDBwAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Kee_Hong_Choi]  ID: [3WgNtyEAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jongman_Hong]  ID: [vvZepM4AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Dong_Chul_Shim]  ID: [UDfixgcAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Young_Kyu_Ju]  ID: [OBAj8yMAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Taesu_Cheong]  ID: [M0PUKeYAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Ingyu_Oh]  ID: [0nAeASgAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Seongpil_An]  ID: [NuDh3BcAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Beelee_Chua]  ID: [R9dlETEAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Yesl_Jun]  ID: [WhZSAQ8AAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_윤성호]  ID: [viuu52gAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Ji_Woong_Chung]  ID: [zqHrZZoAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jae_won_Lee]  ID: [3VF21ooAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jin_Hwan_Kim]  ID: [wZm9kpEAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Gayaneh_Kyureghian]  ID: [xGdaJBQAAAAJ]  Has not upload photo.
+University: [Korea University]  Name: [Korea_Jung_Jae_Park]  ID: [IzeAaggAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_김정문_Jungmoon_Kim]  ID: [_IR3y3cAAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Do_Yeon_Kim]  ID: [UbRYup8AAAAJ]  Has  uploaded photo.
+University: [Korea University]  Name: [Korea_Myung_Han_Hyun]  ID: [xExdCDkAAAAJ]  Has not upload photo.

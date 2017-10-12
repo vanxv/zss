@@ -1,0 +1,191 @@
+University: [University of Alberta]  Name: [UniversityAlberta_James_Pinfold]  ID: [XCaN-iIAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Douglas_M_Gingrich]  ID: [jRxY-MkAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_David_Wishart]  ID: [-JSn-WgAAAAJ]  Has uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Yutaka_Yasui]  ID: [5yLZEAMAAAAJ]  Has uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Kerry_S_Courneya]  ID: [yFngoT4AAAAJ]  Has uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Huazhou_Li]  ID: [Q3Vb0a4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Randall_Morck]  ID: [6z7K5y0AAAAJ]  Has uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Gary_Lopaschuk]  ID: [c1QJWH0AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Brian_Rowe]  ID: [DRELmCoAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_John_Mackey]  ID: [7jy6aWAAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Lorne_Babiuk]  ID: [p3IAwSgAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Melvin_T_Tyree]  ID: [dVhvRykAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mijung_Kim]  ID: [4kB_EqsAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Huazhou_Li]  ID: [_wXVg84AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jianping_Wu]  ID: [m5QoD_IAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Dennis_E_Vance]  ID: [9ZA1C0cAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Royston_Greenwood]  ID: [Ja-oBpsAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mark_S_Boyce]  ID: [pDNbioUAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jörg_Sander]  ID: [QzFTFLEAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mark_S_Boyce]  ID: [c7ZpqT0AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Gane_Ka_Shu_Wong]  ID: [p7cNIPgAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Marek_Michalak]  ID: [g7j6JhIAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Xinwei_Yu]  ID: [NnV0lYwAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jeffrey_A_Johnson]  ID: [zR99h0MAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Dmitri_Pogosyan]  ID: [GBe1H8QAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Stan_Boutin]  ID: [3RIi6R0AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Richard_Schulz]  ID: [q8tpimcAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mike_Flannigan]  ID: [Q1wYDxIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Lonnie_Zwaigenbaum]  ID: [JJtZV1EAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Karthik_Shankar]  ID: [9NmytbgAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Don_Page]  ID: [1DU0sPYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Wiktor_Adamowicz]  ID: [4WI5j3YAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Christian_Beaulieu]  ID: [6WQMWu4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_ED_Michelakis]  ID: [F6sheToAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Clayton_V_Deutsch]  ID: [6kBtIxEAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Biao_Huang]  ID: [SYAPVaEAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Wayne_Martin]  ID: [0nGn9osAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_YUHE_HE]  ID: [6qSHE_EAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mark_Lewis]  ID: [l_jCNmMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_AM_Clark]  ID: [FMV0RP4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_R_F_Egerton]  ID: [A4YQBmAAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_John_Gamon]  ID: [zBrwYhUAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Russ_Greiner]  ID: [Rn7APGIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_DG_Pearson]  ID: [WoLo03QAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Michael_Hendzel]  ID: [D3LDzooAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Linda_M_Pilarski]  ID: [uIt8vdQAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Yun_Wei_Li]  ID: [dX9dtKwAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_James_R_Smiley]  ID: [cHMLtfsAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Michael_Lounsbury]  ID: [hUZXWQoAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jonathan_Schaeffer]  ID: [W6WwvbQAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Raymond_Lai]  ID: [ik4XKSIAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jillian_Buriak]  ID: [DeNZmNUAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Catherine_Field]  ID: [QU-bo2oAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Carole_A_Estabrooks]  ID: [wwEOuLMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Martin_Sharp]  ID: [G1Io2ywAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Juan_G_Abraldes]  ID: [ZgNNVlwAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Joel_Weiner]  ID: [beHu_hgAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_William_Shotyk]  ID: [6Xkiz6kAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Rich_Palmer]  ID: [ibEMssoAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Osmar_Zaiane]  ID: [j-W_RNYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Raj_Padwal]  ID: [WKNpPAwAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Nicholas_Ashbolt]  ID: [16x4DHYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_K_Muehlenbachs]  ID: [uSUWj6IAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Karen_Madsen]  ID: [s3XmlLwAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Valeri_Frolov]  ID: [Nc1Fh8oAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Robert_A_Creaser]  ID: [00b6NRwAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Andrew_E_Derocher]  ID: [xxdom7wAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Miodrag_Belosevic]  ID: [W9LZAEYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_James_P_Kehrer]  ID: [GQzkpgYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Robert_Holte]  ID: [3_002c0AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Craig_Knox]  ID: [L2EIC5gAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Otto_P_Strausz]  ID: [rH_oeRQAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_David_Cooper]  ID: [Q1KYEU4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Janis_Miyasaki]  ID: [BSyoupkAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Brian_Jones]  ID: [JUPS3ZAAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Nicholas_Ashbolt]  ID: [X000AbUAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Holger_Wille]  ID: [idZ9bzsAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_John_Spence]  ID: [uvMrtuoAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Victor_J_Lieffers]  ID: [S7QTZWkAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Peter_C_Boxall]  ID: [_O5Rln0AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Csaba_Szepesvari]  ID: [zvC19mQAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Klaus_Ballanyi]  ID: [oorvv-UAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Robert_J_Fisher]  ID: [_QMcXKYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Uwe_Hacke]  ID: [Z24ZX_8AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Tracey_Derwing]  ID: [SuIr3O8AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Kurt_Konhauser]  ID: [09Cd-FUAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Michael_Gänzle]  ID: [Zc29kvEAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Larry_Fliegel]  ID: [KBbZbXgAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_John_C_Spence]  ID: [KHQIyNwAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Alexander_Wolfe]  ID: [YTqvVFcAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Rong_Cai_Yang]  ID: [HMa4vcYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Murray_Gray]  ID: [_sWnVwsAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Christopher_McCabe]  ID: [-OOeJdwAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jack_Tuszyński]  ID: [vQh8WdcAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Rob_Shields]  ID: [efWsZUoAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Fakhreddin_Jamali]  ID: [xdDqofoAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Fakhreddin_Jamali]  ID: [8LIRXpkAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Kenny_Wong]  ID: [I__Yju4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Andrew_Lawrence_Mason]  ID: [wDB7rUwAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_David_Deephouse]  ID: [uGEgR1cAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Ian_Adatia]  ID: [ARAEZPAAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Afsaneh_Lavasanifar]  ID: [1jVP16sAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Nancy_L_Galambos]  ID: [kQlKdxYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mark_JF_Haykowsky_PhD]  ID: [P1IQw2UAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Greta_G_Cummings]  ID: [O3hLGucAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Roman_Eisner]  ID: [BenEJ3IAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Dale_Schuurmans]  ID: [xaQuPloAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Felix_Sperling]  ID: [W5FvZ84AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Richard_Camicioli]  ID: [OsfGcX4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_David_Hik]  ID: [vF0U6kQAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Timothy_Caulfield]  ID: [deECqfgAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Duane_Szafron]  ID: [v2FRdPYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Karim_Fouad]  ID: [88ci0qkAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Satyabrata_Kar]  ID: [cUI9QbAAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Octavian_Catuneanu]  ID: [vPzJklsAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_JD_Wilson]  ID: [frFKa5oAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Craig_Heinke]  ID: [CwHGOXcAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Rozmus_Wojciech]  ID: [tcVarfgAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Patrick_E_MacDonald]  ID: [ltEUghQAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Heather_Kanuka]  ID: [rFkvhkEAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Ibolja_Cernak]  ID: [iyQoB2wAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_David_J_Bennett]  ID: [Pwz8WO8AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Carlo_Montemagno]  ID: [AHFKdo4AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Johanne_Paradis]  ID: [d8urRWIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Martyn_Unsworth]  ID: [qSz4CVcAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Donald_P_Schopflocher]  ID: [-DDChG0AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Eleni_Stroulia]  ID: [TyM1dLwAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Simaan_Abourizk]  ID: [yvxx9uEAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Peter_Senior]  ID: [76-2lGMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mark_Freeman]  ID: [SwENSF0AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Marcia_Spetch]  ID: [AMGzaJcAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Marcia_Spetch]  ID: [_mU9kZ0AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Raimar_Löbenberg]  ID: [wP6VNfMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Richard_A_Stern]  ID: [kJJ1RJsAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Richard_A_Stern]  ID: [Nkro7KgAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mauricio_D_Sacchi]  ID: [uBMvbQYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Alois_Haromy]  ID: [wMVfrQYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Liam_Rourke]  ID: [M1dwruoAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Nick_Holt]  ID: [HV7GtIMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_R_Todd_Smith]  ID: [FZ6xsGYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Massimo_Boninsegni]  ID: [SOm-77QAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Dean_Eurich]  ID: [XhvTa7EAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Yee_Hong_Yang]  ID: [dDNv_sAAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Geoff_Ball]  ID: [U8xKpEMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jeremy_Richards]  ID: [f82FfXEAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Taras_Kuzio]  ID: [QBrV-nIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jeremy_Richards]  ID: [kFwWZt0AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Qing_Zhao]  ID: [beLpRHYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Robert_A_Wilson]  ID: [lJ8g95YAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Scott_E_Nielsen]  ID: [2CH9_toAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jeffrey_Bisanz]  ID: [aj07HJYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Brent_M_Swallow]  ID: [PmlfbK8AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Duane_Froese]  ID: [JoOQSWQAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Yindi_Jing]  ID: [xvOE-wUAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Yan_Boucher]  ID: [1Oc_Ml8AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Tatsuya_Kin]  ID: [fMSK98gAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Tatsuya_KIN_]  ID: [cZEDNb8AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Bryan_F_Mitchell]  ID: [53BhuRIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Gerald_Häubl]  ID: [z95cmeAAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Michael_Y_Li]  ID: [4ufF9uIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Gerald_Häubl]  ID: [DEkhdR4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Hai_Jiang]  ID: [VmYNmecAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Dick_Sobsey]  ID: [OcENbOkAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Murray_Gingras]  ID: [v-pa1xUAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Hong_Zhang]  ID: [J7UkpAIAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Frank_Hegmann]  ID: [SfzQi3IAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Karen_J_Goodman]  ID: [c6FaTz4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Scot_H_Simpson]  ID: [OvI9WHkAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Bin_Han]  ID: [JKOed9MAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Yoshitaka_Iwasaki]  ID: [gRRKKq8AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Thomas_Chacko]  ID: [ubUbn34AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Walter_Bischof]  ID: [KQ2OvDoAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Scott_X_Chang]  ID: [HOAQkSwAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Rauno_Parrila]  ID: [INE4KMMAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Rupasri_Mandal]  ID: [888iXEgAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Sally_Leys]  ID: [BNObl7oAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Heather_Proctor]  ID: [HjN5Xk4AAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Gillian_Stevens]  ID: [scqrkPUAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Gillian_Stevens]  ID: [VaFqoaMAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_HJ_Marquez]  ID: [8Eak11QAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Horacio_J_Marquez]  ID: [sBgH0nMAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Robert_Lambert]  ID: [aMtslKYAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Robert_Ferrari]  ID: [77O3KTgAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Jens_Roland]  ID: [pVLS83IAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Thomas_Stachel]  ID: [4uOLAm8AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Judy_Belsheim/Judy_Gnarpe]  ID: [bXUtOxYAAAAJ]  Has not upload photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Stephane_Evoy]  ID: [NDM8awMAAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Lynne_Postovit]  ID: [AK_LY24AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Benoit_Rivard]  ID: [XRfL728AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Mrinal_Mandal]  ID: [hv8hI14AAAAJ]  Has  uploaded photo.
+University: [University of Alberta]  Name: [UniversityAlberta_Anup_Basu]  ID: [x8Nn-jQAAAAJ]  Has not upload photo.

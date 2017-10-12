@@ -1,0 +1,196 @@
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_T_F_Chan]  ID: [UO7McmEAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yong_Wang]  ID: [NGb7N0IAAAAJ]  Has uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Gordon_McKay]  ID: [LuUHmJ8AAAAJ]  Has uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Sunwei_Li]  ID: [MsGLa04AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_ZHANG_JUN]  ID: [WYE69noAAAAJ]  Has uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jin_Zhang]  ID: [JXTz1iYAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yule_Yue_WANG]  ID: [9jtyXTkAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jingshen_Wu]  ID: [MtqPQBgAAAAJ]  Has uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Qiang_Yang]  ID: [1LxWZLQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_LU_WANG]  ID: [zIsOLWUAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Bo_Li]  ID: [SLgWQLEAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Arun_S_Mujumdar]  ID: [NvBGTd4AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Hongtao_Zhang]  ID: [mk9xhmIAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Qingping_SUN]  ID: [UdgeY44AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Khaled_B_Letaief]  ID: [6WLhtHgAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_TS_Zhao_赵天寿]  ID: [0mUWHUQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Hongbin_Liu]  ID: [9HwTkSsAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Hoi_Sing_Kwok]  ID: [b1MfboEAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chao_Yang]  ID: [tLuuZJoAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_HS_Kwok]  ID: [t3mcfk0AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Mianrun_Chen]  ID: [8oiDONwAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Dimitris_Papadias]  ID: [obmvNU4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ying_Xu]  ID: [FZVtRB4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Guohua_Chen]  ID: [Ve0RR28AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Qian_Zhang]  ID: [XTlaQMkAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_henry_tye]  ID: [qxjaqOEAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Qian_Zhang]  ID: [99cwHMMAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Hai_Yang]  ID: [vIq1GlUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Wen_Xiong_Wang]  ID: [43obiSQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xiaoye_Zhou]  ID: [sd6Qnp4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kar_Yan_Tam]  ID: [prT6OvEAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ross_Murch]  ID: [r-_225QAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chung_Yee_Lee]  ID: [oXtXSqMAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Pei_Yuan_Qian]  ID: [0Rxk-AcAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_chak_chan]  ID: [tGJ8u8cAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_James_YL_Thong]  ID: [sLHqJN2Hrl8C]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Mansun_Chan]  ID: [O0UXYIQAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Zhiyong_Fan]  ID: [4lqx160AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Roger_S_Cheng]  ID: [QDzJKxkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Daniel_P_Palomar]  ID: [qlReqq8AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_James_T_Kwok]  ID: [-oTraZ4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_zilong_wen]  ID: [i0W-UGsAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Charles_Zhang]  ID: [Zmppp9kAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_King_Lun_Yeung]  ID: [2nC9a2cAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Dik_Lee]  ID: [bW4G78gAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jian_Zhen_Yu]  ID: [ARVuKNgAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Lei_Chen]  ID: [gtglwgYAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xijun_Hu]  ID: [itPG3mUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Mitchell_M_Tseng]  ID: [wQ4n1_kAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Vincent_LAU]  ID: [SpVboHsAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Hong_K_Lo]  ID: [hqda0VgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Philip_KT_Mok_IEEE_Fellow]  ID: [RSemcZgAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chi_Ying_Tsui]  ID: [Ofkl2agAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chi_Keung_Tang]  ID: [EWfpM74AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Hong_K_LO_Chair_Professor_and_Head_of_Civil_and_Environmental_Engineering]  ID: [x0qEW18AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chi_Ying_Tsui]  ID: [g3Y1ukUAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Randy_YC_Poon]  ID: [UgRv_agAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_KC_John_Wei]  ID: [QPiqXGgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jiatao_Li]  ID: [eFDZZKwAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Sunghun_Kim]  ID: [JE_m2UgAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Furong_Gao]  ID: [HAgn6Z4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Qiong_Luo]  ID: [SqAsppUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yuning_Hong]  ID: [VcZKZ9MAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_C_Patrick_Yue_PhD_FIEEE]  ID: [gcFvb3avXYEC]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Professor_Irene_M_C_Lo_Academician_European_Academy_of_Sciences_and_Arts]  ID: [SqSjI-AAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Minhua_Shao]  ID: [m97o8AkAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Sunil_Arya]  ID: [Azu2w_MAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Albert_Park]  ID: [crDwYK0AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Fred_Lochovsky]  ID: [eIm7hjkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Limin_Zhang]  ID: [pgbtUwkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Michelle_YIK]  ID: [Rpt4wqkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Wing_Hung_Ki]  ID: [gDOU_mIAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Utpal_Bhattacharya]  ID: [s899WjYAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Tai_Kai_Ng]  ID: [YJlBi7YAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Shing_Chi_Cheung]  ID: [5RIgb3wAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Danny_Tsang]  ID: [27LmFbwAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Pascale_Fung]  ID: [QEMJWzEAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jian_Feng_Cai]  ID: [Mo4v5iwAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Christopher_Y_H_Chao]  ID: [lMVq_rMAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xueqing_Zhang]  ID: [rBLXUbkAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Lau_Kai_Hon_Alexis]  ID: [sB519ukAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kun_Xu]  ID: [dRlBzscAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kei_May_Lau]  ID: [3n4_9cgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Mingyi_Hung]  ID: [XGVmVCkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jun_Xia]  ID: [GbjGESIAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ling_Shiqing]  ID: [iYvvGRgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Henry_Lam]  ID: [dQTozYwAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Fugee_Tsung]  ID: [yQVoXS0AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Riki_Takeuchi]  ID: [TDfKej0AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Takeuchi_Riki]  ID: [h_poEPgAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Howard_Luong_IEEE_Fellow]  ID: [HdCzhbQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chiew_Lan_Tai]  ID: [DORzgBQAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Mark_Seasholes]  ID: [qw3vtqoAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_david_zweig]  ID: [KFy4uZUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Matthew_McKay]  ID: [gttPuqEAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ke_Yi]  ID: [dWcZPFEAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Francis_Lui]  ID: [AZe7WMQAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Zhengtang_Luo]  ID: [3lB79s8AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_JCH_Fung]  ID: [rjbDyAsAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Danyang_Xie]  ID: [ZhjULlYAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Wai_Ho_MOW]  ID: [jvsbM2sAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Weichuan_Yu]  ID: [G9t_DSUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xiangtong_Qi]  ID: [i2YE9pAAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xiaoquan_(Michael)_Zhang]  ID: [3RWyot0AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Raymond_Chi_Wing_Wong]  ID: [IKgiD0AAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_James_Z_Lee]  ID: [099ZNoQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chii_Shang]  ID: [c5cQ8aoAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xiangrong_Wang]  ID: [MDOdNNIAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Alvin_Y_So]  ID: [KnW7860AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kwing_L_Chan]  ID: [k6CHjWYAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Lancelot_F_James]  ID: [ZQusKVYAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Amine_Bermak_IEEE_Fellow]  ID: [uiKoUMQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Siu_Wing_Cheng]  ID: [0nquEkQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chin_Tau_Lea]  ID: [Sr7NSAUAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kevin_CW_Chen]  ID: [Jp0XlkMAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_shiheng_wang]  ID: [PK-DKBsAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Albert_Ha]  ID: [xAXicZsAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Mike_KP_So]  ID: [7ABkqR8AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Tiezheng_Qian_(钱铁铮)]  ID: [9co79zkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Bing_Yi_Jing]  ID: [RYOsjpoAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Dr_Qingbin_Zheng]  ID: [9oDqFwkAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Andrew_W_Poon]  ID: [n9jFpUEAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Goonetilleke_Ravindra_S]  ID: [w0Ge-oUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kai_Lung_Hui]  ID: [13uCyi8AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Huamin_Qu]  ID: [J7a5zGEAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jun_Zhang]  ID: [1Is687QAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xiaogang_Wu]  ID: [X94H31EAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jianwei_Sun]  ID: [PSJ1VJsAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Levent_YOBAS]  ID: [vbavecAAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Carsten_A_Holz]  ID: [NIxNLlUAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Rachel_Q_Zhang]  ID: [aK9zQ1wAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kai_Chen]  ID: [tnRV5QYAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Shengwang_Du]  ID: [N-r-1HgAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kellee_Tsai]  ID: [_cWyW2EAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_HUI_Chi_Wai]  ID: [QpWZNEIAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Shuhuai_Yao]  ID: [Ml-AxkIAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kai_Liu]  ID: [UpQudVQAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ye_Ding]  ID: [G7z5bZcAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yue_Kuen_Kwok]  ID: [pk53Yj8AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yongshun_Cai]  ID: [HsRkAaAAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Gyu_Boong_Jo]  ID: [MNYpyLUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Albert_Y_Lo]  ID: [MMvGo1MAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kasper_Meisner_Nielsen]  ID: [602uYo8AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_K_Y_M_Wong]  ID: [oRlDrHgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Huihe_Qiu]  ID: [05ucCQ4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kai_Tang]  ID: [3PAHtrsAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Cameron_Campbell]  ID: [Z-SWp1AAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ling_Shi]  ID: [db9WLdcAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Bertram_E_Shi]  ID: [KaaF6ooAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Rashmi_Adaval]  ID: [O8KZJwMAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_KT_Law]  ID: [5Z73YxcAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yilong_Han]  ID: [E8LG2W0AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jiang_Xu]  ID: [IxOQVaEAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chun_Man_CHAN]  ID: [3Ex0LBoAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Haibin_CHEN]  ID: [SYeoqi0AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xing_Li]  ID: [xnQy2rkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Amy_Zang]  ID: [qrvyZwkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ping_Sheng_Koh]  ID: [pg53ZNoAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Peter_MacKay]  ID: [Y4H9u-0AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Tom_H_Cheung]  ID: [WtsX8AsAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Tai_Yuan_CHEN]  ID: [H_gRwo4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yongwei_Huang]  ID: [dKNh-14AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Xiuyi_Lin]  ID: [hVTRcl4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jing_Wang]  ID: [1F0bQi0AAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yu_Hsing_Wang]  ID: [C-5sy9kAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Albert_Kai_Sun_Wong]  ID: [FSoreggAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_朱晓农_/_Zhu_Xiaonong]  ID: [KV6uzBUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Pengfei_Wang]  ID: [x1yEZTkAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Richard_HY_So]  ID: [5pgNvB4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Kim_Pong_Tam]  ID: [e1bKI0cAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Wouter_Stam]  ID: [ROQtpkUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Chi_Yuk_Chiu]  ID: [iOWjwuQAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_abhishek_srivastava]  ID: [7dz-QzUAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_David_Cook]  ID: [ayRFFGAAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jidong_Zhao]  ID: [s82IyOwAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Wei_Zhang]  ID: [1nl6hScAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Guochang_Zhang]  ID: [XDCkYAYAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_James_She]  ID: [HUBoB20AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Melody_M_Chao]  ID: [dfEuc1kAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ying_Chau]  ID: [Prkb0f4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Derek_Hao_Hu]  ID: [Ks81aO0AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Baoling_Huang]  ID: [AL3MMWYAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Rong_Zheng]  ID: [8t4TQvAAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Haining_Chen]  ID: [HaNjZVsAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jiang_Kui]  ID: [glabFWgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Sophie_Xiaoyan_Ni]  ID: [sAwlZygAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jingbo_ZHAO]  ID: [9WOatFgAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Wei_Wang]  ID: [FeJrzPMAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Jialin_Yu]  ID: [gBlHRhwAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Qian_Liu]  ID: [w52ajLIAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Huawei_Hu]  ID: [AumkNsAAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yingying_Li]  ID: [f0jaUQkAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Anirban_Mukhopadhyay]  ID: [aRSIu7YAAAAJ]  Has not upload photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Yuhang_Liu]  ID: [8SrHZlYAAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Amy_N_Dalton]  ID: [yWn4GX4AAAAJ]  Has  uploaded photo.
+University: [Hong Kong University of Science and Technology]  Name: [HKUST_Ajay_Joneja]  ID: [rkWNfUcAAAAJ]  Has not upload photo.

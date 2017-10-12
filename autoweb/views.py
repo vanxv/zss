@@ -173,6 +173,7 @@ def Task(request, mobile_ID = ''):
             'mobileID':task.mobileid_id,
             'taskid':task.id,
             'QQ':task.mobileid.QQ,
+            'sortid': task.softid.id
         }
         return JsonResponse(taskdict, safe=False)
 

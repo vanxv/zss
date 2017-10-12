@@ -1,0 +1,194 @@
+University: [Rice University]  Name: [Rice_Gustavo_E_Scuseria]  ID: [6ZiRSwQAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Ajayan_PM]  ID: [S5oLGEgAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_James_M_Tour]  ID: [YwoecRMAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_N_J_Halas]  ID: [nd8O1XQAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Antonios_G_Mikos]  ID: [LcC3XAsAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Moshe_Y_Vardi]  ID: [DQaARsgAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Richard_Baraniuk]  ID: [N-BBA20AAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Edwin_L_Thomas]  ID: [zdNpWjEAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Peter_Nordlander]  ID: [By6YYMAAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Peter_Nordlander]  ID: [zX2vpQMAAAAJ]  Has uploaded photo.
+University: [Rice University]  Name: [Rice_Yuhang_Xing]  ID: [h32PYlAAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Jason_H_Hafner]  ID: [iwdUZZUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_John_Dennis]  ID: [Z2NsxiQAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Peter_Vail]  ID: [6NThbjgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Danny_Sorensen]  ID: [fDy06usAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Behnaam_Aazhang]  ID: [LalqwaAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Rebecca_Richards_Kortum]  ID: [JvDMZEMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Frank_Tittel]  ID: [RwHiswoAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Stephan_Link]  ID: [WUuEC_UAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Tayfun_E_Tezduyar]  ID: [5Yw2z0AAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Boris_Yakobson]  ID: [OYtx5csAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Bonnie_Bartel]  ID: [BMSO3yEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_David_W_Scott]  ID: [Aq8sbHkAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_John_S_Olson]  ID: [vUDs6oEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Lydia_E_Kavraki]  ID: [Q6pxNZYAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Richard_G_Gordon]  ID: [UTB-AXgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_George_N_Phillips_Jr]  ID: [sBlJ9SIAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_George_N_Phillips_Jr]  ID: [GlqwYCwAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Pengcheng_Dai_or_P_Dai]  ID: [GsSElvMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Yin_Zhang_(张寅)]  ID: [9DEya8UAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_R_Bruce_Weisman]  ID: [b7ZrljcAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Wagner_Kamakura]  ID: [Jhg2DPwAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Herbert_Levine]  ID: [gHjHIvAAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Rebekah_Drezek]  ID: [EOc3O8AAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Vivek_Sarkar]  ID: [XjeIqxYAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Edward_Knightly]  ID: [-0vALDMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_C_Sidney_Burrus]  ID: [6Sf9grkAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Farinaz_Koushanfar]  ID: [3XnMVUAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Andrew_R_Barron]  ID: [5qyXpx4AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Gerald_R_Dickens]  ID: [5r23J_EAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_George_N_Bennett]  ID: [txdJApMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_William_Leeman]  ID: [zbdAeKgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Utpal_Dholakia]  ID: [KQ2Eq8AAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Robert_A_Westbrook]  ID: [NMdv570AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Evan_Siemann]  ID: [Yfkyms8AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Manik_Talwani]  ID: [v_niKhUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Dan_S_Wallach]  ID: [oM25EQkAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Qimiao_Si]  ID: [HAYRG94AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Alan_Cox]  ID: [z28ApZkAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Prashant_Kale]  ID: [7PGKvI0AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Ashutosh_Sabharwal]  ID: [MiqMO-kAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jeffrey_D_Hartgerink]  ID: [Spj2elMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_John_Mellor_Crummey]  ID: [wX0XpxMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Mary_C_Farach_Carson]  ID: [5OSMezYAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Marek_Kimmel]  ID: [0XxTxd0AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Daniel_Carson]  ID: [chwPsSIAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Walter_Chapman]  ID: [NMI2vK0AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Michael_S_Wong]  ID: [z2UWh4MAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Keith_Cooper]  ID: [ubiUvvgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Kevin_F_Kelly]  ID: [hgTGyI4AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Mark_P_Jones]  ID: [5bpuhRMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Ka_Yiu_San]  ID: [xWp64gQAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Michael_D_Byrne]  ID: [DalLJdYAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Michael_D_Byrne]  ID: [C_BxCx4AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_T_S_Eugene_Ng]  ID: [P07ZE9sAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Satish_Nagarajaiah]  ID: [l_jZ3NgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Flavio_Cunha]  ID: [M9MsticAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jun_Lou]  ID: [Ng_zmUUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Douglas_Natelson]  ID: [6YY-FagAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Athanasios_C_Antoulas]  ID: [mrR4JfgAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Janet_Braam]  ID: [6UTCD84AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Mikki_Hebl]  ID: [CCOSnCEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Randi_Martin]  ID: [8nzzljEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Ronald_Sass]  ID: [wrDokt0AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Junichiro_Kono]  ID: [7ruGjLAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jason_Laska]  ID: [XN2tES4AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Han_Pu]  ID: [iTvlyycAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Giovanni_Fossati]  ID: [x7UscLsAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Scott_Rixner]  ID: [MvxSD2AAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Qilin_Li]  ID: [XyTFV0kAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Joseph_R_Cavallaro]  ID: [yi-l0zkAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Alan_Levander]  ID: [Q7u9izAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Kenton_Whitmire]  ID: [VkY3GusAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Paul_Havlak_PhD]  ID: [kv29bjMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jan_E_Odegard]  ID: [fG5xj9YAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jan_Odegard]  ID: [SgdwQtgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_George_Zodrow]  ID: [InRUGqIAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Anatoly_Kolomeisky]  ID: [7RAFNNkAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Albert_W_Bally]  ID: [8m9RxuEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Eugene_R_Zubarev]  ID: [mohlpMwAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Neelam_Singh]  ID: [rMAvTgEAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Lin_Zhong]  ID: [hJPN-G8AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Frederick_L_Oswald]  ID: [jWlqGZcAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Caroline_A_Masiello]  ID: [1GGkVIQAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Kathleen_Matthews]  ID: [FfqHjHoAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Cin_Ty_Lee]  ID: [WzhF2kUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Seiichi_P_T_Matsuda]  ID: [0LRR0V4AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Haiyang_Li]  ID: [ZpuD6mwAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Matthew_Knepley]  ID: [MtzzT2MAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Rick_K_Wilson]  ID: [GqI70VgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Robert_M_Stein]  ID: [Ni7lCE0AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Cecilia_Clementi]  ID: [0na1SpQAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jane_Grande_Allen]  ID: [skQXTLUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Colin_A_Zelt]  ID: [nYlYwlkAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_James_R_Pomerantz]  ID: [Or8RaIkAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Ramon_Gonzalez]  ID: [PE2LM_kAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Jacob_T_Robinson]  ID: [xZ92gsAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Ramon_Gonzalez]  ID: [eIZTNqsAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Alberto_Pimpinelli]  ID: [UbGn9icAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Marina_Vannucci]  ID: [aLnw7d8AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Antonio_Merlo]  ID: [UNrLs5AAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Ramon_Gonzalez]  ID: [eDrvs7AAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_John_Alford]  ID: [ZXeoqJMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Suzanne_Kemmer]  ID: [xj35lrcAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Feng_Hao]  ID: [WzNgrPgAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_George_J_Hirasaki]  ID: [5Ga8snYAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_MARTIN_WIENER]  ID: [ckbHZnMAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Reese_Harvey]  ID: [HEqlIvIAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Devika_Subramanian]  ID: [7eC3KMkAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Ashok_Veeraraghavan]  ID: [tI-oUmsAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Rajdeep_Dasgupta]  ID: [KZo872EAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Philip_Kortum]  ID: [2xvRu38AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Daniel_Wagner]  ID: [aKC3SF8AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Luay_Nakhleh]  ID: [46HLWf8AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Daniel_S_Wagner]  ID: [f2GFJIkAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_randolph_stevenson]  ID: [0UIEfPsAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Margaret_Beier]  ID: [h9TnggYAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Michael_H_Kohn]  ID: [Ee2RIzEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_heidar_sobhani]  ID: [F5g8kdUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Randolph_Stevenson]  ID: [PEHTQhEAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Andre_Droxler]  ID: [QvFmpBAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Alexander_Kiselev]  ID: [wftH0vcAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Mitchell_D_Miller]  ID: [waude4cAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Dilip_Asthagiri]  ID: [gWpi82QAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Amit_Saha]  ID: [BrntjmcAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Yousif_Shamoo]  ID: [HVtSJJsAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Robert_Cartwright]  ID: [TtJeqqoAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Kyriacos_Zygourakis]  ID: [wYP9fUIAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_David_Damanik]  ID: [g53afKIAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Fenglin_Niu]  ID: [DkP6C40AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_David_Yu_Zhang]  ID: [q3sWmXUAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Zachary_Ball]  ID: [btTzzdoAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Timothy_Morton]  ID: [m1ARqQgAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Sina_Najmaei]  ID: [InI06IsAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Matthias_Heinkenschloss]  ID: [uKCSUVAAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Brett_Ashley_Leeds]  ID: [U9GqpY4AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Mahmoud_El_Gamal]  ID: [5Ip-HKAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Boanerges_Aleman_Meza]  ID: [b6JffjsAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Emilia_Morosan]  ID: [mVvQ5X0AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Angel_Marti]  ID: [Q6Bm_9QAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_adrian_lenardic]  ID: [vDjI3gEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Scott_Sonenshein]  ID: [YhjQHhAAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Bridget_Gorman]  ID: [BA__1FYAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Matthew_R_Bennett]  ID: [mUsuJvwAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Robert_M_Raphael]  ID: [wkSrhyUAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Andrew_J_Schaefer]  ID: [YE3iwn0AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Vivian_Ho]  ID: [2emabpMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Mark_Moll]  ID: [sLXafasAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Melissa_Marschall]  ID: [CamYDkoAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Jonathan_(Joff)_Silberg]  ID: [w3uEh7oAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jordan_S_Miller]  ID: [mt4HXowAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_volker_schweikhard]  ID: [j93LV8EAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Volker_Schweikhard]  ID: [dapErzwAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Stanislav_Sazykin]  ID: [JGCavvMAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Lulu_Ma]  ID: [ot4CgakAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Mingyang_Lu]  ID: [WgdQw7wAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_James_R_Elliott]  ID: [vu9kFXEAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Andrea_Isella]  ID: [zaB5fpYAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Tatiana_Schnur]  ID: [cowFnOMAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Junrong_Zheng]  ID: [R149PtcAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Volker_Rudolf]  ID: [jwyTawwAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Adilet_Imambekov]  ID: [hE2cjzkAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Yongji_Gong]  ID: [QrStbPIAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jorma_Lilleberg]  ID: [fMhlSBcAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Peter_Varman]  ID: [c56AFDoAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Chris_Jermaine]  ID: [D2P2B0MAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Brandon_Dugan]  ID: [3ADGQ7oAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Julia_Morgan]  ID: [g1mWupQAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Jiangang_Guo]  ID: [scQJWkUAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Christy_Landes]  ID: [Bsmy0GwAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Russell_Hart]  ID: [AyLnTk8AAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Erik_Dane]  ID: [fVWIBxoAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Lanny_Martin]  ID: [N8PfrysAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Constance_Elise_Porter]  ID: [7hrPTq4AAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_James_L_Dannemiller]  ID: [ab2J6HAAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Swarat_Chaudhuri]  ID: [9j6RBYQAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jamie_E_Padgett]  ID: [aHuQagUAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Jeffrey_J_Tabor]  ID: [VjHZq-YAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Elaine_Howard_Ecklund]  ID: [a0vTnqUAAAAJ]  Has not upload photo.
+University: [Rice University]  Name: [Rice_Gang_Shi]  ID: [Gc0wd5IAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Evgeni_Penev]  ID: [PK8QMyAAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Jeremy_Fox]  ID: [qx0SH2IAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Gedeng_Ruan_(阮戈登)]  ID: [WiOtn_IAAAAJ]  Has  uploaded photo.
+University: [Rice University]  Name: [Rice_Shu_Tian]  ID: [tG9AB1IAAAAJ]  Has not upload photo.

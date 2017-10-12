@@ -1,0 +1,192 @@
+University: [University of New South Wales]  Name: [UNSW_Australia_Joanna_Wang]  ID: [s0XjNz8AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Louisa_Degenhardt]  ID: [ObRz9F0AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Gavin_Andrews]  ID: [7upgjEwAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Gordon_Parker]  ID: [JNgMf0oAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_Bryant]  ID: [4R4wLKEAAAAJ]  Has uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Helen_Christensen]  ID: [cHImW7cAAAAJ]  Has uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Helen_Christensen]  ID: [e4lYkrMAAAAJ]  Has uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_H_Brodaty]  ID: [3d6NbUoAAAAJ]  Has uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_AG(Tony)Fane]  ID: [OkYbE0AAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Lei_Zhang]  ID: [_SBa0DoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Perminder_Sachdev]  ID: [joXgLDoAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Joseph_P_Forgas]  ID: [ZJuQWBQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mark_Dadds]  ID: [ymVgNPgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mira_Kim]  ID: [NIiXF_0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_ric_day]  ID: [n87lOUQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Eddie_Harmon_Jones]  ID: [YTKUOIEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Justin_Gooding]  ID: [M232_OcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_boualem_benatallah]  ID: [WYmChp0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_Mattick]  ID: [EjCMTLUAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_T_David_Waite]  ID: [2BxpWogAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ian_Petersen]  ID: [SJvSWCkAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Michael_Farrell]  ID: [v1nErmcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Anthony_Zwi]  ID: [uVp6kxYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Anthony_Zwi]  ID: [Z2Gnw20AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Beng_Chong]  ID: [0ERn9KQAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Stenzel_Martina]  ID: [xuMJETcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_david_Goldstein]  ID: [u5RxdOoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Amal_Rose]  ID: [hmQyFvEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Brett_Neilan]  ID: [39B7sbYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Robyn_Lynne_Ward]  ID: [DYvbGKkAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_DerrickSilove]  ID: [WN3noHgAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Sean_Smith_FRACI_FIChemE_Fellow_AAAS]  ID: [_oG_CgcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Peter_Gunning]  ID: [IerinGgAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Chris_Turney]  ID: [BcKoMuoAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Andy_Baker]  ID: [CwsusnkAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Dr_Soufiane_Boufous]  ID: [orQcSTYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Dusan_Hadzi_Pavlovic]  ID: [EiqF1FcAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Rui_Wang]  ID: [bQVa3YYAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_John_k_Webb]  ID: [tSRD1-IAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_sloan_Ian]  ID: [Gd58sscAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ian_Sloan]  ID: [kypI5uoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Chris_Rizos]  ID: [5Ts-4RwAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Vaughan_Carr]  ID: [YNLehcgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ross_McMurtrie]  ID: [yHxKGYAAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_DM_Bagnall]  ID: [44fw8uUAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Nigel_Lovell]  ID: [ZUT_NO4AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Roslynn_Haynes]  ID: [8RSkj10AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_WR_Walsh]  ID: [PoK4UocAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Andrey_V_Savkin]  ID: [cj-GEEQAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Marie_Paule_Austin]  ID: [FaZWQcIAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_H_Hora]  ID: [DZ8mT2IAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Gary_Morriss]  ID: [PTfWdFoAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Robert_Brooks]  ID: [Gi3ikZoAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Da_Wei_Wang]  ID: [z2P5-I0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_M_Parr]  ID: [Ligecr8AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_robert_kohn]  ID: [94Dz5GYAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Professor_Elizabeth_Chang]  ID: [RITFWA8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Merlin_Crossley]  ID: [22Lp1FkAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Maree_Teesson]  ID: [JcWJFk8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Xuemin_Lin]  ID: [j6rglkYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Renee_Adams]  ID: [BEPk_skAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mark_Bradford]  ID: [D2BYM-YAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Igor_Shparlinski]  ID: [9WgmUesAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Matthew_England]  ID: [cND_ZAgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Matthew_England]  ID: [GfIm7WQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Carroll_Morgan]  ID: [YqrcydIAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Gernot_Heiser]  ID: [0e0Vw3kAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Zachary_Steel]  ID: [r-KUTdEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Andrew_J_Martin]  ID: [b--ROKUAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Michael_Archer]  ID: [QLsZoEYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Margaret_Morris]  ID: [S1IBrisAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Shinichi_Nakagawa]  ID: [9-pCZzcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Vassilios_G_Agelidis]  ID: [p8d8--wAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Professor_Peter_A_White]  ID: [Ucs3MmEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Oleg_Sushkov]  ID: [zljI914AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Angela_Moles]  ID: [NbIoSJAAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Marcus_Taft]  ID: [jJfxFzUAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Claire_Vajdic]  ID: [ILqN4isAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Cyrille_Boyer]  ID: [epj5YnwAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mark_F_Harris]  ID: [j49kHA0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Trevor_McDougall]  ID: [E2V956IAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Vicki_Chen]  ID: [lawccykAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mike_Manefield]  ID: [mRpKKmQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Paul_Curmi]  ID: [b0jXfbkAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Garrett_Prestage]  ID: [fAUVvmQAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Philip_Ward]  ID: [joO4Fr0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Bruce_Hall]  ID: [i5gOidAAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Joanne_Ross]  ID: [-QaBYWMAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jinhong_Yuan]  ID: [DqQDd1UAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Prof_Nicholas_J_Hawkins]  ID: [u9Bf-P8AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Professor_Branko_Celler]  ID: [qAhMN88AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Shan_L_Pan_(Shan_Ling_Pan)]  ID: [QUk6ErgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Rakesh_K_Kumar]  ID: [2BBIho0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Robyn_Richmond]  ID: [ncNn7R8AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Hussein_A_Abbass]  ID: [bzmH088AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Lars_Ittner]  ID: [fxvYS2wAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Lars_M_Ittner]  ID: [5UwP6OMAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Housley_GD]  ID: [WLhdMXgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_David_Eldridge]  ID: [tvQYyngAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_David_Eldridge]  ID: [Ji6KItcAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_David_Warton]  ID: [RZXBRjgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Yuri_Bobryshev]  ID: [6bGG8SkAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_nigel_turner]  ID: [dVe0dWoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Nandan_Deshpande]  ID: [JUFVMc8AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_J_William_O_Ballard]  ID: [ZsKNgg4AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_Kingsford]  ID: [sUHBkSIAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Wei_Zhang]  ID: [PJi27JMAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_Fitzpatrick]  ID: [0bGW8HQAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Wei_Wang]  ID: [wLtu3FYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_T_Kingsford]  ID: [Yjx9EjoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mark_Uncles]  ID: [F1jdkL0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Colleen_Loo]  ID: [arAIC_8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Andrew_Dzurak]  ID: [dEI9TsIAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ruiting_Lan]  ID: [ZVjiv2kAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Alex_Sen_Gupta]  ID: [FSpZLTIAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_R_Jeffery]  ID: [vtwyhcAAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Miles_Davenport]  ID: [OCEvojYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Vaithilingam_(Jeya)_Jeyakumar]  ID: [FtrJ-GoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Pierre_Le_Clech]  ID: [_ZhWXa8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Paul_Compton]  ID: [EjMenPUAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mary_Louise_McLaws]  ID: [tg1GfDwAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_michael_quinlan]  ID: [aoBfV4IAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_N_Savvides]  ID: [MZzCpbsAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Paul_Compton]  ID: [WP-SyOwAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Josep_Pou]  ID: [WlYbFWwAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_M_Stuetz]  ID: [xQ4Ax2wAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jessica_Grisham]  ID: [QPHjjEoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jessica_Grisham]  ID: [uioqKXgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jessica_Grisham]  ID: [WrxCuRYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Brian_Draper]  ID: [TujrgLMAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Prof_Sanjay_Jha]  ID: [Hiv2PjEAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Stephen_J_Frenkel]  ID: [jTHxBqAAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Judy_Proudfoot]  ID: [myv0MUgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Joe_Wolfe]  ID: [HHVglTAAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Russell_Bonduriansky]  ID: [zRsyCmAAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jiabao_Yi]  ID: [vUpMcOkAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ashish_Sharma]  ID: [C_9ndbcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Alex_Hamilton]  ID: [WVhWtpgAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Pall_Thordarson]  ID: [nEXFfwQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ruhul_Sarker]  ID: [ORsB8M0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Michael_Barton]  ID: [LH8kUfoAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Bin_Jalaludin]  ID: [UNzsMxMAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Per_B_Zetterlund]  ID: [p-yM37kAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Ian_L_Turner]  ID: [CcAccLsAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Vijaya_Manicavasagar]  ID: [Kc0rVRoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_Lucas]  ID: [WMX-t-8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_PJ_Cullen]  ID: [fOTaL3cAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Chongmin_Song]  ID: [VBfaiVMAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Caroline_Rae]  ID: [WqAlPigAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jenny_(Jiyeon)_Lee_PhD]  ID: [DfVwsEQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Runyu_Yang]  ID: [CRoxXUwAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mark_Hoffman]  ID: [S0NhaCcAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Dianne_Wiley]  ID: [bndfqVQAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Katherine_Boydell]  ID: [JD9e-3IAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Wendy_Swift]  ID: [g6WAjEsAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Stuart_Khan]  ID: [om_lRgEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Wei_Gao]  ID: [Gb106gQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Yvonne_Y_Y_Wong]  ID: [UUpXDOgAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_J__Scott_Tyo]  ID: [82Y4sb8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Barbara_Kaye_Bennett]  ID: [8J6YMx4AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Bruce_Chessman]  ID: [4CXY4EwAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Kwok_Leung_Ong]  ID: [FhJwn7oAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Andreas_Ortmann]  ID: [LQpL-jYAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Suzanne_Hand]  ID: [MkjVrLEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Jason_Grebely]  ID: [IDLBwF8AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_James_Lee]  ID: [_lRa0pcAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_S_Travis_Waller]  ID: [8e2WslsAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Timothy_Duty]  ID: [BqcfS28AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Bram_Hoex]  ID: [Dc5eNVQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Alan_Woodland]  ID: [kuJ0vscAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Kalloniatis_Michael]  ID: [-BVI58oAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Christopher_Carter]  ID: [eLiF1p4AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Tony_Gerard_Butler]  ID: [qgnqbSQAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Heather_Greenfield]  ID: [kNJrNPgAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Gerwin_Klein]  ID: [XV9ZVncAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Professor_Hongyuan_Robert_Yang]  ID: [v0y9ku0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Nasser_Khalili]  ID: [d2Z70IMAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_HR_Pota]  ID: [xn4pt7QAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Cindy_Shin_Yi_Lin]  ID: [kKPtuA0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Richard_Kemp]  ID: [gSI3LAgAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Iain_M_Suthers]  ID: [GA54eb0AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Associate_Professor_Tapabrata_Ray]  ID: [16ms6e0AAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Lenny_R_Vartanian]  ID: [SunEHNoAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Chun_Tung_Chou]  ID: [R_YNoskAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Bradley_Mathers]  ID: [5dtGdEYAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Claude_Sammut]  ID: [1KsZREQAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Julian_Trollor]  ID: [5g_flwUAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Mike_Letnic]  ID: [zb1iVAEAAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Julien_Epps]  ID: [VzA-vskAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_John_Power]  ID: [Iv95RUUAAAAJ]  Has not upload photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Peter_Reece]  ID: [G3luuJ0AAAAJ]  Has  uploaded photo.
+University: [University of New South Wales]  Name: [UNSW_Australia_Melissa_Green]  ID: [FtkKsdkAAAAJ]  Has not upload photo.

@@ -62,7 +62,7 @@ class mobiletask(models.Model):
     softid = models.ForeignKey(softid)
     taskSort = models.IntegerField(choices=mobiletask_taskSort_choices, null=True)
     AccountId = models.CharField(null=True, max_length=200)
-    content = models.CharField(null=True, max_length=200)
+    content = models.CharField(null=True, max_length=9999)
     startTime = models.DateTimeField(null=True,default=timezone.now)
     endTime = models.DateTimeField(null=True,default=timezone.now)
     statusTime = models.DateTimeField(null=True,default=timezone.now)

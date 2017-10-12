@@ -1,0 +1,190 @@
+University: [Tohoku University]  Name: [TohokuUniversity_Riichiro_Saito]  ID: [dpRZw44AAAAJ]  Has uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Mitsunori_Fukuda]  ID: [O5d7nY8AAAAJ]  Has uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Mingwei_Chen]  ID: [AmzgQJEAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kensaku_Mizuno]  ID: [k3RD2vQAAAAJ]  Has uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Dapeng_Zhao]  ID: [QYdiz80AAAAJ]  Has uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Fumiyuki_Adachi]  ID: [f7PIxx0AAAAJ]  Has uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Fumihiko_Imamura]  ID: [D2H2ZnYAAAAJ]  Has uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shinjiro_Yamaguchi]  ID: [5BiStIAAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akira_Hasegawa]  ID: [3upPXUoAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Naohiko_MIKAMI]  ID: [Qxq8HesAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Eiji_Ohtani]  ID: [YMz6McoAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Eiji_Ohtani]  ID: [OvOjnT0AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Motohashi_Hozumi]  ID: [vl_hXHQAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kouki_Hikosaka]  ID: [KBrZzdoAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Miki_Fujimura]  ID: [dlyecV8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yasuhisa_Matsui]  ID: [S945s7IAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Katsunari_Oikawa]  ID: [cfjhaj8AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hiroyuki_Kokawa]  ID: [bBvOhUUAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Noriko_Osumi]  ID: [MZ5xo5IAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tohru_Nakashizuka]  ID: [GqZRQ_cAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takeshi_Fujita]  ID: [8s-7XkUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_koji_muramoto]  ID: [kGpWZHcAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Victor_Ryzhii]  ID: [-kEsrPMAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Ichiro_Nakashima]  ID: [9rCdYCIAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Haruo_Sato]  ID: [RdgZd_YAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tomonobu_Kusano]  ID: [mGKCWP0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kouichi_Hagino]  ID: [bUKoWQEAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hiroshi_Jinnai]  ID: [SNLUwggAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_A_Takeuchi]  ID: [je9RU-oAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masao_Watanabe]  ID: [XaqBhzMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takao_Nishizeki]  ID: [EErO-dUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nei_Kato]  ID: [LfLfZXEAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shigeru_Obayashi]  ID: [Iq488PYAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Satoshi_Tadokoro]  ID: [909K-EUAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazuya_Yoshida]  ID: [mzUOHycAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masaru_Uchiyama]  ID: [tO-nbSgAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kiwamu_Minamisawa]  ID: [gBIKdJ0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_TADASHI_FURUHARA]  ID: [IT122KYAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hiroshi_Kubo]  ID: [LTy8cgMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Satoshi_Awaji]  ID: [dPJFrFIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akira_Naganuma]  ID: [bQVxbasAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Haruki_Kitazawa]  ID: [eUrCpt4AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Motoyuki_Sato]  ID: [2VuQA-kAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takafumi_Uchida]  ID: [Ppj_HiQAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hiroshi_Kanai]  ID: [MlAvDcIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazuhiko_Nishitani]  ID: [mIFs4ckAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takeshi_Obayashi]  ID: [l0of5PsAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akira_Kanno]  ID: [hqO-u0cAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Jotaro_Urabe]  ID: [Y4rGJ1kAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yoiti_Suzuki]  ID: [JAr4vVEAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Naonobu_Fujita]  ID: [ItMtbKAAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Mikito_Koshino]  ID: [PLcjZwQAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tomohisa_Ogawa]  ID: [tnkZkrQAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nobuhiko_Iki]  ID: [UCejpwkAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Qiang_Chen]  ID: [EjAVotAAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Parmanand_Sharma]  ID: [7P-vK94AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kinoshita_Kengo]  ID: [HMHfOJMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shoichi_Sasaki]  ID: [zqhKXfEAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Toshimi_Suda_(須田利美)]  ID: [adXciOQAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Asako_Sugimoto]  ID: [ZiPNVBoAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hiroshi_Yabu]  ID: [kgeHbxgAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tatsuo_Yoshinobu]  ID: [n1H6dT8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kentaro_Inui]  ID: [38_o3-kAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shigemi_Mizukami]  ID: [H8bCepkAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Haruhiko_Fuwa/不破春彦]  ID: [I3J0NfMAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takeshi_Koike]  ID: [OJ5bKRQAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Junichi_Nakajima]  ID: [A63F4T4AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Koichi_Hashimoto]  ID: [xqboYMYAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_parantap_sarkar]  ID: [uQJY7UMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Jiro_Gyoba]  ID: [tacgvR0AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazuhisa_Goto]  ID: [2DrBxpsAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hitoshi_Takamura]  ID: [bvqAKu8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Luyang_Chen]  ID: [4mKacukAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shiro_Mori]  ID: [OPNSpLEAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Martin_Robert]  ID: [mVaY5SIAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tomonaga_OKABE]  ID: [1YIWomkAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Atsushi_Higashitani]  ID: [jIqz0MQAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masatoshi_Itoh]  ID: [AhTre9MAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yoshinari_Kouichi　吉成浩一]  ID: [LJwSIBkAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hiroshi_Kadokura]  ID: [p2i1cxwAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yumi_Yamaguchi_Kabata]  ID: [Z8F59ZQAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Motohiko_Murakami]  ID: [NoxwkN4AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Toshio_Suga]  ID: [3dnRPsgAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hikaru_Takeuchi]  ID: [QWQuhQcAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yasuhisa_Hirata]  ID: [CegjANMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tatsuki_Tsujimori]  ID: [0HUWtWoAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yoshifumi_Saijo]  ID: [m0gYRE0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kei_Takase]  ID: [FgTF_rUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_田中仁]  ID: [zxKMX2cAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takafumi_Suzuki]  ID: [RbpHOJkAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takeshi_Komai]  ID: [aooPayMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takeshi_Komai]  ID: [qajVJ2YAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yuichiro_Koizumi]  ID: [bPa8gfoAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Narushima_Takayuki]  ID: [mI4-tDkAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Daisuke_Nagao]  ID: [zsTJX2AAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yohsuke_Imai]  ID: [c2AjRi0AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tetsuya_Kurata]  ID: [9LlPjF4AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kosuke_Ino]  ID: [qLBXaA8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tetsuya_Suemitsu]  ID: [uDALErAAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tetsuo_Kinoshita]  ID: [obTvNVsAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yasufumi_Iryu]  ID: [arLo1dUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Fabio_Pichierri]  ID: [XF1aQ3IAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Valery_CHANI]  ID: [8G9j3-UAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Koichi_Ito]  ID: [HWBwO0sAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Wataru_Makino]  ID: [8Ajtq7AAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takashi_Nakamura]  ID: [aAx3954AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Toshihiko_Nakata]  ID: [9X7OPtYAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Inaba_Kenji]  ID: [Sf6_osQAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Noritoshi_Suzuki]  ID: [K1FDz5wAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yasushi_Kino]  ID: [FN9l3HEAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Naoaki_Kuwata]  ID: [9LrAu94AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Goro_Miyamoto]  ID: [YE4gJKsAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takahiro_Mori]  ID: [5d7QbvwAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Satoru_Yamamoto]  ID: [t1M5XykAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masashi_Konyo]  ID: [ULRbzMUAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Rui_Nouchi]  ID: [uXgVf_QAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shin_ichiro_M_Nomura]  ID: [Jzk4bskAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_satoshi_shioiri]  ID: [I9qDcUsAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Susumu_Ikeda]  ID: [7zitq60AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Okatani_Takayuki]  ID: [gn780jcAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Satoshi_Naramoto]  ID: [RBpyvc0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Satoshi_Shioiri]  ID: [_Cz2RbIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Naofumi_Homma]  ID: [NuguztsAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Eijiro_Sumii]  ID: [N0lc-g4AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Michael_G_Norton]  ID: [M_eWZlUAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akinori_Ito]  ID: [IU_UYaEAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazunori_Ohno]  ID: [zQDKGd8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Xianwei_Guo]  ID: [ksLZ2RkAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Serge_Ostrovidov]  ID: [vwJdtzUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Soshi_Kawai]  ID: [ZwTM9EcAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Makoto_Osanai]  ID: [9NaC8jkAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Atsuhiro_Nakagawa]  ID: [2mHIFmIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Patrick_Han]  ID: [51jK9fMAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Pan_Liu]  ID: [qhRHtQgAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yuji_Tsuchiya]  ID: [bpAOBYoAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Taku_Ohara]  ID: [Ga520f8AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Toshiyuki_Sugawa]  ID: [WIey2RAAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kiyoshi_Mashiguchi_(増口潔)]  ID: [S6_sEJ8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kie_Kasuga]  ID: [mId4T3gAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akira_Hibiki]  ID: [PmkTBfgAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nobuaki_Aoki]  ID: [kmE0XwwAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masanori_Hariyama]  ID: [bQh9CdgAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yusaku_OHTA]  ID: [Mv9-XPUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Anawat_Suppasri]  ID: [eJr9-qsAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akihiko_Ito]  ID: [fQbB52kAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazunori_Takahashi]  ID: [QkXwtI0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yukako_Oma]  ID: [cqoSmQYAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_masato_noguchi]  ID: [MwRbpioAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Douglas_Kazutoshi_Sato]  ID: [BL86rcAAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nobuhiro_Maruoka]  ID: [9NsMTzEAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazunobu_Kojima]  ID: [SiWQcDIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_ZHE_SUN]  ID: [rlf2oaIAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nobuhiro_Nagai]  ID: [VXIPLV0AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Konstantinos_Georgarakis]  ID: [hrCbUxcAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Atsushi_Kobayashi]  ID: [LEHxGhkAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masanori_Izumi]  ID: [vRNHTDIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Zhenchao_Wen]  ID: [m7hsW_MAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kota_Yamaguchi]  ID: [mYDpPnYAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tatsuya_Sakamaki]  ID: [XoVBT54AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Akichika_Kumatani]  ID: [0kilfxAAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hideaki_Sone]  ID: [V-PnRcsAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Takashi_Makino]  ID: [ALcLADYAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kenta_Yamanaka]  ID: [0q8NCbUAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Koji_Shimoyama]  ID: [zVDZMs8AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Edgar_Avalos]  ID: [7IrJUJYAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nobuhiko_Terui]  ID: [0wXgylAAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Masayuki_Sugawara]  ID: [qk1JcGcAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yoshinori_Hattori]  ID: [FQi4HRoAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Atsushi_Iizuka]  ID: [00B6bVMAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Sankar_Jana]  ID: [BqCcNn4AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Daisuke_Hojo]  ID: [ZbBWZR0AAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Qiu_Zhiyong]  ID: [UgLuZfsAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Wakako_Ikeda_Ohtsubo]  ID: [4Qkffj8AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Albertus_D_Setyawan]  ID: [umNDEqgAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yasuo_Shimizu]  ID: [fypcITMAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazuhiro_Watanabe]  ID: [-01H1CsAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Noriaki_Watanabe]  ID: [Vc5QGtIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Teruhisa_Shimada]  ID: [fRDOBj0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Kazutaka_Matsuda]  ID: [0sSvGLIAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Hajime_Tanaka]  ID: [hJi8gKkAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Xiao_Xu]  ID: [Ep313koAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_kiribayashi_seiga]  ID: [hFssmhMAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shinji_KAJIMOTO]  ID: [ls4Xb2MAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Naoya_Onizawa]  ID: [nwlPI6YAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Tomokazu_Souma]  ID: [RdaAsN0AAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Shejuan_Xie]  ID: [J40UfWQAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Patrick_A_Bonnaud]  ID: [dnyfWagAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Soshi_Sato]  ID: [iNbA-5cAAAAJ]  Has not upload photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Yu_ichi_HAYASHI]  ID: [lZ5t84cAAAAJ]  Has  uploaded photo.
+University: [Tohoku University]  Name: [TohokuUniversity_Nobuya_Hiroshiba]  ID: [8tYiWeoAAAAJ]  Has  uploaded photo.

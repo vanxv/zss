@@ -1,0 +1,198 @@
+University: [Purdue University]  Name: [PurdueUniversity_Seongmin_Kim]  ID: [iBWjd-UAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Fuqiang_Wang]  ID: [UZ7ta1EAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Supriyo_Datta]  ID: [jvx9YfsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Philip_S_Low]  ID: [rPTKdf0AAAAJ]  Has uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_William_S_Cleveland]  ID: [ds52UHcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Avinash_Kak]  ID: [Ii7P2QQAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Kaushik_Roy]  ID: [to4P8KgAAAAJ]  Has uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Lingsong_Zhang]  ID: [_VR254AAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Andrew_M_Weiner]  ID: [k0GMM9MAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Wei_Zheng]  ID: [OK6RNdcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_john_j_mcconnell]  ID: [E0nAWSQAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Mark_Lundstrom]  ID: [vsP_v2MAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Peg_Ertmer]  ID: [UVVTAKwAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Donald_R_Lynam]  ID: [CHSuHf0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Kipling_D_Williams]  ID: [DTH8KPYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Thomas_Hertel]  ID: [DulicT8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jianfang_Zhu]  ID: [yiDF7H8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Michael_Ladisch]  ID: [r9m5qwkAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Edward_Delp]  ID: [qxs5pc4AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_j_george_shanthikumar]  ID: [qXKhvvIAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Laurence_Leonard]  ID: [lm9UjMcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Scott_McLuckey]  ID: [3M1ccs8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ji_Xin_Cheng]  ID: [M7fTV28AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_RW_Doerge]  ID: [B4WVzSEAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Michael_Gribskov]  ID: [KRZoh34AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Chris_H_Greene]  ID: [98SkPvMAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_James_Ogg]  ID: [TJUXKR0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_y_charlie_hu]  ID: [r1Z8YhQAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Eugene_H_Spafford]  ID: [MkC5kHcAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Wei_Cui]  ID: [cKV8qZsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Fenggang_Yang]  ID: [FcUV2tEAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Suresh_Garimella]  ID: [RPCP3ysAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_George_McCabe]  ID: [eQdYHiEAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Douglas_Comer]  ID: [b2f-PjYAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Qifan_Wang]  ID: [s2D24-QAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_David_Hummels]  ID: [cE60v5gAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Timothy_Sands]  ID: [kGZ59awAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Muhammad_Ashraful_Alam]  ID: [lWkVCnoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Anand_Raghunathan]  ID: [OP7F8jEAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Issam_Mudawar]  ID: [r2-awKwAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_J_Paul_Robinson]  ID: [VL5YcFwAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_John_P_Finley]  ID: [4vAFNVMAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Mara_Faccio]  ID: [GWvpJ40AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Marc_Caffee]  ID: [NUM9K5MAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ninghui_Li]  ID: [Qc_4yiYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Cliff_T_Johnston]  ID: [aRhj6BUAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Charles_A_Bouman]  ID: [v_ia5SYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Gerhard_Klimeck]  ID: [t_ziGRgAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Richard_D_Mattes]  ID: [mpz1JXMAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Kenneth_F_Ferraro]  ID: [X9pyLOMAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_gavriel_salvendy]  ID: [85xGCicAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Stanton_Gelvin]  ID: [oKRMzLMAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Walid_G_Aref]  ID: [vX45evgAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Shirley_Dyke]  ID: [d9f_YvcAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Doraiswami_Ramkrishna]  ID: [0epnx74AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Joseph_Irudayaraj]  ID: [TVIMFxkAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Weiyi_Liu]  ID: [MSSroEAAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Clint_Chapple]  ID: [JVaiqakAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Qingyan_Chen]  ID: [4ZPviaAAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Charles_Babbs]  ID: [FL1X7KsAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Xianfan_Xu]  ID: [JpBz13QAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ali_Shakouri]  ID: [R7sXCEQAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Peide_Ye]  ID: [NzXtbiIAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Stanislaw_H_Zak]  ID: [AFuo5foAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jie_Shen]  ID: [6Rl6La8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Timothy_S_Zwier]  ID: [LVSrNXEAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Chang_Kim]  ID: [AVYH8_gAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Steven_T_Wereley]  ID: [Qwx9hcEAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Deborah_Rupp]  ID: [ioOrO_MAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Yunfei_Gao]  ID: [4GnEcXQAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jer_Yen_Yang]  ID: [E73KD4MAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_David_Love]  ID: [FmS_0EQAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jin_Rong_Xu]  ID: [KIcK3B0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_T_N_Vijaykumar]  ID: [6eun8QkAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ken_Ritchie]  ID: [G6O3N8wAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Natalia_Dudareva]  ID: [u9xxgFcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Amy_R_Reibman]  ID: [owurYNEAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Raymond_JGM_Florax]  ID: [ajNzZZoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jeffrey_S_Dukes]  ID: [cmHtVjAAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_R_Byron_Pipes]  ID: [xyzNZh8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_SooCheong_(Shawn)_Jang_PhD]  ID: [1xMxtdAAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Nathan_Mosier]  ID: [AE3HbC8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_avtar_Handa]  ID: [w4mH7LAAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_avtar_handa]  ID: [Wkil7HsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Arun_Bhunia_Professor]  ID: [a0OFn14AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jayanta_K_Ghosh]  ID: [LCYf540AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ronald_F_Turco_Jr]  ID: [ELyRQmYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Christopher_J_Staiger]  ID: [ejR8Xx0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Yung_C_Shin]  ID: [gkLuga8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Robert_K_Swihart]  ID: [FXbj0OQAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Zheng_Ouyang]  ID: [2XzTffYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jianxin_Ma]  ID: [hGFwT5sAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Patrick_Eugster]  ID: [yMY9eZIAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Lynne_Taylor]  ID: [w-hU2soAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_William_Graziano]  ID: [tpEY01IAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Timothy_S_Fisher]  ID: [k36VHW8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ephraim_Fischbach]  ID: [D7qZ4soAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Scott_D_Briggs]  ID: [yo6YObkAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Stephen_Konieczny]  ID: [o714zfoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Barny_Dunning]  ID: [zytPUl8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Alexander_Wei]  ID: [JomFIn4AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Dongyan_Xu]  ID: [CQcd1cQAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_John_W_Sutherland]  ID: [1JHNMhoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_john_cushman]  ID: [r2gGjMcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_F_Robicheaux]  ID: [d4wYxmAAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Sergio_Rodriguez]  ID: [K4aEtgwAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_James_E_Braun]  ID: [BtdeA54AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Bert_A_Rockman]  ID: [Kj3-OrsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Martin_Corless]  ID: [MbjSysgAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_John_B_Dunning_Jr]  ID: [mMW7-l0AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Zhiqiang_Cai]  ID: [33wi1moAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Andrew_D_Mesecar]  ID: [Col6iRsAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Takashi_Hibiki]  ID: [Zufl-l0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Yong_P_Chen]  ID: [9EBAemEAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Sunil_Prabhakar]  ID: [hQazr50AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Aditya_Mathur]  ID: [DdQMeHoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Timothy_Cason]  ID: [NilRm5UAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Xiaoyan_Zhang]  ID: [LBDHkJoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Bernard_A_Engel]  ID: [TRX3MyYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Howard_Zelaznik]  ID: [9ZDxo1gAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_John_B_Dunning_Jr]  ID: [sAAWTTYAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_PB_Brown]  ID: [-JTs5GUAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Olayiwola_Adeola]  ID: [38NfWPQAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Hyojeong_Lee]  ID: [LF7_YEEAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Dev_Niyogi]  ID: [Ixl0-pAAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Bruce_A_Craig]  ID: [T2NvlC8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Elaine_Mosakowski]  ID: [q9eINVsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Stephen_Martin]  ID: [QuLpGqsAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Mahdi_Abu_Omar]  ID: [QQOBivoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Alex_Pothen]  ID: [_Fah5fwAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Shimon_Y_Nof]  ID: [cwlTNcwAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jeffrey_D_Karpicke]  ID: [5t5lgCgAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Robert_P_Lucht]  ID: [AdvSEXcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Wen_Jiang]  ID: [kzk6nJEAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_David_F_Bahr]  ID: [z3Zb28kAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Donal_E_Carlston]  ID: [PoEa3GcAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Vijay_Raghunathan]  ID: [UB-2S9kAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Hong_Z_Tan]  ID: [OiVOAHMAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Steven_F_Son]  ID: [7sqsWEcAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Xiaojun_Lin]  ID: [xdrxqy8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Esteban_Fernandez_Juricic]  ID: [f3GIS0QAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jennifer_L_Freeman]  ID: [YwqE814AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Yung_Hsiang_Lu]  ID: [aORND2cAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Darryl_Granger]  ID: [B_SLysAAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Min_Zhang]  ID: [0IZquNIAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Greg_Hunt]  ID: [JMOJFEkAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jeffrey_Youngblood]  ID: [qkkQBDsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_S_V_N_Vishwanathan]  ID: [tqcSvFIAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Shihuan_Kuang]  ID: [6yGqzVoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Laura_Pyrak_Nolte]  ID: [9fbK4XYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Wallace_E_Tyner]  ID: [q7Bk8KgAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Karthik_Ramani]  ID: [wQ6njfUAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Rodrigo_Salgado]  ID: [-uAPHHgAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_James_C_Fleet]  ID: [AhKZnQsAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Lyudmila_Slipchenko]  ID: [8jzoIi8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_john_connor]  ID: [oXeVEssAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Daniel_W_Smith]  ID: [JkKD6YwAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Mario_Ferruzzi]  ID: [pmVRk10AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Song_Zhang]  ID: [lj9IGg8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Vincent_Jo_Davisson]  ID: [0Bg12R8AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jennifer_Neville]  ID: [6CTPn44AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Saurabh_Bagchi]  ID: [3EfsOvYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_J_Andrew_DeWoody]  ID: [vHDhy1IAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Eckhard_A_Groll]  ID: [mh5yzV8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Sugato_Chakravarty]  ID: [_A6bNxYAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_V_G_Pol_Associate_Professor]  ID: [COZp94QAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_John_C_Patton]  ID: [Bzf5AGUAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Luo_Si]  ID: [xqEfATIAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jeff_Volenec]  ID: [7oO7_jIAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Dimitrios_Peroulis]  ID: [agc3kMMAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jeffrey_J_Volenec]  ID: [Yig3iowAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jeff_Volenec]  ID: [68KXqnIAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_J_Jill_Suitor]  ID: [-tFHDcYAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Ronnie_Wilbur]  ID: [gC5RqdoAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Suresh_Jagannathan]  ID: [bqkhX54AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Timothy_Filley]  ID: [QPKCV_EAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Cleveland_G_Shields]  ID: [9EoGlvkAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Yoon_Yeo]  ID: [p85NBE4AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Peter_Bermel]  ID: [4Z-aRA0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_john_m_connor]  ID: [Yt-HhWcAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_James_M_LeBreton]  ID: [uRjWgiEAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Steven_R_Wilson]  ID: [-_z_bz8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Joseph_Lipman]  ID: [LUEHqb4AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Srinivas_Peeta]  ID: [mX-caWgAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_George_T_Chiu]  ID: [9ik4fa4AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Steve_Scofield]  ID: [M-xP9bUAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Chuanhai_Liu]  ID: [gpEKdbUAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Darcy_Bullock]  ID: [iRsPqCMAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Babak_Ziaie]  ID: [olh_EEsAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Jianguo_Mei]  ID: [ZMJW_L0AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Borja_Peleato]  ID: [7b84qIoAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Benjamin_B_Dunford]  ID: [9cVTcQ8AAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Michael_T_Harris]  ID: [TNxIEfYAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Bradley_J_Lucier]  ID: [sVRNOg0AAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Daisuke_Kihara]  ID: [WfGLzyAAAAAJ]  Has  uploaded photo.
+University: [Purdue University]  Name: [PurdueUniversity_Chong_Gu]  ID: [ahX1G7oAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Andrei_Gabrielov]  ID: [83pFh4MAAAAJ]  Has not upload photo.
+University: [Purdue University]  Name: [PurdueUniversity_Alexandre_Eremenko]  ID: [GeXyx-wAAAAJ]  Has not upload photo.

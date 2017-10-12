@@ -1,0 +1,188 @@
+University: [Ecole normale superieure]  Name: [ENS_Stephane_Mallat]  ID: [g_YTmSgAAAAJ]  Has uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Jean_Ponce]  ID: [vC2vywcAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Radhia_Cousot]  ID: [3A34oCYAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Josef_Sivic]  ID: [NCtKHnQAAAAJ]  Has uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_David_Pointcheval]  ID: [GzBaxPMAAAAJ]  Has uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_David_Bensimon]  ID: [Bi0JrEMAAAAJ]  Has uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_le_doussal_pierre]  ID: [XODXT0QAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Raul_Madariaga]  ID: [D_LxRnkAAAAJ]  Has uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Franck_Ramus]  ID: [_4ft18kAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_ammari]  ID: [-wCvy3kAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Vincent_Hakim]  ID: [dz7cPcsAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Jakob_Reichel]  ID: [EOrqDVAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Eric_Calais]  ID: [fZ5kIpkAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Denis_Thieffry]  ID: [ZtjJkg8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Marie_Farge]  ID: [68g6VNAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Alain_de_Cheveigne&#39;]  ID: [Tr6DQ1sAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_David_Naccache]  ID: [-xVFaGMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Jean_Pierre_Nadal]  ID: [Z1eDue8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Michel_Deza]  ID: [O5m7WK8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Daniel_Borgis]  ID: [kBjtGmUAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_ROEST_CROLLIUS_Hugues]  ID: [ApZjtiIAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Ekaterina_Zhuravskaya]  ID: [K2Vdr9cAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Denis_Didier_Rousseau]  ID: [kHOAgR4AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Marc_Brachet]  ID: [95i9YCwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Ludovic_Jullien]  ID: [CIYrVZcAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Michel_Abdalla]  ID: [ZxxJGJsAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Nicolas_Chamot_Rooke]  ID: [BIP38UsAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Audrey_Cottet]  ID: [XrRGoA4AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Pascal_Mamassian]  ID: [gQTA8xkAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Fouque]  ID: [KD8r6dIAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Takis_Kontos]  ID: [o4AXeHYAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Marie_Laure_Bocquet]  ID: [74KgqtAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Florent_Krzakala]  ID: [3jDeUlMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Rodolphe_Vuilleumier]  ID: [kmAqQqMAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_David_Holcman]  ID: [E73vfy8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Bernard_Placais]  ID: [OltYxYcAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Anne_Christophe]  ID: [MK_yYFwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Placais]  ID: [CSKg2iEAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Tiziana_Zalla]  ID: [mI3Udh8AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_B_Błaszczyszyn]  ID: [by4SLKIAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Alexandre_d&#39;Aspremont]  ID: [JEEwSlQAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Luce_Fleitout]  ID: [E1nN41cAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Francesco_Zamponi]  ID: [z2x_4jMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Claudia_Senik]  ID: [dvBRCHIAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Jerome_Esteve]  ID: [-S4De7wAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Jesper_Lykke_Jacobsen]  ID: [wNVMR2QAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Jean_Francois_Laslier]  ID: [Ldz1KXgAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_L_Bourdieu]  ID: [1ET0lk4AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Anne_Celia_Disdier]  ID: [X5cu6usAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_sabrina_speich]  ID: [G0VWQsEAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Alexis_Rigo]  ID: [zxfb_EEAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Hoeteck_Wee]  ID: [lG7aUrkAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Daniel_Pressnitzer]  ID: [5hZVAoAAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Damien_Vergnaud]  ID: [dt96T_wAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Auguste_Genovesio]  ID: [3pvls10AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Céline_Hernandez]  ID: [Q39cMlcAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Aleksandra_Walczak]  ID: [0EvbuFoAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Thierry_Mora]  ID: [895M4C4AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Guilhem_Semerjian]  ID: [4j-x4ckAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Silvia_De_Monte]  ID: [8-PP_I0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Tom_Van_Dooren]  ID: [OGIVz3sAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Mokhtar_Adda_Bedia]  ID: [RNoLT0AAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Alexandre_Schubnel]  ID: [TuOuODQAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Jan_Troost]  ID: [x-vuIL0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Pierre_Yves_Geoffard]  ID: [JEkPSg0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Maurizio_Fagotti]  ID: [tIwqiOQAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Gérard_Lacroix]  ID: [LaoZWTkAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Benjamin_Spector]  ID: [7PDOFKoAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Andres_Lopez_Sepulcre]  ID: [X3b3M_8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Thierry_Poibeau]  ID: [7ejOImcAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Marc_Lelarge]  ID: [cLGOIdMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Valentin_Wyart]  ID: [gN_DidAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Simon_Lacoste_Julien]  ID: [oejm5IUAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_drazen_zanchi]  ID: [XAHBSmEAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Tarik_Yefsah]  ID: [-S8Xvd0AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_arnaud_gautier]  ID: [FvfoqUIAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Jerome_Fortin]  ID: [4XlbyzAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Fabien_Ferrage]  ID: [-Z8QdxkAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Jian_SHI]  ID: [m7qbB8IAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Sylvie_HERMANN_LE_DENMAT]  ID: [ot486dsAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Frederic_KOESSLER]  ID: [HG7l2qEAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Laure_Bereni]  ID: [Q3ibRzIAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Patrick_Meunier]  ID: [XLkHTK0AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Thomas_Alazard]  ID: [5tNrfzAAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Romain_Long]  ID: [-W9yI0QAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_François_Gay_Balmaz]  ID: [tKlUuGYAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Pierre_Cyrille_Hautcoeur]  ID: [oH8p3scAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_A_Cristia]  ID: [qYeeTuAAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Sophie_Pochic]  ID: [2FyJSr8AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Wei_Yang]  ID: [P7Y2evkAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_alexandra_louis]  ID: [x1W0lkgAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Abdou_Rachid_Thiam]  ID: [vRqLJfYAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Olivier_Missa]  ID: [1DmAFZYAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Joe_Morrissey]  ID: [A8aBLv0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_K_Sandeep_Reddy]  ID: [cWiNIAoAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Valérian_Chambon]  ID: [1Lqwt04AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Cathie_Ventalon]  ID: [VtYGPGMAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Guillaume_Palacios]  ID: [8lKyu1kAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Marianne_Métois]  ID: [anObVi0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Gregory_Ponthiere]  ID: [htoG1h0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Gregory_Ponthiere]  ID: [ZLJZJngAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Eric_W_Tramel]  ID: [jre2iwMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Frédéric_Landragin]  ID: [iOE4nEcAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Joshua_D_McGraw]  ID: [F-BhjEcAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Ana_Busic]  ID: [u-RXvmAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Badih_A_Assaf]  ID: [Ct9XpCcAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Marco_Sperduti]  ID: [7En3hUoAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Thomas_Andrillon]  ID: [X2N6eboAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Alexander_Dobrinevski]  ID: [lGeNuzsAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Vincent_Delaitre]  ID: [odEM5hMAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Isidora_Stojanovic]  ID: [AKlOSCEAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Dominik_Maxein]  ID: [UScUzsYAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Amulya_Nidhi_SHRIVASTAVA]  ID: [KUwrnfwAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Hugo_Jacquin]  ID: [vPiGD8UAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Jérémy_JEAN]  ID: [1TQ9yVYAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Benjamin_Fagard]  ID: [rkPU1aQAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Thomas_Peters]  ID: [oSbCfA0AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Christophe_Gissinger]  ID: [jaTzFG8AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_e_lewitus]  ID: [I4fyHbkAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Maximilien_Levesque]  ID: [9ux6bc4AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_philippe_domenech]  ID: [_P33r9MAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Pascault_Noémie]  ID: [K0tHIoAAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Matthias_Delescluse]  ID: [A5xsbtEAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_irina_peaucelle]  ID: [5tDQ2MoAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Stephen_H_Donaldson_Jr]  ID: [xa7eZAMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Richard_Dorrell]  ID: [oeVEgUsAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Richard_G_Dorrell]  ID: [6OCmXHEAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Angelo_De_Caro]  ID: [qdsKcQwAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Jacques_Fattaccioli]  ID: [uArkO5kAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Doreen_Georgi]  ID: [RTbAdbMAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Alaguraj_Veluchamy]  ID: [HVO5ukMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Pasquale_Sellitto]  ID: [-gE_jToAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Sira_Ferradans]  ID: [BM6XOmUAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Dennis_Kurzbach]  ID: [8Xt6dwYAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Pankaj_Kumar_Mishra]  ID: [mnupjlEAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Wassim_Abou_Jaoudé]  ID: [SbVFPe0AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Fabrice_Benhamouda]  ID: [jHOJNn4AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Michael_Köpf]  ID: [tQBrMt0AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Elizabeth_Quaglia]  ID: [wB-9ke0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Romolo_Savo]  ID: [UujR6tcAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Saurabh_Raj]  ID: [uIIQZVwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Thomas_Schatz]  ID: [dQ0I23kAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_ASM_Shihavuddin]  ID: [be8uiCkAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Béatrice_Joyeux_Prunel]  ID: [_bqQtj0AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Matthew_Hirn]  ID: [mByPd_QAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Vassilios_Dallas]  ID: [GaADQloAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Fabien_Souris]  ID: [7gJa-YMAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Shruti_Malviya]  ID: [whVrGr4AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Théo_Zimmermann]  ID: [-NgHOiwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Lyn_Tieu]  ID: [K32VdJwAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Manos_Anyfantakis]  ID: [hn2JywUAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Yonatan_Harpaz]  ID: [kkPep9YAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Emanuela_Matrullo]  ID: [-c3x5CwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Yves_Clément]  ID: [_tlYc0gAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Sonia_Belaïd]  ID: [Ch4Y7McAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Elisa_Tamborini]  ID: [2LhQOS8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Eric_Vernier]  ID: [RXJvPPwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Oliver_Vanden_Eynde]  ID: [IWrUHcQAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Antoine_Tilloy]  ID: [isGoFyYAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Alexandre_Cremers]  ID: [HzsChtgAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Dr_Subramanyan_Namboodiri_Varanakkottu]  ID: [Lvzjf3AAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_GUO_Shuo]  ID: [YV1j0b4AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Andre_Manoel]  ID: [LpWGWAwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Christian_BAILLARD]  ID: [5g0lwD8AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Florent_Couzinie_Devy]  ID: [UtNVUtYAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Rémi_Lajugie]  ID: [eJ3IibcAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Udson_C_Mendes]  ID: [J0NykToAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Majdi_Debbich]  ID: [lmkBfbUAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Rudra_N_Purusottam]  ID: [R-TxQWYAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Yuval_Elhanati]  ID: [UhtWh5gAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Matthieu_Solnon]  ID: [pAk0pq4AAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Florian_Bourse]  ID: [IFnFtlMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_snigdhadip_dey]  ID: [IYnJqbMAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Simeng_Wang_(王思萌)_PhD]  ID: [bk1OH30AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Andreas_Mayer]  ID: [BKGAixAAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Sara_C_Santos]  ID: [2IfQBEwAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_celine_mallet]  ID: [1qhr-PYAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Mehdi_Bouaziz]  ID: [dELWOYoAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Pablo_Ruiz]  ID: [Smzhc5kAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Guillaume_Fraux]  ID: [iEtuyQMAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Arnaud_Riegert]  ID: [iWGc2ucAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Nathalie_Ferrière]  ID: [t3vZRyIAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Chang_Liu]  ID: [udTbEEgAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Caterina_Zanfi]  ID: [LMjeMecAAAAJ]  Has not upload photo.
+University: [Ecole normale superieure]  Name: [ENS_Thimothée_Thiery]  ID: [mFxOdmgAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Victor_Verdugo]  ID: [ArkQ9zsAAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Vishwanath_Shukla]  ID: [4nnTdn8AAAAJ]  Has  uploaded photo.
+University: [Ecole normale superieure]  Name: [ENS_Ulysse_Beaugnon]  ID: [1-2SS58AAAAJ]  Has not upload photo.

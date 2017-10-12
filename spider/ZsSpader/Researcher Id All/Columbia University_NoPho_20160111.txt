@@ -1,0 +1,188 @@
+University: [Columbia University]  Name: [Columbia_Tom_Maniatis]  ID: [djRAUcYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Joseph_E_Stiglitz]  ID: [2AF4iHIAAAAJ]  Has uploaded photo.
+University: [Columbia University]  Name: [Columbia_Yaakov_Stern]  ID: [lIhtsc8AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Michele_Limon]  ID: [23hGvpcAAAAJ]  Has uploaded photo.
+University: [Columbia University]  Name: [Columbia_Bruce_Kogut]  ID: [EhZrLdAAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Andrew_Gelman]  ID: [SEOgduoAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_E_Tory_Higgins]  ID: [yPKejiIAAAAJ]  Has uploaded photo.
+University: [Columbia University]  Name: [Columbia_Alfred_Aho]  ID: [gb2r2ssAAAAJ]  Has uploaded photo.
+University: [Columbia University]  Name: [Columbia_E_Tory_Higgins]  ID: [rnVkE94AAAAJ]  Has uploaded photo.
+University: [Columbia University]  Name: [Columbia_Sankar_Ghosh]  ID: [SyQ-MLQAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_gerard_karsenty]  ID: [FfFBUCUAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Henning_Schulzrinne]  ID: [6IHX8J4AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Jon_Elster]  ID: [DvGBt1gAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_David_B_Goldstein]  ID: [RmosgOcAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Alan_R_Tall]  ID: [6hPAjdYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_BJ_Berne]  ID: [MJP7XrUAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Morris_B_Holbrook]  ID: [gBo3SSgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Donald_Klein]  ID: [L9vc5gYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Shih_Fu_Chang]  ID: [OMVTRscAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Van_C_Mow]  ID: [rLSUeLsAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Shree_Nayar]  ID: [3pZs3j0AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_James_Hone]  ID: [Yxx4kVEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_James_C_Hone]  ID: [mQcg8HoAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_David_Blei]  ID: [8OYE6iEAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_L_F_Abbott]  ID: [ca_O-WQAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Joachim_Frank]  ID: [a7LHl00AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Eric_J_Johnson]  ID: [ho9niaIAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Stephen_Goff]  ID: [vivnVgIAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Eric_Johnson]  ID: [jxOVWecAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Xinhua_Liu]  ID: [xrzB2tQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Ruth_DeFries]  ID: [gfXFqKwAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Shang_Jin_Wei]  ID: [TO5SRlwAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_WA_Zajc]  ID: [Hhm1xLIAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Denise_Kandel]  ID: [pU6PpTAAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Shahid_Naeem]  ID: [XG6aM5EAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Christopher_Scholz]  ID: [V0cN4_sAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Kam_w_Leong]  ID: [BhIIVrQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Tony_F_Heinz]  ID: [BKWUWz8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Xavier__Pi_Sunyer]  ID: [tcp1RPYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Daniel_Javitt]  ID: [4HVG8JkAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Mihalis_Yannakakis]  ID: [_pPy-pAAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Geert_Bekaert]  ID: [8Pu89u4AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Steven_Feiner]  ID: [PogsVkYAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Ward_Whitt]  ID: [FWApsI0AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Ward_Whitt]  ID: [5YNo8skAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Miklos_Gyulassy]  ID: [rwj6hPAAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Miklos_Gyulassy]  ID: [f_X2xz8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Peter_Belhumeur]  ID: [J8YyZugAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Chenguang_Lu]  ID: [ZNpabLwAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Andrew_R_Marks]  ID: [xBUSYEEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Wei_Gu]  ID: [C1m61jIAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Elke_Weber]  ID: [LsgR-OQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Mark_A_Cane]  ID: [-jhiSZcAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_PATRICK_BOLTON]  ID: [wvl1mTMAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Salvatore_Stolfo]  ID: [DknsgF8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Ying_Li]  ID: [SAriGBYAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Moti_Yung]  ID: [DPlvOL4AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Kevin_A_Roth]  ID: [qjyBj4QAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Sean_C_Solomon]  ID: [-fTYMtIAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Y_Lawrence_Yao_PhD]  ID: [PgutiMEAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Salvatore_Stolfo]  ID: [iLXSMP8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Kevin_Ochsner]  ID: [-GHfzbUAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Niall_Bolger]  ID: [hAqzkpsAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Julio_Fernandez]  ID: [fqy0tRYAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Benjamin_Tycko]  ID: [VlNQzaYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Donald_P_Green]  ID: [s4P9aRYAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Rafael_Yuste]  ID: [G0WcJagAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Shunichi_Homma]  ID: [38-c1FQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Judy_Y_C_Chen]  ID: [KkNj6yMAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Robert_J_Hodrick]  ID: [JthnPXkAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Masanobu_Shinozuka]  ID: [K5jbFJAAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_peter_GREEN]  ID: [GMf49iMAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Richard_A_Davis]  ID: [i3u1HSYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Lawrence_R_Glosten]  ID: [gphWqToAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_richard_clarida]  ID: [Nv44bnoAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Zoltan_Haiman]  ID: [v8TpB8kAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Hugh_Ducklow]  ID: [2JraTc4AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_David_Dempster]  ID: [SnHEJPgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Michael_Collins]  ID: [DxoenfgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Robert_Kass]  ID: [hOu_Qt8AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Geoffrey_M_Heal]  ID: [XsCunYgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Geoffrey_M_Heal]  ID: [XsCunYgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Joseph_D_Terwilliger]  ID: [BXM_42AAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Joseph_Douglas_Terwilliger]  ID: [3Dw_GVEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Alexander_Gaeta]  ID: [MvggBtkAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Henry_Levin]  ID: [gH4eEdsAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Charles_E_Schroeder]  ID: [Q_6UNRcAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Lei_Wang]  ID: [q7GhoWgAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Gerard_A_Ateshian]  ID: [OoFQXQQAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Arnold_L_Gordon]  ID: [JhLnb8sAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Neil_Harrison]  ID: [RfGMy94AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Frederica_Perera]  ID: [mF_ZDxYAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Liang_Tong]  ID: [_vdf32oAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Julia_Hirschberg]  ID: [Qrd7FCoAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Joel_Stein]  ID: [-U20tUEAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Andrea_Califano]  ID: [NxBuRgcAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Yochanan_Kushnir]  ID: [p9i64dUAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Serena_Ng]  ID: [KJJfHRMAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_e_g_coffman]  ID: [Fj5sn6QAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Matthew_S_Hayden]  ID: [M3-rj3AAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Robert_S_Erikson]  ID: [jq2VFFAAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Wei_Yann_Tsai]  ID: [YjmcA1EAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_David_R_Bickers]  ID: [DJ_PCuYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Ivaylo_Ivanov]  ID: [CqnnE2AAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Steven_Bellovin]  ID: [9RlvgLEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_David_Madigan]  ID: [XDajlywAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Itsik_Pe&#39;er]  ID: [l3KIq-MAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Angelos_D_Keromytis]  ID: [mncyWbcAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Ruth_Ottman]  ID: [gaGbpUcAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Robert_Anderson]  ID: [mFxtcHUAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Philip_Protter]  ID: [STl1X5AAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_P_Kelemen]  ID: [zUc0U58AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Charles_W_Calomiris]  ID: [u4DUQuwAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Olivier_Couronne]  ID: [6_Wvn0EAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Molly_Przeworski]  ID: [bsROXv0AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Stephen_E_Zebiak]  ID: [wu4bK0YAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Donald_Hood]  ID: [WfADQp8AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Donald_Goldfarb]  ID: [ikcbpEcAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Donald_Goldfarb]  ID: [EoqHOMsAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Daniel_P_W_Ellis]  ID: [1H4HuCkAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Andrew_Moran]  ID: [SOZNf1sAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Kent_Daniel]  ID: [A9DgoAEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_peter_bearman]  ID: [sfaRGkUAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Ajay_Kirtane]  ID: [cOEDdlQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Govind_Bhagat_MD]  ID: [5343WPMAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Joan_Bathon]  ID: [8LU9fxAAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Michael_W_Morris]  ID: [3A9Xo_YAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_David_Fidock]  ID: [n6HZgGMAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Jerry_F_McManus]  ID: [yFDTgCAAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Greg_Bryan]  ID: [3B1rkj8AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Janet_Metcalfe]  ID: [XoJNRRIAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Eric_Abrahamson]  ID: [-fSaZUQAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Howard_F_Andrews_PhD]  ID: [YlPwh40AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Howard_F_Andrews_PhD]  ID: [YlPwh40AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Rita_Gunther_McGrath]  ID: [LhoEhsoAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Luis_Gravano]  ID: [Ff6era8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Oliver_Hobert]  ID: [BJ1TE4AAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Robert_E_Burke]  ID: [PzySf88AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Joseph_A_Gogos_MD_PhD]  ID: [IEKMwakAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Tony_Yang]  ID: [jcxMYv0AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Simon_J_L_Billinge]  ID: [dRmx8foAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Alexander_van_Geen]  ID: [cbjbpysAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Paul_Ingram]  ID: [j8J8D7YAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Qianhe_Zhou]  ID: [NpVsxYgAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Sanat_K_Kumar]  ID: [lPirNQYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Hod_Lipson]  ID: [F_Go4V4AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_George_Hripcsak]  ID: [hgUGouQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Ulf_Klein]  ID: [timCi1Xsq2YC]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Steven_L_Goldstein]  ID: [xugfCcoAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Marc_A_Levy]  ID: [KLIADnkAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Jose_Antonio_Ocampo]  ID: [pxgjtFkAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Timothy_P_Mitchell]  ID: [ACGFTpQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Venkat_Venkatasubramanian]  ID: [eaMNlu8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Peter_Schlosser]  ID: [vh0fSFcAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Panos_N_Papapanou]  ID: [PIM56usAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_david_stark]  ID: [qW7GQOgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Myron_A_Hofer]  ID: [r3ezr9YAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Vishal_Misra]  ID: [9hPnkXsAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_David_Weinstein]  ID: [fueau_UAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Peter_Allen]  ID: [Gs5F2jYAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Mark_V_Sauer_MD]  ID: [EbxmG80AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Scott_A_Small]  ID: [W1kXLwYAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_qais_al_awqati_qais_alawqati]  ID: [M6uUMREAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_XinAn_Xu]  ID: [wRBItaQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Bin_Wang]  ID: [bnpVrKoAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Jeffrey_W_Kysar]  ID: [NWSA8moAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Qiang_Du]  ID: [bsqhvmAAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Stephen_P_Zeldes]  ID: [c0R9_OMAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Garrett_J_van_Ryzin]  ID: [7KI2Fa8AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Hynek_Wichterle]  ID: [XHWdzcEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Dongrong_Xu]  ID: [oA302RMAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_zhiliang_ying]  ID: [VPz1QjEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Melanie_Wall]  ID: [-H1nkgEAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Sunil_K_Agrawal]  ID: [sXU3cgUAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Andrew_W_Robertson_PhD]  ID: [WMBEnXAAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Terry_Plank]  ID: [Xn10Y5MAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_William_Rosner]  ID: [rZrrPCQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_J_F_Traub]  ID: [b31g8hsAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Dorothy_Peteet]  ID: [J3P7PhEAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Stephanie_Schmitt_Grohe]  ID: [m4N1s9AAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Keren_Bergman]  ID: [PhGpm4sAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Jean_Gautier]  ID: [OGR--C0AAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Clark_T_Hung]  ID: [_qBJ1I0AAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Arlene_M_Fiore]  ID: [ZJKM9FUAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Virginia_Rauh]  ID: [bdc_lGgAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Allen_Boozer]  ID: [gppbmsQAAAAJ]  Has not upload photo.
+University: [Columbia University]  Name: [Columbia_Peter_deMenocal]  ID: [Etpzd_UAAAAJ]  Has  uploaded photo.
+University: [Columbia University]  Name: [Columbia_Ruhong_Zhou]  ID: [Pi5XrCsAAAAJ]  Has  uploaded photo.
