@@ -26,7 +26,7 @@ import codecs
 # get user tempfile
 PATH = lambda p: os.path.abspath(p)
 TEMP_FILE = PATH(tempfile.gettempdir() + "/temp_screen.png")
-print(str(28) + tempfile.gettempdir())
+print(tempfile.gettempdir())
 geturl = 'http://127.0.0.1:8000/'
 
 
@@ -139,7 +139,7 @@ class getimages():
         return self
 
     def get_screenshot_by_custom_size(self, start_x, start_y, end_x, end_y):
-        # 自定义截取范围
+        # define截取范围
         self.driver.get_screenshot_as_file(TEMP_FILE)
         box = (start_x, start_y, end_x, end_y)
 
@@ -304,6 +304,14 @@ class swipe():
                           end_x=elementsList[1].location_in_view['x'],
                           end_y=elementsList[1].location_in_view['y'])
 
+class QLite():
+    def connect(self):
+        print('start_tap_in_309')
+        action = TouchAction(self.driver)
+        action.tap(x=int(self.wwidth/2), y=int(self.wheight*0.13),count=2).perform()
+        print('end_tap_in309')
+
+    pass
 
 class multipleLoop():
     # class multipleLoop(multiprocessing.Process):
@@ -354,100 +362,136 @@ class multipleLoop():
         numberinxlsnumber = 0
 
         if os.path.exists(temp_taskid) == False:
-            texttask = codecs.open(temp_taskid, 'w', 'utf_8')
+            texttask = codecs.open(temp_taskid, 'w', 'utf-8-sig')
             namefield = ['QQ', 'name', 'nick', 'contains']
             writer = csv.DictWriter(texttask, fieldnames=namefield)
             writer.writeheader()
             texttask.close()
 
+        texttask = codecs.open(temp_taskid, 'r', 'utf-8-sig')
+        reader = csv.DictReader(texttask)
+        csvnumber = -1
+        for row in reader:
+            csvnumber += 1
         # click contact
         QQaction.connect(self)
         self.driver.implicitly_wait(20)
         self.driver.find_element_by_xpath("//*[contains(@text, '好友')]").click()
         QQaction.connect(self)
-        time.sleep(4)
+        time.sleep(1.3)
+        swipe.qqswipe(self)
         temproll335 = 0
+        time.sleep(3)
         elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+        # get lementslist
+        time.sleep(1.5)
+        print(elementsList.__len__())
         tempclickelement = elementsList.__len__()
         elementsList[elementsList.__len__() - 1].click()
-        time.sleep(4)
+        time.sleep(1.5)
         elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
         print(tempclickelement)
         print(elementsList.__len__())
         if tempclickelement == elementsList.__len__():
             raise Exception
-        swipe.qqswipe(self)
-        while (objectEnd != 1):
-            try:
-                elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
-                objectendroll = 0
-            except:
-                if objectendroll <= 15:
-                    swipe.qqnumberswipe(self)
-                    objectendroll += 1
-                    print('609')
-                    continue
-                elif objectendroll > 15:
-                    objectEnd = 1
-                    continue
-            if tempclickelement == elementsList.__len__():
-                raise Exception
-            for N in range(2, elementsList.__len__() - 1):
-                elementsList[N].click()
-                GetQQnumbertry, name, nick, usercontains = QQaction.freindConcentGetQQnumber(self)
-                if GetQQnumbertry == '':
-                    self.driver.keyevent(keycode=4)
-                elif not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
-                    csvfile = codecs.open(temp_taskid, 'a', 'utf-8-sig')
-                    namefield = ['QQ', 'name', 'nick', 'contains']
-                    whiter = csv.DictWriter(csvfile, fieldnames=namefield)
-                    whiter.writerow({'QQ': GetQQnumbertry, 'name': name, 'nick': nick, 'contains': usercontains})
-                    csvfile.close()
-                    if self.mark['taskSort'] == 3:
-                        QQaction.friendConcentSendMessage(self)
-                        QQaction.connect(self)
-                    elif self.mark['taskSort'] == 7:
-                        self.driver.keyevent(keycode=4)
-                else:
-                    self.driver.keyevent(keycode=4)
-                    if numberinxls == 0:
-                        if numberinxlsnumber == GetQQnumbertry:
-                            numberinxls = 1
-                        else:
-                            swipe.listswipe(self, elementsList)
-                            time.sleep(3)
-                            numberinxlsnumber = GetQQnumbertry
-                            break
-
-                time.sleep(0.8)
-                if N == elementsList.__len__() - 2:
-                    if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
-                        objectEnd = 1
-                    if objectEndNo == GetQQnumbertry:
-                        objectEnd = 1
-                    else:
-                        swipe.listswipe(self, elementsList)
-                        time.sleep(3)
-                        objectEndNo = GetQQnumbertry
-                        break
-
-        opentemp = codecs.open(temp_taskid, 'r', 'utf-8-sig')
-        fieldname = ['QQ', 'name', 'nick', 'contains']
-        reader = csv.DictReader(opentemp)
-        csvtuples = {}
-        for row in reader:
-            if row['QQ'] == 'QQ':
+        for N in elementsList:
+            if N.tag_name == 'android.widget.RelativeLayout':
                 continue
-            a = {}
-            a['name'] = row['name']
-            a['nick'] = row['nick']
-            a['contains'] = row['contains']
-            b = row['QQ']
-            b = b.replace(u'\ufeff', '')
-            csvtuples[b] = a
-            out = json.dumps(csvtuples)
+            else:
+                print(self.driver.get_window_size())
+                getwindows = self.driver.get_window_size()
+                wheight = getwindows['height']
+                wwidth = getwindows['width']
+                eSizeheight = N.size['height']
+                eSizeWidth = N.size['width']
+                eLocationX = N.location['x']
+                eLocationY = N.location['y']
+                rollx = int(eSizeWidth/2)
+                rolly = wwidth - eSizeheight*3
+                rollTomovey = wwidth - eSizeheight*4
+                print(N.size)
+                print(N.location)
 
-        requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
+                while eSizeWidth != 1:
+                    self.driver.swipe(start_x=rollx, start_y=rolly, end_x=rollx, end_y=rollTomovey, duration=500)
+                    time.sleep(4.5)
+
+
+
+
+        # while (objectEnd != 1):
+        #     try:
+        #         elementsList = self.driver.find_elements_by_xpath("//android.widget.AbsListView[1]/*")
+        #         objectendroll = 0
+        #     except:
+        #         if objectendroll <= 15:
+        #             swipe.qqnumberswipe(self)
+        #             objectendroll += 1
+        #             print('609')
+        #             continue
+        #         elif objectendroll > 15:
+        #             objectEnd = 1
+        #             continue
+        #     if tempclickelement == elementsList.__len__():
+        #         raise Exception
+        #     for N in range(2, elementsList.__len__() - 1):
+        #         elementsList[N].click()
+        #         GetQQnumbertry, name, nick, usercontains = QQaction.freindConcentGetQQnumber(self)
+        #         if GetQQnumbertry == '':
+        #             self.driver.keyevent(keycode=4)
+        #         elif not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
+        #             csvfile = codecs.open(temp_taskid, 'a', 'utf-8-sig')
+        #             namefield = ['QQ', 'name', 'nick', 'contains']
+        #             whiter = csv.DictWriter(csvfile, fieldnames=namefield)
+        #             whiter.writerow({'QQ': GetQQnumbertry, 'name': name, 'nick': nick, 'contains': usercontains})
+        #             csvfile.close()
+        #             if self.mark['taskSort'] == 3:
+        #                 QQaction.friendConcentSendMessage(self)
+        #                 QQaction.connect(self)
+        #             elif self.mark['taskSort'] == 7:
+        #                 self.driver.keyevent(keycode=4)
+        #         else:
+        #             self.driver.keyevent(keycode=4)
+        #             if numberinxls == 0:
+        #                 if numberinxlsnumber == GetQQnumbertry:
+        #                     numberinxls = 1
+        #                 else:
+        #                     swipe.listswipe(self, elementsList)
+        #                     time.sleep(3)
+        #                     numberinxlsnumber = GetQQnumbertry
+        #                     break
+        #
+        #         time.sleep(0.8)
+        #         if N == elementsList.__len__() - 2:
+        #             if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
+        #                 objectEnd = 1
+        #             if objectEndNo == GetQQnumbertry:
+        #                 objectEnd = 1
+        #             else:
+        #                 swipe.listswipe(self, elementsList)
+        #                 time.sleep(3)
+        #                 objectEndNo = GetQQnumbertry
+        #                 break
+
+
+
+        # opentemp = codecs.open(temp_taskid, 'r', 'utf-8-sig')
+        # fieldname = ['QQ', 'name', 'nick', 'contains']
+        # reader = csv.DictReader(opentemp)
+        # csvtuples = {}
+        # for row in reader:
+        #     if row['QQ'] == 'QQ':
+        #         continue
+        #     a = {}
+        #     a['name'] = row['name']
+        #     a['nick'] = row['nick']
+        #     a['contains'] = row['contains']
+        #     b = row['QQ']
+        #     b = b.replace(u'\ufeff', '')
+        #     csvtuples[b] = a
+        #     out = json.dumps(csvtuples)
+        #
+        # requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
 
     def send_message_to_GROUP_list(self):
         # -- sort 4 &8
@@ -775,6 +819,139 @@ class multipleLoop():
         text = re.split(self.mark['content'])
         pass
 
+    def QLite_send_message_And_get_to_friend_list(self):
+
+        # -- sort 3 & 7
+        # create  && open tempcsv
+        temp_taskid = PATH(tempfile.gettempdir() + "/" + str(self.mark['taskid']) + ".csv")
+        objectEnd = 0
+        objectEndNo = 0
+        objectendroll = 0
+        numberinxls = 0
+        numberinxlsnumber = 0
+        csvnumber = 0
+        if os.path.exists(temp_taskid) == False:
+            texttask = codecs.open(temp_taskid, 'w', 'utf-8-sig')
+            namefield = ['QQ', 'name', 'nick', 'contains']
+            writer = csv.DictWriter(texttask, fieldnames=namefield)
+            writer.writeheader()
+            texttask.close()
+        else:
+            texttask = codecs.open(temp_taskid, 'r', 'utf-8-sig')
+            reader = csv.DictReader(texttask)
+            for row in reader:
+                csvnumber += 1
+
+        # click contact
+        self.driver.implicitly_wait(20)
+        time.sleep(3)
+        print(self.wwidth)
+        print(self.wheight)
+        QLite.connect(self)
+        time.sleep(1.5)
+        QLite.connect(self)
+        temproll335 = 0
+        elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.LinearLayout[1]/android.view.View[1]/*")
+        tempclickelement = elementsList.__len__()
+        # elementname & number
+        list_name = elementsList[elementsList.__len__() - 2].find_element_by_xpath('//android.widget.TextView[1]').text
+        list_Number_get = elementsList[elementsList.__len__() - 2].find_element_by_xpath('//android.widget.TextView[2]').text
+        list_Number = int(re.split("(\D+)", list_Number_get)[-1])
+        end_Number = list_Number - csvnumber
+        elementsList[elementsList.__len__() - 2].click()
+        time.sleep(3.5)
+        elementsList = self.driver.find_elements_by_xpath("//android.support.v4.view.ViewPager[1]/android.widget.LinearLayout[1]/android.view.View[1]/*")
+        if tempclickelement == elementsList.__len__():
+            raise Exception
+        else:
+            elementN = elementsList.__len__() - tempclickelement + 1
+            # get elenmtns height and widht
+            self.Eheight = elementsList[tempclickelement -1 ].size['height']
+            self.Ewidth = elementsList[tempclickelement - 1].size['width']
+            self.endheight = int(self.wheight - self.Eheight*1.2)
+        # solve element
+        if end_Number > 0:
+            rollend = 1
+            while (end_Number > 0):
+                for N in range(elementsList.__len__()-elementN, elementsList.__len__()-2):
+                    if elementsList[N].location['y']> self.endheight:
+                        break
+                    else:
+                        elementsList[N].click()
+                        self.driver.find_element_by_xpath("//*[contains(@content-desc, '聊天设置')]").click()
+                        self.driver.find_element_by_xpath("//*[contains(@content-desc, '查看个人资料')]").click()
+                        name = self.driver.find_element_by_xpath("//*[contains(@content-desc, '昵称')]").text
+                        conetnt = self.driver.find_element_by_xpath("//*[contains(@content-desc, '基本信息')]").text
+                        Qage = self.driver.find_element_by_xpath("//*[contains(@content-desc, '级')]").get_attribute('name')
+                        Qnumber = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
+                        print('ok')
+            # 1. elementlist click
+            # 2. use lastnumber & end Y
+            #   1. use lastnumber
+            #   2. use list
+            #   3. roll
+
+
+
+            # if tempclickelement == elementsList.__len__():
+            #     raise Exception
+            # for N in range(2, elementsList.__len__() - 1):
+            #     elementsList[N].click()
+            #     GetQQnumbertry, name, nick, usercontains = QQaction.freindConcentGetQQnumber(self)
+            #     if GetQQnumbertry == '':
+            #         self.driver.keyevent(keycode=4)
+            #     elif not GetQQnumbertry in open(temp_taskid, 'r', encoding='utf-8-sig').read():
+            #         csvfile = codecs.open(temp_taskid, 'a', 'utf-8-sig')
+            #         namefield = ['QQ', 'name', 'nick', 'contains']
+            #         whiter = csv.DictWriter(csvfile, fieldnames=namefield)
+            #         whiter.writerow({'QQ': GetQQnumbertry, 'name': name, 'nick': nick, 'contains': usercontains})
+            #         csvfile.close()
+            #         if self.mark['taskSort'] == 3:
+            #             QQaction.friendConcentSendMessage(self)
+            #             QQaction.connect(self)
+            #         elif self.mark['taskSort'] == 7:
+            #             self.driver.keyevent(keycode=4)
+            #     else:
+            #         self.driver.keyevent(keycode=4)
+            #         if numberinxls == 0:
+            #             if numberinxlsnumber == GetQQnumbertry:
+            #                 numberinxls = 1
+            #             else:
+            #                 swipe.listswipe(self, elementsList)
+            #                 time.sleep(3)
+            #                 numberinxlsnumber = GetQQnumbertry
+            #                 break
+            #
+            #     time.sleep(0.8)
+            #     if N == elementsList.__len__() - 2:
+            #         if elementsList[N + 1].tag_name == 'android.widget.RelativeLayout':
+            #             objectEnd = 1
+            #         if objectEndNo == GetQQnumbertry:
+            #             objectEnd = 1
+            #         else:
+            #             swipe.listswipe(self, elementsList)
+            #             time.sleep(3)
+            #             objectEndNo = GetQQnumbertry
+            #             break
+
+        opentemp = codecs.open(temp_taskid, 'r', 'utf-8-sig')
+        fieldname = ['QQ', 'name', 'nick', 'contains']
+        reader = csv.DictReader(opentemp)
+        csvtuples = {}
+        for row in reader:
+            if row['QQ'] == 'QQ':
+                continue
+            a = {}
+            a['name'] = row['name']
+            a['nick'] = row['nick']
+            a['contains'] = row['contains']
+            b = row['QQ']
+            b = b.replace(u'\ufeff', '')
+            csvtuples[b] = a
+            out = json.dumps(csvtuples)
+
+        requests.post(geturl + 'autoweb/done/' + str(self.mark['taskid']) + '/', json=out)
+
     def run(self):
         print('task:' + self.mobile_id_for)
         whilen = 1
@@ -802,7 +979,9 @@ class multipleLoop():
             }
             print(self.mark['webserverurl'])
             self.driver = webdriver.Remote(self.mark['webserverurl'], desired_caps)
-
+            self.getwindows = self.driver.get_window_size()
+            self.wheight = self.getwindows['height']
+            self.wwidth = self.getwindows['width']
             desired_caps1 = {
                 'platformName': 'Android',
                 'deviceName': '7N3AME1584011383',
@@ -844,7 +1023,7 @@ class multipleLoop():
                 if textmarktaskSort == 1 or textmarktaskSort == 2:
                     multipleLoop.QQaddPeople_group(self)
                 elif textmarktaskSort == 3 or textmarktaskSort == 7:
-                    multipleLoop.send_message_And_get_to_friend_list(self)
+                    multipleLoop.QLite_send_message_And_get_to_friend_list(self)
                 elif textmarktaskSort == 4 or textmarktaskSort == 8:
                     multipleLoop.send_message_to_GROUP_list(self)
                 elif textmarktaskSort == 9:
@@ -862,6 +1041,18 @@ class multipleLoop():
                     multipleLoop.Get_Group_QQ_list(self)
                 elif textmarktaskSort == 10:
                     multipleLoop.wechat_post_article(self)
+                else:
+                    pass
+
+            elif self.mark['sortid'] == 3:
+                if textmarktaskSort == 1 or textmarktaskSort == 2:
+                    multipleLoop.QQaddPeople_group(self)
+                elif textmarktaskSort == 3 or textmarktaskSort == 7:
+                    multipleLoop.send_message_And_get_to_friend_list(self)
+                elif textmarktaskSort == 4 or textmarktaskSort == 8:
+                    multipleLoop.send_message_to_GROUP_list(self)
+                elif textmarktaskSort == 9:
+                    multipleLoop.Get_Group_QQ_list(self)
                 else:
                     pass
                     # ---- loop select_work----#

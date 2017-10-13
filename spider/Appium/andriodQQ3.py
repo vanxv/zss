@@ -361,7 +361,7 @@ class multipleLoop():
 
         texttask = codecs.open(temp_taskid, 'r', 'utf-8-sig')
         reader = csv.DictReader(texttask)
-        csvnumber = -1
+        csvnumber = 0
         for row in reader:
             csvnumber += 1
         # click contact
