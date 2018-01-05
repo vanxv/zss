@@ -37814,3 +37814,11 @@ Traceback (most recent call last):
   File "/Users/VANXV/PycharmProjects/zss/autoweb/views.py", line 199, in TaskDone
     QFListLog = QQFriendslog.objects.create(status=2, QQ=task.mobileid.QQ, QQFriends=delQqFListN,contains=getdeletenumber['contains'], name=getdeletenumber['name'], nick=getdeletenumber['nick'])
 TypeError: 'QQFriends' object is not subscriptable
+2017-10-18 20:18:05,840 [Thread-10:123145385988096] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-10-18 20:18:06,830 [Thread-22:123145380732928] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-10-18 20:18:10,963 [Thread-29:123145380732928] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-19 21:03:40,912 [Thread-7:123145584709632] [django.request:152] [base:get_response] [WARNING]- Not Found: /woopgame/
+2017-10-19 21:03:40,932 [Thread-9:123145595219968] [django.request:152] [base:get_response] [WARNING]- Not Found: /robots.txt
+2017-10-19 21:03:42,974 [Thread-8:123145589964800] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-10-19 21:04:25,670 [Thread-15:123145526161408] [django.request:152] [base:get_response] [WARNING]- Not Found: /woopgame/favicon.ico
+2017-10-19 21:26:12,944 [Thread-9:123145368104960] [django.request:152] [base:get_response] [WARNING]- Not Found: /1/

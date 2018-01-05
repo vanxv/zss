@@ -68,6 +68,9 @@ urlpatterns = [
 #!---- adapi ---#
     url(r'^adapi/', include('adapi.urls')),
 #!---- adapi ---#
+
+#!---woopgame---#
+    url(r'^woopgame/', include('woopgame.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)  # debug模式下 可用

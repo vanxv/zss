@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'servers',
     'autoweb',
     'adapi',
+    'woopgame',
 ]
 AUTH_USER_MODEL = 'users.AuthUser'
 

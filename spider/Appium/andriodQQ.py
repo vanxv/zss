@@ -874,9 +874,9 @@ class multipleLoop():
             rollend = 1
             while (end_Number > 0):
                 for N in range(elementsList.__len__()-elementN, elementsList.__len__()-2):
-                    if elementsList[N].location['y']> self.endheight:
+                     if elementsList[N].location['y']> self.endheight:
                         break
-                    else:
+                     else:
                         elementsList[N].click()
                         self.driver.find_element_by_xpath("//*[contains(@content-desc, '聊天设置')]").click()
                         self.driver.find_element_by_xpath("//*[contains(@content-desc, '查看个人资料')]").click()
@@ -884,6 +884,9 @@ class multipleLoop():
                         conetnt = self.driver.find_element_by_xpath("//*[contains(@content-desc, '基本信息')]").text
                         Qage = self.driver.find_element_by_xpath("//*[contains(@content-desc, '级')]").get_attribute('name')
                         Qnumber = self.driver.find_element_by_xpath("//android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]").text
+                        print(name)
+                        print(Qnumber)
+                        print(Qage)
                         print('ok')
             # 1. elementlist click
             # 2. use lastnumber & end Y
