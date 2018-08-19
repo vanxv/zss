@@ -18,7 +18,7 @@ ORDER_STATUS = (
 
 class Order(models.Model):
     id = models.CharField('订单id', primary_key=True, max_length=50)
-    seller = models.ForeignKey(AuthUser, verbose_name='商家', null=True)
+    seller = models.ForeignKey(AuthUser, verbose_name='商家', null=True, on_delete='CASCADE')
     customer_id = models.IntegerField('会员', null=True)
     shop_id = models.IntegerField('店铺', null=True)
     good_id = models.IntegerField('商品', null=True)

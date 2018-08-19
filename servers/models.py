@@ -1,5 +1,5 @@
 from django.db import models
-from django.core.urlresolvers import reverse
+# from django.core.urlresolvers import reverse
 
 class Server(models.Model):
     name = models.CharField(max_length=200)
@@ -9,5 +9,5 @@ class Server(models.Model):
     def __unicode__(self):
         return self.name
 
-    def get_absolute_url(self):
-        return reverse('server_edit', kwargs={'pk': self.pk})
+    # def get_absolute_url(self):
+    #     return reverse('server_edit', kwargs={'pk': self.pk})

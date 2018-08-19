@@ -16,7 +16,7 @@ PLATFORM = (
 
 class Shop(models.Model):
     id = models.CharField('id', max_length=32, default=get_uuid, primary_key=True)
-    user = models.ForeignKey(AuthUser, verbose_name='用户', null=True)
+    user = models.ForeignKey(AuthUser, verbose_name='用户', null=True, on_delete='CASCADE')
     shopname = models.CharField('店铺名称', max_length=50, null=True)
     shopkeepername = models.CharField('掌柜名称', max_length=50, null=True, unique=True)
     platform = models.CharField('店铺平台', choices=PLATFORM, max_length=20, null=True)
@@ -33,8 +33,8 @@ class Shop(models.Model):
 
 class Goods(models.Model):
     id = models.CharField('id', max_length=32, default=get_uuid, primary_key=True)
-    user = models.ForeignKey(AuthUser, verbose_name='用户', null=True)
-    shop = models.ForeignKey(Shop, verbose_name='所属店铺', null=True)
+    user = models.ForeignKey(AuthUser, verbose_name='用户', null=True, on_delete='CASCADE')
+    shop = models.ForeignKey(Shop, verbose_name='所属店铺', null=True, on_delete='CASCADE')
     name = models.CharField('商品名称', max_length=100, null=True)
     pgoods_id = models.CharField('平台商品id', max_length=50, null=True, unique=True)
     sendaddress = models.CharField('发货地', max_length=50, null=True)

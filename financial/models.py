@@ -4,7 +4,7 @@ from django.utils import timezone
 from cryapp.models import CryOrder
 from libs.utils.string_extension import get_uuid
 class deposit(models.Model):
-    user = models.ForeignKey(AuthUser)
+    user = models.ForeignKey(AuthUser, on_delete='CASCADE')
     deposit = models.DecimalField(max_digits=12, decimal_places=2)
     datetime = models.DateTimeField(default=timezone.now)
     remark = models.CharField('备注', max_length=500, blank=True, null=True)
@@ -25,7 +25,7 @@ orderBill_orderBillSort =(
 
 class orderBill(models.Model):
     id = models.CharField('id', max_length=32, default=get_uuid, primary_key=True)
-    CryOrderid = models.ForeignKey(CryOrder, related_name='orderBillCryOrderid')
+    CryOrderid = models.ForeignKey(CryOrder, related_name='orderBillCryOrderid', on_delete='CASCADE')
     total_amount = models.DecimalField('总金额(元)', max_digits=12, decimal_places=2, blank=True, null=True)
     orderBillSort = models.IntegerField('订单状态', choices=orderBill_orderBillSort, blank=True, null=True)
     datetime = models.DateTimeField(default=timezone.now)
@@ -52,8 +52,8 @@ class TopUpwithdrawal(models.Model):
     certificateid = models.CharField('账单编号', null=True, blank=True, max_length=200)
     amount = models.DecimalField('金额', max_digits=12, decimal_places=2, blank=True, null=True)
     transfer_account = models.CharField('收款账户', null=True, blank=True, max_length=200)
-    user = models.ForeignKey(AuthUser, name='user', null=True, related_name='user')
-    managerUser = models.ForeignKey(AuthUser, name='manager', null=True, related_name='manageUser')
+    user = models.ForeignKey(AuthUser, name='user', null=True, related_name='user', on_delete='CASCADE')
+    managerUser = models.ForeignKey(AuthUser, name='manager', null=True, related_name='manageUser', on_delete='CASCADE')
     status = models.IntegerField(verbose_name='审核状态', choices=TopUp_withdrawalStatus, null=True)
     remark = models.CharField('备注', max_length=500, blank=True, null=True)
     add_time = models.DateTimeField('创建时间', default=timezone.now)
@@ -93,7 +93,7 @@ class alipayDetail(models.Model):
     alipayAmount = models.DecimalField(decimal_places=2, max_digits=6, name='alipayAmount')
     datetime = models.DateTimeField(default=timezone.now)
     alipayUsername = models.CharField(max_length=50, name='alipayusername', null=True)
-    userid = models.ForeignKey(AuthUser, null=True)
+    userid = models.ForeignKey(AuthUser, null=True, on_delete='CASCADE')
 
     class Meta:
         verbose_name = 'alipayDetail'

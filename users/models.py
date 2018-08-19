@@ -42,10 +42,10 @@ class AuthPlatformUser(models.Model):
 
 
 class buyscore(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
-    scoregood = models.IntegerField(default='0', verbose_name=u'好评数')
-    scoremiddle = models.IntegerField(default='0', verbose_name=u'中评数')
-    scorepoor = models.IntegerField(default='0', verbose_name=u'差评数')
+    user = models.ForeignKey(AuthUser, on_delete='CASCADE')
+    scoregood = models.IntegerField(default='0')
+    scoremiddle = models.IntegerField(default='0')
+    scorepoor = models.IntegerField(default='0')
 
     class Meta:
         verbose_name = u'买家好评'
@@ -53,7 +53,7 @@ class buyscore(models.Model):
 
 
 class sellscore(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, on_delete='CASCADE')
     scoregood = models.IntegerField(default='0', verbose_name=u'好评数')
     scoremiddle = models.IntegerField(default='0', verbose_name=u'中评数')
     scorepoor = models.IntegerField(default='0', verbose_name=u'差评数')
@@ -64,7 +64,7 @@ class sellscore(models.Model):
 
 
 class tbUsername(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, on_delete='CASCADE')
     tbUsername = models.CharField(max_length=30,unique=True, verbose_name=u'淘宝账号')
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
 
@@ -77,7 +77,7 @@ class tbUsername(models.Model):
 
 
 class jdUsername(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户')
+    user = models.ForeignKey(AuthUser, on_delete='CASCADE')
     jdUsername = models.CharField(max_length=30,unique=True, verbose_name=u'京东账号')
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
 
@@ -90,7 +90,7 @@ class jdUsername(models.Model):
 
 
 class wechat(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True, on_delete='CASCADE')
     wechat = models.CharField(max_length=100, verbose_name='wechat', blank=True, null=True, unique=True)
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     class Meta:
@@ -98,7 +98,7 @@ class wechat(models.Model):
         verbose_name_plural = verbose_name
 
 class alipay(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True, on_delete='CASCADE')
     alipay = models.CharField(max_length=100, verbose_name='alipay', blank=True, null=True, unique=True)
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     class Meta:
@@ -106,7 +106,7 @@ class alipay(models.Model):
         verbose_name_plural = verbose_name
 
 class Bankcard(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'user', blank=True, null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'user', blank=True, null=True, on_delete='CASCADE')
     Bankcard = models.CharField(max_length=100, verbose_name='Bankcard', blank=True, null=True, unique=True)
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
     class Meta:
@@ -114,7 +114,7 @@ class Bankcard(models.Model):
         verbose_name_plural = verbose_name
 
 class Idcard(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True, on_delete='CASCADE')
     Idcard = models.CharField(max_length=100, verbose_name='Idcard', blank=True, null=True, unique=True)
     Idcardname = models.CharField(max_length=100, verbose_name='Idcardname', blank=True, null=True)
     is_blacklist = models.IntegerField(default=0, null=True, blank=True, verbose_name=u'blacklist')
@@ -125,7 +125,7 @@ class Idcard(models.Model):
         return self.user
 
 class pcGuid(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True, on_delete='CASCADE')
     PcGuid = models.CharField(verbose_name=u'pcGuid', unique=True, null=True, max_length=120)
     cpuid = models.CharField(max_length=60, verbose_name=u'cpuid', blank=True, null=True)
     diskid = models.CharField(max_length=120, verbose_name=u'diskid', blank=True, null=True)
@@ -139,8 +139,8 @@ class pcGuid(models.Model):
         verbose_name_plural = verbose_name
 
 class pcGuidLog(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'user')
-    PcGuid = models.ForeignKey(pcGuid, verbose_name=u'pcGuid', null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'user', on_delete='CASCADE')
+    PcGuid = models.ForeignKey(pcGuid, verbose_name=u'pcGuid', null=True, on_delete='CASCADE')
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     visual = models.IntegerField(verbose_name=u'pcGuid', null=True, blank=True, default=0)
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
@@ -150,7 +150,7 @@ class pcGuidLog(models.Model):
 
 
 class Visuallog(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'user')
+    user = models.ForeignKey(AuthUser, verbose_name=u'user', on_delete='CASCADE')
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
@@ -160,7 +160,7 @@ class Visuallog(models.Model):
 
 
 class mobileid(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True, on_delete='CASCADE')
     mobileid = models.CharField(verbose_name=u'mobileid', unique=True, null=True, max_length=120)
     resip = models.GenericIPAddressField(verbose_name=u'RegisterIP', blank=True, null=True)
     addtime = models.DateTimeField(verbose_name=u'登录验证时间', default=timezone.now, blank=True, null=True)
@@ -170,8 +170,8 @@ class mobileid(models.Model):
         verbose_name_plural = verbose_name
 
 class mobilelog(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True)
-    mobileid = models.ForeignKey(mobileid, verbose_name=u'mobileid', null=True)
+    user = models.ForeignKey(AuthUser, verbose_name=u'用户', blank=True, null=True, on_delete='CASCADE')
+    mobileid = models.ForeignKey(mobileid, verbose_name=u'mobileid', null=True, on_delete='CASCADE')
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
     class Meta:
@@ -180,7 +180,7 @@ class mobilelog(models.Model):
 
 
 class real_name(models.Model):
-    user = models.ForeignKey(AuthUser, null=True, verbose_name=u'related_name')
+    user = models.ForeignKey(AuthUser, null=True, on_delete='CASCADE')
     realNameid = models.CharField(max_length=30, verbose_name=u'RealNameid', unique=True)
     resip = models.GenericIPAddressField(verbose_name=u'IP')
     addtime = models.DateTimeField(verbose_name=u'loginTime', default=timezone.now)
@@ -189,7 +189,7 @@ class real_name(models.Model):
         verbose_name_plural = verbose_name
 
 class blacklistlog(models.Model):
-    user = models.ForeignKey(AuthUser, null=True, verbose_name=u'related_name')
+    user = models.ForeignKey(AuthUser, null=True, verbose_name=u'related_name', on_delete='CASCADE')
     addtime = models.DateTimeField(verbose_name=u'addTime', default=timezone.now)
     resip = models.GenericIPAddressField(verbose_name=u'IP', null=True)
     Remarks = models.CharField(max_length=9999, null=True)

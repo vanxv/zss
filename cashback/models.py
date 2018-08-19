@@ -66,7 +66,7 @@ CASHBACK_STATUS = {
 
 
 class Cashback(models.Model):
-    seller = models.ForeignKey(AuthUser, verbose_name='商家', null=True)  # 与AuthUser表关联
+    seller = models.ForeignKey(AuthUser, verbose_name='商家', null=True, on_delete='CASCADE')  # 与AuthUser表关联
     task_id = models.IntegerField('任务id', null=True)
     customer_id = models.IntegerField('会员id', null=True)
     wechat = models.CharField('会员微信', max_length=50, null=True, blank=True)

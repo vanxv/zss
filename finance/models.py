@@ -30,8 +30,8 @@ class FAccountTransferAudits(models.Model):
     certificate = models.CharField('充值凭证', null=True, blank=True, max_length=200)
     amount = models.DecimalField('金额', max_digits=18, decimal_places=2, blank=True, null=True)
     transfer_account = models.CharField('收款账户', null=True, blank=True, max_length=200)
-    seller = models.ForeignKey(AuthUser, related_name='seller', verbose_name='申请人', null=True)
-    manager = models.ForeignKey(AuthUser, related_name='manager', verbose_name='审核人', null=True)
+    seller = models.ForeignKey(AuthUser, related_name='seller', verbose_name='申请人', null=True, on_delete='CASCADE')
+    manager = models.ForeignKey(AuthUser, related_name='manager', verbose_name='审核人', null=True, on_delete='CASCADE')
     status = models.IntegerField(verbose_name='审核状态', choices=AUDIT_STATUS, null=True)
     remark = models.CharField('备注', max_length=500, blank=True, null=True)
     add_time = models.DateTimeField('创建时间', default=datetime.now)
@@ -81,7 +81,7 @@ class OrderStatus(Enum):
 
 class FOrder(models.Model):
     id = models.CharField('订单号', primary_key=True, max_length=40)
-    user = models.ForeignKey(AuthUser, verbose_name='用户')
+    user = models.ForeignKey(AuthUser, verbose_name='用户', on_delete='CASCADE')
     relate_obj = models.CharField('关联对象', max_length=20, blank=True, null=True)
     relate_id = models.IntegerField('关联交易', null=True)
     total_amount = models.DecimalField('总金额(元)', max_digits=18, decimal_places=2, blank=True, null=True)
@@ -113,8 +113,8 @@ BillType_Display = {
 
 
 class FWalletBill(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name='用户')
-    order = models.ForeignKey(FOrder, verbose_name='订单')
+    user = models.ForeignKey(AuthUser, verbose_name='用户', on_delete='CASCADE')
+    order = models.ForeignKey(FOrder, verbose_name='订单', on_delete='CASCADE')
     title = models.CharField('标题', max_length=200, blank=True, null=True)
     billtype = models.CharField('账单类型', max_length=20, blank=True, null=True)
     amount = models.DecimalField('账单金额(元)', max_digits=18, decimal_places=2, blank=True, null=True)

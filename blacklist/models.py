@@ -1,7 +1,7 @@
 from django.db import models
 from users.models import AuthUser
 class blacklist(models.Model):
-    user = models.ForeignKey(AuthUser, verbose_name='用户', null=True)
+    user = models.ForeignKey(AuthUser, verbose_name='用户', null=True, on_delete='CASCADE')
     buyer = models.CharField(max_length=20,verbose_name='买家账号')
     buyerMobile = models.IntegerField(verbose_name='买家手机',null=True)
     buyeraddress = models.CharField(max_length=30,verbose_name='地址',null=True)

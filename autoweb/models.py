@@ -12,7 +12,7 @@ UserPortraitSortChoose =(
     (3,'QQSpace'),
 )
 class UserPortraitlog(models.Model):
-    UserPortraitId = models.ForeignKey(UserPortrait, name='UserPortkey')
+    UserPortraitId = models.ForeignKey(UserPortrait, name='UserPortkey', on_delete='CASCADE')
     contains = models.CharField(max_length=9999, name='contains')
     UserPortraitSort = models.IntegerField(choices=UserPortraitSortChoose, name='UserPortSort')
     startTime = models.DateTimeField(name='startTime')
@@ -33,7 +33,7 @@ class mobileid(models.Model):
     webserverurl = models.CharField(max_length=500, null=True)
     sort = models.IntegerField(name='mobileSort',null=True)
     QQ = models.CharField(name='QQ', null=True,max_length=20)
-    UserPortraitId = models.ForeignKey(UserPortrait, null=True, blank=True)
+    UserPortraitId = models.ForeignKey(UserPortrait, null=True, blank=True, on_delete='CASCADE')
     note = models.CharField(max_length=500, null=True)
 
     class Meta:
@@ -57,9 +57,9 @@ mobiletask_taskSort_choices = (
     (9, 'Get_Group_QQ_list'),
 )
 class mobiletask(models.Model):
-    mobileid = models.ForeignKey(mobileid, null=True)
-    UserPortraitId = models.ForeignKey(UserPortrait, null=True)
-    softid = models.ForeignKey(softid)
+    mobileid = models.ForeignKey(mobileid, null=True, on_delete='CASCADE')
+    UserPortraitId = models.ForeignKey(UserPortrait, null=True, on_delete='CASCADE')
+    softid = models.ForeignKey(softid, on_delete='CASCADE')
     taskSort = models.IntegerField(choices=mobiletask_taskSort_choices, null=True)
     AccountId = models.CharField(null=True, max_length=200)
     content = models.CharField(null=True, max_length=9999)
@@ -75,7 +75,7 @@ class mobiletask(models.Model):
         verbose_name_plural = verbose_name
 
 class mobileAccount(models.Model):
-    mobileid = models.ForeignKey(mobileid)
+    mobileid = models.ForeignKey(mobileid, on_delete='CASCADE')
     QQ = models.CharField(max_length=13, null=True)
     QQps = models.CharField(max_length=30, null=True)
     QQmobile = models.CharField(max_length=20, null=True)
