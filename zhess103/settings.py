@@ -54,7 +54,7 @@ INSTALLED_APPS = [
     'wechat',
     'blacklist',
     'cryapp',
-    'django_tables2',
+    #'django_tables2',
     'financial',
     'servers',
     'autoweb',
@@ -107,9 +107,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'zss',
         'USER': 'root',
-        'PASSWORD': '1121hotsren',
-        'HOST': 'www.zhess.com',
-        #'HOST': '127.0.0.1',
+        'PASSWORD': '1121mysql',
+        #'HOST': 'www.zhess.com',
+        'HOST': '127.0.0.1',
         'OPTIONS': {
             'sql_mode': 'traditional',
         }

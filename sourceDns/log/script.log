@@ -37822,3 +37822,4 @@ TypeError: 'QQFriends' object is not subscriptable
 2017-10-19 21:03:42,974 [Thread-8:123145589964800] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2017-10-19 21:04:25,670 [Thread-15:123145526161408] [django.request:152] [base:get_response] [WARNING]- Not Found: /woopgame/favicon.ico
 2017-10-19 21:26:12,944 [Thread-9:123145368104960] [django.request:152] [base:get_response] [WARNING]- Not Found: /1/
+2018-03-25 11:45:39,966 [Thread-19:123145320615936] [django.request:152] [base:get_response] [WARNING]- Not Found: /favicon.ico
